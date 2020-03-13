@@ -94,5 +94,8 @@ function drawCardExpectation(pCards)
     return res
 end
 
-local pCards = {0.02, 0.025, 0.025, 0.05}
+-- local pCards = {0.02, 0.02, 0.015, 0.025, 0.025} --北方联合活动
+local pCards = {0.02, 0.025, 0.025, 0.05} --闹腾嬉戏东煌春节
 print(drawCardExpectation(pCards))
+
+
