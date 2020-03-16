@@ -47,38 +47,38 @@ function drawCardExpectation()
 end
 ]]--
 
-function polySum(probs, indexes)
+function expCalcPolySum(probs, indexes)
     local sum = 0
     local len = #probs
     local index_count = #indexes
     if indexes[index_count] <= len then
         local sum1 = 0
-        for i = 1, index_count - 1 do
+        for i = 1, index_count - 1 do       -- 其中一个(k-1)子集的元素之和，S(P, k-1)   Sum(p[1],p[2],...p[k-1] )
             sum1 = sum1 + probs[indexes[i]]
         end
-        for j = indexes[index_count], len do
+        for j = indexes[index_count], len do  -- 计算这一组(k-1)个index组合下的 Σ( 1/S(P, k) )
             sum = sum + 1 / (sum1 + probs[j])
         end
         indexes[index_count] = len
     end
-    for i = index_count, 1, -1 do
+    for i = index_count, 1, -1 do               -- 生成下一个k子集的index   从后往前扫indexes，直到找到新的一个可以前进的index，然后初始化该index后面的所有index为前一个index+1
         if indexes[i] < len + i - index_count then
             indexes[i] = indexes[i] + 1
             for j = i + 1, index_count do
                 indexes[j] = indexes[j - 1] + 1
             end
-            sum = sum + polySum(probs, indexes)
+            sum = sum + expCalcPolySum(probs, indexes) -- 计算下一组index组合的多项式值，并加到SUM中
         end
     end
     return sum
 end
 
-function polySumN(probs, n)
+function expCalcPolySumN(probs, n) -- 计算 Σ( 1/S(P, k) )
     local indexes = {}
     for i = 1, n do
         indexes[i] = i
     end
-    return polySum(probs, indexes)
+    return expCalcPolySum(probs, indexes)
 end
 
 function drawCardExpectation(pCards)
@@ -86,16 +86,68 @@ function drawCardExpectation(pCards)
     local res = 0
     for i = 1, len do
         if i % 2 == 1 then
-            res = res + polySumN(pCards, i)
+            res = res + expCalcPolySumN(pCards, i)
         else
-            res = res - polySumN(pCards, i)
+            res = res - expCalcPolySumN(pCards, i)
         end
     end
     return res
 end
 
--- local pCards = {0.02, 0.02, 0.015, 0.025, 0.025} --北方联合活动
-local pCards = {0.02, 0.025, 0.025, 0.05} --闹腾嬉戏东煌春节
-print(drawCardExpectation(pCards))
+function probCalcPolySum(probs, indexes, x)
+    local sum = 0
+    local len = #probs
+    local index_count = #indexes
+    if indexes[index_count] <= len then
+        local sum1 = 0
+        for i = 1, index_count - 1 do       -- 其中一个(k-1)子集的概率之和
+            sum1 = sum1 + probs[indexes[i]]
+        end
+        local deltaProb = 1 - sum1
+        for j = indexes[index_count], len do  -- 加入第k个元素，组合成一系列完整的Ck，并且计算这些Ck的 Σ P(Cki, x)
+            sum = sum + (deltaProb - probs[j]) ^ x
+        end
+        indexes[index_count] = len
+    end
+    for i = index_count, 1, -1 do               -- 生成下一个k子集的index   从后往前扫indexes，直到找到新的一个可以前进的index，然后初始化该index后面的所有index为前一个index+1
+        if indexes[i] < len + i - index_count then
+            indexes[i] = indexes[i] + 1
+            for j = i + 1, index_count do
+                indexes[j] = indexes[j - 1] + 1
+            end
+            sum = sum + probCalcPolySum(probs, indexes, x) -- 计算下一组index组合的多项式值，并加到SUM中
+        end
+    end
+    return sum
+end
+
+function probCalcPolySumN(probs, n, x) -- 计算 S(Ck,x)
+    local indexes = {}
+    for i = 1, n do
+        indexes[i] = i
+    end
+    return probCalcPolySum(probs, indexes, x)
+end
+
+function drawCardProb(pCards, x)
+    local len = #pCards
+    local res = 1
+    for i = 1, len do
+        if i % 2 == 1 then
+            res = res - probCalcPolySumN(pCards, i, x)
+        else
+            res = res + probCalcPolySumN(pCards, i, x)
+        end
+    end
+    return res
+end
+
+
+local pCards = {0.02, 0.02, 0.015, 0.025, 0.025} --北方联合活动
+-- local pCards = {0.02, 0.025, 0.025, 0.05} --闹腾嬉戏东煌春节
+-- local pCards = {0.025, 0.025, 0.05} --test
+local exp = drawCardExpectation(pCards)
+print(exp)
+print(drawCardProb(pCards, 150))
 
 
