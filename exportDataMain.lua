@@ -263,7 +263,8 @@ function output_normal_ships_merged()
     file:close()
 end
 
-output_normal_ships_merged()
+
+--output_normal_ships_merged()
 print("finished!")
 
 --分析是否有突破的ship都是各位上为1~4
