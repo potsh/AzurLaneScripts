@@ -206,6 +206,7 @@ function convert_table_to_string(t)
     return str
 end
 
+--把常规船的数据打印输出到指定文件
 function output_normal_ships_not_merged()
     local file = io.open ("ship_growth_not_merged.csv", "w")
     local head = "name,type,id,rarity,star,armor_type,nationality,oxy_max,durability,cannon,torpedo,antiaircraft,air,reload,xxx,hit,dodge,speed,luck,antisubmarine,"..
@@ -228,6 +229,7 @@ function output_normal_ships_not_merged()
     file:close()
 end
 
+--把常规船的数据打印输出到指定文件
 function output_normal_ships_merged()
     local file = io.open ("ship_growth_merged.csv", "w")
     local head = "name,type,id,rarity,star,armor_type,nationality,oxy_max,"..
