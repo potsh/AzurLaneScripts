@@ -19,7 +19,9 @@ end
 function slot0.CanGetAward(slot0)
 	slot2, slot3 = slot0:GetBossProgress()
 
-	return slot0:CanGetNextAward() and function ()
+	return slot0:CanGetNextAward() and 
+	-- Decompilation error in this vicinity:
+	function ()
 		slot0, slot1, slot2 = slot0:GetResProgress()
 
 		return slot2 >= 1

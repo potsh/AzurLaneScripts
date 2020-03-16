@@ -3,9 +3,13 @@ slot0 = class("LoadingPanel", import("..base.BaseUI"))
 function slot0.Ctor(slot0, slot1)
 	slot0.super.Ctor(slot0)
 	PoolMgr.GetInstance():GetUI("Loading", true, function (slot0)
-		slot0.transform:SetParent(GameObject.Find("Overlay/UIOverlay").transform, false)
+		slot0.transform:SetParent(
+		-- Decompilation error in this vicinity:
+		GameObject.Find("Overlay/UIOverlay").transform, false)
 		slot0:SetActive(false)
 		slot0:onUILoaded(slot0)
+
+		-- Decompilation error in this vicinity:
 		GameObject.Find("Overlay/UIOverlay")()
 	end)
 end

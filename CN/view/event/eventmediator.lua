@@ -41,7 +41,7 @@ function slot0.register(slot0)
 				inEvent = true,
 				inAdmiral = true
 			},
-			blackBlockShipIds = slot2:getBlackBlackShipIds(slot0.__cname)
+			blackBlockShipIds = slot2:GetBlackBlockShipIDsForEvent()
 		})
 	end)
 	slot0:bind(EventConst.EVENT_FLUSH, function (slot0)
@@ -148,6 +148,8 @@ function slot0.handleNotification(slot0, slot1)
 		if slot2 == GAME.EVENT_SHOW_AWARDS then
 			slot4 = nil
 
+
+			-- Decompilation error in this vicinity:
 			coroutine.wrap(function ()
 				if #slot0.oldShips > 0 then
 					slot1.viewComponent:emit(BaseUI.ON_SHIP_EXP, {

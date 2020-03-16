@@ -169,6 +169,8 @@ end
 function slot0.updateView(slot0, slot1)
 	slot2 = nil
 
+
+	-- Decompilation error in this vicinity:
 	coroutine.wrap(function ()
 		pg.UIMgr.GetInstance():LoadingOn()
 		pg.UIMgr.GetInstance().LoadingOn:resetGrid(TeamType.Vanguard)
@@ -283,6 +285,8 @@ end
 
 function slot0.updateBattleFleetView(slot0)
 	slot1(slot0._fleet:Find("main"), slot0.chapter.fleet.getShipsByTeam(slot2, TeamType.Main, true))
+
+	-- Decompilation error in this vicinity:
 	function (slot0, slot1)
 		removeAllChildren(slot0)
 

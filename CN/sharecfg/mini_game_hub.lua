@@ -63,11 +63,67 @@ pg.mini_game_hub = {
 			1
 		}
 	},
+	{
+		reward = 92430,
+		reward_need = 7,
+		reborn_times = 1,
+		reward_target = 59969,
+		id = 5,
+		act_id = 478,
+		signet_reward = {},
+		reward_display = {
+			4,
+			301721,
+			1
+		}
+	},
+	{
+		reward = 92553,
+		reward_need = 7,
+		reborn_times = 1,
+		reward_target = 0,
+		id = 6,
+		act_id = 486,
+		signet_reward = {},
+		reward_display = {
+			3,
+			2,
+			1
+		}
+	},
+	{
+		reward = 92613,
+		reward_need = 60,
+		reborn_times = 0,
+		reward_target = 0,
+		id = 7,
+		act_id = 503,
+		signet_reward = {},
+		reward_display = {
+			3,
+			780,
+			1
+		}
+	},
+	{
+		reward = 0,
+		reward_display = "",
+		reward_need = 7,
+		reborn_times = 1,
+		reward_target = 0,
+		id = 8,
+		act_id = 526,
+		signet_reward = {}
+	},
 	all = {
 		1,
 		2,
 		3,
-		4
+		4,
+		5,
+		6,
+		7,
+		8
 	}
 }
 

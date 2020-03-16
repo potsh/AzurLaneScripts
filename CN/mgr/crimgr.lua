@@ -51,6 +51,8 @@ function pg.CriMgr.InitCri(slot0, slot1)
 		CriAtom.SetCategoryVolume(slot1.Category_CV, slot0:getCVVolume())
 		CriAtom.SetCategoryVolume(slot1.Category_SE, slot0:getSEVolume())
 		CriAtom.SetCategoryVolume(slot1.Category_BGM, slot0:getBGMVolume())
+
+		-- Decompilation error in this vicinity:
 		{
 			"bgm",
 			"cv",

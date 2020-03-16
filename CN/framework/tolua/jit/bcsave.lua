@@ -94,9 +94,15 @@ function slot12(slot0)
 end
 
 function slot13(slot0)
-	(type(slot0) ~= "string" or string.match(slot0, "^[%w_.%-]+")) and nil((type(slot0) ~= "string" or string.match(slot0, "^[%w_.%-]+")) and nil, "cannot derive module name, use -n name")
 
-	return string.gsub((type(slot0) ~= "string" or string.match(slot0, "^[%w_.%-]+")) and nil, "[%.%-]", "_")
+	-- Decompilation error in this vicinity:
+	(type(slot0) ~= "string" or string.match(slot0, "^[%w_.%-]+")) and nil(
+	-- Decompilation error in this vicinity:
+	(type(slot0) ~= "string" or string.match(slot0, "^[%w_.%-]+")) and nil, "cannot derive module name, use -n name")
+
+	return string.gsub(
+	-- Decompilation error in this vicinity:
+	(type(slot0) ~= "string" or string.match(slot0, "^[%w_.%-]+")) and nil, "[%.%-]", "_")
 end
 
 function slot14(slot0, slot1, slot2)

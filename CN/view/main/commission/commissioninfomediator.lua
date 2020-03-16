@@ -129,6 +129,8 @@ function slot0.handleNotification(slot0, slot1)
 		if slot2 == GAME.EVENT_SHOW_AWARDS then
 			slot4 = nil
 
+
+			-- Decompilation error in this vicinity:
 			coroutine.wrap(function ()
 				if #slot0.oldShips > 0 then
 					slot1.viewComponent:emit(BaseUI.ON_SHIP_EXP, {

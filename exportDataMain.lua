@@ -3,7 +3,7 @@
 --- Created by Administrator.
 --- DateTime: 2020/1/7 20:59
 ---
-
+---
 ys = {}
 pg = {
     _weak = setmetatable({}, {
@@ -263,11 +263,66 @@ function output_normal_ships_merged()
     file:close()
 end
 
+function pairsByKeys(t)
+    local a = {}
+    for n in pairs(t) do
+        if n and type(n) == "number" then
+            a[#a+1] = n
+        end
+    end
+    table.sort(a)
+    local i = 0
+    return function()
+        i = i + 1
+        return a[i], t[a[i]]
+    end
+end
 
+
+
+
+print("Start!")
+
+require("Cannons")
+completeCannonsInfo()
+
+
+
+--[[
+for k, v in pairs(Cannons) do
+    print(k..",")
+    for kk, vv in pairs(v) do
+        print(kk..","..vv..",")
+    end
+    print("\n")
+end
+]]--
+
+
+
+
+
+--[[
+require("CN.sharecfg.weapon_property")
+D_WP = pg.weapon_property
+local file = io.open ("weapon_key_and_name.csv", "w")
+for key, value in pairsByKeys(D_WP) do
+    if key and value['name'] then
+        local str = key..","..D_WP[key]["name"]
+        file:write(str.."\n")
+    end
+end
+file:close()
 --output_normal_ships_merged()
+]]--
+
 print("finished!")
 
---分析是否有突破的ship都是各位上为1~4
+
+
+
+
+--分析是否有突破的ship都是个位上为1~4
 --[[
 count = 0
 for k, v in pairs(ships) do

@@ -181,8 +181,12 @@ function slot0.addBuildTimer(slot0)
 		slot0.buildTimers[slot1] = Timer.New(function ()
 			slot0.buildTimers[slot1]:Stop()
 
-			slot0.buildTimers[slot1].Stop.buildTimers[slot0.buildTimers[slot1]] = nil
+			slot0.buildTimers[slot1].Stop.buildTimers[slot0.buildTimers[slot1]] = 
+			-- Decompilation error in this vicinity:
+			nil
 
+
+			-- Decompilation error in this vicinity:
 			nil()
 		end, slot3, 1)
 

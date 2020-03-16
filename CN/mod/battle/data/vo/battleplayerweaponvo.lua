@@ -55,8 +55,12 @@ function ys.Battle.BattlePlayerWeaponVO.PlayFocus(slot0, slot1, slot2)
 	slot0._focusTimer = pg.TimeMgr.GetInstance():AddBattleTimer("", -1, slot1.CAST_CAM_ZOOM_IN_DURATION, function ()
 		pg.TimeMgr.GetInstance():RemoveBattleTimer(slot0._focusTimer)
 
-		pg.TimeMgr.GetInstance().RemoveBattleTimer._focusTimer = nil
+		pg.TimeMgr.GetInstance().RemoveBattleTimer._focusTimer = 
+		-- Decompilation error in this vicinity:
+		nil
 
+
+		-- Decompilation error in this vicinity:
 		nil()
 	end, true)
 end

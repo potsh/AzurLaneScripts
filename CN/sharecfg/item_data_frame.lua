@@ -24,6 +24,14 @@ pg.item_data_frame = {
 		desc = "<color=#ffffff>献给所有两年间持续奋斗在港区的指挥官们</color>\n通过参与二周年限定活动获取",
 		scene = {}
 	},
+	[103] = {
+		name = "千日的纪念",
+		time_second = 0,
+		id = 103,
+		time_limit_type = 0,
+		desc = "<color=#ffffff>愿能一起走过下一个、再下一个，再下无数个的千日~啾！</color>\n碧蓝航线港区开设1000天奖励",
+		scene = {}
+	},
 	[201] = {
 		name = "限界的挑战者",
 		time_second = 0,
@@ -104,6 +112,14 @@ pg.item_data_frame = {
 		desc = "<color=#ffffff>「奉纳信仰，为重樱之未来祈愿光明」</color>\n「浮樱影华」活动获取",
 		scene = {}
 	},
+	[306] = {
+		name = "团结之证",
+		time_second = 0,
+		id = 306,
+		time_limit_type = 0,
+		desc = "<color=#ffffff>「同志们，团结起来吧！世界将在我们手中改变！」</color>\n「北境序曲」活动获取",
+		scene = {}
+	},
 	[401] = {
 		name = "殿堂纪念：企业",
 		time_second = 0,
@@ -132,6 +148,7 @@ pg.item_data_frame = {
 		0,
 		101,
 		102,
+		103,
 		201,
 		202,
 		203,
@@ -142,6 +159,7 @@ pg.item_data_frame = {
 		303,
 		304,
 		305,
+		306,
 		401,
 		402,
 		404

@@ -82,13 +82,21 @@ function slot2(slot0)
 				slot0:hide()
 			end, SFX_PANEL)
 			onButton(slot0, slot0.minusBtn, function ()
-				slot0.count = math.max(slot0.count - 1, 1)
+				slot0.count = 
+				-- Decompilation error in this vicinity:
+				math.max(slot0.count - 1, 1)
 
+
+				-- Decompilation error in this vicinity:
 				math.max(slot0.count - 1, 1)(slot0.count, slot0.updateText)
 			end, SFX_PANEL)
 			onButton(slot0, slot0.addBtn, function ()
-				slot0.count = math.min(slot0.count + 1, MAX_BUILD_WORK_COUNT)
+				slot0.count = 
+				-- Decompilation error in this vicinity:
+				math.min(slot0.count + 1, MAX_BUILD_WORK_COUNT)
 
+
+				-- Decompilation error in this vicinity:
 				math.min(slot0.count + 1, MAX_BUILD_WORK_COUNT)(slot0.count, slot0.updateText)
 			end, SFX_PANEL)
 			onButton(slot0, slot0.maxBtn, function ()

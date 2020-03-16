@@ -162,6 +162,10 @@ function slot0.setGradeLabel(slot0)
 
 	LoadImageSpriteAsync(slot4, slot2, false)
 	LoadImageSpriteAsync(slot5, slot3, false)
+
+	if (slot0.contextData.system == SYSTEM_SCENARIO or slot10 == SYSTEM_ROUTINE or slot10 == SYSTEM_SUB_ROUTINE or slot10 == SYSTEM_DUEL) and (slot6 == slot1[1] or slot6 == slot1[2]) then
+		slot0.failTag = true
+	end
 end
 
 function slot0.displayerCommanders(slot0, slot1)
@@ -197,6 +201,8 @@ end
 function slot0.didEnter(slot0)
 	slot0:setStageName()
 
+	slot0._subShipResultCardList = {}
+	slot0._shipResultCardList = {}
 	slot0._gradeUpperLeftPos = rtf(slot0._grade).localPosition
 	rtf(slot0._grade).localPosition = Vector3(0, 25, 0)
 
@@ -361,6 +367,8 @@ function slot0.showRewardInfo(slot0)
 		slot0:displayBG()
 	end)
 
+
+	-- Decompilation error in this vicinity:
 	function ()
 		if slot0 and coroutine.status(coroutine.status) == "suspended" then
 			slot0, slot1 = coroutine.resume(coroutine.resume)
@@ -456,8 +464,6 @@ function slot0.displayShips(slot0)
 
 	slot9 = {}
 	slot10 = {}
-	slot0._subShipResultCardList = {}
-	slot0._shipResultCardList = {}
 
 	for slot14, slot15 in ipairs(slot6) do
 		slot16 = slot1[slot15.id]
@@ -779,7 +785,13 @@ function slot0.showRightBottomPanel(slot0)
 	end, SFX_PANEL)
 	onButton(slot0, slot0._confirmBtn, function ()
 		if slot0.contextData.system == SYSTEM_DUEL then
-			slot0:emit(BattleResultMediator.ON_BACK_TO_DUEL_SCENE)
+			if slot0.failTag == true then
+				slot0:emit(BattleResultMediator.OPEN_FAIL_TIP_LAYER)
+			else
+				slot0:emit(BattleResultMediator.ON_BACK_TO_DUEL_SCENE)
+			end
+		elseif slot0.failTag == true then
+			slot0:emit(BattleResultMediator.OPEN_FAIL_TIP_LAYER)
 		else
 			slot0:emit(BattleResultMediator.ON_BACK_TO_LEVEL_SCENE)
 		end

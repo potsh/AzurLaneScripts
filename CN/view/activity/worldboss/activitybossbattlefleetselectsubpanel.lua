@@ -247,15 +247,204 @@ function slot0.updateShips(slot0, slot1, slot2, slot3, slot4)
 end
 
 function slot0.updateCommanderBtn(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot2 <= slot0:getLimitNums(slot1)
+
 	setActive(slot6, false)
-	setActive(slot0:findTF("btn_clear", slot5), slot2 <= slot0:getLimitNums(slot1) and not slot0.contextData.showCommander)
+	setActive(slot0:findTF("btn_clear", slot5), slot2 <= slot0.getLimitNums(slot1) and not slot0.contextData.showCommander)
 	setActive(slot0:findTF("btn_recom", slot5), slot2 <= slot0.getLimitNums(slot1) and not slot0.contextData.showCommander)
 	setActive(slot0:findTF("commander", slot5), slot2 <= slot0.getLimitNums(slot1) and slot2 <= slot0.getLimitNums(slot1) and slot0.fleets[slot1][slot2] and slot0.contextData.showCommander)
 	setActive(slot0:findTF("blank", slot5), not (slot2 <= slot0.getLimitNums(slot1)) or (slot2 <= slot0.getLimitNums(slot1) and not (slot2 <= slot0.getLimitNums(slot1) and slot0.fleets[slot1][slot2]) and slot0.contextData.showCommander))
+
+	return
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot3 = false
+
+	if false then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 9-9, warpins: 1 ---
+		slot3 = true
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 10-11, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 12-14, warpins: 1 ---
+	slot4 = slot0.fleets[slot1][slot2]
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 15-50, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 51-53, warpins: 1 ---
+	slot13 = not slot0.contextData.showCommander
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 54-58, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 59-61, warpins: 1 ---
+	slot13 = not slot0.contextData.showCommander
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 62-66, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #9 67-68, warpins: 1 ---
+	if slot4 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 69-70, warpins: 1 ---
+		slot13 = slot0.contextData.showCommander
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #10 71-75, warpins: 3 ---
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #11 76-77, warpins: 1 ---
+	if slot3 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 78-79, warpins: 1 ---
+		if not (slot2 <= slot0.getLimitNums(slot1) and slot0.fleets[slot1][slot2]) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 80-82, warpins: 1 ---
+			slot13 = slot0.contextData.showCommander
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 83-84, warpins: 1 ---
+			slot13 = false
+
+			if false then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 85-85, warpins: 1 ---
+				slot13 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #12 86-87, warpins: 4 ---
+	--- END OF BLOCK #12 ---
+
+
+
 end
 
 function slot0.updateCommanders(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-75, warpins: 0 ---
 	for slot6 = 1, 2, 1 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-32, warpins: 2 ---
 		slot7 = slot2:getCommanderByPos(slot6)
 		slot8 = slot1:Find("pos" .. slot6)
 
@@ -263,75 +452,292 @@ function slot0.updateCommanders(slot0, slot1, slot2)
 		setActive(slot8:Find("info"), slot7)
 
 		if slot7 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 33-62, warpins: 1 ---
 			setImageSprite(slot10:Find("frame"), GetSpriteFromAtlas("weaponframes", "commander_" .. slot11))
 			GetImageSpriteFromAtlasAsync("CommanderHrz/" .. slot7:getPainting(), "", slot10:Find("mask/icon"))
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 63-75, warpins: 2 ---
 		onButton(slot0, slot9, function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-9, warpins: 1 ---
 			slot0:InvokeParent("openCommanderPanel", slot0, slot1.id)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end, SFX_PANEL)
 		onButton(slot0, slot10, function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-9, warpins: 1 ---
 			slot0:InvokeParent("openCommanderPanel", slot0, slot1.id)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end, SFX_PANEL)
+		--- END OF BLOCK #1 ---
+
+
+
 	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 76-77, warpins: 1 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 function slot0.clearFleets(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-11, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.tfFleets) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-9, warpins: 1 ---
 		_.each(slot5, function (slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-6, warpins: 1 ---
 			slot0:clearFleet(slot0)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end)
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 10-11, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 12-13, warpins: 1 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 function slot0.clearFleet(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot3 = slot0:findTF(TeamType.Vanguard, slot1)
 	slot4 = slot0:findTF(TeamType.Submarine, slot1)
 
 	if slot0:findTF(TeamType.Main, slot1) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 21-23, warpins: 1 ---
 		removeAllChildren(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 24-25, warpins: 2 ---
 	if slot3 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 26-28, warpins: 1 ---
 		removeAllChildren(slot3)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 29-30, warpins: 2 ---
 	if slot4 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 31-33, warpins: 1 ---
 		removeAllChildren(slot4)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 34-34, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
 end
 
 function slot0.OnShow(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-14, warpins: 1 ---
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf, nil, {
 		groupName = LayerWeightConst.GROUP_FORMATION_PAGE
 	})
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.OnHide(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-15, warpins: 1 ---
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf, slot0.viewParent._tf)
 	triggerToggle(slot0.commanderToggle, false)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.OnCancel(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0:InvokeParent("hideFleetEdit")
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.OnCommit(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0:InvokeParent("commitEdit")
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.OnCombat(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0:InvokeParent("commitEdit")
 	slot0:InvokeParent("commitCombat")
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.OnTrybat(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0:InvokeParent("commitEdit")
 	slot0:InvokeParent("commitTrybat")
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.OnLongPressShip(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0:InvokeParent("openShipInfo", slot1, slot2)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 return slot0

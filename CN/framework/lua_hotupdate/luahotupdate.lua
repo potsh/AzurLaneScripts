@@ -309,6 +309,8 @@ return {
 	ResetENV = function (slot0, slot1, slot2, slot3)
 		slot4 = {}
 
+
+		-- Decompilation error in this vicinity:
 		function (slot0, slot1)
 			if not slot0 or slot0[slot0] then
 				return

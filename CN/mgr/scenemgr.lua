@@ -62,6 +62,8 @@ function pg.SceneMgr.prepareLayer(slot0, slot1, slot2, slot3, slot4)
 
 	slot7 = nil
 
+
+	-- Decompilation error in this vicinity:
 	function ()
 		if #slot0 > 0 then
 			for slot4, slot5 in ipairs(table.remove(table.remove, 1).children) do

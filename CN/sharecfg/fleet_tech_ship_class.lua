@@ -61,7 +61,8 @@ pg.fleet_tech_ship_class = {
 			10134,
 			10142,
 			10113,
-			10111
+			10111,
+			10143
 		}
 	},
 	[10105] = {
@@ -128,7 +129,8 @@ pg.fleet_tech_ship_class = {
 			10210,
 			10214,
 			10215,
-			10223
+			10223,
+			10225
 		}
 	},
 	[10203] = {
@@ -663,6 +665,7 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 50,
 		nation = 2,
 		ships = {
+			20204,
 			20220,
 			20224
 		}
@@ -699,6 +702,17 @@ pg.fleet_tech_ship_class = {
 		nation = 2,
 		ships = {
 			20223
+		}
+	},
+	[20210] = {
+		shiptype = 2,
+		name = "格罗斯特级",
+		t_level = 7,
+		id = 20210,
+		t_level_1 = 47,
+		nation = 2,
+		ships = {
+			20210
 		}
 	},
 	[20301] = {
@@ -931,7 +945,8 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 70,
 		nation = 3,
 		ships = {
-			30101
+			30101,
+			30172
 		}
 	},
 	[30102] = {
@@ -1808,6 +1823,39 @@ pg.fleet_tech_ship_class = {
 			60506
 		}
 	},
+	[70101] = {
+		shiptype = 1,
+		name = "愤怒级",
+		t_level = 4,
+		id = 70101,
+		t_level_1 = 136,
+		nation = 7,
+		ships = {
+			70102
+		}
+	},
+	[70102] = {
+		shiptype = 1,
+		name = "列宁格勒级",
+		t_level = 5,
+		id = 70102,
+		t_level_1 = 134,
+		nation = 7,
+		ships = {
+			70103
+		}
+	},
+	[70103] = {
+		shiptype = 1,
+		name = "塔什干级",
+		t_level = 8,
+		id = 70103,
+		t_level_1 = 130,
+		nation = 7,
+		ships = {
+			70104
+		}
+	},
 	[70201] = {
 		shiptype = 2,
 		name = "帕拉达级",
@@ -1817,6 +1865,50 @@ pg.fleet_tech_ship_class = {
 		nation = 7,
 		ships = {
 			70201
+		}
+	},
+	[70202] = {
+		shiptype = 2,
+		name = "博加特里级",
+		t_level = 1,
+		id = 70202,
+		t_level_1 = 132,
+		nation = 7,
+		ships = {
+			70202
+		}
+	},
+	[70203] = {
+		shiptype = 2,
+		name = "恰巴耶夫级",
+		t_level = 7,
+		id = 70203,
+		t_level_1 = 135,
+		nation = 7,
+		ships = {
+			70203
+		}
+	},
+	[70501] = {
+		shiptype = 5,
+		name = "甘古特级",
+		t_level = 5,
+		id = 70501,
+		t_level_1 = 135,
+		nation = 7,
+		ships = {
+			70501
+		}
+	},
+	[70502] = {
+		shiptype = 5,
+		name = "苏维埃同盟级",
+		t_level = 8,
+		id = 70502,
+		t_level_1 = 131,
+		nation = 7,
+		ships = {
+			70505
 		}
 	},
 	[80101] = {
@@ -1988,6 +2080,7 @@ pg.fleet_tech_ship_class = {
 		20207,
 		20208,
 		20209,
+		20210,
 		20301,
 		20302,
 		20303,
@@ -2080,7 +2173,14 @@ pg.fleet_tech_ship_class = {
 		60302,
 		60501,
 		60502,
+		70101,
+		70102,
+		70103,
 		70201,
+		70202,
+		70203,
+		70501,
+		70502,
 		80101,
 		80102,
 		80103,

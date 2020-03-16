@@ -13,6 +13,8 @@ function slot0.__call(slot0, ...)
 	slot3 = #slot0.funcs
 	slot4 = nil
 
+
+	-- Decompilation error in this vicinity:
 	function (...)
 		if slot0.stopped then
 			return

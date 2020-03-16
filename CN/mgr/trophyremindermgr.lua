@@ -15,11 +15,15 @@ function pg.TrophyReminderMgr.Init(slot0, slot1)
 		slot0._go = slot0
 
 		slot0._go:SetActive(false)
-		slot0._go.transform:SetParent(GameObject.Find("Overlay/UIOverlay").transform, false)
+		slot0._go.transform:SetParent(
+		-- Decompilation error in this vicinity:
+		GameObject.Find("Overlay/UIOverlay").transform, false)
 
 		slot0._tips = slot0._go.transform:Find("trophyRemind")
 		slot0._grid = slot0._go.transform:Find("Grid_trophy")
 
+
+		-- Decompilation error in this vicinity:
 		GameObject.Find("Overlay/UIOverlay")()
 	end)
 end
@@ -38,6 +42,8 @@ function pg.TrophyReminderMgr.ShowTips(slot0, slot1)
 
 	slot2.transform:Find("content").localPosition = Vector3(-850, 0, 0)
 
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		LeanTween.moveX(rtf(slot0), -275, 0.5)
 		LeanTween.moveX(rtf(slot0), -850, 0.5):setDelay(5):setOnComplete(System.Action(function ()

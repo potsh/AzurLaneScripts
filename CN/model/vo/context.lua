@@ -54,7 +54,9 @@ function slot0.retriveLastChild(slot0)
 end
 
 function slot0.getContextByMediator(slot0, slot1)
-	return function (slot0, slot1)
+	return 
+	-- Decompilation error in this vicinity:
+	function (slot0, slot1)
 		if slot0.mediator == slot1 then
 			return slot0
 		end

@@ -438,7 +438,9 @@ function slot0.SeaUpdate(slot0)
 
 	pg.TimeMgr.GetInstance():AddBattleTimer("barrageUpdateTimer", -1, 0.033, function ()
 		for slot3 = #slot0.bulletList, 1, -1 do
-			slot5 = slot0.bulletList[slot3]._bulletData:GetSpeed()()
+			slot5 = 
+			-- Decompilation error in this vicinity:
+			slot0.bulletList[slot3]._bulletData:GetSpeed()()
 
 			if (slot1 < slot0.bulletList[slot3].GetPosition(slot4).x and slot5.x > 0) or (slot6.z < slot2 and slot5.z < 0) then
 				slot0:RemoveBullet(slot3, false)

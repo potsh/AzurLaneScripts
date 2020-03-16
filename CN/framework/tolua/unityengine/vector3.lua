@@ -371,11 +371,19 @@ slot20 = 0.7071067811865476
 function slot21(slot0)
 	if slot1(slot0.z) <  then
 		slot1.x = 0
-		slot1.y = -slot0.z * 1 / slot0.z * slot0.z(slot2)
-		slot1.z = slot0.y * 1 / slot0.z * slot0.z(slot2)
+		slot1.y = -slot0.z * 1 / 
+		-- Decompilation error in this vicinity:
+		slot0.z * slot0.z(slot2)
+		slot1.z = slot0.y * 1 / 
+		-- Decompilation error in this vicinity:
+		slot0.z * slot0.z(slot2)
 	else
-		slot1.x = -slot0.y * 1 / slot0.y * slot0.y(slot2)
-		slot1.y = slot0.x * 1 / slot0.y * slot0.y(slot2)
+		slot1.x = -slot0.y * 1 / 
+		-- Decompilation error in this vicinity:
+		slot0.y * slot0.y(slot2)
+		slot1.y = slot0.x * 1 / 
+		-- Decompilation error in this vicinity:
+		slot0.y * slot0.y(slot2)
 		slot1.z = 0
 	end
 

@@ -20,6 +20,8 @@ function slot3.Initialize(slot0)
 end
 
 function slot3.DoPrologue(slot0)
+
+	-- Decompilation error in this vicinity:
 	function ()
 		slot0._uiMediator:OpeningEffect(function ()
 			slot0._uiMediator:ShowAutoBtn()

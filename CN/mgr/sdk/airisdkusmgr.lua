@@ -32,6 +32,8 @@ function AiriLogin(slot0)
 	pg.UIMgr.GetInstance():LoadingOff()
 
 	if slot0.AiriResultCodeHandler(slot0.R_CODE) then
+
+		-- Decompilation error in this vicinity:
 		function ()
 			pg.m02:sendNotification(GAME.PLATFORM_LOGIN_DONE, {
 				user = User.New({

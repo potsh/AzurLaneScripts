@@ -138,48 +138,206 @@ function math.sin16(slot0)
 			slot0 = slot2 - slot0
 		end
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 24-28, warpins: 1 ---
+		slot0 = (slot0 > slot2 + slot3 and slot0 - slot0) or slot2 - slot0
+
 		return ((slot0 > slot2 + slot3 and slot0 - slot0) or slot2 - slot0) * (((((-2.39e-08 * ((slot0 > slot2 + slot3 and slot0 - slot0) or slot2 - slot0) * () + 2.7526e-06) * ((slot0 > slot2 + slot3 and slot0 - slot0) or slot2 - slot0) * () - 0.000198409) * ((slot0 > slot2 + slot3 and slot0 - slot0) or slot2 - slot0) * () + 0.0083333315) * ((slot0 > slot2 + slot3 and slot0 - slot0) or slot2 - slot0) * () - 0.1666666664) * ((slot0 > slot2 + slot3 and slot0 - slot0) or slot2 - slot0) * () + 1)
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 29-31, warpins: 1 ---
+		slot0 = slot0 - slot0
+
+		if slot0 - slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 32-33, warpins: 1 ---
+			slot0 = slot2 - slot0
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 end
 
 function math.atan16(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = nil
 
 	if slot0(slot0) > 1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 8-32, warpins: 1 ---
 		slot1 = -((((((((0.0028662257 * 1 / slot0 *  - 0.0161657367) * 1 / slot0 *  + 0.0429096138) * 1 / slot0 *  - 0.07528964) * 1 / slot0 *  + 0.1065626393) * 1 / slot0 *  - 0.1420889944) * 1 / slot0 *  + 0.1999355085) * 1 / slot0 *  - 0.3333314528) * 1 / slot0 *  + 1) * 1 / slot0
 
 		if FLOATSIGNBITSET(1 / slot0) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 33-36, warpins: 1 ---
 			return slot1 - slot1
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 37-40, warpins: 1 ---
 			return slot1 + slot1
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 41-59, warpins: 1 ---
 		return ((((((((0.0028662257 * slot0 * slot0 - 0.0161657367) * slot0 * slot0 + 0.0429096138) * slot0 * slot0 - 0.07528964) * slot0 * slot0 + 0.1065626393) * slot0 * slot0 - 0.1420889944) * slot0 * slot0 + 0.1999355085) * slot0 * slot0 - 0.3333314528) * slot0 * slot0 + 1) * slot0
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 60-60, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function getExpPercent(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
 	return (slot0 - slot1) / (slot2 - slot1) / 100
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function intProperties(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-10, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-8, warpins: 1 ---
 		slot0[slot4] = calcFloor(slot5)
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 9-10, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 11-11, warpins: 1 ---
 	return slot0
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 function defaultValue(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
 	if slot0 == nil then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 3-4, warpins: 1 ---
 		return slot1
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-5, warpins: 1 ---
 		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-6, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function calcFloor(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
 	return math.floor(slot0 + 1e-09)
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 return

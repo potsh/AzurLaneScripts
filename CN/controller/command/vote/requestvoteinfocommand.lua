@@ -30,6 +30,8 @@ class("RequestVoteInfoCommand", pm.SimpleCommand).execute = function (slot0, slo
 		end
 	end)
 
+
+	-- Decompilation error in this vicinity:
 	function ()
 		if slot0 and coroutine.status(coroutine.status) == "suspended" then
 			slot0, slot1 = coroutine.resume(coroutine.resume)

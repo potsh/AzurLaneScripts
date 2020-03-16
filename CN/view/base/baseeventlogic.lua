@@ -45,10 +45,36 @@ function slot0.managedTween(slot0, slot1, slot2, ...)
 	return slot3
 end
 
-function slot0.cleanManagedTween(slot0)
-	for slot4, slot5 in ipairs(slot0.tweenIdList) do
-		LeanTween.cancel(slot5)
+function slot0.cleanManagedTween(slot0, slot1)
+	slot1 = defaultValue(slot1, false)
+
+	for slot5, slot6 in ipairs(slot0.tweenIdList) do
+		if LeanTween.isTweening(slot6) then
+			LeanTween.cancel(slot6, slot1)
+		end
 	end
+
+	slot0.tweenIdList = {}
+end
+
+function slot0.pauseManagedTween(slot0)
+	for slot4, slot5 in ipairs(slot0.tweenIdList) do
+		if LeanTween.isTweening(slot5) then
+			LeanTween.pause(slot5)
+		end
+	end
+end
+
+function slot0.resumeManagedTween(slot0)
+	for slot4, slot5 in ipairs(slot0.tweenIdList) do
+		if LeanTween.isTweening(slot5) then
+			LeanTween.resume(slot5)
+		end
+	end
+end
+
+function slot0.AddLeanTween(slot0, slot1)
+	slot0.tweenIdList[#slot0.tweenIdList + 1] = slot1().uniqueId
 end
 
 return slot0

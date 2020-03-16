@@ -158,6 +158,11 @@ ys.Battle.BattleAttr = {
 		end
 	end,
 	SetEnemyAttr = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = slot0._tmpData
+		slot3 = slot0._level or 1
 		slot0._attr = slot0._attr or {}
 		slot0._attr or .battleUID = slot0:GetUniqueID()
 		slot0._attr or .level = slot0._level or 1
@@ -181,105 +186,740 @@ ys.Battle.BattleAttr = {
 		slot0._attr or .labelTag = {}
 
 		slot0:SetBaseAttr()
+
+		return
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 5-5, warpins: 1 ---
+		slot3 = 1
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 6-8, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 9-9, warpins: 1 ---
+		slot4 = 
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 10-17, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #5 18-18, warpins: 1 ---
+		slot1 = 0
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #6 19-109, warpins: 2 ---
+		--- END OF BLOCK #6 ---
+
+
+
 	end,
 	SetAircraftAttFromMother = function (slot0, slot1)
-		slot0._attr = slot0._attr or {}
-		slot0._attr or .battleUID = slot0:GetUniqueID()
-		slot0._attr or .hostUID = slot1:GetUniqueID()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if not slot0._attr then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-4, warpins: 1 ---
+			slot2 = {}
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 5-19, warpins: 2 ---
+		slot0._attr = slot2
+		slot2.battleUID = slot0:GetUniqueID()
+		slot2.hostUID = slot1:GetUniqueID()
 
 		if type(slot1._attr.id) == "number" then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 20-22, warpins: 1 ---
 			slot2.id = slot1._attr.id
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 23-27, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 28-32, warpins: 0 ---
 		for slot6, slot7 in ipairs(slot0.AttrListInheritance) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 28-30, warpins: 1 ---
 			slot2[slot7] = slot1._attr[slot7]
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 31-32, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 33-47, warpins: 1 ---
 		slot2.armorType = 0
 		slot2.labelTag = setmetatable({}, {
 			__index = slot1._attr.labelTag
 		})
 		slot2.comboTag = "combo_" .. slot2.hostUID
+
+		return
+		--- END OF BLOCK #4 ---
+
+
+
 	end,
 	SetAircraftAttFromTemp = function (slot0)
-		slot0._attr = slot0._attr or {}
-		slot0._attr.velocity = slot0._attr.velocity or ys.Battle.BattleFormulas.ConvertAircraftSpeed(slot0._tmpData.speed)
-		slot0._attr.maxHP = slot0._attr.maxHP or slot0._tmpData.max_hp + slot0._tmpData.hp_growth / 1000 * ((slot0._attr.level or 1) - 1) + slot0:GetCurrent("hiveExtraHP")
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if not slot0._attr then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-4, warpins: 1 ---
+			slot1 = {}
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 5-15, warpins: 2 ---
+		slot0._attr = slot1
+		slot1 = slot0:GetCurrent("hiveExtraHP")
+		slot2 = slot0._attr
+
+		if not slot0._attr.velocity then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 16-22, warpins: 1 ---
+			slot3 = ys.Battle.BattleFormulas.ConvertAircraftSpeed(slot0._tmpData.speed)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 23-27, warpins: 2 ---
+		slot2.velocity = slot3
+
+		if not slot0._attr.level then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 28-28, warpins: 1 ---
+			slot2 = 1
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 29-33, warpins: 2 ---
+		slot3 = slot0._attr
+
+		if not slot0._attr.maxHP then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 34-42, warpins: 1 ---
+			slot4 = slot0._tmpData.max_hp + slot0._tmpData.hp_growth / 1000 * (slot2 - 1) + slot1
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 43-56, warpins: 2 ---
+		slot3.maxHP = slot4
 		slot0._attr.crashDMG = slot0._tmpData.crash_DMG
 		slot0._attr.dodge = slot0._tmpData.dodge
 		slot0._attr.dodgeLimit = slot0._tmpData.dodge_limit
+
+		return
+		--- END OF BLOCK #4 ---
+
+
+
 	end,
 	FlashByBuff = function (slot0, slot1, slot2)
-		slot0._attr[slot1] = slot2 + (slot0._baseAttr[slot1] or 0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot3 = slot0._attr
+
+		if not slot0._baseAttr[slot1] then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 6-6, warpins: 1 ---
+			slot4 = 0
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 7-16, warpins: 2 ---
+		slot3[slot1] = slot2 + slot4
 
 		if string.find(slot1, slot0.FROM_TAG_EHC_KEY) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-21, warpins: 1 ---
 			slot3 = 0
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 22-35, warpins: 0 ---
 			for slot7, slot8 in pairs(slot0._attr) do
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 22-29, warpins: 1 ---
 				if string.find(slot7, slot0.FROM_TAG_EHC_KEY) and slot8 ~= 0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 32-33, warpins: 1 ---
 					slot3 = 1
 
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 34-34, warpins: 1 ---
 					break
+					--- END OF BLOCK #1 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 34-35, warpins: 3 ---
+				--- END OF BLOCK #1 ---
+
+
+
 			end
 
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 36-42, warpins: 2 ---
 			slot0:SetCurrent(slot0.FROM_TAG_EHC_KEY, slot3)
+			--- END OF BLOCK #2 ---
+
+
+
 		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 43-43, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
 	end,
 	FlashVelocity = function (slot0, slot1, slot2)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-30, warpins: 1 ---
 		slot0:SetCurrent("velocity", Mathf.Clamp(slot0._baseAttr.velocity * slot1 + slot2, slot4, slot3))
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	HasSonar = function (slot0)
-		return slot0._attr.sonarRange * slot0._attr.sonarInterval * slot0._attr.sonarDuration ~= 0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-10, warpins: 1 ---
+		if slot0._attr.sonarRange * slot0._attr.sonarInterval * slot0._attr.sonarDuration == 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 11-12, warpins: 1 ---
+			slot2 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 13-13, warpins: 1 ---
+			slot2 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 14-14, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #1 ---
+
+
+
 	end,
 	SetCurrent = function (slot0, slot1, slot2)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
 		slot0._attr[slot1] = slot2
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	GetCurrent = function (slot0, slot1)
-		return slot0._attr[slot1] or 0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		if not slot0._attr[slot1] then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 5-5, warpins: 1 ---
+			slot2 = 0
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 6-6, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #1 ---
+
+
+
 	end,
 	GetBase = function (slot0, slot1)
-		return slot0._baseAttr[slot1] or 0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		if not slot0._baseAttr[slot1] then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 5-5, warpins: 1 ---
+			slot2 = 0
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 6-6, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #1 ---
+
+
+
 	end,
 	GetCurrentTags = function (slot0)
-		return slot0._attr.labelTag or {}
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		if not slot0._attr.labelTag then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 5-5, warpins: 1 ---
+			slot1 = {}
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 6-6, warpins: 2 ---
+		return slot1
+		--- END OF BLOCK #1 ---
+
+
+
 	end,
 	Increase = function (slot0, slot1, slot2)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-2, warpins: 1 ---
 		if slot2 then
-			slot0._attr[slot1] = (slot0._attr[slot1] or 0) + slot2
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 3-7, warpins: 1 ---
+			slot3 = slot0._attr
+
+			if not slot0._attr[slot1] then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 8-8, warpins: 1 ---
+				slot4 = 0
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 9-10, warpins: 2 ---
+			slot3[slot1] = slot4 + slot2
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 11-11, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end,
 	RatioIncrease = function (slot0, slot1, slot2)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-2, warpins: 1 ---
 		if slot2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 3-11, warpins: 1 ---
 			slot0._attr[slot1] = slot0._attr[slot1] + (slot0._baseAttr[slot1] * slot2) / 10000
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 12-12, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end,
 	GetTagAttr = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-8, warpins: 1 ---
 		slot3 = {}
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 9-16, warpins: 0 ---
 		for slot7, slot8 in ipairs(slot2) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 9-14, warpins: 1 ---
 			slot3[slot0.TAG_EHC_KEY .. slot8] = true
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 15-16, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 17-21, warpins: 1 ---
 		slot4 = 1
 
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 22-32, warpins: 0 ---
 		for slot8, slot9 in pairs(slot3) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 22-28, warpins: 1 ---
 			if slot0:GetCurrent(slot8) ~= 0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 29-30, warpins: 1 ---
 				slot4 = slot4 * (1 + slot10)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 31-32, warpins: 3 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 33-41, warpins: 1 ---
 		if slot0.GetCurrent(slot1, slot0.FROM_TAG_EHC_KEY) > 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 42-58, warpins: 1 ---
 			slot7 = slot0.FROM_TAG_EHC_KEY .. slot6 .. "_"
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 59-75, warpins: 0 ---
 			for slot12, slot13 in pairs(slot8) do
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 59-61, warpins: 1 ---
 				if slot13 > 0 and slot0.GetCurrent(slot1, slot7 .. slot12) ~= 0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 72-73, warpins: 1 ---
 					slot4 = slot4 * (1 + slot15)
+					--- END OF BLOCK #0 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 74-75, warpins: 4 ---
+				--- END OF BLOCK #1 ---
+
+
+
 			end
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #5 76-76, warpins: 2 ---
 		return slot4
+		--- END OF BLOCK #5 ---
+
+
+
 	end
 }
 slot1 = ys.Battle.BattleConst
@@ -289,18 +929,55 @@ slot1 = ys.Battle.BattleConst
 ()["InsertInheritedAttr"](ys.Battle.BattleConfig.SHIP_TYPE_ACCURACY_ENHANCE)
 
 function ys.Battle.BattleAttr.SetAirFighterAttr(slot0, slot1)
-	slot0._attr = slot0._attr or {}
-	slot3 = ys.Battle.BattleDataProxy.GetInstance()
-	slot0._attr or .battleUID = slot0:GetUniqueID()
-	slot0._attr or .hostUID = 0
-	slot0._attr or .id = 0
-	slot0._attr or .level = slot3:GetDungeonLevel()
-	slot0._attr or .formulaLevel = slot3.GetDungeonLevel()
 
-	if slot3:IsCompletelyRepress() then
-		slot2.formulaLevel = math.max(slot2.formulaLevel - 10, 1)
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
+	if not slot0._attr then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-4, warpins: 1 ---
+		slot2 = {}
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-28, warpins: 2 ---
+	slot0._attr = slot2
+	slot3 = ys.Battle.BattleDataProxy.GetInstance()
+	slot2.battleUID = slot0:GetUniqueID()
+	slot2.hostUID = 0
+	slot2.id = 0
+	slot2.level = slot3:GetDungeonLevel()
+	slot2.formulaLevel = slot3.GetDungeonLevel()
+
+	if slot3:IsCompletelyRepress() then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 29-35, warpins: 1 ---
+		slot2.formulaLevel = math.max(slot2.formulaLevel - 10, 1)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 36-83, warpins: 2 ---
 	slot2.maxHP = math.floor(slot1.max_hp + slot1.hp_growth * (slot4 - 1) / 1000)
 	slot2.attackRating = slot1.accuracy + slot1.ACC_growth * (slot4 - 1) / 1000
 	slot2.dodge = slot1.dodge
@@ -317,6 +994,12 @@ function ys.Battle.BattleAttr.SetAirFighterAttr(slot0, slot1)
 	slot2.velocity = ys.Battle.BattleFormulas.ConvertAircraftSpeed(slot1.speed)
 	slot2.repressReduce = 1
 	slot2.crashDMG = slot1.crash_DMG
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 return

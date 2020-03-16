@@ -688,8 +688,12 @@ function slot0.showMsgBox(slot0, slot1, slot2, slot3)
 					return
 				end
 
-				slot0 = math.max(slot0 - 1, 1)
+				slot0 = math.max(
+				-- Decompilation error in this vicinity:
+				slot0 - 1, 1)
 
+
+				-- Decompilation error in this vicinity:
 				slot0 - 1()
 			end)
 			onButton(slot0, slot0:findTF("max", slot5), function ()

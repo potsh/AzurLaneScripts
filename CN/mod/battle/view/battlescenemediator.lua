@@ -32,6 +32,7 @@ function slot5.Init(slot0)
 	slot0._aircraftList = {}
 	slot0._areaList = {}
 	slot0._shelterList = {}
+	slot0._arcEffectList = {}
 	slot0._bulletContainer = GameObject.Find("BulletContainer")
 	slot0._fxPool = slot0.Battle.BattleFXPool.GetInstance()
 
@@ -180,7 +181,7 @@ function slot5.onRemoveBullet(slot0, slot1)
 end
 
 function slot5.onAddArea(slot0, slot1)
-	slot0:AddArea(slot1.Data.area, slot1.Data.FXID, slot1.Data.isStatic)
+	slot0:AddArea(slot1.Data.area, slot1.Data.FXID)
 end
 
 function slot5.onRemoveArea(slot0, slot1)
@@ -289,6 +290,10 @@ function slot5.Update(slot0)
 		slot5:Update()
 	end
 
+	for slot4, slot5 in ipairs(slot0._arcEffectList) do
+		slot5:Update()
+	end
+
 	slot0._popNumPool:Update()
 	slot0:UpdateAntiAirArea()
 	slot0:UpdateFlagShipMark()
@@ -325,10 +330,22 @@ function slot5.Pause(slot0)
 			slot6[slot10]:Pause()
 		end
 	end
+
+	for slot4, slot5 in ipairs(slot0._arcEffectList) do
+		for slot10 = 0, slot5._go:GetComponentsInChildren(typeof(ParticleSystem)).Length - 1, 1 do
+			slot6[slot10]:Pause()
+		end
+	end
 end
 
 function slot5.Resume(slot0)
 	for slot4, slot5 in pairs(slot0._areaList) do
+		for slot10 = 0, slot5._go:GetComponentsInChildren(typeof(ParticleSystem)).Length - 1, 1 do
+			slot6[slot10]:Play()
+		end
+	end
+
+	for slot4, slot5 in ipairs(slot0._arcEffectList) do
 		for slot10 = 0, slot5._go:GetComponentsInChildren(typeof(ParticleSystem)).Length - 1, 1 do
 			slot6[slot10]:Play()
 		end
@@ -451,16 +468,15 @@ function slot5.AddAirCraftCharacter(slot0, slot1)
 	slot0._aircraftList[slot1:GetUnitData():GetUniqueID()] = slot1
 end
 
-function slot5.AddArea(slot0, slot1, slot2, slot3)
-	slot5 = slot0.Battle.BattleEffectArea.New(slot0._fxPool:GetFX(slot2), slot1)
+function slot5.AddArea(slot0, slot1, slot2)
+	slot3 = slot0._fxPool:GetFX(slot2)
+	slot5 = false
 
-	if slot3 then
-		slot5:SetStatic()
-	else
-		slot5:ResetScale()
+	if pg.effect_offset[slot2] and slot4.top_cover_offset == true then
+		slot5 = true
 	end
 
-	slot0._areaList[slot1:GetUniqueID()] = slot5
+	slot0._areaList[slot1:GetUniqueID()] = slot0.Battle.BattleEffectArea.New(slot3, slot1, slot5)
 end
 
 function slot5.RemoveArea(slot0, slot1)
@@ -468,6 +484,24 @@ function slot5.RemoveArea(slot0, slot1)
 		slot0._areaList[slot1].Dispose(slot2)
 
 		slot0._areaList[slot1] = nil
+	end
+end
+
+function slot5.AddArcEffect(slot0, slot1, slot2, slot3, slot4)
+	slot6 = slot0.Battle.BattleArcEffect.New(slot5, slot2, slot3, slot4)
+
+	slot6:ConfigCallback(slot7)
+	table.insert(slot0._arcEffectList, slot6)
+end
+
+function slot5.RemoveArcEffect(slot0, slot1)
+	for slot5, slot6 in ipairs(slot0._arcEffectList) do
+		if slot6 == slot1 then
+			slot6:Dispose()
+			table.remove(slot0._arcEffectList, slot5)
+
+			break
+		end
 	end
 end
 
@@ -525,6 +559,12 @@ function slot5.Clear(slot0)
 	end
 
 	slot0._areaList = nil
+
+	for slot5, slot6 in ipairs(slot0._arcEffectList) do
+		slot6:Dispose()
+	end
+
+	slot0._arcEffectList = nil
 
 	slot0.Battle.BattleCharacterFXContainersPool.GetInstance():Clear()
 	slot0._popNumPool:Clear()

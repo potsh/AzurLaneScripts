@@ -11,6 +11,8 @@ slot2 = pg.item_data_template
 slot3 = pg.shop_template
 
 function slot4(slot0)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0._go = slot0
 		slot0._tf = tf(slot0)
@@ -44,6 +46,8 @@ function slot4(slot0)
 end
 
 function slot5(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0._go = slot0
 		slot0._tf = tf(slot0)
@@ -147,6 +151,8 @@ function slot5(slot0, slot1)
 end
 
 function slot6(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0._go = slot0
 		slot0._tf = tf(slot0)

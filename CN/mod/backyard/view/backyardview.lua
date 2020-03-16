@@ -505,6 +505,8 @@ function slot0.furnitureBeginDrag(slot0, slot1)
 
 	slot0.decoratePanelCG.blocksRaycasts = false
 
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0:setPreSelectedParent(slot0.furnitureModals[slot0.id]._tf)
 		slot0.furnitureModals[slot0.id].SetAsLastSibling(slot1)

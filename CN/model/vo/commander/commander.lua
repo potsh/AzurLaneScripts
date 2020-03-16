@@ -413,7 +413,9 @@ function slot0.getDestoryedExp(slot0, slot1)
 		slot2 = slot2 + slot0:getConfigExp(slot6)
 	end
 
-	slot7, slot8 = function ()
+	slot7, slot8 = 
+	-- Decompilation error in this vicinity:
+	function ()
 		slot1 = 0
 
 		for slot6, slot7 in ipairs(slot2) do

@@ -813,7 +813,11 @@ function slot0.count_five(slot0, slot1)
 			slot1.count_timer.countingfive_flag = false
 
 			setActive(false.BG, false)
-			false.BG:setActionSDmodel("idol")
+			false.BG:setActionSDmodel(
+			-- Decompilation error in this vicinity:
+			"idol")
+
+			-- Decompilation error in this vicinity:
 			"idol"()
 		end
 	end, 1, -1)

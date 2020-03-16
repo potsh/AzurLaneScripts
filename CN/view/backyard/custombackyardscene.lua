@@ -515,14 +515,59 @@ function slot0.setFurnitureParent(slot0, slot1)
 end
 
 function slot0.getGridTpl(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot2 = (slot1 and slot0.backyardPoolMgr.POOL_NAME.GRID) or slot0.backyardPoolMgr.POOL_NAME.WALL
+
 	SetParent(slot0.backyardPoolMgr:Dequeue((slot1 and slot0.backyardPoolMgr.POOL_NAME.GRID) or slot0.backyardPoolMgr.POOL_NAME.WALL), slot0.furContain)
 
 	return slot0.backyardPoolMgr.Dequeue((slot1 and slot0.backyardPoolMgr.POOL_NAME.GRID) or slot0.backyardPoolMgr.POOL_NAME.WALL)
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 3-7, warpins: 1 ---
+	if not slot0.backyardPoolMgr.POOL_NAME.GRID then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 8-10, warpins: 2 ---
+		slot2 = slot0.backyardPoolMgr.POOL_NAME.WALL
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 11-20, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 function slot0.loadboatModal(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-13, warpins: 1 ---
 	PoolMgr.GetInstance():GetSpineChar(slot1:getPrefab(), true, function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-6, warpins: 1 ---
 		if not IsNil(slot0._tf) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 7-31, warpins: 1 ---
 			slot0.name = "char_" .. slot1.id
 			slot1 = BackYardShipModel.New(slot0, BackYardShipModel.New)
 			slot0.shipModels[slot1.id] = slot1
@@ -530,133 +575,610 @@ function slot0.loadboatModal(slot0, slot1, slot2)
 			slot1:onLoadSlotModel(slot0)
 
 			if not slot1:hasInterActionFurnitrue() then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 32-39, warpins: 1 ---
 				slot0:emit(BackyardMainMediator.ADD_BOAT_MOVE, slot1.id)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 40-42, warpins: 3 ---
 		if slot2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 43-44, warpins: 1 ---
 			slot2()
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 45-45, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
 	end)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.setInterAction(slot0, slot1, slot2, slot3, slot4)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
 	if slot0.shipModels[slot2] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-10, warpins: 1 ---
 		slot6 = slot0.furnitureModals[slot3]
 		slot7 = slot0.furnitureVOs[slot3]
 
 		if slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 11-16, warpins: 1 ---
 			slot5:updateSpineInterAction(slot7, slot6)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-26, warpins: 1 ---
 			slot5:updateInterActionPos(slot7, slot6, slot4)
 			slot5:InterActionSortSibling(slot3)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 27-27, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.boatMove(slot0, slot1, slot2, slot3)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0.shipModels[slot1]:move(slot2, slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.cancelShipMove(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0.shipModels[slot1]:cancelMove()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.updateShipPos(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot0.boatVOs[slot1.id]:setPosition(slot1:getPosition())
 
 	if slot0.shipModels[slot1.id] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 16-29, warpins: 1 ---
 		slot3:updateBoatVO(slot0.boatVOs[slot1.id])
 		slot3:updatePosition(slot0.getLocalPos(slot2))
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 30-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.acquireEffect(slot0, slot1, slot2, slot3)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
 	if slot0.shipModels[slot1] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-9, warpins: 1 ---
 		slot4:acquireEffect(slot2, slot3)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 10-10, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.addBoatInimacyAndMoney(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
 	if slot0.shipModels[slot1.id] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-18, warpins: 1 ---
 		slot2:updateInimacy(slot1:hasInimacy())
 		slot2:updateMoney(slot1:hasMoney())
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 19-29, warpins: 1 ---
 		slot0.boatVOs[slot1.id].setInimacy(slot3, slot1.inimacy)
 		slot0.boatVOs[slot1.id]:setMoney(slot1.money)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 30-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.exitBoat(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot0.shipModels[slot1.id].dispose(slot2)
 	PoolMgr.GetInstance():ReturnSpineChar(slot3, slot0.shipModels[slot1.id].go)
 
 	slot0.shipModels[slot1.id] = nil
 	slot0.boatVOs[slot1.id] = nil
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.clearUI(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-22, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.shipModels) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-20, warpins: 1 ---
 		slot5:dispose()
 		PoolMgr.GetInstance():ReturnSpineChar(slot0.boatVOs[slot4]:getPrefab(), slot5.go)
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 21-22, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 23-26, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 27-60, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.furnBottomGrids) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 27-30, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 31-58, warpins: 0 ---
 		for slot9, slot10 in pairs(slot5) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 31-35, warpins: 1 ---
 			if not IsNil(slot10) then
-				slot0.backyardPoolMgr:Enqueue((slot0.furnitureVOs[slot4]:isFloor() and slot0.backyardPoolMgr.POOL_NAME.GRID) or slot0.backyardPoolMgr.POOL_NAME.WALL, slot10)
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 36-42, warpins: 1 ---
+				if not slot0.furnitureVOs[slot4]:isFloor() or not slot0.backyardPoolMgr.POOL_NAME.GRID then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 48-50, warpins: 2 ---
+					slot11 = slot0.backyardPoolMgr.POOL_NAME.WALL
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 51-56, warpins: 2 ---
+				slot0.backyardPoolMgr:Enqueue(slot11, slot10)
+				--- END OF BLOCK #1 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 57-58, warpins: 3 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 59-60, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 61-64, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 65-79, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.furnitureModals) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 65-69, warpins: 1 ---
 		if not IsNil(slot5) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 70-77, warpins: 1 ---
 			slot0.backyardPoolMgr:Enqueue(slot0.backyardPoolMgr.POOL_NAME.FURNITURE, slot5)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 78-79, warpins: 3 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 80-84, warpins: 1 ---
 	if not IsNil(slot0.furContain) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 85-99, warpins: 1 ---
 		removeAllChildren(slot0.furContain:Find("shadow"))
 		setActive(slot0.furContain:Find("ship_grid"), false)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 100-104, warpins: 2 ---
 	if not IsNil(slot0.carpetContain) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 105-107, warpins: 1 ---
 		removeAllChildren(slot0.carpetContain)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 108-112, warpins: 2 ---
 	if not IsNil(slot0.wallContain) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 113-115, warpins: 1 ---
 		removeAllChildren(slot0.wallContain)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #9 116-120, warpins: 2 ---
 	if not IsNil(slot0.floorContain) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 121-123, warpins: 1 ---
 		removeAllChildren(slot0.floorContain)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #10 124-128, warpins: 2 ---
 	if not IsNil(slot0.baseBG) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 129-131, warpins: 1 ---
 		Destroy(slot0.baseBG)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #11 132-136, warpins: 2 ---
 	if not IsNil(slot0.wallBG) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 137-146, warpins: 1 ---
 		UIUtil.ClearImageSprite(go(slot0.wallBG))
 		setActive(slot0.wallBG, false)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #12 147-151, warpins: 2 ---
 	if not IsNil(slot0.floorBG) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 152-161, warpins: 1 ---
 		UIUtil.ClearImageSprite(go(slot0.floorBG))
 		setActive(slot0.floorBG, false)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #13 162-166, warpins: 2 ---
 	if not IsNil(slot0.floorGrid) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 167-170, warpins: 1 ---
 		setActive(slot0.floorGrid, false)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #14 171-171, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
+
+
+
 end
 
 function slot0.willExit(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot0:clearUI()
 	PoolMgr.GetInstance():ReturnUI("BackYardUI", slot0.backyardui.gameObject)
 	slot0.backyardPoolMgr:clear()
 
 	slot0.backyardPoolMgr = nil
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 return slot0

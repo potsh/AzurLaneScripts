@@ -6,10 +6,6 @@ function slot0.getUIName(slot0)
 	return "dailylevelui"
 end
 
-function slot0.getBGM(slot0)
-	return "level"
-end
-
 function slot0.init(slot0)
 	slot0.topPanel = slot0:findTF("blur_panel/adapt/top")
 	slot0.backBtn = slot0:findTF("back_button", slot0.topPanel)
@@ -80,13 +76,11 @@ function slot0.didEnter(slot0)
 		slot0:flipToSpecificCard(slot0:getNextCardId(false))
 	end)
 	slot0:displayDailyLevels()
-
-	if slot0.contextData.dailyLevelId then
-		slot0:tryOpenDesc(slot0.contextData.dailyLevelId)
-	else
-		slot0:enableDescMode(false)
-	end
-
+	slot0:enableDescMode(false, function ()
+		if slot0.contextData.dailyLevelId then
+			slot0:tryOpenDesc(slot0.contextData.dailyLevelId)
+		end
+	end)
 	slot0:tryPlayGuide()
 end
 
@@ -282,26 +276,24 @@ function slot0.updateStage(slot0, slot1)
 	end, SFX_PANEL)
 end
 
-function slot0.enableDescMode(slot0, slot1)
+function slot0.enableDescMode(slot0, slot1, slot2)
 	slot0.descMode = slot1
 
 	setActive(slot0:findTF("help_btn"), not slot1)
 
-	function slot2(slot0, slot1, slot2, slot3)
+	function slot3(slot0, slot1, slot2)
 		if LeanTween.isTweening(go(slot0)) then
 			LeanTween.cancel(go(slot0))
 		end
 
-		slot5 = rtf(slot0)
-
-		LeanTween.moveX(slot5, slot1, slot3 or 0.3):setEase(LeanTweenType.linear):setOnComplete(System.Action(function ()
+		LeanTween.moveX(rtf(slot0), slot1, 0.3):setEase(LeanTweenType.linear):setOnComplete(System.Action(function ()
 			if slot0 then
 				slot0()
 			end
 		end))
 	end
 
-	function slot3()
+	function slot4()
 		for slot3, slot4 in pairs(slot0.dailyLevelTFs) do
 			setButtonEnabled(slot4, not slot1)
 
@@ -325,7 +317,7 @@ function slot0.enableDescMode(slot0, slot1)
 		end
 	end
 
-	function slot4()
+	function slot5()
 		setActive(slot0.listPanel, true)
 		setActive(slot0.content, true)
 		setActive(slot0.descPanel, )
@@ -333,16 +325,16 @@ function slot0.enableDescMode(slot0, slot1)
 	end
 
 	if slot1 then
+		slot5()
 		slot4()
-		slot3()
-		slot2(slot0.listPanel, -622, function ()
-			slot0(slot1.descMain, 0)
+		slot3(slot0.listPanel, -622, function ()
+			slot0(slot1.descMain, 0, )
 		end)
 	else
+		slot5()
 		slot4()
-		slot3()
-		slot2(slot0.listPanel, 0)
-		slot2(slot0.descMain, -1342)
+		slot3(slot0.listPanel, 0)
+		slot3(slot0.descMain, -1342, slot2)
 	end
 end
 

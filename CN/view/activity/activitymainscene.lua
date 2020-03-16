@@ -382,6 +382,78 @@ slot1 = {
 	[ActivityConst.SKIN_KISARAGI] = {
 		className = "SkinKisaragiPage",
 		uiName = "SkinKisaragiPage"
+	},
+	[ActivityConst.MONOPOLY_2020] = {
+		className = "Monopoly.MonopolyPage",
+		uiName = "MonopolyPage"
+	},
+	[ActivityConst.MUTSUKI_NEWYEAR_SKIN_ID] = {
+		className = "MutsukiNewYearSkinPage",
+		uiName = "MutsukiNewYearSkinPage"
+	},
+	[ActivityConst.MORAN_KR_PT_ID] = {
+		className = "MoranPtPage",
+		uiName = "MoranPtPage"
+	},
+	[ActivityConst.MORAN_KR_PREVIEW_ID] = {
+		className = "MoranMainPage",
+		uiName = "MoranMainPage"
+	},
+	[ActivityConst.UNICORN_STARDUST] = {
+		className = "UnicornStardustPage",
+		uiName = "UnicornStardustPage"
+	},
+	[ActivityConst.TEATIME_TW] = {
+		className = "TeaTimePuzzlePage",
+		uiName = "TeaTimePuzzlePage"
+	},
+	[ActivityConst.SPRING_FES_MAIN_TW] = {
+		className = "SpringFesMainPage",
+		uiName = "SpringFesMainPage"
+	},
+	[ActivityConst.SICHUANOPERA] = {
+		className = "SiChuanOperaPage",
+		uiName = "SichuanOperaPage"
+	},
+	[ActivityConst.VALENTINE] = {
+		className = "ValentinePage",
+		uiName = "ValentinePage"
+	},
+	[ActivityConst.CARD_PAIR_FX_PAGE] = {
+		className = "CardPairFXPage",
+		uiName = "CardPairFXPage"
+	},
+	[ActivityConst.MAOZI_PT] = {
+		className = "MaoziPtPage",
+		uiName = "MaoziPtPage"
+	},
+	[ActivityConst.SANDIEGO_REFORM_RE] = {
+		className = "SandiegoReformPage",
+		uiName = "sandiegoreformpage"
+	},
+	[ActivityConst.FALLENWING_CHT] = {
+		className = "FallenWingMainPage",
+		uiName = "FallenWingMainPage"
+	},
+	[ActivityConst.SN_MAIN_PAGE] = {
+		className = "SNMainPage",
+		uiName = "SNMainPage"
+	},
+	[ActivityConst.SN_PT_PAGE] = {
+		className = "SNPtPage",
+		uiName = "SNPtPage"
+	},
+	[ActivityConst.LONGXIANG_ACTIVITY_PT_ID] = {
+		className = "RyujoPtPage",
+		uiName = "ryujoptpage"
+	},
+	[ActivityConst.SOFMAP_PT_PAGE] = {
+		className = "SofmapPTPage",
+		uiName = "SofmapPTPage"
+	},
+	[ActivityConst.MATCH3_PAGE] = {
+		className = "Match3Page",
+		uiName = "match3page"
 	}
 }
 slot2 = {
@@ -397,10 +469,6 @@ end
 
 function slot0.getUIName(slot0)
 	return "ActivityMainUI"
-end
-
-function slot0.getBGM(slot0)
-	return "main-newyear"
 end
 
 function slot0.onBackPressed(slot0)

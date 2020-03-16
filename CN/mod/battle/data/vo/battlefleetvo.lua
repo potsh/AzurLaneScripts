@@ -282,6 +282,10 @@ function slot7.GetFlagShip(slot0)
 	return slot0._flagShip
 end
 
+function slot7.GetLeaderShip(slot0)
+	return slot0._scoutList[1]
+end
+
 function slot7.GetUnitList(slot0)
 	return slot0._unitList
 end
@@ -552,12 +556,12 @@ function slot7.FleetWarcry(slot0)
 	end
 
 	slot1:DispatchVoice(slot5)
-	slot1:DispatchChat(slot0.Battle.BattleDataFunction.GetWords(slot1:GetSkinID(), slot5, slot1:GetDefaultSkinID()), 2.5, "battle")
+	slot1:DispatchChat(slot0.Battle.BattleDataFunction.GetWords(slot1:GetSkinID(), slot5, slot6), 2.5, "battle")
 end
 
 function slot7.SubWarcry(slot0)
 	slot0:GetSubList()[1].DispatchVoice(slot1, slot2)
-	slot0.GetSubList()[1]:DispatchChat(slot0.Battle.BattleDataFunction.GetWords(slot0.GetSubList()[1].GetSkinID(slot1), slot2, slot0.GetSubList()[1].GetDefaultSkinID(slot1)), 2.5, "battle")
+	slot0.GetSubList()[1]:DispatchChat(slot0.Battle.BattleDataFunction.GetWords(slot0.GetSubList()[1].GetSkinID(slot1), slot2, slot3), 2.5, "battle")
 end
 
 function slot7.SetWeaponBlock(slot0, slot1)
@@ -717,8 +721,8 @@ function slot7.CoupleEncourage(slot0)
 		slot4[slot14.nationality] = (slot4[slot14.nationality] or 0) + 1
 		slot5[slot20] = (slot5[slot1.Battle.BattleDataFunction.GetPlayerShipSkinDataFromID(slot12:GetSkinID()).illustrator] or 0) + 1
 
-		if #slot0.GetWords(slot12:GetSkinID(), "couple_encourage", slot12:GetDefaultSkinID()) > 0 then
-			slot6[slot12] = slot22
+		if #slot0.GetWords(slot12:GetSkinID(), "couple_encourage", slot12:GetIntimacy()) > 0 then
+			slot6[slot12] = slot23
 		end
 	end
 
@@ -1001,6 +1005,10 @@ function slot7.Blinding(slot0, slot1)
 	slot0:DispatchEvent(slot0.Event.New(slot1.FLEET_BLIND, {
 		isBlind = slot1
 	}))
+end
+
+function slot7.UpdateHorizon(slot0)
+	slot0:DispatchEvent(slot0.Event.New(slot1.FLEET_HORIZON_UPDATE, {}))
 end
 
 return

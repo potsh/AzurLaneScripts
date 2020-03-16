@@ -51,21 +51,30 @@ slot0.TypeRotation = 1
 slot0.TypeFlat = 2
 
 function slot0.Ctor(slot0, slot1, slot2)
+	if not slot2 then
+		slot3 = slot0
+	end
+
+	slot3 = slot2 or slot0
 	slot2 or slot0.tf = slot1
 	slot2 or slot0.propertyTFs = findTF(slot2 or slot0.tf, "property")
 	slot2 or slot0.drawTF = findTF(slot2 or slot0.tf, "property/draw")
-	slot2 or slot0.drawPolygon = slot2 or slot0.drawTF:GetComponent("DrawPolygon")
-	slot2 or slot0.drawTF2 = findTF(slot2 or slot0.tf, "property/draw_2")
+	slot3.drawPolygon = slot2 or slot0.drawTF:GetComponent("DrawPolygon")
+	slot3.drawTF2 = findTF(slot3.tf, "property/draw_2")
 
-	if slot2 or slot0.drawTF2 then
+	if slot3.drawTF2 then
 		slot0.drawPolygon2 = slot0.drawTF2:GetComponent("DrawPolygon")
 	end
 end
 
 function slot0.initProperty(slot0, slot1, slot2)
-	slot0.type = slot2 or slot0.TypeRotation
+	if not slot2 then
+		slot3 = slot0.TypeRotation
+	end
 
-	slot0:initRadar(pg.ship_data_statistics[slot1].grades)
+	slot0.type = slot3
+
+	slot0:initRadar(ShipGroup.GetGroupConfig(slot3).property_hexagon)
 end
 
 function slot0.initRadar(slot0, slot1)

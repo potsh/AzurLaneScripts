@@ -303,13 +303,19 @@ end
 function slot0.insertShip(slot0, slot1, slot2, slot3)
 	if slot3 == TeamType.Vanguard then
 		table.insert(slot0.vanguardShips, slot2 or #slot0.vanguardShips + 1, slot1.id)
+
+		if table.indexof(slot0.ships, slot0.mainShips[1]) then
+			table.insert(slot0.ships, slot4, slot1.id)
+		else
+			table.insert(slot0.ships, slot1.id)
+		end
 	elseif slot3 == TeamType.Main then
 		table.insert(slot0.mainShips, slot2 or #slot0.mainShips + 1, slot1.id)
+		table.insert(slot0.ships, slot1.id)
 	elseif slot3 == TeamType.Submarine then
 		table.insert(slot0.subShips, slot2 or #slot0.subShips + 1, slot1.id)
+		table.insert(slot0.ships, slot1.id)
 	end
-
-	table.insert(slot0.ships, slot1.id)
 end
 
 function slot0.canRemove(slot0, slot1)
@@ -543,6 +549,8 @@ function slot0.GetEnergyStatus(slot0)
 
 	slot5(slot0.mainShips)
 	slot5(slot0.vanguardShips)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		for slot4 = 1, 3, 1 do
 			if slot0[slot4] and slot0:getShipById(slot0[slot4]).energy == Ship.ENERGY_LOW then
@@ -663,7 +671,9 @@ function slot0.getFleetAirDominanceValue(slot0)
 	slot3 = 0
 
 	for slot7, slot8 in ipairs(slot0.ships) do
-		slot3 = function (slot0, slot1)
+		slot3 = 
+		-- Decompilation error in this vicinity:
+		function (slot0, slot1)
 			return slot0 + calcAirDominanceValue(slot0:getShipById(slot1), slot1)
 		end(slot3, slot8)
 	end

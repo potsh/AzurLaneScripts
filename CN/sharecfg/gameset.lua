@@ -383,9 +383,9 @@ pg.gameset = {
 		key_value = 3000000
 	},
 	activity_res_id = {
-		description = "勾玉",
+		description = "情报pt",
 		key = "activity_res_id",
-		key_value = 141
+		key_value = 143
 	},
 	chapter_move_speed_1 = {
 		description = "",
@@ -427,12 +427,11 @@ pg.gameset = {
 		key_value = 0,
 		description = {
 			"ANSHAN01",
-			nil,
 			"ANSHAN02",
-			nil,
 			"ANSHAN03",
 			nil,
 			"ANSHAN04",
+			nil,
 			"ANSHAN05"
 		}
 	},
@@ -645,9 +644,9 @@ pg.gameset = {
 		key_value = 1,
 		description = {
 			{
-				20004,
-				20005,
-				20006
+				20007,
+				20008,
+				20009
 			}
 		}
 	},
@@ -784,7 +783,7 @@ pg.gameset = {
 	skin_ticket = {
 		description = "",
 		key = "skin_ticket",
-		key_value = 136
+		key_value = 144
 	},
 	order_pt_max = {
 		key = "order_pt_max",

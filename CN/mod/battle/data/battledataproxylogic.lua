@@ -103,13 +103,15 @@ function ys.Battle.BattleDataProxy.HandleDamage(slot0, slot1, slot2, slot3)
 	end
 
 	if slot2:IsAlive() then
-		if not slot11 then
-			if not slot19 then
-				for slot23, slot24 in ipairs(slot1:GetAttachBuff()) do
+		if not slot19 then
+			for slot23, slot24 in ipairs(slot1:GetAttachBuff()) do
+				if slot24.hit_ignore or not slot11 then
 					slot4.HandleBuffPlacer(slot24, slot1, slot2)
 				end
 			end
+		end
 
+		if not slot11 then
 			slot2:TriggerBuff(slot2.BuffEffectType.ON_BE_HIT, slot7)
 		end
 	else
@@ -250,7 +252,9 @@ function ys.Battle.BattleDataProxy.HandleCrashDamage(slot0, slot1, slot2)
 end
 
 function ys.Battle.BattleDataProxy.HandleWallHitByBullet(slot0, slot1, slot2)
-	return slot1:GetCldFunc()(slot2)
+	return 
+	-- Decompilation error in this vicinity:
+	slot1:GetCldFunc()(slot2)
 end
 
 function ys.Battle.BattleDataProxy.HandleBuffPlacer(slot0, slot1, slot2)

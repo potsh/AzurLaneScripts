@@ -92,11 +92,21 @@ slot24 = ({
 		slot4 = slot0(slot1)
 		slot5 = slot0(slot2)
 
+
+		-- Decompilation error in this vicinity:
 		slot1(slot2 * 0.0087266462599716)({
-			x = slot1(slot1 * 0.0087266462599716) * slot3 * slot1(slot2 * 0.0087266462599716) + slot4 * slot1(slot0 * 0.0087266462599716) * slot5,
-			y = slot4 * slot1(slot0 * 0.0087266462599716) * slot1(slot2 * 0.0087266462599716) - slot1(slot1 * 0.0087266462599716) * slot3 * slot5,
-			z = slot1(slot1 * 0.0087266462599716) * slot1(slot0 * 0.0087266462599716) * slot5 - slot4 * slot3 * slot1(slot2 * 0.0087266462599716),
-			w = slot1(slot1 * 0.0087266462599716) * slot1(slot0 * 0.0087266462599716) * slot1(slot2 * 0.0087266462599716) + slot4 * slot3 * slot5
+			x = slot1(slot1 * 0.0087266462599716) * slot3 * 
+			-- Decompilation error in this vicinity:
+			slot1(slot2 * 0.0087266462599716) + slot4 * slot1(slot0 * 0.0087266462599716) * slot5,
+			y = slot4 * slot1(slot0 * 0.0087266462599716) * 
+			-- Decompilation error in this vicinity:
+			slot1(slot2 * 0.0087266462599716) - slot1(slot1 * 0.0087266462599716) * slot3 * slot5,
+			z = slot1(slot1 * 0.0087266462599716) * slot1(slot0 * 0.0087266462599716) * slot5 - slot4 * slot3 * 
+			-- Decompilation error in this vicinity:
+			slot1(slot2 * 0.0087266462599716),
+			w = slot1(slot1 * 0.0087266462599716) * slot1(slot0 * 0.0087266462599716) * 
+			-- Decompilation error in this vicinity:
+			slot1(slot2 * 0.0087266462599716) + slot4 * slot3 * slot5
 		}, slot3)
 
 		return 
@@ -449,24 +459,36 @@ function slot26(slot0, slot1, slot2)
 	if slot3 < 0.95 then
 		slot4 = slot2(slot3)
 
+
+		-- Decompilation error in this vicinity:
 		{
 			x = slot0.x * slot3((1 - slot2) * slot4) * 1 / slot3(slot4) + slot1.x * slot3(slot2 * slot4) * 1 / slot3(slot4),
 			y = slot0.y * slot3((1 - slot2) * slot4) * 1 / slot3(slot4) + slot1.y * slot3(slot2 * slot4) * 1 / slot3(slot4),
 			z = slot0.z * slot3((1 - slot2) * slot4) * 1 / slot3(slot4) + slot1.z * slot3(slot2 * slot4) * 1 / slot3(slot4),
 			w = slot0.w * slot3((1 - slot2) * slot4) * 1 / slot3(slot4) + slot1.w * slot3(slot2 * slot4) * 1 / slot3(slot4)
-		}(, slot1)
+		}(
+		-- Decompilation error in this vicinity:
+		, slot1)
 
 		return 
+		-- Decompilation error in this vicinity:
+
 	else
 		slot1.SetNormalize(slot0)
+
+		-- Decompilation error in this vicinity:
 		{
 			x = slot0.x + slot2 * (slot1.x - slot0.x),
 			y = slot0.y + slot2 * (slot1.y - slot0.y),
 			z = slot0.z + slot2 * (slot1.z - slot0.z),
 			w = slot0.w + slot2 * (slot1.w - slot0.w)
-		}(, slot1)
+		}(
+		-- Decompilation error in this vicinity:
+		, slot1)
 
 		return 
+		-- Decompilation error in this vicinity:
+
 	end
 end
 

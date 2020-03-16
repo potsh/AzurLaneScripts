@@ -103,7 +103,9 @@ function slot0.getTargetLevel(slot0)
 end
 
 function slot0.CanGetAward(slot0)
-	return slot0:CanGetNextAward() and function ()
+	return slot0:CanGetNextAward() and 
+	-- Decompilation error in this vicinity:
+	function ()
 		slot0, slot1, slot2 = slot0:GetResProgress()
 
 		return slot2 >= 1

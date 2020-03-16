@@ -237,7 +237,11 @@ function slot5.InstBullet(slot0, slot1, slot2)
 				return
 			else
 				slot0:InitPool(slot0, slot0)
-				true(slot0:popPool(slot0._allPool[slot0], true))
+
+				-- Decompilation error in this vicinity:
+				true(slot0:popPool(slot0._allPool[slot0], 
+				-- Decompilation error in this vicinity:
+				true))
 			end
 		end), true, true)
 
@@ -711,7 +715,7 @@ function slot5.GetWeaponResource(slot0, slot1)
 		return slot2
 	end
 
-	if slot0:GetWeaponPropertyDataFromID().type == slot1.EquipmentType.MAIN_CANNON or slot3.type == slot1.EquipmentType.SUB_CANNON or slot3.type == slot1.EquipmentType.TORPEDO or slot3.type == slot1.EquipmentType.ANTI_AIR or slot3.type == slot1.EquipmentType.POINT_HIT_AND_LOCK or slot3.type == slot1.EquipmentType.BOMBER_PRE_CAST_ALERT or slot3.type == slot1.EquipmentType.DEPTH_CHARGE or slot3.type == slot1.EquipmentType.MANUAL_TORPEDO or slot3.type == slot1.EquipmentType.DISPOSABLE_TORPEDO or slot3.type == slot1.EquipmentType.BEAM then
+	if slot0:GetWeaponPropertyDataFromID().type == slot1.EquipmentType.MAIN_CANNON or slot3.type == slot1.EquipmentType.SUB_CANNON or slot3.type == slot1.EquipmentType.TORPEDO or slot3.type == slot1.EquipmentType.ANTI_AIR or slot3.type == slot1.EquipmentType.ANTI_SEA or slot3.type == slot1.EquipmentType.POINT_HIT_AND_LOCK or slot3.type == slot1.EquipmentType.BOMBER_PRE_CAST_ALERT or slot3.type == slot1.EquipmentType.DEPTH_CHARGE or slot3.type == slot1.EquipmentType.MANUAL_TORPEDO or slot3.type == slot1.EquipmentType.DISPOSABLE_TORPEDO or slot3.type == slot1.EquipmentType.BEAM then
 		for slot7, slot8 in ipairs(slot3.bullet_ID) do
 			for slot13, slot14 in ipairs(slot9) do
 				slot2[#slot2 + 1] = slot14
@@ -769,7 +773,7 @@ function slot5.GetBulletResource(slot0, slot1)
 	slot4 = nil
 	slot4 = ((slot1 or 0) == 0 or slot0.GetEquipSkin(slot1 or 0)) and slot0:GetBulletTmpDataFromID().modle_ID
 
-	if slot3.type == slot1.BulletType.BEAM then
+	if slot3.type == slot1.BulletType.BEAM or slot3.type == slot1.BulletType.ELECTRIC_ARC then
 		slot2[#slot2 + 1] = slot2.GetFXPath(slot3.modle_ID)
 	else
 		slot2[#slot2 + 1] = slot2.GetBulletPath(slot4)
@@ -901,13 +905,15 @@ function slot5.GetStageResource(slot0)
 				end
 			elseif slot13.triggerType == slot0.Battle.BattleConst.WaveTriggerType.ENVIRONMENT then
 				for slot17, slot18 in ipairs(slot13.spawn) do
-					slot2[#slot2 + 1] = slot1.GetFXPath(slot18.prefab)
+					table.insert(slot2, slot18.prefab and slot1.GetFXPath(slot18.prefab))
 
 					for slot22, slot23 in ipairs(slot18.behaviours) do
 						if slot23.type == slot0.Battle.BattleConst.EnviroumentBehaviour.BUFF then
 							for slot29, slot30 in ipairs(slot25) do
 								slot2[#slot2 + 1] = slot30
 							end
+						elseif slot24 == slot0.Battle.BattleConst.EnviroumentBehaviour.SPAWN and slot23.child_prefab and slot23.child_prefab.prefab then
+							slot2[#slot2 + 1] = slot1.GetFXPath(slot25)
 						end
 					end
 				end

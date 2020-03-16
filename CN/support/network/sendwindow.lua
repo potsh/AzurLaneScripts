@@ -197,6 +197,8 @@ function slot1.Send(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 		slot5 = false
 	end
 
+
+	-- Decompilation error in this vicinity:
 	function (slot0, slot1)
 		for slot5, slot6 in pairs(slot1) do
 			if type(slot6) == "table" then

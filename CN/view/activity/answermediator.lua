@@ -49,6 +49,8 @@ function slot0.handleNotification(slot0, slot1)
 				end
 			end)
 
+
+			-- Decompilation error in this vicinity:
 			function ()
 				slot0, slot1 = coroutine.resume(coroutine.resume)
 			end()

@@ -91,6 +91,7 @@ end
 function slot2.SetBossData(slot0, slot1)
 	slot0._bossBarInfoList = {}
 	slot0._HPBarTotalCount = slot1.hpBarNum or 1
+	slot0._hideBarNum = slot1.hideBarNum
 	slot0._bossIcon = slot0:GetUnitData():GetTemplate().icon
 	slot0._bossIndex = slot1.bossCount
 end
@@ -244,92 +245,354 @@ function slot2.UpdateHpBar(slot0)
 end
 
 function slot2.generateTween(slot0, slot1, slot2)
-	return LeanTween.value(go(slot0._HPBar), slot0._bossBarInfoList[slot0._currentIndex].deltaImage.fillAmount, slot1 or slot3.progressImage.fillAmount, slot2 or 0.7):setOnUpdate(System.Action_float(function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 9-10, warpins: 2 ---
+	slot4 = slot0._bossBarInfoList[slot0._currentIndex].deltaImage
+
+	if not slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-8, warpins: 1 ---
+		slot1 = slot3.progressImage.fillAmount
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2 = slot2 or 0.7
+
+	return LeanTween.value(go(slot0._HPBar), slot4.fillAmount, slot1, slot2 or 0.7):setOnUpdate(System.Action_float(function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
 		slot0.fillAmount = slot0
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end))
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot2 = 0.7
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 12-29, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+
+
 end
 
 function slot2.SetHPBarCountText(slot0)
-	slot0._HPBarCountText.text = "X " .. slot0._currentIndex
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
+	if slot0._hideBarNum then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-7, warpins: 1 ---
+		slot0._HPBarCountText.text = "X??"
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 8-12, warpins: 1 ---
+		slot0._HPBarCountText.text = "X " .. slot0._currentIndex
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 13-13, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot2.UpdateHPBarPostition(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-1, warpins: 1 ---
 	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot2.onWeaponPreCast(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot0.super.onWeaponPreCast(slot0, slot1)
 	slot0:initArmorBar(slot1.Data.armor)
 
 	if slot1.Data.armor and slot3 ~= 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 17-21, warpins: 1 ---
 		slot0:initCastClock(slot2.time, slot1.Dispatcher)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 22-22, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot2.onWeaponPrecastFinish(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot0.super.onWeaponPrecastFinish(slot0, slot1)
 
 	slot3 = slot1.Data.armor
 
 	if slot0._castClock:GetCastingWeapon() == slot1.Dispatcher and slot3 and slot3 ~= 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 20-23, warpins: 1 ---
 		if slot0._armor <= 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 24-29, warpins: 1 ---
 			slot0._castClock:Interrupt(true)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 30-34, warpins: 1 ---
 			slot0._castClock:Interrupt(false)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 35-44, warpins: 2 ---
 		slot0._armor = nil
 
 		SetActive(slot0._armorBar, false)
 		SetActive(slot0._gizmos, true)
+		--- END OF BLOCK #1 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 45-45, warpins: 4 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot2.onWeaponInterrupted(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0._unitData:StateChange(slot0.Battle.UnitState.STATE_INTERRUPT)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot2.initArmorBar(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
 	if slot1 and slot1 ~= 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-18, warpins: 1 ---
 		slot0._armor = slot1
 		slot0._totalArmor = slot1
 
 		slot0:updateWeaponArmor(slot1)
 		SetActive(slot0._armorBar, true)
 		SetActive(slot0._gizmos, false)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 19-19, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot2.OnUpdateHP(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0.super.OnUpdateHP(slot0, slot1)
 
 	slot2 = slot1.Data.dHP
 
 	if slot0._armor and slot2 < 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 15-21, warpins: 1 ---
 		slot0._armor = slot0._armor + slot2
 
 		slot0:updateWeaponArmor(slot0._armor)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 22-22, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot2.updateWeaponArmor(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0._armorProgress.fillAmount = slot0._armor / slot0._totalArmor
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot2.initCastClock(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot0._castClock:Casting(slot1, slot2)
 
 	slot0._castFinishTime = pg.TimeMgr.GetInstance():GetCombatTime() + slot1
 	slot0._castDuration = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot2.UpdateCastClock(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0._castClock:UpdateCastClock()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot2.updateComponentDiveInvisible(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0.super.updateComponentDiveInvisible(slot0)
 	SetActive(slot0._HPBarTf, true)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 return

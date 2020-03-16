@@ -12,6 +12,8 @@ function slot0.Card(slot0)
 		setActive(slot0.tags[2], slot0.state == AttireFrame.STATE_UNLOCK and slot1:isNew())
 	end
 
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0._go = slot0
 		slot0._tf = tf(slot0)

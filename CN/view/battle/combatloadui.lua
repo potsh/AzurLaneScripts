@@ -161,17 +161,17 @@ function slot0.Preload(slot0)
 				table.insert(slot3, slot13)
 			end
 		elseif slot0.contextData.system == SYSTEM_CHALLENGE then
-			shipDataStat = getProxy(ChallengeProxy).getUserChallengeInfo(slot5, slot0.contextData.mode).getRegularFleet(slot6).getShips(slot7, false)
+			ships = getProxy(ChallengeProxy).getUserChallengeInfo(slot5, slot0.contextData.mode).getRegularFleet(slot6).getShips(slot7, false)
 
-			for slot11, slot12 in ipairs(shipDataStat) do
+			for slot11, slot12 in ipairs(ships) do
 				table.insert(slot3, slot12)
 			end
 
 			slot0.addCommanderBuffRes(slot7:buildBattleBuffList())
 
-			shipDataStat = slot6:getSubmarineFleet().getShips(slot7, false)
+			ships = slot6:getSubmarineFleet().getShips(slot7, false)
 
-			for slot11, slot12 in ipairs(shipDataStat) do
+			for slot11, slot12 in ipairs(ships) do
 				table.insert(slot3, slot12)
 			end
 

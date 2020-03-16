@@ -135,7 +135,11 @@ function slot0.flushEva(slot0)
 	end
 
 	for slot6 = 1, #slot2, 1 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 50-54, warpins: 2 ---
 		slot7 = nil
+		slot7 = (not slot2[slot6].hot or cloneTplTo(slot0.hotTpl, slot0.hotContent)) and cloneTplTo(slot0.commonTpl, slot0.commonContent)
 
 		setText(slot10, slot8.nick_name .. ":")
 		setText(slot11, slot8.good_count - slot8.bad_count)
@@ -144,35 +148,257 @@ function slot0.flushEva(slot0)
 		slot0.findTF("bg/evaluation", (not slot2[slot6].hot or cloneTplTo(slot0.hotTpl, slot0.hotContent)) and cloneTplTo(slot0.commonTpl, slot0.commonContent)).GetComponent(typeof(Text)).text = slot8.context
 
 		function slot12(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
 			if not slot0.izan then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 5-14, warpins: 1 ---
 				slot1:emit(slot2.EVENT_ZAN, slot0.id, slot0)
+				--- END OF BLOCK #0 ---
+
+
+
 			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 15-24, warpins: 1 ---
 				pg.TipsMgr.GetInstance():ShowTips(i18n("zan_ship_eva_error_7"))
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 25-25, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
-		onButton(slot0, (not slot2[slot6].hot or cloneTplTo(slot0.hotTpl, slot0.hotContent)) and cloneTplTo(slot0.commonTpl, slot0.commonContent):Find("bg/zan_bg/up"), function ()
+		onButton(slot0, slot7:Find("bg/zan_bg/up"), function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
 			slot0(0)
-		end, SFX_PANEL)
-		onButton(slot0, (not slot2[slot6].hot or cloneTplTo(slot0.hotTpl, slot0.hotContent)) and cloneTplTo(slot0.commonTpl, slot0.commonContent):Find("bg/zan_bg/down"), function ()
-			slot0(1)
-		end, SFX_PANEL)
-		SetActive((not slot2[slot6].hot or cloneTplTo(slot0.hotTpl, slot0.hotContent)) and cloneTplTo(slot0.commonTpl, slot0.commonContent):Find("bg/zan_bg/down"), not LOCK_DOWNVOTE or false)
 
-		if LOCK_DOWNVOTE then
-			slot7:Find("bg/zan_bg/up").position = slot7:Find("bg/zan_bg/down").position + Vector3(0, 0.15, 0)
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end, SFX_PANEL)
+		onButton(slot0, slot7:Find("bg/zan_bg/down"), function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0(1)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end, SFX_PANEL)
+		SetActive(slot7:Find("bg/zan_bg/down"), not LOCK_DOWNVOTE or false)
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 55-60, warpins: 1 ---
+		slot7 = cloneTplTo(slot0.hotTpl, slot0.hotContent)
+
+		if cloneTplTo(slot0.hotTpl, slot0.hotContent) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 61-65, warpins: 1 ---
+			slot7 = cloneTplTo(slot0.commonTpl, slot0.commonContent)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 66-129, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 130-131, warpins: 1 ---
+		slot15 = false
+
+		if false then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 132-133, warpins: 0 ---
+			slot15 = false
+
+			if false then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 134-134, warpins: 1 ---
+				slot15 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 135-138, warpins: 3 ---
+		if LOCK_DOWNVOTE then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 139-154, warpins: 1 ---
+			slot7:Find("bg/zan_bg/up").position = slot7:Find("bg/zan_bg/down").position + Vector3(0, 0.15, 0)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #5 155-156, warpins: 2 ---
+		--- END OF BLOCK #5 ---
+
+
+
 	end
 
 	slot3 = 1
 
 	for slot7 = 1, slot0.hotContent.childCount, 1 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 163-173, warpins: 2 ---
 		if go(slot0.hotContent:GetChild(slot7 - 1)).name ~= "tag" then
-			setActive(slot8:Find("print1"), slot3 % 2 ~= 0)
-			setActive(slot8:Find("print2"), slot3 % 2 == 0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 174-181, warpins: 1 ---
+			slot9 = setActive
+			slot10 = slot8:Find("print1")
+
+			if slot3 % 2 == 0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 182-183, warpins: 1 ---
+				slot11 = false
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 184-184, warpins: 1 ---
+				slot11 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 185-193, warpins: 2 ---
+			slot9(slot10, slot11)
+
+			slot9 = setActive
+			slot10 = slot8:Find("print2")
+
+			if slot3 % 2 ~= 0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 194-195, warpins: 1 ---
+				slot11 = false
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 196-196, warpins: 1 ---
+				slot11 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 197-198, warpins: 2 ---
+			slot9(slot10, slot11)
 
 			slot3 = slot3 + 1
+			--- END OF BLOCK #2 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 199-199, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
 	setActive(slot0.hotContent:Find("tag"), slot0.hotContent.childCount > 1)
@@ -182,7 +408,16 @@ function slot0.flushEva(slot0)
 end
 
 function slot0.willExit(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 return slot0

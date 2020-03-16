@@ -12,9 +12,9 @@ function slot0.Entrance(slot0, slot1)
 	slot11 = 0
 	slot12 = 0
 	slot13 = 0
-	shipDataStat = getProxy(ChallengeProxy):getUserChallengeInfo(slot0.mode).getRegularFleet(slot14).getShips(slot15, false)
+	ships = getProxy(ChallengeProxy):getUserChallengeInfo(slot0.mode).getRegularFleet(slot14).getShips(slot15, false)
 
-	for slot19, slot20 in ipairs(shipDataStat) do
+	for slot19, slot20 in ipairs(ships) do
 		slot9[#slot9 + 1] = slot20.id
 	end
 
@@ -44,7 +44,7 @@ function slot0.Entrance(slot0, slot1)
 		if slot3.enter_energy_cost > 0 then
 			slot1 = pg.gameset.battle_consume_energy.key_value
 
-			for slot5, slot6 in ipairs(shipDataStat) do
+			for slot5, slot6 in ipairs(ships) do
 				slot6:cosumeEnergy(slot1)
 				slot4:updateShip(slot6)
 			end

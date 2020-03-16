@@ -1,6 +1,8 @@
 slot0 = class("AttireAchievementPanel", import("...base.BaseSubView"))
 
 function slot1(slot0)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0._go = slot0
 		slot0.info = findTF(slot0._go, "info")
@@ -40,6 +42,8 @@ function slot1(slot0)
 end
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0._tf = slot0
 		slot0.uiList = UIItemList.New(slot0._tf:Find("list"), slot0._tf:Find("list/tpl"))

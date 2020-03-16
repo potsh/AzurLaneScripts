@@ -609,6 +609,10 @@ function slot0.register(slot0)
 			setParent(slot0, slot0.viewComponent._tf)
 		end)
 	end
+
+	if slot0.contextData.targetChapter and slot0.contextData.targetMap then
+		slot0:openTargetChapter(slot0.contextData.targetChapter, slot0.contextData.targetMap)
+	end
 end
 
 function slot0.NoticeVoteBook(slot0, slot1)
@@ -918,6 +922,8 @@ function slot0.handleNotification(slot0, slot1)
 				end
 			end)
 
+
+			-- Decompilation error in this vicinity:
 			function ()
 				if coroutine.status(coroutine.status) == "suspended" then
 					slot0, slot1 = coroutine.resume(coroutine.resume)
@@ -978,6 +984,8 @@ function slot0.handleNotification(slot0, slot1)
 				end
 			end)
 
+
+			-- Decompilation error in this vicinity:
 			function ()
 				if coroutine.status(coroutine.status) == "suspended" then
 					slot0, slot1 = coroutine.resume(coroutine.resume)
@@ -1227,6 +1235,8 @@ function slot0.playAIActions(slot0, slot1, slot2, slot3)
 		})
 	end)
 
+
+	-- Decompilation error in this vicinity:
 	function ()
 		if coroutine.status(coroutine.status) == "suspended" then
 			slot0, slot1 = coroutine.resume(coroutine.resume)
@@ -1264,6 +1274,12 @@ function slot0.duplicateEliteFleet(slot0, slot1)
 			slot8:setEliteCommanders(slot1:getEliteFleetCommanders())
 		end
 	end
+end
+
+function slot0.openTargetChapter(slot0, slot1, slot2)
+	slot0.contextData.openChapterId = slot1.configId
+
+	slot0.viewComponent:setMap(slot2.configId)
 end
 
 return slot0

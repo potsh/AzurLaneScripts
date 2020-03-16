@@ -2282,21 +2282,21 @@ pg.gametip = {
 5 颜料可通过活动任务累计消耗石油获得；
 6 完成上色可以获得奖励；
 7 各图完成奖励明细如下：
-	完成图1获得皮肤体验券 x1；
-	完成图2获得T3随机教材 x2；
-	完成图3获得皮肤体验券x1；
-	完成图4获得T3主炮改造部件 x2；
-	完成图5获得皮肤体验券 x1；
-	完成图6获得T3通用改造部件 x3；
-	完成图7获得丘比特限定换装 x1；
+	完成图1获得T3随机教材 x2；
+	完成图2获得红包 x1；
+	完成图3获得T3主炮改造部件 x2；
+	完成图4获得红包 x1；
+	完成图5获得T3通用改造部件 x3；
+	完成图6获得红包 x1；
+	完成图7获得鞍山 x1；
 8 完成全部的绘图日记后解锁一张额外的空白绘图日记；
 9 空白绘图日记没有使用颜料限制，且不会消耗颜料；
 10 空白绘图日记可以使用橡皮擦和全部清除功能；
 11 橡皮擦可以擦除单个单元格上色颜色；
 12 全部清除功能可以擦除绘图日记上色所有颜色；
 13 活动结束后，未消耗的颜料会被清除。
-14 10月2日前每天解锁一个可完成的绘图，空白画板最快
-10月3日解锁。]]
+14 1月27日前每天解锁一个可完成的绘图，空白画板最快
+1月28日解锁。]]
 			}
 		}
 	},
@@ -2307,10 +2307,10 @@ pg.gametip = {
 				info = "                                         游戏规则\n"
 			},
 			{
-				info = "1.活动期间每天0:00:00增加一次可获得【圣地亚哥之星】的次\n数；"
+				info = "1.活动期间每天0:00:00增加一次可获得【圣地亚哥之星】\n的次数；"
 			},
 			{
-				info = "2.获得【圣地亚哥之星】的次数可以累积，总计7次，即便前一\n天没有完成，也可以累积；"
+				info = "2.获得【圣地亚哥之星】的次数可以累积，总计7次，即\n便前一天没有完成，也可以累积；"
 			},
 			{
 				info = "3.连线两个相同的角色头像进行消除；"
@@ -2319,13 +2319,13 @@ pg.gametip = {
 				info = "4.连接两个头像之间的连线拐弯不能超过两个；"
 			},
 			{
-				info = "5.消除所有的角色头像后，如果拥有可获得【圣地亚哥之星】\n的次数，可获得【圣地亚哥之星】并消耗一次次数；"
+				info = "5.消除所有的角色头像后，如果拥有可获得【圣地亚哥之\n星】的次数，可获得【圣地亚哥之星】并消耗一次次数；"
 			},
 			{
-				info = "6.参与活动7天可收集18颗【圣地亚哥之星】，并获得圣地亚哥\n专属改造道具【闪耀的麦克风】；"
+				info = "6.参与活动7天可收集18颗【圣地亚哥之星】，并获得圣\n地亚哥专属改造道具【闪耀的麦克风】；"
 			},
 			{
-				info = "7.目前拥有【闪耀的麦克风】或者目前拥有【圣地亚哥改】的\n玩家，会获得纪念品【圣地亚哥纪念之星】；"
+				info = "7.目前拥有【闪耀的麦克风】或者目前拥有【圣地亚哥改\n】的玩家，会获得纪念品【圣地亚哥纪念之星】；"
 			}
 		}
 	},
@@ -3052,7 +3052,7 @@ pg.gametip = {
 				info = "护航关卡说明 "
 			},
 			{
-				info = "    1. 商路护航的开放时间为6月13日~6月27日；"
+				info = "    1. 商路护航的开放时间为3月19日~3月26日；"
 			},
 			{
 				info = "    2.每日有一次挑战机会，不可累积，进入关卡时扣除次\n数。关卡分为简单，普通，困难三个难度，玩家进入关卡\n即消耗挑战次数；"
@@ -6306,6 +6306,10 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 		tip = "此次改造操作将消耗<color=#92fc63>闪耀的麦克风</color>\n是否确认继续操作？",
 		key = "ship_remould_warning_102174"
 	},
+	ship_remould_warning_201514 = {
+		tip = "此次改造操作后<color=#92fc63>【鱼雷底座-1】</color> <color=#92fc63>【防空炮底座+1】</color>\n是否确认继续操作？",
+		key = "ship_remould_warning_201514"
+	},
 	ship_remould_warning_203114 = {
 		tip = "此次改造操作将导致<color=#92fc63>【鱼雷】栏位</color>变更为<color=#92fc63>【副武器】栏位</color><color=#92fc63>\n<material=underline c=#92fc63 event=clickDetail>查看详情</material></color>\n是否确认继续操作？",
 		key = "ship_remould_warning_203114"
@@ -6656,7 +6660,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 		key = "longxiang_total_count"
 	},
 	pt_count = {
-		tip = "目标$1：",
+		tip = "$1：",
 		key = "pt_count"
 	},
 	pt_total_count = {
@@ -7887,7 +7891,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 		}
 	},
 	shop_street_activity_tip = {
-		tip = "*活动期间(<color=#A1E400FF>19.12.26-20.1.8</COLOR>)每次刷新必定出现<color=#A1E400FF>外观装备箱</color>",
+		tip = "*活动期间(<color=#A1E400FF>20.2.27-20.3.11</COLOR>)每次刷新必定出现<color=#A1E400FF>外观装备箱</color>",
 		key = "shop_street_activity_tip"
 	},
 	battle_result_boss_destruct = {
@@ -9088,7 +9092,7 @@ $3]],
 		key = "commander_skill_point_noengough"
 	},
 	buildship_new_tip = {
-		tip = "{namecode:175}、{namecode:179}等角色出现概率UP！",
+		tip = "塔什干、苏维埃罗西亚等角色出现概率UP！",
 		key = "buildship_new_tip"
 	},
 	buildship_heavy_tip = {
@@ -9096,11 +9100,11 @@ $3]],
 		key = "buildship_heavy_tip"
 	},
 	buildship_light_tip = {
-		tip = "南安普顿、{namecode:174} 建造追加！",
+		tip = "阿芙乐尔 建造追加！",
 		key = "buildship_light_tip"
 	},
 	buildship_special_tip = {
-		tip = "{namecode:97} 建造追加！",
+		tip = "{namecode:90} 限时建造！",
 		key = "buildship_special_tip"
 	},
 	open_skill_pos = {
@@ -9955,8 +9959,8 @@ $3]],
 10.活动期间，可以领取个人贡献奖励，个人贡献奖励需
 要当据点攻略进度和拥有的「贡献值」达到指定要求后才
 能领取
-11.9.26-10.10期间可以参与演习战斗，奖励领取的截止时
-间为10.16]]
+11.1.21-2.6期间可以参与演习战斗，奖励领取的截止时
+间为2.12]]
 			},
 			{
 				info = [[
@@ -9994,7 +9998,8 @@ $3]],
 1 通常海域困难模式中<color=#92fc63>不会出现</color>敌人护卫舰队
 2 活动关卡的敌人设置将会出现一部分变化
 3 活动关卡中我方的移动格数<color=#92fc63>不会受到移动力限制</color>，可自
-由移动]]
+由移动
+4 关卡内会开启<color=#92fc63>阵容锁定</color>模式]]
 			}
 		}
 	},
@@ -11741,7 +11746,7 @@ TIPS：
 				info = "「JUUs」说明："
 			},
 			{
-				info = "1.活动期间，每隔一段时间港区角色会发布新的元旦动态"
+				info = "1.活动期间，每隔一段时间港区角色会发布新的新年动态"
 			},
 			{
 				info = [[
@@ -12266,6 +12271,430 @@ TIPS：
 				icon = {
 					path = "",
 					atlas = "helpbg/guinu_help2"
+				}
+			},
+			disableScroll = true,
+			pageMode = true,
+			defaultpage = 1,
+			ImageMode = true,
+			windowSize = {
+				x = 1263,
+				y = 873
+			},
+			windowPos = {
+				y = -70
+			},
+			helpSize = {
+				x = 1176,
+				y = 1024
+			}
+		}
+	},
+	word_equipskin_type = {
+		tip = "类型",
+		key = "word_equipskin_type"
+	},
+	word_equipskin_all = {
+		tip = "全部",
+		key = "word_equipskin_all"
+	},
+	word_equipskin_cannon = {
+		tip = "舰炮",
+		key = "word_equipskin_cannon"
+	},
+	word_equipskin_tarpedo = {
+		tip = "鱼雷",
+		key = "word_equipskin_tarpedo"
+	},
+	word_equipskin_aircraft = {
+		tip = "舰载机",
+		key = "word_equipskin_aircraft"
+	},
+	msgbox_repair = {
+		tip = "修复资源",
+		key = "msgbox_repair"
+	},
+	msgbox_repair_l2d = {
+		tip = "修复L2D",
+		key = "msgbox_repair_l2d"
+	},
+	word_no_cache = {
+		tip = "没有需要修复的资源",
+		key = "word_no_cache"
+	},
+	pile_game_notice = {
+		key = "pile_game_notice",
+		tip = {
+			{
+				info = [[
+小游戏玩法：
+1.玩家点击屏幕任意位置下落，堆叠成功即视为得分，落
+空3次会导致游戏结束
+2.玩家需要注意屏幕右侧的平衡条，当平衡条上的小蛮啾
+触及到红色区域时堆叠倒塌，会导致游戏结束
+活动规则：
+活动期间每日可获得一次可用次数，可用次数最多可以叠
+加7次
+1.在有可用次数的情况下参与啾啾叠叠乐会消耗掉可用次
+数并获得奖励及打卡次数，集齐7次打卡次数可以获得限
+定角色「朴」
+2.可用次数可以在东煌春节页面右侧看到，打卡进度可以
+通过点击东煌春节页面打卡按钮查看
+3.在没有可用次数的情况下进行啾啾叠叠乐不会获得奖励
+及打卡次数
+4.因为其他原因中途退出小游戏不会消耗可用次数，同时
+也不会获得任何奖励]]
+			}
+		}
+	},
+	help_chunjie_stamp = {
+		key = "help_chunjie_stamp",
+		tip = {
+			{
+				info = [[
+<color=#92fc63>TIPS：
+1.在拥有可用次数的情况下，参与啾啾叠叠乐，可获得打卡
+次数
+2.当获得7次打卡次数后点击右侧领取按钮可以获得限定
+角色「朴」</color>]]
+			}
+		}
+	},
+	help_chunjie_feast = {
+		key = "help_chunjie_feast",
+		tip = {
+			{
+				info = [[
+活动简介：
+「啾啾叠叠乐」：参与小游戏获取限定角色「朴」
+「绘图日记」：参与小游戏获取限定角色「鞍山」
+「抚顺大冒险」：参与小游戏获取限定角色「抚顺」
+「东煌大富翁」：参与小游戏获取红包及丰厚奖励
+「啾啾大酒楼」：开启红包获取钻石及丰厚奖励
+「换装商店」：购买2020春节限时换装
+「限时建造」：建造2020春节限时角色]]
+			}
+		}
+	},
+	help_chunjie_jiulou = {
+		key = "help_chunjie_jiulou",
+		tip = {
+			{
+				info = [[
+1.活动期间可以通过「啾啾叠叠乐」、「绘图日记」、「东
+煌大富翁」、「抚顺大冒险」获得红包，开启红包可以获取
+钻石及其他丰厚奖励
+2.红包分为bonus和普通红包，其中有15个bonus红包，其
+余为普通红包，开启红包时优先开启bonus红包，bonus红
+包开完后开启普通红包]]
+			}
+		}
+	},
+	special_animal1 = {
+		tip = "[朴的可爱<怪奇>生物图鉴No.1]\n冻蝾螈：拥有急冻能力的冻蝾螈，能制造冰块，身体周围漂浮着冰晶",
+		key = "special_animal1"
+	},
+	special_animal2 = {
+		tip = "[朴的可爱<怪奇>生物图鉴No.2]\n鲸头鹳ESP：发呆时会使出超能力的鲸头鹳，身体周围包裹着能量",
+		key = "special_animal2"
+	},
+	special_animal3 = {
+		tip = "[朴的可爱<怪奇>生物图鉴No.3]\n浮游海豹球：吸入大量空气之后可以漂浮到空中的球球海豹",
+		key = "special_animal3"
+	},
+	special_animal4 = {
+		tip = "[朴的可爱<怪奇>生物图鉴No.4]\n独角兽·觉醒：为了保护重要的人而觉醒的独角兽…（设定）",
+		key = "special_animal4"
+	},
+	special_animal5 = {
+		tip = "[朴的可爱<怪奇>生物图鉴No.5]\n隐身汪：会隐形的汪汪，唯一不能隐形的屁股是它最大的烦恼",
+		key = "special_animal5"
+	},
+	special_animal6 = {
+		tip = "[朴的可爱<怪奇>生物图鉴No.6]\n肌肉啾：热衷于健身的肌肉啾，似乎有点练过头了 ",
+		key = "special_animal6"
+	},
+	special_animal7 = {
+		tip = "[朴的可爱<怪奇>生物图鉴No.7]\n彩虹香肠喵：睡觉时会流下彩虹口水的彩虹超长猫，有着奇怪的睡姿",
+		key = "special_animal7"
+	},
+	monopoly_left_count = {
+		tip = "剩余次数:",
+		key = "monopoly_left_count"
+	},
+	help_chunjie_monopoly = {
+		key = "help_chunjie_monopoly",
+		tip = {
+			{
+				info = "活动说明："
+			},
+			{
+				info = "1.活动期间，玩家首日可获得5个骰子，此后每日24点可\n获得5个骰子；"
+			},
+			{
+				info = "2.玩家每投掷5次骰子，即可获得一个红包；"
+			},
+			{
+				info = "3.游戏中，根据玩家停留的格子可获得不同奖励，每次经\n过起点可获得200物资；"
+			},
+			{
+				info = "    ：获得一定数量物资；",
+				icon = {
+					posX = 0,
+					atlas = "attricon",
+					posY = 0,
+					scale = 0.19,
+					path = "jinbi"
+				}
+			},
+			{
+				info = "    ：获得一定数量石油；",
+				icon = {
+					posX = 0,
+					atlas = "attricon",
+					posY = 0,
+					scale = 0.19,
+					path = "shiyou"
+				}
+			},
+			{
+				info = "    ：触发随机事件；",
+				icon = {
+					posX = 0,
+					atlas = "attricon",
+					posY = 0,
+					scale = 0.19,
+					path = "minyun"
+				}
+			},
+			{
+				info = "    ：触发随机奖励；",
+				icon = {
+					posX = 0,
+					atlas = "attricon",
+					posY = 0,
+					scale = 0.19,
+					path = "daoju"
+				}
+			},
+			{
+				info = "    ：触发随机移动事件；",
+				icon = {
+					posX = 0,
+					atlas = "attricon",
+					posY = 0,
+					scale = 0.19,
+					path = "teshu"
+				}
+			}
+		}
+	},
+	monoply_drop_ship_step = {
+		tip = "在经过$1圈，可获得角色换装【东煌之风】",
+		key = "monoply_drop_ship_step"
+	},
+	lanternRiddles_wait_for_reanswer = {
+		tip = "请等待重答时间重新作答",
+		key = "lanternRiddles_wait_for_reanswer"
+	},
+	lanternRiddles_answer_is_wrong = {
+		tip = "很遗憾答错了，请重新作答~",
+		key = "lanternRiddles_answer_is_wrong"
+	},
+	lanternRiddles_answer_is_right = {
+		tip = "恭喜你答对了~ ",
+		key = "lanternRiddles_answer_is_right"
+	},
+	lanternRiddles_gametip = {
+		key = "lanternRiddles_gametip",
+		tip = {
+			{
+				info = [[
+活动简介：
+「啾啾灯会」：参与答题小游戏获取丰富奖励 
+1.每天解锁1次答题机会，共14次机会，前7次答对题目后 
+会获得奖励，答错题目后需要等待一段时间重新答题 
+2.回答题目后若答对则会消耗答题机会，无答题机会则无 
+法选择题目和作答；点进题目不作答或答错不消耗答题机
+会，此时可以更换题目选择。 
+3.奖励包括：
+第一次答对：T2随机改造图*2，300物资 
+第二次答对：T2随机部件*3，100石油 
+第三次答对：T2随机教材*2，300物资 
+第四次答对：T3防御教材*2，100石油 
+第五次答对：T3通用改造部件*3，300物资 
+第六次答对：T3攻击教材*2，100石油 
+第七次答对：高级定向蓝图二期*2，300物资]]
+			}
+		}
+	},
+	LanternRiddle_wait_time_tip = {
+		tip = "再次答题时间:",
+		key = "LanternRiddle_wait_time_tip"
+	},
+	LinkLinkGame_BestTime = {
+		tip = "最佳纪录:",
+		key = "LinkLinkGame_BestTime"
+	},
+	LinkLinkGame_CurTime = {
+		tip = "当前用时:",
+		key = "LinkLinkGame_CurTime"
+	},
+	sort_attribute = {
+		tip = "属性",
+		key = "sort_attribute"
+	},
+	sort_intimacy = {
+		tip = "好感",
+		key = "sort_intimacy"
+	},
+	index_skin = {
+		tip = "可换装",
+		key = "index_skin"
+	},
+	index_reform = {
+		tip = "可改造",
+		key = "index_reform"
+	},
+	index_strengthen = {
+		tip = "可强化",
+		key = "index_strengthen"
+	},
+	decodegame_gametip = {
+		key = "decodegame_gametip",
+		tip = {
+			{
+				info = [[
+活动简介：
+ 1.活动期间，每获得<color=#92fc63>200点</color>「情报PT」，可以获得1点情
+报点，最多可获得60点 
+ 2.每次点击情报页的单元格进行破译，需要消耗1点情报
+点
+ 3.完成一定次数的情报破译即可获得如下奖励：
+ 完成10次：物资*1000
+ 完成20次：T3通用改造部件*5
+ 完成30次：物资*1000
+ 完成40次：T3攻击教材*2
+ 完成50次：T3随机改造图纸*2
+ 完成60次：T3支援教材*2 
+ 4.3张情报页全部破译后，会出现密码页按钮，点击密码
+页按钮可进入解密模式，解密模式下再次点击情报页可进
+行比对，比对后每张情报页可以获取三个密码，点击密码
+所在单元格可进行输入,<color=#92fc63>9位密码全部输入正确后可获取
+最终奖励</color>
+5.9位密码每3个为一组，每组密码都属于同一张情报页
+6.当密码输入错误时，左侧红灯会亮起，当密码输入正确
+时，右侧绿灯会亮起同时将密码保存在密码框中]]
+			}
+		}
+	},
+	indexsort_sort = {
+		tip = "排序",
+		key = "indexsort_sort"
+	},
+	indexsort_index = {
+		tip = "索引",
+		key = "indexsort_index"
+	},
+	indexsort_camp = {
+		tip = "阵营",
+		key = "indexsort_camp"
+	},
+	indexsort_rarity = {
+		tip = "稀有度",
+		key = "indexsort_rarity"
+	},
+	indexsort_extraindex = {
+		tip = "附加索引",
+		key = "indexsort_extraindex"
+	},
+	indexsort_sorteng = {
+		tip = "SORT",
+		key = "indexsort_sorteng"
+	},
+	indexsort_indexeng = {
+		tip = "INDEX",
+		key = "indexsort_indexeng"
+	},
+	indexsort_campeng = {
+		tip = "CAMP",
+		key = "indexsort_campeng"
+	},
+	indexsort_rarityeng = {
+		tip = "RARITY",
+		key = "indexsort_rarityeng"
+	},
+	fightfail_up = {
+		tip = "是否退出本次战斗以前往其他关卡进行战斗<color=#92fc63>提升等级</color>？",
+		key = "fightfail_up"
+	},
+	fightfail_equip = {
+		tip = "是否退出本次战斗并前往船坞进行<color=#92fc63>装备强化</color>？",
+		key = "fightfail_equip"
+	},
+	fight_strengthen = {
+		tip = "是否退出本次战斗并前往船坞进行<color=#92fc63>强化和突破</color>？",
+		key = "fight_strengthen"
+	},
+	fightfail_noequip = {
+		tip = "当前没有装备任何装备，无法强化",
+		key = "fightfail_noequip"
+	},
+	fightfail_choiceequip = {
+		tip = "请点击出击舰船以对其进行<color=#92fc63>装备强化</color>",
+		key = "fightfail_choiceequip"
+	},
+	fightfail_choicestrengthen = {
+		tip = "请点击出击舰船以对其进行<color=#92fc63>强化和突破</color>",
+		key = "fightfail_choicestrengthen"
+	},
+	sofmap_attention = {
+		key = "sofmap_attention",
+		tip = {
+			{
+				info = "通关下列指定关卡会获得不同数量<color=#92fc63>「茗的礼品券」</color>\n    1.三章及以后的普通主线海域\n    2.活动关卡SP1、SP2、SP3"
+			}
+		}
+	},
+	sofmapsd_1 = {
+		tip = "呼喵？！准备好的礼品券丢了喵！\n指挥官，快帮帮{namecode:98}喵！ ",
+		key = "sofmapsd_1"
+	},
+	sofmapsd_2 = {
+		tip = "快帮{namecode:98}投放礼品券喵！\n会给指挥官报酬的喵！",
+		key = "sofmapsd_2"
+	},
+	sofmapsd_3 = {
+		tip = "呼喵！营业额提升了喵！\n感谢指挥官喵！ ",
+		key = "sofmapsd_3"
+	},
+	sofmapsd_4 = {
+		tip = "营业额目标达成喵！\n感谢指挥官喵！",
+		key = "sofmapsd_4"
+	},
+	inform_level_limit = {
+		tip = "举报将在指挥官等级达到20级后开放 ",
+		key = "inform_level_limit"
+	},
+	3match_tip = {
+		key = "3match_tip",
+		tip = {
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/3match_1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/3match_2"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/3match_3"
 				}
 			},
 			disableScroll = true,

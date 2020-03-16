@@ -375,10 +375,16 @@ function slot2.reportDelayTimer(slot0, slot1, slot2)
 	pg.TimeMgr.GetInstance():ResumeBattleTimer()
 
 	slot3 = pg.TimeMgr.GetInstance():AddBattleTimer("", -1, slot2, function ()
-		pg.TimeMgr.GetInstance():RemoveBattleTimer(pg.TimeMgr.GetInstance().RemoveBattleTimer)
+
+		-- Decompilation error in this vicinity:
+		pg.TimeMgr.GetInstance():RemoveBattleTimer(
+		-- Decompilation error in this vicinity:
+		pg.TimeMgr.GetInstance().RemoveBattleTimer)
 
 		slot0 = nil
 
+
+		-- Decompilation error in this vicinity:
 		pg.TimeMgr.GetInstance()()
 	end)
 end

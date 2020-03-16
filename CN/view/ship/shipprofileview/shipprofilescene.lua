@@ -12,6 +12,12 @@ function slot0.getUIName(slot0)
 	return "ShipProfileUI"
 end
 
+function slot0.preload(slot0, slot1)
+	slot3 = getProxy(CollectionProxy).getShipGroup(slot2, slot0.contextData.groupId)
+
+	GetSpriteFromAtlasAsync("bg/star_level_bg_" .. shipRarity2bgPrint(slot5, slot3:GetSkin(slot0.contextData.showTrans).id, slot3:isBluePrintGroup()), "", slot1)
+end
+
 function slot0.setShipGroup(slot0, slot1)
 	slot0.shipGroup = slot1
 	slot0.groupSkinList = slot1:getDisplayableSkinList()
@@ -56,8 +62,9 @@ function slot0.init(slot0)
 	slot0.btnLike = slot0:findTF("adapt/detail_left_panel/heart/btnLike", slot0.blurPanel)
 	slot0.btnLikeAct = slot0.btnLike:Find("like")
 	slot0.btnLikeDisact = slot0.btnLike:Find("unlike")
-	slot0.viewBtn = slot0:findTF("bottom/view_btn")
+	slot0.obtainBtn = slot0:findTF("bottom/obtain_btn")
 	slot0.evaBtn = slot0:findTF("bottom/eva_btn")
+	slot0.viewBtn = slot0:findTF("bottom/view_btn")
 	slot0.shareBtn = slot0:findTF("bottom/share_btn")
 	slot0.leftProfile = slot0:findTF("adapt/profile_left_panel", slot0.blurPanel)
 	slot0.modelContainer = slot0:findTF("model", slot0.leftProfile)
@@ -87,13 +94,21 @@ function slot0.didEnter(slot0)
 	onButton(slot0, slot0.btnBack, function ()
 		slot0:emit(slot1.ON_BACK)
 	end, SFX_CANCEL)
-	onButton(slot0, slot0.viewBtn, function ()
-		slot0.paintingView:Start()
-	end, SFX_PANEL)
+	onButton(slot0, slot0.obtainBtn, function ()
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
+			type = MSGBOX_TYPE_OBTAIN,
+			shipId = slot0.shipGroup:getShipConfigId(),
+			list = slot0.shipGroup.groupConfig.description,
+			mediatorName = ShipProfileMediator.__cname
+		})
+	end)
 	onButton(slot0, slot0.evaBtn, function ()
 		slot0:emit(slot1.SHOW_EVALUATION)
 	end, SFX_PANEL)
 	setActive(slot0.evaBtn, not slot0.contextData.showTrans)
+	onButton(slot0, slot0.viewBtn, function ()
+		slot0.paintingView:Start()
+	end, SFX_PANEL)
 	onButton(slot0, slot0.shareBtn, function ()
 		pg.ShareMgr.GetInstance():Share(pg.ShareMgr.TypeShipProfile)
 	end, SFX_PANEL)
@@ -129,6 +144,7 @@ function slot0.didEnter(slot0)
 	slot0:InitCommon()
 	slot0.live2DBtn:Update(slot0.paintingName, false)
 	triggerToggle(slot0.toggles[slot0.INDEX_DETAIL], true)
+	setActive(slot0.bottomTF, false)
 end
 
 function slot0.InitSkinList(slot0)
@@ -283,6 +299,12 @@ function slot0.SwitchPage(slot0, slot1)
 			end,
 			function (slot0)
 				SetParent(slot0.bottomTF, slot0.pages[]._tf)
+				setActive(slot0.bottomTF, true)
+				setAnchoredPosition(slot0.bottomTF, {
+					z = 0,
+					x = -7,
+					y = 24
+				})
 				slot0.pages[].ExecuteAction(slot1, "EnterAnim", slot0.pages[].ExecuteAction)
 				slot0:TweenPage(slot0.pages[])
 				slot0()
@@ -360,11 +382,15 @@ function slot0.ReturnModel(slot0)
 end
 
 function slot0.CreateLive2D(slot0)
+	slot0.live2DBtn:SetEnable(false)
+
 	if slot0.l2dChar then
 		slot0.l2dChar:Dispose()
 	end
 
-	slot0.l2dChar = Live2D.New(slot2)
+	slot0.l2dChar = Live2D.New(slot2, function ()
+		slot0.live2DBtn:SetEnable(true)
+	end)
 
 	if isHalfBodyLive2D(slot0.skin.prefab) then
 		setAnchoredPosition(slot0.l2dRoot, {
@@ -437,12 +463,16 @@ function slot0.UpdatePaintingFace(slot0, slot1)
 end
 
 function slot0.PlayVoice(slot0, slot1, slot2)
-	slot3 = slot1.wordData
 	slot4 = slot1.skin
+	slot5 = slot1.words
 
 	slot0:RemoveCvTimer()
 
-	if ShipWordHelper.CV_KEY_REPALCE <= slot1.words.voice_key or slot5.voice_key == ShipWordHelper.CV_KEY_BAN_NEW then
+	if not slot1.wordData.cvPath or slot3.cvPath == "" then
+		return
+	end
+
+	if ShipWordHelper.CV_KEY_REPALCE <= slot5.voice_key or slot5.voice_key == ShipWordHelper.CV_KEY_BAN_NEW then
 		slot6 = 0
 
 		if slot1.isLive2d and slot0.l2dChar and slot3.voiceCalibrate then
@@ -480,60 +510,316 @@ function slot0.RemoveCvTimer(slot0)
 end
 
 function slot0.ShowDailogue(slot0, slot1, slot2, slot3)
-	slot3 = slot3 or function ()
-		return
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 4-7, warpins: 2 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 16-33, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 40-46, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 63-94, warpins: 2 ---
+	if not slot3 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 3-3, warpins: 1 ---
+		function slot3()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-1, warpins: 1 ---
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	setText(slot0.chatText, slot1.wordData.textContent)
+	if not slot1.wordData.textContent or slot4 == "" or slot4 == "nil" then
 
-	slot6.alignment = (CHAT_POP_STR_LEN < #slot0.chatText:GetComponent(typeof(Text)).text and TextAnchor.MiddleLeft) or TextAnchor.MiddleCenter
-	slot0.chatBg.sizeDelta = (slot0.initChatBgH < slot6.preferredHeight + 120 and Vector2.New(slot0.chatBg.sizeDelta.x, (CHAT_POP_STR_LEN < #slot0.chatText.GetComponent(typeof(Text)).text and TextAnchor.MiddleLeft) or TextAnchor.MiddleCenter)) or Vector2.New(slot0.chatBg.sizeDelta.x, slot0.initChatBgH)
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 12-15, warpins: 3 ---
+		slot3()
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5 = slot1.wordData.voiceCalibrate
+
+	setText(slot0.chatText, slot4)
+
+	if CHAT_POP_STR_LEN >= #slot0.chatText:GetComponent(typeof(Text)).text or not TextAnchor.MiddleLeft then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 38-39, warpins: 2 ---
+		slot7 = TextAnchor.MiddleCenter
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6.alignment = slot7
+	slot8 = slot0.chatBg
+
+	if slot0.initChatBgH >= slot6.preferredHeight + 120 or not Vector2.New(slot0.chatBg.sizeDelta.x, slot7) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 56-62, warpins: 2 ---
+		slot9 = Vector2.New(slot0.chatBg.sizeDelta.x, slot0.initChatBgH)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot8.sizeDelta = slot9
 
 	slot0:StopDailogue()
 	setActive(slot0.chatTF, true)
-	LeanTween.scale(rtf(slot0.chatTF.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeOutBack):setDelay((slot1.wordData.voiceCalibrate and ) or 0):setOnComplete(System.Action(function ()
+
+	slot9 = LeanTween.scale(rtf(slot0.chatTF.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeOutBack)
+	slot8 = LeanTween.scale(rtf(slot0.chatTF.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeOutBack).setDelay
+	slot10 = (slot5 and slot5) or 0
+
+	slot8(LeanTween.scale(rtf(slot0.chatTF.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeOutBack), slot10):setOnComplete(System.Action(function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-37, warpins: 1 ---
 		LeanTween.scale(rtf(slot0.chatTF.gameObject), Vector3.New(0, 0, 1), slot1.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeInBack):setDelay(slot1.CHAT_ANIMATION_TIME + slot2[1]):setOnComplete(System.Action(slot2[1]))
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end))
+
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 95-96, warpins: 1 ---
+	if not slot5 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 97-97, warpins: 2 ---
+		slot10 = 0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 98-107, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+
+
 end
 
 function slot0.StopDailogue(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-12, warpins: 1 ---
 	LeanTween.cancel(slot0.chatTF.gameObject)
 
 	slot0.chatTF.localScale = Vector3(0, 0)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.onBackPressed(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
 	if slot0.paintingView.isPreview then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-10, warpins: 1 ---
 		slot0.paintingView:Finish(true)
 
 		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 11-14, warpins: 2 ---
 	triggerButton(slot0.btnBack)
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.willExit(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-17, warpins: 1 ---
 	SetParent(slot0.bottomTF, slot0._tf)
 	pg.UIMgr.GetInstance():UnOverlayPanel(slot0.blurPanel, slot0._tf)
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 18-22, warpins: 0 ---
 	for slot4, slot5 in ipairs(slot0.pages) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 18-20, warpins: 1 ---
 		slot5:Destroy()
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 21-22, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 23-25, warpins: 1 ---
 	if slot0.l2dChar then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 26-29, warpins: 1 ---
 		slot0.l2dChar:Dispose()
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 30-52, warpins: 2 ---
 	slot0.paintingView:Dispose()
 	slot0.live2DBtn:Dispose()
 	slot0.cvLoader:Dispose()
 	slot0:ReturnModel()
 	slot0:RecyclePainting()
-	_.each(slot0.skinBtns or {}, function (slot0)
+
+	slot1 = _.each
+
+	if not slot0.skinBtns then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 53-53, warpins: 1 ---
+		slot2 = {}
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 54-62, warpins: 2 ---
+	slot1(slot2, function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0:Dispose()
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end)
 	slot0:RemoveCvTimer()
 	slot0:RemoveCvSeTimer()
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
 end
 
 return slot0

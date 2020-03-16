@@ -111,7 +111,9 @@ function slot0.register(slot0)
 			onCommander = function (slot0, slot1, slot2, slot3)
 				slot4 = nil
 
-				return function ()
+				return 
+				-- Decompilation error in this vicinity:
+				function ()
 					if slot0:isMaxLevel() and not slot0:isSameGroup(slot1.groupId) then
 						return false, i18n("commander_select_matiral_erro")
 					end

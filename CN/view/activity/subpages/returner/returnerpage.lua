@@ -107,7 +107,9 @@ function slot0.ShouldAcceptTasks(slot0)
 		return slot0:getTaskById(slot0) == nil and slot0:getFinishTaskById(slot0) == nil
 	end) or (_.all(slot0.config.task_list[slot0.taskIndex], function (slot0)
 		return slot0:getFinishTaskById(slot0) ~= nil
-	end) and not (slot0.taskIndex == #slot0.config.task_list) and function ()
+	end) and not (slot0.taskIndex == #slot0.config.task_list) and 
+	-- Decompilation error in this vicinity:
+	function ()
 		return slot0.taskIndex < slot0.day
 	end())
 end

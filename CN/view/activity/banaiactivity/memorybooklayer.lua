@@ -105,6 +105,8 @@ slot5 = {
 }
 
 function slot6(slot0)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0.root = slot0
 		slot0.list = {}

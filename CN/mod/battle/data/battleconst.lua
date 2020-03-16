@@ -162,7 +162,8 @@ ys.Battle.BattleConst.BulletType = {
 	STRAY = 8,
 	EFFECT = 9,
 	BEAM = 10,
-	G_BULLET = 11
+	G_BULLET = 11,
+	ELECTRIC_ARC = 12
 }
 ys.Battle.BattleConst.BulletDamageType = {
 	NORMAL = 1,
@@ -307,7 +308,9 @@ ys.Battle.BattleConst.EnviroumentBehaviour = {
 	DAMAGE = 2,
 	BUFF = 3,
 	MOVEMENT = 4,
-	FORCE = 5
+	FORCE = 5,
+	SPAWN = 6,
+	PLAY_SFX = 7
 }
 
 return

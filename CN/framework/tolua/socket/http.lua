@@ -115,7 +115,9 @@ slot0.sinkt["http-chunked"] = function (slot0)
 end
 
 function slot0.http.open(slot0, slot1, slot2)
-	slot3 = slot0.try(slot2 or slot0.tcp())
+	slot3 = slot0.try(
+	-- Decompilation error in this vicinity:
+	slot2 or slot0.tcp())
 	slot4 = slot1.setmetatable({
 		c = slot3
 	}, slot2)

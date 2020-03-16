@@ -1069,7 +1069,9 @@ end
 
 function slot0.getTransportPoint(slot0, slot1, slot2)
 	if slot0.furnitures[slot2]:isTransPort() and slot0:hasEmptyGrid() then
-		return function (slot0)
+		return 
+		-- Decompilation error in this vicinity:
+		function (slot0)
 			slot1 = {
 				slot0
 			}

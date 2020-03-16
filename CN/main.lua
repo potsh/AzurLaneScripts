@@ -24,7 +24,9 @@ PLATFORM_CODE = PLATFORM_CH
 SDK_EXIT_CODE = 99
 
 function luaIdeDebugFunc()
-	breakInfoFun = require("LuaDebugjit")("localhost", 7003)
+	breakInfoFun = 
+	-- Decompilation error in this vicinity:
+	require("LuaDebugjit")("localhost", 7003)
 	time = Timer.New(breakInfoFun, 0.5, -1, 1)
 
 	time:Start()
@@ -34,6 +36,8 @@ end
 if (PLATFORM_CODE == PLATFORM_CH or PLATFORM_CODE == PLATFORM_CHT) and PLATFORM == 8 then
 	pg.SdkMgr.GetInstance():InitSDK()
 end
+
+GetComponent(tf(GameObject.Find("OverlayCamera/Overlay/UIDebug/logs")), "Text").supportRichText = false
 
 pg.TimeMgr.GetInstance():Init()
 pg.PushNotificationMgr.GetInstance():Init()

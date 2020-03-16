@@ -178,21 +178,66 @@ slot7.magnitude = ({
 		}, slot2)
 	end,
 	SmoothDamp = function (slot0, slot1, slot2, slot3, slot4, slot5)
-		slot7 = 1 / (1 + 2 / slot0.max(0.0001, slot3) * (slot5 or Time.deltaTime) + 0.48 * 2 / slot0.max(0.0001, slot3) * (slot5 or Time.deltaTime) * 2 / slot0.max(0.0001, slot3) * (slot5 or Time.deltaTime) + 0.235 * 2 / slot0.max(0.0001, slot3) * (slot5 or Time.deltaTime) * 2 / slot0.max(0.0001, slot3) * (slot5 or Time.deltaTime) * 2 / slot0.max(0.0001, slot3) * (slot5 or Time.deltaTime))
+		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 3-4, warpins: 1 ---
+			slot5 = Time.deltaTime
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 5-6, warpins: 2 ---
+			if not slot4 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 7-8, warpins: 1 ---
+				slot4 = slot0.huge
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+
+		slot4 = slot4 or slot0.huge
+		slot7 = 1 / (1 + 2 / slot0.max(0.0001, slot3) * slot5 + 0.48 * 2 / slot0.max(0.0001, slot3) * slot5 * 2 / slot0.max(0.0001, slot3) * slot5 + 0.235 * 2 / slot0.max(0.0001, slot3) * slot5 * 2 / slot0.max(0.0001, slot3) * slot5 * 2 / slot0.max(0.0001, slot3) * slot5)
 
 		if (slot0.x - slot1.x) * () + (slot0.y - slot1.y) * () > (slot4 or slot0.huge) * slot0.max(0.0001, slot3) *  then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 39-44, warpins: 1 ---
 			slot12 = slot12 * slot15 / slot1(slot14)
 			slot13 = slot13 * slot15 / slot1(slot14)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
 		slot2.x = (slot2.x - slot6 * (slot2.x + slot6 * slot12) * slot5) * slot7
 		slot2.y = (slot2.y - slot6 * (slot2.y + slot6 * slot13) * slot5) * slot7
 
 		if (slot8 - slot10) * ((slot10 - slot12 + (slot12 + (slot2.x + slot6 * slot12) * slot5) * slot7) - slot8) + (slot9 - slot11) * ((slot11 - slot13 + (slot13 + (slot2.y + slot6 * slot13) * slot5) * slot7) - slot9) > 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 79-84, warpins: 1 ---
 			slot14 = slot8
 			slot15 = slot9
 			slot2.x = 0
 			slot2.y = 0
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
 		return slot2({
@@ -201,87 +246,239 @@ slot7.magnitude = ({
 		}, slot3), slot2
 	end,
 	Max = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-16, warpins: 1 ---
 		return slot0({
 			x = slot1.max(slot0.x, slot1.x),
 			y = slot1.max(slot0.y, slot1.y)
 		}, slot0)
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	Min = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-16, warpins: 1 ---
 		return slot0({
 			x = slot1.min(slot0.x, slot1.x),
 			y = slot1.min(slot0.y, slot1.y)
 		}, slot0)
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	Scale = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-12, warpins: 1 ---
 		return slot0({
 			x = slot0.x * slot1.x,
 			y = slot0.y * slot1.y
 		}, slot1)
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	Div = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0.x = slot0.x / slot1
 		slot0.y = slot0.y / slot1
 
 		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	Mul = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0.x = slot0.x * slot1
 		slot0.y = slot0.y * slot1
 
 		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	Add = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-9, warpins: 1 ---
 		slot0.x = slot0.x + slot1.x
 		slot0.y = slot0.y + slot1.y
 
 		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	Sub = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-9, warpins: 1 ---
 		slot0.x = slot0.x - slot1.x
 		slot0.y = slot0.y - slot1.y
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	__tostring = function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-6, warpins: 1 ---
 		return string.format("(%f,%f)", slot0.x, slot0.y)
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	__div = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-10, warpins: 1 ---
 		return slot0({
 			x = slot0.x / slot1,
 			y = slot0.y / slot1
 		}, slot1)
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	__mul = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
 		if type(slot1) == "number" then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 6-16, warpins: 1 ---
 			return slot0({
 				x = slot0.x * slot1,
 				y = slot0.y * slot1
 			}, slot1)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-26, warpins: 1 ---
 			return slot0({
 				x = slot0 * slot1.x,
 				y = slot0 * slot1.y
 			}, slot1)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 27-27, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end,
 	__add = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-12, warpins: 1 ---
 		return slot0({
 			x = slot0.x + slot1.x,
 			y = slot0.y + slot1.y
 		}, slot1)
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	__sub = function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-12, warpins: 1 ---
 		return slot0({
 			x = slot0.x - slot1.x,
 			y = slot0.y - slot1.y
 		}, slot1)
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	__unm = function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-10, warpins: 1 ---
 		return slot0({
 			x = -slot0.x,
 			y = -slot0.y
 		}, slot0)
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	__eq = function (slot0, slot1)
-		return (slot0.x - slot1.x)^2 + (slot0.y - slot1.y)^2 < 9.999999e-11
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-14, warpins: 1 ---
+		if (slot0.x - slot1.x)^2 + (slot0.y - slot1.y)^2 >= 9.999999e-11 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 15-16, warpins: 1 ---
+			slot2 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-17, warpins: 1 ---
+			slot2 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 18-18, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 })["Magnitude"]
 slot7.normalized = ()["Normalize"]

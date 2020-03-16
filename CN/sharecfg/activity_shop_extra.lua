@@ -1367,6 +1367,114 @@ pg.activity_shop_extra = {
 			}
 		}
 	},
+	[45] = {
+		num_limit = 1,
+		activity = 467,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 301231,
+		scene = "",
+		id = 45,
+		order = 3,
+		time = {
+			{
+				{
+					2020,
+					1,
+					9
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					1,
+					21
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[46] = {
+		num_limit = 1,
+		activity = 474,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 301323,
+		scene = "",
+		id = 46,
+		order = 5,
+		time = {
+			{
+				{
+					2020,
+					1,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					2,
+					6
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[47] = {
+		num_limit = 1,
+		activity = 525,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 312014,
+		scene = "",
+		id = 47,
+		order = 3,
+		time = {
+			{
+				{
+					2020,
+					3,
+					12
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					4,
+					1
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
 	all = {
 		1,
 		2,
@@ -1409,7 +1517,10 @@ pg.activity_shop_extra = {
 		41,
 		42,
 		43,
-		44
+		44,
+		45,
+		46,
+		47
 	}
 }
 

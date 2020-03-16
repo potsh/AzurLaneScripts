@@ -12,7 +12,11 @@ function pg.ConnectionMgr.Connect(slot0, slot1, slot2, slot3, slot4)
 
 	slot2.UIMgr.GetInstance():LoadingOn()
 	slot1.onConnected:AddListener(function ()
+
+		-- Decompilation error in this vicinity:
 		slot0.UIMgr.GetInstance():LoadingOff()
+
+		-- Decompilation error in this vicinity:
 		slot0.UIMgr.GetInstance()("Network Connected.")
 
 		slot2 = slot3
@@ -167,9 +171,15 @@ end
 
 function pg.ConnectionMgr.onError(slot0)
 	slot0.UIMgr.GetInstance():LoadingOff()
-	tostring(slot0)("Network Error: " .. tostring(slot0))
 
-	if "Network Error: " .. tostring(slot0) then
+	-- Decompilation error in this vicinity:
+	tostring(slot0)("Network Error: " .. 
+	-- Decompilation error in this vicinity:
+	tostring(slot0))
+
+	if "Network Error: " .. 
+	-- Decompilation error in this vicinity:
+	tostring(slot0) then
 		slot2:Dispose()
 
 		slot2 = nil
@@ -262,8 +272,12 @@ end
 function pg.ConnectionMgr.Disconnect(slot0)
 	slot0:stopHBTimer()
 
-	slot0 = {}
+	slot0 = 
+	-- Decompilation error in this vicinity:
+	{}
 
+
+	-- Decompilation error in this vicinity:
 	("Manually Disconnect !!!")
 
 	if "Manually Disconnect !!!" then

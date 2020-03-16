@@ -250,6 +250,31 @@ pg.player_resource = {
 		name = "xinrixi_pt",
 		itemid = 59147
 	},
+	[142] = {
+		id = 142,
+		name = "xunliandianshu_m",
+		itemid = 59148
+	},
+	[143] = {
+		id = 143,
+		name = "maoxi_pt",
+		itemid = 59149
+	},
+	[144] = {
+		id = 144,
+		name = "skinTicket3",
+		itemid = 59150
+	},
+	[145] = {
+		id = 145,
+		name = "longxiang2",
+		itemid = 59151
+	},
+	[146] = {
+		id = 146,
+		name = "sofmap_pt",
+		itemid = 59152
+	},
 	[1001] = {
 		id = 1001,
 		name = "vote2019_pt",
@@ -270,7 +295,23 @@ pg.player_resource = {
 		name = "worldboss926_ticket",
 		itemid = 59142
 	},
+	[2004] = {
+		id = 2004,
+		name = "nvpu2_pt",
+		itemid = 59967
+	},
+	[2005] = {
+		id = 2005,
+		name = "nvpu_ticket",
+		itemid = 59968
+	},
 	get_id_list_by_name = {
+		nvpu_ticket = {
+			2005
+		},
+		nvpu2_pt = {
+			2004
+		},
 		worldboss926_ticket = {
 			2003
 		},
@@ -282,6 +323,21 @@ pg.player_resource = {
 		},
 		vote2019_pt = {
 			1001
+		},
+		sofmap_pt = {
+			146
+		},
+		longxiang2 = {
+			145
+		},
+		skinTicket3 = {
+			144
+		},
+		maoxi_pt = {
+			143
+		},
+		xunliandianshu_m = {
+			142
 		},
 		xinrixi_pt = {
 			141
@@ -485,10 +541,17 @@ pg.player_resource = {
 		139,
 		140,
 		141,
+		142,
+		143,
+		144,
+		145,
+		146,
 		1001,
 		2001,
 		2002,
-		2003
+		2003,
+		2004,
+		2005
 	}
 }
 

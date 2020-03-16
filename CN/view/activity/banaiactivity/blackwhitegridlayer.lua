@@ -80,6 +80,8 @@ function slot18()
 end
 
 function slot19(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0._go = slot0
 		slot0._root = slot0
@@ -114,6 +116,8 @@ function slot19(slot0, slot1)
 end
 
 function slot20(slot0)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0.root = slot0
 		slot0.white = slot0:Find("white")
@@ -145,6 +149,8 @@ function slot20(slot0)
 end
 
 function slot21(slot0)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0.events = {}
 		slot0.sender = slot0
@@ -464,6 +470,8 @@ function slot24(slot0, slot1)
 		end
 	end
 
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0.maxSpriteIndexX = #slot0
 		slot0.maxSpriteIndexY = #slot0[#slot0]
@@ -695,6 +703,8 @@ function slot25(slot0, slot1, slot2)
 		end
 	end
 
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		slot0._tf = slot0
 		slot0.cellWhite = slot0._tf:Find("cell")
@@ -826,6 +836,8 @@ function slot25(slot0, slot1, slot2)
 end
 
 function slot26(slot0)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
 		setActive(slot0._tf, false)
 
@@ -904,9 +916,19 @@ function slot0.init(slot0)
 	slot0.mapTF = slot0:findTF("map")
 	slot0.backBtn = slot0:findTF("back")
 	slot0.toggleTFs = slot0:findTF("toggles")
-	slot0.poolMgr = slot0(slot0.mapTF:Find("root"))
-	slot0.successMsgbox = slot0(slot0.mapTF.Find("root"))(slot0:findTF("success_bg"))
-	slot0.failedMsgbox = slot0(slot0.mapTF.Find("root"))(slot0.findTF("success_bg"))(slot0:findTF("failed_bg"))
+	slot0.poolMgr = 
+	-- Decompilation error in this vicinity:
+	slot0(slot0.mapTF:Find("root"))
+	slot0.successMsgbox = 
+	-- Decompilation error in this vicinity:
+
+	-- Decompilation error in this vicinity:
+	slot0(slot0.mapTF.Find("root"))(slot0:findTF("success_bg"))
+	slot0.failedMsgbox = 
+	-- Decompilation error in this vicinity:
+
+	-- Decompilation error in this vicinity:
+	slot0(slot0.mapTF.Find("root"))(slot0.findTF("success_bg"))(slot0:findTF("failed_bg"))
 	slot0.furGot = slot0:findTF("fur/got")
 	slot0.helpBtn = slot0:findTF("help")
 	slot0._tf:GetComponent(typeof(Image)).sprite = slot0.bgSprite
@@ -1045,7 +1067,9 @@ function slot0.parseMap(slot0, slot1)
 	else
 		slot3 = slot2:split("#")
 
-		return loadstring("return " .. slot3[1])(), tonumber(slot3[2]), slot3[3] == "1"
+		return 
+		-- Decompilation error in this vicinity:
+		loadstring("return " .. slot3[1])(), tonumber(slot3[2]), slot3[3] == "1"
 	end
 end
 

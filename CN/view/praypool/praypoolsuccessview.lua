@@ -143,15 +143,23 @@ function slot0.MsgBox(slot0)
 			end, SFX_PANEL)
 			onButton(slot0, slot0.minusBtn, function ()
 				if slot0:verifyCount(slot0.count - 1) then
-					slot0.count = math.max(slot0.count - 1, 1)
+					slot0.count = 
+					-- Decompilation error in this vicinity:
+					math.max(slot0.count - 1, 1)
 
+
+					-- Decompilation error in this vicinity:
 					math.max(slot0.count - 1, 1)(slot0.count, slot0.updateText)
 				end
 			end, SFX_PANEL)
 			onButton(slot0, slot0.addBtn, function ()
 				if slot0:verifyCount(slot0.count + 1) then
-					slot0.count = math.min(slot0.count + 1, slot0.max)
+					slot0.count = 
+					-- Decompilation error in this vicinity:
+					math.min(slot0.count + 1, slot0.max)
 
+
+					-- Decompilation error in this vicinity:
 					math.min(slot0.count + 1, slot0.max)(slot0.count, slot0.updateText)
 				end
 			end, SFX_PANEL)

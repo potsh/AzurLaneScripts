@@ -130,7 +130,9 @@ function print_r(slot0)
 		[slot0] = "."
 	}
 
-	slot7(function (slot0, slot1, slot2)
+	slot7(
+	-- Decompilation error in this vicinity:
+	function (slot0, slot1, slot2)
 		slot3 = {}
 
 		for slot7, slot8 in slot0(slot0) do

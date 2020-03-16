@@ -1018,7 +1018,7 @@ pg.emoji_template = {
 		achieve = 0,
 		index = 8,
 		pic = "line_part2_8",
-		desc = "<color=#92fc63>[Vctory]</color>",
+		desc = "<color=#92fc63>[Victory]</color>",
 		item_name = "",
 		item_desc = "",
 		id = 208,

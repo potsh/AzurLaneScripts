@@ -27,7 +27,7 @@ function slot0.getUIName(slot0)
 end
 
 function slot0.getBGM(slot0)
-	return ys.Battle.BattleDataFunction.GetDungeonTmpDataByID(slot1).bgm or "battle-1"
+	return (pg.expedition_data_template[slot0.contextData.stageId].bgm ~= "" and slot1.bgm) or slot0.super.getBGM(slot0)
 end
 
 function slot0.init(slot0)
@@ -257,9 +257,37 @@ function slot0.painting(slot0, slot1, slot2, slot3)
 	end
 
 	if slot0._skillPaintings[slot1.id] == nil then
-		slot0._skillPaintings[slot1.id] = ys.Battle.BattleResourceManager.GetInstance():InstPainting(slot1.painting or slot1.prefab)
 
-		setParent(ys.Battle.BattleResourceManager.GetInstance().InstPainting(slot1.painting or slot1.prefab), slot0._paintingFitter, false)
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 16-25, warpins: 1 ---
+		slot5 = ys.Battle.BattleResourceManager.GetInstance()
+		slot4 = ys.Battle.BattleResourceManager.GetInstance().InstPainting
+		slot6 = slot1.painting or slot1.prefab
+		slot0._skillPaintings[slot1.id] = slot4(ys.Battle.BattleResourceManager.GetInstance(), slot6)
+
+		setParent(slot4(ys.Battle.BattleResourceManager.GetInstance(), slot6), slot0._paintingFitter, false)
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 26-26, warpins: 1 ---
+		slot6 = slot1.prefab
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 27-35, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
 	slot0._currentPainting = slot0._skillPaintings[slot1.id]
@@ -280,6 +308,9 @@ function slot0.painting(slot0, slot1, slot2, slot3)
 end
 
 function slot0.didEnter(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-119, warpins: 1 ---
 	setActive(slot0._tf, false)
 
 	GetComponent(slot0._tf, typeof(AspectRatioFitter)).enabled = true
@@ -287,23 +318,59 @@ function slot0.didEnter(slot0)
 
 	slot1:SetBattleUI(slot0)
 	onButton(slot0, slot0:findTF("PauseBtn"), function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0:emit(BattleMediator.ON_PAUSE)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end, SFX_CONFIRM)
 	onButton(slot0, slot2, function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-16, warpins: 1 ---
 		slot0:emit(BattleMediator.ON_CHAT, slot0:findTF("chatContainer"))
 		setActive(slot0, false)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end)
 	onToggle(slot0, slot0:findTF("AutoBtn"), function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-32, warpins: 1 ---
 		slot0:emit(BattleMediator.ON_AUTO, {
 			isOn = not slot0,
 			toggle = slot0:findTF("AutoBtn")
 		})
 		slot0.emit:ActiveBot(ys.Battle.BattleState.IsAutoBotActive())
 		setActive(slot0.emit, slot1:ChatUseable())
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end, SFX_PANEL, SFX_PANEL)
 	slot1:ConfigBattleEndFunc(function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0:clear()
 		slot0:emit(BattleMediator.ON_BATTLE_RESULT, slot0)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end)
 
 	slot4 = {
@@ -321,34 +388,127 @@ function slot0.didEnter(slot0)
 	slot0:initPauseWindow()
 
 	if slot0.contextData.prePause then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 120-125, warpins: 1 ---
 		triggerButton(slot0:findTF("PauseBtn"))
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 126-133, warpins: 2 ---
 	setActive(slot2, slot1:ChatUseable())
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.onBackPressed(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
 	if isActive(slot0.pauseWindow) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-11, warpins: 1 ---
 		playSoundEffect(SFX_CANCEL)
 		triggerButton(slot0.continueBtn)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.activeBotHelp(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = getProxy(PlayerProxy)
 
 	if not slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-8, warpins: 1 ---
 		if slot0.autoBotHelp then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 9-15, warpins: 1 ---
 			pg.MsgboxMgr.GetInstance():hide()
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 16-16, warpins: 2 ---
 		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 17-19, warpins: 1 ---
 	if slot2.botHelp then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 20-20, warpins: 1 ---
 		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 21-48, warpins: 1 ---
 	slot0.autoBotHelp = true
 
 	pg.MsgboxMgr.GetInstance():ShowMsgBox({
@@ -361,30 +521,122 @@ function slot0.activeBotHelp(slot0, slot1)
 			}
 		},
 		onClose = function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
 			slot0.autoBotHelp = false
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 	})
 
 	slot2.botHelp = true
+
+	return
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 49-49, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 50-50, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+
+
 end
 
 function slot0.exitBattle(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
 	if not slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 3-8, warpins: 1 ---
 		slot0:emit(BattleMediator.ON_BACK_PRE_SCENE)
-	elseif slot1 == "kick" then
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 9-10, warpins: 1 ---
+		if slot1 == "kick" then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 11-11, warpins: 1 ---
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 11-11, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.setChapter(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0._chapter = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.setFleet(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0._mainShipVOs = slot1
 	slot0._vanShipVOs = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.initPauseWindow(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot0.pauseWindow = slot0:findTF("Msgbox")
 	slot0.LeftTimeContainer = slot0:findTF("window/LeftTime", slot0.pauseWindow)
 	slot0.LeftTime = slot0:findTF("window/LeftTime/Text", slot0.pauseWindow)
@@ -392,91 +644,430 @@ function slot0.initPauseWindow(slot0)
 	slot0.vanTFs = {}
 
 	function slot1(slot0, slot1, slot2)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 5-43, warpins: 0 ---
 		for slot6 = 1, 3, 1 do
-			setActive(slot1:Find("ship_" .. slot6), slot2 and slot6 <= #slot2)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 5-14, warpins: 2 ---
+			slot8 = setActive
+			slot9 = slot1:Find("ship_" .. slot6)
+
+			if slot2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 15-17, warpins: 1 ---
+				if slot6 > #slot2 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 18-19, warpins: 1 ---
+					slot10 = false
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 20-20, warpins: 1 ---
+					slot10 = true
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 21-23, warpins: 3 ---
+			slot8(slot9, slot10)
 
 			if slot2 and slot6 <= #slot2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 27-30, warpins: 1 ---
 				updateShip(slot7, slot2[slot6])
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			table.insert((slot0 and slot0.mainTFs) or slot0.vanTFs, slot7)
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 31-34, warpins: 3 ---
+			slot8 = table.insert
+
+			if not slot0 or not slot0.mainTFs then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 39-40, warpins: 2 ---
+				slot9 = slot0.vanTFs
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #3 41-43, warpins: 2 ---
+			slot8(slot9, slot7)
+			--- END OF BLOCK #3 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 44-45, warpins: 1 ---
 		if slot2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 46-50, warpins: 1 ---
 			slot3 = 0
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 51-56, warpins: 0 ---
 			for slot7, slot8 in ipairs(slot2) do
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 51-54, warpins: 1 ---
 				slot3 = slot3 + slot8:getShipCombatPower()
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 55-56, warpins: 2 ---
+				--- END OF BLOCK #1 ---
+
+
+
 			end
 
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 57-66, warpins: 1 ---
 			setText(slot1:Find("power/value"), math.floor(slot3))
+			--- END OF BLOCK #2 ---
+
+
+
 		end
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 67-67, warpins: 2 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
 	end
 
 	if slot0._mainShipVOs then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 26-43, warpins: 1 ---
 		slot1(true, slot0:findTF("window/main", slot0.pauseWindow), slot0._mainShipVOs)
 		slot1(false, slot0:findTF("window/van", slot0.pauseWindow), slot0._vanShipVOs)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 44-62, warpins: 2 ---
 	slot3 = findTF(slot0.pauseWindow, "window/Chapter")
 	slot4 = findTF(slot0.pauseWindow, "window/Chapter/Text")
 
 	if ys.Battle.BattleState.GetInstance().GetBattleType(slot2) == SYSTEM_SCENARIO then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 63-80, warpins: 1 ---
 		setText(slot3, slot0._chapter:getConfigTable().chapter_name)
 		setText(slot4, string.split(slot0._chapter.getConfigTable().name, "|")[1])
-	elseif slot5 == SYSTEM_SHAM then
-		setText(slot3, "SP")
-		setText(slot4, string.split(slot0._chapter:getConfig("name"), "|")[1])
-	elseif slot5 == SYSTEM_ROUTINE or slot5 == SYSTEM_DUEL or slot5 == SYSTEM_HP_SHARE_ACT_BOSS or slot5 == SYSTEM_BOSS_EXPERIMENT or slot5 == SYSTEM_ACT_BOSS then
-		setText(slot3, "SP")
-		setText(slot4, pg.expedition_data_template[slot2:GetProxyByName(ys.Battle.BattleDataProxy.__name):GetInitData().StageTmpId].name)
-	elseif slot5 == SYSTEM_DEBUG then
-		setText(slot3, "??")
-		setText(slot4, "碧蓝梦境")
-	elseif slot5 == SYSTEM_CHALLENGE then
-		setText(slot3, "SP")
-		setText(slot4, slot0._chapter:getNextExpedition().chapter_name[2])
-		setActive(slot0.LeftTimeContainer, true)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 81-83, warpins: 1 ---
+		if slot5 == SYSTEM_SHAM then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 84-101, warpins: 1 ---
+			setText(slot3, "SP")
+			setText(slot4, string.split(slot0._chapter:getConfig("name"), "|")[1])
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 102-104, warpins: 1 ---
+			if slot5 == SYSTEM_ROUTINE or slot5 == SYSTEM_DUEL or slot5 == SYSTEM_HP_SHARE_ACT_BOSS or slot5 == SYSTEM_BOSS_EXPERIMENT or slot5 == SYSTEM_ACT_BOSS then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 117-139, warpins: 5 ---
+				setText(slot3, "SP")
+				setText(slot4, pg.expedition_data_template[slot2:GetProxyByName(ys.Battle.BattleDataProxy.__name):GetInitData().StageTmpId].name)
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 140-142, warpins: 1 ---
+				if slot5 == SYSTEM_DEBUG then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 143-151, warpins: 1 ---
+					setText(slot3, "??")
+					setText(slot4, "碧蓝梦境")
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 152-154, warpins: 1 ---
+					if slot5 == SYSTEM_CHALLENGE then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 155-171, warpins: 1 ---
+						setText(slot3, "SP")
+						setText(slot4, slot0._chapter:getNextExpedition().chapter_name[2])
+						setActive(slot0.LeftTimeContainer, true)
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 172-220, warpins: 6 ---
 	onButton(slot0, slot0:findTF("window/button_container/leave", slot0.pauseWindow), function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0:emit(BattleMediator.ON_LEAVE)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end)
 
 	slot0.continueBtn = slot0:findTF("window/button_container/continue", slot0.pauseWindow)
 
 	onButton(slot0, slot0.continueBtn, function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-21, warpins: 1 ---
 		setActive(slot0.pauseWindow, false)
 		pg.UIMgr.GetInstance():UnblurPanel(slot0.pauseWindow, slot0._tf)
 		pg.UIMgr.GetInstance():Resume()
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end)
 	onButton(slot0, slot0:findTF("help", slot0.pauseWindow), function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
 		if BATTLE_DEBUG and PLATFORM == 7 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 7-31, warpins: 1 ---
 			setActive(slot0.pauseWindow, false)
 			pg.UIMgr.GetInstance():UnblurPanel(slot0.pauseWindow, slot0._tf)
 			pg.UIMgr.GetInstance():Resume()
 			pg.UIMgr.GetInstance():OpenConsole()
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 32-45, warpins: 2 ---
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				type = MSGBOX_TYPE_HELP,
 				helps = i18n("help_battle_rule")
 			})
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 46-46, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end)
 	onButton(slot0, slot0:findTF("window/top/btnBack", slot0.pauseWindow), function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
 		triggerButton(slot0.continueBtn)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end)
 	onButton(slot0, slot0.pauseWindow, function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
 		triggerButton(slot0.continueBtn)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end)
 	setActive(slot0.pauseWindow, false)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 function slot0.updatePauseWindow(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if not slot0.pauseWindow then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-4, warpins: 1 ---
 		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-67, warpins: 1 ---
 	setActive(slot0.pauseWindow, true)
 	pg.UIMgr.GetInstance():BlurPanel(slot0.pauseWindow)
 
@@ -486,13 +1077,39 @@ function slot0.updatePauseWindow(slot0)
 	slot1(slot0._mainShipVOs, slot5, slot0.mainTFs)
 	slot1(slot0._vanShipVOs, slot6, slot0.vanTFs)
 	setText(slot0.LeftTime, ys.Battle.BattleTimerView.formatTime(math.floor(slot3:GetCountDown())))
+
+	return
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 68-68, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 function slot0.OnCloseChat(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-16, warpins: 1 ---
 	setActive(slot0:findTF("chatBtn"), ys.Battle.BattleState.GetInstance():IsBotActive())
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.clear(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot0._preSkillTF = nil
 	slot0._preCommanderSkillTF = nil
 	slot0._commanderSkillList = nil
@@ -500,13 +1117,28 @@ function slot0.clear(slot0)
 	slot0._currentPainting = nil
 
 	Destroy(slot0._paintingUI)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.willExit(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot0._skillFloatPool:Dispose()
 	slot0._skillFloatCMDPool:Dispose()
 	ys.Battle.BattleState.GetInstance():ExitBattle()
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.pauseWindow, slot0._tf)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 return slot0

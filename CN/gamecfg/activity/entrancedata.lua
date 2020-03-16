@@ -179,5 +179,52 @@ return {
 		isShow = function ()
 			return getProxy(ActivityProxy):getActivityById(ActivityConst.NEWYEAR_ACTIVITY) and not slot0:isEnd()
 		end
+	},
+	{
+		banner = "activity_redpacket",
+		event = ActivityMediator.OPEN_RED_PACKET_LAYER,
+		data = {},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_RED_PACKETS) and not slot0:isEnd()
+		end,
+		isTip = function ()
+			return RedPacketLayer.isShowRedPoint()
+		end
+	},
+	{
+		banner = "LanternFestival",
+		event = ActivityMediator.GO_MINI_GAME,
+		data = {
+			10
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityById(ActivityConst.LANTERNFESTIVAL) and not slot0:isEnd()
+		end,
+		isTip = function ()
+			if getProxy(ActivityProxy):getActivityById(ActivityConst.LANTERNFESTIVAL) and not slot0:isEnd() then
+				return getProxy(MiniGameProxy).GetHubByHubId(slot1, slot0:getConfig("config_id")).count > 0 and slot2.usedtime < 7
+			end
+		end
+	},
+	{
+		banner = "encode_game",
+		event = ActivityMediator.GO_DECODE_MINI_GAME,
+		data = {
+			11
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_MINIGAME) and not slot0:isEnd() and 
+			-- Decompilation error in this vicinity:
+			function ()
+				slot0 = getProxy(MiniGameProxy)
+
+				return slot0:GetHubByHubId(slot0:getConfig("config_id")) and slot1.id == 7
+			end()
+		end,
+		isTip = function ()
+			if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_MINIGAME) and not slot0:isEnd() then
+				return getProxy(MiniGameProxy):GetHubByHubId(slot0:getConfig("config_id")) and slot2.id == 7 and slot2.count > 0
+			end
+		end
 	}
 }

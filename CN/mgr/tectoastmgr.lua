@@ -16,8 +16,12 @@ function pg.TecToastMgr.Init(slot0, slot1)
 		slot0._tf = slot0._go.transform
 
 		slot0._go:SetActive(false)
-		slot0._go.transform:SetParent(GameObject.Find("Overlay/UIOverlay").transform, false)
+		slot0._go.transform:SetParent(
+		-- Decompilation error in this vicinity:
+		GameObject.Find("Overlay/UIOverlay").transform, false)
 		slot0:findUI()
+
+		-- Decompilation error in this vicinity:
 		GameObject.Find("Overlay/UIOverlay")()
 	end)
 end

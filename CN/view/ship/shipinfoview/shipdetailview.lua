@@ -297,51 +297,226 @@ function slot0.UpdateRecordEquipments(slot0, slot1)
 	slot4 = slot0:GetShipVO():getEquipmentRecord(slot0.shareData.player.id)[slot1] or {}
 
 	for slot8 = 1, 5, 1 do
-		setActive(slot13, tonumber(slot4[slot8]) and slot9 ~= -1)
-		setActive(slot2:Find("equipment_" .. slot8):Find("empty"), not (tonumber(slot4[slot8]) and slot9 ~= -1))
+		if tonumber(slot4[slot8]) then
+			if slot9 == -1 then
+				slot10 = false
+			else
+				slot10 = true
+			end
+		end
 
-		if tonumber(slot4[slot8]) and slot9 ~= -1 then
+		slot11 = slot2:Find("equipment_" .. slot8)
+
+		setActive(slot13, slot10)
+		setActive(slot11:Find("empty"), not slot10)
+
+		if slot10 then
+			if not slot0:GetShipVO().equipments[slot8] or slot15.id ~= slot9 then
+				slot16 = false
+
+				if false then
+					slot16 = false
+				end
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 73-73, warpins: 1 ---
+				slot16 = true
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 74-75, warpins: 3 ---
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 76-77, warpins: 1 ---
+				if slot14 and slot14.count > 0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 82-83, warpins: 2 ---
+					slot17 = false
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 84-84, warpins: 2 ---
+					slot17 = true
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #2 ---
+
+
+
+			end
+
 			slot14 = slot0.equipmentProxy:getEquipmentById(slot9)
+			slot16 = (slot0.GetShipVO().equipments[slot8] and slot15.id == slot9) or false
 
-			setActive(slot13:Find("tip"), not ((slot0:GetShipVO().equipments[slot8] and slot15.id == slot9) or false) and (not slot14 or slot14.count <= 0))
+			setActive(slot13:Find("tip"), not ((slot0.GetShipVO().equipments[slot8] and slot15.id == slot9) or false) and (not slot14 or slot14.count <= 0))
 			updateEquipment(slot0:findTF("IconTpl", slot13), Equipment.New({
 				id = slot9
 			}))
 
 			if not ((slot0.GetShipVO().equipments[slot8] and slot15.id == slot9) or false) and (not slot14 or slot14.count <= 0) then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 106-112, warpins: 1 ---
 				onButton(slot0, slot13, function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-11, warpins: 1 ---
 					pg.TipsMgr.GetInstance():ShowTips(i18n("ship_quick_change_nofreeequip"))
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end, SFX_PANEL)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 113-115, warpins: 1 ---
 			removeOnButton(slot13)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 	end
 end
 
 function slot0.UpdatePreferenceTag(slot0)
-	triggerToggle(slot0.commonTagToggle, slot0:GetShipVO().preferenceTag == Ship.PREFERENCE_TAG_COMMON)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = triggerToggle
+	slot2 = slot0.commonTagToggle
+
+	if slot0:GetShipVO().preferenceTag ~= Ship.PREFERENCE_TAG_COMMON then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 11-12, warpins: 1 ---
+		slot3 = false
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-13, warpins: 1 ---
+		slot3 = true
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 14-15, warpins: 2 ---
+	slot1(slot2, slot3)
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 function slot0.DoLeveUpAnim(slot0, slot1, slot2, slot3)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0.shipDetailLogicPanel:doLeveUpAnim(slot1, slot2, slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 function slot0.OnDestroy(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	removeAllChildren(slot0.equipmentsGrid)
 
 	if slot0.recordPanel then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-14, warpins: 1 ---
 		if LeanTween.isTweening(go(slot0.recordPanel)) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 15-20, warpins: 1 ---
 			LeanTween.cancel(go(slot0.recordPanel))
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 21-22, warpins: 2 ---
 		slot0.recordPanel = nil
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 23-33, warpins: 2 ---
 	slot0.shipDetailLogicPanel:clear()
 	slot0.shipDetailLogicPanel:detach()
 
 	slot0.shareData = nil
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 return slot0

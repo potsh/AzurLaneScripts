@@ -313,6 +313,58 @@ pg.mini_game = {
 			}
 		}
 	},
+	{
+		name = "春节叠叠乐",
+		view_name = "StackGameView",
+		mediator_name = "MiniHubMediator",
+		type = 2,
+		simple_config_data = "",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "",
+		id = 9,
+		hub_id = 5,
+		request_data = 1
+	},
+	{
+		name = "元宵答题",
+		view_name = "LanternFestivalView",
+		mediator_name = "MiniHubMediator",
+		type = 2,
+		simple_config_data = "",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "activity_event_question",
+		id = 10,
+		hub_id = 6,
+		request_data = 1
+	},
+	{
+		name = "解密游戏",
+		view_name = "DecodeMiniGameView",
+		mediator_name = "MiniHubMediator",
+		type = 2,
+		simple_config_data = "",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "",
+		id = 11,
+		hub_id = 7,
+		request_data = 1
+	},
+	{
+		name = "消消乐",
+		view_name = "Match3GameView",
+		mediator_name = "MiniHubMediator",
+		type = 2,
+		simple_config_data = "",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "",
+		id = 12,
+		hub_id = 8,
+		request_data = 1
+	},
 	all = {
 		1,
 		2,
@@ -321,7 +373,11 @@ pg.mini_game = {
 		5,
 		6,
 		7,
-		8
+		8,
+		9,
+		10,
+		11,
+		12
 	}
 }
 
