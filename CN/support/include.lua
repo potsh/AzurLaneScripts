@@ -11,8 +11,6 @@ require("Support/Utils/GCThread")
 require("Support/Utils/PathFinding")
 require("Support/Utils/GraphPath")
 require("Support/Utils/HXSet")
-require("Support/Utils/ScrollTxt")
 require("Support/Utils/PageUtil")
 require("Support/Utils/LuaBitUtil")
-
-return
+require("Support/Utils/OrientedPathFinding")

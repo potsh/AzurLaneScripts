@@ -156,6 +156,14 @@ function slot0.init(slot0)
 	slot0.onSelected = slot1.onSelected or function ()
 		warning("not implemented.")
 	end
+	slot0.settingBtn = slot0:findTF("blur_panel/adapt/left_length/frame/setting")
+	slot0.settingPanel = DockyardQuickSelectSettingPage.New(slot0._tf, slot0.event)
+
+	slot0.settingPanel:Load()
+	slot0.settingPanel:OnSettingChanged(function ()
+		slot0:unselecteAllShips()
+	end)
+
 	slot0.blurPanel = slot0:findTF("blur_panel")
 	slot0.topPanel = slot0:findTF("blur_panel/adapt/top")
 	slot0.sortBtn = slot0:findTF("sort_button", slot0.topPanel)
@@ -309,6 +317,19 @@ function slot0.init(slot0)
 	slot0.listEmptyTxt = slot0:findTF("Text", slot0.listEmptyTF)
 
 	setText(slot0.listEmptyTxt, i18n("list_empty_tip_dockyardui"))
+
+	if slot0.contextData.mode == slot0.MODE_DESTROY then
+		slot0.blacklist = {}
+		slot0.selectPanel:GetComponent("HorizontalLayoutGroup").padding.right = 50
+
+		setActive(slot0.selectPanel:Find("quick_select"), true)
+		setActive(slot0.settingBtn, true)
+	else
+		slot0.selectPanel:GetComponent("HorizontalLayoutGroup").padding.right = 250
+
+		setActive(slot0.selectPanel:Find("quick_select"), false)
+		setActive(slot0.settingBtn, false)
+	end
 end
 
 function slot0.setShipsCount(slot0, slot1)
@@ -1015,7 +1036,7 @@ function slot0.filterCommon(slot0)
 	for slot5, slot6 in pairs(slot0.shipVOsById) do
 		if slot0.contextData.blockLock and slot6:GetLockState() == Ship.LOCK_STATE_LOCK then
 		elseif slot0.teamTypeFilter and slot6:getTeamType() ~= slot0.teamTypeFilter then
-		elseif (slot0:selectNone(slot0.indexFlag, #slot0 - 1) or slot0.indexFlag[slot1[slot6:getShipType()] + 2] or slot0.indexFlag[slot2[slot6:getTeamType()]]) and (slot0:selectNone(slot0.indexFlag2, #slot3 - 1) or slot0.indexFlag2[slot4[slot6:getConfig("nationality")]] or ((slot6:getConfig("nationality") == 0 or Nation.IsLinkType(slot6:getNation())) and slot0.indexFlag2[#slot0.indexFlag2])) and (slot0:selectNone(slot0.indexFlag3, #slot5 - 1) or slot0.indexFlag3[slot6[slot6:getRarity()]]) and (not slot0.indexFlag4[1] or slot6:hasAvailiableSkin()) and (not slot0.indexFlag4[2] or slot6:isRemouldable()) and (not slot0.indexFlag4[3] or not slot6:isIntensifyMax()) and (slot0.filterTag == Ship.PREFERENCE_TAG_NONE or slot0.filterTag == slot6:GetPreferenceTag()) then
+		elseif (slot0:selectNone(slot0.indexFlag, #slot0 - 1) or slot0.indexFlag[slot1[slot6:getShipType()] + 2] or slot0.indexFlag[slot2[slot6:getTeamType()]]) and (slot0:selectNone(slot0.indexFlag2, #slot3 - 1) or slot0.indexFlag2[slot4[slot6:getConfig("nationality")]] or (slot0.indexFlag2[#slot0.indexFlag2] and slot4[slot6:getConfig("nationality")] == nil)) and (slot0:selectNone(slot0.indexFlag3, #slot5 - 1) or slot0.indexFlag3[slot6[slot6:getRarity()]]) and (not slot0.indexFlag4[1] or slot6:hasAvailiableSkin()) and (not slot0.indexFlag4[2] or slot6:isRemouldable()) and (not slot0.indexFlag4[3] or not slot6:isIntensifyMax()) and (slot0.filterTag == Ship.PREFERENCE_TAG_NONE or slot0.filterTag == slot6:GetPreferenceTag()) then
 			table.insert(slot0.shipVOs, slot6)
 		end
 	end
@@ -1207,11 +1228,152 @@ function slot0.didEnter(slot0)
 			return
 		end
 	end, SFX_CONFIRM)
+	onButton(slot0, findTF(slot0.selectPanel, "quick_select"), function ()
+		if slot0.animating then
+			return
+		end
+
+		slot1 = 3
+		slot2 = {}
+
+		for slot6, slot7 in pairs(slot0) do
+			if slot7 ~= 0 then
+				slot2[slot7] = slot2[slot7] or slot1
+				slot1 = slot1 - 1
+			end
+		end
+
+		slot4 = {}
+		slot5 = {}
+
+		for slot9, slot10 in pairs(slot3) do
+			if slot10:isMaxStar() then
+				slot4[slot10:getGroupId()] = true
+			else
+				slot11 = slot10:getMaxStar() - slot10:getStar() + 1
+
+				if slot10:GetLockState() == Ship.LOCK_STATE_UNLOCK then
+					slot11 = slot11 + 1
+				end
+
+				slot5[slot10:getGroupId()] = (slot5[slot10:getGroupId()] and slot12 < slot11 and slot12) or slot11
+			end
+		end
+
+		if not _.all(_.select(slot0.shipVOs, function (slot0)
+			return slot0.configId ~= 100001 and slot0.configId ~= 100011 and slot0:GetLockState() == Ship.LOCK_STATE_UNLOCK and table.contains(slot0, slot0:getRarity()) and slot0.level == 1 and not slot1.blacklist[slot0:getGroupId()] and not table.contains(slot1.selectedIds, slot0.id) and not slot0.inFleet and not slot0.inChapter and not slot0.inWorld and not slot0.inEvent and not slot0.inBackyard and not slot0.inClass and not slot0.inTactics and not slot0.inExercise and not slot0.inAdmiral and not slot0.inSham and not slot0.inElite and not slot0.inActivity
+		end), function (slot0)
+			return slot0.blacklist[slot0:getGroupId()]
+		end) then
+			slot6 = _.select(slot6, function (slot0)
+				return not slot0.blacklist[slot0:getGroupId()]
+			end)
+		elseif #slot0.selectedIds > 0 then
+			slot6 = {}
+		end
+
+		table.sort(slot6, function (slot0, slot1)
+			if (slot0[slot0:getRarity()] or 0) == (slot0[slot1:getRarity()] or 0) then
+				if slot0:getGroupId() == slot1:getGroupId() then
+					return slot1.createTime < slot0.createTime
+				end
+
+				return slot1.configId < slot0.configId
+			else
+				return slot3 < slot2
+			end
+		end)
+
+		slot7 = PlayerPrefs.GetString("QuickSelectWhenHasAtLeastOneMaxstar", "KeepNone")
+		slot8 = PlayerPrefs.GetString("QuickSelectWithoutMaxstar", "KeepAll")
+		slot9 = {}
+		slot6 = _.select(slot6, function (slot0)
+			if slot0[slot0:getGroupId()] then
+				if slot1 == "KeepNone" then
+					return true
+				elseif slot1 == "KeepOne" then
+					if not slot2[slot0:getGroupId()] then
+						slot2[slot0:getGroupId()] = true
+
+						return false
+					end
+
+					return true
+				elseif slot1 == "KeepAll" then
+					return false
+				end
+			elseif slot3 == "KeepNone" then
+				return true
+			elseif slot3 == "KeepNeeded" then
+				if slot4[slot0:getGroupId()] > 0 then
+					slot4[slot0:getGroupId()] = slot4[slot0:getGroupId()] - 1
+
+					return false
+				end
+
+				return true
+			elseif slot3 == "KeepAll" then
+				return false
+			end
+		end)
+		slot10 = 0
+		slot11 = false
+		slot12 = false
+
+		for slot16 = 1, slot0.selectedMax - #slot0.selectedIds, 1 do
+			if slot6[slot16] then
+				slot17 = 0
+				slot18 = 0
+
+				for slot22, slot23 in ipairs(slot0.selectedIds) do
+					slot25, slot26 = slot0.shipVOsById[slot23].calReturnRes(slot24)
+					slot17 = slot17 + slot25
+					slot18 = slot18 + slot26
+				end
+
+				slot19, slot20 = slot6[slot16]:calReturnRes()
+				slot11 = slot0.player:OilMax(slot18)
+
+				if slot0.player:GoldMax(slot17 + slot19) then
+					break
+				end
+
+				slot10 = slot10 + 1
+
+				slot0:selectShip(slot6[slot16], true)
+			end
+		end
+
+		if slot10 == 0 then
+			if slot12 then
+				if #slot0.selectedIds == 0 then
+					pg.TipsMgr.GetInstance():ShowTips(i18n("gold_max_tip_title") .. i18n("resource_max_tip_retire"))
+				else
+					pg.TipsMgr.GetInstance():ShowTips(i18n("retire_overgold"))
+				end
+			elseif #slot0.selectedIds > 0 then
+				slot0:displayDestroyPanel()
+			else
+				pg.TipsMgr.GetInstance():ShowTips(i18n("retire_selectzero"))
+			end
+		elseif slot11 then
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				content = i18n("oil_max_tip_title") .. i18n("resource_max_tip_retire_1"),
+				onYes = function ()
+					slot0:displayDestroyPanel()
+				end
+			})
+		else
+			slot0:displayDestroyPanel()
+		end
+	end, SFX_CONFIRM)
 	slot0:filter()
 	slot0:updateBarInfo()
 
 	if slot0.contextData.mode == slot0.MODE_WORLD then
 		slot0:initWorldPanel()
+	elseif slot0.contextData.mode == slot0.MODE_DESTROY and not LOCK_DESTROY_GUIDE then
+		pg.SystemGuideMgr:GetInstance():Play(slot0)
 	end
 
 	if not slot0.contextData.selectFriend then
@@ -1258,6 +1420,13 @@ function slot0.didEnter(slot0)
 		table.insert(slot0.selectedIds, slot0.contextData.selectShipId)
 		slot0:updateSelected()
 	end
+
+	slot0.bulinTip = AprilFoolBulinSubView.ShowAprilFoolBulin(slot0, 60033)
+
+	onButton(slot0, slot0.settingBtn, function ()
+		slot0.settingPanel:Show()
+	end)
+	pg.SystemGuideMgr:GetInstance():Play(slot0)
 end
 
 function slot0.OnSwitch(slot0, slot1, slot2, slot3)
@@ -1285,6 +1454,12 @@ function slot0.onBackPressed(slot0)
 
 	if slot0.destoryPanel and isActive(slot0.destoryPanel) then
 		slot0:closeDestroyPanel()
+
+		return
+	end
+
+	if slot0.settingPanel and slot0.settingPanel:isShowing() then
+		slot0.settingPanel:Hide()
 
 		return
 	end
@@ -1356,8 +1531,8 @@ function slot0.checkDestroyGold(slot0, slot1)
 	return true, not slot4
 end
 
-function slot0.selectShip(slot0, slot1)
-	function slot2()
+function slot0.selectShip(slot0, slot1, slot2)
+	function slot3()
 		slot1 = nil
 
 		for slot5, slot6 in ipairs(slot0.selectedIds) do
@@ -1372,7 +1547,7 @@ function slot0.selectShip(slot0, slot1)
 		return slot0, slot1
 	end
 
-	function slot3()
+	function slot4()
 		slot0, slot1 = slot0()
 
 		if not slot0 then
@@ -1431,13 +1606,13 @@ function slot0.selectShip(slot0, slot1)
 	end
 
 	if slot0.mode == slot0.MODE_DESTROY then
-		slot4, slot5 = slot0:checkDestroyGold(slot1)
+		slot5, slot6 = slot0:checkDestroyGold(slot1)
 
-		if not slot4 then
+		if not slot5 then
 			return
 		end
 
-		if not slot5 and not slot2() then
+		if not slot6 and not slot3() and not slot2 then
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("oil_max_tip_title") .. i18n("resource_max_tip_retire_1"),
 				onYes = function ()
@@ -1449,7 +1624,7 @@ function slot0.selectShip(slot0, slot1)
 		end
 	end
 
-	slot3()
+	slot4()
 end
 
 function slot0.updateBlackBlocks(slot0, slot1)
@@ -1647,6 +1822,10 @@ function slot0.willExit(slot0)
 	slot0:closeModAttr()
 	slot0:ClearShipsBlackBlock()
 
+	if slot0.settingPanel then
+		slot0.settingPanel:Destroy()
+	end
+
 	if slot0.mode == slot0.MODE_MOD then
 	elseif not slot0.contextData.sortData then
 		if _G[slot0.contextData.preView] then
@@ -1684,6 +1863,12 @@ function slot0.willExit(slot0)
 
 		slot1:SetDockYardLockBtnFlag(slot0.isFilterLockForMod)
 		slot1:SetDockYardLevelBtnFlag(slot0.isFilterLevelForMod)
+	end
+
+	if slot0.bulinTip then
+		slot0.bulinTip:Destroy()
+
+		slot0.bulinTip = nil
 	end
 end
 
@@ -1833,6 +2018,9 @@ function slot0.initDestoryShips(slot0)
 						slot1:clear()
 						setActive(slot1.go, false)
 						table.remove(slot0.selectedIds, slot3)
+
+						slot0.blacklist[slot1.shipVO:getGroupId()] = true
+
 						slot0:updateDestroyRes(true)
 						slot0:updateDestroyRes()
 						slot0:updateSelected()

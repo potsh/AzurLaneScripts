@@ -279,8 +279,7 @@ function pairsByKeys(t)
 end
 
 
-
-
+local startTime = os.clock()
 print("Start!")
 
 require("Cannons")
@@ -316,7 +315,9 @@ file:close()
 --output_normal_ships_merged()
 ]]--
 
+local endTime = os.clock()
 print("finished!")
+print("total time = "..endTime - startTime)
 
 
 

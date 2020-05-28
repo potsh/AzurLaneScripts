@@ -70,6 +70,11 @@ pg.gameset = {
 		key = "dorm_exp_ratio_by_5",
 		key_value = 64
 	},
+	dorm_exp_ratio_by_6 = {
+		description = "",
+		key = "dorm_exp_ratio_by_6",
+		key_value = 60
+	},
 	dorm_food_ratio_by_1 = {
 		description = "",
 		key = "dorm_food_ratio_by_1",
@@ -94,6 +99,11 @@ pg.gameset = {
 		description = "",
 		key = "dorm_food_ratio_by_5",
 		key_value = 320
+	},
+	dorm_food_ratio_by_6 = {
+		description = "",
+		key = "dorm_food_ratio_by_6",
+		key_value = 360
 	},
 	dorm_exp_base = {
 		description = "",
@@ -383,9 +393,9 @@ pg.gameset = {
 		key_value = 3000000
 	},
 	activity_res_id = {
-		description = "情报pt",
+		description = "法系PT",
 		key = "activity_res_id",
-		key_value = 143
+		key_value = 159
 	},
 	chapter_move_speed_1 = {
 		description = "",
@@ -520,7 +530,6 @@ pg.gameset = {
 			40118,
 			20121,
 			10117,
-			40123,
 			30105
 		}
 	},
@@ -783,7 +792,7 @@ pg.gameset = {
 	skin_ticket = {
 		description = "",
 		key = "skin_ticket",
-		key_value = 144
+		key_value = 160
 	},
 	order_pt_max = {
 		key = "order_pt_max",
@@ -814,7 +823,20 @@ pg.gameset = {
 				5
 			}
 		}
+	},
+	award_ship_limit = {
+		description = "奖励超过20只就不一个一个展示获得界面，直接显示全部获得",
+		key = "award_ship_limit",
+		key_value = 20
+	},
+	night_collection_begin = {
+		description = "",
+		key = "night_collection_begin",
+		key_value = 21
+	},
+	night_collection_end = {
+		description = "",
+		key = "night_collection_end",
+		key_value = 3
 	}
 }
-
-return

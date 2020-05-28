@@ -103,6 +103,17 @@ pg.fleet_tech_ship_class = {
 			10126
 		}
 	},
+	[10108] = {
+		shiptype = 1,
+		name = "艾伦·萨姆纳级",
+		t_level = 9,
+		id = 10108,
+		t_level_1 = 4,
+		nation = 1,
+		ships = {
+			10144
+		}
+	},
 	[10201] = {
 		shiptype = 2,
 		name = "亚特兰大级",
@@ -114,7 +125,8 @@ pg.fleet_tech_ship_class = {
 			10206,
 			10207,
 			10208,
-			10222
+			10222,
+			10226
 		}
 	},
 	[10202] = {
@@ -145,7 +157,8 @@ pg.fleet_tech_ship_class = {
 			10202,
 			10211,
 			10218,
-			10216
+			10216,
+			10227
 		}
 	},
 	[10204] = {
@@ -244,7 +257,8 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 20,
 		nation = 1,
 		ships = {
-			10316
+			10316,
+			10324
 		}
 	},
 	[10501] = {
@@ -388,6 +402,17 @@ pg.fleet_tech_ship_class = {
 			10729
 		}
 	},
+	[10607] = {
+		shiptype = 6,
+		name = "卡萨布兰卡级",
+		t_level = 3,
+		id = 10607,
+		t_level_1 = 31,
+		nation = 1,
+		ships = {
+			10655
+		}
+	},
 	[10701] = {
 		shiptype = 7,
 		name = "列克星敦级",
@@ -433,6 +458,7 @@ pg.fleet_tech_ship_class = {
 		nation = 1,
 		ships = {
 			10709,
+			10711,
 			10717,
 			10738
 		}
@@ -447,6 +473,7 @@ pg.fleet_tech_ship_class = {
 		ships = {
 			10802,
 			10803,
+			10804,
 			10801
 		}
 	},
@@ -1063,7 +1090,8 @@ pg.fleet_tech_ship_class = {
 		ships = {
 			30156,
 			30157,
-			30158
+			30158,
+			30182
 		}
 	},
 	[30110] = {
@@ -1090,7 +1118,8 @@ pg.fleet_tech_ship_class = {
 		nation = 3,
 		ships = {
 			30180,
-			30154
+			30154,
+			30183
 		}
 	},
 	[30112] = {
@@ -1298,7 +1327,8 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 96,
 		nation = 3,
 		ships = {
-			30507
+			30507,
+			30508
 		}
 	},
 	[30505] = {
@@ -1956,6 +1986,17 @@ pg.fleet_tech_ship_class = {
 			80201
 		}
 	},
+	[80202] = {
+		shiptype = 2,
+		name = "圣女贞德",
+		t_level = 3,
+		id = 80202,
+		t_level_1 = 132,
+		nation = 8,
+		ships = {
+			80202
+		}
+	},
 	[80301] = {
 		shiptype = 3,
 		name = "路易九世",
@@ -1965,6 +2006,28 @@ pg.fleet_tech_ship_class = {
 		nation = 8,
 		ships = {
 			89901
+		}
+	},
+	[80501] = {
+		shiptype = 5,
+		name = "黎塞留级",
+		t_level = 7,
+		id = 80501,
+		t_level_1 = 139,
+		nation = 8,
+		ships = {
+			80501
+		}
+	},
+	[80701] = {
+		shiptype = 7,
+		name = "贝亚恩",
+		t_level = 4,
+		id = 80701,
+		t_level_1 = 138,
+		nation = 8,
+		ships = {
+			80701
 		}
 	},
 	[80801] = {
@@ -2000,6 +2063,40 @@ pg.fleet_tech_ship_class = {
 			90101
 		}
 	},
+	[90104] = {
+		shiptype = 1,
+		name = "沃克兰级",
+		t_level = 7,
+		id = 90104,
+		t_level_1 = 131,
+		nation = 9,
+		ships = {
+			90102,
+			90103
+		}
+	},
+	[90201] = {
+		shiptype = 2,
+		name = "拉·加利索尼埃",
+		t_level = 5,
+		id = 90201,
+		t_level_1 = 135,
+		nation = 9,
+		ships = {
+			90201
+		}
+	},
+	[90301] = {
+		shiptype = 3,
+		name = "阿尔及利亚",
+		t_level = 7,
+		id = 90301,
+		t_level_1 = 136,
+		nation = 9,
+		ships = {
+			90302
+		}
+	},
 	[90401] = {
 		shiptype = 4,
 		name = "敦刻尔克级",
@@ -2031,6 +2128,7 @@ pg.fleet_tech_ship_class = {
 		10105,
 		10106,
 		10107,
+		10108,
 		10201,
 		10202,
 		10203,
@@ -2054,6 +2152,7 @@ pg.fleet_tech_ship_class = {
 		10604,
 		10605,
 		10606,
+		10607,
 		10701,
 		10702,
 		10703,
@@ -2185,13 +2284,17 @@ pg.fleet_tech_ship_class = {
 		80102,
 		80103,
 		80201,
+		80202,
 		80301,
+		80501,
+		80701,
 		80801,
 		90101,
 		90103,
+		90104,
+		90201,
+		90301,
 		90401,
 		90501
 	}
 }
-
-return

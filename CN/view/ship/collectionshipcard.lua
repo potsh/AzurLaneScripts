@@ -15,7 +15,7 @@ function slot0.Ctor(slot0, slot1)
 	slot0.shipFrameImg = findTF(slot0.content, "front/frame")
 	slot0.iconShip = findTF(slot0.content, "ship_icon"):GetComponent(typeof(Image))
 	slot0.imageBg = findTF(slot0.content, "bg"):GetComponent(typeof(Image))
-	slot0.labelName = ScrollTxt.New(findTF(slot0.content, "info/name_mask"), findTF(slot0.content, "info/name_mask/name"))
+	slot0.labelName = findTF(slot0.content, "info/name_mask/name")
 	slot0.iconType = findTF(slot0.content, "info/top/type"):GetComponent(typeof(Image))
 	slot0.ringTF = findTF(slot0.content, "front/ring")
 	slot0.maskTF = findTF(slot0.content, "collection/mask")
@@ -35,7 +35,7 @@ function slot0.update(slot0, slot1, slot2, slot3, slot4, slot5)
 		slot0.showTrans = slot3
 		slot0.propose = slot4
 		slot0.state = slot6
-		slot0.config = slot0[slot5]
+		slot0.config = uv0[slot5]
 
 		slot0:flush()
 	end
@@ -49,13 +49,13 @@ function slot0.flush(slot0)
 	setActive(slot0.heart, slot0.state == ShipGroup.STATE_UNLOCK)
 
 	if slot0.state == ShipGroup.STATE_UNLOCK then
-		slot0.labelHeart.text = (slot1.hearts > 999 and "999") or tostring(slot1.hearts)
+		slot0.labelHeart.text = slot1.hearts > 999 and "999" or tostring(slot1.hearts)
 
 		setActive(slot0.labelHeartPlus, slot1.hearts > 999)
 
-		slot0.labelHeart.color = (slot1.iheart and Color.New(1, 0.6, 0.6)) or Color.New(1, 1, 1)
-		slot0.labelHeartIcon.color = (slot1.iheart and Color.New(1, 0.6, 0.6)) or Color.New(1, 1, 1)
-		slot0.labelHeartPlus.color = (slot1.iheart and Color.New(1, 0.6, 0.6)) or Color.New(1, 1, 1)
+		slot0.labelHeart.color = slot1.iheart and Color.New(1, 0.6, 0.6) or Color.New(1, 1, 1)
+		slot0.labelHeartIcon.color = slot1.iheart and Color.New(1, 0.6, 0.6) or Color.New(1, 1, 1)
+		slot0.labelHeartPlus.color = slot1.iheart and Color.New(1, 0.6, 0.6) or Color.New(1, 1, 1)
 
 		slot0:loadImage(slot0.shipGroup)
 	elseif slot0.state == ShipGroup.STATE_NOTGET then
@@ -66,6 +66,7 @@ function slot0.flush(slot0)
 
 		slot0:loadImage(slot0.shipGroup)
 	elseif slot0.state == ShipGroup.STATE_LOCK then
+		-- Nothing
 	end
 
 	setActive(slot0.content, slot0.state == ShipGroup.STATE_NOTGET or slot0.state == ShipGroup.STATE_UNLOCK)
@@ -75,24 +76,23 @@ function slot0.flush(slot0)
 end
 
 function slot0.loadImage(slot0, slot1)
-	slot0.imageBg.sprite = GetSpriteFromAtlas("bg/star_level_card_" .. ((slot1:isBluePrintGroup() and "0") or ""), "")
+	slot3 = (slot1:isBluePrintGroup() and "0" or "") .. shipRarity2bgPrint(slot1:getRarity(slot0.showTrans))
+	slot0.imageBg.sprite = GetSpriteFromAtlas("bg/star_level_card_" .. slot3, "")
 	slot0.iconShip.sprite = GetSpriteFromAtlas("shipYardIcon/unknown", "")
 
-	LoadSpriteAsync("shipYardIcon/" .. slot4, function (slot0)
-		if not IsNil(slot0.go) then
-			slot0.iconShip.sprite = slot0
+	LoadSpriteAsync("shipYardIcon/" .. slot1:getPainting(slot0.showTrans), function (slot0)
+		if not IsNil(uv0.go) then
+			uv0.iconShip.sprite = slot0
 		end
 	end)
 
 	slot0.iconType.sprite = GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType(slot0.showTrans)))
 
-	slot0.labelName:setText(slot1:getName(slot0.showTrans))
-	setShipCardFrame(slot0.shipFrameImg, ((slot1.isBluePrintGroup() and "0") or "") .. shipRarity2bgPrint(slot1:getRarity(slot0.showTrans)))
+	setScrollText(slot0.labelName, slot1:getName(slot0.showTrans))
+	setShipCardFrame(slot0.shipFrameImg, slot3)
 end
 
 function slot0.clear(slot0)
-	slot0.labelName:clear()
-
 	slot0.shipGroup = nil
 	slot0.showTrans = nil
 	slot0.propose = nil

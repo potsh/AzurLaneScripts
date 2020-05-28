@@ -11,6 +11,7 @@ slot0.TYPE_ARCH = 9
 slot0.TYPE_WALL_MAT = 10
 slot0.TYPE_MOVEABLE = 11
 slot0.TYPE_TRANSPORT = 12
+slot0.TYPE_RANDOM_CONTROLLER = 13
 slot0.INDEX_TO_COMFORTABLE_TYPE = {
 	slot0.TYPE_WALLPAPER,
 	slot0.TYPE_FURNITURE,
@@ -22,6 +23,7 @@ slot0.INDEX_TO_COMFORTABLE_TYPE = {
 	slot0.TYPE_FURNITURE,
 	slot0.TYPE_FURNITURE,
 	slot0.TYPE_WALL,
+	slot0.TYPE_FURNITURE,
 	slot0.TYPE_FURNITURE,
 	slot0.TYPE_FURNITURE
 }
@@ -39,7 +41,8 @@ slot0.INDEX_TO_SHOP_TYPE = {
 		slot0.TYPE_STAGE,
 		slot0.TYPE_ARCH,
 		slot0.TYPE_MOVEABLE,
-		slot0.TYPE_TRANSPORT
+		slot0.TYPE_TRANSPORT,
+		slot0.TYPE_RANDOM_CONTROLLER
 	},
 	{
 		slot0.TYPE_DECORATE
@@ -70,6 +73,10 @@ function slot0.getDate(slot0)
 	if slot0.date > 0 then
 		return pg.TimeMgr.GetInstance():STimeDescS(slot0.date, "%Y/%m/%d")
 	end
+end
+
+function slot0.GetOwnCnt(slot0)
+	return slot0.count
 end
 
 function slot0.setCount(slot0, slot1)
@@ -112,6 +119,10 @@ function slot0.updatePosition(slot0, slot1)
 	slot0.position = slot1
 end
 
+function slot0.HasPosition(slot0)
+	return slot0.position ~= nil
+end
+
 function slot0.clearPosition(slot0)
 	slot0.position = nil
 	slot0.dir = 1
@@ -130,7 +141,7 @@ function slot0.getConfig(slot0, slot1)
 end
 
 function slot0.getTypeForComfortable(slot0)
-	return (slot0.INDEX_TO_COMFORTABLE_TYPE[slot0:getConfig("type")] and slot2) or slot0.TYPE_FURNITURE
+	return uv0.INDEX_TO_COMFORTABLE_TYPE[slot0:getConfig("type")] and slot2 or uv0.TYPE_FURNITURE
 end
 
 function slot0.getDeblocking(slot0)
@@ -166,7 +177,7 @@ function slot0.isRecordTime(slot0)
 end
 
 function slot0.isDisCount(slot0)
-	return slot0:getConfig("discount") > 0 and pg.TimeMgr.GetInstance():inTime(slot0:getConfig("discount_time"))
+	return (slot0:getConfig("discount") or 0) > 0 and pg.TimeMgr.GetInstance():inTime(slot0:getConfig("discount_time"))
 end
 
 function slot0.sortSizeFunc(slot0)
@@ -174,11 +185,10 @@ function slot0.sortSizeFunc(slot0)
 end
 
 function slot0.getPrice(slot0, slot1)
-	slot3 = (100 - ((slot0:isDisCount() and slot0:getConfig("discount")) or 0)) / 100
-	slot4 = (slot1 == 4 and slot0:getConfig("gem_price")) or (slot1 == 6 and slot0:getConfig("dorm_icon_price"))
+	if slot1 == 4 and slot0:getConfig("gem_price") or slot1 == 6 and slot0:getConfig("dorm_icon_price") then
+		slot5 = math.floor(slot4 * (100 - (slot0:isDisCount() and slot0:getConfig("discount") or 0)) / 100)
 
-	if slot4 then
-		return (slot4 > 0 and math.floor(slot4 * slot3) == 0 and 1) or math.floor(slot4 * slot3)
+		return slot4 > 0 and slot5 == 0 and 1 or slot5
 	end
 end
 
@@ -191,10 +201,8 @@ function slot0.canPurchaseByDormMoeny(slot0)
 end
 
 function slot0.getSortCurrency(slot0)
-	slot1 = 0
-
 	if slot0:canPurchaseByGem() then
-		slot1 = slot1 + 2
+		slot1 = 0 + 2
 	elseif slot0:canPurchaseByDormMoeny() then
 		slot1 = slot1 + 1
 	end

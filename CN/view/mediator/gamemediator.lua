@@ -29,6 +29,7 @@ function slot0.handleNotification(slot0, slot1)
 			slot4.mediator = BuildShipMediator
 			slot4.viewComponent = BuildShipScene
 		elseif slot3 == SCENE.CHANGEEQUIP then
+			-- Nothing
 		elseif slot3 == SCENE.BACKYARD then
 			slot4.mediator = BackYardMediator
 			slot4.viewComponent = BackYardScene
@@ -127,8 +128,8 @@ function slot0.handleNotification(slot0, slot1)
 			slot4.mediator = BillboardMediator
 			slot4.viewComponent = BillboardScene
 		elseif slot3 == SCENE.SHOP then
-			slot4.mediator = ShopsMediator
-			slot4.viewComponent = ShopsLayer
+			slot4.mediator = NewShopsMediator
+			slot4.viewComponent = NewShopsScene
 		elseif slot3 == SCENE.VOTE then
 			slot4.mediator = VoteMediator
 			slot4.viewComponent = VoteScene
@@ -170,7 +171,7 @@ function slot0.handleNotification(slot0, slot1)
 			slot4.viewComponent = RefluxScene
 		elseif slot3 == SCENE.SUMMARY then
 			slot4.mediator = PlayerSummaryInfoMediator
-			slot4.viewComponent = PlayerSummaryInfoScene
+			slot4.viewComponent = PlayerSecondSummaryInfoScene
 		elseif slot3 == SCENE.SNAPSHOT then
 			slot4.mediator = SnapshotSceneMediator
 			slot4.viewComponent = SnapshotScene
@@ -190,8 +191,9 @@ function slot0.handleNotification(slot0, slot1)
 			slot4.mediator = WorldBossMediator
 			slot4.viewComponent = WorldBossScene
 		elseif slot3 == SCENE.ITEM_ORIGIN_PAGE then
-			slot4.mediator = getSpecialItemPage(slot4.data.open_ui).mediator
-			slot4.viewComponent = getSpecialItemPage(slot4.data.open_ui).viewComponent
+			slot6 = getSpecialItemPage(slot4.data.open_ui)
+			slot4.mediator = slot6.mediator
+			slot4.viewComponent = slot6.viewComponent
 		elseif slot3 == SCENE.SUMMER_FEAST then
 			slot4.mediator = SummerFeastMediator
 			slot4.viewComponent = SummerFeastScene
@@ -225,6 +227,15 @@ function slot0.handleNotification(slot0, slot1)
 		elseif slot3 == SCENE.IDOL_MEDAL_COLLECTION_SCENE then
 			slot4.mediator = IdolMedalCollectionMediator
 			slot4.viewComponent = IdolMedalCollectionView
+		elseif slot3 == SCENE.PHYSICS2D_TEST then
+			slot4.mediator = Physics2dMediator
+			slot4.viewComponent = Physics2dScene
+		elseif slot3 == SCENE.THIRD_ANNIVERSARY_SQUARE then
+			slot4.mediator = ThirdAnniversarySquareMediator
+			slot4.viewComponent = ThirdAnniversarySquareScene
+		elseif slot3 == SCENE.BACKYARD_THEME_TEMPLATE then
+			slot4.mediator = NewBackYardThemeTemplateMediator
+			slot4.viewComponent = NewBackYardThemeTemplateLayer
 		end
 
 		print("load scene: " .. slot3)
@@ -235,21 +246,24 @@ function slot0.handleNotification(slot0, slot1)
 			context = slot4
 		})
 	elseif slot2 == GAME.GO_MINI_GAME then
+		slot5 = slot3
 		slot6 = slot1:getType()
+		slot4 = Context.New()
 
-		Context.New().extendData(slot4, {
-			miniGameId = slot3
+		slot4:extendData({
+			miniGameId = slot5
 		})
 
-		Context.New().mediator = require("view.miniGame.gameMediator." .. pg.mini_game[slot3].mediator_name)
-		Context.New().viewComponent = require("view.miniGame.gameView." .. pg.mini_game[slot3].view_name)
+		slot7 = pg.mini_game[slot5]
+		slot4.mediator = require("view.miniGame.gameMediator." .. slot7.mediator_name)
+		slot4.viewComponent = require("view.miniGame.gameView." .. slot7.view_name)
 
-		print("load minigame: " .. pg.mini_game[slot3].view_name)
+		print("load minigame: " .. slot7.view_name)
 
-		Context.New().scene = pg.mini_game[slot3].view_name
+		slot4.scene = slot7.view_name
 
 		slot0:sendNotification(GAME.LOAD_SCENE, {
-			context = Context.New()
+			context = slot4
 		})
 	elseif slot2 == GAME.LOAD_SCENE_DONE then
 		print("scene loaded: ", slot3)

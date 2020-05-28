@@ -86,6 +86,10 @@ pg.arena_data_shop = {
 			{
 				43004,
 				300
+			},
+			{
+				43005,
+				300
 			}
 		},
 		refresh_price = {
@@ -106,5 +110,3 @@ pg.arena_data_shop = {
 		1
 	}
 }
-
-return

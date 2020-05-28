@@ -275,6 +275,66 @@ pg.player_resource = {
 		name = "sofmap_pt",
 		itemid = 59152
 	},
+	[147] = {
+		id = 147,
+		name = "battery2",
+		itemid = 59153
+	},
+	[148] = {
+		id = 148,
+		name = "xunliandianshu_v3",
+		itemid = 59154
+	},
+	[149] = {
+		id = 149,
+		name = "meixiv3_pt",
+		itemid = 59155
+	},
+	[150] = {
+		id = 150,
+		name = "skinTicket4",
+		itemid = 59156
+	},
+	[151] = {
+		id = 151,
+		name = "tiancheng2",
+		itemid = 59157
+	},
+	[152] = {
+		id = 152,
+		name = "xiaoshengwang_pt",
+		itemid = 59158
+	},
+	[153] = {
+		id = 153,
+		name = "skinTicket5",
+		itemid = 59159
+	},
+	[154] = {
+		id = 154,
+		name = "xunliandianshu_fv2",
+		itemid = 59160
+	},
+	[156] = {
+		id = 156,
+		name = "union3_pt",
+		itemid = 59162
+	},
+	[157] = {
+		id = 157,
+		name = "bishengke_pt",
+		itemid = 59163
+	},
+	[159] = {
+		id = 159,
+		name = "faxiv2_pt",
+		itemid = 59165
+	},
+	[160] = {
+		id = 160,
+		name = "skinTicket6",
+		itemid = 59168
+	},
 	[1001] = {
 		id = 1001,
 		name = "vote2019_pt",
@@ -323,6 +383,42 @@ pg.player_resource = {
 		},
 		vote2019_pt = {
 			1001
+		},
+		skinTicket6 = {
+			160
+		},
+		faxiv2_pt = {
+			159
+		},
+		bishengke_pt = {
+			157
+		},
+		union3_pt = {
+			156
+		},
+		xunliandianshu_fv2 = {
+			154
+		},
+		skinTicket5 = {
+			153
+		},
+		xiaoshengwang_pt = {
+			152
+		},
+		tiancheng2 = {
+			151
+		},
+		skinTicket4 = {
+			150
+		},
+		meixiv3_pt = {
+			149
+		},
+		xunliandianshu_v3 = {
+			148
+		},
+		battery2 = {
+			147
 		},
 		sofmap_pt = {
 			146
@@ -546,6 +642,18 @@ pg.player_resource = {
 		144,
 		145,
 		146,
+		147,
+		148,
+		149,
+		150,
+		151,
+		152,
+		153,
+		154,
+		156,
+		157,
+		159,
+		160,
 		1001,
 		2001,
 		2002,
@@ -554,5 +662,3 @@ pg.player_resource = {
 		2005
 	}
 }
-
-return

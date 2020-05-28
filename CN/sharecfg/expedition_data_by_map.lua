@@ -670,7 +670,7 @@ pg.expedition_data_by_map = {
 		bg = "map_11",
 		destory_icon_suffix = "blue",
 		animtor = 0,
-		bind_map = 0,
+		bind_map = 211,
 		clouds_pos = {
 			{
 				332,
@@ -1204,6 +1204,47 @@ pg.expedition_data_by_map = {
 			{
 				830,
 				-109
+			}
+		}
+	},
+	[211] = {
+		map = 211,
+		name = "奥古斯塔皇后湾海战",
+		bgm = "level",
+		type = 2,
+		on_activity = 0,
+		title = "11",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 70,
+		uifx = "UIhuohua2",
+		guide_id = "",
+		ani_name = "",
+		cloud_suffix = "white",
+		bg = "Map_211",
+		destory_icon_suffix = "blue",
+		animtor = 0,
+		bind_map = 11,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
 			}
 		}
 	},
@@ -6042,6 +6083,744 @@ pg.expedition_data_by_map = {
 			}
 		}
 	},
+	[1330001] = {
+		map = 1330001,
+		name = "微层混合·上篇|| ||CHAPTER EX||E.X.",
+		bgm = "hunhe-story",
+		type = 4,
+		on_activity = 541,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "WEICENGHUNHE1",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1300001",
+		cloud_suffix = "",
+		bg = "Map_1300001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1330011,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1330002] = {
+		map = 1330002,
+		name = "微层混合·下篇| ||CHAPTER EX||E.X.",
+		bgm = "hunhe-level",
+		type = 4,
+		on_activity = 542,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "WEICENGHUNHE17",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1300002",
+		cloud_suffix = "",
+		bg = "Map_1300002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1330012,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1330011] = {
+		map = 1330011,
+		name = "微层混合·上篇|| ||CHAPTER EX||E.X.",
+		bgm = "hunhe-story",
+		type = 5,
+		on_activity = 541,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "WEICENGHUNHE1",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1300003",
+		cloud_suffix = "",
+		bg = "Map_1300003",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1330001,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1330012] = {
+		map = 1330012,
+		name = "微层混合·下篇| ||CHAPTER EX||E.X.",
+		bgm = "hunhe-level",
+		type = 5,
+		on_activity = 542,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "WEICENGHUNHE17",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1300004",
+		cloud_suffix = "",
+		bg = "Map_1300004",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1330002,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1330025] = {
+		map = 1330025,
+		name = "微层混合·SP|| ||CHAPTER EX||E.X.",
+		bgm = "xinnong-4",
+		type = 8,
+		on_activity = 542,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1300004",
+		cloud_suffix = "",
+		bg = "Map_1300004",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1330012,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1330026] = {
+		map = 1330026,
+		name = "微层混合·EX|| ||CHAPTER EX||E.X.",
+		bgm = "xinnong-4",
+		type = 8,
+		on_activity = 542,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1300004",
+		cloud_suffix = "",
+		bg = "Map_1300004",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1330012,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1340001] = {
+		map = 1340001,
+		name = "苍红的回响·上篇|| ||CHAPTER EX||E.X.",
+		bgm = "Nagato-map",
+		type = 4,
+		on_activity = 569,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "TIANCHENGHUODONG1",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1180001",
+		cloud_suffix = "",
+		bg = "Map_1180001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1340011,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1340002] = {
+		map = 1340002,
+		name = "苍红的回响·下篇| ||CHAPTER EX||E.X.",
+		bgm = "Story-6",
+		type = 4,
+		on_activity = 569,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "TIANCHENGHUODONG10",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1180002",
+		cloud_suffix = "",
+		bg = "Map_1180002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1340012,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1340011] = {
+		map = 1340011,
+		name = "苍红的回响·上篇|| ||CHAPTER EX||E.X.",
+		bgm = "Nagato-map",
+		type = 5,
+		on_activity = 569,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "TIANCHENGHUODONG1",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1180011",
+		cloud_suffix = "",
+		bg = "Map_1180001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1340001,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1340012] = {
+		map = 1340012,
+		name = "苍红的回响·下篇| ||CHAPTER EX||E.X.",
+		bgm = "Story-6",
+		type = 5,
+		on_activity = 569,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "TIANCHENGHUODONG10",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1180012",
+		cloud_suffix = "",
+		bg = "Map_1180002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1340002,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1340021] = {
+		map = 1340021,
+		name = "苍红的回响·EX|| ||CHAPTER EX||E.X.",
+		bgm = "Story-6",
+		type = 8,
+		on_activity = 569,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1180012",
+		cloud_suffix = "",
+		bg = "Map_1180002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1340012,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1350001] = {
+		map = 1350001,
+		name = "夜色下的归途|| ||CHAPTER SP||S.P.",
+		bgm = "story-french1",
+		type = 3,
+		on_activity = 571,
+		title = "SP",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "",
+		cloud_suffix = "",
+		bg = "Map_1310001",
+		destory_icon_suffix = "blue",
+		animtor = 0,
+		bind_map = 0,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1360001] = {
+		map = 1360001,
+		name = "穹顶下的圣咏曲·上篇|| ||CHAPTER EX||E.X.",
+		bgm = "level03",
+		type = 4,
+		on_activity = 592,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "SHENGYONGQU1",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1320001",
+		cloud_suffix = "",
+		bg = "Map_1320001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1360011,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1360002] = {
+		map = 1360002,
+		name = "穹顶下的圣咏曲·下篇| ||CHAPTER EX||E.X.",
+		bgm = "bsm-3",
+		type = 4,
+		on_activity = 593,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "SHENGYONGQU16",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1320002",
+		cloud_suffix = "",
+		bg = "Map_1320002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1360012,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1360011] = {
+		map = 1360011,
+		name = "穹顶下的圣咏曲·上篇|| ||CHAPTER EX||E.X.",
+		bgm = "level03",
+		type = 5,
+		on_activity = 592,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "SHENGYONGQU1",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1320003",
+		cloud_suffix = "",
+		bg = "Map_1320003",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1360001,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1360012] = {
+		map = 1360012,
+		name = "穹顶下的圣咏曲·下篇| ||CHAPTER EX||E.X.",
+		bgm = "bsm-3",
+		type = 5,
+		on_activity = 593,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "SHENGYONGQU16",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1320004",
+		cloud_suffix = "",
+		bg = "Map_1320004",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1360002,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1360025] = {
+		map = 1360025,
+		name = "穹顶下的圣咏曲·SP|| ||CHAPTER EX||E.X.",
+		bgm = "level-french2",
+		type = 8,
+		on_activity = 593,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1320004",
+		cloud_suffix = "",
+		bg = "Map_1320004",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1360012,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1360026] = {
+		map = 1360026,
+		name = "穹顶下的圣咏曲·EX|| ||CHAPTER EX||E.X.",
+		bgm = "level-french2",
+		type = 8,
+		on_activity = 593,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1320004",
+		cloud_suffix = "",
+		bg = "Map_1320004",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1360012,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
 	[2100000] = {
 		map = 2100000,
 		name = "『红染的参访者』-前篇|| ||CHAPTER EX||E.X.",
@@ -6492,6 +7271,292 @@ pg.expedition_data_by_map = {
 		bind_map = 2100041,
 		clouds_pos = {}
 	},
+	[2100060] = {
+		map = 2100060,
+		name = "坠落之翼-前篇|| ||CHAPTER EX||E.X.",
+		bgm = "Story-6",
+		type = 4,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "DONGHUO01",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "feixu",
+		cloud_suffix = "",
+		bg = "Map_1060000",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100070,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100061] = {
+		map = 2100061,
+		name = "坠落之翼-后篇|| ||CHAPTER EX||E.X.",
+		bgm = "Story-6",
+		type = 4,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "DONGHUO08",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "feixu",
+		cloud_suffix = "",
+		bg = "Map_1060000",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100071,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100070] = {
+		map = 2100070,
+		name = "坠落之翼-前篇|| ||CHAPTER EX||E.X.",
+		bgm = "Story-6",
+		type = 5,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "DONGHUO01",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "feixu_hard",
+		cloud_suffix = "",
+		bg = "Map_1060001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100060,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100071] = {
+		map = 2100071,
+		name = "坠落之翼-后篇|| ||CHAPTER EX||E.X.",
+		bgm = "Story-6",
+		type = 5,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "DONGHUO08",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "feixu_hard",
+		cloud_suffix = "",
+		bg = "Map_1060001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100061,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100080] = {
+		map = 2100080,
+		name = "光与影的鸢尾之华-前篇|| ||CHAPTER EX||E.X.",
+		bgm = "level03",
+		type = 4,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "FAXI01",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1140001",
+		cloud_suffix = "",
+		bg = "Map_1140001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100090,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100081] = {
+		map = 2100081,
+		name = "光与影的鸢尾之华-后篇|| ||CHAPTER EX||E.X.",
+		bgm = "Level-french2",
+		type = 4,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "FAXI05",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1140002",
+		cloud_suffix = "",
+		bg = "Map_1140002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100091,
+		clouds_pos = {}
+	},
+	[2100090] = {
+		map = 2100090,
+		name = "光与影的鸢尾之华-前篇|| ||CHAPTER EX||E.X.",
+		bgm = "level03",
+		type = 5,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "FAXI01",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1140002",
+		cloud_suffix = "",
+		bg = "Map_1140002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100080,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100091] = {
+		map = 2100091,
+		name = "光与影的鸢尾之华-后篇|| ||CHAPTER EX||E.X.",
+		bgm = "Level-french2",
+		type = 5,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "FAXI05",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1140003",
+		cloud_suffix = "",
+		bg = "Map_1140003",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100081,
+		clouds_pos = {}
+	},
 	[2200000] = {
 		map = 2200000,
 		name = "努力、希望和计划|| ||CHAPTER SP||S.P.",
@@ -6598,6 +7663,7 @@ pg.expedition_data_by_map = {
 		208,
 		209,
 		210,
+		211,
 		10000,
 		70000,
 		80000,
@@ -6723,6 +7789,24 @@ pg.expedition_data_by_map = {
 		1310025,
 		1310026,
 		1320001,
+		1330001,
+		1330002,
+		1330011,
+		1330012,
+		1330025,
+		1330026,
+		1340001,
+		1340002,
+		1340011,
+		1340012,
+		1340021,
+		1350001,
+		1360001,
+		1360002,
+		1360011,
+		1360012,
+		1360025,
+		1360026,
 		2100000,
 		2100001,
 		2100010,
@@ -6735,9 +7819,15 @@ pg.expedition_data_by_map = {
 		2100041,
 		2100050,
 		2100051,
+		2100060,
+		2100061,
+		2100070,
+		2100071,
+		2100080,
+		2100081,
+		2100090,
+		2100091,
 		2200000,
 		2200010
 	}
 }
-
-return

@@ -1,6 +1,7 @@
 slot0 = class("ActivityMainScene", import("..base.BaseUI"))
 slot0.LOCK_ACT_MAIN = "ActivityMainScene:LOCK_ACT_MAIN"
 slot0.UPDATE_ACTIVITY = "ActivityMainScene:UPDATE_ACTIVITY"
+slot0.SELECT_ACTIVITY_OPEN = "ActivityMainScene:SELECT_ACTIVITY_OPEN"
 slot1 = {
 	[ActivityConst.DAY7_LOGIN_ACTIVITY_ID] = {
 		className = "Day7LoginPage",
@@ -19,7 +20,7 @@ slot1 = {
 		className = "ChargeAwardPage",
 		uiName = "chargeawardpage"
 	},
-	[ActivityConst.ACTIVITY_TYPE_RETURN_AWARD_ID2] = {
+	[ActivityConst.ACTIVITY_TYPE_RETURN_AWARD_ID3] = {
 		className = "Returner.ReturnAwardPage",
 		uiName = "returnawardpage"
 	},
@@ -454,6 +455,82 @@ slot1 = {
 	[ActivityConst.MATCH3_PAGE] = {
 		className = "Match3Page",
 		uiName = "match3page"
+	},
+	[ActivityConst.SARATOGA_SKIN] = {
+		className = "SaratogaSkinPage",
+		uiName = "saratogaskinpage"
+	},
+	[ActivityConst.OUTPOST_PT] = {
+		className = "OutPostPtPage",
+		uiName = "OutPostPtPage"
+	},
+	[ActivityConst.AMERICAN_MAIN] = {
+		className = "AmericanMainPage",
+		uiName = "AmericanMainPage"
+	},
+	[ActivityConst.AMERICAN_PT] = {
+		className = "AmericanPtPage",
+		uiName = "AmericanPtPage"
+	},
+	[ActivityConst.APRILFOOL_DISCOVERY] = {
+		className = "AprilFoolDiscoveryPage",
+		uiName = "AprilFoolDiscoveryPage"
+	},
+	[ActivityConst.ANIME_END] = {
+		className = "AnimeEndPage",
+		uiName = "AnimeEndPage"
+	},
+	[ActivityConst.ACTIVITY_JAMAICA_SKIN_RE_PAGE] = {
+		className = "JamaicaSkinRePage",
+		uiName = "JamaicaSkinRePage"
+	},
+	[ActivityConst.TIAN_CHENG_PT_RE_PAGE] = {
+		className = "TianChengPTRePage",
+		uiName = "TianChengPTRePage"
+	},
+	[ActivityConst.TIAN_CHENG_RE_MAIN_PAGE] = {
+		className = "TianChengReMainPage",
+		uiName = "TianChengReMainPage"
+	},
+	[ActivityConst.LITTLE_RENOWN_PAGE] = {
+		className = "LittleRenownPage",
+		uiName = "LittleRenownPage"
+	},
+	[ActivityConst.TWXIAOBEIFA_ID] = {
+		className = "XiaobeiFaPage",
+		uiName = "XiaobeiFaPage"
+	},
+	[ActivityConst.FRANCE_SP] = {
+		className = "FranceSpPage",
+		uiName = "FranceSpPage"
+	},
+	[ActivityConst.LEMARS_RE_OIL_PAGE] = {
+		className = "LeMarsReOilPage",
+		uiName = "LeMarsReOilPage"
+	},
+	[ActivityConst.FRANCE_ICON_TASK] = {
+		className = "FranceIconTaskPage",
+		uiName = "FranceIconTaskPage"
+	},
+	[ActivityConst.FRANCE_SP] = {
+		className = "FranceSpPage",
+		uiName = "FranceSpPage"
+	},
+	[ActivityConst.PIZZAHUT_PT_PAGE] = {
+		className = "PizzahutPTPage",
+		uiName = "PizzahutPTPage"
+	},
+	[ActivityConst.FRANCE_MIAN_PAGE] = {
+		className = "FranceMainPage",
+		uiName = "FranceMainPage"
+	},
+	[ActivityConst.TOWERCLIMBING_SIGN] = {
+		className = "TowerClimbingSignPage",
+		uiName = "TowerClimbingSignPage"
+	},
+	[ActivityConst.FRANCE_PT_PAGE] = {
+		className = "FrancePTPage",
+		uiName = "FrancePTPage"
 	}
 }
 slot2 = {
@@ -484,7 +561,7 @@ function slot0.onBackPressed(slot0)
 		end
 	end
 
-	slot0:emit(slot0.ON_BACK_PRESSED)
+	slot0:emit(uv0.ON_BACK_PRESSED)
 end
 
 slot3 = nil
@@ -502,16 +579,13 @@ function slot0.init(slot0)
 	setActive(slot0.tab, false)
 
 	slot0.shareData = ActivityShareData.New()
-	slot2 = tonumber(pg.TimeMgr.GetInstance():CTimeDescC(slot1, "%m"))
-	slot3 = pg.activity_template[ActivityConst.MONTH_SIGN_ACTIVITY_ID].config_client[1]
-	require("GameCfg.activity.EntranceData").pageDic = {}
+	uv0 = require("GameCfg.activity.EntranceData")
+	slot0.pageDic = {}
 
-	for slot7, slot8 in pairs(slot1) do
+	for slot7, slot8 in pairs(uv1) do
 		if getProxy(ActivityProxy):getActivityById(slot7) and not slot9:isEnd() and slot9:isShow() then
-			slot11 = import("view.activity.subPages." .. slot8.className).New(slot0.pageContainer, slot0.event, slot0.contextData)
-
-			if slot7 == ActivityConst.MONTH_SIGN_ACTIVITY_ID and slot2 == slot3 then
-				slot11:SetUIName(slot8.uiName2)
+			if slot7 == ActivityConst.MONTH_SIGN_ACTIVITY_ID and tonumber(pg.TimeMgr.GetInstance():CTimeDescC(pg.TimeMgr.GetInstance():GetServerTime(), "%m")) == pg.activity_template[ActivityConst.MONTH_SIGN_ACTIVITY_ID].config_client[1] then
+				import("view.activity.subPages." .. slot8.className).New(slot0.pageContainer, slot0.event, slot0.contextData):SetUIName(slot8.uiName2)
 			else
 				slot11:SetUIName(slot8.uiName)
 			end
@@ -525,17 +599,20 @@ end
 
 function slot0.didEnter(slot0)
 	onButton(slot0, slot0.btnBack, function ()
-		slot0:emit(slot1.ON_BACK)
+		uv0:emit(uv1.ON_BACK)
 	end, SOUND_BACK)
 	slot0:updateEntrances()
 	slot0:emit(ActivityMediator.SHOW_NEXT_ACTIVITY)
-	slot0:bind(slot0.LOCK_ACT_MAIN, function (slot0, slot1)
-		slot0.locked = slot1
+	slot0:bind(uv0.LOCK_ACT_MAIN, function (slot0, slot1)
+		uv0.locked = slot1
 
-		setActive(slot0.lockAll, slot1)
+		setActive(uv0.lockAll, slot1)
 	end)
-	slot0:bind(slot0.UPDATE_ACTIVITY, function (slot0, slot1)
-		slot0:updateActivity(slot1)
+	slot0:bind(uv0.UPDATE_ACTIVITY, function (slot0, slot1)
+		uv0:updateActivity(slot1)
+	end)
+	slot0:bind(uv0.SELECT_ACTIVITY_OPEN, function ()
+		uv0:selectActivityOpen()
 	end)
 end
 
@@ -577,14 +654,22 @@ function slot0.updateActivity(slot0, slot1)
 	slot0.allActivity[slot1.id] = slot1
 
 	if not slot1:isShow() then
-		if slot0[slot1.id] then
-			slot1 = getProxy(ActivityProxy):getActivityById(slot0[slot1.id])
+		if uv0[slot1.id] then
+			slot1 = getProxy(ActivityProxy):getActivityById(uv0[slot1.id])
 		else
 			return
 		end
 	end
 
-	slot0.activities[slot2()] = slot1
+	slot0.activities[function ()
+		for slot3, slot4 in ipairs(uv0.activities) do
+			if slot4.id == uv1.id then
+				return slot3
+			end
+		end
+
+		return #uv0.activities + 1
+	end()] = slot1
 
 	slot0:flushTabs()
 
@@ -604,9 +689,9 @@ function slot0.updateEntrances(slot0)
 
 			slot5 = false
 
-			if slot0[slot1 + 1] and table.getCount(slot3) ~= 0 and slot3.isShow() then
-				onButton(slot1, slot2, function ()
-					slot0:emit(slot1.event, slot1.data[1], slot1.data[2])
+			if uv0[slot1 + 1] and table.getCount(slot3) ~= 0 and slot3.isShow() then
+				onButton(uv1, slot2, function ()
+					uv0:emit(uv1.event, uv1.data[1], uv1.data[2])
 				end, SFX_PANEL)
 
 				slot4 = slot3.banner
@@ -620,7 +705,7 @@ function slot0.updateEntrances(slot0)
 			LoadImageSpriteAsync("activitybanner/" .. slot4, slot2)
 		end
 	end)
-	slot0.entranceList:align(math.max(#_.select(slot0, function (slot0)
+	slot0.entranceList:align(math.max(#_.select(uv0, function (slot0)
 		return slot0.isShow and slot0.isShow()
 	end), 5))
 end
@@ -631,19 +716,19 @@ function slot0.flushTabs(slot0)
 
 		slot0.tabsList:make(function (slot0, slot1, slot2)
 			if slot0 == UIItemList.EventUpdate then
-				if slot0.pageDic[slot0.activities[slot1 + 1].id] ~= nil then
+				if uv0.pageDic[uv0.activities[slot1 + 1].id] ~= nil then
 					if slot3:getConfig("title_res_tag") then
-						setImageSprite(slot0:findTF("off/text", slot2), GetSpriteFromAtlas("ui/activityui_atlas", slot5 .. "_text") or GetSpriteFromAtlas("ui/activityui_atlas", "activity_text"), true)
-						setImageSprite(slot0:findTF("on/text", slot2), GetSpriteFromAtlas("ui/activityui_atlas", slot5 .. "_text_selected") or GetSpriteFromAtlas("ui/activityui_atlas", "activity_text_selected"), true)
-						setActive(slot0:findTF("red", slot2), slot3:readyToAchieve())
-						onToggle(slot0, slot2, function (slot0)
+						setImageSprite(uv0:findTF("off/text", slot2), GetSpriteFromAtlas("ui/activityui_atlas", slot5 .. "_text") or GetSpriteFromAtlas("ui/activityui_atlas", "activity_text"), true)
+						setImageSprite(uv0:findTF("on/text", slot2), GetSpriteFromAtlas("ui/activityui_atlas", slot5 .. "_text_selected") or GetSpriteFromAtlas("ui/activityui_atlas", "activity_text_selected"), true)
+						setActive(uv0:findTF("red", slot2), slot3:readyToAchieve())
+						onToggle(uv0, slot2, function (slot0)
 							if slot0 then
-								slot0:selectActivity(slot0.selectActivity)
+								uv0:selectActivity(uv1)
 							end
 						end, SFX_PANEL)
 					else
-						onToggle(slot0, slot2, function (slot0)
-							slot0:loadActivityPanel(slot0, slot0.loadActivityPanel)
+						onToggle(uv0, slot2, function (slot0)
+							uv0:loadActivityPanel(slot0, uv1)
 						end, SFX_PANEL)
 					end
 				end
@@ -656,9 +741,11 @@ end
 
 function slot0.selectActivity(slot0, slot1)
 	if slot1 and (not slot0.activity or slot0.activity.id ~= slot1.id) then
-		slot0.pageDic[slot1.id].Load(slot2)
-		slot0.pageDic[slot1.id].ActionInvoke(slot2, "Flush", slot1)
-		slot0.pageDic[slot1.id]:ActionInvoke("ShowOrHide", true)
+		slot2 = slot0.pageDic[slot1.id]
+
+		slot2:Load()
+		slot2:ActionInvoke("Flush", slot1)
+		slot2:ActionInvoke("ShowOrHide", true)
 
 		if slot0.activity and slot0.activity.id ~= slot1.id then
 			slot0.pageDic[slot0.activity.id]:ActionInvoke("ShowOrHide", false)
@@ -666,6 +753,11 @@ function slot0.selectActivity(slot0, slot1)
 
 		slot0.activity = slot1
 		slot0.contextData.id = slot1.id
+
+		if slot0.openPageId ~= slot1.id then
+			slot0.openPageId = nil
+			slot0.openPageFlag = nil
+		end
 	end
 end
 
@@ -698,11 +790,11 @@ end
 function slot0.getBonusWindow(slot0, slot1, slot2)
 	if not slot0:findTF(slot1) then
 		PoolMgr.GetInstance():GetUI("ActivitybonusWindow", true, function (slot0)
-			SetParent(slot0, slot0._tf, false)
+			SetParent(slot0, uv0._tf, false)
 
-			slot0.name = SetParent
+			slot0.name = uv1
 
-			slot0(slot0)
+			uv2(slot0)
 		end)
 	else
 		slot2(slot3)
@@ -712,9 +804,9 @@ end
 function slot0.ShowWindow(slot0, slot1, slot2)
 	if not slot0.windowList[slot1.__cname] then
 		slot0:getBonusWindow(slot3, function (slot0)
-			slot0.windowList[] = slot2.New(tf(slot0), slot0)
+			uv0.windowList[uv1] = uv2.New(tf(slot0), uv0)
 
-			slot0.windowList[]:Show(slot2.New(tf(slot0), slot0))
+			uv0.windowList[uv1]:Show(uv3)
 		end)
 	else
 		slot0.windowList[slot3]:Show(slot2)
@@ -727,6 +819,27 @@ function slot0.HideWindow(slot0, slot1)
 	end
 
 	slot0.windowList[slot2]:Hide()
+end
+
+function slot0.selectActivityOpen(slot0)
+	if slot0.activity ~= nil then
+		slot0.openPageFlag = true
+
+		if slot0.openPageCallBack and slot0.openPageId == slot0.activity.id then
+			slot0.openPageCallBack()
+
+			slot0.openPageCallBack = nil
+		end
+	end
+end
+
+function slot0.setSelectOpenHandle(slot0, slot1, slot2)
+	if slot0.openPageFlag and slot1 == slot0.activity.id then
+		slot2()
+	else
+		slot0.openPageId = slot1
+		slot0.openPageCallBack = slot2
+	end
 end
 
 function slot0.willExit(slot0)

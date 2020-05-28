@@ -895,7 +895,41 @@ pg.voice_actor_CN = {
 	{
 		actor_name = "中村樱",
 		code = 224
+	},
+	{
+		actor_name = "法伊鲁兹·爱",
+		code = 225
+	},
+	{
+		actor_name = "长谷川育美",
+		code = 226
+	},
+	{
+		actor_name = "首藤志奈",
+		code = 227
+	},
+	{
+		actor_name = "原优子",
+		code = 228
+	},
+	{
+		actor_name = "冈咲美保",
+		code = 229
+	},
+	{
+		actor_name = "武田罗梨沙多胡",
+		code = 230
+	},
+	{
+		actor_name = "川崎芽衣子",
+		code = 231
+	},
+	{
+		actor_name = "黑木穗乃香",
+		code = 232
+	},
+	{
+		actor_name = "明日叶yomogi",
+		code = 233
 	}
 }
-
-return
