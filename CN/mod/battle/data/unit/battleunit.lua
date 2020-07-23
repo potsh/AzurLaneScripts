@@ -739,6 +739,10 @@ function slot9.GetPosition(slot0)
 	return slot0._move:GetPos()
 end
 
+function slot9.GetBornPosition(slot0)
+	return slot0._bornPos
+end
+
 function slot9.GetCLDCenterPosition(slot0)
 	if slot0._centerFrame ~= slot0._battleProxy.FrameIndex then
 		slot0._centerFrame = slot1
@@ -797,6 +801,10 @@ function slot9.GetDirection(slot0)
 	return slot0._dir
 end
 
+function slot9.SetBornPosition(slot0, slot1)
+	slot0._bornPos = slot1
+end
+
 function slot9.SetPosition(slot0, slot1)
 	slot0._move:SetPos(slot1)
 end
@@ -825,6 +833,14 @@ end
 
 function slot9.Boost(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0._move:SetForceMove(slot1, slot2, slot3, slot4, slot5)
+end
+
+function slot9.SetImmuneCommonBulletCLD(slot0)
+	slot0._immuneCommonBulletCLD = true
+end
+
+function slot9.IsImmuneCommonBulletCLD(slot0)
+	return slot0._immuneCommonBulletCLD
 end
 
 function slot9.SetWeaponPreCastBound(slot0, slot1)

@@ -32,6 +32,7 @@ GAME_RESTOREVIEW_ALREADY = 1000002
 ALLOW_FIREND_VISIT_BACKYARD_FLAG = 1000003
 SHOW_FIREND_BACKYARD_SHIP_FLAG = 1000004
 SHOW_MY_BACKYARD_SHIP_FLAG = 1000005
+SHOW_DONT_KEEP_FATE_ITEM = 1000006
 PROLOGUE_DUNGEON = 100000
 EPILOGUE_STORY = "S008"
 CURTAIN_STORY = "S999"
@@ -101,7 +102,6 @@ DROP_TYPE_VITEM = 8
 DROP_TYPE_EQUIPMENT_SKIN = 9
 DROP_TYPE_NPC_SHIP = 10
 DROP_TYPE_WORLD_ITEM = 12
-DROP_TYPE_SIREN_EQUIP = 13
 DROP_TYPE_ICON_FRAME = 14
 DROP_TYPE_CHAT_FRAME = 15
 DROP_TYPE_EMOJI = 17
@@ -188,6 +188,7 @@ RARE_SHIP_VIBRATE = "rare_ship_vibrate"
 DISPLAY_SHIP_GET_EFFECT = "display_ship_get_effect"
 SHOW_TOUCH_EFFECT = "show_touch_effect"
 BG_FIT_MODE = "bgFitMode"
+BATTLE_HIDE_BG = "battleHideBg"
 ALLOW_FIREND_VISIT_BACKYARD = "allow_friend_visit_backyard"
 SHOW_FIREND_BACKYARD_SHIP = "show_friend_backyard_ship"
 SHOW_MY_BACKYARD_SHIP = "show_my_backyard_ship"
@@ -214,84 +215,12 @@ LOCK_CLEAR_ACCOUNT = true
 LOCK_COMMANDER_TALENT_TIP = false
 LOCK_GUILD_SHOP = true
 LOCK_DESTROY_GUIDE = true
-LOCK_BACKYARD_TEMPLATE = true
+LOCK_BACKYARD_TEMPLATE = false
 LOCK_TOWERCLIMBING_AWARD = false
 DEFAULT_CVVOLUME = 0.8
 DEFAULT_BGMVOLUME = 0.8
 DEFAULT_SEVOLUME = 0.8
 HIDE_CHAT_FLAG = "HideChat"
-ERROR_MESSAGE = {
-	"无效操作",
-	"缺少配置",
-	"超时",
-	"时间未到",
-	"已达到最大等级",
-	"已达到最大数量限制",
-	"已经完成",
-	"未定义参数",
-	"错误参数",
-	"栏位已满",
-	"数据库错误",
-	"系统异常",
-	"禁止登录",
-	nil,
-	"注册数已达上限，感谢您的支持。",
-	nil,
-	nil,
-	nil,
-	"无效的重复操作",
-	"数据不存在",
-	"玩家不存在",
-	"舰娘不存在",
-	"物品不存在",
-	"装备不存在",
-	"任务不存在",
-	"战斗信息不存在",
-	"采集点不存在",
-	"好友不存在",
-	"邮件不存在",
-	"目标不足",
-	"资源不足",
-	"金币不足",
-	"石油不足",
-	"银沙不足",
-	"晶钻不足",
-	"家具币不足",
-	"物品不足",
-	"食物不足",
-	"体力不足",
-	"不合法限制条件",
-	"等级不符合",
-	"类型不符合",
-	[2015.0] = "名字已被使用",
-	[2011.0] = "名字过长",
-	[1010.0] = "账号错误",
-	[2014.0] = "名字错误字符",
-	[2013.0] = "名字有屏蔽词",
-	[2010.0] = "名字检查错误",
-	[1011.0] = "账号已存在",
-	[1040.0] = "服务器已关闭",
-	[1030.0] = "md5验证错误",
-	[2012.0] = "名字过短",
-	[1031.0] = "md5长度错误",
-	[4020.0] = "舰娘是看板娘",
-	[4030.0] = "舰娘在编队中",
-	[4201.0] = "礼包码已过期",
-	[4010.0] = "舰娘不可用",
-	[4203.0] = "礼包码不存在",
-	[9999.0] = "未定义错误",
-	[4205.0] = "礼包码兑换有误，请重试",
-	[4206.0] = "该类型礼包已被兑换",
-	[3010.0] = "舰娘不可战斗",
-	[3020.0] = "前置关卡未通过",
-	[4207.0] = "没有礼包兑换URL",
-	[4204.0] = "礼包码已被使用",
-	[4050.0] = "相同的舰娘",
-	[4040.0] = "舰娘不在编队中",
-	[1020.0] = "密码错误",
-	[4202.0] = "该渠道不支持",
-	[1012.0] = "纯数字账号"
-}
 SPECIAL_DATE = {
 	{
 		"20200401",
@@ -301,16 +230,17 @@ SPECIAL_DATE = {
 	}
 }
 SPECIAL_PROPOSE = {}
-CRI_BG_FLAG = false
+CRI_BG_FLAG = true
 OPEN_ESCORT = false
 OPEN_REMASTER = true
 OPEN_AIR_DOMINANCE = true
 AUTO_LINKLINK = false
 PLAY_OPENING = true
-OP_VERSION = "20200521"
+OP_VERSION = "20200709"
 OPEN_TEC_TREE_SYSTEM = true
 SECRETARY_POS = false
 ADAPT_MIN = 1.8
 ADAPT_TARGET = 2
 ADAPT_NOTICE = 1.8
 LOCK_FRAGMENT_SHOP = false
+isOpenNewCheck = false

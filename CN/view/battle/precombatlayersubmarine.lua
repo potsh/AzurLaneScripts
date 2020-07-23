@@ -162,17 +162,14 @@ function slot0.didEnter(slot0)
 
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf)
 	setActive(slot0._autoToggle, false)
+
+	if slot0.contextData.system == SYSTEM_SUB_ROUTINE then
+		setActive(slot0._autoSubToggle, false)
+	end
+
 	onNextTick(function ()
 		uv0:uiStartAnimating()
 	end)
-
-	if slot0.contextData.system == SYSTEM_ACT_BOSS then
-		PoolMgr.GetInstance():GetUI("al_bg01", true, function (slot0)
-			slot0:SetActive(true)
-			setParent(slot0, uv0._tf)
-			slot0.transform:SetAsFirstSibling()
-		end)
-	end
 
 	if slot0._currentForm == uv0.FORM_PREVIEW and slot0.contextData.system == SYSTEM_DUEL and #slot0._currentFleetVO.mainShips <= 0 then
 		triggerButton(slot0._checkBtn)

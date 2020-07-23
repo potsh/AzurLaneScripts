@@ -837,9 +837,16 @@ end
 function slot8.SpawnMain(slot0, slot1, slot2)
 	slot3 = nil
 	slot5 = #slot0:GetFleetByIFF(slot2):GetMainList() + 1
-	slot6 = slot0:generatePlayerUnit(slot1, slot2, (not slot0._currentStageData.mainUnitPosition or not slot0._currentStageData.mainUnitPosition[slot2] or Clone(slot0._currentStageData.mainUnitPosition[slot2][slot5])) and Clone(uv0.MAIN_UNIT_POS[slot2][slot5]), slot0._commanderBuff)
+	slot3 = (not slot0._currentStageData.mainUnitPosition or not slot0._currentStageData.mainUnitPosition[slot2] or Clone(slot0._currentStageData.mainUnitPosition[slot2][slot5])) and Clone(uv0.MAIN_UNIT_POS[slot2][slot5])
+	slot6 = slot0:generatePlayerUnit(slot1, slot2, slot3, slot0._commanderBuff)
 
+	slot6:SetBornPosition(slot3)
 	slot6:SetMainFleetUnit()
+
+	if slot3.x < slot0._totalLeftBound or slot0._totalRightBound < slot7 then
+		slot6:SetImmuneCommonBulletCLD()
+	end
+
 	slot4:AppendPlayerUnit(slot6)
 	slot0._cldSystem:InitShipCld(slot6)
 	slot0:DispatchEvent(uv2.Event.New(uv3.ADD_UNIT, {
@@ -1303,7 +1310,7 @@ end
 function slot8.CLSBullet(slot0, slot1)
 	slot2 = true
 
-	if slot0._battleInitData.battleType == SYSTEM_DUEL or slot3 == SYSTEM_SHAM and slot1 == uv0.FRIENDLY_CODE then
+	if slot0._battleInitData.battleType == SYSTEM_DUEL then
 		slot2 = false
 	end
 

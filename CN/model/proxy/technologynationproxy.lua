@@ -72,18 +72,84 @@ function slot0.nationPointFilter(slot0)
 		0,
 		0
 	}
+	slot0.nationToPointLog = {
+		{
+			{},
+			{},
+			{}
+		},
+		{
+			{},
+			{},
+			{}
+		},
+		{
+			{},
+			{},
+			{}
+		},
+		{
+			{},
+			{},
+			{}
+		},
+		{
+			{},
+			{},
+			{}
+		},
+		{
+			{},
+			{},
+			{}
+		},
+		{
+			{},
+			{},
+			{}
+		},
+		{
+			{},
+			{},
+			{}
+		},
+		{
+			{},
+			{},
+			{}
+		}
+	}
+	slot0.nationToPointLog2 = {
+		{},
+		{},
+		{},
+		{},
+		{},
+		{},
+		{},
+		{},
+		{}
+	}
 
 	for slot4, slot5 in ipairs(slot0.groupListInCount) do
-		slot6 = slot5:getNation()
+		if slot5:getNation() ~= tonumber(string.sub(tostring(slot5.id), 1, 1)) then
+			table.insert(slot0.nationToPointLog2[slot6], slot5)
+		end
 
 		if not slot5.maxLV or slot5.maxLV < TechnologyConst.MAX_LV then
-			slot0.nationToPoint[slot6] = slot0.nationToPoint[slot6] + pg.fleet_tech_ship_template[slot5.id].pt_get
+			slot0.nationToPoint[slot6] = slot0.nationToPoint[slot6] + pg.fleet_tech_ship_template[slot7].pt_get
+
+			table.insert(slot0.nationToPointLog[slot6][1], slot7)
 		else
 			slot0.nationToPoint[slot6] = slot0.nationToPoint[slot6] + pg.fleet_tech_ship_template[slot7].pt_get + pg.fleet_tech_ship_template[slot7].pt_level
+
+			table.insert(slot0.nationToPointLog[slot6][2], slot7)
 		end
 
 		if pg.fleet_tech_ship_template[slot7].max_star <= slot5.star then
 			slot0.nationToPoint[slot6] = slot0.nationToPoint[slot6] + pg.fleet_tech_ship_template[slot7].pt_upgrage
+
+			table.insert(slot0.nationToPointLog[slot6][3], slot7)
 		end
 	end
 
@@ -314,6 +380,44 @@ function slot0.getShipAddition(slot0, slot1, slot2)
 	end
 
 	return slot4
+end
+
+function slot0.printNationPointLog(slot0)
+	for slot4, slot5 in ipairs(slot0.nationToPointLog) do
+		slot9 = "----------------"
+
+		print("----------------" .. slot4 .. slot9)
+
+		for slot9, slot10 in ipairs(slot5) do
+			for slot15, slot16 in ipairs(slot10) do
+				slot11 = slot9 .. "    :" .. "  " .. slot16
+			end
+
+			print(slot11)
+		end
+	end
+
+	print("----------------Filte----------------")
+
+	for slot4, slot5 in ipairs(slot0.nationToPointLog2) do
+		slot6 = slot4 .. " :"
+
+		for slot10, slot11 in ipairs(slot5) do
+			slot12 = slot11.id
+			slot13 = slot11:getNation()
+			slot14 = nil
+
+			for slot18 = 4, 1, -1 do
+				if pg.ship_data_statistics[tonumber(slot12 .. slot18)] then
+					slot14 = pg.ship_data_statistics[tonumber(slot12 .. slot18)].nationality
+				end
+			end
+
+			slot6 = slot6 .. tostring(slot12) .. " " .. tostring(slot13) .. " " .. tostring(slot14) .. "||"
+		end
+
+		print(slot6)
+	end
 end
 
 return slot0

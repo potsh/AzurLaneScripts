@@ -520,7 +520,7 @@ function slot0.StartStory(slot0, slot1, slot2, slot3, slot4)
 
 				if slot4.bgm then
 					if slot4.bgmDelay then
-						pg.CriMgr.GetInstance():stopBGM(true)
+						pg.CriMgr.GetInstance():StopBGM(true)
 
 						uv1.stopBGM = true
 
@@ -537,7 +537,7 @@ function slot0.StartStory(slot0, slot1, slot2, slot3, slot4)
 						pg.CriMgr.GetInstance():PlayBGM(slot4.bgm, true)
 					end
 				elseif slot4.stopbgm then
-					pg.CriMgr.GetInstance():stopBGM(true)
+					pg.CriMgr.GetInstance():StopBGM(true)
 
 					uv1.stopBGM = true
 				end
@@ -593,14 +593,14 @@ function slot0.StartStory(slot0, slot1, slot2, slot3, slot4)
 				end
 
 				if slot4.movie then
-					pg.CriMgr.GetInstance():stopBGM()
+					pg.CriMgr.GetInstance():StopBGM()
 					playMovie(slot4.movie, function ()
 						onNextTick(function ()
 							if not uv0.stopBGM then
 								if uv0.bgm then
-									pg.CriMgr.GetInstance():resumeStoryBGM()
+									pg.CriMgr.GetInstance():ResumeStoryBGM()
 								else
-									pg.CriMgr.GetInstance():resumeNormalBGM()
+									pg.CriMgr.GetInstance():ResumeNormalBGM()
 								end
 							end
 
@@ -630,7 +630,7 @@ function slot0.StartStory(slot0, slot1, slot2, slot3, slot4)
 		end
 
 		if not uv0.continueBgm then
-			pg.CriMgr.GetInstance():resumeNormalBGM()
+			pg.CriMgr.GetInstance():ResumeNormalBGM()
 		end
 
 		pg.CriMgr.GetInstance():StopSE_V3()
@@ -884,12 +884,6 @@ function slot0.initDialog(slot0, slot1)
 	slot4:SetAsLastSibling()
 
 	if slot1.actor then
-		if slot1.sound then
-			playStorySound(slot1.sound)
-		else
-			stopStorySound()
-		end
-
 		slot6, slot7 = slot0:getNameAndPainting(slot1)
 		slot8 = slot1.painting or {}
 
@@ -1171,37 +1165,43 @@ function slot0.setFade(slot0, slot1, slot2, slot3, slot4)
 	slot5 = {}
 	slot6 = {}
 
-	function (slot0)
-		table.insert(uv0, slot0:GetComponent(typeof(Image)).material.shader.name == "UI/GrayScale" and {
-			name = "_GrayScale",
-			color = Color.New(0.21176470588235294, 0.7137254901960784, 0.07058823529411765)
-		} or slot1.material.shader.name == "UI/Line_Add_Blue" and {
-			name = "_GrayScale",
-			color = Color.New(1, 1, 1, 0.5882352941176471)
-		} or {
-			name = "_Color",
-			color = Color.white
-		})
-
-		if slot1.material == slot1.defaultGraphicMaterial then
-			slot1.material = Material.Instantiate(slot1.defaultGraphicMaterial)
-			findTF(slot0, "face"):GetComponent(typeof(Image)).material = slot1.material
-
-			if findTF(slot0, "shadow") then
-				slot4:GetComponent(typeof(Image)):GetComponent(typeof(Image)).material = slot1.material
+	if findTF(slot1, "fitter").childCount > 0 then
+		function (slot0)
+			if IsNil(slot0:GetComponent(typeof(Image))) then
+				return
 			end
 
-			if findTF(slot0, "hx") then
-				for slot9 = 0, slot5.childCount - 1 do
-					if slot5:GetChild(slot9) and slot10:GetComponent(typeof(Image)) then
-						slot11:GetComponent(typeof(Image)).material = slot1.material
+			table.insert(uv0, slot1.material.shader.name == "UI/GrayScale" and {
+				name = "_GrayScale",
+				color = Color.New(0.21176470588235294, 0.7137254901960784, 0.07058823529411765)
+			} or slot1.material.shader.name == "UI/Line_Add_Blue" and {
+				name = "_GrayScale",
+				color = Color.New(1, 1, 1, 0.5882352941176471)
+			} or {
+				name = "_Color",
+				color = Color.white
+			})
+
+			if slot1.material == slot1.defaultGraphicMaterial then
+				slot1.material = Material.Instantiate(slot1.defaultGraphicMaterial)
+				findTF(slot0, "face"):GetComponent(typeof(Image)).material = slot1.material
+
+				if findTF(slot0, "shadow") then
+					slot4:GetComponent(typeof(Image)):GetComponent(typeof(Image)).material = slot1.material
+				end
+
+				if findTF(slot0, "hx") then
+					for slot9 = 0, slot5.childCount - 1 do
+						if slot5:GetChild(slot9) and slot10:GetComponent(typeof(Image)) then
+							slot11:GetComponent(typeof(Image)).material = slot1.material
+						end
 					end
 				end
 			end
-		end
 
-		table.insert(uv1, slot1.material)
-	end(findTF(slot1, "fitter"):GetChild(0))
+			table.insert(uv1, slot1.material)
+		end(slot8:GetChild(0))
+	end
 
 	if findTF(slot1, "actor_sub") and slot9.childCount > 0 then
 		for slot13 = 1, slot9.childCount do

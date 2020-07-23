@@ -127,23 +127,31 @@ function getBackYardProxy(slot0)
 end
 
 function LoadAndInstantiateAsync(slot0, slot1, slot2, slot3, slot4)
-	ResourceMgr.Inst:getAssetAsync(slot0 .. "/" .. slot1, slot1, uv0.Events.UnityAction_UnityEngine_Object(function (slot0)
+	slot5, slot1 = HXSet.autoHxShift(slot0 .. "/", slot1)
+
+	ResourceMgr.Inst:getAssetAsync(slot5 .. slot1, slot1, uv0.Events.UnityAction_UnityEngine_Object(function (slot0)
 		uv0(Instantiate(slot0))
 	end), defaultValue(slot3, true), defaultValue(slot4, true))
 end
 
 function LoadAndInstantiateSync(slot0, slot1, slot2, slot3)
-	return Instantiate(ResourceMgr.Inst:getAssetSync(slot0 .. "/" .. slot1, slot1, defaultValue(slot2, true), defaultValue(slot3, true)))
+	slot4, slot1 = HXSet.autoHxShift(slot0 .. "/", slot1)
+
+	return Instantiate(ResourceMgr.Inst:getAssetSync(slot4 .. slot1, slot1, defaultValue(slot2, true), defaultValue(slot3, true)))
 end
 
 slot1 = {}
 
 function LoadSprite(slot0, slot1)
-	return ResourceMgr.Inst:getAssetSync(slot0, slot1 or "", typeof(Sprite), true, false)
+	slot2, slot3 = HXSet.autoHxShiftPath(slot0, slot1)
+
+	return ResourceMgr.Inst:getAssetSync(slot2, slot3 or "", typeof(Sprite), true, false)
 end
 
 function LoadSpriteAtlasAsync(slot0, slot1, slot2)
-	ResourceMgr.Inst:getAssetAsync(slot0, slot1 or "", typeof(Sprite), uv0.Events.UnityAction_UnityEngine_Object(function (slot0)
+	slot3, slot4 = HXSet.autoHxShiftPath(slot0, slot1)
+
+	ResourceMgr.Inst:getAssetAsync(slot3, slot4 or "", typeof(Sprite), uv0.Events.UnityAction_UnityEngine_Object(function (slot0)
 		uv0(slot0)
 	end), true, false)
 end
@@ -153,19 +161,24 @@ function LoadSpriteAsync(slot0, slot1)
 end
 
 function LoadAny(slot0, slot1, slot2)
-	return ResourceMgr.Inst:getAssetSync(slot0, slot1, slot2, true, false)
+	slot3, slot4 = HXSet.autoHxShiftPath(slot0, slot1)
+
+	return ResourceMgr.Inst:getAssetSync(slot3, slot4, slot2, true, false)
 end
 
 function LoadAnyAsync(slot0, slot1, slot2, slot3)
-	return ResourceMgr.Inst:getAssetAsync(slot0, slot1, slot2, slot3, true, false)
+	slot4, slot5 = HXSet.autoHxShiftPath(slot0, slot1)
+
+	return ResourceMgr.Inst:getAssetAsync(slot4, slot5, slot2, slot3, true, false)
 end
 
 function LoadImageSpriteAtlasAsync(slot0, slot1, slot2, slot3)
+	slot0, slot5 = HXSet.autoHxShiftPath(slot0, slot1)
 	slot4 = slot2:GetComponent(typeof(Image))
 	slot4.enabled = false
 	uv0[slot4] = slot0
 
-	LoadSpriteAtlasAsync(slot0, slot1, function (slot0)
+	LoadSpriteAtlasAsync(slot0, slot5, function (slot0)
 		if not IsNil(uv0) and uv1[uv0] == uv2 then
 			uv1[uv0] = nil
 			uv0.enabled = true
@@ -183,7 +196,9 @@ function LoadImageSpriteAsync(slot0, slot1, slot2)
 end
 
 function GetSpriteFromAtlas(slot0, slot1)
-	PoolMgr.GetInstance():GetSprite(slot0, slot1, false, function (slot0)
+	slot3, slot4 = HXSet.autoHxShiftPath(slot0, slot1)
+
+	PoolMgr.GetInstance():GetSprite(slot3, slot4, false, function (slot0)
 		uv0 = slot0
 	end)
 
@@ -191,12 +206,15 @@ function GetSpriteFromAtlas(slot0, slot1)
 end
 
 function GetSpriteFromAtlasAsync(slot0, slot1, slot2)
-	PoolMgr.GetInstance():GetSprite(slot0, slot1, true, function (slot0)
+	slot3, slot4 = HXSet.autoHxShiftPath(slot0, slot1)
+
+	PoolMgr.GetInstance():GetSprite(slot3, slot4, true, function (slot0)
 		uv0(slot0)
 	end)
 end
 
 function GetImageSpriteFromAtlasAsync(slot0, slot1, slot2, slot3)
+	slot0, slot1 = HXSet.autoHxShiftPath(slot0, slot1)
 	slot4 = slot2:GetComponent(typeof(Image))
 	slot4.enabled = false
 	uv0[slot4] = slot0 .. slot1
@@ -275,6 +293,10 @@ function setPaintingPrefab(slot0, slot1, slot2, slot3)
 			setActive(slot1, false)
 		end
 
+		if not IsNil(findTF(slot0, "hx")) then
+			setActive(slot2, HXSet.isHx())
+		end
+
 		Ship.SetExpression(uv0:GetChild(0), uv1)
 	end)
 end
@@ -314,6 +336,10 @@ function setPaintingPrefabAsync(slot0, slot1, slot2, slot3, slot4)
 
 		if not IsNil(findTF(slot0, "Touch")) then
 			setActive(slot1, false)
+		end
+
+		if not IsNil(findTF(slot0, "hx")) then
+			setActive(slot2, HXSet.isHx())
 		end
 
 		if uv5 then
@@ -364,12 +390,6 @@ end
 
 function playStory(slot0, slot1)
 	pg.StoryMgr.GetInstance():Play(slot0, slot1)
-end
-
-function playStorySound(slot0)
-end
-
-function stopStorySound()
 end
 
 function errorMessage(slot0)
@@ -805,8 +825,6 @@ function getDropInfo(slot0)
 			table.insert(slot1, Equipment.New({
 				id = slot8
 			}):getConfig("name") .. "x" .. counts)
-		elseif slot7 == DROP_TYPE_SIREN_EQUIP then
-			-- Nothing
 		elseif slot7 == DROP_TYPE_RESOURCE then
 			table.insert(slot1, Item.New({
 				id = id2ItemId(slot8)
@@ -905,11 +923,6 @@ function updateDrop(slot0, slot1, slot2)
 		updateEquipment(slot0, Equipment.New({
 			id = slot1.id
 		}), slot2)
-	elseif slot4 == DROP_TYPE_SIREN_EQUIP then
-		slot10 = getProxy(EquipmentProxy):getEquipmentById(slot1.id)
-		slot6 = pg.equip_data_statistics[slot10.configId].descrip
-
-		updateEquipment(slot0, slot10, slot2)
 	elseif slot4 == DROP_TYPE_SHIP then
 		slot9, slot10, slot11 = ShipWordHelper.GetWordAndCV(pg.ship_data_statistics[slot1.id].skin_id, ShipWordHelper.WORD_TYPE_DROP)
 		slot6 = slot11 or i18n("ship_drop_desc_default")
@@ -1180,22 +1193,16 @@ function openDestroyEquip()
 end
 
 function openDockyardClear()
-	slot0 = {}
-
-	for slot5, slot6 in pairs(getProxy(BayProxy):getData()) do
-		if slot6:isActivityNpc() and not table.contains(slot0, slot6.id) then
-			table.insert(slot0, slot6.id)
-		end
-	end
-
 	pg.m02:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
 		blockLock = true,
 		skipSelect = true,
 		selectedMax = 10,
 		mode = DockyardScene.MODE_DESTROY,
 		leftTopInfo = i18n("word_destroy"),
-		onShip = Ship.canDestroyShip,
-		ignoredIds = slot0
+		onShip = ShipStatus.canDestroyShip,
+		ignoredIds = pg.ShipFlagMgr.GetInstance():FilterShips({
+			isActivityNpc = true
+		})
 	})
 end
 
@@ -1613,6 +1620,10 @@ function tostring(slot0)
 end
 
 function wordVer(slot0, slot1)
+	if slot0:match(ChatConst.EmojiCodeMatch) then
+		return 0, slot0
+	end
+
 	if #filterEgyUnicode(slot0) ~= #slot0 then
 		if (slot1 or {}).isReplace then
 			slot0 = slot2
@@ -1763,6 +1774,9 @@ end
 function filterCharForiOS(slot0)
 end
 
+function filteAndDelTest(slot0)
+end
+
 function getSkillConfig(slot0)
 	if not require("GameCfg.buff.buff_" .. slot0) then
 		warn("找不到技能配置: " .. slot0)
@@ -1893,12 +1907,6 @@ function topAnimation(slot0, slot1, slot2, slot3, slot4, slot5)
 end
 
 function cancelTweens(slot0)
-	if not slot0 then
-		LeanTween:cancelAll()
-
-		return
-	end
-
 	for slot4, slot5 in ipairs(slot0) do
 		if slot5 then
 			LeanTween.cancel(slot5)
@@ -2406,11 +2414,15 @@ function checkExist(slot0, ...)
 	for slot5, slot6 in ipairs({
 		...
 	}) do
-		if not slot0 then
-			return false
+		if type(slot0) == "table" then
+			if type(slot0[slot6[1]]) == "function" then
+				slot0 = slot0[slot6[1]](slot0, unpack(slot6[2] or {}))
+			else
+				slot0 = slot0[slot6[1]]
+			end
+		elseif not slot0 then
+			break
 		end
-
-		slot0 = (type(slot0[slot6[1]]) ~= "function" or slot0[slot6[1]](slot0, unpack(slot6[2] or {}))) and slot0[slot6[1]](slot0, unpack(slot6[2] or ))[slot6[1]]
 	end
 
 	return slot0
@@ -2599,4 +2611,129 @@ function changeToScrollText(slot0, slot1)
 	end
 
 	setScrollText(slot0:GetChild(0), slot1)
+end
+
+slot20, slot21, slot22 = nil
+
+function slot20(slot0, slot1, slot2)
+	slot3 = slot0:Find("base")
+	slot4, slot5 = Equipment.GetInfoTrans(slot1, slot2)
+
+	if slot1.nextValue then
+		slot6, slot7 = Equipment.GetInfoTrans({
+			name = slot1.name,
+			type = slot1.type,
+			value = slot1.nextValue
+		}, slot2)
+		slot5 = slot5 .. setColorStr("   >   " .. slot7, COLOR_GREEN)
+	end
+
+	setText(slot3:Find("name"), slot4)
+	setText(slot3:Find("value"), slot5)
+	setActive(slot3:Find("value/up"), slot1.compare and slot1.compare > 0)
+	setActive(slot3:Find("value/down"), slot1.compare and slot1.compare < 0)
+	triggerToggle(slot3, slot1.lock_open)
+
+	if not slot1.lock_open and slot1.sub and #slot1.sub > 0 then
+		GetComponent(slot3, typeof(Toggle)).enabled = true
+	else
+		setActive(slot3:Find("name/close"), false)
+		setActive(slot3:Find("name/open"), false)
+
+		GetComponent(slot3, typeof(Toggle)).enabled = false
+	end
+end
+
+function slot21(slot0, slot1, slot2, slot3)
+	uv0(slot0, slot2, slot3)
+
+	if not slot2.sub or #slot2.sub == 0 then
+		return
+	end
+
+	uv1(slot0:Find("subs"), slot1, slot2.sub, slot3)
+end
+
+function slot22(slot0, slot1, slot2, slot3)
+	removeAllChildren(slot0)
+
+	for slot7, slot8 in ipairs(slot2) do
+		uv0(cloneTplTo(slot1, slot0), slot1, slot8, slot3)
+	end
+end
+
+function updateEquipInfo(slot0, slot1, slot2, slot3)
+	uv0(slot0:Find("attrs"), slot0:Find("attr_tpl"), slot1.attrs, slot3)
+	setActive(slot0:Find("skill"), slot2)
+
+	if slot2 then
+		uv1(slot0:Find("skill/attr"), slot4, {
+			name = i18n("skill"),
+			value = setColorStr(slot2.name, "#FFDE00FF")
+		}, slot3)
+		setText(slot0:Find("skill/value/Text"), getSkillDescGet(slot2.id))
+	end
+
+	setActive(slot0:Find("weapon"), #slot1.weapon.sub > 0)
+
+	if #slot1.weapon.sub > 0 then
+		uv0(slot0:Find("weapon"), slot4, {
+			slot1.weapon
+		}, slot3)
+	end
+
+	setActive(slot0:Find("equip_info"), #slot1.equipInfo.sub > 0)
+
+	if #slot1.equipInfo.sub > 0 then
+		uv0(slot0:Find("equip_info"), slot4, {
+			slot1.equipInfo
+		}, slot3)
+	end
+
+	uv1(slot0:Find("part/attr"), slot4, {
+		name = i18n("equip_info_23")
+	}, slot3)
+
+	slot6 = slot0:Find("part/value"):Find("label")
+
+	if #slot1.part[1] == 0 and #slot1.part[2] == 0 then
+		setmetatable({}, {
+			__index = function (slot0, slot1)
+				return true
+			end
+		})
+		setmetatable({}, {
+			__index = function (slot0, slot1)
+				return true
+			end
+		})
+	else
+		for slot12, slot13 in ipairs(slot1.part[1]) do
+			slot7[slot13] = true
+		end
+
+		for slot12, slot13 in ipairs(slot1.part[2]) do
+			slot8[slot13] = true
+		end
+	end
+
+	for slot12, slot13 in ipairs(ShipType.AllShipType) do
+		slot14 = slot12 <= slot5.childCount and slot5:GetChild(slot12 - 1) or cloneTplTo(slot6, slot5)
+
+		GetImageSpriteFromAtlasAsync("shiptype", ShipType.Type2CNLabel(slot13), slot14)
+		setActive(slot14:Find("main"), slot7[slot13] and not slot8[slot13])
+		setActive(slot14:Find("sub"), slot8[slot13] and not slot7[slot13])
+		setImageAlpha(slot14, not slot7[slot13] and not slot8[slot13] and 0.3 or 1)
+	end
+end
+
+function updateEquipUpgradeInfo(slot0, slot1, slot2)
+	uv0(slot0:Find("attrs"), slot0:Find("attr_tpl"), slot1.attrs, slot2)
+	setActive(slot0:Find("weapon"), #slot1.weapon.sub > 0)
+
+	if #slot1.weapon.sub > 0 then
+		uv0(slot0:Find("weapon"), slot3, {
+			slot1.weapon
+		}, slot2)
+	end
 end

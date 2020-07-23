@@ -2,12 +2,13 @@ slot0 = class("BackYardApplyThemeTemplateCommand", pm.SimpleCommand)
 
 function slot0.execute(slot0, slot1)
 	slot2 = slot1:getBody()
+	slot3 = slot2.template
 	slot4 = slot2.callback
 	slot5 = getProxy(DormProxy)
 
 	function slot6(slot0, slot1)
 		if #slot0 == 0 then
-			pg.TipsMgr.GetInstance():ShowTips(i18n1("没有可以布置的家具"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_theme_template_list_is_empty"))
 
 			return
 		end
@@ -29,7 +30,7 @@ function slot0.execute(slot0, slot1)
 			if slot0 then
 				uv0:sendNotification(GAME.BACKYARD_APPLY_THEME_TEMPLATE_DONE)
 			else
-				pg.TipsMgr.GetInstance():ShowTips(i18n1("布置失败"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_apply_theme_template_erro"))
 				print(slot1)
 			end
 		end
@@ -37,10 +38,11 @@ function slot0.execute(slot0, slot1)
 		pg.m02:sendNotification(GAME.PUT_FURNITURE, {})
 	end
 
+	slot9 = slot3:GetAllFurniture()
 	slot11 = {}
 
-	if BackYardThemeTemplate.IsOccupyed(uv0.GetAllFloorFurnitures(), slot2.template:GetAllFurniture()) then
-		slot11 = BackYardThemeTemplate.GetUsableFurnituresForFloor(slot8, slot9, 1)
+	if slot3:IsOccupyed(uv0.GetAllFloorFurnitures(), 1) then
+		slot11 = slot3:GetUsableFurnituresForFloor(slot8, 1)
 	else
 		slot12, slot13, slot14 = pairs(slot9)
 
@@ -139,7 +141,7 @@ function slot0.WarpList(slot0)
 						slot11[slot16.parent] = {}
 					end
 
-					table.insert(slot11[slot16.parent.id], slot16.id)
+					table.insert(slot11[slot16.parent], slot16.id)
 				end
 
 				table.insert(slot10, slot16.id)

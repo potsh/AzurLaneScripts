@@ -156,21 +156,13 @@ function slot7.SetTotalBound(slot0, slot1, slot2, slot3, slot4)
 end
 
 function slot7.CalcSubmarineBaseLine(slot0, slot1)
-	slot2 = (slot0._totalRightBound + slot0._totalLeftBound) * 0.5
-
 	if slot0._IFF == uv0.FRIENDLY_CODE then
-		if slot1 == SYSTEM_DUEL then
-			-- Nothing
-		elseif slot1 ~= SYSTEM_SHAM then
-			slot0._subAttackBaseLine = slot2
+		if slot1 ~= SYSTEM_DUEL then
+			slot0._subAttackBaseLine = (slot0._totalRightBound + slot0._totalLeftBound) * 0.5
 			slot0._subRetreatBaseLine = slot0._leftBound - 10
 		end
-	elseif slot0._IFF == uv0.FOE_CODE then
-		if slot1 == SYSTEM_DUEL then
-			-- Nothing
-		elseif slot1 == SYSTEM_SHAM then
-			-- Nothing
-		end
+	elseif slot0._IFF == uv0.FOE_CODE and slot1 == SYSTEM_DUEL then
+		-- Nothing
 	end
 end
 
@@ -525,23 +517,27 @@ function slot7.appendMainUnit(slot0, slot1)
 		slot0._chargeWeaponVO:AppendWeapon(slot7)
 	end
 
+	for slot7, slot8 in ipairs(slot1:GetTorpedoList()) do
+		slot0._torpedoWeaponVO:AppendWeapon(slot8)
+	end
+
 	if #slot1:GetHiveList() > 0 then
-		for slot8, slot9 in ipairs(uv0.CreateAllInStrike(slot1)) do
-			slot0._airAssistVO:AppendWeapon(slot9)
+		for slot9, slot10 in ipairs(uv0.CreateAllInStrike(slot1)) do
+			slot0._airAssistVO:AppendWeapon(slot10)
 		end
 
-		slot1:SetAirAssistList(slot4)
+		slot1:SetAirAssistList(slot5)
 	end
 
 	slot0._fleetAntiAir:AppendCrewUnit(slot1)
 
-	slot4 = {}
+	slot5 = {}
 
-	for slot8, slot9 in ipairs(slot0._unitList) do
-		table.insert(slot4, slot8)
+	for slot9, slot10 in ipairs(slot0._unitList) do
+		table.insert(slot5, slot9)
 	end
 
-	slot0:refreshFleetFormation(slot4)
+	slot0:refreshFleetFormation(slot5)
 end
 
 function slot7.appendSubUnit(slot0, slot1)

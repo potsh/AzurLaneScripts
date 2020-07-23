@@ -374,7 +374,7 @@ function slot0.nextPage(slot0, slot1, slot2)
 			slot0:closeUpgrade()
 		elseif slot7 == ShipViewConst.PAGE.INTENSIFY and not slot0.intensifyContext then
 			slot0:closeIntensify()
-		elseif slot7 == ShipViewConst.PAGE.EQUIPMENT and slot0.contextData.isInEquipmentSkinPage and (not slot6:hasEquipEquipmentSkin() or not slot6:canModifyShip()) then
+		elseif slot7 == ShipViewConst.PAGE.EQUIPMENT and slot0.contextData.isInEquipmentSkinPage and (not slot6:hasEquipEquipmentSkin() or not ShipStatus.ShipStatusCheck("onModify", slot6)) then
 			slot0.viewComponent:switch2EquipmentSkinPage()
 		end
 
@@ -543,6 +543,7 @@ function slot0.handleNotification(slot0, slot1)
 		end
 
 		if pg.shop_template[slot3.id] and slot4.genre == ShopArgs.SkinShop then
+			slot0.viewComponent:StopPreVoice()
 			slot0:addSubLayers(Context.New({
 				mediator = NewSkinMediator,
 				viewComponent = NewSkinLayer,

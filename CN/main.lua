@@ -4,6 +4,12 @@ pg = {
 		__mode = "k"
 	})
 }
+PLATFORM_CH = 1
+PLATFORM_JP = 2
+PLATFORM_KR = 3
+PLATFORM_US = 4
+PLATFORM_CHT = 5
+PLATFORM_CODE = PLATFORM_CH
 
 require("Include")
 require("tolua.reflection")
@@ -15,12 +21,6 @@ CSharpVersion = NetConst.GatewayState
 print("C# Ver. " .. CSharpVersion)
 
 PLATFORM = LuaHelper.GetPlatformInt()
-PLATFORM_CH = 1
-PLATFORM_JP = 2
-PLATFORM_KR = 3
-PLATFORM_US = 4
-PLATFORM_CHT = 5
-PLATFORM_CODE = PLATFORM_CH
 SDK_EXIT_CODE = 99
 
 function luaIdeDebugFunc()
@@ -195,6 +195,9 @@ seriesAsync({
 			end,
 			function (slot0)
 				pg.SecondaryPWDMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.ShipFlagMgr.GetInstance():Init(slot0)
 			end
 		}, slot0)
 	end
@@ -233,4 +236,8 @@ seriesAsync({
 			DebugMgr.Inst:Switch2QATool()
 		end)
 	end
+
+	pg.UIMgr.GetInstance():AddDebugButton("Print", function ()
+		getProxy(TechnologyNationProxy):printNationPointLog()
+	end)
 end)

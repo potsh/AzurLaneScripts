@@ -146,11 +146,25 @@ function slot0.getUniqueShipAction(slot0, slot1, slot2)
 
 	if _.detect(slot3, function (slot0)
 		return _.any(slot0[2], function (slot0)
-			return slot0 == uv0
+			slot1 = nil
+
+			return slot0 == ((uv0[5] and uv0[5] ~= 1 or uv1.skinId) and uv1.gruopId)
 		end) and uv1 == slot0[1]
 	end) then
-		return slot4[3]
+		return slot4[3], slot4[4] or 0
 	end
+end
+
+slot1 = pg.furniture_specail_action
+
+function slot0.GetSpecailActiont(slot0, slot1)
+	if uv0[slot0.configId] and _.detect(slot2.actions, function (slot0)
+		return slot0[1] == uv0
+	end) then
+		return slot3[2]
+	end
+
+	return -1
 end
 
 function slot0.getSpineExtraConfig(slot0, slot1)

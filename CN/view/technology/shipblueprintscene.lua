@@ -82,6 +82,7 @@ function slot0.init(slot0)
 	slot0.rightPanel = slot0:findTF("right_panel", slot0.top)
 	slot0.shipContainer = slot0:findTF("ships/bg/content", slot0.bottomPanel)
 	slot0.shipTpl = slot0:findTF("ship_tpl", slot0.bottomPanel)
+	slot0.versionLight = slot0:findTF("ships/bg/version/decoration/left_light", slot0.bottomPanel)
 	slot0.versionBtn = slot0:findTF("ships/bg/version/version_btn", slot0.bottomPanel)
 	slot0.eyeTF = slot0:findTF("eye", slot0.leftPanle)
 	slot0.painting = slot0:findTF("main/center_panel/painting")
@@ -119,6 +120,7 @@ function slot0.init(slot0)
 	slot0.progressContainer = slot0:findTF("content", slot0.progressPanel)
 	slot0.progressTpl = slot0:findTF("item", slot0.progressContainer)
 	slot0.openCondition = slot0:findTF("state_info/open_condition", slot0.centerPanel)
+	slot0.speedupBtn = slot0:findTF("main/speedup_btn")
 	slot0.taskListPanel = slot0:findTF("task_list", slot0.rightPanel)
 	slot0.taskContainer = slot0:findTF("task_list/scroll/content", slot0.rightPanel)
 	slot0.taskTpl = slot0:findTF("task_list/task_tpl", slot0.rightPanel)
@@ -138,6 +140,7 @@ function slot0.init(slot0)
 	slot0.calcMaxBtn = slot0:findTF("max", slot0.calcPanel)
 	slot0.calcTxt = slot0:findTF("count/Text", slot0.calcPanel)
 	slot0.fittingBtn = slot0:findTF("desc/fitting_btn", slot0.modPanel)
+	slot0.fittingBtnEffect = slot0.fittingBtn:Find("anim/ShipBlue02")
 	slot0.fittingPanel = slot0:findTF("fitting_panel", slot0.rightPanel)
 
 	setActive(slot0.fittingPanel, false)
@@ -189,27 +192,31 @@ function slot0.init(slot0)
 end
 
 function slot0.didEnter(slot0)
+	slot1 = getProxy(TechnologyProxy):getConfigMaxVersion()
+
 	if not slot0.contextData.shipBluePrintVO then
-		slot1 = {
-			0,
-			0
+		slot2 = {
+			[slot6] = 0
 		}
 
-		for slot5, slot6 in pairs(slot0.bluePrintByIds) do
-			slot1[slot6.version] = slot1[slot6.version] + (slot6.state == ShipBluePrint.STATE_UNLOCK and 1 or 0)
+		for slot6 = 1, slot1 do
+		end
 
-			if slot6.state == ShipBluePrint.STATE_DEV then
-				slot0.contextData.shipBluePrintVO = slot0.contextData.shipBluePrintVO or slot6
+		for slot6, slot7 in pairs(slot0.bluePrintByIds) do
+			slot2[slot7.version] = slot2[slot7.version] + (slot7.state == ShipBluePrint.STATE_UNLOCK and 1 or 0)
+
+			if slot7.state == ShipBluePrint.STATE_DEV then
+				slot0.contextData.shipBluePrintVO = slot0.contextData.shipBluePrintVO or slot7
 
 				break
 			end
 		end
 
 		if not slot0.contextData.shipBluePrintVO then
-			for slot6 = 1, getProxy(TechnologyProxy):getConfigMaxVersion() do
+			for slot6 = 1, slot1 do
 				slot0.version = slot6
 
-				if slot1[slot6] <= 4 then
+				if slot2[slot6] <= 4 then
 					break
 				end
 			end
@@ -219,6 +226,9 @@ function slot0.didEnter(slot0)
 	end
 
 	slot0:initShips()
+	onButton(slot0, slot0.speedupBtn, function ()
+		uv0:emit(ShipBluePrintMediator.ON_CLICK_SPEEDUP_BTN)
+	end, SFX_PANEL)
 	onButton(slot0, slot0.backBtn, function ()
 		uv0:emit(ShipBluePrintMediator.ON_MAIN)
 	end, SOUND_BACK)
@@ -283,15 +293,16 @@ function slot0.didEnter(slot0)
 		setActive(uv0.msgPanel, false)
 	end)
 	GetImageSpriteFromAtlasAsync("ui/shipblueprintui_atlas", "version_" .. slot0.version, slot0.versionBtn)
+	triggerToggle(slot0.versionLight:GetChild(slot0.version - 1), true)
 	onButton(slot0, slot0.versionBtn, function ()
-		uv0.version = uv0.version % 2 + 1
+		uv0.version = uv0.version % uv1 + 1
 
 		uv0:emit(ShipBluePrintMediator.SET_TECHNOLOGY_VERSION, uv0.version)
 
 		uv0.contextData.shipBluePrintVO = nil
 
 		GetImageSpriteFromAtlasAsync("ui/shipblueprintui_atlas", "version_" .. uv0.version, uv0.versionBtn)
-		uv0.itemList:align(0)
+		triggerToggle(uv0.versionLight:GetChild(uv0.version - 1), true)
 		uv0:initShips()
 	end)
 	LeanTween.alpha(rtf(slot0.skillArrLeft), 0.25, 1):setEase(LeanTweenType.easeInOutSine):setLoopPingPong()
@@ -301,26 +312,21 @@ end
 slot7 = 0.5
 
 function slot0.hideUI(slot0)
-	if LeanTween.isTweening(go(slot0.leftPanle)) or LeanTween.isTweening(go(slot0.rightPanel)) or LeanTween.isTweening(go(slot0.bottomPanel)) then
-		return
-	end
+	LeanTween.cancel(slot0.bottomPanel)
+	LeanTween.cancel(slot0.topPanel)
+	LeanTween.cancel(slot0.topBg)
+	slot0:switchUI(uv0, slot0.flag)
 
 	slot0.flag = not slot0.flag
 
 	if slot0.flag then
-		LeanTween.moveX(slot0.leftPanle, -slot0.leftPanle.rect.width - 400, uv0)
-		LeanTween.moveX(slot0.rightPanel, 400, uv0)
 		LeanTween.moveY(slot0.bottomPanel, -slot0.bottomWidth, uv0)
 		LeanTween.moveY(slot0.topPanel, slot0.topWidth, uv0)
 		LeanTween.moveY(slot0.topBg, slot0.topWidth, uv0)
-		LeanTween.moveX(slot0.centerPanel, 0, uv0)
 	else
-		LeanTween.moveX(slot0.leftPanle, 0, uv0)
-		LeanTween.moveX(slot0.rightPanel, -slot0.rightPanel.rect.width, uv0)
 		LeanTween.moveY(slot0.bottomPanel, 0, uv0)
 		LeanTween.moveY(slot0.topPanel, 0, uv0)
 		LeanTween.moveY(slot0.topBg, 0, uv0)
-		LeanTween.moveX(slot0.centerPanel, 0, uv0)
 	end
 
 	setActive(slot0.nameTF, not slot0.flag)
@@ -328,27 +334,60 @@ function slot0.hideUI(slot0)
 	setActive(slot0.helpBtn, not slot0.flag)
 end
 
-function slot0.switchUI(slot0, slot1, slot2)
-	if slot2 then
-		LeanTween.moveX(slot0.leftPanle, 0, slot1)
-		LeanTween.moveX(slot0.rightPanel, -slot0.rightPanel.rect.width, slot1)
-		LeanTween.moveX(slot0.centerPanel, 0, slot1)
-	else
-		LeanTween.moveX(slot0.leftPanle, -slot0.leftPanle.rect.width - 400, slot1)
-		LeanTween.moveX(slot0.rightPanel, 400, slot1)
-		LeanTween.moveX(slot0.centerPanel, 0, slot1)
-	end
-end
+function slot0.switchUI(slot0, slot1, slot2, slot3, slot4, slot5)
+	slot6 = nil
+	slot6 = (slot2 or {
+		-slot0.leftPanle.rect.width - 400,
+		slot0.rightPanel.rect.width + 400,
+		0
+	}) and (slot3 or {
+		0,
+		0,
+		0
+	}) and {
+		-slot0.leftPanle.rect.width - 400,
+		0,
+		-slot0.rightPanel.rect.width / 2
+	}
 
-function slot0.switch2FittingPanel(slot0, slot1, slot2)
-	if slot2 then
-		LeanTween.moveX(slot0.rightPanel, -slot0.rightPanel.rect.width, slot1)
-		LeanTween.moveX(slot0.centerPanel, -slot0.rightPanel.rect.width / 2, slot1)
-	else
-		LeanTween.moveX(slot0.leftPanle, -slot0.leftPanle.rect.width - 400, slot1)
-		LeanTween.moveX(slot0.rightPanel, 400, slot1)
-		LeanTween.moveX(slot0.centerPanel, 0, slot1)
+	LeanTween.cancel(slot0.leftPanle)
+	LeanTween.cancel(slot0.rightPanel)
+	LeanTween.cancel(slot0.centerPanel)
+
+	if slot0.cbTimer then
+		slot0.cbTimer:Stop()
+
+		slot0.cbTimer = nil
 	end
+
+	slot0.isSwitchAnim = true
+
+	parallelAsync({
+		function (slot0)
+			LeanTween.moveX(uv0.leftPanle, uv1[1], uv2):setOnComplete(System.Action(slot0))
+		end,
+		function (slot0)
+			LeanTween.moveX(uv0.rightPanel, uv1[2], uv2):setOnComplete(System.Action(slot0))
+		end,
+		function (slot0)
+			LeanTween.moveX(uv0.centerPanel, uv1[3], uv2):setOnComplete(System.Action(slot0))
+		end
+	}, function ()
+		if uv0 then
+			uv1.cbTimer = Timer.New(function ()
+				uv0.cbTimer = nil
+				uv0.isSwitchAnim = false
+
+				return existCall(uv1)
+			end, uv0)
+
+			uv1.cbTimer:Start()
+		else
+			uv1.isSwitchAnim = false
+
+			return existCall(uv2)
+		end
+	end)
 end
 
 function slot0.createShipItem(slot0, slot1)
@@ -361,7 +400,6 @@ function slot0.createShipItem(slot0, slot1)
 	slot2.seleted = findTF(slot2.tf, "selected")
 	slot2.maskLock = findTF(slot2.tf, "state/mask_lock")
 	slot2.maskDev = findTF(slot2.tf, "state/mask_dev")
-	slot2.maskNone = findTF(slot2.tf, "state/mask_none")
 	slot2.tip = findTF(slot2.tf, "tip")
 	slot2.iconTF = findTF(slot2.tf, "icon")
 	slot2.toggle = slot2.tf:GetComponent("Toggle")
@@ -370,23 +408,23 @@ function slot0.createShipItem(slot0, slot1)
 
 	function slot2.update(slot0, slot1, slot2)
 		slot0.toggle.enabled = slot1.id > 0
+		slot0.shipBluePrintVO = slot1
 
-		if slot1.id < 0 then
-			setActive(slot0.maskNone, true)
+		if slot0.shipBluePrintVO.id < 0 then
 			setActive(slot0.seleted, false)
 			setActive(slot0.maskLock, false)
 			setActive(slot0.maskDev, false)
 			setActive(slot0.tip, false)
 			setActive(slot0.lvTF, false)
 			setActive(slot0.countTxt, false)
-			LoadSpriteAsync("shipdesignicon/unknow", function (slot0)
-				uv0.iconShip.sprite = slot0
+			LoadSpriteAsync("shipdesignicon/empty", function (slot0)
+				if uv0.shipBluePrintVO.id < 0 then
+					uv0.iconShip.sprite = slot0
+				end
 			end)
 		else
-			slot0.shipBluePrintVO = slot1
-
 			LoadSpriteAsync("shipdesignicon/" .. slot0.shipBluePrintVO:getShipVO():getPainting(), function (slot0)
-				if slot0 then
+				if uv0.shipBluePrintVO.id > 0 and slot0.name == uv0.shipBluePrintVO:getShipVO():getPainting() then
 					uv0.iconShip.sprite = slot0
 				end
 			end)
@@ -403,7 +441,6 @@ function slot0.createShipItem(slot0, slot1)
 			setActive(slot0.maskLock, slot1:isLock())
 			setActive(slot0.maskDev, slot1:isDeving())
 			setActive(slot0.tip, slot1:isFinished())
-			setActive(slot0.maskNone, false)
 			setActive(slot0.lvTF, not slot1:isLock() and not slot1:isDeving())
 		end
 	end
@@ -429,11 +466,11 @@ function slot0.initShips(slot0)
 			if slot0 == UIItemList.EventInit then
 				uv0.bluePrintItems[slot2] = uv0:createShipItem(slot2)
 
-				onToggle(uv0, uv0.bluePrintItems[slot2].go, function (slot0)
+				onToggle(uv0, slot2, function (slot0)
 					if slot0 then
 						uv0:clearLeanTween()
 
-						uv0.contextData.shipBluePrintVO = uv1.shipBluePrintVO
+						uv0.contextData.shipBluePrintVO = uv0.bluePrintItems[uv1].shipBluePrintVO
 
 						function slot1()
 							uv0:setSelectedBluePrint()
@@ -443,20 +480,15 @@ function slot0.initShips(slot0)
 
 						if uv0.inFlag then
 							if uv0.nowShipId ~= uv0.contextData.shipBluePrintVO.id then
-								slot2 = 0.3
-
-								uv0:switchUI(slot2, false)
-								LeanTween.delayedCall(slot2 + 0.1, System.Action(function ()
+								uv0:switchUI(0.3, false, false, function ()
 									uv0()
-									Canvas.ForceUpdateCanvases()
-									uv1:switchUI(uv2, true)
-								end))
+									uv1:switchUI(uv2, true, false)
+								end, 0.1)
 							else
 								slot1()
 							end
 						else
 							slot1()
-							Canvas.ForceUpdateCanvases()
 
 							uv0.inFlag = true
 							uv0.flag = true
@@ -465,17 +497,13 @@ function slot0.initShips(slot0)
 						end
 					end
 
-					uv1:updateSelectedStyle(slot0)
+					uv0.bluePrintItems[uv1]:updateSelectedStyle(slot0)
 				end, SFX_PANEL)
-
-				return
-			end
-
-			if slot0 == UIItemList.EventUpdate then
+			elseif slot0 == UIItemList.EventUpdate then
 				if uv0.filterBlueprintVOs[slot1 + 1].id > 0 then
-					uv0.bluePrintItems[slot2]:update(slot4, uv0:getItemById(slot4:getItemId()))
+					uv0.bluePrintItems[slot2]:update(slot3, uv0:getItemById(slot3:getItemId()))
 				else
-					slot3:update(slot4, nil)
+					uv0.bluePrintItems[slot2]:update(slot3, nil)
 				end
 			end
 		end)
@@ -793,7 +821,7 @@ function slot0.updateModPanel(slot0)
 
 	slot0.itemInfoCount.text = slot4.count
 
-	GetImageSpriteFromAtlasAsync(slot4:getConfig("icon"), "", slot0.itemInfoIcon)
+	updateItem(slot0.itemInfoIcon, slot4)
 	onButton(slot0, slot0.itemInfoIcon, function ()
 		ItemTipPanel.ShowItemTipbyID(uv0.id, i18n("title_item_ways", uv0:getConfig("name")))
 	end)
@@ -864,20 +892,26 @@ function slot0.updateModPanel(slot0)
 	function (slot0)
 		setActive(uv0.calcPanel, not slot0)
 		setActive(uv0.fittingBtn, slot0)
+		setActive(uv0.fittingBtnEffect, false)
 	end(false)
 
 	if slot1:canFateSimulation() then
-		slot0:updateFittingPanel()
 		onButton(slot0, slot0.fittingBtn, function ()
+			if uv0.isSwitchAnim then
+				return
+			end
+
 			slot0 = 0.3
 
-			setActive(uv0:findTF("anim/ShipBlue02", uv0.fittingBtn), true)
-			LeanTween.delayedCall(0.6, System.Action(function ()
-				uv0:switch2FittingPanel(uv1, false)
-				LeanTween.delayedCall(uv1 + 0.1, System.Action(function ()
+			setActive(uv0.fittingBtnEffect, true)
+
+			uv0.cbTimer = Timer.New(function ()
+				uv0.cbTimer = nil
+
+				uv0:switchUI(uv1, false, true, function ()
 					setActive(uv0.modPanel, false)
 					setActive(uv0.fittingPanel, true)
-					setActive(uv0:findTF("anim/ShipBlue02", uv0.fittingBtn), false)
+					setActive(uv0.fittingBtnEffect, false)
 
 					if not PlayerPrefs.HasKey("first_fate") then
 						triggerButton(uv0.helpBtn)
@@ -885,11 +919,13 @@ function slot0.updateModPanel(slot0)
 						PlayerPrefs.Save()
 					end
 
-					Canvas.ForceUpdateCanvases()
-					uv0:switch2FittingPanel(uv1, true)
-				end))
-			end))
+					uv0:switchUI(uv1, true, true)
+				end, 0.1)
+			end, 0.6)
+
+			uv0.cbTimer:Start()
 		end, SFX_PANEL)
+		slot0:updateFittingPanel()
 
 		if not pg.StoryMgr.GetInstance():IsPlayed(slot1:getConfig("luck_story")) then
 			pg.StoryMgr.GetInstance():Play(slot9, function ()
@@ -922,7 +958,7 @@ function slot0.updateFittingPanel(slot0)
 
 	slot0.fittingItemInfoCount.text = slot4.count
 
-	GetImageSpriteFromAtlasAsync(slot4:getConfig("icon"), "", slot0.fittingItemInfoIcon)
+	updateItem(slot0.fittingItemInfoIcon, slot4)
 	onButton(slot0, slot0.fittingItemInfoIcon, function ()
 		ItemTipPanel.ShowItemTipbyID(uv0.id, i18n("title_item_ways", uv0:getConfig("name")))
 	end)
@@ -931,15 +967,11 @@ function slot0.updateFittingPanel(slot0)
 	GetImageSpriteFromAtlasAsync("tecfateskillicon/skill_" .. slot1.id, "", slot0:findTF("phase_5/off/icon_off", slot0.fittingAttrPanel), true)
 	GetImageSpriteFromAtlasAsync("tecfateskillicon/skill_on_" .. slot1.id, "", slot0:findTF("phase_5/on/icon_on", slot0.fittingAttrPanel), true)
 	onButton(slot0, slot0.fittingCancelBtn, function ()
-		slot0 = 0.3
-
-		uv0:switchUI(slot0, false)
-		LeanTween.delayedCall(slot0 + 0.1, System.Action(function ()
+		uv0:switchUI(0.3, false, false, function ()
 			setActive(uv0.modPanel, true)
 			setActive(uv0.fittingPanel, false)
-			Canvas.ForceUpdateCanvases()
-			uv0:switchUI(uv1, true)
-		end))
+			uv0:switchUI(uv1, true, false)
+		end, 0.1)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.fittingConfirmBtn, function ()
 		if uv0:inModAnim() then
@@ -1216,6 +1248,10 @@ function slot0.updateInfo(slot0)
 
 	setActive(slot0.progressPanel, slot10)
 
+	if not slot10 then
+		setActive(slot0.speedupBtn, false)
+	end
+
 	if slot10 then
 		slot0:updateTasksProgress()
 	end
@@ -1263,6 +1299,12 @@ function slot0.updateTasksProgress(slot0)
 			setActive(findTF(slot8, "lock"), slot10 == ShipBluePrint.TASK_STATE_LOCK or slot10 == ShipBluePrint.TASK_STATE_WAIT)
 			setActive(findTF(slot8, "working"), slot10 == ShipBluePrint.TASK_STATE_ACHIEVED or slot10 == ShipBluePrint.TASK_STATE_OPENING or slot10 == ShipBluePrint.TASK_STATE_START)
 		end
+	end
+
+	if pg.gameset.technology_catchup_itemid.description[slot1:getConfig("blueprint_version")] then
+		setActive(slot0.speedupBtn, (slot1:getTaskStateById(slot2[1]) == ShipBluePrint.TASK_STATE_START or slot1:getTaskStateById(slot2[4]) == ShipBluePrint.TASK_STATE_START) and getProxy(BagProxy):getItemCountById(slot5[1]) > 0)
+	else
+		setActive(slot0.speedupBtn, false)
 	end
 end
 
@@ -1530,7 +1572,14 @@ function slot0.createTask(slot0, slot1)
 			slot3 = 0
 		end
 
-		slot0.progessSlider.value = slot3
+		if slot0.progessSlider.value < slot3 then
+			slot0.itemSliderLT = LeanTween.value(go(slot0.progressTF), slot0.progessSlider.value, slot3, 0.5):setOnUpdate(System.Action_float(function (slot0)
+				uv0.progessSlider.value = slot0
+			end))
+		else
+			slot0.progessSlider.value = slot3
+		end
+
 		slot4 = math.floor(slot3 * 100)
 
 		setText(slot0.progres, math.ceil(math.min(slot4, 100)) .. "%")
@@ -1563,6 +1612,12 @@ function slot0.createTask(slot0, slot1)
 			slot0.taskTimer:Stop()
 
 			slot0.taskTimer = nil
+		end
+
+		if slot0.itemSliderLT then
+			LeanTween.cancel(slot0.itemSliderLT.id)
+
+			slot0.itemSliderLT = nil
 		end
 	end
 

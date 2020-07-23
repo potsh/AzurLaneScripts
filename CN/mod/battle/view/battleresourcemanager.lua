@@ -411,7 +411,8 @@ function slot5.StartPreload(slot0, slot1, slot2)
 	for slot9, slot10 in pairs(uv0.BATTLE_SHADER) do
 		ResourceMgr.Inst:LoadAssetAsync(pg.ShaderMgr.GetInstance().shaders, slot10, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
 			uv0._shaders[uv1] = slot0
-			uv2 = uv2 + 1
+
+			uv2()
 		end), false, false)
 	end
 
@@ -455,7 +456,9 @@ function slot5.StartPreload(slot0, slot1, slot2)
 				uv3()
 			end), true, true)
 		elseif string.find(slot9, "painting/") then
-			PoolMgr.GetInstance():GetPainting(slot11 .. (PlayerPrefs.GetInt("paint_hide_other_obj_" .. slot11, 0) ~= 0 and "_n" or ""), true, function (slot0)
+			slot12 = false
+
+			PoolMgr.GetInstance():GetPainting(slot11 .. ((PlayerPrefs.GetInt(BATTLE_HIDE_BG, 1) <= 0 or PathMgr.FileExists(PathMgr.getAssetBundle("painting/" .. slot11 .. "_n"))) and PlayerPrefs.GetInt("paint_hide_other_obj_" .. slot11, 0) ~= 0 and "_n" or ""), true, function (slot0)
 				if slot0 == nil then
 					print("资源预加载失败，检查以下目录：>>" .. uv0 .. "<<")
 				else
@@ -792,6 +795,10 @@ function slot5.GetBulletResource(slot0, slot1)
 		slot2[#slot2 + 1] = uv2.GetFXPath(slot3.modle_ID)
 	else
 		slot2[#slot2 + 1] = uv2.GetBulletPath(slot4)
+	end
+
+	if slot3.extra_param.mirror then
+		slot2[#slot2 + 1] = uv2.GetBulletPath(slot4 .. uv3.Battle.BattleBulletUnit.MIRROR_RES)
 	end
 
 	slot2[#slot2 + 1] = uv2.GetFXPath(slot3.hit_fx)

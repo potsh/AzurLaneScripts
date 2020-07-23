@@ -1253,7 +1253,7 @@ pg.expedition_data_by_map = {
 		name = "努力、希望和计划|| ||CHAPTER SP||S.P.",
 		bgm = "level02",
 		type = 3,
-		on_activity = 0,
+		on_activity = 12,
 		title = "SP",
 		drop_by_map_display = "",
 		enter_story = "UIACT10000",
@@ -1458,7 +1458,7 @@ pg.expedition_data_by_map = {
 		name = "「异色格」作战-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 0,
+		on_activity = 20,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "UIACT20000",
@@ -1499,7 +1499,7 @@ pg.expedition_data_by_map = {
 		name = "「异色格」作战-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 0,
+		on_activity = 20,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "UIACT20001",
@@ -1519,7 +1519,7 @@ pg.expedition_data_by_map = {
 		name = "「异色格」作战-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 0,
+		on_activity = 20,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "UIACT20000",
@@ -1560,7 +1560,7 @@ pg.expedition_data_by_map = {
 		name = "「异色格」作战-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 0,
+		on_activity = 20,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "UIACT20001",
@@ -1580,7 +1580,7 @@ pg.expedition_data_by_map = {
 		name = "七夕与传说的巧克力|| ||CHAPTER SP||S.P.",
 		bgm = "level02",
 		type = 3,
-		on_activity = 0,
+		on_activity = 26,
 		title = "SP",
 		drop_by_map_display = "",
 		enter_story = "UIACT30001",
@@ -1621,7 +1621,7 @@ pg.expedition_data_by_map = {
 		name = "铅色的追忆|| ||CHAPTER SP||S.P.",
 		bgm = "level02",
 		type = 3,
-		on_activity = 0,
+		on_activity = 30,
 		title = "SP",
 		drop_by_map_display = "",
 		enter_story = "UIACT40000",
@@ -1666,7 +1666,7 @@ pg.expedition_data_by_map = {
 		name = "『红染的参访者』-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 0,
+		on_activity = 34,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -1707,7 +1707,7 @@ pg.expedition_data_by_map = {
 		name = "『红染的参访者』-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 0,
+		on_activity = 34,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -1748,7 +1748,7 @@ pg.expedition_data_by_map = {
 		name = "『红染的参访者』-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 0,
+		on_activity = 34,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -1789,7 +1789,7 @@ pg.expedition_data_by_map = {
 		name = "『红染的参访者』-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 0,
+		on_activity = 34,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -1830,7 +1830,7 @@ pg.expedition_data_by_map = {
 		name = "『红染的参访者』·EX|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 0,
+		on_activity = 34,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -1871,7 +1871,7 @@ pg.expedition_data_by_map = {
 		name = "朱诺行动|| ||CHAPTER SP||S.P.",
 		bgm = "level02",
 		type = 3,
-		on_activity = 0,
+		on_activity = 41,
 		title = "SP",
 		drop_by_map_display = "",
 		enter_story = "ZHUNUO1",
@@ -1953,7 +1953,7 @@ pg.expedition_data_by_map = {
 		name = "坠落之翼-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "Story-6",
 		type = 4,
-		on_activity = 0,
+		on_activity = 55,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "DONGHUO01",
@@ -1994,7 +1994,7 @@ pg.expedition_data_by_map = {
 		name = "坠落之翼-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "Story-6",
 		type = 4,
-		on_activity = 0,
+		on_activity = 56,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "DONGHUO08",
@@ -2035,7 +2035,7 @@ pg.expedition_data_by_map = {
 		name = "坠落之翼-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "Story-6",
 		type = 5,
-		on_activity = 0,
+		on_activity = 55,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "DONGHUO01",
@@ -2076,7 +2076,7 @@ pg.expedition_data_by_map = {
 		name = "坠落之翼-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "Story-6",
 		type = 5,
-		on_activity = 0,
+		on_activity = 56,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "DONGHUO08",
@@ -2199,7 +2199,7 @@ pg.expedition_data_by_map = {
 		name = "异次元的访客|| ||CHAPTER SP||S.P.",
 		bgm = "Level-nep",
 		type = 4,
-		on_activity = 0,
+		on_activity = 63,
 		title = "SP",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -2240,7 +2240,7 @@ pg.expedition_data_by_map = {
 		name = "异次元的访客|| ||CHAPTER SP||S.P.",
 		bgm = "Level-nep2",
 		type = 5,
-		on_activity = 0,
+		on_activity = 63,
 		title = "SP",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -2281,7 +2281,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "Story-6",
 		type = 4,
-		on_activity = 0,
+		on_activity = 81,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "LINGDONG01",
@@ -2322,7 +2322,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level03",
 		type = 4,
-		on_activity = 0,
+		on_activity = 82,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "LINGDONG11",
@@ -2363,7 +2363,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "Story-6",
 		type = 5,
-		on_activity = 0,
+		on_activity = 81,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "LINGDONG01",
@@ -2404,7 +2404,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level03",
 		type = 5,
-		on_activity = 0,
+		on_activity = 82,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "LINGDONG11",
@@ -2445,7 +2445,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠·EX|| ||CHAPTER EX||E.X.",
 		bgm = "level03",
 		type = 5,
-		on_activity = 0,
+		on_activity = 82,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -6821,12 +6821,53 @@ pg.expedition_data_by_map = {
 			}
 		}
 	},
+	[1370001] = {
+		map = 1370001,
+		name = "峡湾间的反击|| ||CHAPTER SP||S.P.",
+		bgm = "level02",
+		type = 3,
+		on_activity = 612,
+		title = "SP",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "map_1330001",
+		cloud_suffix = "",
+		bg = "Map_1330001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 0,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
 	[2100000] = {
 		map = 2100000,
 		name = "『红染的参访者』-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 87,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "GUOQING1",
@@ -6867,7 +6908,7 @@ pg.expedition_data_by_map = {
 		name = "『红染的参访者』-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 87,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "GUOQING11",
@@ -6908,7 +6949,7 @@ pg.expedition_data_by_map = {
 		name = "『红染的参访者』-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 87,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "GUOQING1",
@@ -6949,7 +6990,7 @@ pg.expedition_data_by_map = {
 		name = "『红染的参访者』-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 87,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "GUOQING11",
@@ -6990,7 +7031,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "Story-6",
 		type = 4,
-		on_activity = 224,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "LINGDONG01",
@@ -7031,7 +7072,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level03",
 		type = 4,
-		on_activity = 225,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "LINGDONG11",
@@ -7072,7 +7113,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "Story-6",
 		type = 5,
-		on_activity = 224,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "LINGDONG01",
@@ -7113,7 +7154,7 @@ pg.expedition_data_by_map = {
 		name = "凛冬王冠-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level03",
 		type = 5,
-		on_activity = 225,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "LINGDONG11",
@@ -7154,7 +7195,7 @@ pg.expedition_data_by_map = {
 		name = "「异色格」作战-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 128,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "UIACT20000",
@@ -7195,7 +7236,7 @@ pg.expedition_data_by_map = {
 		name = "「异色格」作战-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 128,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "UIACT20001",
@@ -7215,7 +7256,7 @@ pg.expedition_data_by_map = {
 		name = "「异色格」作战-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 128,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "UIACT20000",
@@ -7256,7 +7297,7 @@ pg.expedition_data_by_map = {
 		name = "「异色格」作战-后篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 128,
+		on_activity = 0,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "UIACT20001",
@@ -7557,12 +7598,176 @@ pg.expedition_data_by_map = {
 		bind_map = 2100081,
 		clouds_pos = {}
 	},
+	[2100100] = {
+		map = 2100100,
+		name = "墨染的钢铁之花·上篇|| ||CHAPTER EX||E.X.",
+		bgm = "Nagato-map",
+		type = 4,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "YINGHUA1",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "yinghua_map_effect01",
+		cloud_suffix = "",
+		bg = "Map_1100001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100110,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100101] = {
+		map = 2100101,
+		name = "墨染的钢铁之花·下篇| ||CHAPTER EX||E.X.",
+		bgm = "Nagato-map",
+		type = 4,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "YINGHUA9",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "yinghua_map_effect02",
+		cloud_suffix = "",
+		bg = "Map_1100002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100111,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100110] = {
+		map = 2100110,
+		name = "墨染的钢铁之花·上篇|| ||CHAPTER EX||E.X.",
+		bgm = "Nagato-map",
+		type = 5,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "YINGHUA1",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "yinghua_map_effect03",
+		cloud_suffix = "",
+		bg = "Map_1100011",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100100,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[2100111] = {
+		map = 2100111,
+		name = "墨染的钢铁之花·下篇| ||CHAPTER EX||E.X.",
+		bgm = "Nagato-map",
+		type = 5,
+		on_activity = 0,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "YINGHUA9",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "yinghua_map_effect04",
+		cloud_suffix = "",
+		bg = "Map_1100012",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 2100101,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
 	[2200000] = {
 		map = 2200000,
 		name = "努力、希望和计划|| ||CHAPTER SP||S.P.",
 		bgm = "level02",
 		type = 3,
-		on_activity = 12,
+		on_activity = 0,
 		title = "SP",
 		drop_by_map_display = "",
 		enter_story = "UIACT10000",
@@ -7603,7 +7808,7 @@ pg.expedition_data_by_map = {
 		name = "围剿斯佩伯爵！|| ||CHAPTER SP||S.P.",
 		bgm = "level02",
 		type = 3,
-		on_activity = 193,
+		on_activity = 0,
 		title = "SP",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -7807,6 +8012,7 @@ pg.expedition_data_by_map = {
 		1360012,
 		1360025,
 		1360026,
+		1370001,
 		2100000,
 		2100001,
 		2100010,
@@ -7827,6 +8033,10 @@ pg.expedition_data_by_map = {
 		2100081,
 		2100090,
 		2100091,
+		2100100,
+		2100101,
+		2100110,
+		2100111,
 		2200000,
 		2200010
 	}

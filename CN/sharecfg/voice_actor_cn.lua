@@ -5,7 +5,7 @@ pg.voice_actor_CN = {
 		code = 1
 	},
 	{
-		actor_name = "河野洋美",
+		actor_name = "杉冈洋美",
 		code = 2
 	},
 	{
@@ -931,5 +931,25 @@ pg.voice_actor_CN = {
 	{
 		actor_name = "明日叶yomogi",
 		code = 233
+	},
+	{
+		actor_name = "幸村惠理",
+		code = 234
+	},
+	{
+		actor_name = "高野麻美",
+		code = 235
+	},
+	{
+		actor_name = "甲斐田裕子",
+		code = 236
+	},
+	{
+		actor_name = "松冈由贵",
+		code = 237
+	},
+	{
+		actor_name = "牧野由依",
+		code = 238
 	}
 }

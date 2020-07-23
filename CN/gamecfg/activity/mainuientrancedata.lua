@@ -104,7 +104,12 @@ return {
 				setActive(slot1:Find("Tip"), slot4)
 				onButton(slot0, slot1, function ()
 					uv0:emit(MainUIMediator.GO_SCENE, {
-						SCENE.ACT_BOSS_SPF
+						SCENE.ACT_BOSS_BATTLE,
+						{
+							showAni = true,
+							mediatorClass = ActivityBossMediatorTemplate,
+							viewClass = ActivityBossAisaikesiScene
+						}
 					})
 				end, SFX_PANEL)
 			end
@@ -308,13 +313,20 @@ return {
 		end
 	},
 	LayoutProperty = {
-		CellSize = Vector2(208, 215)
+		CellSize = Vector2(208, 215),
+		Spacing = Vector2(0, -20),
+		Padding = {
+			0,
+			0,
+			-20,
+			0
+		},
+		CellScale = Vector3(0.9, 0.9, 1)
 	},
 	CurrentEntrancesList = {
 		1,
 		2,
-		8,
-		6,
-		13
+		5,
+		6
 	}
 }

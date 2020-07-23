@@ -6,10 +6,10 @@
 
 Cannons = {}
 
-local inputFileName = "cannons.csv"
+local inputFileName = "舰炮.csv"
 local outputFileName = "舰炮Complete.csv"
 
-
+--注意，需要把相关statistics文件转成GBK格式！！！
 require("CN.sharecfg.weapon_property")
 require("CN.sharecfg.equip_data_statistics")
 require("CN.sharecfg.barrage_template")

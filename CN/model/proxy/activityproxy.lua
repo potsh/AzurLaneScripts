@@ -41,10 +41,6 @@ function slot0.register(slot0)
 			getProxy(MilitaryExerciseProxy):addSeasonOverTimer()
 		end
 
-		if ChapterConst.ActivateMirror then
-			getProxy(ChapterProxy):checkMirrorCount()
-		end
-
 		if uv0:getActivityByType(ActivityConst.ACTIVITY_TYPE_CHALLENGE) and not slot1:isEnd() then
 			uv0:sendNotification(GAME.CHALLENGE2_INFO, {})
 		end
@@ -66,6 +62,7 @@ function slot0.register(slot0)
 
 		if pg.activity_template[slot1.id].type == ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2 then
 			uv0:updateActivityFleet(slot0.activity_info)
+			uv0:InitActivityBossData(slot1)
 		end
 
 		uv0:sendNotification(GAME.ACTIVITY_BE_UPDATED, {
@@ -130,9 +127,15 @@ end
 
 function slot0.getPanelActivities(slot0)
 	return _(_.values(slot0.data)):chain():filter(function (slot0)
-		slot1 = slot0:getConfig("type")
+		if slot0:isShow() then
+			if slot0:getConfig("type") == ActivityConst.ACTIVITY_TYPE_CHARGEAWARD then
+				slot2 = slot0.data2 == 0
+			elseif slot1 == ActivityConst.ACTIVITY_TYPE_PROGRESSLOGIN then
+				slot2 = slot0.data1 < 7 or not slot0.achieved
+			end
+		end
 
-		return slot0:isShow() and (slot1 == ActivityConst.ACTIVITY_TYPE_CHARGEAWARD and slot0.data2 == 0 or (slot1 ~= ActivityConst.ACTIVITY_TYPE_PROGRESSLOGIN or slot0.data1 >= 7 and not slot0.achieved and false) and (slot1 == ActivityConst.ACTIVITY_TYPE_DAILY_TASK and getProxy(TaskProxy):getTaskById(slot0:getConfig("config_data")[1]) and not slot4:isReceive() or not slot0:isEnd()))
+		return slot2 and not slot0:isEnd()
 	end):sort(function (slot0, slot1)
 		if slot0:getConfig("login_pop") == slot1:getConfig("login_pop") then
 			return slot0.id < slot1.id
