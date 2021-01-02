@@ -545,6 +545,72 @@ pg.auto_pilot_template = {
 			}
 		}
 	},
+	[20015] = {
+		id = 20015,
+		name = "潜艇AI-4 移动到屏幕中部停留10秒后继续前进",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -35,
+					z = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 10
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 2,
+				param = {
+					x = -150,
+					z = 0
+				}
+			}
+		}
+	},
+	[20016] = {
+		id = 20016,
+		name = "潜艇AI-5 移动到屏幕中部停留5秒后继续前进",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -35,
+					z = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 2,
+				param = {
+					x = -150,
+					z = 0
+				}
+			}
+		}
+	},
 	[30000] = {
 		id = 30000,
 		name = "转圈小范围 顺时针",
@@ -5825,6 +5891,1214 @@ pg.auto_pilot_template = {
 			}
 		}
 	},
+	[70095] = {
+		id = 70095,
+		name = "2020英系希佩尔有节奏随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 20,
+					Z2 = 75,
+					moveCount = 40,
+					Z1 = 35,
+					duration = -1,
+					X1 = -20,
+					X2 = -5
+				}
+			}
+		}
+	},
+	[70096] = {
+		id = 70096,
+		name = "2020英系清除者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 2,
+					z = 0,
+					x = 5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 4,
+				param = {
+					radius = 25,
+					z = 40,
+					antiClockWise = false,
+					duration = 5,
+					x = -2
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70097] = {
+		id = 70097,
+		name = "2020英系清除者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 2,
+					z = -30,
+					x = 5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 4,
+				param = {
+					radius = 25,
+					z = 40,
+					antiClockWise = false,
+					duration = 5,
+					x = -2
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -45
+				}
+			}
+		}
+	},
+	[70098] = {
+		id = 70098,
+		name = "2020英系清除者水平追踪移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 8,
+				param = {
+					offsetZ = -5,
+					duration = 300,
+					X = 0
+				}
+			}
+		}
+	},
+	[70099] = {
+		id = 70099,
+		name = "2020英系EX清除者移动到屏幕中央",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -53,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70100] = {
+		id = 70100,
+		name = "2020信浓活动T6测试者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 8,
+					z = 5,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70101] = {
+		id = 70101,
+		name = "2020信浓活动T6测试者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 8,
+					z = -35,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70102] = {
+		id = 70102,
+		name = "2020信浓活动T6测试者 辅助航母行动轨迹",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -25,
+					z = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70103] = {
+		id = 70103,
+		name = "2020信浓活动T6测试者 辅助航母飞机行动轨迹",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -8,
+					z = -13
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					x = -150,
+					z = -13
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70104] = {
+		id = 70104,
+		name = "2020信浓活动T6测试者 辅助航母飞机行动轨迹",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -8,
+					z = -5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					x = -150,
+					z = -5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70105] = {
+		id = 70105,
+		name = "2020信浓活动T6测试者 辅助航母飞机行动轨迹",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -8,
+					z = 3
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					x = -150,
+					z = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70106] = {
+		id = 70106,
+		name = "2020信浓活动T1测试者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 2,
+					z = -10,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 1,
+				param = {
+					x = -180,
+					z = 125
+				}
+			}
+		}
+	},
+	[70107] = {
+		id = 70107,
+		name = "2020信浓活动T1测试者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 2,
+					z = -20,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 1,
+				param = {
+					x = -180,
+					z = -40
+				}
+			}
+		}
+	},
+	[70108] = {
+		id = 70108,
+		name = "2020信浓活动拉菲随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 20,
+					Z2 = 75,
+					moveCount = 40,
+					Z1 = 35,
+					duration = -1,
+					X1 = -15,
+					X2 = 0
+				}
+			}
+		}
+	},
+	[70109] = {
+		id = 70109,
+		name = "潜艇在屏幕分割线靠左随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 75,
+					moveCount = 240,
+					Z1 = 35,
+					duration = -1,
+					X1 = -40,
+					X2 = -25
+				}
+			}
+		}
+	},
+	[70110] = {
+		id = 70110,
+		name = "2020信浓活动信浓第一波移动到下方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -20,
+					z = -35
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 2
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 2,
+				param = {
+					x = 5,
+					z = 70
+				}
+			},
+			{
+				index = 4,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70111] = {
+		id = 70111,
+		name = "2020信浓活动信浓第二波小范围随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 1,
+					Z2 = 75,
+					moveCount = 500,
+					Z1 = 35,
+					duration = -1,
+					X1 = -15,
+					X2 = 0
+				}
+			}
+		}
+	},
+	[70112] = {
+		id = 70112,
+		name = "2020信浓活动信浓第三波移动到上方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -20,
+					z = 32
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 2
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 2,
+				param = {
+					x = 5,
+					z = -65
+				}
+			},
+			{
+				index = 4,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70113] = {
+		id = 70113,
+		name = "2020普林斯顿活动双鹤中心偏左移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 70,
+					moveCount = 240,
+					Z1 = 40,
+					duration = -1,
+					X1 = -20,
+					X2 = -5
+				}
+			}
+		}
+	},
+	[70114] = {
+		id = 70114,
+		name = "2020普林斯顿活动双鹤中心偏右移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 70,
+					moveCount = 240,
+					Z1 = 40,
+					duration = -1,
+					X1 = -10,
+					X2 = 5
+				}
+			}
+		}
+	},
+	[70115] = {
+		id = 70115,
+		name = "回正上方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 70
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70116] = {
+		id = 70116,
+		name = "回正下方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 40
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70117] = {
+		id = 70117,
+		name = "回Z轴58绝对中心点",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 58
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70118] = {
+		id = 70118,
+		name = "中心点偏左站位",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -10,
+					z = 58
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70119] = {
+		id = 70119,
+		name = "中心点偏右站位",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = 0,
+					z = 58
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70120] = {
+		id = 70120,
+		name = "DOA联动VSP莫妮卡有节奏的随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 3,
+				param = {
+					stopCount = 0,
+					Z2 = 75,
+					moveCount = 5000,
+					Z1 = 35,
+					duration = 1.5,
+					X1 = -20,
+					X2 = -5
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = 1
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 0,
+					Z2 = 75,
+					moveCount = 5000,
+					Z1 = 35,
+					duration = 5.1,
+					X1 = -20,
+					X2 = -5
+				}
+			}
+		}
+	},
+	[70121] = {
+		id = 70121,
+		name = "DOA联动EX女天狗第二波飞机",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -100,
+					z = 65
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70122] = {
+		id = 70122,
+		name = "DOA联动EX女天狗第二波飞机",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -100,
+					z = 35
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70123] = {
+		id = 70123,
+		name = "DOA联动EX女天狗第二波飞机",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70124] = {
+		id = 70124,
+		name = "DOA联动EX女天狗第三波上下移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 0,
+				param = {
+					duration = 0.5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					x = 0,
+					z = 16
+				}
+			},
+			{
+				index = 3,
+				to = 2,
+				type = 2,
+				param = {
+					x = 0,
+					z = -16
+				}
+			}
+		}
+	},
+	[70125] = {
+		id = 70125,
+		name = "回中心点偏下位置",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 50
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70126] = {
+		id = 70126,
+		name = "回中心点偏下位置",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 45
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70127] = {
+		id = 70127,
+		name = "2020德系活动构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 3,
+					z = 15,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 13
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70128] = {
+		id = 70128,
+		name = "2020德系活动构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 3,
+					z = -25,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 13
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70129] = {
+		id = 70129,
+		name = "2020德系活动EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 3,
+					z = 15,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 12
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70130] = {
+		id = 70130,
+		name = "2020德系活动EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 3,
+					z = -25,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 12
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70131] = {
+		id = 70131,
+		name = "2020德系活动EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 10,
+					z = 25,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70132] = {
+		id = 70132,
+		name = "2020德系活动EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 10,
+					z = 11,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70133] = {
+		id = 70133,
+		name = "2020德系活动EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 10,
+					z = -3,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70134] = {
+		id = 70134,
+		name = "2020德系活动EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 10,
+					z = -17,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70135] = {
+		id = 70135,
+		name = "2020德系活动EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 10,
+					z = -31,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70136] = {
+		id = 70136,
+		name = "2020德系活动EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					duration = 10,
+					z = -45,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
 	[75001] = {
 		id = 75001,
 		name = "弹幕挑战1boss",
@@ -6901,6 +8175,234 @@ pg.auto_pilot_template = {
 					duration = -1,
 					X1 = -30,
 					X2 = 0
+				}
+			}
+		}
+	},
+	[100000] = {
+		id = 100000,
+		name = "大世界通用_回到中点",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -10,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[100010] = {
+		id = 100010,
+		name = "仲裁者天帕岚斯_回到中点",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -3,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[100011] = {
+		id = 100011,
+		name = "仲裁者天帕岚斯_大水母随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 70,
+					moveCount = 240,
+					Z1 = 40,
+					duration = -1,
+					X1 = -32,
+					X2 = -15
+				}
+			}
+		}
+	},
+	[100012] = {
+		id = 100012,
+		name = "仲裁者天帕岚斯_二阶段随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 75,
+					moveCount = 240,
+					Z1 = 35,
+					duration = -1,
+					X1 = -15,
+					X2 = 0
+				}
+			}
+		}
+	},
+	[100020] = {
+		id = 100020,
+		name = "仲裁者赫米忒_入场接随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -5,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 2,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 75,
+					moveCount = 240,
+					Z1 = 35,
+					duration = -1,
+					X1 = -20,
+					X2 = -5
+				}
+			}
+		}
+	},
+	[100100] = {
+		id = 10001,
+		name = "游弋者后半场移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 75,
+					moveCount = 240,
+					Z1 = 35,
+					duration = -1,
+					X1 = -10,
+					X2 = 5
+				}
+			}
+		}
+	},
+	[100101] = {
+		id = 100100,
+		name = "游弋者中场移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 75,
+					moveCount = 240,
+					Z1 = 35,
+					duration = -1,
+					X1 = -35,
+					X2 = -10
+				}
+			}
+		}
+	},
+	[100110] = {
+		id = 100110,
+		name = "破坏者靠下方移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 45,
+					moveCount = 240,
+					Z1 = 25,
+					duration = -1,
+					X1 = -15,
+					X2 = 5
+				}
+			}
+		}
+	},
+	[100120] = {
+		id = 100010,
+		name = "防卫者回到后方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = 0,
+					z = 57
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[100121] = {
+		id = 10001,
+		name = "防卫者后半场移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 75,
+					moveCount = 240,
+					Z1 = 35,
+					duration = -1,
+					X1 = -10,
+					X2 = 5
 				}
 			}
 		}

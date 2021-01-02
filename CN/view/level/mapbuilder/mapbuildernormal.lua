@@ -5,53 +5,85 @@ function slot1.Ctor(slot0, ...)
 
 	slot0.mapItemTimer = {}
 	slot0.chapterTFsById = {}
+	slot0.chaptersInBackAnimating = {}
 end
 
 function slot1.GetType(slot0)
 	return uv0.TYPENORMAL
 end
 
-function slot1.GetUIName(slot0)
+function slot1.getUIName(slot0)
 	return "levels"
 end
 
-function slot1.Load(slot0, slot1)
-	slot0.state = slot0.StateLoading
-	slot0.tf = tf(slot0.float:Find("levels").gameObject)
-
-	slot0:Init()
-	slot1()
-end
-
-function slot1.Destroy(slot0)
-	if uv0.StateDestroy <= slot0.state then
+function slot1.Load(slot0)
+	if slot0._state ~= uv0.STATES.NONE then
 		return
 	end
 
-	if uv0.StateInit <= slot0.state then
-		slot0:Hide()
-		slot0:OnDestroy()
+	slot0._state = uv0.STATES.LOADING
 
-		slot0.tf = nil
+	pg.UIMgr.GetInstance():LoadingOn()
+	slot0:Loaded(slot0.float:Find("levels").gameObject)
+	slot0:Init()
+end
+
+function slot1.Destroy(slot0)
+	if slot0._state == uv0.STATES.DESTROY then
+		return
 	end
 
-	slot0.state = uv0.StateDestroy
+	if not slot0:GetLoaded() then
+		slot0._state = uv0.STATES.DESTROY
+
+		return
+	end
+
+	slot0:Hide()
+	slot0:OnDestroy()
+	pg.DelegateInfo.Dispose(slot0)
+
+	slot0._go = nil
+
+	slot0:disposeEvent()
+	slot0:cleanManagedTween()
+
+	slot0._state = uv0.STATES.DESTROY
 end
 
 function slot1.OnInit(slot0)
-	slot0.tpl = slot0.tf:Find("level_tpl")
+	slot0.tpl = slot0._tf:Find("level_tpl")
 
 	setActive(slot0.tpl, false)
 
-	slot0.itemHolder = slot0.tf:Find("items")
+	slot0.itemHolder = slot0._tf:Find("items")
 end
 
 function slot1.OnHide(slot0)
+	table.clear(slot0.chaptersInBackAnimating)
 	slot0:StopMapItemTimers()
+
+	for slot4, slot5 in pairs(slot0.chapterTFsById) do
+		LeanTween.cancel(rtf(findTF(slot5, "main/info/bk")))
+	end
+
+	uv0.super.OnHide(slot0)
 end
 
 function slot1.OnDestroy(slot0)
 	slot0.mapItemTimer = nil
+
+	uv0.super.OnDestroy(slot0)
+end
+
+function slot1.StartTimer(slot0, slot1, slot2, slot3)
+	if not slot0.mapItemTimer[slot1] then
+		slot0.mapItemTimer[slot1] = Timer.New(slot2, slot3)
+	else
+		slot0.mapItemTimer[slot1]:Reset(slot2, slot3)
+	end
+
+	slot0.mapItemTimer[slot1]:Start()
 end
 
 function slot1.StopMapItemTimers(slot0)
@@ -63,7 +95,6 @@ function slot1.StopMapItemTimers(slot0)
 end
 
 function slot1.Update(slot0, slot1)
-	slot0.map.pivot = Vector2(0.5, 0.5)
 	slot0.float.pivot = Vector2(0.5, 0.5)
 	slot0.float.localPosition = Vector2(0, 0)
 
@@ -72,22 +103,19 @@ end
 
 function slot1.UpdateMapItems(slot0)
 	uv0.super.UpdateMapItems(slot0)
-
-	slot1 = getProxy(ChapterProxy)
-	slot2 = slot0.data
-
 	table.clear(slot0.chapterTFsById)
 
-	slot4 = {}
+	slot3 = {}
 
-	_.each(Chapter.bindConfigTable().all, function (slot0)
-		if uv0:getChapter(slot0) and slot1:getConfig("map") == uv0.id and (slot1:isUnlock() or slot1:activeAlways()) and slot1:isValid() and (not slot1:ifNeedHide() or uv1:GetJustClearChapters(slot1.id)) then
-			table.insert(uv2, slot1)
+	for slot7, slot8 in ipairs(slot0.data:getChapters()) do
+		if (slot8:isUnlock() or slot8:activeAlways()) and slot8:isValid() and (not slot8:ifNeedHide() or getProxy(ChapterProxy):GetJustClearChapters(slot8.id)) then
+			table.insert(slot3, slot8)
 		end
-	end)
+	end
+
 	slot0:StopMapItemTimers()
 
-	function slot9(slot0, slot1, slot2)
+	function slot8(slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
 			slot3 = uv0[slot1 + 1]
 
@@ -98,21 +126,21 @@ function slot1.UpdateMapItems(slot0)
 		end
 	end
 
-	UIItemList.StaticAlign(slot0.itemHolder, slot0.tpl, #slot4, slot9)
+	UIItemList.StaticAlign(slot0.itemHolder, slot0.tpl, #slot3, slot8)
 
-	slot5 = {}
+	slot4 = {}
 
-	for slot9, slot10 in pairs(slot4) do
-		slot11 = slot10:getConfigTable()
-		slot5[slot11.pos_x] = slot5[slot11.pos_x] or {}
-		slot12[slot11.pos_y] = slot5[slot11.pos_x][slot11.pos_y] or {}
+	for slot8, slot9 in pairs(slot3) do
+		slot10 = slot9:getConfigTable()
+		slot4[slot10.pos_x] = slot4[slot10.pos_x] or {}
+		slot11[slot10.pos_y] = slot4[slot10.pos_x][slot10.pos_y] or {}
 
-		table.insert(slot12[slot11.pos_y], slot10)
+		table.insert(slot11[slot10.pos_y], slot9)
 	end
 
-	for slot9, slot10 in pairs(slot5) do
-		for slot14, slot15 in pairs(slot10) do
-			slot16 = {}
+	for slot8, slot9 in pairs(slot4) do
+		for slot13, slot14 in pairs(slot9) do
+			slot15 = {}
 
 			seriesAsync({
 				function (slot0)
@@ -125,15 +153,14 @@ function slot1.UpdateMapItems(slot0)
 								uv0 = uv0 - 1
 
 								setActive(uv1.chapterTFsById[uv2.id], false)
+								uv3:RecordJustClearChapters(uv2.id, nil)
 
 								if uv0 <= 0 then
-									uv3()
+									uv4()
 								end
 							end)
 
 							uv3[slot6.id] = true
-
-							uv1:RecordJustClearChapters(slot6.id, nil)
 						else
 							setActive(uv2.chapterTFsById[slot6.id], false)
 						end
@@ -182,7 +209,7 @@ function slot1.UpdateMapItem(slot0, slot1, slot2)
 
 		function slot7()
 			if uv0 then
-				if math.max(uv1.expireTime - pg.TimeMgr.GetInstance():GetServerTime(), 0) > 0 then
+				if (uv1.expireTime and math.max(uv1.expireTime - pg.TimeMgr.GetInstance():GetServerTime(), 0) or 0) > 0 then
 					setText(uv0, slot0:DescCDTime(slot1))
 				elseif not uv1.active then
 					uv1:clearSubChapter()
@@ -305,38 +332,39 @@ function slot1.UpdateMapItem(slot0, slot1, slot2)
 			setText(slot19:Find("Text"), setColorStr(slot21 - slot2:getTodayDefeatCount() .. "/" .. slot21, slot21 <= slot2:getTodayDefeatCount() and COLOR_RED or COLOR_GREEN))
 		end
 
-		for slot26, slot27 in ipairs(slot2:getConfig("boss_expedition_id")) do
-			slot22 = math.max(0, pg.expedition_activity_template[slot27] and slot28.bonus_time or 0)
-		end
+		slot21 = slot2:GetDailyBonusQuota()
+		slot22 = findTF(slot4, "mark")
 
-		if pg.chapter_defense[slot2.id] then
-			slot22 = math.max(slot22, slot23.bonus_time or 0)
-		end
+		setActive(slot22:Find("bonus"), slot21)
+		setActive(slot22, slot21)
 
-		slot24 = findTF(slot4, "mark")
-		slot26 = not slot0.data:isRemaster() and slot22 > 0 and math.max(slot22 - slot2.todayDefeatCount, 0) > 0
+		if slot21 then
+			slot0.sceneParent.loader:GetSprite("ui/levelmainscene_atlas", slot0.sceneParent.contextData.map:getConfig("type") == Map.ACTIVITY_HARD and "bonus_us_hard" or "bonus_us", slot22:Find("bonus"))
+			LeanTween.cancel(go(slot22), true)
 
-		setActive(slot24:Find("bonus"), slot26)
-		setActive(slot24, slot26)
+			slot26 = slot22.anchoredPosition.y
+			slot22:GetComponent(typeof(CanvasGroup)).alpha = 0
 
-		if slot26 then
-			slot0.sceneParent.loader:GetSprite("ui/levelmainscene_atlas", slot0.sceneParent.contextData.map:getConfig("type") == Map.ACTIVITY_HARD and "bonus_us_hard" or "bonus_us", slot24:Find("bonus"))
-
-			slot30 = slot24.anchoredPosition.y
-			slot24:GetComponent(typeof(CanvasGroup)).alpha = 0
-
-			LeanTween.cancel(go(slot24))
-			LeanTween.value(go(slot24), 0, 1, 0.2):setOnUpdate(System.Action_float(function (slot0)
+			LeanTween.value(go(slot22), 0, 1, 0.2):setOnUpdate(System.Action_float(function (slot0)
 				uv0.alpha = slot0
 				slot1 = uv1.anchoredPosition
 				slot1.y = uv2 * slot0
 				uv1.anchoredPosition = slot1
+			end)):setOnComplete(System.Action(function ()
+				uv0.alpha = 1
+				slot0 = uv1.anchoredPosition
+				slot0.y = uv2
+				uv1.anchoredPosition = slot0
 			end)):setEase(LeanTweenType.easeOutSine):setDelay(0.7)
 		end
 	end
 
 	onButton(slot0.sceneParent, isActive(slot4) and slot4 or slot5, function ()
 		if uv0:InvokeParent("isfrozen") then
+			return
+		end
+
+		if uv0.chaptersInBackAnimating[uv1.id] then
 			return
 		end
 
@@ -352,15 +380,7 @@ function slot1.UpdateMapItem(slot0, slot1, slot2)
 			return
 		end
 
-		slot1 = nil
-
-		for slot5, slot6 in pairs(uv0.sceneParent.maps) do
-			if slot6:getActiveChapter() then
-				break
-			end
-		end
-
-		if slot1 and slot1 ~= uv1 then
+		if getProxy(ChapterProxy):getActiveChapter() and slot1.id ~= uv1.id then
 			uv0:InvokeParent("emit", LevelMediator2.ON_STRATEGYING_CHAPTER)
 
 			return
@@ -401,7 +421,8 @@ function slot1.PlayChapterItemAnimation(slot0, slot1, slot2, slot3)
 
 	slot7.localScale = Vector3.zero
 
-	LeanTween.scale(slot7, Vector3.one, 0.3):setDelay(0.3)
+	slot0:RecordTween(LeanTween.scale(slot7, Vector3.one, 0.3):setDelay(0.3).uniqueId)
+	LeanTween.cancel(go(slot8))
 	setAnchoredPosition(slot8, {
 		x = -1 * slot4:Find("info").rect.width
 	})
@@ -432,26 +453,32 @@ function slot1.PlayChapterItemAnimationBackward(slot0, slot1, slot2, slot3)
 
 		slot7.localScale = Vector3.one
 
-		LeanTween.scale(slot7, Vector3.zero, 0.3):setDelay(0.3)
+		slot0:RecordTween(LeanTween.scale(go(slot7), Vector3.zero, 0.3):setDelay(0.3).uniqueId)
+
+		slot0.chaptersInBackAnimating[slot2.id] = true
+
+		LeanTween.cancel(go(slot8))
 		setAnchoredPosition(slot8, {
 			x = 0
 		})
 		shiftPanel(slot8, -1 * slot4:Find("info").rect.width, nil, 0.4, 0.4, true, true, nil, function ()
-			if uv0 then
-				uv0()
+			uv0.chaptersInBackAnimating[uv1.id] = nil
+
+			if uv2 then
+				uv2()
 			end
 		end)
 
 		if slot2:isTriesLimit() then
-			setActive(findTF(slot4, "triesLimit"), true)
+			setActive(findTF(slot4, "triesLimit"), false)
 		end
 	end
 end
 
 function slot1.UpdateChapterTF(slot0, slot1)
-	slot3 = slot0.data:getChapter(slot1)
+	if slot0.chapterTFsById[slot1] then
+		slot3 = getProxy(ChapterProxy):getChapterById(slot1)
 
-	if slot0.chapterTFsById[slot1] and slot3 then
 		slot0:UpdateMapItem(slot2, slot3)
 		slot0:PlayChapterItemAnimation(slot2, slot3)
 	end

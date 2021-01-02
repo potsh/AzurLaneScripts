@@ -61,49 +61,43 @@ function slot1.InitCri(slot0, slot1)
 
 		uv2()
 	end)
+
+	slot0.typeNow = nil
+	slot0.bgmNow = nil
+	slot0.lastNormalBGMName = nil
 end
 
-function slot1.SetStoryBGM(slot0, slot1)
-	slot0.storyBGMName = slot1
-end
+function slot1.SetTypeBGM(slot0, slot1, slot2)
+	slot0.typeNow = slot2
+	slot0.bgmNow = slot1
 
-function slot1.SetNormalBGM(slot0, slot1)
-	slot0.normalBGMName = slot1
-end
-
-function slot1.ResumeNormalBGM(slot0)
-	if slot0.normalBGMName then
-		slot0:PlayBGM(slot0.normalBGMName)
+	if not slot2 then
+		slot0.lastNormalBGMName = slot1
 	end
 end
 
-function slot1.ResumeStoryBGM(slot0)
-	if slot0.storyBGMName then
-		slot0:PlayBGM(slot0.storyBGMName)
+function slot1.ResumeLastNormalBGM(slot0)
+	if slot0.lastNormalBGMName then
+		slot0:PlayBGM(slot0.lastNormalBGMName)
 	end
 end
 
 function slot1.PlayBGM(slot0, slot1, slot2)
-	if slot0.bgmPlaybackInfo == nil then
-		if slot2 and slot0.storyBGMName and slot1 ~= slot0.storyBGMName then
-			slot0:UnloadCueSheet("bgm-" .. slot0.storyBGMName)
-		elseif slot0.normalBGMName and slot1 ~= slot0.normalBGMName then
-			slot0:UnloadCueSheet("bgm-" .. slot0.normalBGMName)
-		end
-	end
-
-	if slot2 then
-		slot0:SetStoryBGM(slot1)
-	else
-		slot0:SetNormalBGM(slot1)
-	end
+	slot0:SetTypeBGM(slot1, slot2)
 
 	if slot0.bgmName == "bgm-" .. slot1 then
 		return
+	elseif slot0.bgmName ~= nil and slot0.bgmPlaybackInfo == nil then
+		slot0:UnloadCueSheet(slot0.bgmName)
 	end
 
 	slot0.bgmName = slot3
 	slot0.bgmPlaybackInfo = nil
+	slot4 = nil
+
+	if uv0.NEXT_VER <= CSharpVersion then
+		slot4 = CriWareMgr.Inst:GetChannelData(uv0.C_BGM).curCueDataKey
+	end
 
 	CriWareMgr.Inst:PlayBGM(slot3, CriWareMgr.CRI_FADE_TYPE.FADE_INOUT, function (slot0)
 		if slot0 == nil then
@@ -112,6 +106,10 @@ function slot1.PlayBGM(slot0, slot1, slot2)
 			uv1.bgmPlaybackInfo = slot0
 		end
 	end)
+
+	if uv0.NEXT_VER <= CSharpVersion and slot4 ~= nil then
+		CriWareMgr.Inst:GetChannelData(uv0.C_BGM).curCueDataKey = slot4
+	end
 end
 
 function slot1.StopBGM(slot0, slot1)
@@ -152,6 +150,10 @@ function slot1.CheckFModeEvent(slot0, slot1, slot2, slot3)
 
 	string.gsub(slot1, "event:/cv/(.+)/(.+)", function (slot0, slot1)
 		uv0 = "cv-" .. slot0 .. (tobool(ShipWordHelper.CVBattleKey[string.gsub(slot1, "_%w+", "")]) and "-battle" or "")
+		uv1 = slot1
+	end)
+	string.gsub(slot1, "event:/tb/(.+)/(.+)", function (slot0, slot1)
+		uv0 = "tb-" .. slot0
 		uv1 = slot1
 	end)
 

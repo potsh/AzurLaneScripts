@@ -103,11 +103,17 @@ function slot0.GetData(slot0)
 		-- Nothing
 	end
 
+	slot6 = pg.backyard_theme_template
+
 	table.sort(slot1, function (slot0, slot1)
-		if (uv0[slot0.id] and 1 or 0) == (uv0[slot1.id] and 1 or 0) then
-			return slot1.id < slot0.id
+		if uv0[slot0.id].new == uv0[slot1.id].new then
+			if (uv1[slot0.id] and 1 or 0) == (uv1[slot1.id] and 1 or 0) then
+				return slot1.id < slot0.id
+			else
+				return slot2 < slot3
+			end
 		else
-			return slot2 < slot3
+			return uv0[slot1.id].new < uv0[slot0.id].new
 		end
 	end)
 
@@ -214,6 +220,10 @@ function slot0.OnCardClick(slot0, slot1)
 end
 
 function slot0.UpdateMainPage(slot0, slot1)
+	if slot1 == slot0.card then
+		return
+	end
+
 	slot0.title.text = slot1:getConfig("name")
 	slot0.desc.text = slot1:getConfig("desc")
 	slot2 = slot1:getConfig("discount")
@@ -230,6 +240,8 @@ function slot0.UpdateMainPage(slot0, slot1)
 		uv0.preview.sprite = slot0
 	end)
 	setActive(go(slot0.preview), true)
+
+	slot0.card = slot1
 end
 
 function slot0.CalcThemePrice(slot0, slot1)

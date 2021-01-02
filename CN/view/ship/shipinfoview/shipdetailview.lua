@@ -19,7 +19,7 @@ function slot0.InitDetail(slot0)
 
 	slot0.equipments = slot0.detailPanel:Find("equipments")
 	slot0.equipmentsGrid = slot0.equipments:Find("equipments")
-	slot0.detailEqupimentTpl = slot0.equipments:Find("equipment_tpl")
+	slot0.detailEquipmentTpl = slot0.equipments:Find("equipment_tpl")
 	slot0.emptyGridTpl = slot0.equipments:Find("empty_tpl")
 	slot0.lockGridTpl = slot0.equipments:Find("lock_tpl")
 	slot0.showRecordBtn = slot0.equipments:Find("unload_all")
@@ -33,6 +33,13 @@ function slot0.InitDetail(slot0)
 	slot0.propertyIcons = slot0.detailPanel:Find("attrs/attrs/property/icons")
 	slot0.intimacyTF = slot0:findTF("intimacy")
 	slot0.intimacyHeart = slot0.intimacyTF:Find("heart")
+	slot0.intimacyHeartMeta = slot0.intimacyTF:Find("heart_meta")
+
+	setLocalScale(slot0.intimacyHeartMeta, {
+		x = 1.2,
+		y = 1.2
+	})
+
 	slot0.equipmentProxy = getProxy(EquipmentProxy)
 	slot0.recordPanel = slot0.detailPanel:Find("record_panel")
 	slot0.unloadAllBtn = slot0.recordPanel:Find("frame/unload_all")
@@ -55,7 +62,7 @@ function slot0.InitDetail(slot0)
 	setActive(slot0.detailPanel, true)
 	setActive(slot0.attrs, true)
 	setActive(slot0.recordPanel, false)
-	setActive(slot0.detailEqupimentTpl, false)
+	setActive(slot0.detailEquipmentTpl, false)
 	setActive(slot0.emptyGridTpl, false)
 	setActive(slot0.lockGridTpl, false)
 	setActive(slot0.detailPanel, true)
@@ -112,7 +119,6 @@ function slot0.InitEvent(slot0)
 			return
 		end
 
-		uv0:emit(ShipViewConst.HIDE_SHIP_WORD)
 		uv0:emit(ShipMainMediator.PROPOSE, uv0:GetShipVO().id, function ()
 		end)
 	end)
@@ -190,11 +196,13 @@ function slot0.UpdateIntimacy(slot0, slot1)
 	slot6 = 1
 
 	if slot3 <= slot4 and not slot1.propose then
-		setActive(slot0.intimacyHeart, true)
+		setActive(slot0.intimacyHeartMeta, slot1:isMetaShip())
+		setActive(slot0.intimacyHeart, not slot1:isMetaShip())
 
 		slot6 = 0
 	else
 		setActive(slot0.intimacyHeart, false)
+		setActive(slot0.intimacyHeartMeta, false)
 	end
 
 	slot0.intimacyTF:GetComponent(typeof(Image)).color = Color.New(1, 1, 1, slot6)
@@ -210,7 +218,7 @@ function slot0.UpdateDetail(slot0, slot1)
 		end, SFX_PANEL)
 	end
 
-	setActive(slot0.fashionToggle, #slot0.shareData:GetCurGroupSkinList() > 1)
+	setActive(slot0.fashionToggle, slot0.shareData:HasFashion())
 	setActive(slot0.profileBtn, not slot1:isActivityNpc())
 end
 
@@ -222,7 +230,7 @@ function slot0.UpdateEquipments(slot0, slot1)
 		slot9 = nil
 
 		if slot7 then
-			slot9 = cloneTplTo(slot0.detailEqupimentTpl, slot0.equipmentsGrid)
+			slot9 = cloneTplTo(slot0.detailEquipmentTpl, slot0.equipmentsGrid)
 
 			updateEquipment(slot0:findTF("IconTpl", slot9), slot7)
 			onButton(slot0, slot9, function ()

@@ -30,6 +30,10 @@ function slot0.execute(slot0, slot1)
 
 		return
 	elseif slot4 == 2 then
+		if not table.contains(slot8.data1_list, slot3) then
+			return
+		end
+
 		if table.contains(slot8.data2_list, slot3) then
 			return
 		end
@@ -49,7 +53,8 @@ function slot0.execute(slot0, slot1)
 		arg2 = 0,
 		activity_id = slot5,
 		cmd = slot4,
-		arg1 = slot3
+		arg1 = slot3,
+		arg_list = {}
 	}, 11203, function (slot0)
 		if slot0.result == 0 then
 			uv0 = getProxy(ActivityProxy):getActivityById(uv1)

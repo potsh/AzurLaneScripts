@@ -3,7 +3,6 @@ slot0 = class("BeginStageCommand", pm.SimpleCommand)
 function slot0.execute(slot0, slot1)
 	slot2 = slot1:getBody()
 
-	ys.Battle.BattleState.GenerateVertifyData()
 	ys.Battle.BattleGate.Gates[slot2.system].Entrance(slot2, slot0)
 end
 
@@ -32,7 +31,7 @@ function slot0.SendRequest(slot0, slot1, slot2, slot3, slot4)
 end
 
 function slot0.DockOverload()
-	if getProxy(PlayerProxy):getData().ship_bag_max <= getProxy(BayProxy):getShipCount() then
+	if getProxy(PlayerProxy):getData():getMaxShipBag() <= getProxy(BayProxy):getShipCount() then
 		NoPosMsgBox(i18n("switch_to_shop_tip_noDockyard"), openDockyardClear, gotoChargeScene, openDockyardIntensify)
 
 		return true

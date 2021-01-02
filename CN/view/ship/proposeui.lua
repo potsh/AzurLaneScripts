@@ -72,6 +72,8 @@ function slot0.init(slot0)
 end
 
 function slot0.didEnter(slot0)
+	slot0:emit(ProposeMediator.HIDE_SHIP_MAIN_WORD)
+
 	if slot0.contextData.review then
 		-- Nothing
 	end
@@ -135,6 +137,7 @@ function slot0.didEnter(slot0)
 			setParent(tf(slot0), uv0:findTF("window"))
 
 			uv0.intimacyTF = uv0:findTF("intimacy/icon", uv0.window)
+			uv0.intimacyHeart = uv0:findTF("intimacy/heart", uv0.window)
 			uv0.intimacyValueTF = uv0:findTF("intimacy/value", uv0.window)
 			uv0.button = uv0:findTF("button", uv0.window)
 			uv0.intimacyDesc = uv0:findTF("desc", uv0.window)
@@ -169,8 +172,18 @@ function slot0.didEnter(slot0)
 
 			slot1, slot2, slot3 = uv0.shipVO:getIntimacyDetail()
 
-			setImageSprite(uv0.intimacyTF, GetSpriteFromAtlas("energy", slot1), true)
-			setActive(uv0.intimacyTF, true)
+			setImageSprite(uv0.intimacyTF, GetSpriteFromAtlas("energy", slot1), false)
+
+			if uv0.intimacyHeart then
+				if slot2 <= slot3 and not uv0.shipVO.propose then
+					setActive(uv0.intimacyHeart, true)
+					setActive(uv0.intimacyTF, false)
+				else
+					setActive(uv0.intimacyHeart, false)
+					setActive(uv0.intimacyTF, true)
+				end
+			end
+
 			setText(uv0.intimacyValueTF, i18n("propose_intimacy_tip", slot3))
 
 			if slot3 >= 100 then
@@ -309,7 +322,7 @@ function slot0.willExit(slot0)
 		slot0.tweenList = nil
 	end
 
-	pg.CriMgr.GetInstance():ResumeNormalBGM()
+	pg.CriMgr.GetInstance():ResumeLastNormalBGM()
 
 	if slot0.contextData.callback then
 		slot0.contextData.callback()
@@ -394,6 +407,7 @@ function slot0.stampWindow(slot0)
 	slot0:loadChar()
 	setActive(slot0.window, true)
 	setActive(slot0.button, false)
+	setActive(slot0:findTF("live2d", slot0.targetActorTF), false)
 
 	slot1 = nil
 
@@ -506,7 +520,7 @@ function slot0.showProposePanel(slot0)
 		pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_UI_DOOR)
 	end
 
-	pg.CriMgr.GetInstance():PlayBGM("wedding", true)
+	pg.CriMgr.GetInstance():PlayBGM("wedding", "story")
 
 	if not slot0.proposePanel then
 		PoolMgr.GetInstance():GetUI("ProposeRingUI", true, function (slot0)
@@ -529,7 +543,9 @@ function slot0.showProposePanel(slot0)
 				end
 			end
 
-			uv0.handName = "ProposeHand_" .. uv0.handId
+			slot3 = nil
+			slot3 = (not uv0.shipVO or uv0.shipVO:isMetaShip()) and uv0.contextData.group:isMetaGroup()
+			uv0.handName = (slot3 and "Meta_" or "") .. "ProposeHand_" .. uv0.handId
 
 			PoolMgr.GetInstance():GetUI(uv0.handName, true, function (slot0)
 				uv0.transHand = tf(slot0)
@@ -546,8 +562,10 @@ function slot0.showProposePanel(slot0)
 				uv0.ringCG = GetOrAddComponent(uv0.ringTF, typeof(CanvasGroup))
 			end)
 			setParent(tf(slot0), uv0:findTF("contain"))
+			setActive(uv0:findTF("ringBox", uv0.proposePanel), not slot3)
+			setActive(uv0:findTF("ringBoxMeta", uv0.proposePanel), slot3)
 
-			uv0.ringBoxTF = uv0:findTF("ringBox", uv0.proposePanel)
+			uv0.ringBoxTF = slot3 and slot5 or slot4
 			uv0.ringBoxFull = uv0:findTF("full", uv0.ringBoxTF)
 			uv0.ringBoxCG = GetOrAddComponent(uv0.ringBoxTF, typeof(CanvasGroup))
 			uv0.churchBefore = uv0:findTF("before", uv0.proposePanel)
@@ -738,7 +756,7 @@ function slot0.showStoryUI(slot0, slot1)
 
 		table.insert(uv0.tweenList, LeanTween.alphaCanvas(uv0.storyCG, 1, 1):setFrom(0):setDelay(1):setOnComplete(System.Action(function ()
 			if findTF(uv0.targetActorTF, "fitter").childCount > 0 then
-				Ship.SetExpression(findTF(uv0.targetActorTF, "fitter"):GetChild(0), uv0.paintingName, "propose")
+				ShipExpressionHelper.SetExpression(findTF(uv0.targetActorTF, "fitter"):GetChild(0), uv0.paintingName, "propose")
 			end
 
 			setText(uv0.storyContent, uv1)
@@ -874,7 +892,7 @@ function slot0.loadChar(slot0, slot1, slot2, slot3)
 
 			uv0.actorPainting = slot0
 
-			Ship.SetExpression(uv0.actorPainting, uv0.paintingName)
+			ShipExpressionHelper.SetExpression(uv0.actorPainting, uv0.paintingName)
 			uv1()
 
 			if uv2 then
@@ -980,6 +998,7 @@ function slot0.DisplayRenamePanel(slot0)
 	setParent(slot0._renamePanel, slot0._tf)
 	setActive(slot0._renamePanel, true)
 	setInputText(findTF(slot0._renamePanel, "frame/name_field"), slot0.shipVO:getName())
+	setActive(slot0.intimacyHeart, false)
 end
 
 return slot0

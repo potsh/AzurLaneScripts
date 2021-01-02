@@ -36,7 +36,8 @@ slot0.UnitType = {
 	MAIN_UNIT = 7,
 	FUNNEL_UNIT = 8,
 	UAV_UNIT = 9,
-	SUB_UNIT = 10
+	SUB_UNIT = 10,
+	CONST_UNIT = 11
 }
 slot0.EquipmentType = {
 	MAIN_CANNON = 1,
@@ -63,7 +64,10 @@ slot0.EquipmentType = {
 	BEAM = 24,
 	DEPTH_CHARGE = 25,
 	REPEATER_ANTI_AIR = 26,
+	MANUAL_AAMISSILE = 28,
 	DISPOSABLE_TORPEDO = 27,
+	SPACE_LASER = 28,
+	MISSILE = 29,
 	PREVIEW_ARICRAFT = 99,
 	AIR_ASSIST = "airAssist"
 }
@@ -164,7 +168,12 @@ slot0.BulletType = {
 	EFFECT = 9,
 	BEAM = 10,
 	G_BULLET = 11,
-	ELECTRIC_ARC = 12
+	ELECTRIC_ARC = 12,
+	MISSILE = 13,
+	SPACE_LASER = 14,
+	SCALE = 15,
+	TRIGGER_BOMB = 16,
+	AAMissile = 17
 }
 slot0.BulletDamageType = {
 	NORMAL = 1,
@@ -175,6 +184,11 @@ slot0.BulletField = {
 	SURFACE = 1,
 	UNDER_WATER = 2,
 	AIR = 3
+}
+slot0.BulletOutBound = {
+	COMMON = 0,
+	EXIST = 1,
+	RANDOM = 2
 }
 slot0.AOEField = {
 	SURFACE = 1,
@@ -208,6 +222,8 @@ slot0.BuffEffectType = {
 	ON_REMOVE = "onRemove",
 	ON_STACK = "onStack",
 	ON_UPDATE = "onUpdate",
+	ON_BUFF_ADDED = "onBuffAdded",
+	ON_BUFF_REMOVED = "onBuffRemoved",
 	ON_BULLET_CREATE = "onBulletCreate",
 	ON_CHARGE_BULLET_CREATE = "onChargeWeaponBulletCreate",
 	ON_TORPEDO_BULLET_CREATE = "onTorpedoWeaponBulletCreate",
@@ -234,9 +250,10 @@ slot0.BuffEffectType = {
 	ON_CHARGE_READY = "onChargeWeaponReady",
 	ON_MANUAL_TORPEDO_READY = "onManualTorpedoReady",
 	ON_AIR_ASSIST_READY = "onAirAssistReady",
-	ON_DYING = "onDying",
+	ON_BEFORE_FATAL_DAMAGE = "onBeforeFatalDamage",
 	ON_FRIENDLY_AIRCRAFT_DYING = "onFriendlyAircraftDying",
 	ON_FRIENDLY_SHIP_DYING = "onFriendlyShipDying",
+	ON_SINK = "onSink",
 	ON_FOE_DYING = "onFoeDying",
 	ON_FOE_AIRCRAFT_DYING = "onFoeAircraftDying",
 	ON_RETREAT = "onRetreat",
@@ -244,7 +261,6 @@ slot0.BuffEffectType = {
 	ON_TEAMMATE_HP_RATIO_UPDATE = "onTeammateHpRatioUpdate",
 	ON_HP_RATIO_UPDATE = "onHPRatioUpdate",
 	ON_BATTLE_BUFF_COUNT = "onBattleBuffCount",
-	ON_DAMAGE_PREVENT = "onDamagePrevent",
 	ON_SHIELD_BROKEN = "onShieldBroken",
 	ON_SUBMARINE_AID = "onSubmarineAid",
 	ON_SUBMARINE_FREE_DIVE = "onSubmarinFreeDive",
@@ -254,6 +270,8 @@ slot0.BuffEffectType = {
 	ON_SUBMARINE_RAID = "onSubmarineRaid",
 	ON_SUBMARINE_FLOAT = "onSubmarineFloat",
 	ON_SUBMARINE_RETREAT = "onSubmarineRetreat",
+	ON_SUB_DETECTED = "onSubDetected",
+	ON_SUB_UNDETECTED = "onSubUnDetected",
 	ON_ANTI_SUB_HATE_CHAIN = "onAntiSubHateChain",
 	ON_RECORD = "onRecord"
 }
@@ -268,7 +286,8 @@ slot0.UnitDeathReason = {
 	LEAVE = 2,
 	DESTRUCT = 3,
 	TOUCHDOWN = 4,
-	CRUSH = 5
+	CRUSH = 5,
+	CLS = 6
 }
 slot0.BattleScore = {
 	D = 0,
@@ -320,5 +339,20 @@ slot0.EnviroumentBehaviour = {
 	FORCE = 5,
 	SPAWN = 6,
 	PLAY_SFX = 7,
-	SHAKE_SCREEN = 8
+	SHAKE_SCREEN = 8,
+	SPAWN = 6
+}
+slot0.Difficulty = {
+	CASUAL = 1,
+	ELITE = 2,
+	RANDOM = 3,
+	WORLD = 4
+}
+slot0.FIRE_FX_TYPE = {
+	COMMON = 1,
+	LASTING = 2
+}
+slot0.DEATH_MARK_SKILL = {
+	IGNORE = 0,
+	DEACTIVE = 1
 }

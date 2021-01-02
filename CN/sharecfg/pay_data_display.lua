@@ -51,7 +51,8 @@ pg.pay_data_display = {
 				20001,
 				1
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	{
 		limit_arg = 1,
@@ -99,7 +100,8 @@ pg.pay_data_display = {
 				4,
 				30
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	{
 		limit_arg = 10,
@@ -120,7 +122,8 @@ pg.pay_data_display = {
 		extra_gem = 0,
 		id = 3,
 		airijp_id = "com.yostarjp.azurlane.diamond1",
-		display = {}
+		display = {},
+		ignorePlatform = {}
 	},
 	{
 		limit_arg = 10,
@@ -141,7 +144,8 @@ pg.pay_data_display = {
 		extra_gem = 30,
 		id = 4,
 		airijp_id = "com.yostarjp.azurlane.diamond2",
-		display = {}
+		display = {},
+		ignorePlatform = {}
 	},
 	{
 		limit_arg = 0,
@@ -162,7 +166,8 @@ pg.pay_data_display = {
 		extra_gem = 120,
 		id = 5,
 		airijp_id = "com.yostarjp.azurlane.diamond3",
-		display = {}
+		display = {},
+		ignorePlatform = {}
 	},
 	{
 		limit_arg = 0,
@@ -183,7 +188,8 @@ pg.pay_data_display = {
 		extra_gem = 300,
 		id = 6,
 		airijp_id = "com.yostarjp.azurlane.diamond4",
-		display = {}
+		display = {},
+		ignorePlatform = {}
 	},
 	{
 		limit_arg = 0,
@@ -204,7 +210,8 @@ pg.pay_data_display = {
 		extra_gem = 720,
 		id = 7,
 		airijp_id = "com.yostarjp.azurlane.diamond5",
-		display = {}
+		display = {},
+		ignorePlatform = {}
 	},
 	{
 		limit_arg = 0,
@@ -225,7 +232,8 @@ pg.pay_data_display = {
 		extra_gem = 2400,
 		id = 8,
 		airijp_id = "com.yostarjp.azurlane.diamond6",
-		display = {}
+		display = {},
+		ignorePlatform = {}
 	},
 	{
 		limit_arg = 1,
@@ -318,7 +326,8 @@ pg.pay_data_display = {
 				4,
 				2018
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[11] = {
 		limit_arg = 1,
@@ -411,7 +420,8 @@ pg.pay_data_display = {
 				15008,
 				50
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[12] = {
 		limit_arg = 1,
@@ -504,7 +514,8 @@ pg.pay_data_display = {
 				15008,
 				50
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[13] = {
 		limit_arg = 1,
@@ -597,7 +608,8 @@ pg.pay_data_display = {
 				15008,
 				50
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[14] = {
 		limit_arg = 1,
@@ -690,7 +702,8 @@ pg.pay_data_display = {
 				15008,
 				50
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[15] = {
 		limit_arg = 1,
@@ -783,7 +796,8 @@ pg.pay_data_display = {
 				15008,
 				50
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[16] = {
 		limit_arg = 1,
@@ -881,7 +895,8 @@ pg.pay_data_display = {
 				42017,
 				2
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[17] = {
 		limit_arg = 1,
@@ -974,7 +989,8 @@ pg.pay_data_display = {
 				15008,
 				50
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[18] = {
 		limit_arg = 1,
@@ -1072,7 +1088,8 @@ pg.pay_data_display = {
 				42017,
 				2
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[19] = {
 		limit_arg = 1,
@@ -1165,7 +1182,8 @@ pg.pay_data_display = {
 				15008,
 				50
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[20] = {
 		limit_arg = 1,
@@ -1243,7 +1261,8 @@ pg.pay_data_display = {
 				100001,
 				1
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[21] = {
 		limit_arg = 1,
@@ -1346,7 +1365,8 @@ pg.pay_data_display = {
 				30121,
 				4
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[22] = {
 		limit_arg = 1,
@@ -1454,7 +1474,8 @@ pg.pay_data_display = {
 				30121,
 				8
 			}
-		}
+		},
+		ignorePlatform = {}
 	},
 	[23] = {
 		limit_arg = 1,
@@ -1552,7 +1573,305 @@ pg.pay_data_display = {
 				42017,
 				2
 			}
-		}
+		},
+		ignorePlatform = {}
+	},
+	[24] = {
+		limit_arg = 1,
+		descrip_extra = "*礼盒将发送到邮箱，请注意查收。\n*重复获得已拥有的换装时，则自动置换成等价的钻石。",
+		name = "2020国庆礼盒",
+		descrip = "可获得一件角色换装，2020钻，和大量其他奖励",
+		subject = "2020国庆礼盒",
+		extra_service = 3,
+		money = 198,
+		tag = 2,
+		gem = 0,
+		limit_type = 2,
+		picture = "lihe3_l",
+		id_str = "com.bilibili.blhx.zuanshi123",
+		first_pay_double = 0,
+		extra_gem = 0,
+		id = 24,
+		airijp_id = "com.yostarjp.azurlane.diamond115",
+		extra_service_item = {
+			{
+				2,
+				69911,
+				1
+			},
+			{
+				1,
+				4,
+				2020
+			},
+			{
+				2,
+				42026,
+				2
+			},
+			{
+				2,
+				15008,
+				50
+			},
+			{
+				2,
+				20001,
+				20
+			},
+			{
+				2,
+				15003,
+				10
+			},
+			{
+				1,
+				6,
+				100
+			}
+		},
+		time = {
+			{
+				{
+					2020,
+					9,
+					24
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					10,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		display = {
+			{
+				2,
+				69911,
+				1
+			},
+			{
+				1,
+				4,
+				2020
+			},
+			{
+				2,
+				42026,
+				2
+			}
+		},
+		ignorePlatform = {}
+	},
+	[25] = {
+		limit_arg = 1,
+		descrip_extra = "*礼盒将发送到邮箱，请注意查收。\n*重复获得已拥有的换装时，则自动置换成等价的钻石。",
+		name = "新年福袋2021",
+		descrip = "可获得一件角色换装，2021钻，和大量其他奖励",
+		subject = "新年福袋2021",
+		extra_service = 3,
+		money = 198,
+		tag = 2,
+		gem = 0,
+		limit_type = 2,
+		picture = "fudai3",
+		id_str = "com.bilibili.blhx.zuanshi124",
+		first_pay_double = 0,
+		extra_gem = 0,
+		id = 25,
+		airijp_id = "com.yostarjp.azurlane.diamond116",
+		extra_service_item = {
+			{
+				2,
+				69912,
+				1
+			},
+			{
+				1,
+				4,
+				2021
+			},
+			{
+				2,
+				42026,
+				2
+			},
+			{
+				2,
+				15008,
+				50
+			},
+			{
+				2,
+				20001,
+				20
+			},
+			{
+				2,
+				15003,
+				10
+			},
+			{
+				1,
+				6,
+				100
+			}
+		},
+		time = {
+			{
+				{
+					2020,
+					12,
+					29
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2021,
+					1,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		display = {
+			{
+				2,
+				69912,
+				1
+			},
+			{
+				1,
+				4,
+				2021
+			},
+			{
+				2,
+				42026,
+				2
+			}
+		},
+		ignorePlatform = {}
+	},
+	[26] = {
+		limit_arg = 1,
+		descrip_extra = "*礼盒将发送到邮箱，请注意查收。\n*重复获得已拥有的换装时，则自动置换成等价的钻石。",
+		name = "新年福袋复刻(2020)",
+		descrip = "可获得一件角色换装，2020钻，和大量其他奖励",
+		subject = "新年福袋复刻(2020)",
+		extra_service = 3,
+		money = 198,
+		tag = 2,
+		gem = 0,
+		limit_type = 2,
+		picture = "fudai1",
+		id_str = "com.bilibili.blhx.zuanshi125",
+		first_pay_double = 0,
+		extra_gem = 0,
+		id = 26,
+		airijp_id = "com.yostarjp.azurlane.diamond117",
+		extra_service_item = {
+			{
+				2,
+				69908,
+				1
+			},
+			{
+				1,
+				4,
+				2020
+			},
+			{
+				2,
+				42017,
+				2
+			},
+			{
+				2,
+				15008,
+				50
+			},
+			{
+				2,
+				20001,
+				20
+			},
+			{
+				2,
+				15003,
+				10
+			},
+			{
+				1,
+				6,
+				100
+			}
+		},
+		time = {
+			{
+				{
+					2020,
+					12,
+					29
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2021,
+					1,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		display = {
+			{
+				2,
+				69908,
+				1
+			},
+			{
+				1,
+				4,
+				2020
+			},
+			{
+				2,
+				42017,
+				2
+			}
+		},
+		ignorePlatform = {}
 	},
 	all = {
 		1,
@@ -1576,6 +1895,9 @@ pg.pay_data_display = {
 		20,
 		21,
 		22,
-		23
+		23,
+		24,
+		25,
+		26
 	}
 }

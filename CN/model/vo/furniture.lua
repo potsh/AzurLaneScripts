@@ -12,6 +12,7 @@ slot0.TYPE_WALL_MAT = 10
 slot0.TYPE_MOVEABLE = 11
 slot0.TYPE_TRANSPORT = 12
 slot0.TYPE_RANDOM_CONTROLLER = 13
+slot0.TYPE_FOLLOWER = 14
 slot0.INDEX_TO_COMFORTABLE_TYPE = {
 	slot0.TYPE_WALLPAPER,
 	slot0.TYPE_FURNITURE,
@@ -23,6 +24,7 @@ slot0.INDEX_TO_COMFORTABLE_TYPE = {
 	slot0.TYPE_FURNITURE,
 	slot0.TYPE_FURNITURE,
 	slot0.TYPE_WALL,
+	slot0.TYPE_FURNITURE,
 	slot0.TYPE_FURNITURE,
 	slot0.TYPE_FURNITURE,
 	slot0.TYPE_FURNITURE
@@ -42,7 +44,8 @@ slot0.INDEX_TO_SHOP_TYPE = {
 		slot0.TYPE_ARCH,
 		slot0.TYPE_MOVEABLE,
 		slot0.TYPE_TRANSPORT,
-		slot0.TYPE_RANDOM_CONTROLLER
+		slot0.TYPE_RANDOM_CONTROLLER,
+		slot0.TYPE_FOLLOWER
 	},
 	{
 		slot0.TYPE_DECORATE
@@ -225,9 +228,9 @@ function slot0.isMatchSearchKey(slot0, slot1)
 		return true
 	end
 
-	slot3 = slot0:getConfig("describe")
+	slot3 = string.lower(slot0:getConfig("describe"))
 
-	if string.find(slot0:getConfig("name"), slot1) or string.find(slot2, slot1) then
+	if string.find(string.lower(slot0:getConfig("name")), string.lower(slot1)) or string.find(slot2, slot1) then
 		return true
 	end
 

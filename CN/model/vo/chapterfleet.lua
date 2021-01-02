@@ -340,8 +340,8 @@ function slot0.getCost(slot0, slot1)
 	slot1 = slot1 or 1
 
 	_.each(slot0:getShips(false), function (slot0)
-		uv0.oil = uv0.oil + slot0:getStartBattleExpend()
-		uv1.oil = uv1.oil + slot0:getEndBattleExpend() * uv2 + slot0:getStartBattleExpend() * (uv2 - 1)
+		uv0.oil = uv0.oil + slot0:getStartBattleExpend() * uv1
+		uv2.oil = uv2.oil + slot0:getEndBattleExpend() * uv1
 	end)
 
 	return {
@@ -645,6 +645,13 @@ function slot0.getSummonCost(slot0)
 	end)
 end
 
+function slot0.DealDMG2Ships(slot0, slot1)
+	for slot5, slot6 in pairs(slot0.ships) do
+		slot6.hpRant = math.clamp(slot6.hpRant - slot1, 0, 10000)
+		slot6.hpChange = (slot6.hpChange or 0) + slot6.hpRant - slot6.hpRant
+	end
+end
+
 function slot0.getMapAura(slot0)
 	slot1 = {}
 
@@ -723,6 +730,27 @@ function slot0.getFleetAirDominanceValue(slot0)
 	end
 
 	return slot1
+end
+
+function slot0.StaticTransformChapterFleet2Fleet(slot0, slot1)
+	slot8 = TeamType.Main
+	slot7 = "id"
+
+	table.insertto(_.pluck(slot0:getShipsByTeam(TeamType.Vanguard, slot1), "id"), _.pluck(slot0:getShipsByTeam(slot8, slot1), slot7))
+
+	slot3 = {}
+
+	for slot7, slot8 in pairs(slot0.commanders) do
+		table.insert(slot3, {
+			pos = slot7,
+			id = slot8 and slot8.id
+		})
+	end
+
+	return Fleet.New({
+		ship_list = slot2,
+		commanders = slot3
+	})
 end
 
 return slot0

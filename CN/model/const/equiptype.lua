@@ -15,11 +15,59 @@ slot0.SubmarineTorpedo = 13
 slot0.Sonar = 14
 slot0.AntiSubAircraft = 15
 slot0.Helicopter = 17
+slot0.Goods = 18
+slot0.AmmoType_1 = 1
+slot0.AmmoType_2 = 2
+slot0.AmmoType_3 = 3
+slot0.AmmoType_4 = 4
+slot0.AmmoType_5 = 5
+slot0.AmmoType_6 = 6
+slot0.AmmoType_7 = 7
+slot0.AmmoType_8 = 8
+slot0.AmmoType_8 = 9
+slot0.AmmoType_8 = 10
+slot0.CannonEquipTypes = {
+	slot0.CannonQuZhu,
+	slot0.CannonQingXun,
+	slot0.CannonZhongXun,
+	slot0.CannonZhanlie,
+	slot0.CannonZhongXun2
+}
+slot0.AirProtoEquipTypes = {
+	slot0.FighterAircraft,
+	slot0.TorpedoAircraft,
+	slot0.BomberAircraft
+}
+slot0.AirEquipTypes = {
+	slot0.FighterAircraft,
+	slot0.TorpedoAircraft,
+	slot0.BomberAircraft,
+	slot0.SeaPlane
+}
+slot0.AirExtendEquipTypes = {
+	slot0.FighterAircraft,
+	slot0.TorpedoAircraft,
+	slot0.BomberAircraft,
+	slot0.SeaPlane,
+	slot0.AntiSubAircraft,
+	slot0.Helicopter
+}
 slot0.AirDomainEquip = {
 	slot0.FighterAircraft,
 	slot0.TorpedoAircraft,
 	slot0.BomberAircraft,
 	slot0.SeaPlane
+}
+slot0.TorpedoEquipTypes = {
+	slot0.Torpedo,
+	slot0.SubmarineTorpedo
+}
+slot0.DeviceEquipTypes = {
+	slot0.Equipment,
+	slot0.AntiSubAircraft,
+	slot0.Sonar,
+	slot0.Helicopter,
+	slot0.Goods
 }
 slot0.AircraftSkinType = {
 	slot0.FighterAircraft,
@@ -63,6 +111,7 @@ slot2 = {
 	"equipment",
 	"equipment",
 	nil,
+	"equipment",
 	"equipment"
 }
 
@@ -93,19 +142,12 @@ function slot0.type2Tag(slot0)
 			"10",
 			"13",
 			nil,
-			"14"
+			"14",
+			"15"
 		}
 	end
 
 	return uv0.tagPrints[slot0]
-end
-
-function slot0.isAircraft(slot0)
-	return pg.equip_data_template[slot0].type == uv0.FighterAircraft or slot1 == uv0.TorpedoAircraft or slot1 == uv0.BomberAircraft or slot1 == uv0.SeaPlane or slot1 == uv0.AntiSubAircraft
-end
-
-function slot0.isDevice(slot0)
-	return pg.equip_data_template[slot0].type == uv0.Equipment or slot1 == uv0.Sonar or slot1 == uv0.Helicopter or slot1 == uv0.AntiSubAircraft
 end
 
 function slot0.getCompareGroup(slot0)
@@ -138,20 +180,32 @@ slot3 = {
 slot4 = {
 	7,
 	8,
-	9
+	9,
+	12
 }
 slot5 = {
 	1,
 	2
 }
+slot6 = {
+	10,
+	14,
+	15,
+	17,
+	18
+}
 
-function slot6(slot0)
+function slot7(slot0)
 	if _.all(slot0, function (slot0)
+		return table.contains(uv0, slot0)
+	end) then
+		return "equipment"
+	elseif _.all(slot0, function (slot0)
 		return table.contains(uv0, slot0)
 	end) then
 		return "main_cannons"
 	elseif #slot0 == 1 then
-		return uv1[slot0[1]]
+		return uv2[slot0[1]]
 	elseif #slot0 > 1 then
 		if _.all(slot0, function (slot0)
 			return table.contains(uv0, slot0)
@@ -165,7 +219,7 @@ function slot6(slot0)
 	return ""
 end
 
-function slot7(slot0, slot1)
+function slot8(slot0, slot1)
 	if _.all(slot1, function (slot0)
 		return table.contains(uv0, slot0)
 	end) and _.is_equal(slot0, slot1) then
@@ -173,9 +227,13 @@ function slot7(slot0, slot1)
 	elseif _.all(slot0, function (slot0)
 		return table.contains(uv0, slot0)
 	end) then
+		return "equipment"
+	elseif _.all(slot0, function (slot0)
+		return table.contains(uv0, slot0)
+	end) then
 		return "sub_cannons"
 	elseif #slot0 == 1 then
-		return uv2[slot0[1]]
+		return uv3[slot0[1]]
 	elseif #slot0 > 1 then
 		if _.all(slot0, function (slot0)
 			return table.contains(uv0, slot0)
@@ -189,13 +247,17 @@ function slot7(slot0, slot1)
 	return ""
 end
 
-function slot8(slot0)
+function slot9(slot0)
 	if _.all(slot0, function (slot0)
+		return table.contains(uv0, slot0)
+	end) then
+		return "equipment"
+	elseif _.all(slot0, function (slot0)
 		return table.contains(uv0, slot0)
 	end) then
 		return "sub_cannons"
 	elseif #slot0 == 1 then
-		return uv1[slot0[1]]
+		return uv2[slot0[1]]
 	elseif #slot0 > 1 then
 		if _.all(slot0, function (slot0)
 			return table.contains(uv0, slot0)

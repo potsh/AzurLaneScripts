@@ -56,7 +56,13 @@ return {
 			return pg.TimeMgr.GetInstance():inTime(ActivityConst.LIMIT_SKIN_SHOP_TIME)
 		end,
 		isTip = function ()
-			return getProxy(PlayerProxy):getRawData():getResource(pg.gameset.skin_ticket.key_value) and slot2 > 0
+			if not getProxy(PlayerProxy):getRawData():getResource(pg.gameset.skin_ticket.key_value) or slot2 <= 0 then
+				return false
+			end
+
+			return _.any(getProxy(ShipSkinProxy):GetAllSkins(), function (slot0)
+				return slot0:getConfig("genre") == ShopArgs.SkinShopTimeLimit and not uv0:hasSkin(slot0:getSkinId())
+			end)
 		end
 	},
 	{
@@ -221,6 +227,75 @@ return {
 			if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_MINIGAME) and not slot0:isEnd() then
 				return getProxy(MiniGameProxy):GetHubByHubId(slot0:getConfig("config_id")) and slot2.id == 7 and slot2.count > 0
 			end
+		end
+	},
+	{
+		banner = "air_fight",
+		event = ActivityMediator.EVENT_GO_SCENE,
+		data = {
+			SCENE.AIRFORCE_DRAGONEMPERY
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_AIRFIGHT_BATTLE) and not slot0:isEnd()
+		end,
+		isTip = function ()
+			if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_AIRFIGHT_BATTLE) and not slot0:isEnd() then
+				for slot6 = 1, slot0:getConfig("config_client")[1] do
+					slot1 = 0 + (slot0:getKVPList(1, slot6) or 0)
+				end
+
+				slot3 = pg.TimeMgr.GetInstance()
+
+				return slot1 < math.min((slot3:DiffDay(slot0.data1, slot3:GetServerTime()) + 1) * 2, slot2 * 3)
+			end
+		end
+	},
+	{
+		banner = "doa_medal",
+		event = ActivityMediator.EVENT_GO_SCENE,
+		data = {
+			SCENE.DOA_MEDAL_COLLECTION_SCENE
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityById(ActivityConst.DOA_MEDAL_ACT_ID) and not slot0:isEnd()
+		end,
+		isTip = function ()
+			return DoaMedalCollectionView.isHaveActivableMedal()
+		end
+	},
+	{
+		banner = "meta_entrance_970701",
+		event = ActivityMediator.EVENT_GO_SCENE,
+		data = {
+			SCENE.METACHARACTER,
+			{
+				autoOpenShipConfigID = 9707011
+			}
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityById(802) and not slot1:isEnd()
+		end,
+		isTip = function ()
+			slot0 = 970701
+			slot1 = getProxy(MetaCharacterProxy):getMetaProgressVOByID(970701)
+
+			slot1:setDataBeforeGet()
+
+			if slot1:isBuildType() then
+				return false
+			end
+
+			if not slot1:isShow() then
+				return false
+			end
+
+			slot2 = false
+
+			if slot1.metaPtData then
+				slot2 = slot1.metaPtData:CanGetAward()
+			end
+
+			return slot2
 		end
 	}
 }

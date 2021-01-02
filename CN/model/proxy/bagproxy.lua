@@ -3,6 +3,8 @@ slot0.ITEM_ADDED = "item added"
 slot0.ITEM_UPDATED = "item updated"
 
 function slot0.register(slot0)
+	slot0.limitList = {}
+
 	slot0:on(15001, function (slot0)
 		uv0.data = {}
 
@@ -15,6 +17,10 @@ function slot0.register(slot0)
 			slot6:display("loaded")
 
 			uv0.data[slot6.id] = slot6
+		end
+
+		for slot4, slot5 in ipairs(slot0.limit_list) do
+			uv0.limitList[slot5.id] = slot5.count
 		end
 	end)
 end
@@ -75,6 +81,30 @@ function slot0.getItemsByType(slot0, slot1)
 	end
 
 	return Clone(slot2)
+end
+
+function slot0.GetItemsByCondition(slot0, slot1)
+	slot2 = {}
+
+	for slot6, slot7 in pairs(slot0.data) do
+		slot8 = true
+
+		if slot1 then
+			for slot12, slot13 in pairs(slot1) do
+				if slot7:getConfig(slot12) ~= slot13 then
+					slot8 = false
+
+					break
+				end
+			end
+		end
+
+		if slot8 then
+			table.insert(slot2, slot7)
+		end
+	end
+
+	return slot2
 end
 
 function slot0.getTempItemByType(slot0, slot1)
@@ -151,6 +181,18 @@ function slot0.removeItemById(slot0, slot1, slot2)
 
 	slot3:consume(slot2)
 	slot0:updateItem(slot3)
+end
+
+function slot0.AddLimitCnt(slot0, slot1, slot2)
+	slot0.limitList[slot1] = (slot0.limitList[slot1] or 0) + slot2
+end
+
+function slot0.GetLimitCntById(slot0, slot1)
+	return slot0.limitList[slot1] or 0
+end
+
+function slot0.ClearLimitCnt(slot0, slot1)
+	slot0.limitList[slot1] = 0
 end
 
 return slot0

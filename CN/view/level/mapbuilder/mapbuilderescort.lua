@@ -1,22 +1,16 @@
 slot1 = class("MapBuilderEscort", import(".MapBuilder"))
 
-function slot1.Ctor(slot0, ...)
-	uv0.super.Ctor(slot0, ...)
-
-	slot0.itemList = nil
-end
-
 function slot1.GetType(slot0)
 	return uv0.TYPEESCORT
 end
 
-function slot1.GetUIName(slot0)
+function slot1.getUIName(slot0)
 	return "escort_levels"
 end
 
 function slot1.OnInit(slot0)
-	slot0.tpl = slot0.tf:Find("escort_level_tpl")
-	slot0.itemHolder = slot0.tf:Find("items")
+	slot0.tpl = slot0._tf:Find("escort_level_tpl")
+	slot0.itemHolder = slot0._tf:Find("items")
 end
 
 function slot1.Update(slot0, slot1)
@@ -24,12 +18,12 @@ function slot1.Update(slot0, slot1)
 	slot0.float.pivot = Vector2(0.5, 0.5)
 	slot4 = 1
 
-	if slot0.map.rect.width / slot0.map.rect.height < slot0.tfParent.rect.width / slot0.tfParent.rect.height then
-		slot4 = slot0.tfParent.rect.width / 1280
-		slot0.tf.localScale = Vector3(slot4, slot4, 1)
+	if slot0.map.rect.width / slot0.map.rect.height < slot0._parentTf.rect.width / slot0._parentTf.rect.height then
+		slot4 = slot0._parentTf.rect.width / 1280
+		slot0._tf.localScale = Vector3(slot4, slot4, 1)
 	else
-		slot4 = slot0.tfParent.rect.height / 720
-		slot0.tf.localScale = Vector3(slot4, slot4, 1)
+		slot4 = slot0._parentTf.rect.height / 720
+		slot0._tf.localScale = Vector3(slot4, slot4, 1)
 	end
 
 	slot0.scaleRatio = slot4
@@ -53,31 +47,20 @@ end
 function slot1.UpdateMapItems(slot0)
 	uv0.super.UpdateMapItems(slot0)
 	slot0:UpdateEscortInfo()
-
-	slot1 = slot0.data
-
 	setActive(slot0.sceneParent.escortBar, true)
 	setActive(slot0.sceneParent.mapHelpBtn, true)
 
-	slot4 = _.detect(getProxy(ChapterProxy).escortMaps, function (slot0)
-		return slot0.id == uv0.id
-	end).chapters
+	slot2 = getProxy(ChapterProxy)
+	slot4 = UIItemList.New(slot0.itemHolder, slot0.tpl)
 
-	if not slot0.itemList then
-		slot5 = UIItemList.New(slot0.itemHolder, slot0.tpl)
-
-		slot5:make(function (slot0, slot1, slot2)
-			if slot0 == UIItemList.EventUpdate then
-				slot3 = uv0[slot1 + 1]
-
-				uv1:UpdateEscortItem(slot2, slot3.escortId, slot3.chapter)
-			end
-		end)
-
-		slot0.itemList = slot5
-	end
-
-	slot5:align(#slot4)
+	slot4:make(function (slot0, slot1, slot2)
+		if slot0 == UIItemList.EventUpdate then
+			uv0:UpdateEscortItem(slot2, uv1[slot1 + 1].id, uv1[slot1 + 1])
+		end
+	end)
+	slot4:align(#_.filter(slot0.data:getChapters(), function (slot0)
+		return table.contains(pg.gameset.gardroad_count.description[1], slot0.id)
+	end))
 end
 
 function slot1.UpdateEscortItem(slot0, slot1, slot2, slot3)
@@ -116,10 +99,6 @@ end
 function slot1.OnHide(slot0)
 	setActive(slot0.sceneParent.escortBar, false)
 	setActive(slot0.sceneParent.mapHelpBtn, false)
-end
-
-function slot1.OnDestroy(slot0)
-	slot0.itemList = nil
 end
 
 return slot1

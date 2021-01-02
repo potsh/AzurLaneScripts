@@ -345,6 +345,96 @@ pg.player_resource = {
 		name = "xunliandianshu_yv2",
 		itemid = 59170
 	},
+	[163] = {
+		id = 163,
+		name = "yingxiv2_pt",
+		itemid = 59171
+	},
+	[164] = {
+		id = 164,
+		name = "skinTicket7",
+		itemid = 59172
+	},
+	[165] = {
+		id = 165,
+		name = "meifu2_pt",
+		itemid = 59173
+	},
+	[166] = {
+		id = 166,
+		name = "bisimai_pt2",
+		itemid = 59174
+	},
+	[167] = {
+		id = 167,
+		name = "skinTicket8",
+		itemid = 59175
+	},
+	[168] = {
+		id = 168,
+		name = "union4_pt",
+		itemid = 59176
+	},
+	[170] = {
+		id = 170,
+		name = "skinTicket9",
+		itemid = 59181
+	},
+	[171] = {
+		id = 171,
+		name = "shinano_pt",
+		itemid = 59182
+	},
+	[169] = {
+		id = 169,
+		name = "shinanoframept",
+		itemid = 59180
+	},
+	[172] = {
+		id = 172,
+		name = "pulinsidun_pt",
+		itemid = 59183
+	},
+	[173] = {
+		id = 173,
+		name = "skinTicket10",
+		itemid = 59186
+	},
+	[175] = {
+		id = 175,
+		name = "ouxiang2_pt",
+		itemid = 59185
+	},
+	[176] = {
+		id = 176,
+		name = "naerweikehaogan2",
+		itemid = 59188
+	},
+	[177] = {
+		id = 177,
+		name = "DOApt",
+		itemid = 59189
+	},
+	[178] = {
+		id = 178,
+		name = "skinTicket11",
+		itemid = 59190
+	},
+	[179] = {
+		id = 179,
+		name = "dexiv3framept",
+		itemid = 59191
+	},
+	[180] = {
+		id = 180,
+		name = "dexiv3_pt",
+		itemid = 59192
+	},
+	[181] = {
+		id = 181,
+		name = "skinTicket12",
+		itemid = 59193
+	},
 	[1001] = {
 		id = 1001,
 		name = "vote2019_pt",
@@ -375,6 +465,16 @@ pg.player_resource = {
 		name = "nvpu_ticket",
 		itemid = 59968
 	},
+	[3001] = {
+		id = 3001,
+		name = "synchronize_ark",
+		itemid = 21901
+	},
+	[3002] = {
+		id = 3002,
+		name = "dashijiechongzhi",
+		itemid = 110002
+	},
 	[2006] = {
 		id = 2006,
 		name = "contribution_worldboss624",
@@ -385,237 +485,305 @@ pg.player_resource = {
 		name = "worldboss624_ticket",
 		itemid = 60058
 	},
+	[3000] = {
+		id = 3000,
+		name = "guild_boss_damage",
+		itemid = 69000
+	},
 	get_id_list_by_name = {
-		worldboss624_ticket = {
-			2007
-		},
-		contribution_worldboss624 = {
-			2006
-		},
-		nvpu_ticket = {
-			2005
-		},
-		nvpu2_pt = {
-			2004
-		},
-		worldboss926_ticket = {
-			2003
-		},
-		contribution_worldboss926 = {
-			2002
-		},
-		contribution_worldboss = {
-			2001
-		},
-		vote2019_pt = {
-			1001
-		},
-		xunliandianshu_yv2 = {
-			162
-		},
-		naerweike2_pt = {
-			161
-		},
-		skinTicket6 = {
-			160
-		},
-		faxiv2_pt = {
-			159
-		},
-		bishengke_pt = {
-			157
-		},
-		union3_pt = {
-			156
-		},
-		xunliandianshu_fv2 = {
-			154
-		},
-		skinTicket5 = {
-			153
-		},
-		xiaoshengwang_pt = {
-			152
-		},
-		tiancheng2 = {
-			151
-		},
-		skinTicket4 = {
-			150
-		},
-		meixiv3_pt = {
-			149
-		},
-		xunliandianshu_v3 = {
-			148
-		},
-		battery2 = {
-			147
-		},
-		sofmap_pt = {
-			146
-		},
-		longxiang2 = {
-			145
-		},
-		skinTicket3 = {
-			144
-		},
-		maoxi_pt = {
-			143
-		},
-		xunliandianshu_m = {
-			142
-		},
-		xinrixi_pt = {
-			141
-		},
-		xunliandianshu_r = {
-			140
-		},
-		dashenling_pt = {
-			139
-		},
-		hololive_pt = {
-			138
-		},
-		ouxiang_pt = {
-			137
-		},
-		skinTicket2 = {
-			136
-		},
-		union2_pt = {
-			135
-		},
-		xunliandianshu = {
-			134
-		},
-		yidali_pt = {
-			133
-		},
-		qixihaibao_pt = {
-			132
-		},
-		newmeixi_pt = {
-			131
-		},
-		faxi_pt = {
-			130
-		},
-		bili_pt = {
-			129
-		},
-		xiaoshengdiyagehaogan = {
-			127
-		},
-		bisimai_pt = {
-			126
-		},
-		skinTicket = {
-			125
-		},
-		union_pt = {
-			124
-		},
-		kizuna_pt = {
-			123
-		},
-		battery1 = {
-			122
-		},
-		omamori1 = {
-			121
-		},
-		naerweikehaogan = {
-			120
-		},
-		British_pt = {
-			119
-		},
-		tiancheng = {
-			118
-		},
-		longxiang = {
-			117
-		},
-		chuansong = {
-			116
-		},
-		chuansonghaogan = {
-			115
-		},
-		zhandouzhixing = {
-			114
-		},
-		nvpu_pt = {
-			113
-		},
-		jiujiu = {
-			112
-		},
-		faxipt = {
-			111
-		},
-		yisegefuke_pt = {
-			110
-		},
-		bilibili = {
-			109
-		},
-		omamori = {
-			108
-		},
-		mengjiu = {
-			107
-		},
-		ema1 = {
-			106
-		},
-		grace = {
-			105
-		},
-		star = {
-			104
-		},
-		ema = {
-			103
-		},
-		pt = {
-			102
-		},
-		battery = {
-			101
-		},
-		freeGem = {
-			14
-		},
-		design_prt = {
-			9
-		},
-		guildCoin = {
-			8
-		},
-		goldField = {
-			7
-		},
-		dormMoney = {
-			6
-		},
-		oilField = {
-			5
-		},
-		gem = {
-			4
-		},
-		exploit = {
-			3
+		gold = {
+			1
 		},
 		oil = {
 			2
 		},
-		gold = {
-			1
+		exploit = {
+			3
+		},
+		gem = {
+			4
+		},
+		oilField = {
+			5
+		},
+		dormMoney = {
+			6
+		},
+		goldField = {
+			7
+		},
+		guildCoin = {
+			8
+		},
+		design_prt = {
+			9
+		},
+		freeGem = {
+			14
+		},
+		battery = {
+			101
+		},
+		pt = {
+			102
+		},
+		ema = {
+			103
+		},
+		star = {
+			104
+		},
+		grace = {
+			105
+		},
+		ema1 = {
+			106
+		},
+		mengjiu = {
+			107
+		},
+		omamori = {
+			108
+		},
+		bilibili = {
+			109
+		},
+		yisegefuke_pt = {
+			110
+		},
+		faxipt = {
+			111
+		},
+		jiujiu = {
+			112
+		},
+		nvpu_pt = {
+			113
+		},
+		zhandouzhixing = {
+			114
+		},
+		chuansonghaogan = {
+			115
+		},
+		chuansong = {
+			116
+		},
+		longxiang = {
+			117
+		},
+		tiancheng = {
+			118
+		},
+		British_pt = {
+			119
+		},
+		naerweikehaogan = {
+			120
+		},
+		omamori1 = {
+			121
+		},
+		battery1 = {
+			122
+		},
+		kizuna_pt = {
+			123
+		},
+		union_pt = {
+			124
+		},
+		skinTicket = {
+			125
+		},
+		bisimai_pt = {
+			126
+		},
+		xiaoshengdiyagehaogan = {
+			127
+		},
+		bili_pt = {
+			129
+		},
+		faxi_pt = {
+			130
+		},
+		newmeixi_pt = {
+			131
+		},
+		qixihaibao_pt = {
+			132
+		},
+		yidali_pt = {
+			133
+		},
+		xunliandianshu = {
+			134
+		},
+		union2_pt = {
+			135
+		},
+		skinTicket2 = {
+			136
+		},
+		ouxiang_pt = {
+			137
+		},
+		hololive_pt = {
+			138
+		},
+		dashenling_pt = {
+			139
+		},
+		xunliandianshu_r = {
+			140
+		},
+		xinrixi_pt = {
+			141
+		},
+		xunliandianshu_m = {
+			142
+		},
+		maoxi_pt = {
+			143
+		},
+		skinTicket3 = {
+			144
+		},
+		longxiang2 = {
+			145
+		},
+		sofmap_pt = {
+			146
+		},
+		battery2 = {
+			147
+		},
+		xunliandianshu_v3 = {
+			148
+		},
+		meixiv3_pt = {
+			149
+		},
+		skinTicket4 = {
+			150
+		},
+		tiancheng2 = {
+			151
+		},
+		xiaoshengwang_pt = {
+			152
+		},
+		skinTicket5 = {
+			153
+		},
+		xunliandianshu_fv2 = {
+			154
+		},
+		union3_pt = {
+			156
+		},
+		bishengke_pt = {
+			157
+		},
+		faxiv2_pt = {
+			159
+		},
+		skinTicket6 = {
+			160
+		},
+		naerweike2_pt = {
+			161
+		},
+		xunliandianshu_yv2 = {
+			162
+		},
+		yingxiv2_pt = {
+			163
+		},
+		skinTicket7 = {
+			164
+		},
+		meifu2_pt = {
+			165
+		},
+		bisimai_pt2 = {
+			166
+		},
+		skinTicket8 = {
+			167
+		},
+		union4_pt = {
+			168
+		},
+		skinTicket9 = {
+			170
+		},
+		shinano_pt = {
+			171
+		},
+		shinanoframept = {
+			169
+		},
+		pulinsidun_pt = {
+			172
+		},
+		skinTicket10 = {
+			173
+		},
+		ouxiang2_pt = {
+			175
+		},
+		naerweikehaogan2 = {
+			176
+		},
+		DOApt = {
+			177
+		},
+		skinTicket11 = {
+			178
+		},
+		dexiv3framept = {
+			179
+		},
+		dexiv3_pt = {
+			180
+		},
+		skinTicket12 = {
+			181
+		},
+		vote2019_pt = {
+			1001
+		},
+		contribution_worldboss = {
+			2001
+		},
+		contribution_worldboss926 = {
+			2002
+		},
+		worldboss926_ticket = {
+			2003
+		},
+		nvpu2_pt = {
+			2004
+		},
+		nvpu_ticket = {
+			2005
+		},
+		synchronize_ark = {
+			3001
+		},
+		dashijiechongzhi = {
+			3002
+		},
+		contribution_worldboss624 = {
+			2006
+		},
+		worldboss624_ticket = {
+			2007
+		},
+		guild_boss_damage = {
+			3000
 		}
 	},
 	all = {
@@ -688,13 +856,34 @@ pg.player_resource = {
 		160,
 		161,
 		162,
+		163,
+		164,
+		165,
+		166,
+		167,
+		168,
+		170,
+		171,
+		169,
+		172,
+		173,
+		175,
+		176,
+		177,
+		178,
+		179,
+		180,
+		181,
 		1001,
 		2001,
 		2002,
 		2003,
 		2004,
 		2005,
+		3001,
+		3002,
 		2006,
-		2007
+		2007,
+		3000
 	}
 }

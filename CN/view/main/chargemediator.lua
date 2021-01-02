@@ -37,13 +37,11 @@ function slot0.register(slot0)
 		slot0.viewComponent:setNormalGroupList(slot7)
 	end
 
-	if not slot4 or not chargeList or not slot6 or not slot7 then
+	if not slot4 or not slot5 or not slot6 or not slot7 then
 		slot0:sendNotification(GAME.GET_CHARGE_LIST)
 	end
 
 	slot0:bind(uv0.SWITCH_TO_SHOP, function (slot0, slot1)
-		slot1.fromCharge = true
-
 		uv0:sendNotification(GAME.GO_SCENE, SCENE.SHOP, slot1)
 	end)
 	slot0:bind(uv0.CHARGE, function (slot0, slot1)
@@ -137,12 +135,12 @@ function slot0.handleNotification(slot0, slot1)
 		end
 
 		if slot3.id == slot8 then
-			if slot7[slot3.id].limit_args[3] and slot11 < slot0.viewComponent.player.ship_bag_max then
+			if slot7[slot3.id].limit_args[3] and slot11 < slot0.viewComponent.player:getMaxShipBag() then
 				slot0.viewComponent:setItemVOs()
 				slot0.viewComponent:sortItems()
 			end
 		elseif slot3.id == slot9 then
-			if slot7[slot3.id].limit_args[3] and slot11 < slot0.viewComponent.player.equip_bag_max then
+			if slot7[slot3.id].limit_args[3] and slot11 < slot0.viewComponent.player:getMaxEquipmentBag() then
 				slot0.viewComponent:setItemVOs()
 				slot0.viewComponent:sortItems()
 			end

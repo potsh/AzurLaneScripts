@@ -1,5 +1,3 @@
-slot0 = {}
-
 function Clone_Copy(slot0, slot1)
 	if type(slot0) ~= "table" then
 		return slot0
@@ -21,11 +19,7 @@ function Clone_Copy(slot0, slot1)
 end
 
 function Clone(slot0)
-	for slot4, slot5 in pairs(uv0) do
-		uv0[slot4] = nil
-	end
-
-	return Clone_Copy(slot0, uv0)
+	return Clone_Copy(slot0, {})
 end
 
 function class(slot0, slot1)
@@ -111,14 +105,16 @@ function isa(slot0, slot1)
 end
 
 function instanceof(slot0, slot1)
-	slot2 = slot0.class
+	return superof(slot0.class, slot1)
+end
 
-	while slot2 ~= nil do
-		if slot2 == slot1 then
+function superof(slot0, slot1)
+	while slot0 ~= nil do
+		if slot0 == slot1 then
 			return true
+		else
+			slot0 = slot0.super
 		end
-
-		slot2 = slot2.super
 	end
 
 	return false

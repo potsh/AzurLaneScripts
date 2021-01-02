@@ -132,6 +132,10 @@ function slot3.GetBuffBulletRes(slot0, slot1, slot2, slot3)
 		end
 	end
 
+	if uv0.GetShipMetaFromDataTemplate(slot0) then
+		slot8(slot6.buff_list_display)
+	end
+
 	return slot4
 end
 
@@ -151,7 +155,11 @@ function slot3.GetResFromBuff(slot0, slot1, slot2, slot3)
 	end
 
 	if slot6.last_effect and slot6.last_effect ~= "" then
-		slot4[#slot4 + 1] = uv1.Battle.BattleResourceManager.GetFXPath(slot6.last_effect)
+		for slot11, slot12 in ipairs(type(slot6.last_effect) == "table" and slot6.last_effect or {
+			slot6.last_effect
+		}) do
+			slot4[#slot4 + 1] = uv1.Battle.BattleResourceManager.GetFXPath(slot12)
+		end
 	end
 
 	for slot10, slot11 in ipairs(slot6.effect_list) do
@@ -203,6 +211,21 @@ function slot3.GetResFromBuff(slot0, slot1, slot2, slot3)
 	return slot4
 end
 
+function slot3.GetBuffListRes(slot0, slot1, slot2)
+	slot3 = {}
+
+	for slot8, slot9 in ipairs(slot0) do
+		slot15 = slot9.level
+		slot16 = {}
+
+		for slot15, slot16 in ipairs(uv0.GetResFromBuff(slot9.id, slot15, slot16, slot2)) do
+			slot3[#slot3 + 1] = slot16
+		end
+	end
+
+	return slot3
+end
+
 function slot3.GetBulletResFromSkill(slot0, slot1, slot2)
 	slot3 = {}
 
@@ -222,6 +245,12 @@ function slot3.GetBulletResFromSkill(slot0, slot1, slot2)
 
 			if slot5.arg_list.effect then
 				uv1[#uv1 + 1] = uv0.Battle.BattleResourceManager.GetFXPath(slot8)
+			end
+
+			if slot5.arg_list.spawnData then
+				for slot14, slot15 in ipairs(uv0.Battle.BattleResourceManager.GetMonsterRes(slot9)) do
+					uv1[#uv1 + 1] = slot15
+				end
 			end
 		end
 	end
@@ -329,4 +358,12 @@ function slot3.SortFleetList(slot0, slot1)
 	end
 
 	return slot2
+end
+
+function slot3.GetLimitAttributeRange(slot0, slot1)
+	if pg.battle_attribute_range[slot0] then
+		return math.clamp(slot1, pg.battle_attribute_range[slot0].min / 10000, pg.battle_attribute_range[slot0].max / 10000)
+	end
+
+	return slot1
 end

@@ -43,7 +43,8 @@ function slot0.execute(slot0, slot1)
 		activity_id = slot2.activity_id,
 		cmd = slot2.cmd,
 		arg1 = slot2.arg1,
-		arg2 = slot2.arg2
+		arg2 = slot2.arg2,
+		arg_list = {}
 	}, 11203, function (slot0)
 		if slot0.result == 0 then
 			slot1 = uv0:getAwards(uv1, slot0)
@@ -62,6 +63,8 @@ function slot0.execute(slot0, slot1)
 				end
 			elseif uv3 == 17 then
 				pg.TipsMgr.GetInstance():ShowTips("错误!:" .. slot0.result)
+			elseif uv3 == ActivityConst.ACTIVITY_TYPE_FRESH_TEC_CATCHUP then
+				-- Nothing
 			elseif slot0.result == 3 or slot0.result == 4 then
 				pg.TipsMgr.GetInstance():ShowTips(i18n("common_activity_end"))
 			else
@@ -180,6 +183,8 @@ function slot0.updateActivityData(slot0, slot1, slot2, slot3, slot4)
 			getProxy(BuildShipProxy):addBuildShip(BuildShip.New(slot15))
 		end
 
+		slot3.data1 = slot3.data1 + slot1.arg1
+
 		slot0:sendNotification(GAME.BUILD_SHIP_DONE)
 	elseif slot5 == ActivityConst.ACTIVITY_TYPE_SHOP then
 		slot8 = getProxy(ShopsProxy)
@@ -259,7 +264,8 @@ function slot0.updateActivityData(slot0, slot1, slot2, slot3, slot4)
 		pg.TipsMgr.GetInstance():ShowTips(i18n("vote_success"))
 	elseif slot5 == ActivityConst.ACTIVITY_TYPE_BB then
 		slot3.data1 = slot3.data1 + 1
-		slot3.data2 = slot3.data2 + 1
+		slot3.data2 = slot3.data2 - 1
+		slot3.data1_list = slot2.number
 	elseif slot5 == ActivityConst.ACTIVITY_TYPE_LOTTERY then
 		if slot1.cmd == 1 then
 			slot9 = ActivityItemPool.New({
@@ -330,6 +336,25 @@ function slot0.updateActivityData(slot0, slot1, slot2, slot3, slot4)
 		elseif slot1.cmd == 3 then
 			slot3.data4 = defaultValue(slot3.data4, 0) + 1
 		end
+	elseif slot5 == ActivityConst.ACTIVITY_TYPE_SUBMARINE_RUN then
+		if slot1.cmd == 1 then
+			slot0:sendNotification(GAME.FINISH_STAGE_DONE, {
+				statistics = slot1.statistics,
+				score = slot1.statistics._battleScore,
+				system = SYSTEM_SUBMARINE_RUN
+			})
+
+			slot3.data1_list[1] = math.max(slot3.data1_list[1], slot1.arg2)
+			slot3.data2_list[1] = slot2.number[1]
+			slot3.data2_list[2] = slot2.number[2]
+		elseif slot1.cmd == 2 then
+			slot3.data2 = slot2.number[1]
+			slot3.data3 = slot2.number[2]
+			slot3.data2_list[1] = 0
+			slot3.data2_list[2] = 0
+		elseif slot1.cmd == 3 then
+			slot3.data4 = defaultValue(slot3.data4, 0) + 1
+		end
 	elseif slot5 == ActivityConst.ACTIVITY_TYPE_TURNTABLE then
 		if slot1.cmd == 2 then
 			slot3.data4 = 0
@@ -363,6 +388,65 @@ function slot0.updateActivityData(slot0, slot1, slot2, slot3, slot4)
 		if slot9 < #pg.activity_event_building[slot1.arg1].buff then
 			slot3.data1KeyValueList[1][slot10] = math.max((slot3.data1KeyValueList[1][slot8.material_id] or 0) - slot8.material[slot9], 0)
 		end
+	elseif slot5 == ActivityConst.ACTIVITY_TYPE_EXPEDITION then
+		if slot1.cmd == 0 then
+			return slot3
+		end
+
+		if slot1.cmd == 3 then
+			slot0:sendNotification(GAME.FINISH_STAGE_DONE, {
+				statistics = slot1.statistics,
+				score = slot1.statistics._battleScore,
+				system = SYSTEM_REWARD_PERFORM
+			})
+
+			return slot3
+		end
+
+		if slot1.cmd == 4 then
+			slot3.data2_list[1] = slot3.data2_list[1] + 1
+
+			return slot3
+		end
+
+		if slot1.cmd == 1 then
+			slot3.data3 = slot3.data3 - 1
+		end
+
+		slot8 = slot1.arg1
+
+		if slot1.cmd ~= 2 then
+			slot3.data2 = slot8
+		end
+
+		slot3.data1_list[slot8] = slot2.number[1]
+
+		print("格子:" .. slot8 .. " 值:" .. slot2.number[1])
+
+		if slot2.number[2] and slot3.data1 ~= slot2.number[2] then
+			print("关卡变更" .. slot2.number[2])
+
+			slot3.data1 = slot3.data1 + 1
+			slot3.data2 = 0
+
+			for slot13 = 1, #slot3.data1_list do
+				slot3.data1_list[slot13] = 0
+			end
+		end
+	elseif slot5 == ActivityConst.ACTIVITY_TYPE_AIRFIGHT_BATTLE then
+		if slot1.cmd == 1 then
+			slot0:sendNotification(GAME.FINISH_STAGE_DONE, {
+				statistics = slot1.statistics,
+				score = slot1.statistics._battleScore,
+				system = SYSTEM_AIRFIGHT
+			})
+
+			slot3.data1KeyValueList[1] = slot3.data1KeyValueList[1] or {}
+			slot3.data1KeyValueList[1][slot1.arg1] = (slot3.data1KeyValueList[1][slot1.arg1] or 0) + 1
+		elseif slot1.cmd == 2 then
+			slot3.data1KeyValueList[2] = slot3.data1KeyValueList[2] or {}
+			slot3.data1KeyValueList[2][slot1.arg1] = 1
+		end
 	end
 
 	return slot3
@@ -373,58 +457,59 @@ function slot0.performance(slot0, slot1, slot2, slot3, slot4)
 	slot6 = nil
 	slot6 = coroutine.create(function ()
 		if uv0 == ActivityConst.ACTIVITY_TYPE_7DAYSLOGIN then
-			if uv1:getConfig("config_client").story and slot1[uv1.data1] and slot1[uv1.data1][1] and not pg.StoryMgr.GetInstance():IsPlayed(slot1[uv1.data1][1]) then
-				pg.StoryMgr.GetInstance():Play(slot1[uv1.data1][1], uv2)
+			if uv1:getConfig("config_client").story and slot0[uv1.data1] and slot0[uv1.data1][1] then
+				pg.NewStoryMgr.GetInstance():Play(slot0[uv1.data1][1], uv2)
 				coroutine.yield()
 			end
 		elseif uv0 == ActivityConst.ACTIVITY_TYPE_BB then
-			if pg.gameset.bobing_memory.description[uv1.data1] and #slot1 > 0 and not pg.StoryMgr.GetInstance():IsPlayed(slot1) then
-				pg.StoryMgr.GetInstance():Play(slot1, uv2)
+			if pg.gameset.bobing_memory.description[uv1.data1] and #slot0 > 0 then
+				pg.NewStoryMgr.GetInstance():Play(slot0, uv2)
 				coroutine.yield()
 			end
 
 			uv3:sendNotification(ActivityProxy.ACTIVITY_SHOW_BB_RESULT, {
 				numbers = uv4.number,
-				callback = uv2
+				callback = uv2,
+				awards = uv5
 			})
 			coroutine.yield()
 		elseif uv0 == ActivityConst.ACTIVITY_TYPE_LOTTERY_AWARD then
-			if uv5.cmd == 1 then
-				if uv1:getConfig("config_client").story and slot1[uv1.data1] and slot1[uv1.data1][1] and not pg.StoryMgr.GetInstance():IsPlayed(slot1[uv1.data1][1]) then
-					pg.StoryMgr.GetInstance():Play(slot1[uv1.data1][1], uv2)
+			if uv6.cmd == 1 then
+				if uv1:getConfig("config_client").story and slot0[uv1.data1] and slot0[uv1.data1][1] then
+					pg.NewStoryMgr.GetInstance():Play(slot0[uv1.data1][1], uv2)
 					coroutine.yield()
 				end
 
 				uv3:sendNotification(ActivityProxy.ACTIVITY_SHOW_LOTTERY_AWARD_RESULT, {
 					activityID = uv1.id,
-					awards = uv6,
+					awards = uv5,
 					number = uv4.number[1],
 					callback = uv2
 				})
 
-				uv6 = {}
+				uv5 = {}
 
 				coroutine.yield()
 			end
 		elseif uv0 == ActivityConst.ACTIVITY_TYPE_CARD_PAIRS or uv0 == ActivityConst.ACTIVITY_TYPE_LINK_LINK then
-			if uv1:getConfig("config_client")[1] and uv1:getConfig("config_client")[1][uv1.data2 + 1] and not pg.StoryMgr.GetInstance():IsPlayed(slot1) then
-				pg.StoryMgr.GetInstance():Play(slot1, uv2)
+			if uv1:getConfig("config_client")[1] and uv1:getConfig("config_client")[1][uv1.data2 + 1] then
+				pg.NewStoryMgr.GetInstance():Play(slot0, uv2)
 				coroutine.yield()
 			end
-		elseif uv0 == ActivityConst.ACTIVITY_TYPE_DODGEM then
-			if uv5.cmd == 2 and uv4.number[3] > 0 then
+		elseif uv0 == ActivityConst.ACTIVITY_TYPE_DODGEM or uv0 == ActivityConst.ACTIVITY_TYPE_SUBMARINE_RUN then
+			if uv6.cmd == 2 and uv4.number[3] > 0 then
 				slot0 = uv1:getConfig("config_client")[1]
 
-				table.insert(uv6, {
+				table.insert(uv5, {
 					type = slot0[1],
 					id = slot0[2],
 					count = slot0[3]
 				})
 			end
 		elseif uv0 == ActivityConst.ACTIVITY_TYPE_SHOP then
-			if #uv6 == 1 and uv6[1].type == DROP_TYPE_ITEM then
-				if slot0.type == DROP_TYPE_ITEM and Item.EQUIPMENT_SKIN_BOX == pg.item_data_statistics[uv6[1].id].type then
-					uv6 = {}
+			if #uv5 == 1 and uv5[1].type == DROP_TYPE_ITEM then
+				if slot0.type == DROP_TYPE_ITEM and Item.EQUIPMENT_SKIN_BOX == pg.item_data_statistics[uv5[1].id].type then
+					uv5 = {}
 
 					uv3:sendNotification(GAME.USE_ITEM, {
 						skip_check = true,
@@ -438,21 +523,21 @@ function slot0.performance(slot0, slot1, slot2, slot3, slot4)
 			pg.TipsMgr.GetInstance():ShowTips(i18n("building_complete_tip"))
 		end
 
-		if #uv6 > 0 then
+		if #uv5 > 0 then
 			uv3:sendNotification(uv1:getNotificationMsg(), {
-				activityId = uv5.activity_id,
-				awards = uv6,
+				activityId = uv6.activity_id,
+				awards = uv5,
 				callback = uv2
 			})
 			coroutine.yield()
 		end
 
-		if uv0 == 17 and uv5.cmd and uv5.cmd == 2 then
+		if uv0 == 17 and uv6.cmd and uv6.cmd == 2 then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("mingshi_get_tip"))
 		end
 
 		getProxy(ActivityProxy):updateActivity(uv1)
-		uv3:sendNotification(ActivityProxy.ACTIVITY_OPERATION_DONE, uv5.activity_id)
+		uv3:sendNotification(ActivityProxy.ACTIVITY_OPERATION_DONE, uv6.activity_id)
 	end)
 
 	function ()

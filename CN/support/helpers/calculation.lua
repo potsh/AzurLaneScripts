@@ -12,7 +12,7 @@ slot0 = {
 function calcAirDominanceValue(slot0, slot1)
 	slot2 = slot0:getAircraftCount()
 
-	return defaultValue(slot0:getProperties(slot1)[AttributeType.Air], 0) * (slot2[EquipType.FighterAircraft] * uv0.p + slot2[EquipType.TorpedoAircraft] * uv0.q + slot2[EquipType.BomberAircraft] * uv0.s + slot2[EquipType.SeaPlane] * uv0.t) * (0.8 + slot0.level * uv0.r / 100) / 100 + slot0:getEquipmentProperties()[AttributeType.AirDominate]
+	return defaultValue(slot0:getProperties(slot1)[AttributeType.Air], 0) * (defaultValue(slot2[EquipType.FighterAircraft], 0) * uv0.p + defaultValue(slot2[EquipType.TorpedoAircraft], 0) * uv0.q + defaultValue(slot2[EquipType.BomberAircraft], 0) * uv0.s + defaultValue(slot2[EquipType.SeaPlane], 0) * uv0.t) * (0.8 + slot0.level * uv0.r / 100) / 100 + defaultValue(slot0:getEquipmentProperties()[AttributeType.AirDominate], 0)
 end
 
 function calcAirDominanceStatus(slot0, slot1, slot2)
@@ -95,4 +95,51 @@ function sortCompare(...)
 	end
 
 	return false
+end
+
+function calcPositionAngle(slot0, slot1)
+	slot2 = Vector3(slot0, slot1, 0)
+	slot3 = Vector3.up
+	slot4 = Vector2.Angle(slot2, slot3)
+
+	return Vector3.Cross(slot2, slot3).z > 0 and slot4 or -slot4
+end
+
+function dichotomy(slot0, slot1)
+	slot2 = 1
+	slot3 = #slot1
+	slot4 = nil
+
+	while slot2 < slot3 do
+		if slot1[bit.rshift(slot2 + slot3, 1)] < slot0 then
+			slot2 = slot4 + 1
+		else
+			slot3 = slot4
+		end
+	end
+
+	if slot3 < slot2 then
+		return
+	else
+		return slot2
+	end
+end
+
+function DOAParabolaCalc(slot0, slot1, slot2)
+	slot3 = slot0 * math.sqrt(slot1 / 2)
+	slot4 = 0
+	slot5 = slot3 * slot3
+	slot6 = nil
+
+	while slot5 - slot4 > 0.01 do
+		slot6 = (slot4 + slot5) / 2
+
+		if slot3 > math.sqrt(slot6) + math.sqrt(slot6 + slot2) then
+			slot4 = slot6
+		else
+			slot5 = slot6
+		end
+	end
+
+	return slot4
 end

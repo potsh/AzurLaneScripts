@@ -18,7 +18,7 @@ function slot0.register(slot0)
 	end)
 	slot0:bind(uv0.OPEND_FRIEND, function (slot0)
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
-			onNo = true,
+			hideNo = true,
 			yesText = "text_apply",
 			limit = 20,
 			type = MSGBOX_TYPE_INPUT,
@@ -53,7 +53,6 @@ function slot0.register(slot0)
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				hideNo = false,
 				content = i18n("friend_confirm_add_blacklist", uv0.name),
-				parent = uv1.contextData.parent,
 				onYes = function ()
 					uv0:sendNotification(GAME.FRIEND_ADD_BLACKLIST, uv1)
 				end

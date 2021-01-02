@@ -4,6 +4,7 @@ EventDetailPanel = require("view/event/EventDetailPanel")
 slot0 = class("EventListScene", import("..base.BaseUI"))
 slot1 = {
 	{
+		0,
 		1,
 		3,
 		4,
@@ -283,19 +284,23 @@ function slot0.filter(slot0)
 	end
 
 	slot0.eventList = _.sort(slot0.eventList, function (slot0, slot1)
-		if slot0.state ~= slot1.state then
-			return slot1.state < slot0.state
-		end
+		if (slot0:IsActivityType() and 1 or 0) == (slot1:IsActivityType() and 1 or 0) then
+			if slot0.state ~= slot1.state then
+				return slot1.state < slot0.state
+			end
 
-		if slot0.template.type == 3 and slot1.template.type ~= 3 then
-			return true
-		end
+			if slot0.template.type == 3 and slot1.template.type ~= 3 then
+				return true
+			end
 
-		if slot0.template.type ~= 3 and slot1.template.type == 3 then
-			return false
-		end
+			if slot0.template.type ~= 3 and slot1.template.type == 3 then
+				return false
+			end
 
-		return slot0.id < slot1.id
+			return slot0.id < slot1.id
+		else
+			return slot3 < slot2
+		end
 	end)
 end
 
@@ -523,14 +528,16 @@ function slot0.ctimer(slot0)
 		slot1 = false
 
 		for slot5, slot6 in pairs(uv0.scrollItems) do
-			slot6:UpdateTime()
+			if slot6.go.name ~= "-1" then
+				slot6:UpdateTime()
 
-			if slot6.event:GetCountDownTime() and slot7 < 0 then
-				slot8, slot9 = uv0.eventProxy:findInfoById(slot6.event.id)
+				if slot6.event:GetCountDownTime() and slot7 < 0 then
+					slot8, slot9 = uv0.eventProxy:findInfoById(slot6.event.id)
 
-				table.remove(uv0.eventProxy.eventList, slot9)
+					table.remove(uv0.eventProxy.eventList, slot9)
 
-				slot1 = true
+					slot1 = true
+				end
 			end
 		end
 

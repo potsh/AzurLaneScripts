@@ -180,7 +180,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100012,
+				100023,
 				1
 			}
 		},
@@ -767,7 +767,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 4,
-		resign_count = 1,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -1965,7 +1965,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100008,
+				100018,
 				1
 			}
 		},
@@ -2219,8 +2219,8 @@ pg.activity_month_sign = {
 		},
 		day21 = {
 			{
-				4,
-				301541,
+				5,
+				100019,
 				1
 			}
 		},
@@ -2475,7 +2475,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100009,
+				100020,
 				1
 			}
 		},
@@ -2730,7 +2730,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100010,
+				100021,
 				1
 			}
 		},
@@ -2985,7 +2985,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100011,
+				100022,
 				1
 			}
 		},

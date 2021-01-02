@@ -12,9 +12,14 @@ function slot0.willExit(slot0)
 	slot0.loader:Clear()
 end
 
-function slot0.InitFacility(slot0, slot1, slot2, slot3)
-	onButton(nil, slot0:Find(slot2), slot3)
-	onButton(nil, slot1:Find(slot2), slot3)
+function slot0.InitFacility(slot0, slot1, slot2)
+	onButton(slot0, slot1, slot2)
+	onButton(slot0, slot1:Find("button"), slot2)
+end
+
+function slot0.InitFacilityCross(slot0, slot1, slot2, slot3, slot4)
+	onButton(slot0, slot1:Find(slot3), slot4, SFX_PANEL)
+	onButton(slot0, slot2:Find(slot3), slot4, SFX_PANEL)
 end
 
 function slot0.getStudents(slot0, slot1, slot2)
@@ -126,12 +131,40 @@ function slot0.clearStudents(slot0)
 		slot0.sortTimer = nil
 	end
 
-	for slot4, slot5 in pairs(slot0.academyStudents) do
-		slot5:detach()
-		Destroy(slot5._go)
+	if slot0.academyStudents then
+		for slot4, slot5 in pairs(slot0.academyStudents) do
+			slot5:detach()
+			Destroy(slot5._go)
+		end
+
+		table.clear(slot0.academyStudents)
+	end
+end
+
+function slot0.AutoFitScreen(slot0)
+	slot5 = nil
+	slot5 = (1.7777777777777777 > Screen.width / Screen.height or math.clamp(1080 * slot1 / slot0._map.rect.width, 1, 2)) and math.clamp(1920 / slot1 / slot0._map.rect.height, 1, 2)
+
+	setLocalScale(slot0._map, {
+		x = slot5,
+		y = slot5,
+		z = slot5
+	})
+	setLocalScale(slot0._upper, {
+		x = slot5,
+		y = slot5,
+		z = slot5
+	})
+end
+
+function slot0.IsMiniActNeedTip(slot0)
+	if not getProxy(ActivityProxy):getActivityById(slot0) or slot1:isEnd() then
+		return
 	end
 
-	table.clear(slot0.academyStudents)
+	slot2 = slot1 and getProxy(MiniGameProxy):GetHubByHubId(slot1:getConfig("config_id"))
+
+	return slot2 and slot2.count > 0 or slot2:getConfig("reward_need") <= slot2.usedtime and slot2.ultimate == 0
 end
 
 function slot0.Clone2Full(slot0, slot1, slot2)

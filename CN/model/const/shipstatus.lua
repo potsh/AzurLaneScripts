@@ -12,7 +12,8 @@ slot0.flagList = {
 	"inBackyard",
 	"inAdmiral",
 	"inWorld",
-	"isActivityNpc"
+	"isActivityNpc",
+	"inGuildEvent"
 }
 
 function slot0.checkShipFlag(slot0, slot1, slot2)
@@ -101,10 +102,12 @@ function slot0.ShipStatusToTag(slot0, slot1)
 			i18n("common_flag_ship")
 		}
 	elseif uv0.checkShipFlag(slot0, slot1, "inWorld") then
+		slot2 = WorldConst.FetchWorldShip(slot0.id)
+
 		return {
 			"shipstatus",
 			"red",
-			""
+			i18n("word_status_world")
 		}
 	end
 end
@@ -118,9 +121,11 @@ slot0.FILTER_SHIPS_FLAGS_1 = {
 	inActivity = true,
 	inTactics = false,
 	inElite = true,
-	inBackyard = false,
+	inGuildEvent = true,
 	inEvent = true,
+	inBackyard = false,
 	isActivityNpc = true,
+	inWorld = true,
 	inAdmiral = true
 }
 slot0.FILTER_SHIPS_FLAGS_2 = {
@@ -132,9 +137,11 @@ slot0.FILTER_SHIPS_FLAGS_2 = {
 	inActivity = true,
 	inTactics = true,
 	inElite = true,
-	inBackyard = true,
+	inGuildEvent = true,
 	inEvent = true,
+	inBackyard = true,
 	isActivityNpc = true,
+	inWorld = true,
 	inAdmiral = true
 }
 slot0.FILTER_SHIPS_FLAGS_3 = {
@@ -146,9 +153,11 @@ slot0.FILTER_SHIPS_FLAGS_3 = {
 	inActivity = true,
 	inTactics = false,
 	inElite = true,
-	inBackyard = false,
+	inGuildEvent = true,
 	inEvent = true,
+	inBackyard = false,
 	isActivityNpc = true,
+	inWorld = true,
 	inAdmiral = false
 }
 slot0.TAG_HIDE_ALL = {
@@ -178,7 +187,7 @@ slot0.TAG_HIDE_BASE = {
 	inBackyard = false,
 	inEvent = false,
 	isActivityNpc = false,
-	inWorld = true,
+	inWorld = false,
 	inAdmiral = false
 }
 slot0.TAG_HIDE_ACTIVITY_BOSS = {
@@ -280,6 +289,10 @@ slot0.TAG_HIDE_FORMATION = {
 	inTactics = true,
 	inBackyard = true
 }
+slot0.TAG_HIDE_WORLD = {
+	inActivity = true,
+	inFleet = true
+}
 slot0.TAG_BLOCK_EVENT = {
 	inEvent = true
 }
@@ -301,18 +314,20 @@ slot1 = {
 		inEvent = 2
 	},
 	inActivity = {
-		inActivity = 2,
+		isActivityNpc = 2,
 		inEvent = 2,
-		inWorld = 2
+		inWorld = 2,
+		inActivity = 2
 	},
 	inEvent = {
-		inEvent = 2,
 		inChapter = 2,
-		inFleet = 1,
+		inEvent = 2,
 		inPvP = 1,
-		inWorld = 2
+		inFleet = 1,
+		isActivityNpc = 2
 	},
 	inClass = {
+		isActivityNpc = 2,
 		inClass = 2,
 		inBackyard = 1
 	},
@@ -320,8 +335,10 @@ slot1 = {
 		inTactics = 2
 	},
 	inBackyard = {
-		inClass = 2
+		inClass = 2,
+		isActivityNpc = 2
 	},
+	inWorld = {},
 	onPropose = {
 		inEvent = 2,
 		inChapter = 2
@@ -338,7 +355,9 @@ slot1 = {
 		inActivity = 2,
 		inTactics = 1,
 		inBackyard = 1,
+		inGuildEvent = 2,
 		inEvent = 2,
+		isActivityNpc = 2,
 		inWorld = 2,
 		inAdmiral = 2
 	}
@@ -376,6 +395,15 @@ slot2 = {
 	},
 	inAdmiral = {
 		tips_block = "playerinfo_ship_is_already_flagship"
+	},
+	inGuildEvent = {
+		tips_block = "word_shipState_guild_event"
+	},
+	isActivityNpc = {
+		tips_block = "word_shipState_fight"
+	},
+	inWorld = {
+		tips_block = "word_shipState_world"
 	}
 }
 
@@ -385,7 +413,11 @@ function slot0.ShipStatusCheck(slot0, slot1, slot2, slot3)
 	if slot4 == ShipStatus.STATE_CHANGE_FAIL then
 		return false, i18n(slot5)
 	elseif slot4 == ShipStatus.STATE_CHANGE_CHECK then
-		return ShipStatus.ChangeStatusCheckBox(slot5, slot1, slot2)
+		if slot2 then
+			return ShipStatus.ChangeStatusCheckBox(slot5, slot1, slot2)
+		else
+			return false
+		end
 	else
 		return true
 	end
@@ -521,6 +553,8 @@ function slot0.canDestroyShip(slot0, slot1)
 		return false, i18n("blueprint_destory_tip")
 	elseif slot0:GetLockState() == Ship.LOCK_STATE_LOCK then
 		return false, i18n("ship_vo_locked")
+	elseif slot0:isMetaShip() then
+		return false, i18n("meta_destroy_tip")
 	end
 
 	return uv0.ShipStatusCheck("onDestroy", slot0, slot1)

@@ -22,7 +22,7 @@ pg.activity_const = {
 		act_id = 171
 	},
 	ACT_NPC_SHIP_ID = {
-		act_id = 567
+		act_id = 766
 	},
 	SANLI_7DAYS_LOGIN = {
 		act_id = 274
@@ -31,7 +31,7 @@ pg.activity_const = {
 		act_id = 270
 	},
 	ACTIVITY_PRAY_POOL = {
-		act_id = 602
+		act_id = 708
 	},
 	DAY7_LOGIN_ACTIVITY_ID = {
 		act_id = 3
@@ -460,7 +460,10 @@ pg.activity_const = {
 		act_id = 459
 	},
 	NEWYEAR_SHRINE_PAGE_ID = {
-		act_id = 460
+		act_id = 830
+	},
+	NEWYEAR_SNACK_PAGE_ID = {
+		act_id = 835
 	},
 	NEWYEAR_ACTIVITY = {
 		act_id = 461
@@ -521,6 +524,9 @@ pg.activity_const = {
 	},
 	MONOPOLY_CAR_PAGE = {
 		act_id = 620
+	},
+	U110BATTLE_RE_PAGE = {
+		act_id = 650
 	},
 	LINDONG_REMAKE_KR = {
 		act_id = 0
@@ -615,6 +621,33 @@ pg.activity_const = {
 	ACTIVITY_BOSS_AISAIKESI_PT = {
 		act_id = 623
 	},
+	U557_RED_POCKET_RE = {
+		act_id = 673
+	},
+	SHINANO_EXP_ACT_ID = {
+		act_id = 679
+	},
+	JIUJIU_ADVENTURE_ID = {
+		act_id = 690
+	},
+	UR_ITEM_ACT_ID = {
+		act_id = 711
+	},
+	UR_TASK_ACT_ID = {
+		act_id = 713
+	},
+	DOA_MEDAL_ACT_ID = {
+		act_id = 783
+	},
+	MUSIC_FESTIVAL_ID_2 = {
+		act_id = 762
+	},
+	HMS_Hunter_PT_ID = {
+		act_id = 769
+	},
+	DOA_COLLECTION_FURNITURE = {
+		act_id = 783
+	},
 	SUMMER_REMAKE = {
 		act_id = 20248
 	},
@@ -701,5 +734,20 @@ pg.activity_const = {
 	},
 	NEW_ORLEANS_Map_BATTLE = {
 		act_id = 30418
+	},
+	DOA_MAP_ACT_ID = {
+		act_id = 777
+	},
+	DOA_PT_ID = {
+		act_id = 779
+	},
+	ELITE_AWARD_ACTIVITY_ID = {
+		act_id = 40
+	},
+	NEWYEAR_SNACKSTREET_MINIGAME = {
+		act_id = 831
+	},
+	NEWYEAR_SNOWBALL_FIGHT = {
+		act_id = 829
 	}
 }

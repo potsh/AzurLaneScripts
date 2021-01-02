@@ -30,31 +30,46 @@ slot0.BG_DAY = "day"
 slot0.BG_NIGHT = "night"
 slot0.BG_TIMELINE_DAY = 5
 slot0.BG_TIMELINE_NIGHT = 18
-slot0.BG_TIMES = {
+slot0.TIMES_INFO = {
 	{
-		0,
-		5,
-		"night"
+		bg = "bg_main_night",
+		bgm = "doa_main_night",
+		time = {
+			0,
+			5
+		}
 	},
 	{
-		5,
-		8,
-		"twilight"
+		bg = "bg_main_twilight",
+		bgm = "doa_main_day",
+		time = {
+			5,
+			8
+		}
 	},
 	{
-		5,
-		16,
-		"day"
+		bg = "bg_main_day",
+		bgm = "doa_main_day",
+		time = {
+			8,
+			16
+		}
 	},
 	{
-		16,
-		19,
-		"twilight"
+		bg = "bg_main_twilight",
+		bgm = "doa_main_day",
+		time = {
+			16,
+			19
+		}
 	},
 	{
-		19,
-		24,
-		"night"
+		bg = "bg_main_night",
+		bgm = "doa_main_night",
+		time = {
+			19,
+			24
+		}
 	}
 }
 slot0.BUFFTEXT_SHOW_TIME = 7
@@ -65,9 +80,23 @@ function slot0.getUIName(slot0)
 	return "MainUI"
 end
 
+function slot0.getDiffTimeInfo(slot0, slot1)
+	slot2 = pg.TimeMgr.GetInstance():GetServerHour()
+
+	for slot6, slot7 in ipairs(uv0.TIMES_INFO) do
+		if slot7.time[1] <= slot2 and slot2 < slot7.time[2] then
+			return slot7[slot1]
+		end
+	end
+end
+
 function slot0.getBGM(slot0)
 	if slot0:getCurrentFlagship():IsBgmSkin() and getProxy(SettingsProxy):IsBGMEnable() then
 		return slot1:GetSkinBgm()
+	elseif checkExist(getProxy(ActivityProxy):getActivityById(ActivityConst.DOA_MAP_ACT_ID), {
+		"isEnd"
+	}) == false then
+		return slot0:getDiffTimeInfo("bgm")
 	else
 		return uv0.super.getBGM(slot0)
 	end
@@ -82,25 +111,12 @@ function slot0.setShips(slot0, slot1)
 end
 
 function slot0.setBG(slot0)
-	slot1 = pg.TimeMgr.GetInstance():GetServerHour()
-	slot2 = ""
+	PoolMgr.GetInstance():GetSprite("commonbg/" .. slot0:getDiffTimeInfo("bg"), "", false, function (slot0)
+		uv0.bgLoading = false
 
-	for slot6, slot7 in ipairs(uv0.BG_TIMES) do
-		if slot7[1] <= slot1 and slot1 < slot7[2] then
-			slot2 = "commonbg/bg_main_" .. slot7[3]
-
-			break
-		end
-	end
-
-	if slot2 then
-		PoolMgr.GetInstance():GetSprite(slot2, "", false, function (slot0)
-			uv0.bgLoading = false
-
-			uv0:setChangeBtnInteractable()
-			setImageSprite(uv0._bg:Find("bg"), slot0)
-		end)
-	end
+		uv0:setChangeBtnInteractable()
+		setImageSprite(uv0._bg:Find("bg"), slot0)
+	end)
 end
 
 function slot0.Ctor(slot0)
@@ -110,7 +126,6 @@ function slot0.Ctor(slot0)
 end
 
 function slot0.init(slot0)
-	slot0._guiderLoaded = true
 	slot0._leftPanel = slot0:findTF("toTop/frame/leftPanel")
 	slot0._hideBtn = slot0:findTF("toTop/frame/leftPanel/hideButton")
 	slot0._cameraBtn = slot0:findTF("toTop/frame/leftPanel/cameraButton")
@@ -134,6 +149,7 @@ function slot0.init(slot0)
 	slot0._settingBtn = slot0:findTF("toTop/frame/rightTopPanel/bg/btnsArea/settingButton")
 	slot0._rankBtn = slot0:findTF("toTop/frame/rightTopPanel/bg/btnsArea/rankButton")
 	slot0._collectionBtn = slot0:findTF("toTop/frame/rightTopPanel/bg/btnsArea/collectionButton")
+	slot0._memoryBtn = slot0:findTF("toTop/frame/rightTopPanel/bg/btnsArea/memoryButton")
 	slot0._monopolyBtn = slot0:findTF("rightPanel/linkBtns/monopoly_btn")
 	slot0._blackWhitBtn = slot0:findTF("rightPanel/linkBtns/blackwhite_btn")
 	slot0._memoryBookBtn = slot0:findTF("rightPanel/linkBtns/memorybook_btn")
@@ -162,6 +178,7 @@ function slot0.init(slot0)
 	slot0._guildButton = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/guildButton")
 	slot0._mallBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/mallBtn")
 	slot0._mallSellTag = slot0:findTF("SellTag", slot0._mallBtn)
+	slot0._montgcardTag = slot0:findTF("MonthcardTag", slot0._mallBtn)
 	slot0._liveBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/liveButton")
 	slot0._technologyBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/technologyButton")
 
@@ -232,7 +249,10 @@ function slot0.init(slot0)
 	slot0._chat.localScale = Vector3(0, 0)
 	slot0._paintingOffset = 0
 	slot0.toTopPanel = slot0:findTF("toTop")
-	slot0.skinTimers = {}
+	slot0.skinExpireDisplayPage = SkinExpireDisplayPage.New(slot0.toTopPanel, slot0.event)
+	slot0.attireExpireDisplayPage = AttireExpireDisplayPage.New(slot0.toTopPanel, slot0.event)
+	slot0.skinExperienceDiplayPage = SkinExperienceDiplayPage.New(slot0.toTopPanel, slot0.event)
+	slot0.secondaryPage = MainUISecondaryPage.New(slot0._tf, slot0.event)
 end
 
 function slot0.uiEnterAnim(slot0)
@@ -316,63 +336,8 @@ function slot0.uiEnterAnim(slot0)
 	})
 end
 
-function slot0.openSecondaryPanel(slot0, slot1)
-	function slot2()
-		SetActive(uv0._academyBtn:Find("tip"), uv0.schoolTip)
-		SetActive(uv0:findTF("tip", uv0._commanderBtn), uv0.commanderTip)
-		SetActive(uv0:findTF("tip", uv0._haremBtn), uv0.backyardTip)
-
-		uv0.isOpenSecondary = true
-
-		pg.UIMgr.GetInstance():BlurPanel(uv0._secondaryPanel, true, {
-			weight = LayerWeightConst.SECOND_LAYER
-		})
-		setActive(uv0._secondaryPanel, true)
-	end
-
-	if not slot0._secondaryPanel then
-		PoolMgr.GetInstance():GetUI("MainUISecondaryPanel", true, function (slot0)
-			slot0.name = "secondary_panel"
-			uv0._secondaryPanel = tf(slot0)
-
-			SetActive(uv0._secondaryPanel, false)
-
-			slot1 = uv0:findTF("frame/bg", uv0._secondaryPanel)
-			uv0._academyBtn = uv0:findTF("school_btn", slot1)
-			uv0._haremBtn = uv0:findTF("backyard_btn", slot1)
-			uv0._commanderBtn = uv0:findTF("commander_btn", slot1)
-
-			uv0._secondaryPanel:SetParent(uv0._tf, false)
-
-			if not pg.SystemOpenMgr.GetInstance():isOpenSystem(uv0._player.level, "CommandRoomMediator") then
-				uv0._commanderBtn:GetComponent(typeof(Image)).color = Color(0.3, 0.3, 0.3, 1)
-			else
-				uv0._commanderBtn:GetComponent(typeof(Image)).color = Color(1, 1, 1, 1)
-			end
-
-			if not pg.SystemOpenMgr.GetInstance():isOpenSystem(uv0._player.level, "BackYardMediator") then
-				uv0._haremBtn:GetComponent(typeof(Image)).color = Color(0.3, 0.3, 0.3, 1)
-			else
-				uv0._haremBtn:GetComponent(typeof(Image)).color = Color(1, 1, 1, 1)
-			end
-
-			onButton(uv0, uv0._commanderBtn, function ()
-				uv0:emit(MainUIMediator.OPEN_COMMANDER)
-			end, SFX_MAIN)
-			onButton(uv0, uv0._haremBtn, function ()
-				uv0:emit(MainUIMediator.OPEN_BACKYARD)
-			end, SFX_MAIN)
-			onButton(uv0, uv0._academyBtn, function ()
-				uv0:emit(MainUIMediator.OPEN_SCHOOLSCENE)
-			end, SFX_MAIN)
-			onButton(uv0, uv0._secondaryPanel, function ()
-				uv0:closeSecondaryPanel(true)
-			end)
-			uv1()
-		end)
-	else
-		slot2()
-	end
+function slot0.openSecondaryPanel(slot0)
+	slot0.secondaryPage:ExecuteAction("Show", slot0._player, slot0.schoolTip, slot0.commanderTip, slot0.backyardTip)
 end
 
 function slot0.closeSecondaryPanel(slot0, slot1)
@@ -380,10 +345,9 @@ function slot0.closeSecondaryPanel(slot0, slot1)
 		slot0:enablePartialBlur()
 	end
 
-	slot0.isOpenSecondary = nil
-
-	pg.UIMgr.GetInstance():UnblurPanel(slot0._secondaryPanel, slot0._tf)
-	setActive(slot0._secondaryPanel, false)
+	if slot0.secondaryPage and slot0.secondaryPage:GetLoaded() then
+		slot0.secondaryPage:Hide()
+	end
 end
 
 function slot0.disableTraningCampAndRefluxTip(slot0)
@@ -442,13 +406,6 @@ slot4, slot5 = nil
 function slot0.didEnter(slot0)
 	slot0:setBG()
 	setActive(slot0._phonyui, false)
-
-	if ENABLE_TEST_OSS then
-		onButton(slot0, slot0._settingBtn.parent:Find("OSS") or cloneTplTo(slot0._settingBtn, slot0._settingBtn.parent, "OSS"), function ()
-			uv0:emit("TEST_OSS")
-		end, SFX_MAIN)
-	end
-
 	onToggle(slot0, slot0._moveBtn, function (slot0)
 		setActive(uv0._moveOn, slot0)
 		setActive(uv0._moveOff, not slot0)
@@ -726,6 +683,12 @@ function slot0.didEnter(slot0)
 		uv0:switchForm(uv1.STATE_ALL_HIDE)
 	end, SFX_MAIN)
 	onButton(slot0, slot0._cameraBtn, function ()
+		if PLATFORM_CODE == PLATFORM_CH and pg.SdkMgr.GetInstance():GetChannelUID() == "yun" then
+			pg.TipsMgr.GetInstance():ShowTips("指挥官，当前平台不支持该功能哦")
+
+			return
+		end
+
 		if CheckPermissionGranted(ANDROID_CAMERA_PERMISSION) then
 			uv0:openSnapShot()
 		else
@@ -819,6 +782,9 @@ function slot0.didEnter(slot0)
 	onButton(slot0, slot0._collectionBtn, function ()
 		uv0:emit(MainUIMediator.OPEN_COLLECT_SHIP)
 	end, SFX_UI_MENU)
+	onButton(slot0, slot0._memoryBtn, function ()
+		uv0:emit(MainUIMediator.OPEN_MEMORY)
+	end, SFX_UI_MENU)
 
 	if LOCK_SECONDARY then
 		onButton(slot0, slot0._haremBtn, function ()
@@ -828,7 +794,7 @@ function slot0.didEnter(slot0)
 			uv0:emit(MainUIMediator.OPEN_SCHOOLSCENE)
 		end, SFX_MAIN)
 
-		if not pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0._player.level, "BackYardMediator") then
+		if not pg.SystemOpenMgr.GetInstance():isOpenSystem(slot0._player.level, "BackYardMediator") then
 			setActive(slot0:findTF("lock", slot0._haremBtn), true)
 
 			slot0._haremBtn:GetComponent(typeof(Image)).color = Color(0.3, 0.3, 0.3, 1)
@@ -926,9 +892,9 @@ function slot0.didEnter(slot0)
 		elseif uv0.live2dChar then
 			uv0:AssistantEventEffect()
 		else
-			slot0 = uv2.filterAssistantEvents(uv2.PaintingTouchEvents, uv0.flagShip.skinId)
+			slot1 = uv2.filterAssistantEvents(uv2.PaintingTouchEvents, uv0.flagShip.skinId, uv0.flagShip:getCVIntimacy())
 
-			uv0:AssistantEventEffect(slot0[math.ceil(math.random(#slot0))])
+			uv0:AssistantEventEffect(slot1[math.ceil(math.random(#slot1))])
 			uv0:paintClimax(uv1.TOUCH_HEIGHT, uv1.TOUCH_DURATION, uv1.TOUCH_LOOP)
 		end
 
@@ -967,6 +933,7 @@ function slot0.didEnter(slot0)
 
 	setActive(slot0._settingBottom, false)
 	setActive(slot0._settingRight, false)
+	slot0:UpdateMallBtnMonthcardTag()
 end
 
 function slot0.openSnapShot(slot0)
@@ -1003,8 +970,8 @@ end
 function slot0.onBackPressed(slot0)
 	pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_CANCEL)
 
-	if slot0.isOpenSecondary then
-		slot0:closeSecondaryPanel(true)
+	if slot0.secondaryPage and slot0.secondaryPage:GetLoaded() and slot0.secondaryPage:isShowing() then
+		slot0:closeSecondaryPanel()
 
 		return
 	end
@@ -1039,7 +1006,7 @@ function slot0.ResetActivityBtns(slot0)
 			slot10 = cloneTplTo(slot0._ActivityBtnTpl, slot2, slot9.ButtonName)
 
 			slot10:SetSiblingIndex(slot7 - 1)
-			setImageSprite(slot10:Find("Image"), LoadSprite("ui/mainui_atlas", slot9.Image), true)
+			slot0:RefreshBtn(slot10, slot9)
 
 			if slot9.Tip then
 				setImageSprite(slot10:Find("Tip"), LoadSprite("ui/mainui_atlas", slot9.Tip), true)
@@ -1050,6 +1017,8 @@ function slot0.ResetActivityBtns(slot0)
 			if slot9.CtorButton then
 				slot9.CtorButton(slot0, slot10)
 			end
+		elseif slot9.forceRefreshImage then
+			slot0:RefreshBtn(slot10, slot9)
 		end
 
 		if slot1.LayoutProperty.CellScale then
@@ -1064,18 +1033,44 @@ function slot0.ResetActivityBtns(slot0)
 	end
 end
 
+function slot0.RefreshBtn(slot0, slot1, slot2)
+	if slot1:Find("Image") == nil then
+		slot3 = slot1
+	end
+
+	if type(slot2.Image) == "function" then
+		if slot2.Image() then
+			setImageSprite(slot3, slot4, true)
+		end
+	else
+		setImageSprite(slot3, LoadSprite("ui/mainui_atlas", slot2.Image), true)
+	end
+end
+
 function slot0.UpdateActivityBtn(slot0, slot1)
 	for slot6, slot7 in ipairs(import("GameCfg.activity.MainUIEntranceData").CurrentEntrancesList) do
 		if slot2[slot7] and slot8.ButtonName == slot1 then
-			if not IsNil(slot0._ActivityBtns:Find(slot8.ButtonName)) and slot8.UpdateButton then
-				slot8.UpdateButton(slot0, slot9)
+			if not IsNil(slot0._ActivityBtns:Find(slot8.ButtonName)) then
+				if slot8.UpdateButton then
+					slot8.UpdateButton(slot0, slot9)
+				else
+					setActive(slot9, false)
+				end
 
-				break
+				if slot8.forceRefreshImage then
+					slot0:RefreshBtn(slot9, slot8)
+				end
 			end
 
-			setActive(slot9, false)
-
 			break
+		end
+	end
+end
+
+function slot0.HandleMiniGameBtns(slot0)
+	for slot5, slot6 in ipairs(import("GameCfg.activity.MainUIEntranceData").CurrentEntrancesList) do
+		if slot1[slot6] and slot7.Tag and slot7.Tag == "MiniGameHub" then
+			slot0:UpdateActivityBtn(slot7.ButtonName)
 		end
 	end
 end
@@ -1375,7 +1370,7 @@ function slot0.displayShipWord(slot0, slot1)
 	slot11 = slot0.CHAT_SHOW_TIME
 
 	if findTF(slot0._paintingTF, "fitter").childCount > 0 then
-		Ship.SetExpression(findTF(slot0._paintingTF, "fitter"):GetChild(0), slot0.flagShip:getPainting(), slot1, slot2)
+		ShipExpressionHelper.SetExpression(findTF(slot0._paintingTF, "fitter"):GetChild(0), slot0.flagShip:getPainting(), slot1, slot2, slot0.flagShip.skinId)
 	end
 
 	function slot12()
@@ -1403,7 +1398,7 @@ function slot0.displayShipWord(slot0, slot1)
 		end)).id
 	end
 
-	slot13 = pg.StoryMgr.GetInstance():isActive()
+	slot13 = pg.NewStoryMgr.GetInstance():IsRunning()
 
 	if getProxy(ContextProxy):getContextByMediator(NewShipMediator) then
 		-- Nothing
@@ -1508,7 +1503,7 @@ function slot0.startChatTimer(slot0)
 
 			if #slot0 == 0 then
 				if uv0._taskNotFinishCount and uv0._taskNotFinishCount > 0 and uv0.lastChatEvent ~= "mission" then
-					table.insert(uv2.filterAssistantEvents(Clone(uv2.IdleEvents), uv0.flagShip.skinId), "mission")
+					table.insert(uv2.filterAssistantEvents(Clone(uv2.IdleEvents), uv0.flagShip.skinId, uv0.flagShip:getCVIntimacy()), "mission")
 				end
 			end
 		end
@@ -1557,7 +1552,7 @@ function slot0.ShowAssistInfo(slot0, slot1, slot2)
 		slot0._paintingTF.localScale = Vector3.one
 	end
 
-	if not PathMgr.FileExists(PathMgr.getAssetBundle("live2d/" .. slot1)) or not slot4:getCharacterSetting(slot2.id, "l2d") then
+	if not PathMgr.FileExists(PathMgr.getAssetBundle(HXSet.autoHxShiftPath("live2d/" .. slot1))) or not slot4:getCharacterSetting(slot2.id, "l2d") then
 		SetActive(slot3, false)
 		setPaintingPrefabAsync(slot0._paintingTF, slot1, "mainNormal", function ()
 			if uv0.exited then
@@ -1611,10 +1606,10 @@ function slot0.AssistantEventEffect(slot0, slot1)
 		end
 
 		if slot0.live2dChar:GetTouchPart() > 0 then
-			slot4 = uv0.filterAssistantEvents(uv0.getAssistantTouchEvents(slot3), slot0.flagShip.skinId)
+			slot4 = uv0.filterAssistantEvents(uv0.getAssistantTouchEvents(slot3), slot0.flagShip.skinId, 0)
 			slot1 = slot4[math.ceil(math.random(#slot4))]
 		else
-			slot4 = uv0.filterAssistantEvents(uv0.IdleEvents, slot0.flagShip.skinId)
+			slot4 = uv0.filterAssistantEvents(uv0.IdleEvents, slot0.flagShip.skinId, 0)
 			slot1 = slot4[math.floor(math.Random(0, #slot4)) + 1]
 		end
 	end
@@ -1731,46 +1726,54 @@ function slot0.updateBuffList(slot0, slot1)
 
 	slot2:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			LoadImageSpriteAsync(uv0[slot1 + 1]:getConfig("icon"), slot2)
-			onButton(uv1, slot2, function ()
-				if uv0._buffTextTimer then
-					uv0._buffTextTimer:Stop()
+			if uv0[slot1 + 1].IsVirtualIcon then
+				uv1:RefreshBtn(slot2, slot3)
+
+				if slot3.UpdateButton then
+					slot3.UpdateButton(uv1, slot2)
 				end
-
-				setActive(uv0._buffText, true)
-
-				if uv1:getConfig("max_time") > 0 then
-					if uv1.timestamp then
-						setText(uv0._buffText:Find("Text"), string.gsub(uv1:getConfig("desc"), "$" .. 1, pg.TimeMgr.GetInstance():DescCDTime(slot3 - pg.TimeMgr:GetInstance():GetServerTime())))
-
-						uv0._buffTimeCountDownTimer = Timer.New(function ()
-							if uv0 > 0 then
-								uv0 = uv0 - 1
-
-								setText(uv1._buffText:Find("Text"), string.gsub(uv2, "$" .. 1, pg.TimeMgr.GetInstance():DescCDTime(uv0)))
-							else
-								uv1._buffTimeCountDownTimer:Stop()
-								setActive(uv1._buffText, false)
-								setActive(uv3, false)
-							end
-						end, 1, -1)
-
-						uv0._buffTimeCountDownTimer:Start()
+			else
+				LoadImageSpriteAsync(slot3:getConfig("icon"), slot2)
+				onButton(uv1, slot2, function ()
+					if uv0._buffTextTimer then
+						uv0._buffTextTimer:Stop()
 					end
-				else
-					setText(uv0._buffText:Find("Text"), slot0)
-				end
 
-				uv0._buffTextTimer = Timer.New(function ()
-					setActive(uv0._buffText, false)
+					setActive(uv0._buffText, true)
 
-					if uv0._buffTimeCountDownTimer ~= nil then
-						uv0._buffTimeCountDownTimer:Stop()
+					if uv1:getConfig("max_time") > 0 then
+						if uv1.timestamp then
+							setText(uv0._buffText:Find("Text"), string.gsub(uv1:getConfig("desc"), "$" .. 1, pg.TimeMgr.GetInstance():DescCDTime(slot3 - pg.TimeMgr:GetInstance():GetServerTime())))
+
+							uv0._buffTimeCountDownTimer = Timer.New(function ()
+								if uv0 > 0 then
+									uv0 = uv0 - 1
+
+									setText(uv1._buffText:Find("Text"), string.gsub(uv2, "$" .. 1, pg.TimeMgr.GetInstance():DescCDTime(uv0)))
+								else
+									uv1._buffTimeCountDownTimer:Stop()
+									setActive(uv1._buffText, false)
+									setActive(uv3, false)
+								end
+							end, 1, -1)
+
+							uv0._buffTimeCountDownTimer:Start()
+						end
+					else
+						setText(uv0._buffText:Find("Text"), slot0)
 					end
-				end, uv3.BUFFTEXT_SHOW_TIME, 1)
 
-				uv0._buffTextTimer:Start()
-			end, SFX_PANEL)
+					uv0._buffTextTimer = Timer.New(function ()
+						setActive(uv0._buffText, false)
+
+						if uv0._buffTimeCountDownTimer ~= nil then
+							uv0._buffTimeCountDownTimer:Stop()
+						end
+					end, uv3.BUFFTEXT_SHOW_TIME, 1)
+
+					uv0._buffTextTimer:Start()
+				end, SFX_PANEL)
+			end
 		end
 	end)
 	slot2:align(#slot1)
@@ -1991,11 +1994,8 @@ function slot0.notifyActivitySummary(slot0, slot1, slot2)
 	end
 
 	onButton(slot0, slot0._activitySummaryBtn, function ()
-		uv0:emit(MainUIMediator.GO_SCENE, {
-			SCENE.ACTIVITY,
-			{
-				id = uv1 and uv1.id
-			}
+		uv0:emit(MainUIMediator.OPEN_ACTIVITY_PANEL, {
+			id = uv1 and uv1.id
 		})
 	end, SFX_PANEL)
 end
@@ -2032,12 +2032,15 @@ function slot0.updateChat(slot0, slot1)
 			slot10.supportRichText = true
 
 			ChatProxy.InjectPublic(slot10, slot7, true)
+		elseif slot7:IsWorldBossNotify() then
+			slot10.supportRichText = true
+			slot10.text = i18n("ad_4", slot7.args.supportType, slot7.args.playerName, slot7.args.bossName, slot7.args.level)
 		else
 			slot10.supportRichText = slot7.emojiId ~= nil
 			slot11 = false
 
 			if not slot7.emojiId then
-				slot11, slot12 = contentWrap(slot7.player.name .. ": " .. slot7.content, 40, 1.65)
+				slot12 = shortenString(slot7.player.name .. ": " .. slot7.content, 24)
 			end
 
 			for slot17 in string.gmatch(slot12, ChatConst.EmojiIconCodeMatch), nil,  do
@@ -2050,7 +2053,7 @@ function slot0.updateChat(slot0, slot1)
 				if table.contains(pg.emoji_small_template.all, tonumber(slot0)) then
 					return string.format("<icon name=%s w=0.7 h=0.7/>", slot0)
 				end
-			end) .. (slot11 and "..." or "")
+			end)
 		end
 	end
 end
@@ -2097,6 +2100,8 @@ function slot0.updateBanner(slot0, slot1)
 				uv1:emit(MainUIMediator.OPEN_TECHNOLOGY)
 			elseif uv0.type == 7 then
 				uv1:emit(MainUIMediator.GO_MINI_GAME, uv0.param[1])
+			elseif uv0.type == 8 then
+				uv1:emit(MainUIMediator.OPEN_GUILD)
 			end
 		end, SFX_MAIN)
 		setActive(findTF(slot12, "red"), false)
@@ -2138,112 +2143,11 @@ function slot0.updateExSkinBtn(slot0, slot1)
 end
 
 function slot0.showExSkinWindow(slot0, slot1)
-	function slot2(slot0)
-		setActive(slot0, true)
-
-		slot1 = UIItemList.New(slot0:Find("window/list/content"), slot0:Find("window/list/content/tpl"))
-
-		slot1:make(function (slot0, slot1, slot2)
-			if slot0 == UIItemList.EventUpdate then
-				slot3 = uv0[slot1 + 1]
-
-				setText(slot2:Find("name/Text"), slot3:getConfig("name"))
-
-				if uv1.skinTimers[slot3.id] then
-					uv1.skinTimers[slot3.id]:Stop()
-				end
-
-				uv1.skinTimers[slot3.id] = Timer.New(function ()
-					setText(uv1:Find("time/Text"), skinTimeStamp(uv0:getRemainTime()))
-				end, 1, -1)
-
-				uv1.skinTimers[slot3.id]:Start()
-				uv1.skinTimers[slot3.id].func()
-
-				slot4 = slot2:Find("icon_bg/icon")
-
-				LoadSpriteAsync("qicon/" .. slot3:getIcon(), function (slot0)
-					if not IsNil(uv0._tf) then
-						uv1:GetComponent(typeof(Image)).sprite = slot0
-					end
-				end)
-			end
-		end)
-		slot1:align(#uv0)
-		onButton(uv1, slot0:Find("window/top/btnBack"), function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-		onButton(uv1, slot0, function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-		onButton(uv1, slot0:Find("window/button_container/confirm_btn"), function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-	end
-
-	if not slot0:findTF(SkinShopScene.EXSKINNAME, slot0.toTopPanel) then
-		PoolMgr.GetInstance():GetUI(SkinShopScene.EXSKINNAME, true, function (slot0)
-			if uv0.exited then
-				return
-			end
-
-			setParent(slot0, uv0.toTopPanel)
-			uv1(slot0.transform)
-
-			slot0.name = SkinShopScene.EXSKINNAME
-		end)
-	else
-		slot2(slot3)
-	end
+	slot0.skinExperienceDiplayPage:ExecuteAction("Show", slot1)
 end
 
 function slot0.showOverDueExSkins(slot0, slot1)
-	function slot2(slot0)
-		setActive(slot0, true)
-
-		slot1 = UIItemList.New(slot0:Find("window/list/scrollrect/content"), slot0:Find("window/list/scrollrect/content/tpl"))
-
-		slot1:make(function (slot0, slot1, slot2)
-			if slot0 == UIItemList.EventUpdate then
-				slot3 = uv0[slot1 + 1]
-
-				setText(slot2:Find("name/Text"), slot3:getConfig("name"))
-
-				slot4 = slot2:Find("icon_bg/icon")
-
-				LoadSpriteAsync("qicon/" .. slot3:getIcon(), function (slot0)
-					if not IsNil(uv0._tf) then
-						uv1:GetComponent(typeof(Image)).sprite = slot0
-					end
-				end)
-			end
-		end)
-		slot1:align(#uv0)
-		onButton(uv1, slot0:Find("window/button_container/confirm_btn"), function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-		onButton(uv1, slot0, function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-		onButton(uv1, slot0:Find("window/top/btnBack"), function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-	end
-
-	if not slot0:findTF(SkinShopScene.OVERDUENAME, slot0.toTopPanel) then
-		PoolMgr.GetInstance():GetUI(SkinShopScene.OVERDUENAME, true, function (slot0)
-			if uv0.exited then
-				return
-			end
-
-			setParent(slot0, uv0.toTopPanel)
-			uv1(slot0.transform)
-
-			slot0.name = SkinShopScene.OVERDUENAME
-		end)
-	else
-		slot2(slot3)
-	end
+	slot0.skinExpireDisplayPage:ExecuteAction("Show", slot1)
 end
 
 function slot0.resumePaitingState(slot0)
@@ -2347,23 +2251,22 @@ function slot0.willExit(slot0)
 		slot0._buffTimeCountDownTimer = nil
 	end
 
-	if slot0.isOpenSecondary then
-		slot0:closeSecondaryPanel(false)
-	end
-
-	if slot0._secondaryPanel then
-		PoolMgr.GetInstance():ReturnUI("MainUISecondaryPanel", go(slot0._secondaryPanel))
-
-		slot0._secondaryPanel = nil
-	end
-
-	for slot4, slot5 in pairs(slot0.skinTimers) do
-		slot5:Stop()
-	end
-
-	slot0.skinTimers = nil
-
 	slot0:recycleSpineChar()
+	slot0.skinExpireDisplayPage:Destroy()
+
+	slot0.skinExpireDisplayPage = nil
+
+	slot0.attireExpireDisplayPage:Destroy()
+
+	slot0.attireExpireDisplayPage = nil
+
+	slot0.skinExperienceDiplayPage:Destroy()
+
+	slot0.skinExperienceDiplayPage = nil
+
+	slot0.secondaryPage:Destroy()
+
+	slot0.secondaryPage = nil
 end
 
 function slot0.sethideChatBtn(slot0)
@@ -2381,48 +2284,7 @@ function slot0.sethideChatBtn(slot0)
 end
 
 function slot0.showOverDueAttire(slot0, slot1)
-	function slot2(slot0)
-		setActive(slot0, true)
-
-		slot1 = UIItemList.New(slot0:Find("window/sliders/scrollrect/content"), slot0:Find("window/sliders/scrollrect/content/tpl"))
-
-		slot1:make(function (slot0, slot1, slot2)
-			if slot0 == UIItemList.EventUpdate then
-				slot3 = uv0[slot1 + 1]
-
-				updateDrop(slot2, {
-					count = 1,
-					id = slot3:getConfig("id"),
-					type = slot3:getDropType()
-				})
-			end
-		end)
-		slot1:align(#uv0)
-		onButton(uv1, slot0:Find("window/confirm_btn"), function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-		onButton(uv1, slot0, function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-		onButton(uv1, slot0:Find("window/top/btnBack"), function ()
-			setActive(uv0, false)
-		end, SFX_CANCEL)
-	end
-
-	if not slot0:findTF(AttireConst.OverDueWindowName, slot0.toTopPanel) then
-		PoolMgr.GetInstance():GetUI(AttireConst.OverDueWindowName, true, function (slot0)
-			if uv0.exited then
-				return
-			end
-
-			setParent(slot0, uv0.toTopPanel)
-			uv1(slot0.transform)
-
-			slot0.name = AttireConst.OverDueWindowName
-		end)
-	else
-		slot2(slot3)
-	end
+	slot0.attireExpireDisplayPage:ExecuteAction("Show", slot1)
 end
 
 function slot0.loadChar(slot0, slot1)
@@ -2456,20 +2318,32 @@ function slot0.updateMallBtnSellTag(slot0)
 	slot1 = false
 
 	if PlayerPrefs.GetInt("Ever_Enter_Mall_" .. Goods.CUR_PACKET_ID, 0) == 0 then
-		slot5 = nil
+		if pg.pay_data_display[slot2] and pg.TimeMgr:GetInstance():inTime(slot4.time) then
+			slot6 = nil
 
-		if getProxy(ShopsProxy):getChargedList() then
-			slot5 = slot4[slot2]
-		end
+			if getProxy(ShopsProxy):getChargedList() then
+				slot6 = slot5[slot2]
+			end
 
-		if slot5 and slot5.buyCount == 0 then
-			slot1 = true
-		elseif not slot5 then
+			if not slot6 or slot6 and slot6.buyCount == 0 then
+				slot1 = true
+			end
+		else
 			slot1 = false
 		end
 	end
 
 	setActive(slot0._mallSellTag, slot1)
+end
+
+function slot0.UpdateMallBtnMonthcardTag(slot0)
+	if go(slot0._mallSellTag).activeSelf then
+		setActive(slot0._montgcardTag, false)
+
+		return
+	end
+
+	setActive(slot0._montgcardTag, MonthCardOutDateTipPanel.GetShowMonthCardTag())
 end
 
 return slot0

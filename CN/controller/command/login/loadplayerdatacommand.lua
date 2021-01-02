@@ -10,6 +10,7 @@ function slot0.execute(slot0, slot1)
 	slot0.facade:registerProxy(FleetProxy.New({}))
 	slot0.facade:registerProxy(EquipmentProxy.New({}))
 	slot0.facade:registerProxy(ChapterProxy.New({}))
+	slot0.facade:registerProxy(WorldProxy.New({}))
 	slot0.facade:registerProxy(BagProxy.New({}))
 	slot0.facade:registerProxy(TaskProxy.New({}))
 	slot0.facade:registerProxy(MailProxy.New({}))
@@ -34,6 +35,7 @@ function slot0.execute(slot0, slot1)
 	slot0.facade:registerProxy(AnswerProxy.New())
 	slot0.facade:registerProxy(TechnologyProxy.New())
 	slot0.facade:registerProxy(BillboardProxy.New())
+	slot0.facade:registerProxy(MetaCharacterProxy.New())
 	slot0.facade:registerProxy(TechnologyNationProxy.New())
 	slot0.facade:registerProxy(AttireProxy.New())
 	slot0.facade:registerProxy(ShipSkinProxy.New())
@@ -54,12 +56,12 @@ function slot0.execute(slot0, slot1)
 		slot2 = getProxy(PlayerProxy):getData()
 
 		if uv0 then
-			pg.StoryMgr.GetInstance():Reset()
 			pg.PushNotificationMgr.GetInstance():Reset()
 			pg.SdkMgr.GetInstance():CreateRole(slot2.id, slot2.name, slot2.level, slot2.registerTime, slot2:getTotalGem())
 		end
 
 		pg.SeriesGuideMgr.GetInstance():setPlayer(slot2)
+		WorldGuider.GetInstance():Init()
 
 		slot4 = getProxy(UserProxy):getData()
 		slot5 = getProxy(ServerProxy)
@@ -67,6 +69,7 @@ function slot0.execute(slot0, slot1)
 
 		pg.SdkMgr.GetInstance():EnterServer(tostring(slot6.id), slot6.name, slot2.id, slot2.name, slot2.registerTime, slot2.level, slot2:getTotalGem())
 		slot5:recordLoginedServer(slot4.uid, slot6.id)
+		uv1:sendNotification(GAME.GET_GUILD_INFO)
 		uv1:sendNotification(GAME.LOAD_PLAYER_DATA_DONE)
 		uv1:sendNotification(GAME.REQUEST_MINI_GAME, {
 			type = MiniGameRequestCommand.REQUEST_HUB_DATA
@@ -74,6 +77,7 @@ function slot0.execute(slot0, slot1)
 		pg.SdkMgr.GetInstance():BindCPU()
 		getProxy(PlayerProxy):setInited(true)
 		pg.SecondaryPWDMgr.GetInstance():FetchData()
+		MonthCardOutDateTipPanel.SetMonthCardEndDateLocal()
 	end, nil, 60)
 end
 

@@ -30,10 +30,13 @@ end
 
 function slot0.OnInit(slot0)
 	slot0.furnitureModals = {}
+	slot0.followeModals = {}
+	slot0.scrollView = slot0:findTF("scroll_view")
 	slot0.bg = slot0:findTF("bg")
 	slot0.floorContain = slot0:findTF("bg/furContain/floor")
 	slot0.floorGrid = slot0:findTF("bg/floorGrid")
 	slot0.furContain = slot0:findTF("bg/furContain")
+	slot0.sortGroup = slot0:findTF("sort_group", slot0.furContain)
 	slot0.wallContain = slot0:findTF("bg/furContain/wall")
 	slot0.carpetContain = slot0:findTF("bg/furContain/carpet")
 	slot0.decorationBtn = slot0:findTF("decorateBtn")
@@ -51,6 +54,22 @@ function slot0.OnInit(slot0)
 	slot0.floorPaperModel = BackYardPaperModel.New(slot0:findTF("bg/floor"), BackYardPaperModel.PAPER_TYPE_FLOOR)
 	slot0.msgBoxWindow = BackYardMsgBox.New(slot0:findTF("msg_box"))
 	slot0.furnitureDescWindow = FurnitureDescWindow.New(slot0:findTF("desc_panel"))
+
+	slot0.furnitureDescWindow:SetUp(function (slot0, slot1, slot2)
+		slot5 = slot2.effect
+
+		if slot2.action then
+			uv0.furnitureModals[slot0]:PlayAnim(slot4)
+		end
+
+		if slot1 then
+			slot3:PlayEffect(slot5)
+		else
+			slot3:StopEffect(slot5)
+		end
+	end)
+
+	slot0.dynamicBg = BackYardDynamicBg.New(slot0._tf.parent)
 	slot1 = slot0:IsVisitMode()
 
 	setActive(slot0.decorationBtn, not slot1)
@@ -66,13 +85,15 @@ function slot0.enableDecorateMode(slot0, slot1)
 	slot0.decorateMode = slot1
 
 	setActive(slot0.backBtn, slot1)
-	SetActive(slot0.floorGrid, slot1)
 	setActive(slot0.eyeBtn, not slot1)
+
+	GetComponent(slot0.road, typeof(Button)).enabled = not slot1
+
 	slot0.shipsView:EnableTouch(slot1)
 
-	for slot5, slot6 in pairs(slot0.furnitureModals or {}) do
-		if not slot0.furnitureVOs[slot5]:canBeTouch() then
-			slot6:EnableTouch(slot1)
+	for slot6, slot7 in pairs(slot0.furnitureModals or {}) do
+		if not slot0.furnitureVOs[slot6]:canBeTouch() then
+			slot7:EnableTouch(slot1)
 		end
 	end
 
@@ -88,16 +109,16 @@ function slot0.enableDecorateMode(slot0, slot1)
 		slot0.map.afterSortFunc(slot0.map.sortedItems)
 	end
 
-	slot2 = slot0:findTF("bg")
+	slot3 = slot0:findTF("bg")
 
 	if slot1 then
 		slot0.prevScale = slot0.bg.localScale.x
-		slot3 = slot0.zoom.minZoom
-		slot0.bg.localScale = Vector3(slot3, slot3, slot3)
-		slot2.sizeDelta = Vector2(slot2.sizeDelta.x, slot2.sizeDelta.y + 300)
+		slot4 = slot0.zoom.minZoom
+		slot0.bg.localScale = Vector3(slot4, slot4, slot4)
+		slot3.sizeDelta = Vector2(slot3.sizeDelta.x, slot3.sizeDelta.y + 300)
 	elseif not slot1 and slot0.prevScale then
 		slot0.bg.localScale = Vector3(slot0.prevScale, slot0.prevScale, slot0.prevScale)
-		slot2.sizeDelta = Vector2(slot2.sizeDelta.x, slot2.sizeDelta.y - 300)
+		slot3.sizeDelta = Vector2(slot3.sizeDelta.x, slot3.sizeDelta.y - 300)
 	end
 
 	setActive(slot0.leftPanel, not slot1)
@@ -107,7 +128,7 @@ function slot0.enableDecorateMode(slot0, slot1)
 end
 
 function slot0.OnDidEnter(slot0)
-	onButton(slot0, slot0.floorGrid, function ()
+	onButton(slot0, slot0.scrollView, function ()
 		if uv0.isDraging then
 			return
 		end
@@ -151,6 +172,8 @@ function slot0.OnDidEnter(slot0)
 		end
 	end, SFX_CANCEL)
 	slot0:initHouse()
+	pg.BackYardSortMgr.GetInstance():InitUISortingOrder(slot0.scrollView, slot0.bg)
+	pg.BackYardSortMgr.GetInstance():Init(slot0.sortGroup, slot0.floorContain, slot0.furnitureModals, slot0.shipsView.shipModels, slot0.map)
 end
 
 function slot0.save(slot0)
@@ -189,7 +212,7 @@ function slot0.updateHouseArea(slot0, slot1)
 	slot2 = slot0:findTF("bg")
 	slot2.sizeDelta = Vector2(slot2.sizeDelta.x, 1080 + (slot1 - 1) * 150)
 
-	scrollTo(slot0._tf, 0.5, 0.5)
+	scrollTo(slot0.scrollView, 0.5, 0.5)
 
 	if slot1 <= 0 or slot1 > 3 then
 		SetActive(slot0.warn, false)
@@ -240,17 +263,8 @@ function slot0.createMap(slot0, slot1, slot2)
 	slot3 = pg.IsometricMap.New(slot1, slot2)
 
 	slot3:SetAfterFunc(function (slot0)
-		slot1 = 0
-
-		for slot5, slot6 in ipairs(slot0) do
-			if not slot6.ob.isBoat then
-				uv0.furnitureModals[slot6.ob.id]:SetSiblingIndex(slot1)
-			end
-
-			slot1 = slot1 + 1
-		end
-
 		uv0.shipsView:ReSort()
+		pg.BackYardSortMgr.GetInstance():SortHandler()
 	end)
 
 	return slot3
@@ -450,19 +464,9 @@ function slot0.registerFurnitureEvent(slot0, slot1)
 
 	function slot6()
 		if uv0:isShowDesc() then
-			uv1.furnitureDescWindow:Show(uv0, function (slot0)
-				slot1, slot2, slot3 = uv0:GetVoiceAnim()
-
-				uv1:PlayAnim(slot0 and slot2 or slot1)
-
-				if slot0 then
-					uv1:PlayEffect(slot3)
-				else
-					uv1:StopEffect(slot3)
-				end
-			end)
+			uv1.furnitureDescWindow:Show(uv0)
 		elseif uv0:isTouchSpine() then
-			slot0, slot1, slot2, slot3 = uv0:getTouchSpineConfig()
+			slot0, slot1, slot2, slot3, slot4, slot5 = uv0:getTouchSpineConfig()
 
 			uv2:TouchSpineAnim(function ()
 				uv0:emit(BackyardMainMediator.ON_REMOVE_MOVE_FURNITURE, uv1.id)
@@ -475,6 +479,10 @@ function slot0.registerFurnitureEvent(slot0, slot1)
 					else
 						uv1:disableEffect(uv0)
 					end
+				end
+
+				if uv2 then
+					uv1.dynamicBg:Switch(slot0, uv2, uv3.iconTF)
 				end
 			end)
 		end
@@ -611,6 +619,12 @@ function slot0.removeFurn(slot0, slot1)
 		end
 	end
 
+	if slot1:isTouchSpine() then
+		slot2, slot3, slot4, slot5, slot6, slot7 = slot1:getTouchSpineConfig()
+
+		slot0.dynamicBg:ClearByName(slot7)
+	end
+
 	slot0.furnitureModals[slot1.id]:Clear()
 
 	slot0.curFurnModal = nil
@@ -645,7 +659,8 @@ function slot0.furnitureBeginDrag(slot0, slot1)
 			return
 		end
 
-		slot1:SetParent(uv0.floorContain, true)
+		pg.BackYardSortMgr.GetInstance():AddToTopSortGroup(slot1)
+		pg.BackYardSortMgr.GetInstance():ClearFurModel(slot1)
 	end(slot1)
 end
 
@@ -880,6 +895,22 @@ function slot0.clearSpineExtra(slot0, slot1, slot2, slot3)
 	slot0.shipsView:ClearSpineExtra(slot1, slot2, slot3)
 end
 
+function slot0.StartFolloweInterAction(slot0, slot1, slot2)
+	slot0.factory:Make(BackyardFurnitureVO.New({
+		id = slot2
+	}), function (slot0)
+		uv0.followeModals[uv1] = BackYardFurnitureModel.New(slot0, uv2, uv0.backyardPoolMgr)
+
+		uv0.shipsView:StartFolloweInterAction(uv3, uv1)
+	end)
+end
+
+function slot0.CancelFolloweInterAction(slot0, slot1, slot2)
+	slot0.followeModals[slot2]:Clear()
+
+	slot0.followeModals[slot2] = nil
+end
+
 function slot0.boatMove(slot0, slot1, slot2, slot3)
 	slot0.shipsView:BoatMove(slot1, slot2, slot3)
 end
@@ -937,7 +968,13 @@ end
 
 function slot0.OnWillExit(slot0)
 	slot0.shipsView:Destroy()
+	slot0.dynamicBg:Dispose()
 
+	for slot4, slot5 in pairs(slot0.followeModals) do
+		slot5:Clear()
+	end
+
+	slot0.followeModals = nil
 	slot1 = {
 		{},
 		{},
@@ -983,14 +1020,12 @@ function slot0.OnWillExit(slot0)
 		Destroy(slot0.baseBG)
 	end
 
-	if not IsNil(slot0.floorGrid) then
-		setActive(slot0.floorGrid, false)
-	end
-
+	setButtonEnabled(slot0.decorationBtn, true)
 	slot0.wallPaperModel:dispose()
 	slot0.floorPaperModel:dispose()
 	slot0.msgBoxWindow:Destroy()
 	slot0.furnitureDescWindow:Destroy()
+	pg.BackYardSortMgr.GetInstance():Dispose()
 end
 
 return slot0

@@ -102,7 +102,7 @@ function slot0.addTask(slot0, slot1)
 	slot0.data[slot1.id]:onAdded()
 	slot0.facade:sendNotification(uv0.TASK_ADDED, slot1:clone())
 
-	if slot1:getConfig("type") == 10 and slot1:isFinish() then
+	if slot1:GetRealType() == 10 and slot1:isFinish() then
 		slot0:sendNotification(GAME.SUBMIT_TASK, slot1.id)
 	end
 end
@@ -114,7 +114,7 @@ function slot0.updateTask(slot0, slot1)
 	slot0.data[slot1.id]:display("updated")
 	slot0.facade:sendNotification(uv0.TASK_UPDATED, slot1:clone())
 
-	if slot1:getConfig("type") == 10 and slot1:isFinish() then
+	if slot1:GetRealType() == 10 and slot1:isFinish() then
 		slot0:sendNotification(GAME.SUBMIT_TASK, slot1.id)
 	end
 end
@@ -148,7 +148,11 @@ end
 function slot0.getCanReceiveCount(slot0)
 	for slot5, slot6 in pairs(slot0.data) do
 		if slot6:getConfig("visibility") == 1 and slot6:isFinish() and slot6:isReceive() == false then
-			slot1 = 0 + 1
+			for slot11, slot12 in ipairs(slot6:getConfig("award_display")) do
+				if not LOCK_UR_SHIP and slot12[1] == DROP_TYPE_VITEM and pg.item_data_statistics[slot12[2]].virtual_type == 20 and (not LOCK_UR_SHIP and getProxy(BagProxy):GetLimitCntById(pg.gameset.urpt_chapter_max.description[1]) or 0) + slot12[3] - (not LOCK_UR_SHIP and pg.gameset.urpt_chapter_max.description[2] or 0) > 0 then
+					slot1 = 0 + 1 - 1
+				end
+			end
 		end
 	end
 
@@ -157,7 +161,7 @@ end
 
 function slot0.getNotFinishCount(slot0, slot1)
 	for slot7, slot8 in pairs(slot0.data) do
-		if slot8:getConfig("type") == (slot1 or 3) and slot8:isFinish() == false then
+		if slot8:GetRealType() == (slot1 or 3) and slot8:isFinish() == false then
 			slot3 = 0 + 1
 		end
 	end
@@ -278,7 +282,7 @@ end
 
 function slot0.pushAutoSubmitTask(slot0)
 	for slot4, slot5 in pairs(slot0.data) do
-		if slot5:getConfig("type") == 10 and slot5:isFinish() then
+		if slot5:GetRealType() == 10 and slot5:isFinish() then
 			slot0:sendNotification(GAME.SUBMIT_TASK, slot5.id)
 		end
 	end

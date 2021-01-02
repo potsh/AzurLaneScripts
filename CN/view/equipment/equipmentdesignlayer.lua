@@ -47,6 +47,9 @@ function slot0.init(slot0)
 	slot0.listEmptyTxt = slot0:findTF("Text", slot0.listEmptyTF)
 
 	setText(slot0.listEmptyTxt, i18n("list_empty_tip_equipmentdesignui"))
+	pg.UIMgr.GetInstance():OverlayPanel(slot0.indexPanel, {
+		groupName = LayerWeightConst.GROUP_EQUIPMENTSCENE
+	})
 end
 
 slot1 = {
@@ -63,12 +66,8 @@ function slot0.didEnter(slot0)
 	slot0:initDesigns()
 	onToggle(slot0, slot0.sortBtn, function (slot0)
 		if slot0 then
-			pg.UIMgr.GetInstance():OverlayPanel(uv0.indexPanel, {
-				groupName = LayerWeightConst.GROUP_EQUIPMENTSCENE
-			})
 			setActive(uv0.indexPanel, true)
 		else
-			pg.UIMgr.GetInstance():UnOverlayPanel(uv0.indexPanel, uv0._tf)
 			setActive(uv0.indexPanel, false)
 		end
 	end, SFX_PANEL)
@@ -137,14 +136,18 @@ function slot0.initDesigns(slot0)
 end
 
 function slot2(slot0, slot1)
-	setImageSprite(findTF(slot0, "name_bg/tag"), GetSpriteFromAtlas("equiptype", EquipType.type2Tag(slot1.config.type)))
+	slot3 = slot1.config
+
+	setImageSprite(findTF(slot0, "name_bg/tag"), GetSpriteFromAtlas("equiptype", EquipType.type2Tag(slot3.type)))
 	eachChild(findTF(slot0, "attrs"), function (slot0)
 		setActive(slot0, false)
 	end)
 
-	slot4 = slot1:GetPropertiesInfo().attrs
+	slot4 = underscore.filter(slot1:GetPropertiesInfo().attrs, function (slot0)
+		return not slot0.type or slot0.type ~= AttributeType.AntiSiren
+	end)
 
-	for slot9, slot10 in ipairs(EquipType.isDevice(slot1.configId) and {
+	for slot10, slot11 in ipairs(slot3.skill_id[1] and slot1:isDevice() and {
 		1,
 		2,
 		5
@@ -154,26 +157,20 @@ function slot2(slot0, slot1)
 		2,
 		3
 	}) do
-		setActive(slot2:Find("attr_" .. slot10), true)
+		setActive(slot2:Find("attr_" .. slot11), true)
 
-		if slot10 == 5 then
-			slot12 = ""
-
-			if slot3.skill_id[1] then
-				slot12 = getSkillName(slot13)
-			end
-
-			setText(slot11:Find("value"), slot12)
+		if slot11 == 5 then
+			setText(slot12:Find("value"), getSkillName(slot5))
 		else
-			slot12 = ""
 			slot13 = ""
+			slot14 = ""
 
 			if #slot4 > 0 then
-				slot12, slot13 = Equipment.GetInfoTrans(table.remove(slot4, 1))
+				slot13, slot14 = Equipment.GetInfoTrans(table.remove(slot4, 1))
 			end
 
-			setText(slot11:Find("tag"), slot12)
-			setText(slot11:Find("value"), slot13)
+			setText(slot12:Find("tag"), slot13)
+			setText(slot12:Find("value"), slot14)
 		end
 	end
 end
@@ -414,7 +411,7 @@ function slot0.showDesignDesc(slot0, slot1)
 			return
 		end
 
-		uv0 = math.max(math.min(uv1, uv2.player.equip_bag_max - uv2.capacity), 1)
+		uv0 = math.max(math.min(uv1, uv2.player:getMaxEquipmentBag() - uv2.capacity), 1)
 
 		uv3(uv0)
 	end, SFX_PANEL)
@@ -440,6 +437,12 @@ function slot0.hideMsgBox(slot0)
 end
 
 function slot0.onBackPressed(slot0)
+	if isActive(slot0.indexPanel) then
+		triggerButton(slot0.indexPanel)
+
+		return
+	end
+
 	if slot0.isShowDesc then
 		slot0:hideMsgBox()
 	else
@@ -449,6 +452,8 @@ function slot0.onBackPressed(slot0)
 end
 
 function slot0.willExit(slot0)
+	pg.UIMgr.GetInstance():UnOverlayPanel(slot0.indexPanel, slot0._tf)
+
 	if slot0.leftEventTrigger then
 		ClearEventTrigger(slot0.leftEventTrigger)
 	end

@@ -506,6 +506,61 @@ pg.task_data_trigger = {
 			}
 		}
 	},
+	[50] = {
+		group_id = 10306,
+		id = 50,
+		activity_id = 2047,
+		args = {
+			{
+				1,
+				5511
+			}
+		}
+	},
+	[51] = {
+		group_id = 20703,
+		id = 51,
+		activity_id = 2048,
+		args = {
+			{
+				1,
+				5521
+			}
+		}
+	},
+	[52] = {
+		group_id = 20402,
+		id = 52,
+		activity_id = 2049,
+		args = {
+			{
+				1,
+				5531
+			}
+		}
+	},
+	[53] = {
+		group_id = 40301,
+		id = 53,
+		activity_id = 2050,
+		args = {
+			{
+				1,
+				5541
+			}
+		}
+	},
+	[54] = {
+		group_id = 20303,
+		id = 54,
+		activity_id = 2051,
+		args = {
+			{
+				1,
+				5551
+			}
+		}
+	},
 	all = {
 		1,
 		3,
@@ -552,6 +607,11 @@ pg.task_data_trigger = {
 		46,
 		47,
 		48,
-		49
+		49,
+		50,
+		51,
+		52,
+		53,
+		54
 	}
 }

@@ -40,8 +40,6 @@ function slot0.init(slot0)
 
 	setActive(slot0.lockAll, false)
 	setActive(slot0.tab, false)
-
-	uv0 = require("GameCfg.activity.EntranceData")
 end
 
 function slot0.didEnter(slot0)
@@ -121,6 +119,12 @@ function slot0.updateActivity(slot0, slot1)
 		if ActivityConst.PageIdLink[slot1.id] then
 			slot1 = getProxy(ActivityProxy):getActivityById(ActivityConst.PageIdLink[slot1.id])
 		else
+			slot0:flushTabs()
+
+			if slot0.pageDic[slot1.id] then
+				slot2:ActionInvoke("OnHideFulsh", slot1)
+			end
+
 			return
 		end
 	end
@@ -142,6 +146,15 @@ function slot0.updateActivity(slot0, slot1)
 
 		slot0.pageDic[slot1.id]:ActionInvoke("Flush", slot1)
 	end
+end
+
+function slot0.GetOnShowEntranceData()
+	uv0 = uv0 or require("GameCfg.activity.EntranceData")
+	uv0 = uv0 or {}
+
+	return _.select(uv0, function (slot0)
+		return slot0.isShow and slot0.isShow()
+	end)
 end
 
 function slot0.updateEntrances(slot0)
@@ -169,9 +182,7 @@ function slot0.updateEntrances(slot0)
 			LoadImageSpriteAsync("activitybanner/" .. slot4, slot2)
 		end
 	end)
-	slot0.entranceList:align(math.max(#_.select(uv0, function (slot0)
-		return slot0.isShow and slot0.isShow()
-	end), 5))
+	slot0.entranceList:align(math.max(#uv0.GetOnShowEntranceData(), 5))
 end
 
 function slot0.flushTabs(slot0)

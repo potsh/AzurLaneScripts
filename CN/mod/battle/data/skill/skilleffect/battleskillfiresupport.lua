@@ -31,7 +31,9 @@ function slot2.DoDataEffect(slot0, slot1, slot2)
 	end
 
 	slot0._weapon:updateMovementInfo()
-	slot0._weapon:SingleFire(slot2, slot0._emitter)
+	slot0._weapon:SingleFire(slot2, slot0._emitter, function ()
+		uv0._weapon:Clear()
+	end)
 end
 
 function slot2.DoDataEffectWithoutTarget(slot0, slot1)
@@ -41,7 +43,7 @@ end
 function slot2.Clear(slot0)
 	uv0.super.Clear(slot0)
 
-	if slot0._weapon then
+	if slot0._weapon and not slot0._weapon:GetHost():IsAlive() then
 		slot0._weapon:Clear()
 	end
 end

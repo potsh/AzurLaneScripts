@@ -9,6 +9,7 @@ slot0.TypeExtra = 5
 slot0.TypeSpHunt = 7
 slot0.TypeSpBomb = 8
 slot0.TypeDefence = 10
+slot0.TypeDOALink = 11
 slot0.SubjectPlayer = 1
 slot0.SubjectChampion = 2
 slot0.MaxRow = 10
@@ -49,6 +50,7 @@ slot0.AttachStaticEnemys = {
 slot0.Story = 1
 slot0.StoryObstacle = 2
 slot0.StoryTrigger = 3
+slot0.EventTeleport = 4
 slot0.EvtType_Poison = 1
 slot0.EvtType_AdditionalFloor = 2
 slot0.FlagBanaiAirStrike = 4
@@ -66,10 +68,12 @@ slot0.BoxSupply = 6
 slot0.BoxTorpedo = 7
 slot0.BoxBanaiDamage = 8
 slot0.BoxLavaDamage = 9
+slot0.LBIdle = 0
 slot0.LBCoastalGun = 1
 slot0.LBHarbor = 2
 slot0.LBDock = 3
 slot0.LBAntiAir = 4
+slot0.LBIDAirport = 13
 slot0.RoundPlayer = 0
 slot0.RoundEnemy = 1
 slot0.AIEasy = 1
@@ -92,12 +96,6 @@ slot0.StrategySonarDetect = 12
 slot0.StrategyRepair = 4
 slot0.StrategyPresents = {
 	4
-}
-slot0.Status2StgBuff = {
-	90,
-	91,
-	93,
-	92
 }
 slot0.StgDtRepair = "healthy"
 slot0.StgDtAirPrepare = "air"
@@ -215,13 +213,13 @@ end
 slot0.OpRetreat = 0
 slot0.OpMove = 1
 slot0.OpBox = 2
-slot0.OpStory = 3
 slot0.OpAmbush = 4
 slot0.OpStrategy = 5
 slot0.OpRepair = 6
 slot0.OpSupply = 7
 slot0.OpEnemyRound = 8
 slot0.OpSubState = 9
+slot0.OpStory = 10
 slot0.OpBarrier = 16
 slot0.OpSubTeleport = 19
 slot0.OpRequest = 49
@@ -240,6 +238,16 @@ slot0.KizunaJammingEngage = 1
 slot0.KizunaJammingDodge = 2
 slot0.StatusDay = 3
 slot0.StatusNight = 4
+slot0.StatusAirportOutControl = 5
+slot0.StatusAirportUnderControl = 6
+slot0.Status2StgBuff = {
+	[slot0.KizunaJammingEngage] = 90,
+	[slot0.KizunaJammingDodge] = 91,
+	[slot0.StatusDay] = 93,
+	[slot0.StatusNight] = 92,
+	[slot0.StatusAirportOutControl] = 8801,
+	[slot0.StatusAirportUnderControl] = 8802
+}
 slot0.HpGreen = 3000
 
 function slot0.GetAmbushDisplay(slot0)
@@ -331,15 +339,16 @@ slot0.ForbiddenUp = 8
 slot0.ForbiddenRow = 3
 slot0.ForbiddenColumn = 12
 slot0.ForbiddenAll = 15
-slot0.CellPriorityNone = 0
-slot0.CellPriorityAttachment = 1
-slot0.CellPriorityLittle = 2
-slot0.CellPriorityEnemy = 3
-slot0.CellPriorityFleet = 3
-slot0.CellPriorityUpperEffect = 5
-slot0.CellPriorityTopMark = 6
 slot0.PriorityPerRow = 100
-slot0.PriorityMax = 9999
+slot0.PriorityMin = -10000
+slot0.CellPriorityNone = 0 + slot0.PriorityMin
+slot0.CellPriorityAttachment = 1 + slot0.PriorityMin
+slot0.CellPriorityLittle = 2 + slot0.PriorityMin
+slot0.CellPriorityEnemy = 3 + slot0.PriorityMin
+slot0.CellPriorityFleet = 3 + slot0.PriorityMin
+slot0.CellPriorityUpperEffect = 5 + slot0.PriorityMin
+slot0.CellPriorityTopMark = 6 + slot0.PriorityMin
+slot0.PriorityMax = 10000 + slot0.PriorityMin
 slot0.LayerWeightMap = -1000
 slot0.LayerWeightMapAnimation = slot0.LayerWeightMap + 1
 slot0.AirDominance = {
@@ -373,5 +382,14 @@ slot0.AirDominance = {
 		color = Color.New(0.615686274509804, 0.9215686274509803, 0.14901960784313725)
 	}
 }
+chapter_skip_battle = PlayerPrefs.GetInt("chapter_skip_battle") or 0
+
+function switch_chapter_skip_battle()
+	chapter_skip_battle = 1 - chapter_skip_battle
+
+	PlayerPrefs.SetInt("chapter_skip_battle", chapter_skip_battle)
+	PlayerPrefs.Save()
+	pg.TipsMgr.GetInstance():ShowTips(chapter_skip_battle == 1 and "已开启战斗跳略" or "已关闭战斗跳略")
+end
 
 return slot0

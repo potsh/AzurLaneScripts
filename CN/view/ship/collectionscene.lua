@@ -10,7 +10,8 @@ slot0.ShipIndex = {
 	display = {
 		index = IndexConst.FlagRange2Bits(IndexConst.IndexAll, IndexConst.IndexOther),
 		camp = IndexConst.FlagRange2Bits(IndexConst.CampAll, IndexConst.CampOther),
-		rarity = IndexConst.FlagRange2Bits(IndexConst.RarityAll, IndexConst.Rarity5)
+		rarity = IndexConst.FlagRange2Bits(IndexConst.RarityAll, IndexConst.Rarity5),
+		extra = IndexConst.FlagRange2Bits(IndexConst.ExtraAll, IndexConst.ExtraNotObtained)
 	},
 	index = IndexConst.Flags2Bits({
 		IndexConst.IndexAll
@@ -20,6 +21,9 @@ slot0.ShipIndex = {
 	}),
 	rarity = IndexConst.Flags2Bits({
 		IndexConst.RarityAll
+	}),
+	extra = IndexConst.Flags2Bits({
+		IndexConst.ExtraAll
 	})
 }
 
@@ -66,7 +70,6 @@ function slot0.init(slot0)
 		slot0:findTF("frame/tagRoot/card", slot0.leftPanel),
 		slot0:findTF("frame/tagRoot/display", slot0.leftPanel),
 		slot0:findTF("frame/tagRoot/trans", slot0.leftPanel),
-		slot0:findTF("frame/tagRoot/memory", slot0.leftPanel),
 		slot0:findTF("frame/tagRoot/gallery", slot0.leftPanel),
 		slot0:findTF("frame/tagRoot/music", slot0.leftPanel)
 	}
@@ -74,7 +77,6 @@ function slot0.init(slot0)
 		"initCardPanel",
 		"initDisplayPanel",
 		"initCardPanel",
-		"initMemoryPanel",
 		"initGalleryPanel",
 		"initMusicPanel"
 	}
@@ -99,7 +101,8 @@ function slot0.init(slot0)
 	slot0.cardToggles = {
 		slot0:findTF("char", slot0.cardToggleGroup),
 		slot0:findTF("link", slot0.cardToggleGroup),
-		slot0:findTF("blueprint", slot0.cardToggleGroup)
+		slot0:findTF("blueprint", slot0.cardToggleGroup),
+		slot0:findTF("meta", slot0.cardToggleGroup)
 	}
 	slot0.cardList.decelerationRate = 0.07
 	slot0.bonusPanel = slot0:findTF("bonus_panel")
@@ -162,11 +165,7 @@ function slot0.didEnter(slot0)
 	onButton(slot0, slot0.backBtn, function ()
 		uv0.contextData.cardScrollValue = 0
 
-		if uv0.toggles[4]:GetComponent(typeof(Toggle)).isOn and uv0.memories then
-			uv0:return2MemoryGroup()
-		else
-			uv0:emit(uv1.ON_BACK)
-		end
+		uv0:emit(uv1.ON_BACK)
 	end, SFX_CANCEL)
 
 	slot0.helpBtn = slot0:findTF("help_btn", slot0.leftPanel)
@@ -194,44 +193,40 @@ function slot0.didEnter(slot0)
 	for slot5, slot6 in ipairs(slot0.toggles) do
 		onToggle(slot0, slot6, function (slot0)
 			if slot0 then
-				if uv0 == 4 and uv1.memories then
-					uv1:return2MemoryGroup()
-				end
-
-				if uv1.contextData.toggle ~= uv0 then
-					if uv1.contextData.toggle == 1 and uv1.contextData.cardToggle == 1 then
-						uv1.contextData.cardScrollValue = uv1.cardList.value
+				if uv0.contextData.toggle ~= uv1 then
+					if uv0.contextData.toggle == 1 and uv0.contextData.cardToggle == 1 then
+						uv0.contextData.cardScrollValue = uv0.cardList.value
 					end
 
-					uv1.contextData.toggle = uv0
+					uv0.contextData.toggle = uv1
 
-					if uv1.toggleUpdates[uv0] then
-						uv1[uv1.toggleUpdates[uv0]](uv1)
-						uv1:calFavoriteRate()
+					if uv0.toggleUpdates[uv1] then
+						uv0[uv0.toggleUpdates[uv1]](uv0)
+						uv0:calFavoriteRate()
 					end
 				end
 
-				setActive(uv1.helpBtn, uv0 == 1)
+				setActive(uv0.helpBtn, uv1 == 1)
 
-				if uv0 == 1 and not getProxy(SettingsProxy):IsShowCollectionHelp() then
-					triggerButton(uv1.helpBtn)
+				if uv1 == 1 and not getProxy(SettingsProxy):IsShowCollectionHelp() then
+					triggerButton(uv0.helpBtn)
 					slot1:SetCollectionHelpFlag(true)
 				end
 
-				if uv0 ~= 6 then
-					if uv1.musicView and uv1.musicView:CheckState(BaseSubView.STATES.INITED) then
-						uv1.musicView:tryPauseMusic()
-						uv1.musicView:closeSongListPanel()
+				if uv1 ~= 5 then
+					if uv0.musicView and uv0.musicView:CheckState(BaseSubView.STATES.INITED) then
+						uv0.musicView:tryPauseMusic()
+						uv0.musicView:closeSongListPanel()
 					end
 
-					pg.CriMgr:GetInstance():ResumeNormalBGM()
-				elseif uv0 == 6 and uv1.musicView and uv1.musicView:CheckState(BaseSubView.STATES.INITED) then
-					pg.CriMgr:GetInstance():StopBGM()
-					uv1.musicView:tryPlayMusic()
+					pg.CriMgr.GetInstance():ResumeLastNormalBGM()
+				elseif uv1 == 5 and uv0.musicView and uv0.musicView:CheckState(BaseSubView.STATES.INITED) then
+					pg.CriMgr.GetInstance():StopBGM()
+					uv0.musicView:tryPlayMusic()
 				end
 
-				if uv0 ~= 5 and uv1.galleryView and uv1.galleryView:CheckState(BaseSubView.STATES.INITED) then
-					uv1.galleryView:closePicPanel()
+				if uv1 ~= 4 and uv0.galleryView and uv0.galleryView:CheckState(BaseSubView.STATES.INITED) then
+					uv0.galleryView:closePicPanel()
 				end
 			end
 		end, SFX_UI_TAG)
@@ -295,8 +290,8 @@ end
 
 function slot0.updateCollectNotices(slot0, slot1)
 	setActive(slot0.tip, slot1)
-	setActive(slot0:findTF("tip", slot0.toggles[5]), getProxy(AppreciateProxy):isGalleryHaveNewRes())
-	setActive(slot0:findTF("tip", slot0.toggles[6]), getProxy(AppreciateProxy):isMusicHaveNewRes())
+	setActive(slot0:findTF("tip", slot0.toggles[4]), getProxy(AppreciateProxy):isGalleryHaveNewRes())
+	setActive(slot0:findTF("tip", slot0.toggles[5]), getProxy(AppreciateProxy):isMusicHaveNewRes())
 end
 
 function slot0.calFavoriteRate(slot0)
@@ -330,29 +325,22 @@ function slot0.initIndexPanel(slot0)
 	slot0.indexBtn = slot0:findTF("index_button", slot0.top)
 
 	onButton(slot0, slot0.indexBtn, function ()
-		slot0 = Clone(uv0.ShipIndex.display)
+		slot0 = Clone(uv0.ShipIndex)
 
 		if uv1.contextData.toggle == 1 and uv1.contextData.cardToggle == 2 then
+			slot0.display.camp = nil
 			slot0.camp = nil
 		end
 
-		uv1:emit(uv0.ON_INDEX, {
-			display = slot0,
-			index = uv0.ShipIndex.index,
-			camp = uv0.ShipIndex.camp,
-			rarity = uv0.ShipIndex.rarity,
-			callback = function (slot0)
-				uv0.ShipIndex.index = slot0.index
-
-				if slot0.camp then
-					uv0.ShipIndex.camp = slot0.camp
-				end
-
-				uv0.ShipIndex.rarity = slot0.rarity
-
-				uv1:initCardPanel()
+		function slot0.callback(slot0)
+			for slot4, slot5 in pairs(slot0) do
+				uv0.ShipIndex[slot4] = slot5
 			end
-		})
+
+			uv1:initCardPanel()
+		end
+
+		uv1:emit(uv0.ON_INDEX, slot0)
 	end, SFX_PANEL)
 end
 
@@ -365,11 +353,16 @@ function slot0.onInitCard(slot0, slot1)
 
 	onButton(slot0, slot2.go, function ()
 		if uv0.state == ShipGroup.STATE_UNLOCK then
-			LeanTween.delayedCall(0.2, System.Action(function ()
-				uv0.contextData.cardScrollValue = uv0.cardList.value
+			if not uv1.isClicked then
+				uv1.isClicked = true
 
-				uv0:emit(uv1.SHOW_DETAIL, uv2.showTrans, uv2.shipGroup.id)
-			end))
+				LeanTween.delayedCall(0.2, System.Action(function ()
+					uv0.isClicked = false
+					uv0.contextData.cardScrollValue = uv0.cardList.value
+
+					uv0:emit(uv1.SHOW_DETAIL, uv2.showTrans, uv2.shipGroup.id)
+				end))
+			end
 		elseif uv0.state == ShipGroup.STATE_NOTGET then
 			if uv0.showTrans == true and uv0.shipGroup.trans == true then
 				return
@@ -436,77 +429,20 @@ function slot0.cardFilter(slot0)
 	slot1 = _.filter(pg.ship_data_group.all, function (slot0)
 		return pg.ship_data_group[slot0].handbook_type == uv0.contextData.cardToggle - 1
 	end)
-	slot2 = _.min(slot1)
-	slot3 = _.max(slot1)
 
-	if uv0.ShipIndex.index == bit.lshift(1, IndexConst.IndexAll) and uv0.ShipIndex.rarity == bit.lshift(1, IndexConst.RarityAll) and slot0.contextData.cardToggle == 1 and uv0.ShipIndex.camp == bit.lshift(1, IndexConst.CampAll) then
-		for slot7 = slot2, slot3 do
-			slot8 = false
-			slot10 = false
+	table.sort(slot1)
 
-			if pg.ship_data_group[slot7] then
-				if slot0.contextData.cardToggle == 1 and not Nation.IsLinkType(ShipGroup.getDefaultShipConfig(slot9.group_type).nationality) then
-					slot0.codeShips[#slot0.codeShips + 1] = {
-						showTrans = false,
-						id = slot7,
-						code = slot7,
-						group = slot0.shipGroups[slot9.group_type],
-						index_id = slot9.index_id
-					}
-				elseif slot0.contextData.cardToggle == 2 and slot10 then
-					slot0.codeShips[#slot0.codeShips + 1] = {
-						showTrans = false,
-						id = slot7,
-						code = slot7 - 10000,
-						group = slot8,
-						index_id = slot9.index_id
-					}
-				elseif slot0.contextData.cardToggle == 3 then
-					slot0.codeShips[#slot0.codeShips + 1] = {
-						showTrans = false,
-						id = slot7,
-						code = slot7 - 20000,
-						group = slot8,
-						index_id = slot9.index_id
-					}
-				end
-			end
-		end
-	else
-		for slot7 = slot2, slot3 do
-			if pg.ship_data_group[slot7] then
-				slot9 = ShipGroup.New({
-					id = slot8.group_type
-				})
-
-				if ShipGroup.getState(slot7, slot0.shipGroups[slot8.group_type], false) ~= ShipGroup.STATE_LOCK and slot9 and IndexConst.filterByIndex(slot9, uv0.ShipIndex.index) and IndexConst.filterByRarity(slot9, uv0.ShipIndex.rarity) then
-					if slot0.contextData.cardToggle == 1 and not Nation.IsLinkType(slot9:getNation()) and IndexConst.filterByCamp(slot9, uv0.ShipIndex.camp) then
-						slot0.codeShips[#slot0.codeShips + 1] = {
-							showTrans = false,
-							id = slot7,
-							code = slot7,
-							group = slot0.shipGroups[slot8.group_type],
-							index_id = slot8.index_id
-						}
-					elseif slot0.contextData.cardToggle == 2 and slot12 then
-						slot0.codeShips[#slot0.codeShips + 1] = {
-							showTrans = false,
-							id = slot7,
-							code = slot7 - 10000,
-							group = slot10,
-							index_id = slot8.index_id
-						}
-					elseif slot0.contextData.cardToggle == 3 and IndexConst.filterByCamp(slot9, uv0.ShipIndex.camp) then
-						slot0.codeShips[#slot0.codeShips + 1] = {
-							showTrans = false,
-							id = slot7,
-							code = slot7 - 20000,
-							group = slot10,
-							index_id = slot8.index_id
-						}
-					end
-				end
-			end
+	for slot5, slot6 in ipairs(slot1) do
+		if IndexConst.filterByIndex(slot0.shipGroups[pg.ship_data_group[slot6].group_type] or ShipGroup.New({
+			id = slot7.group_type
+		}), uv0.ShipIndex.index) and (slot0.contextData.cardToggle == 2 or IndexConst.filterByCamp(slot8, uv0.ShipIndex.camp)) and slot0.contextData.cardToggle == 4 == Nation.IsMeta(ShipGroup.getDefaultShipConfig(slot7.group_type).nationality) and IndexConst.filterByRarity(slot8, uv0.ShipIndex.rarity) and IndexConst.filterByExtra(slot8, uv0.ShipIndex.extra) then
+			slot0.codeShips[#slot0.codeShips + 1] = {
+				showTrans = false,
+				id = slot6,
+				code = slot6 - (slot0.contextData.cardToggle - 1) * 10000,
+				group = slot0.shipGroups[slot7.group_type],
+				index_id = slot7.index_id
+			}
 		end
 	end
 end
@@ -516,49 +452,21 @@ function slot0.transFilter(slot0)
 	slot1 = _.filter(pg.ship_data_group.all, function (slot0)
 		return pg.ship_data_group[slot0].handbook_type == 0
 	end)
-	slot2 = _.min(slot1)
-	slot3 = _.max(slot1)
 
-	if uv0.ShipIndex.index == bit.lshift(1, IndexConst.IndexAll) and uv0.ShipIndex.rarity == bit.lshift(1, IndexConst.RarityAll) and uv0.ShipIndex.camp == bit.lshift(1, IndexConst.CampAll) then
-		for slot7 = slot2, slot3 do
-			slot8 = false
+	table.sort(slot1)
 
-			if pg.ship_data_group[slot7] and pg.ship_data_trans[slot9.group_type] then
-				if slot0.shipGroups[slot9.group_type] and not slot10.trans then
-					slot10 = nil
-				end
-
-				slot0.codeShips[#slot0.codeShips + 1] = {
-					showTrans = true,
-					id = slot7,
-					code = 3000 + slot7,
-					group = slot10,
-					index_id = slot9.index_id
-				}
-			end
-		end
-	else
-		for slot7 = slot2, slot3 do
-			if pg.ship_data_group[slot7] then
-				if slot0.shipGroups[slot8.group_type] and slot9.trans and IndexConst.filterByIndex(slot9, uv0.ShipIndex.index) and IndexConst.filterByRarity(slot9, uv0.ShipIndex.rarity) and IndexConst.filterByCamp(slot9, uv0.ShipIndex.camp) then
-					slot0.codeShips[#slot0.codeShips + 1] = {
-						showTrans = true,
-						id = slot7,
-						code = 3000 + slot7,
-						group = slot9,
-						index_id = slot8.index_id
-					}
-				elseif pg.ship_data_trans[slot8.group_type] and IndexConst.filterByIndex(ShipGroup.New({
-					id = slot8.group_type
-				}), uv0.ShipIndex.index) and IndexConst.filterByRarity(slot10, uv0.ShipIndex.rarity) and IndexConst.filterByCamp(slot10, uv0.ShipIndex.camp) then
-					slot0.codeShips[#slot0.codeShips + 1] = {
-						showTrans = true,
-						id = slot7,
-						code = 3000 + slot7,
-						index_id = slot8.index_id
-					}
-				end
-			end
+	for slot5, slot6 in ipairs(slot1) do
+		if pg.ship_data_trans[pg.ship_data_group[slot6].group_type] and IndexConst.filterByIndex(slot0.shipGroups[slot7.group_type] or ShipGroup.New({
+			remoulded = true,
+			id = slot7.group_type
+		}), uv0.ShipIndex.index) and IndexConst.filterByCamp(slot8, uv0.ShipIndex.camp) and IndexConst.filterByRarity(slot8, uv0.ShipIndex.rarity) and IndexConst.filterByExtra(slot8, uv0.ShipIndex.extra) then
+			slot0.codeShips[#slot0.codeShips + 1] = {
+				showTrans = true,
+				id = slot6,
+				code = 3000 + slot6,
+				group = slot8.trans and slot8 or nil,
+				index_id = slot7.index_id
+			}
 		end
 	end
 end
@@ -759,7 +667,7 @@ function slot0.return2MemoryGroup(slot0)
 
 		if slot3 >= 0 then
 			slot5 = slot0.memoriesGrid.cellSize.y + slot0.memoriesGrid.spacing.y
-			slot2 = Mathf.Clamp01((slot5 * math.floor((slot3 - 1) / uv0) + slot0.memoryList.paddingFront) / (slot5 * math.floor((#slot0.memoryGroups - 1) / uv0 + 1) - slot0.memoryViewport.rect.height))
+			slot2 = Mathf.Clamp01((slot5 * math.floor((slot3 - 1) / uv0) + slot0.memoryList.paddingFront) / (slot5 * math.ceil(#slot0.memoryGroups / uv0) - slot0.memoryViewport.rect.height))
 		end
 	end
 
@@ -772,7 +680,7 @@ function slot0.initMemoryPanel(slot0)
 		slot4 = _.flatten(slot2:getConfig("config_data"))
 
 		if getProxy(TaskProxy):getTaskById(slot4[#slot4]) and not slot7:isFinish() then
-			pg.StoryMgr.GetInstance():Play("HOSHO8", function ()
+			pg.NewStoryMgr.GetInstance():Play("HOSHO8", function ()
 				uv0:emit(CollectionScene.ACTIVITY_OP, {
 					cmd = 2,
 					activity_id = uv1.id
@@ -795,7 +703,7 @@ function slot0.onInitMemory(slot0, slot1)
 		if uv0.info then
 			if uv0.isGroup then
 				uv1:showSubMemories(uv0.info)
-			elseif uv0.info.is_open == 1 or pg.StoryMgr.GetInstance():IsPlayed(uv0.info.story, true) then
+			elseif uv0.info.is_open == 1 or pg.NewStoryMgr.GetInstance():IsPlayed(uv0.info.story, true) then
 				uv1:playMemory(uv0.info)
 			end
 		end
@@ -857,24 +765,14 @@ function slot0.playMemory(slot0, slot1)
 		end
 
 		setActive(slot0.memoryMask, true)
-		pg.StoryMgr.GetInstance():Play(slot1.story, function ()
+		pg.NewStoryMgr.GetInstance():Play(slot1.story, function ()
 			setActive(uv0.memoryMask, false)
 		end, true)
 	elseif slot1.type == 2 then
-		slot3 = 0
-
-		for slot7, slot8 in pairs(pg.StoryMgr.GetInstance():GetStoryByName("index")) do
-			if slot1.story == slot8 then
-				slot3 = slot7
-
-				break
-			end
-		end
-
 		slot0:emit(uv0.BEGIN_STAGE, {
 			memory = true,
 			system = SYSTEM_PERFORM,
-			stageId = slot3
+			stageId = pg.NewStoryMgr.GetInstance():StoryName2StoryId(slot1.story)
 		})
 	end
 end
@@ -947,7 +845,7 @@ function slot0.initMusicPanel(slot0)
 
 		slot0.musicView:Reset()
 		slot0.musicView:Load()
-		pg.CriMgr:GetInstance():StopBGM()
+		pg.CriMgr.GetInstance():StopBGM()
 	end
 end
 

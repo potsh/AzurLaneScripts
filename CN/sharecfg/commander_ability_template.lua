@@ -1622,7 +1622,7 @@ pg.commander_ability_template = {
 		name = "装填新手·特殊",
 		group_id = 65,
 		worth = 1,
-		desc = "<color=#3dc6ff>重炮、维修</color>装填提高3点",
+		desc = "<color=#3dc6ff>重炮、维修、运输</color>装填提高3点",
 		next = 652,
 		id = 651,
 		icon = "teshu_one_1",
@@ -1632,7 +1632,8 @@ pg.commander_ability_template = {
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				3
@@ -1645,6 +1646,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"<维修>装填",
+				3
+			},
+			{
+				"<运输>装填",
 				3
 			}
 		}
@@ -1654,7 +1659,7 @@ pg.commander_ability_template = {
 		name = "熟练装填手·特殊",
 		group_id = 65,
 		worth = 2,
-		desc = "<color=#3dc6ff>重炮、维修</color>装填提高4点",
+		desc = "<color=#3dc6ff>重炮、维修、运输</color>装填提高4点",
 		next = 653,
 		id = 652,
 		icon = "teshu_one_2",
@@ -1664,7 +1669,8 @@ pg.commander_ability_template = {
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				4
@@ -1677,6 +1683,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"<维修>装填",
+				4
+			},
+			{
+				"<运输>装填",
 				4
 			}
 		}
@@ -1686,7 +1696,7 @@ pg.commander_ability_template = {
 		name = "无影手·特殊",
 		group_id = 65,
 		worth = 3,
-		desc = "<color=#3dc6ff>重炮、维修</color>装填提高6点",
+		desc = "<color=#3dc6ff>重炮、维修、运输</color>装填提高6点",
 		next = 0,
 		id = 653,
 		icon = "teshu_one_3",
@@ -1696,7 +1706,8 @@ pg.commander_ability_template = {
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				6
@@ -1709,6 +1720,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"<维修>装填",
+				6
+			},
+			{
+				"<运输>装填",
 				6
 			}
 		}
@@ -2201,7 +2216,7 @@ pg.commander_ability_template = {
 		name = "轮机手·特殊",
 		group_id = 75,
 		worth = 1,
-		desc = "<color=#3dc6ff>重炮、维修</color>耐久提高40点",
+		desc = "<color=#3dc6ff>重炮、维修、运输</color>耐久提高40点",
 		next = 752,
 		id = 751,
 		icon = "teshu_naijiu_1",
@@ -2211,7 +2226,8 @@ pg.commander_ability_template = {
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				40
@@ -2224,6 +2240,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"<维修>耐久",
+				40
+			},
+			{
+				"<运输>耐久",
 				40
 			}
 		}
@@ -2233,7 +2253,7 @@ pg.commander_ability_template = {
 		name = "熟练轮机手·特殊",
 		group_id = 75,
 		worth = 2,
-		desc = "<color=#3dc6ff>重炮、维修</color>耐久提高56点",
+		desc = "<color=#3dc6ff>重炮、维修、运输</color>耐久提高56点",
 		next = 753,
 		id = 752,
 		icon = "teshu_naijiu_2",
@@ -2243,7 +2263,8 @@ pg.commander_ability_template = {
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				56
@@ -2256,6 +2277,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"<维修>耐久",
+				56
+			},
+			{
+				"<运输>耐久",
 				56
 			}
 		}
@@ -2265,7 +2290,7 @@ pg.commander_ability_template = {
 		name = "轮机长·特殊",
 		group_id = 75,
 		worth = 3,
-		desc = "<color=#3dc6ff>重炮、维修</color>耐久提高80点",
+		desc = "<color=#3dc6ff>重炮、维修、运输</color>耐久提高80点",
 		next = 0,
 		id = 753,
 		icon = "teshu_naijiu_3",
@@ -2275,7 +2300,8 @@ pg.commander_ability_template = {
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				80
@@ -2288,6 +2314,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"<维修>耐久",
+				80
+			},
+			{
+				"<运输>耐久",
 				80
 			}
 		}
@@ -2657,7 +2687,7 @@ pg.commander_ability_template = {
 		name = "操舵手·中型舰",
 		group_id = 91,
 		worth = 1,
-		desc = "<color=#3dc6ff>轻巡、重巡、轻航、重炮、维修</color>机动提高3点",
+		desc = "<color=#3dc6ff>轻巡、重巡、轻航、重炮、维修、运输</color>机动提高3点",
 		next = 912,
 		id = 911,
 		icon = "xunyang_one_1",
@@ -2670,7 +2700,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				3
@@ -2688,7 +2719,7 @@ pg.commander_ability_template = {
 		name = "熟练舵手·中型舰",
 		group_id = 91,
 		worth = 2,
-		desc = "<color=#3dc6ff>轻巡、重巡、轻航、重炮、维修</color>机动提高4点",
+		desc = "<color=#3dc6ff>轻巡、重巡、轻航、重炮、维修、运输</color>机动提高4点",
 		next = 913,
 		id = 912,
 		icon = "xunyang_one_2",
@@ -2701,7 +2732,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				4
@@ -2719,7 +2751,7 @@ pg.commander_ability_template = {
 		name = "航海长·中型舰",
 		group_id = 91,
 		worth = 3,
-		desc = "<color=#3dc6ff>轻巡、重巡、轻航、重炮、维修</color>机动提高6点",
+		desc = "<color=#3dc6ff>轻巡、重巡、轻航、重炮、维修、运输</color>机动提高6点",
 		next = 0,
 		id = 913,
 		icon = "xunyang_one_3",
@@ -2732,7 +2764,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				6
@@ -3527,7 +3560,7 @@ pg.commander_ability_template = {
 		name = "新晋指挥官·白鹰",
 		group_id = 211,
 		worth = 1,
-		desc = "<color=#ffde38>白鹰</color>防空提高8点、航空提高8点、装填提高3点",
+		desc = "<color=#3dc6ff>白鹰</color>防空提高8点、航空提高8点、装填提高3点",
 		next = 2112,
 		id = 2111,
 		icon = "baiying_two_1",
@@ -3580,7 +3613,7 @@ pg.commander_ability_template = {
 		name = "精锐指挥官·白鹰",
 		group_id = 211,
 		worth = 2,
-		desc = "<color=#ffde38>白鹰</color>防空提高11点、航空提高11点、装填提高4点",
+		desc = "<color=#3dc6ff>白鹰</color>防空提高11点、航空提高11点、装填提高4点",
 		next = 2113,
 		id = 2112,
 		icon = "baiying_two_2",
@@ -3633,7 +3666,7 @@ pg.commander_ability_template = {
 		name = "王牌指挥官·白鹰",
 		group_id = 211,
 		worth = 3,
-		desc = "<color=#ffde38>白鹰</color>防空提高16点、航空提高16点、装填提高6点",
+		desc = "<color=#3dc6ff>白鹰</color>防空提高16点、航空提高16点、装填提高6点",
 		next = 0,
 		id = 2113,
 		icon = "baiying_two_3",
@@ -3686,7 +3719,7 @@ pg.commander_ability_template = {
 		name = "新晋指挥官·皇家",
 		group_id = 212,
 		worth = 1,
-		desc = "<color=#ffde38>皇家</color>炮击提高7点、防空提高8点、机动提高1点",
+		desc = "<color=#3dc6ff>皇家</color>炮击提高7点、防空提高8点、机动提高1点",
 		next = 2122,
 		id = 2121,
 		icon = "huangjia_two_1",
@@ -3739,7 +3772,7 @@ pg.commander_ability_template = {
 		name = "精锐指挥官·皇家",
 		group_id = 212,
 		worth = 2,
-		desc = "<color=#ffde38>皇家</color>炮击提高10点、防空提高11点、机动提高2点",
+		desc = "<color=#3dc6ff>皇家</color>炮击提高10点、防空提高11点、机动提高2点",
 		next = 2123,
 		id = 2122,
 		icon = "huangjia_two_2",
@@ -3792,7 +3825,7 @@ pg.commander_ability_template = {
 		name = "王牌指挥官·皇家",
 		group_id = 212,
 		worth = 3,
-		desc = "<color=#ffde38>皇家</color>炮击提高14点、防空提高16点、机动提高3点",
+		desc = "<color=#3dc6ff>皇家</color>炮击提高14点、防空提高16点、机动提高3点",
 		next = 0,
 		id = 2123,
 		icon = "huangjia_two_3",
@@ -3845,7 +3878,7 @@ pg.commander_ability_template = {
 		name = "新晋指挥官·重樱",
 		group_id = 213,
 		worth = 1,
-		desc = "<color=#ffde38>重樱</color>雷击提高8点、航空提高6点、机动提高1点",
+		desc = "<color=#3dc6ff>重樱</color>雷击提高8点、航空提高6点、机动提高1点",
 		next = 2132,
 		id = 2131,
 		icon = "chongying_two_1",
@@ -3898,7 +3931,7 @@ pg.commander_ability_template = {
 		name = "精锐指挥官·重樱",
 		group_id = 213,
 		worth = 2,
-		desc = "<color=#ffde38>重樱</color>雷击提高11点、航空提高8点、机动提高2点",
+		desc = "<color=#3dc6ff>重樱</color>雷击提高11点、航空提高8点、机动提高2点",
 		next = 2133,
 		id = 2132,
 		icon = "chongying_two_2",
@@ -3951,7 +3984,7 @@ pg.commander_ability_template = {
 		name = "王牌指挥官·重樱",
 		group_id = 213,
 		worth = 3,
-		desc = "<color=#ffde38>重樱</color>雷击提高16点、航空提高12点、机动提高3点",
+		desc = "<color=#3dc6ff>重樱</color>雷击提高16点、航空提高12点、机动提高3点",
 		next = 0,
 		id = 2133,
 		icon = "chongying_two_3",
@@ -4004,7 +4037,7 @@ pg.commander_ability_template = {
 		name = "新晋指挥官·铁血",
 		group_id = 214,
 		worth = 1,
-		desc = "<color=#ffde38>铁血</color>炮击提高6点、雷击提高7点、命中提高1点",
+		desc = "<color=#3dc6ff>铁血</color>炮击提高6点、雷击提高7点、命中提高1点",
 		next = 2142,
 		id = 2141,
 		icon = "tiexue_two_1",
@@ -4055,7 +4088,7 @@ pg.commander_ability_template = {
 		name = "精锐指挥官·铁血",
 		group_id = 214,
 		worth = 2,
-		desc = "<color=#ffde38>铁血</color>炮击提高8点、雷击提高10点、命中提高2点",
+		desc = "<color=#3dc6ff>铁血</color>炮击提高8点、雷击提高10点、命中提高2点",
 		next = 2143,
 		id = 2142,
 		icon = "tiexue_two_2",
@@ -4106,7 +4139,7 @@ pg.commander_ability_template = {
 		name = "王牌指挥官·铁血",
 		group_id = 214,
 		worth = 3,
-		desc = "<color=#ffde38>铁血</color>炮击提高12点、雷击提高14点、命中提高3点",
+		desc = "<color=#3dc6ff>铁血</color>炮击提高12点、雷击提高14点、命中提高3点",
 		next = 0,
 		id = 2143,
 		icon = "tiexue_two_3",
@@ -4157,7 +4190,7 @@ pg.commander_ability_template = {
 		name = "新晋指挥官·东煌",
 		group_id = 215,
 		worth = 1,
-		desc = "<color=#ffde38>东煌</color>炮击提高7点、防空提高8点、装填提高3点",
+		desc = "<color=#3dc6ff>东煌</color>炮击提高7点、防空提高8点、装填提高3点",
 		next = 2152,
 		id = 2151,
 		icon = "",
@@ -4210,7 +4243,7 @@ pg.commander_ability_template = {
 		name = "精锐指挥官·东煌",
 		group_id = 215,
 		worth = 2,
-		desc = "<color=#ffde38>东煌</color>炮击提高10点、防空提高11点、装填提高4点",
+		desc = "<color=#3dc6ff>东煌</color>炮击提高10点、防空提高11点、装填提高4点",
 		next = 2153,
 		id = 2152,
 		icon = "",
@@ -4263,7 +4296,7 @@ pg.commander_ability_template = {
 		name = "王牌指挥官·东煌",
 		group_id = 215,
 		worth = 3,
-		desc = "<color=#ffde38>东煌</color>炮击提高14点、防空提高16点、装填提高6点",
+		desc = "<color=#3dc6ff>东煌</color>炮击提高14点、防空提高16点、装填提高6点",
 		next = 0,
 		id = 2153,
 		icon = "",
@@ -4316,7 +4349,7 @@ pg.commander_ability_template = {
 		name = "新晋指挥官·北联",
 		group_id = 217,
 		worth = 1,
-		desc = "<color=#ffde38>北联</color>炮击提高8点、装填提高4点、命中提高1点",
+		desc = "<color=#3dc6ff>北联</color>炮击提高8点、装填提高4点、命中提高1点",
 		next = 2172,
 		id = 2171,
 		icon = "",
@@ -4369,7 +4402,7 @@ pg.commander_ability_template = {
 		name = "精锐指挥官·北联",
 		group_id = 217,
 		worth = 2,
-		desc = "<color=#ffde38>北联</color>炮击提高11点、装填提高5点、命中提高2点",
+		desc = "<color=#3dc6ff>北联</color>炮击提高11点、装填提高5点、命中提高2点",
 		next = 2173,
 		id = 2172,
 		icon = "",
@@ -4422,7 +4455,7 @@ pg.commander_ability_template = {
 		name = "王牌指挥官·北联",
 		group_id = 217,
 		worth = 3,
-		desc = "<color=#ffde38>北联</color>炮击提高16点、装填提高8点、命中提高3点",
+		desc = "<color=#3dc6ff>北联</color>炮击提高16点、装填提高8点、命中提高3点",
 		next = 0,
 		id = 2173,
 		icon = "",
@@ -4475,7 +4508,7 @@ pg.commander_ability_template = {
 		name = "新晋指挥官·鸢尾",
 		group_id = 218,
 		worth = 1,
-		desc = "<color=#ffde38>鸢尾</color>炮击提高8点、装填提高3点、机动提高2点",
+		desc = "<color=#3dc6ff>鸢尾</color>炮击提高8点、装填提高3点、机动提高2点",
 		next = 2182,
 		id = 2181,
 		icon = "",
@@ -4528,7 +4561,7 @@ pg.commander_ability_template = {
 		name = "精锐指挥官·鸢尾",
 		group_id = 218,
 		worth = 2,
-		desc = "<color=#ffde38>鸢尾</color>炮击提高11点、装填提高4点、机动提高3点",
+		desc = "<color=#3dc6ff>鸢尾</color>炮击提高11点、装填提高4点、机动提高3点",
 		next = 2183,
 		id = 2182,
 		icon = "",
@@ -4581,7 +4614,7 @@ pg.commander_ability_template = {
 		name = "王牌指挥官·鸢尾",
 		group_id = 218,
 		worth = 3,
-		desc = "<color=#ffde38>鸢尾</color>炮击提高16点、装填提高6点、机动提高5点",
+		desc = "<color=#3dc6ff>鸢尾</color>炮击提高16点、装填提高6点、机动提高5点",
 		next = 0,
 		id = 2183,
 		icon = "",
@@ -4634,7 +4667,7 @@ pg.commander_ability_template = {
 		name = "新晋指挥官·维希",
 		group_id = 219,
 		worth = 1,
-		desc = "<color=#ffde38>维希</color>炮击提高8点、装填提高3点、命中提高2点",
+		desc = "<color=#3dc6ff>维希</color>炮击提高8点、装填提高3点、命中提高2点",
 		next = 2192,
 		id = 2191,
 		icon = "",
@@ -4687,7 +4720,7 @@ pg.commander_ability_template = {
 		name = "精锐指挥官·维希",
 		group_id = 219,
 		worth = 2,
-		desc = "<color=#ffde38>维希</color>炮击提高11点、装填提高4点、命中提高3点",
+		desc = "<color=#3dc6ff>维希</color>炮击提高11点、装填提高4点、命中提高3点",
 		next = 2193,
 		id = 2192,
 		icon = "",
@@ -4740,7 +4773,7 @@ pg.commander_ability_template = {
 		name = "王牌指挥官·维希",
 		group_id = 219,
 		worth = 3,
-		desc = "<color=#ffde38>维希</color>炮击提高16点、装填提高6点、命中提高5点",
+		desc = "<color=#3dc6ff>维希</color>炮击提高16点、装填提高6点、命中提高5点",
 		next = 0,
 		id = 2193,
 		icon = "",

@@ -13,12 +13,12 @@ function slot3.Ctor(slot0, slot1, slot2)
 end
 
 function slot3.InitSpeed(slot0)
-	slot0.super.InitSpeed(slot0, math.rad2Deg * math.atan2(slot0._explodePos.z - slot0._spawnPos.z, slot0._explodePos.x - slot0._spawnPos.x))
+	uv0.super.InitSpeed(slot0, math.rad2Deg * math.atan2(slot0._explodePos.z - slot0._spawnPos.z, slot0._explodePos.x - slot0._spawnPos.x))
 end
 
 function slot3.Update(slot0)
 	if slot0._exist then
-		slot0.super.Update(slot0)
+		uv0.super.Update(slot0)
 	end
 end
 
@@ -58,6 +58,10 @@ function slot3.SetSpawnPosition(slot0, slot1)
 		slot0._explodePos = Quaternion.Euler(0, slot0._barrageAngle, 0) * (slot0._explodePos - slot3) + slot3
 	end
 
+	if slot0._fixToRange and slot0._range < Vector3.BattleDistance(slot0._explodePos, slot0._spawnPos) then
+		slot0._explodePos = Vector3.Normalize(pg.Tool.FilterY(slot0._explodePos - slot0._spawnPos)) * slot0._range + slot0._spawnPos
+	end
+
 	if slot0._convertedVelocity ~= 0 then
 		slot4 = Vector3.Distance(pg.Tool.FilterY(slot0._spawnPos), slot0._explodePos) / slot0._convertedVelocity
 		slot0._verticalSpeed = slot0:GetTemplate().extra_param.launchVrtSpeed or (slot0._explodePos.y - slot0._spawnPos.y) / slot4 - 0.5 * slot0._gravity * slot4
@@ -75,10 +79,11 @@ function slot3.SetExplodePosition(slot0, slot1)
 end
 
 function slot3.SetTemplateData(slot0, slot1)
-	slot0.super.SetTemplateData(slot0, slot1)
+	uv0.super.SetTemplateData(slot0, slot1)
 
 	slot2 = slot0:GetTemplate().extra_param
 	slot0._barragePriority = slot2.barragePriority
+	slot0._fixToRange = slot2.fixToRange
 
 	if slot2.barragePriority then
 		slot0._randomOffset = Vector3.zero
@@ -107,7 +112,7 @@ function slot3.SetTemplateData(slot0, slot1)
 		slot0._explodeTime = pg.TimeMgr.GetInstance():GetCombatTime() + slot2.timeToExplode
 	end
 
-	slot0._gravity = slot2.gravity or uv0.Battle.BattleConfig.GRAVITY
+	slot0._gravity = slot2.gravity or uv1.Battle.BattleConfig.GRAVITY
 end
 
 function slot3.GetExplodePostion(slot0)

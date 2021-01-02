@@ -148,10 +148,12 @@ end
 -- local pCards = {0.02, 0.025, 0.025, 0.05} --闹腾嬉戏东煌春节
 -- local pCards = {0.02, 0.02, 0.025, 0.025, 0.025, 0.05} --复刻·苍红的回响
 -- local pCards = {0.02, 0.02, 0.025} --穹顶下的圣咏曲 (三周年)
-local pCards = {0.02, 0.02, 0.025, 0.025} --永夜幻光
+-- local pCards = {0.02, 0.02, 0.025, 0.025} --永夜幻光
+-- local pCards = {0.02, 0.02, 0.02, 0.025, 0.025} --假日航线
+local pCards = {0.02, 0.02, 0.025, 0.025} --负象限作战
 -- local pCards = {0.02, 0.025, 0.05} --test
 local exp = drawCardExpectation(pCards)
 print(exp)
-print(drawCardProb(pCards, 94))
+print(drawCardProb(pCards, 100))
 
 

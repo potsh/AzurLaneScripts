@@ -411,7 +411,7 @@ function slot0.updateBGMState(slot0)
 end
 
 function slot0.updateLive2DState(slot0)
-	slot1 = HXSet.autoHxShiftPath("live2d/" .. string.lower(slot0.flagShip:getPainting()))
+	slot1 = HXSet.autoHxShiftPath("live2d/" .. string.lower(slot0.flagShip:getPainting()), nil, true)
 	slot3 = getProxy(SettingsProxy):getCharacterSetting(slot0.flagShip.id, "l2d")
 
 	if Live2DUpdateMgr.Inst.state == DownloadState.None or slot5 == DownloadState.CheckFailure then
@@ -475,12 +475,10 @@ end
 
 function slot0.isCurrentShipExistSkin(slot0, slot1)
 	if slot1 then
-		if #slot0:getGroupSkinList(slot1) > 1 then
-			return true
-		elseif #slot2 == 1 then
-			return false
-		end
+		return getProxy(ShipSkinProxy):HasFashion(slot1)
 	end
+
+	return false
 end
 
 function slot0.getGroupSkinList(slot0, slot1)
@@ -593,7 +591,7 @@ end
 
 function slot0.updateLive2DBtn(slot0, slot1, slot2)
 	slot3 = slot2:Find("state")
-	slot4 = "live2d/" .. string.lower(slot1:getPainting())
+	slot4 = HXSet.autoHxShiftPath("live2d/" .. string.lower(slot1:getPainting()), nil, true)
 
 	if Live2DUpdateMgr.Inst.state == DownloadState.None or slot6 == DownloadState.CheckFailure then
 		slot5:CheckD()
@@ -747,7 +745,7 @@ function slot0.getCardAttrProps(slot0, slot1)
 		},
 		{
 			i18n("word_synthesize_power"),
-			"<color=#ffff00>" .. math.floor(slot1:getShipCombatPower()) .. "</color>"
+			"<color=#ffff00>" .. slot1:getShipCombatPower() .. "</color>"
 		}
 	}
 end

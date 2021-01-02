@@ -11,7 +11,7 @@ end
 
 function slot2(slot0)
 	if getProxy(PlayerProxy) then
-		return slot1:getData():IsPlayed(slot0, noAgain)
+		return pg.NewStoryMgr.GetInstance():IsPlayed(slot0, noAgain)
 	end
 
 	return false
@@ -148,7 +148,7 @@ function slot0.PlayCommander(slot0)
 				})
 				slot0()
 			elseif uv0 == "ZHIHUIMIAO2" or uv0 == "ZHIHUIMIAO3" or uv0 == "ZHIHUIMIAO4" then
-				pg.StoryMgr.GetInstance():Play(uv0, slot0, true, true)
+				pg.NewStoryMgr.GetInstance():Play(uv0, slot0, true)
 			else
 				uv1(uv0, {}, slot0)
 			end
@@ -156,4 +156,8 @@ function slot0.PlayCommander(slot0)
 	end
 
 	seriesAsync(slot3)
+end
+
+function slot0.PlayGuildAssaultFleet(slot0, slot1)
+	slot0:PlayByGuideId("GNG001", {}, callback)
 end

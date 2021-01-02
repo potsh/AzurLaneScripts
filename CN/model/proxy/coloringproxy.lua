@@ -28,7 +28,13 @@ function slot0.netUpdateData(slot0, slot1)
 	slot0.colorGroups = {}
 
 	_.each(slot3, function (slot0)
-		ColorGroup.New(slot0[1]):setHasAward(slot0[2] > 0)
+		slot2 = slot0[2]
+
+		if ColorGroup.New(slot0[1]):canBeCustomised() and COLORING_ACTIVITY_CUSTOMIZED_BANNED then
+			return
+		end
+
+		slot3:setHasAward(slot2 > 0)
 
 		if slot1 == uv0.id then
 			_.each(uv0.cell_list, function (slot0)
@@ -129,9 +135,25 @@ end
 function slot0.CheckTodayTip(slot0)
 	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_COLORING_ALPHA) and not slot2:isEnd() and slot0.startTime then
 		slot3 = pg.TimeMgr.GetInstance()
+		slot9 = slot3
+		slot8 = slot3.GetServerTime
 
-		return slot0.colorGroups[math.min(slot3:DiffDay(slot0.startTime, slot3:GetServerTime()) + 1, #slot0.colorGroups - 1)]:getState() ~= ColorGroup.StateAchieved
+		for slot8, slot9 in ipairs(slot0.colorGroups) do
+			if slot8 <= math.min(slot3:DiffDay(slot0.startTime, slot8(slot9)) + 1, #slot0.colorGroups) and slot9:getState() ~= ColorGroup.StateAchieved and not slot9:canBeCustomised() then
+				return true
+			end
+		end
 	end
+end
+
+function slot0.IsALLAchieve(slot0)
+	if #slot0.colorGroups == 0 then
+		return false
+	end
+
+	return _.all(slot0.colorGroups, function (slot0)
+		return slot0:canBeCustomised() or slot0:getState() == ColorGroup.StateAchieved
+	end)
 end
 
 return slot0

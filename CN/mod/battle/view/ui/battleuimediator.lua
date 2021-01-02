@@ -22,6 +22,7 @@ function slot6.Initialize(slot0)
 
 	slot0._dataProxy = slot0._state:GetProxyByName(uv1.Battle.BattleDataProxy.__name)
 	slot0._uiMGR = pg.UIMgr.GetInstance()
+	slot0._fxPool = uv1.Battle.BattleFXPool.GetInstance()
 	slot0._updateViewList = {}
 
 	slot0:SetBattleUI()
@@ -89,6 +90,8 @@ function slot6.OpeningEffect(slot0, slot1, slot2)
 		slot0._joystick.anchorMax = Vector2(slot3.x, slot3.y)
 	elseif slot2 == SYSTEM_SUB_ROUTINE then
 		slot0._skillView:SubRoutineButton()
+	elseif slot2 == SYSTEM_AIRFIGHT then
+		slot0._skillView:AirFightButton()
 	elseif slot2 == SYSTEM_DEBUG then
 		slot0._skillView:NormalButton()
 	elseif pg.SeriesGuideMgr.GetInstance().currIndex and slot3:isEnd() then
@@ -100,8 +103,6 @@ function slot6.OpeningEffect(slot0, slot1, slot2)
 	slot0._ui._go:GetComponent("DftAniEvent"):SetEndEvent(function (slot0)
 		uv0._uiMGR:SetActive(true)
 		uv0:EnableComponent(true)
-
-		uv0._ui._go:GetComponent("DftAniEvent").enabled = false
 
 		if uv1 then
 			uv1()
@@ -158,6 +159,10 @@ end
 
 function slot6.InitScoreBar(slot0)
 	slot0._scoreBarView = uv0.Battle.BattleScoreBarView.New(slot0._ui:findTF("DodgemCountBar"))
+end
+
+function slot6.InitAirFightScoreBar(slot0)
+	slot0._scoreBarView = uv0.Battle.BattleScoreBarView.New(slot0._ui:findTF("AirFightCountBar"))
 end
 
 function slot6.InitKizunaJamming(slot0)
@@ -240,6 +245,7 @@ end
 function slot6.AddUIEvent(slot0)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.STAGE_DATA_INIT_FINISH, slot0.onStageInit)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.COMMON_DATA_INIT_FINISH, slot0.onCommonInit)
+	slot0._dataProxy:RegisterEventListener(slot0, uv0.ADD_FLEET, slot0.onAddFleet)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.ADD_UNIT, slot0.onAddUnit)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.REMOVE_UNIT, slot0.onRemoveUnit)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.HIT_ENEMY, slot0.onEnemyHit)
@@ -250,11 +256,13 @@ function slot6.AddUIEvent(slot0)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.UPDATE_ENVIRONMENT_WARNING, slot0.onUpdateEnvironmentWarning)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.UPDATE_COUNT_DOWN, slot0.onUpdateCountDown)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.KIZUNA_JAMMING, slot0.onJamming)
+	slot0._dataProxy:RegisterEventListener(slot0, uv0.ADD_UI_FX, slot0.OnAddUIFX)
 end
 
 function slot6.RemoveUIEvent(slot0)
 	slot0._dataProxy:UnregisterEventListener(slot0, uv0.COMMON_DATA_INIT_FINISH)
 	slot0._dataProxy:UnregisterEventListener(slot0, uv0.STAGE_DATA_INIT_FINISH)
+	slot0._dataProxy:UnregisterEventListener(slot0, uv0.ADD_FLEET)
 	slot0._dataProxy:UnregisterEventListener(slot0, uv0.ADD_UNIT)
 	slot0._dataProxy:UnregisterEventListener(slot0, uv0.REMOVE_UNIT)
 	slot0._dataProxy:UnregisterEventListener(slot0, uv0.HIT_ENEMY)
@@ -275,6 +283,7 @@ function slot6.RemoveUIEvent(slot0)
 	slot0._userFleet:UnregisterEventListener(slot0, uv0.FLEET_HORIZON_UPDATE)
 	slot0._dataProxy:UnregisterEventListener(slot0, uv0.UPDATE_HOSTILE_SUBMARINE)
 	slot0._dataProxy:UnregisterEventListener(slot0, uv0.UPDATE_ENVIRONMENT_WARNING)
+	slot0._dataProxy:UnregisterEventListener(slot0, uv0.ADD_UI_FX)
 end
 
 function slot6.ShowSkillPainting(slot0, slot1, slot2, slot3)
@@ -295,7 +304,7 @@ end
 
 function slot6.ShowAutoBtn(slot0)
 	SetActive(slot0._autoBtn.transform, true)
-	triggerToggle(slot0._autoBtn, uv0.Battle.BattleState.IsAutoBotActive())
+	triggerToggle(slot0._autoBtn, uv0.Battle.BattleState.IsAutoBotActive(slot0:GetState():GetBattleType()))
 end
 
 function slot6.ShowTimer(slot0)
@@ -310,8 +319,20 @@ function slot6.ShowSimulationView(slot0)
 	slot0._simulationBuffCountView:SetActive(true)
 end
 
+function slot6.ShowPauseButton(slot0, slot1)
+	setActive(slot0._ui:findTF("PauseBtn"), slot1)
+end
+
 function slot6.ShowDodgemScoreBar(slot0)
 	slot0:InitScoreBar()
+	slot0._dataProxy:RegisterEventListener(slot0, uv0.UPDATE_DODGEM_SCORE, slot0.onUpdateDodgemScore)
+	slot0._dataProxy:RegisterEventListener(slot0, uv0.UPDATE_DODGEM_COMBO, slot0.onUpdateDodgemCombo)
+	slot0._scoreBarView:UpdateScore(0)
+	slot0._scoreBarView:SetActive(true)
+end
+
+function slot6.ShowAirFightScoreBar(slot0)
+	slot0:InitAirFightScoreBar()
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.UPDATE_DODGEM_SCORE, slot0.onUpdateDodgemScore)
 	slot0._dataProxy:RegisterEventListener(slot0, uv0.UPDATE_DODGEM_COMBO, slot0.onUpdateDodgemCombo)
 	slot0._scoreBarView:UpdateScore(0)
@@ -386,6 +407,18 @@ function slot6.onCommonInit(slot0, slot1)
 	slot2, slot3, slot4, slot5 = slot0._dataProxy:GetTotalBounds()
 
 	slot0._sightView:SetAreaBound(slot4, slot5)
+end
+
+function slot6.onAddFleet(slot0, slot1)
+	if PlayerPrefs.GetInt(BATTLE_EXPOSE_LINE, 1) == 1 then
+		slot0:SetFleetCloakLine(slot1.Data.fleetVO)
+	end
+end
+
+function slot6.SetFleetCloakLine(slot0, slot1)
+	if #slot1:GetCloakList() > 0 then
+		slot0._seaView:SetExposeLine(slot1:GetIFF(), slot1:GetFleetVisionLine(), slot1:GetFleetExposeLine())
+	end
 end
 
 function slot6.onAddUnit(slot0, slot1)
@@ -469,7 +502,7 @@ function slot6.onUpdateCountDown(slot0, slot1)
 end
 
 function slot6.onJamming(slot0, slot1)
-	slot0:InitKizunaJamming()
+	slot0._skillView:JamSkillButton(slot1.Data.jammingFlag)
 end
 
 function slot6.onUpdateDodgemScore(slot0, slot1)
@@ -493,7 +526,7 @@ function slot6.onRemoveAirStrike(slot0, slot1)
 end
 
 function slot6.onUpdateHostileSubmarine(slot0, slot1)
-	slot0._warningView:UpdateHostileSubmarineCount(slot1.Data.count)
+	slot0._warningView:UpdateHostileSubmarineCount(slot0._dataProxy:GetEnemySubmarineCount())
 end
 
 function slot6.onUpdateEnvironmentWarning(slot0, slot1)
@@ -580,6 +613,21 @@ function slot6.onFleetHorizonUpdate(slot0, slot1)
 	end
 
 	slot0._inkView:UpdateHollow(slot1.Dispatcher:GetUnitList())
+end
+
+function slot6.OnAddUIFX(slot0, slot1)
+	slot0:AddUIFX(slot1.Data.orderDiff, slot1.Data.FXID, slot1.Data.position, slot1.Data.localScale)
+end
+
+function slot6.AddUIFX(slot0, slot1, slot2, slot3, slot4)
+	slot5 = slot0._fxPool:GetFX(slot2)
+	slot1 = slot1 or 1
+	slot6 = slot1 > 0
+	slot7 = slot0._ui:AddUIFX(slot5, slot1)
+	slot4 = slot4 or 1
+	slot5.transform.localScale = Vector3(slot4 / slot7.x, slot4 / slot7.y, slot4 / slot7.z)
+
+	pg.EffectMgr.GetInstance():PlayBattleEffect(slot5, slot3, true)
 end
 
 function slot6.registerUnitEvent(slot0, slot1)

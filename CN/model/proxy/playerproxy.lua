@@ -18,6 +18,9 @@ function slot0.register(slot0)
 	end)
 	slot0:on(11003, function (slot0)
 		slot1 = Player.New(slot0)
+
+		pg.NewStoryMgr.GetInstance():SetData(slot0.story_list or {})
+
 		slot1.resUpdateTm = pg.TimeMgr.GetInstance():GetServerTime()
 
 		uv0:updatePlayer(slot1)
@@ -50,9 +53,13 @@ function slot0.register(slot0)
 		end
 	end)
 	slot0:on(10999, function (slot0)
-		uv0:sendNotification(GAME.LOGOUT, {
-			code = slot0.reason
-		})
+		if slot0.reason == LOGOUT_NEW_VERSION then
+			getProxy(SettingsProxy).lastRequestVersionTime = nil
+		else
+			uv0:sendNotification(GAME.LOGOUT, {
+				code = slot0.reason
+			})
+		end
 	end)
 	slot0:on(11015, function (slot0)
 		uv0.data:clone().buff_list = {}
@@ -150,6 +157,23 @@ function slot0.updatePt(slot0, slot1, slot2)
 	end
 
 	slot7 = ActivityConst.ACTIVITY_TYPE_PIZZA_PT
+
+	for slot7, slot8 in ipairs(slot0.activityProxy:getActivitiesByType(slot7)) do
+		slot10 = nil
+
+		if slot8:getDataConfig("pt") > 0 then
+			slot3[slot9] = slot3[slot9] or slot2:getResource(slot9) - slot1:getResource(slot9)
+			slot10 = (slot8:getDataConfig("type") ~= 1 or math.max(slot3[slot9], 0)) and (slot8:getDataConfig("type") ~= 2 or math.min(slot3[slot9], 0)) and 0
+
+			if not slot8:isEnd() and slot10 ~= 0 then
+				slot8.data1 = slot8.data1 + math.abs(slot10)
+
+				slot0.activityProxy:updateActivity(slot8)
+			end
+		end
+	end
+
+	slot7 = ActivityConst.ACTIVITY_TYPE_PT_BUFF
 
 	for slot7, slot8 in ipairs(slot0.activityProxy:getActivitiesByType(slot7)) do
 		slot10 = nil

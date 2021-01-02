@@ -78,6 +78,19 @@ function slot0.isFirstFleet(slot0)
 	return slot0.id == uv0.REGULAR_FLEET_ID
 end
 
+function slot0.outputCommanders(slot0)
+	slot1 = {}
+
+	for slot5, slot6 in pairs(slot0.commanderIds) do
+		table.insert(slot1, {
+			pos = slot5,
+			id = slot6
+		})
+	end
+
+	return slot1
+end
+
 function slot0.getCommanders(slot0)
 	for slot5, slot6 in pairs(slot0.commanderIds) do
 		-- Nothing
@@ -664,12 +677,12 @@ function slot0.EnergyCheck(slot0, slot1, slot2, slot3)
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			content = i18n(slot3, slot1, slot5),
 			onYes = function ()
-				uv0()
+				uv0(true)
 			end,
 			weight = LayerWeightConst.TOP_LAYER
 		})
 	else
-		return true
+		slot2(true)
 	end
 end
 
@@ -746,6 +759,37 @@ function slot0.HaveShipsInEvent(slot0)
 			return true, i18n("elite_disable_ship_escort")
 		end
 	end
+end
+
+function slot0.GetFleetSonarRange(slot0)
+	slot3 = 0
+	slot4 = 0
+	slot5 = 0
+
+	for slot10, slot11 in ipairs(slot0.ships) do
+		if getProxy(BayProxy):getShipById(slot11) then
+			if ys.Battle.BattleConfig.VAN_SONAR_PROPERTY[slot12:getShipType()] then
+				slot2 = math.max(0, Mathf.Clamp((slot12:getShipProperties()[AttributeType.AntiSub] or 0) / slot14.a - slot14.b, slot14.minRange, slot14.maxRange))
+			end
+
+			if table.contains(TeamType.MainShipType, slot13) then
+				slot5 = slot5 + (slot12:getShipProperties()[AttributeType.AntiSub] or 0)
+			end
+
+			for slot18, slot19 in ipairs(slot12:getActiveEquipments()) do
+				if slot19 then
+					slot4 = slot4 + (slot19.config.equip_parameters.range or 0)
+				end
+			end
+		end
+	end
+
+	if slot2 ~= 0 then
+		slot7 = slot6.MAIN_SONAR_PROPERTY
+		slot3 = slot4 + Mathf.Clamp(slot5 / slot7.a, slot7.minRange, slot7.maxRange)
+	end
+
+	return slot2 + slot3
 end
 
 return slot0

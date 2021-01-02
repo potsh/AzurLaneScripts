@@ -92,22 +92,37 @@ function slot0.execute(slot0, slot1)
 				uv0:doExtraFlagUpdate()
 
 				if uv1.type == ChapterConst.OpRetreat then
-					if slot3:getPlayType() == ChapterConst.TypeMainSub and (uv1.win or not slot3:isValid()) then
-						slot3:retreat(uv1.win)
-						slot3:clearSubChapter()
-						slot2:updateChapter(slot3)
-						uv0:sendNotification(GAME.CHAPTER_OP_DONE, {
-							type = uv1.type,
-							win = uv1.win
-						})
+					if not uv1.id then
+						uv1.win = uv0.chapter:CheckChapterWillWin()
 
-						return
+						if uv1.win then
+							uv0.chapter:UpdateProgressOnRetreat()
+						end
+
+						slot4 = pg.TimeMgr.GetInstance()
+
+						if uv1.win and slot2:getMapById(slot3:getConfig("map")):getMapType() == Map.ELITE and slot4:IsSameDay(slot3:getStartTime(), slot4:GetServerTime()) then
+							getProxy(DailyLevelProxy):EliteCountPlus()
+						end
+
+						if slot3:getPlayType() == ChapterConst.TypeMainSub and (uv1.win or not slot3:isValid()) then
+							slot3:retreat(uv1.win)
+							slot3:clearSubChapter()
+							slot2:updateChapter(slot3)
+							uv0:sendNotification(GAME.CHAPTER_OP_DONE, {
+								type = uv1.type,
+								win = uv1.win
+							})
+
+							return
+						end
 					end
 
 					uv0:doRetreat()
 				elseif uv1.type == ChapterConst.OpMove then
 					uv0:doCollectAI()
 					uv0:doMove()
+					uv0:doTeleportByPortal()
 				elseif uv1.type == ChapterConst.OpBox then
 					uv0:doCollectAI()
 					uv0:doOpenBox()
@@ -136,6 +151,7 @@ function slot0.execute(slot0, slot1)
 					uv0:doSkipBattle()
 				elseif uv1.type == ChapterConst.OpSubTeleport then
 					uv0:doTeleportSub()
+					uv0:doTeleportByPortal()
 				end
 
 				if uv1.type ~= ChapterConst.OpEnemyRound and uv1.type ~= ChapterConst.OpMove then
@@ -157,7 +173,8 @@ function slot0.execute(slot0, slot1)
 					oldLine = uv1.ordLine,
 					extraFlagRemoveList = slot0.del_flag_list,
 					extraFlagAddList = slot0.add_flag_list,
-					win = uv1.win
+					win = uv1.win,
+					teleportPaths = uv0.teleportPaths
 				})
 			end
 		else
@@ -172,6 +189,52 @@ function slot0.execute(slot0, slot1)
 			end
 		end
 	end)
+end
+
+function slot0.PrepareChapterRetreat(slot0)
+	seriesAsync({
+		function (slot0)
+			if getProxy(ChapterProxy):getActiveChapter():CheckChapterWillWin() then
+				slot1:UpdateProgressOnRetreat()
+
+				slot3 = slot1:getConfig("defeat_story")
+
+				table.eachAsync(slot1:getConfig("defeat_story_count"), function (slot0, slot1, slot2)
+					if uv0.defeatCount < slot1 then
+						slot2()
+
+						return
+					end
+
+					if uv1[slot0] and type(slot3) == "number" and not pg.NewStoryMgr.GetInstance():IsPlayed(tostring(slot3)) then
+						pg.m02:sendNotification(GAME.STORY_UPDATE, {
+							storyId = tostring(slot3)
+						})
+						pg.m02:sendNotification(GAME.BEGIN_STAGE, {
+							system = SYSTEM_PERFORM,
+							stageId = slot3,
+							exitCallback = slot2
+						})
+					elseif slot3 and type(slot3) == "string" then
+						pg.NewStoryMgr.GetInstance():Play(slot3, slot2)
+					else
+						slot2()
+					end
+				end, slot0)
+
+				return
+			end
+
+			slot0()
+		end,
+		function (slot0)
+			pg.m02:sendNotification(GAME.CHAPTER_OP, {
+				type = ChapterConst.OpRetreat
+			})
+			slot0()
+		end,
+		slot0
+	})
 end
 
 return slot0

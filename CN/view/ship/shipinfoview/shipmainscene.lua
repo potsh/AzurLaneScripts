@@ -79,6 +79,7 @@ function slot0.setToggleEnable(slot0)
 	end
 
 	setActive(slot0.technologyToggle, slot0.shipVO:isBluePrintShip())
+	SetActive(slot0.metaToggle, slot0.shipVO:isMetaShip())
 end
 
 function slot0.checkToggleActive(slot0, slot1)
@@ -87,11 +88,11 @@ function slot0.checkToggleActive(slot0, slot1)
 	elseif slot1 == ShipViewConst.PAGE.EQUIPMENT then
 		return true
 	elseif slot1 == ShipViewConst.PAGE.INTENSIFY then
-		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip()
+		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip() and not slot0.shipVO:isMetaShip()
 	elseif slot1 == ShipViewConst.PAGE.UPGRADE then
-		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip()
+		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip() and not slot0.shipVO:isMetaShip()
 	elseif slot1 == ShipViewConst.PAGE.REMOULD then
-		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip() and pg.ship_data_trans[slot0.shipVO.groupId]
+		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip() and pg.ship_data_trans[slot0.shipVO.groupId] and not slot0.shipVO:isMetaShip()
 	elseif slot1 == ShipViewConst.PAGE.FASHION then
 		return slot0:hasFashion()
 	else
@@ -234,6 +235,7 @@ function slot0.initPages(slot0)
 	slot0.upgradeToggle = slot0.toggles:Find("upgrade_toggle")
 	slot0.remouldToggle = slot0.toggles:Find("remould_toggle")
 	slot0.technologyToggle = slot0.toggles:Find("technology_toggle")
+	slot0.metaToggle = slot0.toggles:Find("meta_toggle")
 	slot0.togglesList = {
 		[ShipViewConst.PAGE.DETAIL] = slot0.detailToggle,
 		[ShipViewConst.PAGE.EQUIPMENT] = slot0.equipmentToggle,
@@ -304,8 +306,8 @@ function slot0.initEvents(slot0)
 	slot0:bind(ShipViewConst.LOAD_PAINTING, function (slot0, slot1, slot2)
 		uv0:loadPainting(slot1, slot2)
 	end)
-	slot0:bind(ShipViewConst.LOAD_PAINTING_BG, function (slot0, slot1, slot2)
-		uv0:loadSkinBg(slot1, slot2, uv0.isSpBg)
+	slot0:bind(ShipViewConst.LOAD_PAINTING_BG, function (slot0, slot1, slot2, slot3)
+		uv0:loadSkinBg(slot1, slot2, slot3, uv0.isSpBg)
 	end)
 	slot0:bind(ShipViewConst.HIDE_SHIP_WORD, function (slot0)
 		uv0:hideShipWord()
@@ -394,6 +396,9 @@ function slot0.didEnter(slot0)
 
 	onButton(slot0, slot0.technologyToggle, function ()
 		uv0:emit(ShipMainMediator.ON_TECHNOLOGY, uv0.shipVO)
+	end, SFX_PANEL)
+	onButton(slot0, slot0.metaToggle, function ()
+		uv0:emit(ShipMainMediator.ON_META, uv0.shipVO)
 	end, SFX_PANEL)
 	onButton(slot0, tf(slot0.character), function ()
 		if ShipViewConst.currentPage ~= ShipViewConst.PAGE.FASHION then
@@ -514,7 +519,7 @@ function slot0.updatePreference(slot0, slot1)
 
 	if ShipViewConst.currentPage ~= ShipViewConst.PAGE.FASHION then
 		slot0:loadPainting(slot0.shipVO:getPainting())
-		slot0:loadSkinBg(slot0.shipVO:rarity2bgPrintForGet(), slot0.shipVO:isBluePrintShip(), slot0.isSpBg)
+		slot0:loadSkinBg(slot0.shipVO:rarity2bgPrintForGet(), slot0.shipVO:isBluePrintShip(), slot0.shipVO:isMetaShip(), slot0.isSpBg)
 	end
 
 	if not GetSpriteFromAtlas("shiptype", slot1:getShipType()) then
@@ -610,7 +615,7 @@ function slot0.displayShipWord(slot0, slot1, slot2)
 		slot0.chat:SetAsLastSibling()
 
 		if findTF(slot0.nowPainting, "fitter").childCount > 0 then
-			Ship.SetExpression(findTF(slot0.nowPainting, "fitter"):GetChild(0), slot0.paintingCode, slot1, slot3)
+			ShipExpressionHelper.SetExpression(findTF(slot0.nowPainting, "fitter"):GetChild(0), slot0.paintingCode, slot1, slot3)
 		end
 
 		slot4, slot5, slot6 = ShipWordHelper.GetWordAndCV(slot0.shipVO.skinId, slot1, nil, , slot3)
@@ -685,7 +690,7 @@ end
 
 function slot0.StopPreVoice(slot0)
 	if slot0.preVoiceContent ~= nil then
-		pg.CriMgr:StopSoundEffect_V3(slot0.preVoiceContent)
+		pg.CriMgr:UnloadSoundEffect_V3(slot0.preVoiceContent)
 	end
 end
 
@@ -735,7 +740,11 @@ end
 
 function slot0.switchToPage(slot0, slot1, slot2)
 	function slot3(slot0, slot1)
+		setActive(uv0.detailContainer, false)
+
 		if slot0 == ShipViewConst.PAGE.DETAIL then
+			setActive(uv0.detailContainer, slot1)
+
 			slot2 = slot1 and {
 				uv0.detailContainer.rect.width + 200,
 				0
@@ -802,11 +811,13 @@ function slot0.switchToPage(slot0, slot1, slot2)
 			uv0:loadPainting(uv0.shipVO:getPainting())
 		end
 
+		slot2 = not ShipViewConst.IsSubLayerPage(slot0)
+
 		if uv0.bgEffect[uv0.shipVO:getRarity()] then
-			setActive(slot2, slot0 ~= ShipViewConst.PAGE.REMOULD)
+			setActive(slot3, slot0 ~= ShipViewConst.PAGE.REMOULD and uv0.shipVO.bluePrintFlag and uv0.shipVO.bluePrintFlag == 0)
 		end
 
-		setActive(uv0.helpBtn, slot0 ~= ShipViewConst.PAGE.REMOULD)
+		setActive(uv0.helpBtn, slot2)
 	end
 
 	function switchHandler()
@@ -828,7 +839,7 @@ function slot0.switchToPage(slot0, slot1, slot2)
 	if slot0.viewList[slot1] ~= nil then
 		if not slot0.viewList[slot1]:GetLoaded() then
 			slot4:Load()
-			slot4:AddLoadedCallback(switchHandler)
+			slot4:CallbackInvoke(switchHandler)
 		else
 			switchHandler()
 		end
@@ -856,8 +867,8 @@ function slot0.blurPage(slot0, slot1, slot2)
 end
 
 function slot0.switchPainting(slot0)
-	setActive(slot0.shipInfo, ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD)
-	setActive(slot0.shipName, ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD)
+	setActive(slot0.shipInfo, not ShipViewConst.IsSubLayerPage(ShipViewConst.currentPage))
+	setActive(slot0.shipName, not ShipViewConst.IsSubLayerPage(ShipViewConst.currentPage))
 
 	if ShipViewConst.currentPage == ShipViewConst.PAGE.EQUIPMENT then
 		shiftPanel(slot0.shipInfo, -20, 0, uv0, 0)
@@ -880,11 +891,21 @@ function slot0.switchPainting(slot0)
 	end)):setEase(LeanTweenType.easeInOutSine)
 end
 
-function slot0.setPreOrNext(slot0, slot1)
+function slot0.setPreOrNext(slot0, slot1, slot2)
 	if slot1 then
 		slot0.isRight = true
 	else
 		slot0.isRight = false
+	end
+
+	if slot0.shipVO:getGroupId() ~= slot2:getGroupId() then
+		slot0.switchCnt = (slot0.switchCnt or 0) + 1
+	end
+
+	if slot0.switchCnt and slot0.switchCnt >= 10 then
+		gcAll()
+
+		slot0.switchCnt = 0
 	end
 end
 
@@ -902,40 +923,49 @@ function slot0.loadPainting(slot0, slot1, slot2)
 	end
 
 	slot3 = 0
+	slot3 = slot0.isRight and 1800 or -1800
 	slot0.isLoading = true
 	slot5 = slot0.paintingCode
 
 	if slot0:getPaintingFromTable(false) then
-		slot7 = slot4:GetComponent(typeof(CanvasGroup))
+		table.insert({}, function (slot0)
+			slot2 = uv0:GetComponent(typeof(CanvasGroup))
 
-		LeanTween.cancel(go(slot7))
-		LeanTween.alphaCanvas(slot7, 0, 0.3):setFrom(1):setUseEstimatedTime(true)
-		LeanTween.moveX(slot4:GetComponent(typeof(RectTransform)), -(slot0.isRight and 1800 or -1800), 0.3):setFrom(0):setOnComplete(System.Action(function ()
-			retPaintingPrefab(uv0, uv1)
-
-			uv2.isLoading = false
-		end))
+			LeanTween.cancel(go(slot2))
+			LeanTween.alphaCanvas(slot2, 0, 0.3):setFrom(1):setUseEstimatedTime(true)
+			LeanTween.moveX(uv0:GetComponent(typeof(RectTransform)), -uv1, 0.3):setFrom(0):setOnComplete(System.Action(function ()
+				retPaintingPrefab(uv0, uv1)
+				uv2()
+			end))
+		end)
 	end
 
-	slot6 = slot0:getPaintingFromTable(true)
+	slot7 = slot0:getPaintingFromTable(true)
 	slot0.paintingCode = slot1
 
-	if slot0.paintingCode and slot6 then
-		slot7 = slot6:GetComponent(typeof(RectTransform))
-		slot0.nowPainting = slot6
+	if slot0.paintingCode and slot7 then
+		slot8 = slot7:GetComponent(typeof(RectTransform))
 
-		setPaintingPrefabAsync(slot6, slot0.paintingCode, slot0.paintingFrameName or "chuanwu", function ()
-			Ship.SetExpression(findTF(uv0, "fitter"):GetChild(0), uv1.paintingCode)
+		table.insert(slot6, function (slot0)
+			uv0.nowPainting = uv1
+
+			setPaintingPrefabAsync(uv1, uv0.paintingCode, uv0.paintingFrameName or "chuanwu", function ()
+				ShipExpressionHelper.SetExpression(findTF(uv0, "fitter"):GetChild(0), uv1.paintingCode)
+				uv2()
+			end)
 		end)
-		LeanTween.cancel(go(slot7))
-		LeanTween.moveX(slot7, 0, 0.3):setFrom(slot3):setOnComplete(System.Action(function ()
-			uv0.isLoading = false
-		end))
-		LeanTween.alphaCanvas(slot6:GetComponent(typeof(CanvasGroup)), 1, 0.3):setFrom(0):setUseEstimatedTime(true)
+		table.insert(slot6, function (slot0)
+			LeanTween.cancel(go(uv0))
+			LeanTween.moveX(uv0, 0, 0.3):setFrom(uv1):setOnComplete(System.Action(slot0))
+			LeanTween.alphaCanvas(uv2:GetComponent(typeof(CanvasGroup)), 1, 0.3):setFrom(0):setUseEstimatedTime(true)
+		end)
 	end
 
-	slot0.LoadShipVOId = slot0.shipVO.id
-	slot0.LoadPaintingCode = slot1
+	parallelAsync(slot6, function ()
+		uv0.LoadShipVOId = uv0.shipVO.id
+		uv0.LoadPaintingCode = uv1
+		uv0.isLoading = false
+	end)
 end
 
 function slot0.getPaintingFromTable(slot0, slot1)
@@ -956,16 +986,27 @@ function slot0.getPaintingFromTable(slot0, slot1)
 	end
 end
 
-function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
+function slot0.loadSkinBg(slot0, slot1, slot2, slot3, slot4)
 	if not slot0.bgEffect then
 		slot0.bgEffect = {}
 	end
 
-	if slot0.shipSkinBg ~= slot1 or slot0.isDesign ~= slot2 then
+	if slot0.shipSkinBg ~= slot1 or slot0.isDesign ~= slot2 or slot0.isMeta ~= slot3 then
 		slot0.shipSkinBg = slot1
 		slot0.isDesign = slot2
+		slot0.isMeta = slot3
 
 		if slot0.isDesign then
+			if slot0.metaBg then
+				setActive(slot0.metaBg, false)
+			end
+
+			if slot0.bgEffect then
+				for slot8, slot9 in pairs(slot0.bgEffect) do
+					setActive(slot9, false)
+				end
+			end
+
 			if slot0.designBg and slot0.designName ~= "raritydesign" .. slot0.shipVO:getRarity() then
 				PoolMgr.GetInstance():ReturnUI(slot0.designName, slot0.designBg)
 
@@ -988,16 +1029,47 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 			else
 				setActive(slot0.designBg, true)
 			end
+		elseif slot0.isMeta then
+			if slot0.designBg then
+				setActive(slot0.designBg, false)
+			end
+
+			if slot0.metaBg and slot0.metaName ~= "raritymeta" .. slot0.shipVO:getRarity() then
+				PoolMgr.GetInstance():ReturnUI(slot0.metaName, slot0.metaBg)
+
+				slot0.metaBg = nil
+			end
+
+			if not slot0.metaBg then
+				PoolMgr.GetInstance():GetUI("raritymeta" .. slot0.shipVO:getRarity(), true, function (slot0)
+					uv0.metaBg = slot0
+					uv0.metaName = "raritymeta" .. uv0.shipVO:getRarity()
+
+					slot0.transform:SetParent(uv0._tf, false)
+
+					slot0.transform.localPosition = Vector3(1, 1, 1)
+					slot0.transform.localScale = Vector3(1, 1, 1)
+
+					slot0.transform:SetSiblingIndex(1)
+					setActive(slot0, true)
+				end)
+			else
+				setActive(slot0.metaBg, true)
+			end
 		else
 			if slot0.designBg then
 				setActive(slot0.designBg, false)
 			end
 
-			for slot7 = 1, 5 do
-				if slot0.bgEffect[slot7] then
-					setActive(slot0.bgEffect[slot7], slot7 == slot0.shipVO:getRarity() and ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD and not slot3)
-				elseif slot8 > 2 and slot8 == slot7 and not slot3 then
-					PoolMgr.GetInstance():GetUI("al_bg02_" .. slot8 - 1, true, function (slot0)
+			if slot0.metaBg then
+				setActive(slot0.metaBg, false)
+			end
+
+			for slot8 = 1, 5 do
+				if slot0.bgEffect[slot8] then
+					setActive(slot0.bgEffect[slot8], slot8 == slot0.shipVO:getRarity() and ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD and not slot4)
+				elseif slot9 > 2 and slot9 == slot8 and not slot4 then
+					PoolMgr.GetInstance():GetUI("al_bg02_" .. slot9 - 1, true, function (slot0)
 						uv0.bgEffect[uv1] = slot0
 
 						slot0.transform:SetParent(uv0._tf, false)
@@ -1006,7 +1078,7 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 						slot0.transform.localScale = Vector3(1, 1, 1)
 
 						slot0.transform:SetSiblingIndex(1)
-						setActive(slot0, ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD)
+						setActive(slot0, not ShipViewConst.IsSubLayerPage(ShipViewConst.currentPage))
 					end)
 				end
 			end
@@ -1207,6 +1279,10 @@ function slot0.willExit(slot0)
 
 	if slot0.designBg then
 		PoolMgr.GetInstance():ReturnUI(slot0.designName, slot0.designBg)
+	end
+
+	if slot0.metaBg then
+		PoolMgr.GetInstance():ReturnUI(slot0.metaName, slot0.metaBg)
 	end
 
 	slot0.intensifyToggle:GetComponent("Toggle").onValueChanged:RemoveAllListeners()

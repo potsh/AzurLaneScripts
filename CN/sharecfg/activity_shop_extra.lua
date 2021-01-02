@@ -1655,6 +1655,379 @@ pg.activity_shop_extra = {
 			}
 		}
 	},
+	[55] = {
+		num_limit = 1,
+		activity = 651,
+		time = "stop",
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 201232,
+		scene = "",
+		id = 55,
+		order = 2
+	},
+	[56] = {
+		num_limit = 1,
+		activity = 663,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 103072,
+		id = 56,
+		order = 9,
+		scene = {
+			"scene shop",
+			{
+				warp = 1
+			}
+		},
+		time = {
+			{
+				{
+					2020,
+					9,
+					24
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					10,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[57] = {
+		num_limit = 1,
+		activity = 671,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 408041,
+		scene = "",
+		id = 57,
+		order = 7,
+		time = {
+			{
+				{
+					2020,
+					8,
+					20
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					9,
+					9
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[58] = {
+		num_limit = 1,
+		activity = 674,
+		time = "stop",
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 408051,
+		scene = "",
+		id = 58,
+		order = 5
+	},
+	[59] = {
+		num_limit = 1,
+		activity = 724,
+		time = "stop",
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 301181,
+		scene = "",
+		id = 59,
+		order = 9
+	},
+	[60] = {
+		num_limit = 1,
+		activity = 740,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 102162,
+		scene = "",
+		id = 60,
+		order = 7,
+		time = {
+			{
+				{
+					2020,
+					10,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					11,
+					5
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[61] = {
+		num_limit = 1,
+		activity = 741,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 101291,
+		scene = "",
+		id = 61,
+		order = 7,
+		time = {
+			{
+				{
+					2020,
+					10,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					11,
+					5
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[62] = {
+		num_limit = 1,
+		activity = 771,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 205013,
+		id = 62,
+		order = 4,
+		scene = {
+			"scene coloring",
+			{}
+		},
+		time = {
+			{
+				{
+					2020,
+					11,
+					12
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					11,
+					26
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[63] = {
+		num_limit = 1,
+		activity = 495,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 401237,
+		id = 63,
+		order = 8,
+		scene = {
+			"scene coloring",
+			{}
+		},
+		time = {
+			{
+				{
+					2020,
+					12,
+					10
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					12,
+					24
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[64] = {
+		num_limit = 1,
+		activity = 815,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 102272,
+		scene = "",
+		id = 64,
+		order = 15,
+		time = {
+			{
+				{
+					2020,
+					12,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2021,
+					1,
+					5
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[65] = {
+		num_limit = 1,
+		activity = 814,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 301231,
+		scene = "",
+		id = 65,
+		order = 15,
+		time = {
+			{
+				{
+					2020,
+					12,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2021,
+					1,
+					5
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[66] = {
+		num_limit = 1,
+		activity = 829,
+		commodity_type = 7,
+		num = 1,
+		commodity_id = 301571,
+		id = 66,
+		order = 6,
+		scene = {
+			"scene NEWYEAR BACKHILL",
+			{
+				miniGameID = 18
+			}
+		},
+		time = {
+			{
+				{
+					2020,
+					12,
+					29
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2021,
+					1,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
 	all = {
 		1,
 		2,
@@ -1705,6 +2078,18 @@ pg.activity_shop_extra = {
 		51,
 		52,
 		53,
-		54
+		54,
+		55,
+		56,
+		57,
+		58,
+		59,
+		60,
+		61,
+		62,
+		63,
+		64,
+		65,
+		66
 	}
 }

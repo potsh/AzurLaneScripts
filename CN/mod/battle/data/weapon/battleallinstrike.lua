@@ -43,7 +43,6 @@ function slot5.Clear(slot0)
 end
 
 function slot5.Dispose(slot0)
-	slot0._skill:Dispose()
 	uv0.EventDispatcher.DetachEventDispatcher(slot0)
 end
 
@@ -125,6 +124,7 @@ function slot5.Fire(slot0)
 	end
 
 	slot0._skill:Cast(slot0._host)
+	slot0._host:StrikeExpose()
 	slot0._host:StateChange(uv0.Battle.UnitState.STATE_ATTACK, "attack")
 	slot0:DispatchEvent(uv0.Event.New(uv1.MANUAL_WEAPON_FIRE, {}))
 	slot0._host:TriggerBuff(uv0.Battle.BattleConst.BuffEffectType.ON_ALL_IN_STRIKE, {})
@@ -140,6 +140,7 @@ function slot5.SingleFire(slot0)
 	end
 
 	slot0._skill:Cast(slot0._host)
+	slot0._host:StrikeExpose()
 	slot0._host:TriggerBuff(uv0.Battle.BattleConst.BuffEffectType.ON_ALL_IN_STRIKE, {})
 end
 
@@ -235,7 +236,7 @@ function slot5.JammingEliminate(slot0)
 end
 
 function slot5.CLSBullet(slot0)
-	uv0.Battle.BattleDataProxy.GetInstance():CLSBullet(slot0._host:GetIFF() * -1)
+	uv0.Battle.BattleDataProxy.GetInstance():CLSBullet(slot0._host:GetIFF() * -1, true)
 end
 
 function slot5.DispatchBlink(slot0, slot1)

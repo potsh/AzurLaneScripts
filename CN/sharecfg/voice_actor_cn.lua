@@ -649,7 +649,7 @@ pg.voice_actor_CN = {
 		code = 162
 	},
 	{
-		actor_name = "洲崎绫 ",
+		actor_name = "洲崎绫",
 		code = 163
 	},
 	{
@@ -951,5 +951,89 @@ pg.voice_actor_CN = {
 	{
 		actor_name = "牧野由依",
 		code = 238
+	},
+	{
+		actor_name = "水泽史绘 ",
+		code = 239
+	},
+	{
+		actor_name = "西明日香",
+		code = 240
+	},
+	{
+		actor_name = "大空直美",
+		code = 241
+	},
+	{
+		actor_name = "田口宏子",
+		code = 242
+	},
+	{
+		actor_name = "近藤玲奈",
+		code = 243
+	},
+	{
+		actor_name = "关根瞳",
+		code = 244
+	},
+	{
+		actor_name = "小岩井小鸟",
+		code = 245
+	},
+	{
+		actor_name = "峰田茉优",
+		code = 246
+	},
+	{
+		actor_name = "天野聪美",
+		code = 247
+	},
+	{
+		actor_name = "高桥春香",
+		code = 248
+	},
+	{
+		actor_name = "汐见雪菜",
+		code = 249
+	},
+	{
+		actor_name = "桑岛法子",
+		code = 250
+	},
+	{
+		actor_name = "野中蓝",
+		code = 251
+	},
+	{
+		actor_name = "相泽舞",
+		code = 252
+	},
+	{
+		actor_name = "佐藤朱",
+		code = 253
+	},
+	{
+		actor_name = "原由实",
+		code = 254
+	},
+	{
+		actor_name = "新田日和",
+		code = 255
+	},
+	{
+		actor_name = "七濑彩夏",
+		code = 256
+	},
+	{
+		actor_name = "木村千咲",
+		code = 257
+	},
+	{
+		actor_name = "远野光",
+		code = 258
+	},
+	{
+		actor_name = "西本里美",
+		code = 259
 	}
 }

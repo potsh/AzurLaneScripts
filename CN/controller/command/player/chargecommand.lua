@@ -14,7 +14,7 @@ function slot0.execute(slot0, slot1)
 	end
 
 	slot6 = not table.contains(slot5, slot3)
-	slot7 = Goods.New({
+	slot7 = Goods.Create({
 		shop_id = slot3
 	}, Goods.TYPE_CHARGE)
 
@@ -31,8 +31,8 @@ function slot0.execute(slot0, slot1)
 					print("serverTag:preAudit 请求购买物品")
 					pg.SdkMgr.GetInstance():AiriBuy(uv0:getConfig("airijp_id"), "preAudit", slot0.pay_id)
 				elseif pg.SdkMgr.GetInstance():CheckPretest() then
-					print("serverTag:pretest 请求购买物品")
-					AiriBuy(uv0:getConfig("airijp_id"), "pretest", slot0.pay_id)
+					print("serverTag:preTest 请求购买物品")
+					pg.SdkMgr.GetInstance():AiriBuy(uv0:getConfig("airijp_id"), "preAudit", slot0.pay_id)
 				else
 					print("serverTag:production 请求购买物品")
 					pg.SdkMgr.GetInstance():AiriBuy(uv0:getConfig("airijp_id"), "production", slot0.pay_id)

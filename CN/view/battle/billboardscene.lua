@@ -56,6 +56,7 @@ function slot0.init(slot0)
 		slot0:findTF("frame/scroll_rect/tagRoot/chanllenge", slot0.leftPanel),
 		slot0:findTF("frame/scroll_rect/tagRoot/extra_chapter", slot0.leftPanel),
 		slot0:findTF("frame/scroll_rect/tagRoot/boss_battle", slot0.leftPanel),
+		slot0:findTF("frame/scroll_rect/tagRoot/guild", slot0.leftPanel),
 		slot0:findTF("frame/scroll_rect/tagRoot/military", slot0.leftPanel)
 	}
 	slot0.ptToggles = {}
@@ -89,7 +90,7 @@ function slot0.updateToggles(slot0)
 	for slot4, slot5 in pairs(slot0.toggles) do
 		slot6 = nil
 
-		setActive(slot5, (not PowerRank.typeInfo[slot4].act_type or PowerRank:getActivityByRankType(slot4)) and slot4 ~= PowerRank.TYPE_PLEDGE)
+		setActive(slot5, (not PowerRank.typeInfo[slot4].act_type or PowerRank:getActivityByRankType(slot4)) and (slot4 ~= PowerRank.TYPE_PLEDGE or false) and (slot4 == PowerRank.TYPE_GUILD_BATTLE and true or true))
 	end
 
 	for slot4, slot5 in pairs(slot0.ptToggles) do
@@ -114,6 +115,13 @@ function slot0.didEnter(slot0)
 
 	for slot4, slot5 in pairs(slot0.toggles) do
 		onToggle(slot0, slot5, function (slot0)
+			if uv0 == PowerRank.TYPE_GUILD_BATTLE then
+				setActive(uv1.mainPanel, not slot0)
+				uv1:emit(BillboardMediator.ON_GUILD_RANK, slot0)
+
+				return
+			end
+
 			if slot0 then
 				uv1:switchPage(uv0, checkExist(PowerRank:getActivityByRankType(uv0), {
 					"id"
@@ -137,7 +145,7 @@ function slot0.didEnter(slot0)
 	end
 
 	function slot0.rankRect.onUpdateItem(slot0, slot1)
-		uv0:onUpdateItem(slot0, slot1)
+		uv0:onUpdateItem(slot0, slot1, uv0.curPagePTActID)
 	end
 
 	slot0.playerCard = RankCard.New(slot0.playerRankTF, RankCard.TYPE_SELF)
@@ -157,14 +165,14 @@ function slot0.onInintItem(slot0, slot1)
 	slot0.cards[slot1] = slot2
 end
 
-function slot0.onUpdateItem(slot0, slot1, slot2)
+function slot0.onUpdateItem(slot0, slot1, slot2, slot3)
 	if not slot0.cards[slot2] then
 		slot0:onInintItem(slot2)
 
-		slot3 = slot0.cards[slot2]
+		slot4 = slot0.cards[slot2]
 	end
 
-	slot3:update(slot0.displayRankVOs[slot1 + 1])
+	slot4:update(slot0.displayRankVOs[slot1 + 1], slot3)
 end
 
 function slot0.filter(slot0, slot1, slot2)
@@ -181,12 +189,18 @@ function slot0.filter(slot0, slot1, slot2)
 
 	slot0.rankRect:SetTotalCount(#slot0.displayRankVOs)
 	setActive(slot0.listEmptyTF, #slot0.displayRankVOs <= 0)
-	slot0.playerCard:update(slot0.playerRankVOs[slot0.page])
+	slot0.playerCard:update(slot0.playerRankVOs[slot0.page], slot2)
 end
 
 function slot0.switchPage(slot0, slot1, slot2)
 	if slot0.page == slot1 and slot1 ~= PowerRank.TYPE_PT then
 		return
+	end
+
+	if slot1 == PowerRank.TYPE_PT then
+		slot0.curPagePTActID = slot2
+	else
+		slot0.curPagePTActID = nil
 	end
 
 	slot0.page = slot1

@@ -27,6 +27,7 @@ function slot0.Ctor(slot0, slot1, slot2)
 	slot0.unfinishBg = slot0._tf:Find("frame/unfinish_bg")
 	slot0.tip = slot0._tf:Find("frame/tip")
 	slot0.cg = GetOrAddComponent(slot0._tf, "CanvasGroup")
+	slot0.urTag = slot0._tf:Find("frame/urTag")
 end
 
 function slot0.update(slot0, slot1)
@@ -38,7 +39,7 @@ function slot0.update(slot0, slot1)
 
 	slot0.descTxt.text = HXSet.hxLan(slot1:getConfig("desc"))
 
-	slot0.viewComponent:setSpriteTo("taskTagOb/" .. slot1:getConfig("type"), slot0.tagTF)
+	slot0.viewComponent:setSpriteTo("taskTagOb/" .. slot1:GetRealType(), slot0.tagTF)
 
 	slot2 = slot1:getConfig("target_num")
 
@@ -57,20 +58,21 @@ function slot0.update(slot0, slot1)
 	slot0.progressBar.value = slot3 / slot2
 
 	slot0:updateBtnState(slot1)
-	setActive(slot0.storyIconFrame, slot1:getConfig("story_id") and slot4 ~= "")
+	setActive(slot0.urTag, slot1:IsUrTask())
+	setActive(slot0.storyIconFrame, slot1:getConfig("story_id") and slot4 ~= "" and not slot5)
 
 	if slot4 and slot4 ~= "" then
-		if not slot1:getConfig("story_icon") or slot5 == "" then
-			slot5 = "task_icon_default"
+		if not slot1:getConfig("story_icon") or slot6 == "" then
+			slot6 = "task_icon_default"
 		end
 
-		LoadSpriteAsync("shipmodels/" .. slot5, function (slot0)
+		LoadSpriteAsync("shipmodels/" .. slot6, function (slot0)
 			if slot0 then
 				setImageSprite(uv0.storyIcon, slot0, true)
 			end
 		end)
 		onButton(slot0, slot0.storyIconFrame, function ()
-			pg.StoryMgr.GetInstance():Play(uv0, nil, true)
+			pg.NewStoryMgr.GetInstance():Play(uv0, nil, true)
 		end, SFX_PANEL)
 	else
 		removeOnButton(slot0.storyIconFrame)
@@ -111,53 +113,49 @@ function slot0.updateBtnState(slot0, slot1)
 				end
 			end
 
-			function slot2()
-				function uv0.overFlow.onYes()
-					uv0()
-				end
+			slot1 = nil
 
-				pg.MsgboxMgr.GetInstance():ShowMsgBox(uv0.overFlow)
-			end
+			coroutine.wrap(function ()
+				if uv0:getConfig("sub_type") == TASK_SUB_TYPE_GIVE_ITEM or uv0:getConfig("sub_type") == TASK_SUB_TYPE_GIVE_VIRTUAL_ITEM or uv0:getConfig("sub_type") == TASK_SUB_TYPE_PLAYER_RES then
+					slot0 = DROP_TYPE_ITEM
 
-			function slot3()
-				function uv0.choice.onYes()
-					if not uv0.index then
-						pg.TipsMgr.GetInstance():ShowTips("未选择奖励,放弃领取")
-
-						return
+					if uv0:getConfig("sub_type") == TASK_SUB_TYPE_PLAYER_RES then
+						slot0 = DROP_TYPE_RESOURCE
 					end
 
-					if uv1.overFlow then
-						uv2()
-					else
-						uv3()
-					end
-				end
-
-				pg.MsgboxMgr.GetInstance():ShowMsgBox(uv0.choice)
-			end
-
-			if uv2:getConfirmSetting().sub then
-				function ()
-					function uv0.sub.onYes()
-						if uv0.choice then
-							uv1()
-						elseif uv0.overFlow then
-							uv2()
-						else
-							uv3()
+					pg.MsgboxMgr.GetInstance():ShowMsgBox({
+						type = MSGBOX_TYPE_ITEM_BOX,
+						content = i18n("sub_item_warning"),
+						items = {
+							{
+								type = slot0,
+								id = uv0:getConfig("target_id_for_client"),
+								count = uv0:getConfig("target_num")
+							}
+						},
+						onYes = function ()
+							uv0()
 						end
-					end
+					})
+					coroutine.yield()
+				end
 
-					pg.MsgboxMgr.GetInstance():ShowMsgBox(uv0.sub)
-				end()
-			elseif slot1.choice then
-				slot3()
-			elseif slot1.overFlow then
-				slot2()
-			else
-				slot0()
-			end
+				slot0, slot1 = uv0:judgeOverflow()
+
+				if slot0 then
+					pg.MsgboxMgr.GetInstance():ShowMsgBox({
+						type = MSGBOX_TYPE_ITEM_BOX,
+						content = i18n("award_max_warning"),
+						items = slot1,
+						onYes = function ()
+							uv0()
+						end
+					})
+					coroutine.yield()
+				end
+
+				uv2()
+			end)()
 		end, SFX_PANEL)
 	else
 		slot2 = uv4

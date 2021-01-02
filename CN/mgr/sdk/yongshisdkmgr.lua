@@ -1,4 +1,7 @@
 slot1 = YongshiSdkMgr.inst
+slot2 = "com.hkmanjuu.azurlane.gp.mc"
+slot3 = "com.hkmanjuu.azurlane.gp"
+slot4 = "com.hkmanjuu.azurlane.ios1"
 
 function StartSdkLogin()
 	Timer.New(function ()
@@ -81,6 +84,9 @@ function PayFailed(slot0, slot1)
 end
 
 return {
+	CheckPretest = function ()
+		return NetConst.GATEWAY_HOST == "ts-all-login.azurlane.tw" and (NetConst.GATEWAY_PORT == 11001 or NetConst.GATEWAY_PORT == 11101) or Application.isEditor
+	end,
 	InitSDK = function ()
 		uv0:Init()
 	end,
@@ -134,5 +140,14 @@ return {
 	end,
 	GetIsPlatform = function ()
 		return uv0.isPlatform
+	end,
+	GetPackageCode = function (slot0)
+		if slot0 == uv0 then
+			return "2"
+		elseif slot0 == uv1 then
+			return "1"
+		elseif slot0 == uv2 then
+			return "3"
+		end
 	end
 }

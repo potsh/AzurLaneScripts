@@ -270,6 +270,9 @@ pg.gametip = {
 	word_shipState_fight = {
 		tip = "该角色正在作战中！"
 	},
+	word_shipState_world = {
+		tip = "该角色正在大型作战中"
+	},
 	word_shipState_rest = {
 		tip = "该角色正在后宅中哟~"
 	},
@@ -504,8 +507,32 @@ pg.gametip = {
 	word_equipment_aircraft = {
 		tip = "舰载机"
 	},
+	word_equipment_small_cannon = {
+		tip = "小型舰炮"
+	},
+	word_equipment_medium_cannon = {
+		tip = "中型舰炮"
+	},
+	word_equipment_big_cannon = {
+		tip = "大型舰炮"
+	},
+	word_equipment_warship_torpedo = {
+		tip = "水面鱼雷"
+	},
+	word_equipment_submarine_torpedo = {
+		tip = "潜艇鱼雷"
+	},
 	word_equipment_antiaircraft = {
 		tip = "防空炮"
+	},
+	word_equipment_fighter = {
+		tip = "战斗机"
+	},
+	word_equipment_bomber = {
+		tip = "轰炸机"
+	},
+	word_equipment_torpedo_bomber = {
+		tip = "鱼雷机"
 	},
 	word_equipment_equip = {
 		tip = "设备"
@@ -608,6 +635,9 @@ pg.gametip = {
 	},
 	word_facility = {
 		tip = "设施"
+	},
+	word_cv_key_main = {
+		tip = "主界面"
 	},
 	channel_name_1 = {
 		tip = "全部"
@@ -872,6 +902,9 @@ pg.gametip = {
 	},
 	battle_preCombatMediator_timeout = {
 		tip = "作战<color=#92fc63>时间用尽</color>，作战失败，点击确定返回选关界面"
+	},
+	battle_preCombatMediator_activity_timeout = {
+		tip = "活动时间<color=#92fc63>已结束</color>，点击确定返回选关界面"
 	},
 	battle_resourceSiteLayer_collecTimeDefault = {
 		tip = "采集时间: <color=#92fc63>--:--:--</color>"
@@ -1553,6 +1586,12 @@ pg.gametip = {
 	mail_takeAttachment_error_noAttach = {
 		tip = "附件不可领取"
 	},
+	mail_takeAttachment_error_noWorld = {
+		tip = "大型作战尚未开启，附件暂时不可领取。"
+	},
+	mail_takeAttachment_error_reWorld = {
+		tip = "大型作战已经重置，领取的附件将被等比转化为战备物资兑换券。确认领取吗？"
+	},
 	mail_count = {
 		tip = "包含<color=#92fc63>$1个</color>附件"
 	},
@@ -1724,11 +1763,15 @@ pg.gametip = {
 5 颜料可通过活动任务累计消耗石油获得；
 6 完成上色可以获得奖励；
 7 各图完成奖励明细如下：
-	完成图1获得T3通用改造部件 x4；
-	完成图2获得T3随机教材 x3；
-	完成图3获得小光辉 x1；
+	完成图1获得T2随机教材 x2，300物资；
+	完成图2获得T2随机改造图 x2，100石油；
+	完成图3获得T2随机部件 x3，300物资；
+	完成图4获得「精品书架」；
+	完成图5获得T3防御教材 x2，300物资；
+	完成图6获得通用改造部件 x3，100石油；
+	完成图7获得Z23换装「书架边的“风景”？」；
 8 活动结束后，未消耗的颜料会被清除。
-9 5月31日前每天解锁一个可完成的绘图。]]
+9 12月16日前每天解锁一个可完成的绘图。]]
 			}
 		}
 	},
@@ -2068,6 +2111,9 @@ pg.gametip = {
 	},
 	ship_formationUI_exercise_fleetName = {
 		tip = "演习舰队"
+	},
+	ship_formationUI_fleetName_world = {
+		tip = "大型作战舰队"
 	},
 	ship_formationUI_changeFormationError_flag = {
 		tip = "尝试切换阵型出错，请检查阵型枚举！"
@@ -2536,11 +2582,441 @@ pg.gametip = {
 			}
 		}
 	},
+	levelScene_select_SP_OP = {
+		tip = "点击选择作战道具"
+	},
+	levelScene_unselect_SP_OP = {
+		tip = "不使用作战道具"
+	},
+	levelScene_select_SP_OP_reminder = {
+		tip = [[
+是否使用高效作战指令书？
+使用后关卡中的战斗石油消耗增加100%;
+同时战斗结算时指挥官、指挥喵、角色经验获取提高100%，额外获得一次掉落;
+心情值消耗，好感度获取均提高100%。]]
+	},
 	tack_tickets_max_warning = {
 		tip = "所持<color=#ffde38>档案密钥</color>数量达到上限，完成任务后只能获得<color=#ff5c5c>$1</color>份<color=#ffde38>档案密钥</color>，是否确认领取？"
 	},
 	error_refresh_sub_chapter = {
 		tip = "未搜索到新的求救信号"
+	},
+	world_battle_count = {
+		tip = "交战次数说明文本占坑"
+	},
+	world_fleetName1 = {
+		tip = "第 一 舰 队"
+	},
+	world_fleetName2 = {
+		tip = "第 二 舰 队"
+	},
+	world_fleetName3 = {
+		tip = "第 三 舰 队"
+	},
+	world_fleetName4 = {
+		tip = "第 四 舰 队"
+	},
+	world_fleetName5 = {
+		tip = "潜 艇 舰 队"
+	},
+	world_ship_repair_1 = {
+		tip = "常规维修$1需要：\n<icon name=world_money w=0.7 h=0.7/>*$2"
+	},
+	world_ship_repair_2 = {
+		tip = "彻底维修$1需要：\n<icon name=world_money w=0.7 h=0.7/>*$2"
+	},
+	world_ship_repair_all = {
+		tip = "修复所有舰船需要：\n<icon name=world_money w=0.7 h=0.7/>*$1"
+	},
+	world_ship_repair_no_need = {
+		tip = "没有舰船需要修理"
+	},
+	world_event_teleport_alter = {
+		tip = "即将前往其他海域，当前交战中的舰队将会撤退"
+	},
+	world_transport_battle_alter = {
+		tip = "存在正处于交战中的舰队，无法前往其他海域"
+	},
+	world_transport_locked = {
+		tip = "当前海域尚未压制，请将舰队移动至海域边缘前往相邻区域"
+	},
+	world_target_count = {
+		tip = "当前可领取目标奖励$1个"
+	},
+	world_help_tip = {
+		tip = {
+			{
+				info = "\n大型作战说明：(未使用)"
+			}
+		}
+	},
+	world_dangerbattle_confirm = {
+		tip = "敌方的攻击、耐久、作战效能都受到了极大强化！\n是否确认进行战斗？"
+	},
+	world_stamina_exchange = {
+		tip = "行动力不足，是否花费<icon name=oil w=0.7 h=0.7/>$1兑换行动力*$2？"
+	},
+	world_stamina_not_enough = {
+		tip = "行动力不足"
+	},
+	world_stamina_recover = {
+		tip = "※行动力小于200时，每 <color=#92fc63>10分钟</color> 恢复<color=#92fc63>1</color>点行动力"
+	},
+	world_stamina_text = {
+		tip = "花费<color=#92fc63>$1</color>石油购买行动力<color=#92fc63>$2</color>点，本周剩余<color=#92fc63>$3/$4</color>次"
+	},
+	world_stamina_text2 = {
+		tip = "使用<color=#92fc63>$1</color>后恢复行动力<color=#92fc63>$2</color>点"
+	},
+	world_stamina_resetwarning = {
+		tip = "注意：大型作战即将<color=#ff5c5c>重置</color>，重置后\n多于100的行动力<color=#ff5c5c>不会被保留</color>，\n指挥官请合理制定舰队作战策略！"
+	},
+	world_ship_healthy = {
+		tip = "所选目标无需修理！\n是否继续使用"
+	},
+	world_map_dangerous = {
+		tip = "未配置tip"
+	},
+	world_map_not_open = {
+		tip = "海域尚未开放"
+	},
+	world_map_locked_stage = {
+		tip = "海域尚未开放"
+	},
+	world_map_locked_border = {
+		tip = "周边海域未压制"
+	},
+	world_item_allocate_panel_fleet_info_text = {
+		tip = "未配置tip"
+	},
+	world_redeploy_not_change = {
+		tip = "部署前后舰队成员没有发生变化，是否完成部署？"
+	},
+	world_redeploy_warn = {
+		tip = "重新部署时，停留在港口的舰船将会返回港区船坞，是否继续？"
+	},
+	world_redeploy_cost_tip = {
+		tip = "完成本次舰队部署需要消耗$1行动力，是否继续？\n(当前行动力：$2；指令使用间隔越短，行动力消耗越高)"
+	},
+	world_redeploy_tip = {
+		tip = "尚未部署该舰队"
+	},
+	world_fleet_choose = {
+		tip = "在大型作战中，战斗将不会影响心情与消耗石油"
+	},
+	world_fleet_formation_not_valid = {
+		tip = "必须部署$1"
+	},
+	world_fleet_in_vortex = {
+		tip = "舰队进入水流湍急的漩涡之中，移动能力受限。"
+	},
+	world_stage_help = {
+		tip = {
+			disableScroll = true,
+			pageMode = true,
+			ImageMode = true,
+			windowSize = {
+				x = 1263,
+				y = 873
+			},
+			windowPos = {
+				y = -70
+			},
+			helpSize = {
+				x = 1176,
+				y = 1024
+			}
+		}
+	},
+	world_transport_disable = {
+		tip = "当前海域无法通过边界区域离开"
+	},
+	world_resource_tip_1 = {
+		tip = "未资源提示1(未使用)"
+	},
+	world_resource_tip_2 = {
+		tip = "未资源提示1(未使用)"
+	},
+	world_instruction_all_1 = {
+		tip = "该功能未开启"
+	},
+	world_instruction_help_1 = {
+		tip = {
+			{
+				info = [[
+  <color=#92fc63>舰队部署</color>
+   在己方港口海域，可以从港区船坞中重新部署参与
+大型作战的舰队，并为所有舰船恢复耐久与士气。 
+
+  <color=#92fc63>舰队维护</color>
+  为所有舰队恢复士气与耐久，并消除战损状态。
+
+  <color=#92fc63>空域侦查</color>
+  消耗行动力侦查当前海域的全部区域。
+
+  <color=#92fc63>潜艇支援</color>
+  可以部署与呼叫潜艇编队支援，潜艇部队需要在港
+  口海域进行部署。
+ ]]
+			}
+		}
+	},
+	world_instruction_redeploy_1 = {
+		tip = "当前海域无法进行舰队部署，请前往我方港口海域"
+	},
+	world_instruction_redeploy_2 = {
+		tip = "舰队部署已完成，所有舰船的耐久与士气都恢复了"
+	},
+	world_instruction_redeploy_3 = {
+		tip = "舰队正在运送特殊物件，无法进行部署，请先将特殊物件归位。"
+	},
+	world_instruction_morale_1 = {
+		tip = "是否消耗$1行动力为所有舰队恢复士气与耐久，并消除战损状态？(当前行动力：$2；指令使用后，一段时间内无法再次使用)"
+	},
+	world_instruction_morale_2 = {
+		tip = "各舰队士气高昂，无需进行士气恢复"
+	},
+	world_instruction_morale_3 = {
+		tip = "所有舰队的士气恢复完毕"
+	},
+	world_instruction_submarine_1 = {
+		tip = "当前海域无法使用该功能"
+	},
+	world_instruction_submarine_2 = {
+		tip = "是否消耗$1行动力向当前海域派遣潜艇舰队？\n(当前行动力：$2；指令使用间隔越短，行动力消耗越高)"
+	},
+	world_instruction_submarine_3 = {
+		tip = "当前地图已部署有潜艇舰队"
+	},
+	world_instruction_submarine_4 = {
+		tip = "尚未部署潜艇舰队，无法呼叫支援"
+	},
+	world_instruction_submarine_5 = {
+		tip = "潜艇舰队已撤离"
+	},
+	world_instruction_submarine_6 = {
+		tip = "离开当前海域后，潜艇舰队会自动返回我方港口待命，是否离开？"
+	},
+	world_instruction_submarine_7 = {
+		tip = "当前海域部署的潜艇舰队弹药耗尽，是否消耗\n$1行动力为潜艇舰队补充弹药并恢复状态？\n(当前行动力：$2；指令使用间隔越短，行动力消耗越高)"
+	},
+	world_instruction_detect_1 = {
+		tip = "是否消耗$1行动力侦查当前海域的全部区域？\n(当前行动力：$2；指令使用间隔越短，行动力消耗越高)"
+	},
+	world_instruction_detect_2 = {
+		tip = "当前海域已侦查完毕"
+	},
+	world_instruction_supply_1 = {
+		tip = "是否消耗$1行动力申请一份基础补给？(当前行动力：$2)(未使用)"
+	},
+	world_instruction_supply_2 = {
+		tip = "$1后可再次进行舰队维护"
+	},
+	world_item_recycle_1 = {
+		tip = "重置后道具将被转化"
+	},
+	world_item_recycle_2 = {
+		tip = "重置后道具将会消失"
+	},
+	world_item_origin = {
+		tip = "该道具可由以下方式获取"
+	},
+	world_shop_bag_unactivated = {
+		tip = "大型作战尚未激活，无法购买，请首先进入大型作战"
+	},
+	world_shop_preview_tip = {
+		tip = "重置后可购买商品预览"
+	},
+	world_map_title_tips_en = {
+		tip = "OPERATION INFO"
+	},
+	world_map_title_tips = {
+		tip = "作战情报"
+	},
+	world_mapbuff_attrtxt_1 = {
+		tip = "攻击调整"
+	},
+	world_mapbuff_attrtxt_2 = {
+		tip = "耐久调整"
+	},
+	world_mapbuff_attrtxt_3 = {
+		tip = "恢复干扰"
+	},
+	world_mapbuff_compare_txt = {
+		tip = "适应性压制"
+	},
+	world_wind_move = {
+		tip = "无法前往目标区域，请首先转移已位于目标区域中的舰队"
+	},
+	world_battle_pause = {
+		tip = "OPERATION"
+	},
+	world_battle_pause2 = {
+		tip = "大型作战"
+	},
+	world_task_samemap = {
+		tip = "目标海域存在尚未完成的任务，无法接受该任务"
+	},
+	world_task_maplock = {
+		tip = "当前海域存在尚未完成的任务，目前无法离开，请在<color=#ff5c5c>情报</color>中进行确认。"
+	},
+	world_task_goto0 = {
+		tip = "当前海域并非任务目标海域"
+	},
+	world_task_goto3 = {
+		tip = "舰队已位于任务目标海域"
+	},
+	world_task_view1 = {
+		tip = "任务位置："
+	},
+	world_task_view2 = {
+		tip = "当前位置："
+	},
+	world_task_view3 = {
+		tip = "不明"
+	},
+	world_task_refuse1 = {
+		tip = "任务已到达领取上限，请完成一些任务后再来领取吧"
+	},
+	world_sairen_title = {
+		tip = "塞壬控制力"
+	},
+	world_sairen_description1 = {
+		tip = "当前海域塞壬控制力为<color=#3dc6ff>$1%</color>"
+	},
+	world_sairen_description2 = {
+		tip = "当前海域塞壬控制力为<color=#ffde38>$1%</color>"
+	},
+	world_sairen_description3 = {
+		tip = "当前海域塞壬控制力为<color=#ff5c5c>$1%</color>"
+	},
+	world_low_morale = {
+		tip = "当前舰队士气过低，无法与强敌战斗！\n提示：取得任意战斗胜利均可恢复舰队的士气。"
+	},
+	world_recycle_notice = {
+		tip = "「大型作战」将在退出后进行重置，是否继续退出？"
+	},
+	world_recycle_item_transform = {
+		tip = "「大型作战」已经重置，尚未使用的作战物资已被转换为战备物资兑换券："
+	},
+	world_exit_tip = {
+		tip = "需要暂时离开大型作战么？"
+	},
+	world_consume_carry_tips = {
+		tip = "未配置tip"
+	},
+	world_boss_help_meta = {
+		tip = {
+			{
+				info = [[
+信标·烬功能说明
+
+1. <color=#92fc63>2020.12.22-2021.3.18</color>期间限时开放「龙·META」的
+挑战，在此期间指挥官可挑战「龙·META」累计其同步
+值获取<color=#92fc63>「龙·META」角色</color>及其他丰厚奖励
+ <color=#ff5c5c>注意：同步值将于时间结束后消失</color>
+
+2.「余烬信标数据」获取与解析
+·指挥官可通过在大型作战中获取「余烬信标数据」，达
+到指定数据量后进行解析并发现特定余烬信标
+·每日最多可解析 <color=#92fc63>2次</color>，次数于每日0点重置，尚未使用
+的「余烬信标数据」将会保留。
+·每次解析「余烬信标数据」所需量为<color=#92fc63>100</color>点
+
+3.挑战自己解析的信标
+·第一次挑战自己解析的信标不会消耗石油，从第二次
+开始每次挑战消耗<color=#92fc63>40</color>点石油。(不会消耗挑战次数)
+·当信标HP归零后视为战斗胜利，指挥官可以领取大量
+角色同步值奖励。
+·每个被解析的信标只会存在<color=#92fc63>24小时</color>，过期后将会消失，
+记得向其他指挥官请求支援哦。
+·每次挑战成功后，信标的强度将会提升1阶段，总计15
+阶段。随着阶段提升，战斗奖励也会提升。
+
+4.挑战其他信标
+·在信标列表界面可以挑战其他指挥官发起求助的信标，
+参与其他指挥官发布的信标战斗结束后，将会根据造成
+的伤害程度<color=#92fc63>立刻获得角色同步值奖励</color>。
+·每次挑战需要消耗1点挑战次数，不需要消耗石油
+·每日拥有总计<color=#92fc63>3</color>点挑战次数，每日0点重置
+·同一个信标最多能允许累计30位指挥官进行挑战
+
+5.战斗说明
+·挑战信标·烬只能使用大型作战中的舰船，暂不可使用
+指挥喵与潜艇
+·战斗结算时不会获得经验值，不会影响舰船心情值
+·战斗中不可中途退出，如果出现网络波动导致掉线的
+情况：
+①挑战自己解析的信标时将会消耗40点石油(非第一次挑
+战)，且不会计算已造成的伤害
+②挑战信标列表中的信标时将会消耗挑战次数且无法获得
+任何奖励
+  <color=#92fc63>请在参与作战时保持网络环境畅通</color>]]
+			}
+		}
+	},
+	world_close = {
+		tip = "大型作战已经关闭，暂时无法进入。"
+	},
+	world_catsearch_success = {
+		tip = "指挥喵已成功开始进行搜寻作业！"
+	},
+	world_catsearch_stop = {
+		tip = "是否中断搜寻作业，并召回指挥喵？"
+	},
+	world_catsearch_fleetcheck = {
+		tip = "正在进行搜寻作业的指挥喵将被强制召回。\n是否结束搜寻并重编舰队？"
+	},
+	world_catsearch_leavemap = {
+		tip = "正在进行搜寻作业的指挥喵将被强制召回！\n是否结束搜寻并离开当前海域？"
+	},
+	world_catsearch_help_1 = {
+		tip = "搜寻进度会<color=#ffde38>随着舰队行动次数推进</color>，\n是否中断搜寻作业，并召回指挥喵？\n<color=#92fc63>（中断后将会立刻结算已获取的奖励）</color>"
+	},
+	world_catsearch_help_2 = {
+		tip = "搜寻奖励查询"
+	},
+	world_catsearch_help_3 = {
+		tip = {
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/tactics"
+				}
+			},
+			disableScroll = true,
+			pageMode = true,
+			ImageMode = true,
+			windowSize = {
+				x = 1263,
+				y = 873
+			},
+			windowPos = {
+				y = -70
+			},
+			helpSize = {
+				x = 1176,
+				y = 1024
+			}
+		}
+	},
+	world_catsearch_help_4 = {
+		tip = "搜寻中..."
+	},
+	world_catsearch_help_5 = {
+		tip = "指挥喵物资搜寻中，暂时无法为舰队提供加成"
+	},
+	world_catsearch_help_6 = {
+		tip = "搜寻过程中有几率获得以下奖励"
+	},
+	world_level_prefix = {
+		tip = "等级LV.$1"
+	},
+	world_map_level = {
+		tip = "作战强度等级：\n指挥官当前的作战强度等级为<color=#92fc63>$1</color>，建议攻略该侵蚀等级及以下的海域。"
+	},
+	world_movelimit_event_text = {
+		tip = "当前海域存在尚未完成的任务，目前无法离开"
 	},
 	task_notfound_error = {
 		tip = "缺少任务配置，请检查是否需要热更新，id:"
@@ -2876,7 +3352,7 @@ pg.gametip = {
 		tip = "反潜"
 	},
 	attribute_sonarRange = {
-		tip = "搜索范围"
+		tip = "额外侦测范围"
 	},
 	attribute_sonarInterval = {
 		tip = "搜索周期"
@@ -2889,6 +3365,15 @@ pg.gametip = {
 	},
 	attribute_intimacy = {
 		tip = "好感度"
+	},
+	attribute_max_distance_damage = {
+		tip = "边际伤害"
+	},
+	attribute_anti_siren = {
+		tip = "大型作战塞壬增伤"
+	},
+	attribute_add_new = {
+		tip = "New!"
 	},
 	skill = {
 		tip = "技能"
@@ -3078,6 +3563,12 @@ pg.gametip = {
 	},
 	word_shipNation_holo = {
 		tip = "hololive"
+	},
+	word_shipNation_doa = {
+		tip = "维纳斯假期"
+	},
+	word_shipNation_link = {
+		tip = "联动"
 	},
 	word_reset = {
 		tip = "重置"
@@ -3722,17 +4213,9 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 			{
 				info = [[
 
-时装更换说明：
+换装说明：
 
-       1.通过消耗相同角色或特殊角色，并消耗一定资源可试
-  角色性能提升，最多可提升三次]]
-			},
-			{
-				info = [[
-
-       2.角色星级提高后各项属性都会大幅提升，并且对应的
- 武器效率也会得到增强，部分角色还将获得特殊弹幕、额
-外舰载机等增益]]
+       未在上架期间的换装请等待下次上架]]
 			}
 		}
 	},
@@ -3841,7 +4324,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 				}
 			},
 			{
-				info = "       反潜：提高反潜武器的伤害",
+				info = "       反潜：提高反潜武器的伤害，影响队伍反潜侦测范围",
 				icon = {
 					posX = 0,
 					atlas = "attricon",
@@ -4498,7 +4981,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 		tip = "钻石不够啦"
 	},
 	guild_tip_dissolve = {
-		tip = "大舰队一旦解散将无法恢复，是否确认解散大舰队？"
+		tip = "大舰队一旦解散，现有的舰队状态(包括成员活跃度、大舰队资金与科技研发等级)将会清空并无法恢复，所有未领取的补给与作战报告将会全部损失，是否确认解散大舰队？"
 	},
 	guild_tip_quit = {
 		tip = "是否确认退出大舰队？"
@@ -4604,6 +5087,9 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 	},
 	guild_faction_unknown = {
 		tip = "????"
+	},
+	guild_faction_meta = {
+		tip = "META"
 	},
 	guild_word_commder = {
 		tip = "司令"
@@ -5469,6 +5955,9 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 	words_battle_hide_bg = {
 		tip = "战斗默认隐藏局部背景"
 	},
+	words_battle_expose_line = {
+		tip = "战斗内展示航母侦测线"
+	},
 	activity_puzzle_get1 = {
 		tip = "<color=#92fc63FF>获得方式\n拼图任务7</color>"
 	},
@@ -5564,9 +6053,10 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 周六：《巡洋实战教学—火力最大化手段分析》
 周日：大讲堂休息，出击获取熟练度比例翻倍
 
-（浅水重炮舰参加战列舰的课程，维修舰可以参加驱逐与
-巡洋的课程，航战可以参加航母与战列舰的课程，潜艇、
-潜母参加驱逐的课程，超巡参加巡洋的课程）
+（浅水重炮舰参加战列舰的课程，维修舰、运输舰可以
+参加驱逐与巡洋的课程，航战可以参加航母与战列舰
+的课程，潜艇、潜母参加驱逐的课程，超巡参加巡洋
+的课程）
 
 · 上课：
 大讲堂课程最大时长为12小时，下课时扣除消耗的熟练度
@@ -5643,7 +6133,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 		tip = "回复速度"
 	},
 	destroy_eliteship_tip = {
-		tip = "选择角色中有$1\n的角色是否确认?"
+		tip = "选择角色中有$1的角色："
 	},
 	err_resloveequip_nochoice = {
 		tip = "未选择拆除的装备"
@@ -5740,6 +6230,9 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 	},
 	word_status_challenge = {
 		tip = "限界挑战中"
+	},
+	word_status_world = {
+		tip = "大型作战中"
 	},
 	challenge_rule = {
 		tip = {
@@ -6123,7 +6616,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 		}
 	},
 	shop_street_activity_tip = {
-		tip = "*活动期间(<color=#A1E400FF>20.5.21-20.6.2</COLOR>)每次刷新必定出现<color=#A1E400FF>外观装备箱</color>"
+		tip = "*活动期间(<color=#A1E400FF>20.12.29-21.1.13</COLOR>)每次刷新必定出现<color=#A1E400FF>外观装备箱</color>"
 	},
 	battle_result_boss_destruct = {
 		tip = "阻止boss自毁并击破boss"
@@ -6325,7 +6818,7 @@ $3]]
 		tip = "中止研究失败"
 	},
 	blueprint_destory_tip = {
-		tip = "方案舰不能被摧毁"
+		tip = "方案舰不能被退役"
 	},
 	blueprint_task_update_tip = {
 		tip = "当前研究中的<color=#92fc63>$1</color>有新的进展，请去开发船坞确认"
@@ -6428,6 +6921,9 @@ $3]]
 	},
 	ship_profile_voice_locked_design = {
 		tip = "开发等级达到$1级后解锁"
+	},
+	ship_profile_voice_locked_meta = {
+		tip = "维修进度达到$1%后解锁(未使用)"
 	},
 	help_technolog0 = {
 		tip = {
@@ -6741,6 +7237,12 @@ $3]]
 					atlas = "helpbg/battle_ac_2"
 				}
 			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/battle_concealment"
+				}
+			},
 			disableScroll = true,
 			pageMode = true,
 			defaultpage = 1,
@@ -6768,7 +7270,7 @@ $3]]
 		tip = "已切换为自主寻敌模式"
 	},
 	activity_shop_lable = {
-		tip = "*兑换开放时间:$1"
+		tip = "*兑换开放时间:<color=#FFCF81>$1</color>"
 	},
 	word_bilibili = {
 		tip = "bili小电池"
@@ -7152,13 +7654,13 @@ $3]]
 		tip = "天赋点不足"
 	},
 	buildship_new_tip = {
-		tip = "黎塞留、阿尔及利亚、沃克兰 出现概率UP！"
+		tip = "海因里希亲王、彼得·史特拉塞 等角色建造概率UP！"
 	},
 	buildship_heavy_tip = {
-		tip = "{namecode:74}、{namecode:59} 建造追加！"
+		tip = "{namecode:82}、{namecode:71} 建造追加！"
 	},
 	buildship_light_tip = {
-		tip = "{namecode:158}、{namecode:28}、{namecode:157} 等角色建造追加！"
+		tip = "黑泽伍德、{namecode:148} 建造追加！"
 	},
 	buildship_special_tip = {
 		tip = "{namecode:163} 建造追加！"
@@ -7456,7 +7958,7 @@ $3]]
 		}
 	},
 	story_skip_confirm = {
-		tip = "还未观看过本段剧情，是否确定跳过？\n跳过的剧情可以在<color=#A1E400FF>收藏>回忆</COLOR>中回看"
+		tip = "还未观看过本段剧情，是否确定跳过？\n跳过的剧情可以在<color=#A1E400FF>回忆</COLOR>中回看"
 	},
 	commander_ability_replace_warning = {
 		tip = "即将替换高阶天赋，是否确定？"
@@ -7723,6 +8225,12 @@ $3]]
 	map_event_stop_tip = {
 		tip = "踩下对应颜色<color=#92fc63>机关</color>可解除禁止通行状态"
 	},
+	map_event_stop_battle_tip = {
+		tip = "消灭周围所有<color=#ff5c5c>敌人</color>可解除禁止通行状态"
+	},
+	map_event_stop_story_tip = {
+		tip = "触发附近<color=#92fc63>剧情点</color>可解除禁止通行状态"
+	},
 	map_event_save_nekone = {
 		tip = "成功救出<color=#92fc63>猫音</color>"
 	},
@@ -7988,7 +8496,7 @@ $3]]
 		tip = "请先阅读完用户协议"
 	},
 	award_max_warning = {
-		tip = "部分奖励将会因超出上限而浪费,是否仍要领取?"
+		tip = "以下奖励因超出上限而<color=#ff5c5c>无法获得</color>，是否仍要领取？"
 	},
 	sub_item_warning = {
 		tip = "是否提交以下物品?"
@@ -8292,7 +8800,6 @@ c 特定舰船达到120级（获得科技点，解锁对应的全舰队
 提升阵营科技等级需要消耗一定数量的<color=#92fc63>物资</color>，并且需要等
 待一定的<color=#92fc63>时间</color>
 阵营科技达到对应等级，可以解锁对应的全舰队<color=#92fc63>属性加成</color>
-定的<color=#92fc63>时间</color>
 <color=#ff5c5c>同时只能进行一项阵营科技等级的提升</color>
 
 *舰队科技&阵营科技的属性加成只对<color=#ff5c5c>突破至满星</color>的舰船
@@ -8596,14 +9103,14 @@ Z23(<color=#ff5c5c>铁血</color>) 科技点<color=#92fc63>+1</color></size>
 
 被邀请者：
 回归指挥官：
-在2020年5月7日至5月21日维护期间没有过登录行为的
+在2020年9月3日至9月17日维护期间没有过登录行为的
 指挥官
 新人指挥官：
-在2020年5月21日至6月18日维护期间新注册的指挥官
+在2020年9月17日至10月12日维护期间新注册的指挥官
 满足被邀请资格的指挥官在活动期间登录可在特别活动页
 内输入邀请者的UID参与活动
 邀请者：
-2020年5月7日至5月21日维护前有过登录行为的指挥官
+2020年9月3日至9月17日维护前有过登录行为的指挥官
 邀请者可以使用自己的UID邀请满足被邀请资格的指挥官
 参与活动
 召集指挥官：
@@ -8743,7 +9250,7 @@ UID：
 				info = "  4. 两种模式都为连战玩法，即每场战斗结束后，会继承\n上一场结束时的舰船状态。且每场战斗只能呼叫一次潜艇\n支援，每场战斗结束后，潜艇呼叫次数会恢复为1次"
 			},
 			{
-				info = "  5. 限界挑战中不会消耗石油，不消耗舰船的好感，战斗\n胜负不会被计入个人信息统计，也无法获得舰船经验和指\n挥喵经验"
+				info = "  5. 限界挑战中不会消耗石油，不消耗舰船的好感，战斗\n胜负不会被计入个人信息统计，也无法获得舰船经验、指\n挥官经验和指挥喵经验"
 			},
 			{
 				info = "  6. 普通模式和无限模式的编队不通用，指挥官需要分别\n配置"
@@ -9236,7 +9743,7 @@ TIPS：
 		tip = "游戏正在进行中，现在离开将无法保存进度，是否确认离开？"
 	},
 	tips_shrine_buff = {
-		tip = "消耗5物资 获得加成效果 "
+		tip = "消耗5物资 获得加成效果"
 	},
 	tips_shrine_nobuff = {
 		tip = "消耗5物资\n由于次数耗尽没有获得任何效果"
@@ -9485,52 +9992,72 @@ TIPS：
 	option_desc10 = {
 		tip = "功能开启后，战斗中会默认隐藏换装的局部背景"
 	},
+	option_desc11 = {
+		tip = [[
+功能开启后，战斗中会展示航母的被侦测提示线（蓝色网格样式）、暴露提示线（红色网格样式，仅演习战斗中有）
+
+航母、轻母隐蔽机制说明：
+在【隐蔽】状态下，航母不容易被作为敌方的武器、技能的指向目标，但是会仍然会被流弹命中造成伤害
+在【隐蔽】状态下，角色航空攻击伤害计算时，受到的防空减伤影响降低10%
+
+被侦测条的增减
+·敌方舰艇在关卡内被侦测范围内、触底或敌方舰载机触底时，被侦测条上升（触底时，离触底单位最近的航母被侦测条会额外上升）
+·航母角色空袭，或触发技能攻击时，自身被侦测条上升。空袭时提升的被侦测值随该场战斗内空袭轮次提高（每轮空袭提高基础值的25%，最大值为基础值的250%）空袭后的12秒内，被侦测条的恢复速度降低至基础恢复速度的40%
+·航母角色处于被点燃状态时，被侦测条增加一段点燃侦测惩罚，且点燃状态下点燃侦测惩罚不会下降
+·被侦测条的最大值与角色机动相关，被侦测值达到最大值时，角色脱离【隐蔽】状态
+
+演习中的额外规则：
+演习中，航母被侦测值不会自动降低
+演习中，增加暴露提示线，敌方角色进入暴露范围内时，所有航母直接脱离【隐蔽】状态
+]]
+	},
 	music_collection = {
 		tip = {
 			{
-				info = "活动说明："
+				info = "活动时间：<color=#92fc63>10.29-11.12</color>\n1.活动期间，参与活动收集「周边」，收集全部<color=#92fc63>12</color>个周边\n后可获得限定家具「激唱纪念章」"
 			},
 			{
-				info = "1.活动期间，参与活动收集「周边」，收集全部<color=#92fc63>15</color>个周边\n后可获得限定家具「激奏纪念章」"
+				info = [[
+2.参与以下内容可以收集「周边」：
+①通过活动关卡
+②完成活动任务
+③累积激唱徽章]]
 			},
 			{
-				info = "2.参与以下内容可以收集「周边」：\n   通过活动关卡、完成活动任务、累积激奏徽章"
-			},
-			{
-				info = "3.「收获的InterHalf」进度达到100%后重返SP1—SP5，\n收集全新的周边吧！\n4.领取时间截止11月20日23点59分"
+				info = [[
+3.通过「余暇的BonusTime」关卡后重返SP1—SP5，收
+集全新的周边吧！
+4.周边收集完成后会解锁自由组合模式，指挥官可以将收
+集到的周边任意放置在手账页面上
+5.点击分享按钮还可以将自己的手账分享给他人
+6.领取时间截止11月18日23点59分]]
 			}
 		}
 	},
 	music_main = {
 		tip = {
 			{
-				info = "<color=#92fc63>10.31-11.14</color>期间开启限时活动「激奏的Polaris」"
+				info = "<color=#92fc63>10.29-11.12</color>期间开启限时活动「激唱的Universe」"
 			},
 			{
-				info = "1.通过特别作战获取「激奏徽章」，在「徽章收集」和\n「补给商店」处兑换丰厚奖励"
-			},
-			{
-				info = "2.完成「特型偶像」的七日任务，获取「桐」限定换装"
+				info = "1.通过特别作战获取「激唱徽章」，在「累计奖励」和\n「补给商店」处兑换丰厚奖励"
 			},
 			{
 				info = [[
-3.在「激奏舞台」完成音乐小游戏，获取B评价以上时
-可以提高「演奏力」，收集<color=#92fc63>7</color>次「演奏力」可以获得限
-定角色「谢菲尔德(μ兵装)」
-<color=#92fc63>注意：</color>每日可获得一次机会，可累计，未达到B评价以上
-时不会消耗次数，次数用尽后仍然可以进行音乐小游戏]]
+2.在「激唱舞台」完成音乐小游戏，获取B评价以上时
+可以收集「演唱音符」，收集<color=#92fc63>7</color>次「演唱音符」可以获
+得限定角色「恶毒(μ兵装)」
+<color=#92fc63>注意：</color>每日可获得一次机会，可累计7次，未达到B评价
+以上时不会消耗次数，次数用尽后仍然可以进行音乐小
+游戏]]
 			},
 			{
 				info = [[
-4.在活动中收集全部<color=#92fc63>15</color>个「周边」道具后，可在「纪念
-章」处获取「激奏纪念章」
-  详细获取条件可在「纪念章」界面查看
-5.每隔一段时间「Polaris」角色会在「JUUs」中发布
-新的动态，通过「徽章收集」获取「JUUs动态」，拥有
-的「JUUs动态」越多可以查看的动态越多
-  详细说明可在「JUUs」界面查看
-6.点击「限时建造」可以前往建造界面
-7.点击「换装商店」可以前往换装商店界面]]
+3.在活动中收集全部<color=#92fc63>12</color>个「周边」道具后，可在「纪念
+章」处获取「激唱纪念章」
+详细获取条件可在「纪念章」界面查看
+4.点击「限时建造」可以前往建造界面
+5.点击「换装商店」可以前往换装商店界面]]
 			}
 		}
 	},
@@ -9549,6 +10076,24 @@ TIPS：
 <color=#92fc63>注意：</color>点赞后不可取消点赞，进行评论后经过一段时间
 可以收到回复
 ]]
+			}
+		}
+	},
+	doa_collection = {
+		tip = {
+			{
+				info = "活动时间：<color=#92fc63>11.26-12.10</color>\n1.活动期间，参与活动收集「角色喜好」，收集全部<color=#92fc63>14</color>个\n后可获得限定家具<color=#92fc63>「维纳斯假期纪念像」</color>"
+			},
+			{
+				info = [[
+2.参与以下内容可以收集「角色喜好」：
+①通过活动关卡
+②完成活动任务
+③累积维纳斯点数
+④完成维纳斯排球练习赛]]
+			},
+			{
+				info = "3.领取时间截止12月16日23点59分"
 			}
 		}
 	},
@@ -9578,25 +10123,25 @@ TIPS：
 			{
 				info = [[
 <size=31><color=#92fc63>TIPS：
-没有演奏次数也可以进行游戏，但无法提升演奏力</color></size>
+没有演出次数也可以进行游戏，但无法收集演唱音符</color></size>
 
-1.点击开始演奏，在5秒的倒计时后开始游戏，完成<color=#92fc63>B</color>以
-上评价即可累计演奏力
-2.当音符到达谱面最中间时，按下对应按键进行演奏
+1.点击开始演出，在3秒的倒计时后开始游戏，完成<color=#92fc63>B</color>以
+上评价即可收集演唱音符
+2.当音符到达谱面最中间时，按下对应按键进行演出
 3.简单模式：
-3.1.所有音符单击屏幕即可演奏
-3.2.无论点击左右半屏均可进行演奏
+3.1.所有音符单击屏幕即可演出
+3.2.无论点击左右半屏均可进行演出
 4.困难模式：
-4.1.屏幕左右半屏分边对应左侧(红色)、右侧(蓝色)音符
+4.1.屏幕左右半屏分边对应左侧(蓝色)、右侧(红色)音符
 4.2.音符后跟随的白色长条代表需要长按直至长条结束
 4.3.黄色音符需要两侧同时点击
 5.在歌曲选择界面，可以调整音符的平移速度，1x为最
 慢，4x为最快
-6.根据演奏时机，会有不同的评价，perfect获得<color=#92fc63>600</color>分，
+6.根据演出时机，会有不同的评价，perfect获得<color=#92fc63>600</color>分，
 good获得<color=#92fc63>300</color>分，miss不得分
-7.perfect和good为有效演奏，均可累计combo，累计
+7.perfect和good为有效演出，均可累计combo，累计
 combo达到10/20/40/60/80/100时，分别为每次有效
-演奏额外附加<color=#92fc63>100</color>分
+演出额外附加<color=#92fc63>100</color>分
 8.FullCombo额外获得<color=#92fc63>5000</color>分]]
 			}
 		}
@@ -10119,7 +10664,7 @@ TIPS：
 		tip = "[朴的可爱<怪奇>生物图鉴No.5]\n隐身汪：会隐形的汪汪，唯一不能隐形的屁股是它最大的烦恼"
 	},
 	special_animal6 = {
-		tip = "[朴的可爱<怪奇>生物图鉴No.6]\n肌肉啾：热衷于健身的肌肉啾，似乎有点练过头了 "
+		tip = "[朴的可爱<怪奇>生物图鉴No.6]\n肌肉啾：热衷于健身的肌肉啾，似乎有点练过头了"
 	},
 	special_animal7 = {
 		tip = "[朴的可爱<怪奇>生物图鉴No.7]\n彩虹香肠喵：睡觉时会流下彩虹口水的彩虹超长猫，有着奇怪的睡姿"
@@ -10138,28 +10683,28 @@ TIPS：
 		}
 	},
 	bulin_tip1 = {
-		tip = "出击喵！目标1-2喵！ "
+		tip = "出击喵！目标1-2喵！"
 	},
 	bulin_tip2 = {
-		tip = "堆积的道具要注意整理喵！ "
+		tip = "堆积的道具要注意整理喵！"
 	},
 	bulin_tip3 = {
-		tip = "出击喵！目标2-2喵！ "
+		tip = "出击喵！目标2-2喵！"
 	},
 	bulin_tip4 = {
-		tip = "呼喵？是不是该去船坞看看了喵？ "
+		tip = "呼喵？是不是该去船坞看看了喵？"
 	},
 	bulin_tip5 = {
-		tip = "出击喵！目标1-4喵！ "
+		tip = "出击喵！目标1-4喵！"
 	},
 	bulin_tip6 = {
-		tip = "要随时记得补充食物喵！ "
+		tip = "要随时记得补充食物喵！"
 	},
 	bulin_tip7 = {
 		tip = "出击喵！目标2-4喵！"
 	},
 	bulin_tip8 = {
-		tip = "去樱花飘散的校园看看喵！ "
+		tip = "去樱花飘散的校园看看喵！"
 	},
 	bulin_tip9 = {
 		tip = "没事多来光顾买点东西喵！"
@@ -10171,7 +10716,7 @@ TIPS：
 		tip = "解锁提示冷却中"
 	},
 	bulin_tip_other3 = {
-		tip = "是否退出关卡？退出关卡将无法获得奖励。 "
+		tip = "是否退出关卡？退出关卡将无法获得奖励。"
 	},
 	monopoly_left_count = {
 		tip = "剩余次数:"
@@ -10252,7 +10797,7 @@ TIPS：
 		tip = "很遗憾答错了，请重新作答~"
 	},
 	lanternRiddles_answer_is_right = {
-		tip = "恭喜你答对了~ "
+		tip = "恭喜你答对了~"
 	},
 	lanternRiddles_gametip = {
 		tip = {
@@ -10300,6 +10845,15 @@ TIPS：
 	index_strengthen = {
 		tip = "可强化"
 	},
+	index_special = {
+		tip = "特殊"
+	},
+	index_not_obtained = {
+		tip = "未获得"
+	},
+	index_no_limit = {
+		tip = "无限制"
+	},
 	decodegame_gametip = {
 		tip = {
 			{
@@ -10336,6 +10890,9 @@ TIPS：
 	indexsort_camp = {
 		tip = "阵营"
 	},
+	indexsort_type = {
+		tip = "类型"
+	},
 	indexsort_rarity = {
 		tip = "稀有度"
 	},
@@ -10353,6 +10910,9 @@ TIPS：
 	},
 	indexsort_rarityeng = {
 		tip = "RARITY"
+	},
+	indexsort_typeeng = {
+		tip = "TYPE"
 	},
 	fightfail_up = {
 		tip = "是否退出本次战斗以前往其他关卡进行战斗<color=#92fc63>提升等级</color>？"
@@ -10380,19 +10940,19 @@ TIPS：
 		}
 	},
 	sofmapsd_1 = {
-		tip = "呼喵？！准备好的礼品券丢了喵！\n指挥官，快帮帮{namecode:98}喵！ "
+		tip = "呼喵？！准备好的礼品券丢了喵！\n指挥官，快帮帮{namecode:98}喵！"
 	},
 	sofmapsd_2 = {
 		tip = "快帮{namecode:98}投放礼品券喵！\n会给指挥官报酬的喵！"
 	},
 	sofmapsd_3 = {
-		tip = "呼喵！营业额提升了喵！\n感谢指挥官喵！ "
+		tip = "呼喵！营业额提升了喵！\n感谢指挥官喵！"
 	},
 	sofmapsd_4 = {
 		tip = "营业额目标达成喵！\n感谢指挥官喵！"
 	},
 	inform_level_limit = {
-		tip = "举报将在指挥官等级达到20级后开放 "
+		tip = "举报将在指挥官等级达到20级后开放"
 	},
 	["3match_tip"] = {
 		tip = {
@@ -10536,6 +11096,82 @@ TIPS：
 	collect_tip2 = {
 		tip = "队伍中有角色正处于编队，无法加入委托阵容"
 	},
+	word_weakness = {
+		tip = "受损"
+	},
+	special_operation_tip1 = {
+		tip = "当前关卡无法使用"
+	},
+	special_operation_tip2 = {
+		tip = "您没有特别作战道具"
+	},
+	area_lock = {
+		tip = "该处海域尚未解锁"
+	},
+	equipment_upgrade_equipped_tag = {
+		tip = "装备中："
+	},
+	equipment_upgrade_spare_tag = {
+		tip = "仓库中："
+	},
+	equipment_upgrade_help = {
+		tip = {
+			{
+				info = "<color=#ffde38>装备研发系统说明：</color>\n"
+			},
+			{
+				info = "· 装备研发是通过<color=#92fc63>消耗</color>研发素材与物资将特定装备转变\n为更高级装备的系统。"
+			},
+			{
+				info = "·点击选择想要研发的装备，即可进入对应的装备研发\n界面。"
+			},
+			{
+				info = "·当所选装备拥有多种研发途径获得时，可以使用切换\n方案按钮进行切换。"
+			},
+			{
+				info = "·当素材装备也可通过研发获得时，可通过点击左侧的\n快速研发按钮进入对应研发界面。"
+			},
+			{
+				info = "·正在装备中装备也可以作为素材装备，研发后的新装\n备将直接变为装备中状态。（若新装备的类型无法被\n原角色装备，则装备返回仓库）"
+			},
+			{
+				info = "·将拥有强化等级的装备作为研发素材时，将会按照\n装备拆解规则返还强化过程中消耗的<color=#92fc63>部分强化物资</color>，\n并返还<color=#92fc63>全部强化素材</color>。"
+			}
+		}
+	},
+	equipment_upgrade_title = {
+		tip = "装备研发"
+	},
+	equipment_upgrade_coin_consume = {
+		tip = "消耗物资"
+	},
+	equipment_upgrade_quick_interface_source_chosen = {
+		tip = "请选择装备"
+	},
+	equipment_upgrade_quick_interface_materials_consume = {
+		tip = "需要消耗如下材料"
+	},
+	equipment_upgrade_feedback_lack_of_materials = {
+		tip = "材料不足"
+	},
+	equipment_upgrade_feedback_equipment_consume = {
+		tip = "此次研发将消耗<color=#92fc63>$1</color>装备中的<color=#92fc63>$2</color>"
+	},
+	equipment_upgrade_feedback_equipment_can_be_produced = {
+		tip = "素材装备不足，素材装备可通过研发系统获取"
+	},
+	equipment_upgrade_quick_interface_feedback_source_chosen = {
+		tip = "请选择装备"
+	},
+	equipment_upgrade_feedback_lack_of_equipment = {
+		tip = "素材装备不足"
+	},
+	equipment_upgrade_equipped_unavailable = {
+		tip = "<color=#92fc63>$1</color>无法装备<color=#92fc63>$2</color>，已进入仓库"
+	},
+	equipment_upgrade_initial_node = {
+		tip = "此装备不可由通过装备研发获取"
+	},
 	discount_coupon_tip = {
 		tip = "是否使用<color=#92fc63FF>$1钻石</color>及<color=#92fc63FF>$2 </color>购买<color=#92fc63FF>$3</color>"
 	},
@@ -10592,19 +11228,20 @@ TIPS：
 		tip = {
 			{
 				info = [[
-活动时间：2020.5.21-6.18
+活动时间：2020.9.17-10.12
 活动规则：
-1.5月27日为止每天零点解锁1个任务，完成活动任务可以
-获得「庆典建材」及奖励，活动任务可累积
+1.9月23日为止每天零点解锁1个任务，完成活动任务可以
+获得「庆典建材」、「探索点数」及奖励，活动任务可累
+积
 2.消耗「庆典建材」可以在庆典广场中升级建筑，每种建
 筑会提供不同的BUFF加成
 3.每种建筑分为三个等级，随着等级的提升，提供的
 BUFF加成也会增加
 4.可升级建筑有四种：
 啾啾咖啡
-啾啾和菓子
-啾啾汉堡
-啾啾小笼]]
+啾啾模型店
+啾啾书店
+啾啾游戏店]]
 			}
 		}
 	},
@@ -10881,14 +11518,23 @@ BUFF加成也会增加
 	win_condition_display_qijian = {
 		tip = "击破敌方旗舰"
 	},
+	win_condition_display_qijian_tip = {
+		tip = "BOSS击破，关卡攻略完成"
+	},
 	win_condition_display_shangchuan = {
 		tip = "商船抵达指定位置"
+	},
+	win_condition_display_shangchuan_tip = {
+		tip = "运输船抵达终点，护航成功"
 	},
 	win_condition_display_judian = {
 		tip = "击破敌方所有据点"
 	},
 	win_condition_display_tuoli = {
 		tip = "任意舰队到达脱离点"
+	},
+	win_condition_display_tuoli_tip = {
+		tip = "成功到达脱离点，关卡攻略完成"
 	},
 	lose_condition_display_quanmie = {
 		tip = "我方舰队全灭"
@@ -10918,13 +11564,13 @@ BUFF加成也会增加
 		tip = "弹药"
 	},
 	equip_info_6 = {
-		tip = "飞行速度 "
+		tip = "飞行速度"
 	},
 	equip_info_7 = {
 		tip = "鱼雷航速"
 	},
 	equip_info_8 = {
-		tip = "对甲比例 "
+		tip = "对甲比例"
 	},
 	equip_info_9 = {
 		tip = "伤害范围"
@@ -10973,6 +11619,39 @@ BUFF加成也会增加
 	},
 	equip_info_24 = {
 		tip = "挂载武器"
+	},
+	equip_info_25 = {
+		tip = "无"
+	},
+	equip_info_26 = {
+		tip = "技能更换为"
+	},
+	equip_info_27 = {
+		tip = ""
+	},
+	equip_info_28 = {
+		tip = "伤害修正比例"
+	},
+	equip_info_29 = {
+		tip = "伤害属性类型"
+	},
+	equip_info_30 = {
+		tip = "属性效率"
+	},
+	equip_info_31 = {
+		tip = "空袭"
+	},
+	equip_info_extralevel_0 = {
+		tip = "等级0"
+	},
+	equip_info_extralevel_1 = {
+		tip = "等级1"
+	},
+	equip_info_extralevel_2 = {
+		tip = "等级2"
+	},
+	equip_info_extralevel_3 = {
+		tip = "等级3"
 	},
 	tec_settings_btn_word = {
 		tip = "研发选项"
@@ -11052,5 +11731,1736 @@ BUFF加成也会增加
 	},
 	tec_act_catchup_btn_word = {
 		tip = "蓝图补完"
+	},
+	tec_catchup_errorfix = {
+		tip = "由于「新兵训练」中「科研任务·一期」存在完成后刷新异常的问题。公平起见，第一次完成「科研任务·一期」任务后，将自动重置一次一期的任务，确保所有指挥官都能完成两轮「科研任务·一期」。"
+	},
+	guild_duty_is_too_low = {
+		tip = "见习成员无法领取奖励"
+	},
+	guild_trainee_duty_change_tip = {
+		tip = "见习成员无法变更职位"
+	},
+	guild_not_exist_donate_task = {
+		tip = "不存在该任务"
+	},
+	guild_week_task_state_is_wrong = {
+		tip = "大舰队任务状态不正确"
+	},
+	guild_get_week_done = {
+		tip = "新的大舰队任务已领取"
+	},
+	guild_public_awards = {
+		tip = "大舰队奖励："
+	},
+	guild_private_awards = {
+		tip = "成员奖励："
+	},
+	guild_task_selecte_tip = {
+		tip = "正在领取【$1】，确认领取后，当周无法更换为其他任务，是否确定？"
+	},
+	guild_task_accept = {
+		tip = "正在领取【$1】的【$2】，本周已经获得过个人奖励，重复进行【$3】无法再次获得舰队币奖励，但依然可以累积大舰队任务完成次数，是否确认领取？"
+	},
+	guild_commander_and_sub_op = {
+		tip = "大舰队司令或者副司令才能进行此操作"
+	},
+	["guild_donate_times_not enough"] = {
+		tip = "今日筹备次数已用完"
+	},
+	guild_donate_success = {
+		tip = "军需筹备完成"
+	},
+	guild_left_donate_cnt = {
+		tip = "今日可完成：$1次"
+	},
+	guild_donate_tip = {
+		tip = "即将提交<color=#92FC63FF>$1$2</color>个(目前拥有<color=$4>$3</color>个)，为大舰队提供后勤补给，是否确定？"
+	},
+	guild_donate_addition_capital_tip = {
+		tip = "大舰队资金增加$1"
+	},
+	guild_donate_addition_techpoint_tip = {
+		tip = "筹备进度增加$1"
+	},
+	guild_donate_capital_toplimit = {
+		tip = "本日军需筹备可获取的大舰队资金已达到上限，无法继续获取"
+	},
+	guild_donate_techpoint_toplimit = {
+		tip = "本日军需筹备可获取的筹备进度已达到上限，无法继续获取"
+	},
+	guild_supply_no_open = {
+		tip = "大舰队补给未开启"
+	},
+	guild_supply_award_got = {
+		tip = "大舰队补给已领取"
+	},
+	guild_new_member_get_award_tip = {
+		tip = "新成员进入大舰队当日无法领取大舰队补给"
+	},
+	guild_start_supply_consume_tip = {
+		tip = "是否花费$1大舰队资金开启大舰队补给?\n<color=#c5cfdf>※大舰队补给：所有大舰队成员每天可领取一份补给奖励，持续14天</color>"
+	},
+	guild_left_supply_day = {
+		tip = "剩余$1天"
+	},
+	guild_supply_help_tip = {
+		tip = {
+			{
+				info = "指挥部派发的补给包，必定可获得以下道具"
+			},
+			{
+				info = "<color=#D797FFFF>舰队币*30</color>"
+			},
+			{
+				info = "有概率额外获得以下道具(所有概率单独计算)"
+			},
+			{
+				info = "<color=#d797ff>舰队币*10 40.00%</color>"
+			},
+			{
+				info = "<color=#d797ff>舰队币*10 10.00%</color>"
+			},
+			{
+				info = "<color=#ffde38>设计原型*10 5.00%</color>"
+			},
+			{
+				info = "<color=#ffde38>少量钻石 0.20%</color>"
+			},
+			{
+				info = "<color=#ffde38>试作型突破部件 0.10%</color>"
+			}
+		}
+	},
+	guild_op_only_administrator = {
+		tip = "大舰队司令或者副司令才能进行此操作"
+	},
+	guild_shop_refresh_done = {
+		tip = "刷新成功"
+	},
+	guild_shop_cnt_no_enough = {
+		tip = "数量不足"
+	},
+	guild_shop_refresh_all_tip = {
+		tip = "是否花费$1<color=#92fc63>$2</color>刷新商品列表"
+	},
+	guild_shop_exchange_tip = {
+		tip = "确认兑换该商品"
+	},
+	guild_shop_label_1 = {
+		tip = "请选择想要兑换的商品："
+	},
+	guild_shop_label_2 = {
+		tip = "可兑换上限"
+	},
+	guild_shop_label_3 = {
+		tip = "确 定"
+	},
+	guild_shop_label_4 = {
+		tip = "消耗"
+	},
+	guild_shop_label_5 = {
+		tip = "请选择想要兑换的角色："
+	},
+	guild_shop_must_select_goods = {
+		tip = "请选择想要兑换的商品："
+	},
+	guild_not_exist_activation_tech = {
+		tip = "当前没有正在进行研发的舰队科技"
+	},
+	guild_not_exist_tech = {
+		tip = "不存在该舰队科技"
+	},
+	guild_cancel_only_once_pre_day = {
+		tip = "舰队科技研发每天只能取消一次"
+	},
+	guild_tech_is_max_level = {
+		tip = "舰队科技等级已达到上限"
+	},
+	guild_tech_gold_no_enough = {
+		tip = "物资不足，无法学习该舰队科技"
+	},
+	guild_tech_guildgold_no_enough = {
+		tip = "舰队币不足，无法学习该舰队科技"
+	},
+	guild_tech_upgrade_done = {
+		tip = "舰队科技学习成功，等级提升"
+	},
+	guild_exist_activation_tech = {
+		tip = "同时只能研发一个舰队科技"
+	},
+	guild_tech_gold_desc = {
+		tip = "物资存储上限提升$1"
+	},
+	guild_tech_oil_desc = {
+		tip = "石油存储上限提升$1"
+	},
+	guild_tech_shipbag_desc = {
+		tip = "船坞容量上限提升$1"
+	},
+	guild_tech_equipbag_desc = {
+		tip = "仓库容量上限提升$1"
+	},
+	guild_box_gold_desc = {
+		tip = "喵箱购买成本降低$1"
+	},
+	guidl_r_box_time_desc = {
+		tip = "R喵箱训练时间减少$1"
+	},
+	guidl_sr_box_time_desc = {
+		tip = "SR喵箱训练时间减少$1"
+	},
+	guidl_ssr_box_time_desc = {
+		tip = "SSR喵箱训练时间减少$1"
+	},
+	guild_member_max_cnt_desc = {
+		tip = "大舰队席位上限增加$1"
+	},
+	guild_tech_livness_no_enough = {
+		tip = "活跃度达到$1可学习"
+	},
+	guild_ship_attr_desc = {
+		tip = "大舰队作战内$1的$2提高$3"
+	},
+	guild_start_tech_group_tip = {
+		tip = "即将开始【$1】的研发，是否确定？"
+	},
+	guild_cancel_tech_tip = {
+		tip = "正在取消【$1】的研发，取消后当前进度保留，但在再次开启任意项目研发前，军需筹备不再获得筹备进度"
+	},
+	guild_tech_consume_tip = {
+		tip = "需要消耗<icon name=guildicon w=0.7 h=0.7/>$1和<icon name=gold w=0.7 h=0.7/>$2，学习【$3】，是否确定？"
+	},
+	guild_tech_non_admin = {
+		tip = "操作权限不足，需要副司令以上职位方可进行舰队科技研发操作"
+	},
+	guild_tech_label_max_level = {
+		tip = "等级上限:"
+	},
+	guild_tech_label_dev_progress = {
+		tip = "筹备进度"
+	},
+	guild_tech_label_condition = {
+		tip = "完成军需筹备增加"
+	},
+	guild_tech_donate_target = {
+		tip = "需要筹备进度 $1"
+	},
+	guild_not_exist = {
+		tip = "大舰队不存在"
+	},
+	guild_not_exist_battle = {
+		tip = "大舰队作战不存在"
+	},
+	guild_battle_is_end = {
+		tip = "大舰队作战已结束"
+	},
+	guild_battle_is_exist = {
+		tip = "大舰队作战已经存在"
+	},
+	guild_guildgold_no_enough_for_battle = {
+		tip = "大舰队资金不足，无法开启作战"
+	},
+	guild_event_start_tip1 = {
+		tip = "有新的大舰队作战开启，点击确定更新页面"
+	},
+	guild_event_start_tip2 = {
+		tip = "已有正在进行的作战，无法开启作战，点击确定"
+	},
+	guild_word_may_happen_event = {
+		tip = "可能发生事件"
+	},
+	guild_battle_award = {
+		tip = "作战产出"
+	},
+	guild_word_consume = {
+		tip = "消耗"
+	},
+	guild_start_event_consume_tip = {
+		tip = "是否确认花费$1大舰队物资开启“$2”？"
+	},
+	guild_word_consume_for_battle = {
+		tip = "开启需要消耗"
+	},
+	guild_level_no_enough = {
+		tip = "大舰队等级不足，作战未解锁"
+	},
+	guild_open_event_info_when_exist_active = {
+		tip = "正在进行$1，无法选择该作战"
+	},
+	guild_join_event_cnt_label = {
+		tip = "可参与次数:"
+	},
+	guild_join_event_max_cnt_tip = {
+		tip = "参与次数不足，无法参加作战"
+	},
+	guild_join_event_progress_label = {
+		tip = "作战进度:"
+	},
+	guild_join_event_exist_finished_mission_tip = {
+		tip = "该作战正在进行中，现在参加作战无法获得该作战已经完成事件的奖励，是否确认继续参加？"
+	},
+	guild_event_not_exist = {
+		tip = "作战事件不存在"
+	},
+	guild_fleet_can_not_edit = {
+		tip = "当前舰队不可编辑"
+	},
+	guild_fleet_exist_same_kind_ship = {
+		tip = "无法选择多个同名的舰船"
+	},
+	guild_event_exist_same_kind_ship = {
+		tip = "不能存在多个同名的舰船"
+	},
+	guidl_event_ship_in_event = {
+		tip = "该舰船正在执行其他事件，无法选择"
+	},
+	guild_event_start_done = {
+		tip = "派遣成功"
+	},
+	guild_fleet_update_done = {
+		tip = "舰队更新成功"
+	},
+	guild_event_is_lock = {
+		tip = "事件未解锁"
+	},
+	guild_event_is_finish = {
+		tip = "事件已完成，参与事件的成员请到作战报告内领取奖励"
+	},
+	guild_fleet_not_save_tip = {
+		tip = "当前编辑不会被保存，是否确认关闭?"
+	},
+	guild_word_battle_area = {
+		tip = "作战区域:"
+	},
+	guild_word_battle_type = {
+		tip = "作战类型:"
+	},
+	guild_wrod_battle_target = {
+		tip = "战术目标:"
+	},
+	guild_event_recomm_ship_failed = {
+		tip = "不存在符合条件的舰船"
+	},
+	guild_event_start_event_tip = {
+		tip = "派遣成功后无法撤回，是否确定？"
+	},
+	guild_word_sea = {
+		tip = "近海"
+	},
+	guild_word_score_addition = {
+		tip = "评价加成:"
+	},
+	guild_word_effect_addition = {
+		tip = "效率加成:"
+	},
+	guild_curr_fleet_can_not_edit = {
+		tip = "当前编队不可编辑"
+	},
+	guild_next_edit_fleet_time = {
+		tip = "$1可继续派遣新的编队"
+	},
+	guild_event_info_desc1 = {
+		tip = "$5名角色$1值达到$2: <color=$3>$4/$5</color>"
+	},
+	guild_event_info_desc2 = {
+		tip = "总$1值: <color=$2>$3/$4</color>"
+	},
+	guild_join_member_cnt = {
+		tip = "参与成员:"
+	},
+	guild_total_effect = {
+		tip = "总效率:"
+	},
+	guild_word_people = {
+		tip = "人"
+	},
+	guild_event_info_desc3 = {
+		tip = "$1舰船 (现有$2)"
+	},
+	guild_not_exist_boss = {
+		tip = "作战首领不存在"
+	},
+	guild_ship_from = {
+		tip = "来自:"
+	},
+	guild_boss_formation_1 = {
+		tip = "至多只能选择3名其他成员的舰船"
+	},
+	guild_boss_formation_2 = {
+		tip = "每个成员的舰船最多只能选择1名"
+	},
+	guild_boss_formation_3 = {
+		tip = "编队内不能存在多个同名舰船"
+	},
+	guild_boss_cnt_no_enough = {
+		tip = "挑战次数不足"
+	},
+	guild_boss_fleet_cnt_invaild = {
+		tip = "编队状态异常，无法出击"
+	},
+	guild_boss_formation_not_exist_self_ship = {
+		tip = "先锋和主力必须至少选择各1名玩家自己的角色"
+	},
+	guild_boss_formation_exist_event_ship = {
+		tip = "$1正在执行军事委托中，无法参与首领战"
+	},
+	guild_fleet_is_legal = {
+		tip = "编队未满足要求，至少需要1位先锋和1位主力"
+	},
+	guild_battle_result_boss_is_death = {
+		tip = "大舰队作战首领战已经结束，战斗失效"
+	},
+	guild_must_edit_fleet = {
+		tip = "攻坚队修改已保存"
+	},
+	guild_ship_in_battle = {
+		tip = "$1正在作战中，此派遣操作将在当前作战结束后生效"
+	},
+	guild_ship_in_assult_fleet = {
+		tip = "该舰船在大舰队作战攻坚队中"
+	},
+	guild_event_exist_assult_ship = {
+		tip = "攻坚队的舰船无法参与事件"
+	},
+	guild_formation_erro_in_boss_battle = {
+		tip = "正在与首领敌人作战，无法编组攻坚队"
+	},
+	guild_get_report_failed = {
+		tip = "作战报告领取失败"
+	},
+	guild_report_get_all = {
+		tip = "全部领取"
+	},
+	guild_can_not_get_tip = {
+		tip = "未参与该事件，无法领取奖励"
+	},
+	guild_not_exist_notifycation = {
+		tip = "暂时没有舰队公告"
+	},
+	guild_exist_report_award_when_exit = {
+		tip = "存在作战奖励未领取，是否前往领取"
+	},
+	guild_report_tooltip = {
+		tip = "※最多可以存储20个事件的奖励,超出后最早的奖励将被移除,请及时领取"
+	},
+	word_guildgold = {
+		tip = "舰队币"
+	},
+	guild_member_rank_title_donate = {
+		tip = "筹备次数"
+	},
+	guild_member_rank_title_finish_cnt = {
+		tip = "完成次数"
+	},
+	guild_member_rank_title_join_cnt = {
+		tip = "参与次数"
+	},
+	guild_donate_log = {
+		tip = "[$1] $2 消耗$3$4 完成军需筹备 获得大舰队资金$5"
+	},
+	guild_supply_log = {
+		tip = "[$1] $2 消耗大舰队资金$3 开启大舰队补给$4天"
+	},
+	guild_weektask_log = {
+		tip = "[$1] 大舰队任务完成 获得大舰队资金$2"
+	},
+	guild_battle_log = {
+		tip = "[$1] $2 消耗大舰队资金$3 开启大舰队作战"
+	},
+	guild_use_donateitem_success = {
+		tip = "使用成功，军需筹备次数+$1"
+	},
+	guild_use_battleitem_success = {
+		tip = "使用成功，作战参与次数+$1"
+	},
+	not_exist_guild_use_item = {
+		tip = "未加入大舰队，无法使用该道具"
+	},
+	guild_member_tip = {
+		tip = {
+			{
+				info = "成员管理说明："
+			},
+			{
+				info = "1.大舰队成员可在此界面查看其他成员的指挥官信息。"
+			},
+			{
+				info = "2.舰队司令、副司令可以任命变更<color=#92fc63>职位比自己低</color>的成员的\n职位。"
+			},
+			{
+				info = "3.舰队司令、副司令可以开除<color=#92fc63>职位比自己低</color>的成员。"
+			},
+			{
+				info = "4.当舰队司令超过<color=#92fc63>10</color>天没有上线，副司令可以<color=#92fc63>弹劾</color>舰队司\n令。"
+			},
+			{
+				info = "5.弹劾流程：申请弹劾后<color=#92fc63>24</color>小时内，舰队司令可以在大舰\n队界面内驳回弹劾，如过<color=#92fc63>24</color>小时内未能驳回弹劾，则舰队\n司令移交给<color=#92fc63>活跃度最高</color>的副司令。"
+			},
+			{
+				info = "6.关于<color=#92fc63>见习成员</color>："
+			},
+			{
+				info = "    初入大舰队的指挥官默认为见习成员"
+			},
+			{
+				info = "    见习成员活跃度达到100自动转正"
+			},
+			{
+				info = "    见习成员无法被管理变更职位"
+			},
+			{
+				info = "    见习成员无法学习大舰队科技"
+			},
+			{
+				info = "    见习成员无法领取大舰队补给"
+			},
+			{
+				info = "    见习成员无法领取作战报告奖励"
+			},
+			{
+				info = "    其余权限等同于普通成员"
+			},
+			{
+				info = "※见习成员被开除后，可以从系统邮箱领取属于在舰队期\n间累积的作战报告奖励"
+			},
+			{
+				info = "7.关于<color=#92fc63>活跃度</color>："
+			},
+			{
+				info = "在游戏内完成各种日常&周常&大舰队相关行为，可以获\n得<color=#92fc63>活跃度</color>，相应计数如下："
+			},
+			{
+				info = "    完成日常任务：<color=#92fc63>2</color>点"
+			},
+			{
+				info = "    完成周常任务：<color=#92fc63>5</color>点"
+			},
+			{
+				info = "    完成1次大舰队个人任务：<color=#92fc63>2</color>点"
+			},
+			{
+				info = "    完成1次军需筹备：<color=#92fc63>10</color>点"
+			},
+			{
+				info = "    大舰队作战事件派遣1次：<color=#92fc63>1</color>点"
+			},
+			{
+				info = "    挑战1次大舰队作战首领战：<color=#92fc63>10</color>点"
+			}
+		}
+	},
+	guild_tech_tip = {
+		tip = {
+			{
+				info = "科技说明："
+			},
+			{
+				info = "1.大舰队科技可对指挥官港区提供一定的加成。"
+			},
+			{
+				info = "2.大舰队科技有<color=#92fc63>研发模式</color>和<color=#92fc63>通常模式</color>两个界面，通过页面\n右上角按钮切换。"
+			},
+			{
+				info = "3.研发模式下，舰队司令和副司令可以更换研发的大舰队\n科技，每天只能更换<color=#92fc63>1</color>次研发项目。"
+			},
+			{
+				info = "4.创建大舰队&系统更新后，研发项目默认选择为<color=#92fc63>大舰队\n成员席位扩充</color>，指挥官可自行更换。"
+			},
+			{
+				info = "5.大舰队科技的研发需要执行<color=#92fc63>军需筹备</color>，通过在<color=#92fc63>后勤处</color>完\n成<color=#92fc63>军需筹备</color>可以累计<color=#92fc63>项目筹备进度</color>，筹备完成后，对应大舰\n队科技等级提升。"
+			},
+			{
+				info = "6.研发模式下，所有成员均可查看项目筹备进度。"
+			},
+			{
+				info = "7.大舰队同时只能进行<color=#92fc63>1</color>项科技的研发项目筹备。"
+			},
+			{
+				info = "8.通常模式下，所有成员均可花费<color=#92fc63>舰队币</color>和<color=#92fc63>物资</color>学习大舰\n队已经研发的科技。"
+			},
+			{
+				info = "9.成员的大舰队科技等级只能提升到<color=#92fc63>当前大舰队</color>科技等级\n上限。"
+			},
+			{
+				info = "10.大舰队科技需要达到对应的<color=#92fc63>活跃度</color>才可学习。"
+			},
+			{
+				info = "11.如果指挥官退出大舰队，已经习得的大舰队科技<color=#92fc63>等级\n保留</color>，加入新的大舰队后，对应科技将会<color=#92fc63>重新生效</color>。"
+			},
+			{
+				info = "12.如果指挥官不在任何一个大舰队内，则大舰队科技<color=#92fc63>不\n生效</color>。"
+			}
+		}
+	},
+	guild_office_tip = {
+		tip = {
+			{
+				info = "后勤说明："
+			},
+			{
+				info = "1.舰队司令，副司令可以在后勤处发布大舰队任务，购买\n大舰队补给。"
+			},
+			{
+				info = "2.所有成员均可以在后勤处领取&执行大舰队任务，提交\n军需筹备任务，以及领取大舰队补给。"
+			},
+			{
+				info = "3.大舰队任务：由大舰队全体成员<color=#92fc63>共同执行</color>的任务，完成\n任务可获得大舰队资金奖励。"
+			},
+			{
+				info = "4.大舰队任务个人奖励每人每周仅可获得<color=#92fc63>1</color>次，但重复完\n成任务<color=#92fc63>仍然计算</color>大舰队任务执行次数。"
+			},
+			{
+				info = "5.大舰队任务每周结算，按照结算时<color=#92fc63>大舰队全员</color>任务完成\n次数发放大舰队资金奖励。"
+			},
+			{
+				info = "6.军需筹备：大舰队全体成员可通过军需筹备获取舰队币\n奖励。"
+			},
+			{
+				info = "7.军需筹备每人每天可以执行<color=#92fc63>3</color>次。"
+			},
+			{
+				info = "8.完成军需筹备除个人舰队币奖励以外，同时还可为大舰\n队提供一定数量的大舰队资金。"
+			},
+			{
+				info = "9.每次完成军需筹备，舰队科技研发的<color=#92fc63>筹备进度</color>将会对应\n增加，<color=#92fc63>项目筹备进度</color>达到标准，研发中的大舰队科技等级\n将会提升。"
+			},
+			{
+				info = "10.军需筹备可获取的<color=#92fc63>大舰队资金</color>和<color=#92fc63>筹备进度</color>存在每日上\n限，达到上限后。军需筹备将无法继续提供<color=#92fc63>大舰队资金</color>与\n<color=#92fc63>筹备进度</color>，但是可以正常获得<color=#92fc63>舰队币</color>。"
+			},
+			{
+				info = "11.军需筹备的<color=#92fc63>每日上限次数</color> 为：大舰队人数上限*3 次"
+			},
+			{
+				info = "12.大舰队补给：由舰队司令，副司令花费大舰队资金购\n买的成员福利。"
+			},
+			{
+				info = "13.购买大舰队补给需要消费一定量的大舰队资金，购买\n后<color=#92fc63>14</color>天内，所有大舰队成员每天可领取<color=#92fc63>1</color>份大舰队补给。"
+			},
+			{
+				info = "14.新加入大舰队的成员，当天无法获得大舰队补给，加\n入大舰队第二天，可获得第<color=#92fc63>1</color>份补给(如果该大舰队有购买\n补给)。"
+			},
+			{
+				info = "15.单个成员的大舰队补给最多可储存<color=#92fc63>3</color>份，超过<color=#92fc63>3</color>份未领\n取将无法获得新的大舰队补给。"
+			}
+		}
+	},
+	guild_event_help_tip = {
+		tip = {
+			{
+				info = "作战说明："
+			},
+			{
+				info = "1.大舰队作战(以下简称为<color=#92fc63>作战</color>)是需要大舰队成员共同完\n成的战役。"
+			},
+			{
+				info = "2.作战需要有大舰队<color=#92fc63>司令</color>或<color=#92fc63>副司令</color>开启，开启时需要消耗\n<color=#92fc63>大舰队资金</color>。"
+			},
+			{
+				info = "3.作战中有若干个事件，事件需要所有成员派遣舰船前往\n解决，<color=#92fc63>派遣的舰船越多，解决事件的速度越快</color>。"
+			},
+			{
+				info = "3.1.事件类型如下"
+			},
+			{
+				info = "遭遇战",
+				rawIcon = {
+					name = "1",
+					atlas = "GuildEventIcon"
+				}
+			},
+			{
+				info = "航空战",
+				rawIcon = {
+					name = "2",
+					atlas = "GuildEventIcon"
+				}
+			},
+			{
+				info = "运输护卫",
+				rawIcon = {
+					name = "3",
+					atlas = "GuildEventIcon"
+				}
+			},
+			{
+				info = "运输破坏",
+				rawIcon = {
+					name = "4",
+					atlas = "GuildEventIcon"
+				}
+			},
+			{
+				info = "占领据点",
+				rawIcon = {
+					name = "5",
+					atlas = "GuildEventIcon"
+				}
+			},
+			{
+				info = "据点防卫",
+				rawIcon = {
+					name = "6",
+					atlas = "GuildEventIcon"
+				}
+			},
+			{
+				info = "侦查巡逻",
+				rawIcon = {
+					name = "7",
+					atlas = "GuildEventIcon"
+				}
+			},
+			{
+				info = "后勤维修",
+				rawIcon = {
+					name = "8",
+					atlas = "GuildEventIcon"
+				}
+			},
+			{
+				info = "4.所有主线事件完成后，将会出现首领敌人。"
+			},
+			{
+				info = "5.首领敌人的血量由<color=#92fc63>当次作战参与事件的成员数量</color>决定。"
+			},
+			{
+				info = "6.每个成员每天只能挑战<color=#92fc63>1</color>次首领战。"
+			},
+			{
+				info = "7.攻坚队：首领战事件可以使用攻坚队内的舰船协助作\n战，每位成员均可向攻坚队派遣<color=#92fc63>2</color>名角色。"
+			},
+			{
+				info = "8.向攻坚队派遣舰船后<color=#92fc63>30</color>分钟内无法修改，首领敌人出\n现状态下，无法修改攻坚队配置"
+			},
+			{
+				info = "9.首领战作战编组说明详见首领敌人作战编组界面。"
+			},
+			{
+				info = "10.击败首领敌人后，作战结束。"
+			},
+			{
+				info = "11.所有事件和首领敌人的奖励将会发放到<color=#92fc63>作战报告</color>内，\n作战报告有存储上限，请指挥官<color=#92fc63>及时领取</color>。"
+			}
+		}
+	},
+	guild_mission_info_tip = {
+		tip = {
+			{
+				info = "事件派遣说明："
+			},
+			{
+				info = "1.单个事件内，单个成员每次可以派遣<color=#92fc63>4</color>名角色。"
+			},
+			{
+				info = "2.每天会刷新4次派遣次数(现实时间<color=#92fc63>6/12/18/21</color>时分别刷\n新<color=#92fc63>1</color>次)，每个事件单个成员最多可以派遣<color=#92fc63>4</color>次。"
+			},
+			{
+				info = "3.事件内派遣的舰船如果符合事件的<color=#92fc63>效率需求</color>，可额外提\n供解决事件的<color=#92fc63>效率值</color>，进一步提高解决事件的速度。"
+			},
+			{
+				info = [[
+4.同时事件会有一些其他<color=#92fc63>评价需求</color>，派遣的舰船如果符合
+事件的评价需求，可额外为事件提供<color=#92fc63>评价加成</color>，评价加成
+达到一定程度，事件会有<color=#92fc63>额外奖励</color>，个别事件的评价可能
+影响最终出现的首领敌人。]]
+			},
+			{
+				info = "5.事件内有若干个节点，节点的成功率受所有成员派遣的\n<color=#92fc63>角色数量</color>影响，节点无论成功或失败都会获得奖励。"
+			},
+			{
+				info = "6.节点奖励将与事件奖励统合成作战报告提交，指挥官可\n到作战报告界面领取。"
+			}
+		}
+	},
+	guild_boss_fleet_desc = {
+		tip = [[
+1.最多选择<color=#92fc63>9</color>名角色，组成舰队。
+2.先锋和主力需要至少各有<color=#92fc63>1</color>名指挥官自身港区的角色。
+3.最多可以从攻坚队选择<color=#92fc63>3</color>名角色参与首领战。
+4.首领敌人血量归零后，首领战结束。
+5.每位指挥官每天只能挑战<color=#92fc63>1</color>次首领战。]]
+	},
+	guild_boss_formation_exist_invaild_ship = {
+		tip = "攻坚队成员发生变动，首领战编队已被更新"
+	},
+	guild_exist_unreceived_supply_award = {
+		tip = "<color=red>待领取</color>"
+	},
+	word_shipState_guild_event = {
+		tip = "角色正在参与大舰队作战，无法退役"
+	},
+	help_rollingBallGame = {
+		tip = {
+			{
+				info = [[
+小游戏玩法：
+1.指挥官选中转珠后，最多有7秒的移动时间，在这7秒的
+移动时间内，可以拖动转珠上下左右不限距离移动
+2.移动过程中会与路径上的转珠交换位置，7秒时间结束
+或指挥官松手后，会开始消除并结算
+3.同色转珠横或竖组成三个及以上会进行消除，一次结算
+消除转珠越多，获得的分数越高
+活动规则：
+活动期间每日可获得一次可用次数，可用次数最多可以叠
+加7次
+1.在有可用次数的情况下参与啾啾转转乐会消耗掉可用次
+数并获得签到次数，集齐7次签到次数可以获得
+「庆典邀请函」
+2.可用次数可以在庆典广场页面右侧看到，签到进度可以
+通过点击庆典广场页面「邀请函」按钮查看
+3.在没有可用次数的情况下进行啾啾转转乐不会获得签到
+次数
+4.因为其他原因中途退出小游戏不会消耗可用次数，同时
+也不会获得任何奖励]]
+			}
+		}
+	},
+	rolling_ball_help = {
+		tip = {
+			{
+				info = [[
+活动规则：
+活动期间每日可获得一次可用次数，可用次数最多可以叠
+加7次
+1.在有可用次数的情况下参与啾啾转转乐会消耗掉可用次
+数并获得签到次数，集齐7次签到次数可以获得
+「庆典邀请函」
+2.可用次数可以在庆典广场页面右侧看到，签到进度可以
+通过点击庆典广场页面「邀请函」按钮查看
+3.在没有可用次数的情况下进行啾啾转转乐不会获得签到
+次数
+4.因为其他原因中途退出小游戏不会消耗可用次数，同时
+也获得任不会何奖励]]
+			}
+		}
+	},
+	help_jiujiu_expedition_game = {
+		tip = {
+			{
+				info = [[
+游戏规则：
+1.活动期间，指挥官点击关卡内格子可以探索关卡，探索
+关卡需要消耗探索点数
+2.当关卡探索度达到100%时，才可以前往下一个关卡
+3.指挥官只可以探索与已探索区域相邻的格子，完成格子
+探索可以增加探索度
+4.关卡内格子分为三种类型：普通格、宝箱格、敌人格，
+每种格子完成探索后的奖励不同
+注：宝箱格需要打开宝箱、敌人格需要击败敌人才算完成
+探索]]
+			}
+		}
+	},
+	jiujiu_expedition_game_stg_desc = {
+		tip = "第$1关探索度"
+	},
+	build_ship_accumulative = {
+		tip = "累计建造:"
+	},
+	destory_ship_before_tip = {
+		tip = "是否确认"
+	},
+	destory_ship_input_erro = {
+		tip = "请输入正确的确认文本后进行拆解"
+	},
+	destroy_ur_rarity_tip = {
+		tip = "包含<color=#92fc63>海上传奇舰船</color>，请输入<color=#92fc63>「$1」</color>进行确认"
+	},
+	destory_ur_pt_overflowa = {
+		tip = "※拆解获得的<color=#92fc63>「特装原型」</color>将超过本月获取上限，<color=#fd796b>超过的部分将无法获得</color>"
+	},
+	jiujiu_expedition_help = {
+		tip = {
+			{
+				info = [[
+活动时间：2020.9.17-10.12
+活动规则：
+1.9月23日为止，指挥官每天可以通过多种方式获取「探
+索点数」
+获取方式一览：
+①每日登录游戏：11点「探索点数」
+②完成「啾啾历险记」任务：10点「探索点数」
+③完成「庆典广场」任务：10点「探索点数」
+以上活动内容均可累积
+2.消耗「探索点数」可在「啾啾历险记」关卡内探索地图
+获取丰厚奖励]]
+			}
+		}
+	},
+	shop_label_unlimt_cnt = {
+		tip = "可重复兑换"
+	},
+	jiujiu_expedition_book_tip = {
+		tip = "完成前一本收集手册后可解锁"
+	},
+	jiujiu_expedition_reward_tip = {
+		tip = "完成手册收集后可领取奖励"
+	},
+	jiujiu_expedition_amount_tip = {
+		tip = "探索点数不足，请完成任务获取探索点数"
+	},
+	jiujiu_expedition_stg_tip = {
+		tip = "关卡未解锁，请完成前置关卡"
+	},
+	trade_card_tips1 = {
+		tip = "前往商店"
+	},
+	trade_card_tips2 = {
+		tip = [[
+重大提醒！
+指挥官，贸易许可证已经在$1到期喵！
+许可证到期之后，各种各样的便利就无法继续享受了喵.....
+要不要考虑继续签订贸易许可呢喵~
+{namecode:98}会随时在商店等着您哦，喵~！]]
+	},
+	trade_card_tips3 = {
+		tip = [[
+重大提醒！
+指挥官，贸易许可证会在$1到期喵！
+许可证到期之后，各种各样的便利就无法继续享受了喵.....
+要不要考虑继续签订贸易许可呢喵~
+{namecode:98}会随时在商店等着您哦，喵~！]]
+	},
+	trade_card_tips4 = {
+		tip = "$1年$2月$3日"
+	},
+	ur_exchange_help_tip = {
+		tip = {
+			{
+				info = [[
+ ■ 「特装型布里MKIII」的获取方式：
+原型商店新增「特装型布里MKIII」
+需要收集「特装原型」进行兑换
+
+ ■ 「特装原型」可通过以下途径获取：
+通过特装原型周常任务，完成每日日常任务每周可以获得
+「特装原型」400个
+还可以通过出击击破主线、活动、作战档案、主线困难
+关卡的BOSS、完成科研项目或退役非改造海上传奇
+稀有度角色获得
+（退役通过改造提升为海上传奇稀有度的角色无法获得）
+
+每月的特装原型获取数量上限为4000
+每月1日0点刷新可获取数量
+*部分活动获取的特装原型不计入每月上限，会进行注明
+]]
+			}
+		}
+	},
+	fleet_antisub_range = {
+		tip = "反潜声呐范围："
+	},
+	fleet_antisub_range_tip = {
+		tip = {
+			{
+				info = [[
+ · 反潜声呐侦测
+
+仅当队伍先锋中有未被击破的轻巡或驱逐时，战斗中该
+编队将带有反潜声呐侦测敌方潜艇
+在反潜声呐侦测范围内的敌方潜艇将被暴露，直至其脱离
+反潜声呐侦测范围（部分特殊情况除外）
+
+反潜声呐探索范围的计算方式：
+计算反潜探索范围所使用的所有反潜值，仅取船坞角色详
+情的白色字体属性部分
+1、基础声呐范围
+根据先锋编队的驱逐和轻巡角色的反潜值和公式，计算
+各自的基础侦测直径：
+驱逐基础侦测直径 = 反潜值 / 2 - 32
+驱逐的基础声呐范围限制：最小为45，最大为100
+轻巡基础侦测直径 = 反潜值 / 2.86
+轻巡的基础声呐范围限制：最小为30，最大为80
+
+计算各自的基础侦测直径后，取其中的最大基础侦测直径
+作为队伍的基础侦测范围
+
+2、额外声呐范围
+除基础声呐范围外，还可以通过其他方式增加额外的声呐
+范围
+基础范围与额外范围相加后，形成实际的反潜声呐侦测范
+围
+ ·将主力编队所有角色的反潜值合计后，根据公式计算成
+额外范围
+主力编队额外侦测直径 = 主力总合反潜值 / 24 
+主力编队额外侦测范围限制：最小为0，最大为15
+ ·装备、技能增加的额外范围
+]]
+			}
+		}
+	},
+	practise_idol_tip = {
+		tip = "是否对$1进行练习？"
+	},
+	practise_idol_help = {
+		tip = {
+			{
+				info = [[
+活动规则：
+1.活动期间指挥官获得<color=#92fc63>「激唱徽章」</color>后可以在活动页面对
+偶像组合进行练习，当练习进度达到特殊阶段时会出现偶
+像能力选择界面，指挥官需要选择能力进行练习
+2.偶像能力分为演唱力、舞蹈力、表演力三种，每种能力
+可以练习两次，并且会提供额外的加成：
+①演唱力：主线、困难、活动、作战档案关卡中，造成的
+伤害提高
+②舞蹈力：主线、困难、活动、作战档案关卡中，受到的
+伤害减少
+③表演力：主线、困难、活动、作战档案关卡中，角色经
+验获取提高
+3.当每种能力练习至MAX时，指挥官还可以获得对应的奖
+励
+4.点击页面右侧偶像能力图标可以查看每种能力提供的额
+外加成与对应奖励]]
+			}
+		}
+	},
+	upgrade_idol_tip = {
+		tip = "「选择想要练习的项目」"
+	},
+	upgrade_complete_tip = {
+		tip = "练习已完成"
+	},
+	upgrade_introduce_tip = {
+		tip = "$1提升至Lv.MAX可获取特别奖励"
+	},
+	collect_idol_tip = {
+		tip = "※将周边拖回选择框区域可放回"
+	},
+	hand_account_tip = {
+		tip = "完成周边收集后解锁"
+	},
+	hand_account_resetting_tip = {
+		tip = "是否重置手账页面？"
+	},
+	help_candymagic = {
+		tip = {
+			{
+				info = [[
+活动规则：
+活动期间每日可获得一次可用次数，可用次数最多可以叠
+加7次
+1.在有可用次数的情况下参与并结束糖果与魔法之夜会消
+耗掉可用次数并获得签到次数，集齐7次签到次数可以获
+得「拉德福特」限定换装
+2.在没有可用次数的情况下进行糖果与魔法之夜不会获得
+签到次数
+3.因为其他原因中途退出小游戏不会消耗可用次数，同时
+也不会获得任何奖励
+小游戏玩法：
+1.指挥官控制拉德福特左右移动接取天上掉下的糖果，接
+到糖果可以获得分数，漏接糖果会扣除一颗生命值
+2.指挥官需要特别注意掉下的南瓜炸弹，接到南瓜炸弹也
+会扣除一颗生命值
+3.拉德福特一共有三颗生命值，全部扣除后游戏结束并进
+行结算
+4.游戏中会出现幽灵啾啾，拉德福特被附身后会降低移动
+速度，当幽灵啾啾靠近时点击画面右侧手电可以驱逐幽灵
+啾啾]]
+			}
+		}
+	},
+	award_overflow_tip = {
+		tip = "部分的奖励将超出资源上限，请手动领取。"
+	},
+	hunter_npc = {
+		tip = {
+			{
+				info = "「峡湾间的猎人」说明："
+			},
+			{
+				info = "1.活动期间，玩家可获得临时npc角色猎人，临时角\n    色不可誓约、不可退役、不可被选为强化突破材料。"
+			},
+			{
+				info = "2.活动期间，击破普通难度主线第三章及之后章节或活动\n   地图旗舰，可增加临时npc角色猎人的友好度。"
+			},
+			{
+				info = "3.舰队中编入猎人且未被重创，击破敌方旗舰后可获得额\n外的友好度加成（常规角色与NPC均可计入）"
+			},
+			{
+				info = "4.在活动结束前累计获得1000点友好度，可领取奖励并将\n    临时角色「猎人」转化为永久角色。"
+			},
+			{
+				info = "5.在活动结束后，未完成转化的临时角色「猎人」将\n    离开港区，不返还已经消耗的强化、突破等培养材料。"
+			}
+		}
+	},
+	fighterplane_help = {
+		tip = {
+			{
+				info = "活动时间：<color=#92fc63>11.12-12.10</color>"
+			},
+			{
+				info = [[
+活动规则：
+活动期间每日可获得<color=#92fc63>2</color>次演习次数，演习次数最多可以叠
+加<color=#92fc63>12</color>次
+1.在有演习次数的情况下选择战斗机完成演习关卡会消耗
+掉演习次数并增加关卡进度
+2.每架战斗机的关卡进度达到<color=#92fc63>3</color>时，都可以获得对应奖励
+3.在没有演习次数的情况下完成演习关卡不会增加关卡进
+度
+4.因为其他原因中途退出演习关卡不会消耗演习次数，同
+时也不会获得任何奖励
+5.选择已获得奖励的战斗机完成演习关卡，不会消耗演习
+次数
+6.在演习关卡中击破敌方可以获得加分，被敌方击中会扣
+分。躲避攻击的同时击破更多敌人获取高分吧！]]
+			}
+		}
+	},
+	fighterplane_J10_tip = {
+		tip = [[
+歼-10A型战斗机是中国自行研制、具有完全自主知识产权的第三代全天候、单座单发歼击机，以夺取空中优势和实施战役突击为主要作战使命。
+
+
+]]
+	},
+	fighterplane_J15_tip = {
+		tip = [[
+歼15战斗机是我国自主研制的第一型重型舰载多用途战斗机。拥有较强的空空/空面作战能力,用于在航母编队的统一指挥引导下,遂行空中攻防作战,夺取局部海域的制空权、制海权等任务,标志着我国远洋海上攻防作战立体化取得重大突破。在2015年纪念中国人民抗日战争暨世界反法西斯战争胜利70周年阅兵活动中首次亮相。
+
+
+]]
+	},
+	fighterplane_FC1_tip = {
+		tip = [[
+枭龙/FC-1飞机是中巴双方共同投资开发的单座、单发、多用途、轻型战斗机；具有突出的中低空高亚声速机动作战能力，具有长航程优良短距起降、优异外挂和空中加油能力；装备先进的航电系统和武器系统，可以进行超视距空对空作战，使用多种精确制导武器实施空对地攻击。
+
+
+]]
+	},
+	fighterplane_FC31_tip = {
+		tip = [[
+鹘鹰是一款中型多用途第四代作战飞机。综合作战效能优异，我国具有自主知识产权。鹘鹰飞机采用单座、双发、外倾双垂尾、全动平尾的正常式布局，配置内埋武器舱。具有高生存力、多任务能力和高性价比等特点。
+
+
+]]
+	},
+	fighterplane_complete_tip = {
+		tip = "使用已获得奖励的战机进行游戏无法增加关卡进度，且不会消耗演习次数，是否继续？"
+	},
+	fighterplane_destroy_tip = {
+		tip = "击破敌机 x"
+	},
+	fighterplane_hit_tip = {
+		tip = "我方被击中 x"
+	},
+	fighterplane_score_tip = {
+		tip = "总计"
+	},
+	venusvolleyball_help = {
+		tip = {
+			{
+				info = [[
+活动规则：
+1.<color=#92fc63>12月2日</color>为止每日0点开放<color=#92fc63>1</color>场新的比赛，总计<color=#92fc63>7</color>场，可累
+计。全部完成后可以获得限定装备<color=#92fc63>「觉醒宝珠」</color>以及角色
+喜好道具-<color=#92fc63>「喜好食物(莫妮卡)」</color>
+2.点击开始游戏，选择两名角色后开始比赛，任意一方获
+得<color=#92fc63>5</color>分后即可完成游戏
+3.指挥官在接球和击球时会出现判定圈，点击屏幕任意位
+置完成判定
+4.判定圈缩至外圈与内圈之间时点击视为good，判定圈
+缩至内圈后点击视为perfect，未进行点击或判定圈未缩
+到外圈时点击视为miss
+接球时：判定miss为失分，判定good和perfect成功接球
+击球时：判定miss击球但不得分，判定good和perfect击
+球得分
+5.未开放全部比赛前，可重复挑战当日比赛，在完成全部
+比赛后开启自由挑战，指挥官可自由选择角色进行比赛]]
+			}
+		}
+	},
+	venusvolleyball_rule_tip = {
+		tip = "先得$1分"
+	},
+	venusvolleyball_return_tip = {
+		tip = "是否退出游戏？退出游戏不会视为完成该场比赛"
+	},
+	venusvolleyball_suspend_tip = {
+		tip = "是否继续游戏？"
+	},
+	doa_main = {
+		tip = {
+			{
+				info = [[
+活动规则：
+<color=#92fc63>11.26-12.10</color>期间开启限时活动「假日航线」
+1.通过特别作战获取「维纳斯点数」，在「累计奖励」和
+「补给商店」处兑换丰厚奖励
+2.完成「排球练习赛」小游戏第七战可以获得限定装备
+<color=#92fc63>「觉醒宝珠」</color>
+注意：每日开放1场新的比赛，总计7场
+3.在活动中收集14个「角色喜好」道具后，可在
+「纪念章」处获取<color=#92fc63>「维纳斯假期纪念像」</color>
+详细获取条件可在「纪念章」界面查看
+4.点击「限时建造」可以前往建造界面
+5.点击「换装商店」可以前往换装商店界面
+6.<color=#92fc63>11.26-12.09</color> 每日刷新一个活动特殊委托，该委托不占
+用可派出舰队上限，完成委托可获取活动奖励
+未进行的委托将于次日消失，进行中的委托可于次日领取
+奖励，领取奖励后可刷新次日的活动特殊委托，领取时间
+截止12月16日23点59分]]
+			}
+		}
+	},
+	doa_pt_help = {
+		tip = {
+			{
+				info = [[
+活动规则：
+1.活动期间指挥官获得<color=#92fc63>「维纳斯点数」</color>后可以在活动页面
+对执照等级进行升级，当执照等级提升时会出现能力值强
+化选择界面，指挥官可以选择能力值进行强化
+2.能力值分为力量、技巧、体力、魅力四种，每种能力值
+可以强化两次，并且会提供额外的加成：
+①力量：主线、困难、活动、作战档案关卡中，造成的伤
+害提高
+②技巧：战术学院学习时间缩短
+③体力：主线、困难、活动、作战档案关卡中，角色经验
+获取提高
+④魅力：后宅经验加成提高
+3.点击页面右侧执照等级图标可以查看每种能力值提供的
+额外加成]]
+			}
+		}
+	},
+	doa_pt_complete = {
+		tip = "强化已完成"
+	},
+	doa_pt_up = {
+		tip = "是否对$1进行强化?"
+	},
+	doa_liliang = {
+		tip = "力量"
+	},
+	doa_jiqiao = {
+		tip = "技巧"
+	},
+	doa_tili = {
+		tip = "体力"
+	},
+	doa_meili = {
+		tip = "魅力"
+	},
+	snowball_help = {
+		tip = {
+			{
+				info = [[
+活动规则：
+1.<color=#92fc63>1月4日</color>为止每日0点开放<color=#92fc63>1</color>场新的比赛，总计<color=#92fc63>7</color>场，可累
+计。全部完成后可以获得<color=#92fc63>桸</color>限定换装<color=#92fc63>「迎春的神乐舞」</color>
+2.指挥官每完成1场新的比赛还可以获得2次敲钟祈福次数，
+<color=#ff5c5c>最多可获得14次敲钟祈福有效次数</color>，花费物资消耗敲钟祈
+福次数可以获得不同效果
+游戏规则：
+1.指挥官需要点击左侧按钮控制小人上下移动躲避敌方雪
+球，被雪球击中会扣除生命值，生命值耗尽游戏结束。
+2.指挥官点击敌方小人即可使用雪球攻击，击中不同敌人
+会获得不同分数。
+特别注意：击中乱入场地的无辜路人会扣分哦！
+得分规则：
+击中：樟、松、楙、橗、椿、莲 <color=#92fc63>加100分</color>
+击中：皇家方舟 <color=#92fc63>加200分</color>
+击中：挖矿啾啾、梿 <color=#ff5c5c>扣50分</color>
+3.画面右侧支援槽会随着时间上涨，当支援槽涨满时指挥
+官可以点击支援槽呼叫空袭支援。空袭支援会清除当前场
+上敌方雪球并对敌人进行雪球轰炸
+4.指挥官生命值耗尽结束游戏或是点击游戏内退出按钮退
+出游戏都视为完成游戏。因为其他原因中途退出游戏则算
+作未完成游戏]]
+			}
+		}
+	},
+	help_xinnian2021_feast = {
+		tip = {
+			{
+				info = [[
+活动时间：<color=#92fc63>2020.12.29-2021.1.14</color>
+活动简介：
+「啾啾雪合战」：参与小游戏获取桸限定换装「迎春的神
+乐舞」
+「啾啾小吃街」：参与小游戏获取限定角色「Z28」
+「敲钟祈福」：参与小游戏获取奖励「年贺状」
+「换装商店」：购买新年限时换装
+「限时建造」：建造限时角色]]
+			}
+		}
+	},
+	help_xinnian2021__qiaozhong = {
+		tip = {
+			{
+				info = [[
+<size=31><color=#92fc63>TIPS：
+在没有敲钟有效次数时点击敲钟仍然会消耗物资，但是不会
+获得加成效果</color></size>
+1.活动期间指挥官每完成<color=#92fc63>啾啾雪合战</color>的1场新比赛可以获
+得<color=#92fc63>2次</color>敲钟有效次数，<color=#ff5c5c>最多可获得14次敲钟有效次数</color>
+2.拥有有效次数的情况下消耗5物资点击敲钟可以选择不
+同加成效果：
+学业：战术学院技能学习时间略微减少
+事业：主线、困难、作战档案关卡中，我方战斗内造成的
+伤害略微提高
+姻缘：秘书舰好感度提高速度加快以上三种效果持续时间
+为一天
+3.获得学业效果时不会减少正在进行的技能学习时间，学
+业效果消失时不会增加已经被学业效果减少的技能学习时
+间
+4.如果在已经拥有加成效果的状态下进行敲钟，那么新获
+得的加成效果会覆盖掉之前拥有的加成效果，且持续时间
+重置
+5.同一时间只能存在一种加成效果]]
+			}
+		}
+	},
+	help_xinnian2021__meishiyemian = {
+		tip = {
+			{
+				info = [[
+活动规则：
+1.活动期间每日可获得<color=#92fc63>1</color>次可用次数，可用次数最多可以
+叠加<color=#92fc63>7</color>次
+2.在有可用次数的情况下参与新年美食祭并进行<color=#92fc63>游戏结算</color>
+会消耗掉可用次数并获得活动道具，集齐7个活动道具可
+以获得限定角色<color=#92fc63>「Z28」</color>
+3.在没有可用次数的情况下参与新年美食祭不会获得活动
+道具
+4.因为其他原因中途退出小游戏不会消耗可用次数，同时
+也不会获得任何奖励]]
+			}
+		}
+	},
+	help_xinnian2021__meishi = {
+		tip = {
+			{
+				info = [[
+游戏规则：
+1点击选购开始游戏，左侧角色头顶会出现想要的三种食
+物，在思考五秒之后头顶食物消失，玩家需要凭记忆在十
+秒内从右侧九种食物中选出角色之前想要的三种食物
+2.需要按照之前角色头顶从左到右的食物顺序选择食物
+3.单击食物选择，再次单击该食物可以取消选择，选择好
+三种食物后自动提交结果
+4.倒计时未用尽的情况下，选好三种食物会进入结算界面
+，选出的正确食物会增加剩余时间和积分，可以选择继续
+游戏或者游戏结算，增加时间和积分规则如下：
+选中3个正确的食物： 剩余时间增加5秒  积分增加5分
+选中2个正确的食物： 剩余时间增加2秒  积分增加2分
+选中1个正确的食物： 剩余时间增加1秒  积分增加1分
+选中0个正确的食物： 剩余时间增加0秒  积分增加0分   
+5.如果选择继续游戏则保留剩余时间和积分，并继续选出
+符合左侧角色想要的三种食物
+6.如果倒计时用尽或者主动选择游戏结算，则算作游戏结
+束]]
+			}
+		}
+	},
+	help_act_event = {
+		tip = {
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/event_doa"
+				}
+			},
+			disableScroll = true,
+			pageMode = true,
+			defaultpage = 1,
+			ImageMode = true,
+			windowSize = {
+				x = 1263,
+				y = 873
+			},
+			windowPos = {
+				y = -70
+			},
+			helpSize = {
+				x = 1176,
+				y = 1024
+			}
+		}
+	},
+	index_equip = {
+		tip = "装备中"
+	},
+	index_without_limit = {
+		tip = "无限制"
+	},
+	meta_learn_skill = {
+		tip = "习得技能：$1(未使用)"
+	},
+	world_joint_boss_not_found = {
+		tip = "所选信标已消失，请尝试其他信标！"
+	},
+	world_joint_boss_is_death = {
+		tip = "所选信标已消失，请尝试其他信标！"
+	},
+	world_joint_whitout_guild = {
+		tip = "还没有加入大舰队哦"
+	},
+	world_joint_whitout_friend = {
+		tip = "还没有任何战友哦"
+	},
+	world_joint_call_support_failed = {
+		tip = "请求支援失败！"
+	},
+	world_joint_call_support_success = {
+		tip = "请求支援成功！"
+	},
+	world_joint_call_friend_support_txt = {
+		tip = "战友$1正在挑战 $2 TIER.$3，请求紧急支援(未使用)"
+	},
+	world_joint_call_guild_support_txt = {
+		tip = "大舰队成员$1正在挑战 $2 TIER.$3，请求紧急支援(未使用)"
+	},
+	world_joint_call_world_support_txt = {
+		tip = "指挥官$1正在挑战 $2 TIER.$3，请求紧急支援(未使用)"
+	},
+	ad_4 = {
+		tip = "<material=underline c=#92fc63><color=#92fc63>$2</color></material> 邀请你挑战 <material=underline><color=#FFDE38FF>$3</color></material>"
+	},
+	world_word_expired = {
+		tip = "信标已过期"
+	},
+	world_word_guild_member = {
+		tip = "大舰队成员(未使用)"
+	},
+	world_word_guild_player = {
+		tip = "玩家(未使用)"
+	},
+	world_joint_boss_award_expired = {
+		tip = "奖励领取失败"
+	},
+	world_joint_not_refresh_frequently = {
+		tip = "请勿频繁刷新"
+	},
+	world_joint_exit_battle_tip = {
+		tip = "是否中断当前战斗，前往余烬信标？"
+	},
+	world_boss_get_item = {
+		tip = "当前已经收集到指定数据量的信标数据，是否立即对其进行解析？\n(<color=#ff5c5c>未解析的情况下，后续将不会继续获得信标数据</color>)"
+	},
+	world_boss_ask_help = {
+		tip = "暂时无法向该频道呼叫支援"
+	},
+	world_joint_count_no_enough = {
+		tip = "当前挑战次数不足"
+	},
+	world_boss_none = {
+		tip = "所选信标已变为不可挑战状态，请尝试其他信标！"
+	},
+	world_boss_fleet = {
+		tip = "余烬信标作战"
+	},
+	world_max_challenge_cnt = {
+		tip = "所选信标挑战人数已满，请尝试其他信标！"
+	},
+	world_reset_success = {
+		tip = "大型作战已重置"
+	},
+	world_map_dangerous_confirm = {
+		tip = "深渊海域作战难度较高且不可重复进入，\n请确认舰队战备后前往作战"
+	},
+	world_map_version = {
+		tip = "当前海域由于版本更新被重置"
+	},
+	world_resource_fill = {
+		tip = "战备物资兑换券已达到收集上限。"
+	},
+	meta_sys_lock_tip = {
+		tip = "META研究室将在开放大型作战的信标·烬功能后开启(未使用)"
+	},
+	meta_story_lock = {
+		tip = "需要完成前置剧情才能进行资讯同步(未使用)"
+	},
+	meta_acttime_limit = {
+		tip = "限时"
+	},
+	meta_pt_left = {
+		tip = "剩余$1天"
+	},
+	meta_syn_rate = {
+		tip = "资讯同步率"
+	},
+	meta_repair_rate = {
+		tip = "舰装强化率"
+	},
+	meta_story_tip_1 = {
+		tip = "解锁剧情(未使用)"
+	},
+	meta_story_tip_2 = {
+		tip = "后开放(未使用)"
+	},
+	meta_pt_get_way = {
+		tip = "可以通过以下方式获取同步值(未使用)"
+	},
+	meta_pt_point = {
+		tip = "同步值"
+	},
+	meta_award_get = {
+		tip = "可领取"
+	},
+	meta_award_got = {
+		tip = "已领取"
+	},
+	meta_repair = {
+		tip = "属性提升:"
+	},
+	meta_repair_success = {
+		tip = "舰装强化成功"
+	},
+	meta_repair_effect_unlock = {
+		tip = "强化率$1%后获得"
+	},
+	meta_repair_effect_special = {
+		tip = "强化率达到$1%，获得以下提升"
+	},
+	meta_energy_ship_level_need = {
+		tip = "舰船等级需求: $1/$2"
+	},
+	meta_energy_ship_repairrate_need = {
+		tip = "舰船强化率需求: $1/$2"
+	},
+	meta_energy_active_box_tip = {
+		tip = "是否对角色进行能量激活？(能量激活将会提升角色星级)"
+	},
+	meta_break = {
+		tip = "*激活之后将提升角色星级"
+	},
+	meta_energy_preview_title = {
+		tip = "最终默认本体属性如下"
+	},
+	meta_energy_preview_tip = {
+		tip = "*不包含好感度及誓约等额外加成"
+	},
+	meta_exp_per_day = {
+		tip = "每日经验"
+	},
+	meta_skill_unlock = {
+		tip = "请点击习得技能后进行研修"
+	},
+	meta_unlock_skill_tip = {
+		tip = "习得$1的技能<color=#92fc63>$2</color>需要消耗以下技能书"
+	},
+	meta_unlock_skill_select = {
+		tip = "请先选择一种材料(未使用)"
+	},
+	meta_switch_skill_disable = {
+		tip = "当天研修次数已达上限\n次日零时恢复"
+	},
+	meta_switch_skill_box_title = {
+		tip = "是否开始技能$1的研修？\n"
+	},
+	meta_cur_pt = {
+		tip = "当前同步值"
+	},
+	meta_toast_fullexp = {
+		tip = "已达本日研修上限"
+	},
+	meta_toast_tactics = {
+		tip = "研修EXP"
+	},
+	meta_skillbtn_tactics = {
+		tip = "研 修"
+	},
+	meta_destroy_tip = {
+		tip = "META角色不能被退役"
+	},
+	meta_voice_name_feeling1 = {
+		tip = "未知"
+	},
+	meta_voice_name_feeling2 = {
+		tip = "调率"
+	},
+	meta_voice_name_feeling3 = {
+		tip = "理解"
+	},
+	meta_voice_name_feeling4 = {
+		tip = "同步"
+	},
+	meta_voice_name_feeling5 = {
+		tip = "共鸣"
+	},
+	meta_voice_name_propose = {
+		tip = "誓约"
+	},
+	world_boss_ad = {
+		tip = "[$1]TIER.$2"
+	},
+	world_boss_drop_title = {
+		tip = "信标收集(未使用)"
+	},
+	world_boss_pt_recove_desc = {
+		tip = "每天0点回复$1点挑战次数"
+	},
+	world_boss_progress_item_desc = {
+		tip = [[
+用于记录在大型作战中收集到的<color=#92fc63>「余烬信标数据」</color>的装置，达到指定数据量后可据此数据进行解析，发现余烬信标
+P.S.记录仪的记录容量有限，请务必及时前往解析
+今日解析次数:$1/$2
+数据记录量：$3]]
+	},
+	world_joint_max_challenge_people_cnt = {
+		tip = "挑战人数已满，无法呼叫支援！"
+	},
+	equip_ammo_type_1 = {
+		tip = "穿甲弹"
+	},
+	equip_ammo_type_2 = {
+		tip = "高爆弹"
+	},
+	equip_ammo_type_3 = {
+		tip = "通常弹"
+	},
+	equip_ammo_type_4 = {
+		tip = "声导"
+	},
+	equip_ammo_type_5 = {
+		tip = "通常"
+	},
+	equip_ammo_type_6 = {
+		tip = "三式弹"
+	},
+	equip_ammo_type_7 = {
+		tip = "半穿甲弹"
+	},
+	equip_ammo_type_8 = {
+		tip = "定深式"
+	},
+	equip_ammo_type_9 = {
+		tip = "触发式"
+	},
+	equip_ammo_type_10 = {
+		tip = "无"
+	},
+	common_daily_limit = {
+		tip = "每日上限(未使用)"
+	},
+	meta_help = {
+		tip = {
+			{
+				info = "META研究室说明："
+			},
+			{
+				info = [[
+·META研究室是进行META角色获取、养成的专用系统
+·META角色拥有<color=#92fc63>「能量激活」</color>、<color=#92fc63>「战术研修」</color>、
+<color=#92fc63>「舰装强化」</color>、<color=#92fc63>「资讯同步」</color>4个系统模块
+·重复获取的META角色将会自动转换为1个对应的角色
+结晶，可用于在<color=#92fc63>「能量激活」</color>中使用。
+]]
+			},
+			{
+				info = [[
+1.<color=#92fc63>资讯同步</color>
+·<color=#92fc63>2020.12.22-2021.3.18</color>期间限时开放「龙·META」的
+「资讯同步」，通过「信标·烬」战斗获取其同步值，
+达到一定同步值可以获取<color=#92fc63>「龙·META」角色</color>
+·获得META角色后可以通过角色的<color=#92fc63>「资讯同步」</color>模块
+在<color=#92fc63>上述时间</color>内继续获取包含养成材料在内的丰厚奖励
+·注意：<color=#ff5c5c>「龙·META」的「资讯同步」将于时间结束后暂
+时关闭,已累计的同步值也会消失。</color>
+
+2.<color=#92fc63>能量激活</color>
+·META角色达到指定等级后可以使用对应的角色结晶进行
+激活。激活后可以提升角色星级
+·角色结晶可以通过「资讯同步」奖励获取
+]]
+			},
+			{
+				info = [[
+3.<color=#92fc63>战术研修</color>
+·完成战术研修任务获得META角色的技能升级经验，部
+分任务可以重复完成
+·一名角色只能同时进行一项技能的战术研修任务，多名
+角色之间彼此独立，同时进行
+·一名角色每日最多获取<color=#92fc63>30000</color>点技能升级经验，其中前
+<color=#92fc63>60%</color>的技能升级经验拥有双倍任务完成效率
+（剩余次数不满2次时不生效）
+·任务类型和可完成次数会随着技能等级升级而刷新
+]]
+			},
+			{
+				info = [[
+4.<color=#92fc63>舰装强化</color>
+·META角色可以通过消耗舰装强化材料对「炮击」「雷
+击」「航空」「装填」4个属性中的若干个进行强化
+·强化会提升相应属性值，当强化进度达到一定数值后还
+可获得额外属性提升。
+·舰装强化材料可通过「资讯同步」奖励及大型作战内
+港口商店购买获取]]
+			}
+		}
+	},
+	world_boss_daily_limit = {
+		tip = "已达每日上限"
+	},
+	common_go_to_analyze = {
+		tip = "前往解析"
+	},
+	world_boss_not_reach_target = {
+		tip = "未达到指定数据量"
+	},
+	special_transform_limit_reach = {
+		tip = "已经拥有该改造道具或对应的改造后舰船，无法兑换"
+	},
+	meta_pt_notenough = {
+		tip = "当前同步值不足，请前往<color=#92fc63>大型作战</color>中的信标·烬作战获取"
+	},
+	meta_boss_unlock = {
+		tip = "通过<color=#92fc63>大型作战</color>第一章，解锁信标·烬功能后开启角色获取！"
+	},
+	word_take_effect = {
+		tip = "生效"
+	},
+	world_boss_challenge_cnt = {
+		tip = "挑战人数"
+	},
+	word_shipNation_meta = {
+		tip = "???"
+	},
+	world_word_friend = {
+		tip = "战友"
+	},
+	world_word_world = {
+		tip = "世界"
+	},
+	world_word_guild = {
+		tip = "大舰队"
+	},
+	world_collection_1 = {
+		tip = "收集进度"
+	},
+	world_collection_2 = {
+		tip = "进度"
+	},
+	world_collection_3 = {
+		tip = "收集率"
+	},
+	zero_hour_command_error = {
+		tip = "零点数据更新错误"
+	},
+	commander_is_in_bigworld = {
+		tip = "该指挥喵在大型作战中"
+	},
+	world_collection_back = {
+		tip = "点击空白处返回"
+	},
+	world_fleet_stop = {
+		tip = "舰队移动正在停止"
+	},
+	world_setting_title = {
+		tip = "大型作战设置"
+	},
+	world_setting_quickmode = {
+		tip = "减少TB引导"
+	},
+	world_setting_quickmodetip = {
+		tip = "功能开启后，不再播放重复的TB引导说明"
+	},
+	world_boss_maintenance = {
+		tip = "服务器即将维护,无法进行信标·烬作战"
 	}
 }

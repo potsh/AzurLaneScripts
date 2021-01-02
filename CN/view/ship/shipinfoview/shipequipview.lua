@@ -1,5 +1,5 @@
 slot0 = class("ShipEquipView", import("...base.BaseSubView"))
-slot0.UNLOCK_EQUPMENT_SKIN_POS = {
+slot0.UNLOCK_EQUIPMENT_SKIN_POS = {
 	1,
 	2,
 	3
@@ -75,7 +75,7 @@ function slot0.InitEvent(slot0)
 
 		slot2 = uv0:GetShipVO().equipments
 
-		if _.all(uv1.UNLOCK_EQUPMENT_SKIN_POS, function (slot0)
+		if _.all(uv1.UNLOCK_EQUIPMENT_SKIN_POS, function (slot0)
 			return not uv0[slot0]
 		end) and not uv0.contextData.isInEquipmentSkinPage then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("equipment_skin_no_equipment_tip"))
@@ -152,7 +152,7 @@ function slot0.UpdateEquipments(slot0, slot1)
 		if slot3 > 0 then
 			slot0:emit(ShipMainMediator.OPEN_EQUIP_UPGRADE, slot0:GetShipVO().id)
 		else
-			pg.TipsMgr:GetInstance():ShowTips(i18n("fightfail_noequip"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("fightfail_noequip"))
 		end
 	end
 end
@@ -182,21 +182,23 @@ function slot0.UpdateEquipmentPanel(slot0, slot1, slot2, slot3)
 	slot10:GetComponent(typeof(Text)).text = EquipType.LabelToName(EquipType.Types2Title(slot1, slot8.configId))
 
 	if slot2 then
-		setActive(slot7, not EquipType.isDevice(slot2.configId))
+		setActive(slot7, not slot2:isDevice())
 
-		if not EquipType.isDevice(slot2.configId) then
+		if not slot2:isDevice() then
 			slot14 = pg.ship_data_statistics[slot8.configId]
 			slot16 = slot8:getEquipProficiencyByPos(slot1) and slot15 * 100 or 0
+			slot17 = false
 
-			if slot9 then
-				for slot20, slot21 in ipairs(slot9) do
-					if slot0:equipmentCheck(slot21) and slot0.equipmentEnhance(slot21, slot2) then
-						slot16 = slot16 + slot21.number
+			if not (slot0.contextData.fromMediatorName == WorldMediator.__cname and WorldConst.FetchWorldShip(slot8.id):IsBroken()) and slot9 then
+				for slot22, slot23 in ipairs(slot9) do
+					if slot0:equipmentCheck(slot23) and slot0.equipmentEnhance(slot23, slot2) then
+						slot16 = slot16 + slot23.number
+						slot17 = true
 					end
 				end
 			end
 
-			setButtonText(slot7, slot16 .. "%")
+			setButtonText(slot7, slot17 and setColorStr(slot16 .. "%", COLOR_GREEN) or slot16 .. "%")
 		end
 
 		updateEquipment(slot0:findTF("IconTpl", slot5), slot2)
@@ -215,9 +217,11 @@ function slot0.UpdateEquipmentPanel(slot0, slot1, slot2, slot3)
 			setActive(slot0, false)
 		end)
 
-		slot17 = slot2:GetPropertiesInfo().attrs
+		slot17 = underscore.filter(slot2:GetPropertiesInfo().attrs, function (slot0)
+			return not slot0.type or slot0.type ~= AttributeType.AntiSiren
+		end)
 
-		for slot22, slot23 in ipairs(EquipType.isDevice(slot2.configId) and {
+		for slot23, slot24 in ipairs(slot2.config.skill_id[1] and slot2:isDevice() and {
 			1,
 			2,
 			5
@@ -227,41 +231,38 @@ function slot0.UpdateEquipmentPanel(slot0, slot1, slot2, slot3)
 			2,
 			3
 		}) do
-			slot24 = slot16:Find("attr_" .. slot23)
-			slot25 = findTF(slot24, "panel")
-			slot26 = findTF(slot24, "lock")
+			slot25 = slot16:Find("attr_" .. slot24)
+			slot26 = findTF(slot25, "panel")
 
-			setActive(slot24, true)
+			setActive(slot25, true)
 
-			if slot23 == 5 then
-				slot27 = ""
-
-				if slot2.config.skill_id[1] then
-					slot27 = getSkillName(slot28)
-				end
-
-				setText(slot25:Find("values/value"), "")
-				setText(slot25:Find("values/value_1"), slot27)
-				setActive(slot26, not slot28)
+			if slot24 == 5 then
+				setText(slot26:Find("values/value"), "")
+				setText(slot26:Find("values/value_1"), getSkillName(slot18))
+				setActive(findTF(slot25, "lock"), false)
 			elseif #slot17 > 0 then
-				slot28, slot29 = Equipment.GetInfoTrans(table.remove(slot17, 1), slot8)
-
-				setText(slot25:Find("tag"), slot28)
-
-				if #string.split(tostring(slot29), "/") >= 2 then
-					setText(slot25:Find("values/value"), slot30[1] .. "/")
-					setText(slot25:Find("values/value_1"), slot30[2])
-				else
-					setText(slot25:Find("values/value"), slot29)
-					setText(slot25:Find("values/value_1"), "")
+				if slot2:isAircraft() and table.remove(slot17, 1).type == AttributeType.CD then
+					slot28 = slot8:getAircraftReloadCD()
 				end
 
-				setActive(slot26, false)
+				slot29, slot30 = Equipment.GetInfoTrans(slot28, slot8)
+
+				setText(slot26:Find("tag"), slot29)
+
+				if #string.split(tostring(slot30), "/") >= 2 then
+					setText(slot26:Find("values/value"), slot31[1] .. "/")
+					setText(slot26:Find("values/value_1"), slot31[2])
+				else
+					setText(slot26:Find("values/value"), slot30)
+					setText(slot26:Find("values/value_1"), "")
+				end
+
+				setActive(slot27, false)
 			else
-				setText(slot25:Find("tag"), "")
-				setText(slot25:Find("values/value"), "")
-				setText(slot25:Find("values/value_1"), "")
-				setActive(slot26, true)
+				setText(slot26:Find("tag"), "")
+				setText(slot26:Find("values/value"), "")
+				setText(slot26:Find("values/value_1"), "")
+				setActive(slot27, true)
 			end
 		end
 
@@ -296,38 +297,60 @@ function slot0.equipmentCheck(slot0, slot1)
 
 	slot3 = slot1.check_indexList
 
-	if not slot1.check_type and not slot3 then
+	if not slot1.check_type and not slot3 and not slot1.check_label then
 		return true
 	end
 
-	slot4 = false
-	slot5 = {}
+	slot5 = false
+	slot6 = {}
 
 	if slot3 then
-		slot7 = #Clone(slot0:GetShipVO().equipments)
+		slot8 = #Clone(slot0:GetShipVO().equipments)
 
-		while slot7 > 0 do
-			if not table.contains(slot3, slot7) then
-				table.remove(slot6, slot7)
+		while slot8 > 0 do
+			if not table.contains(slot3, slot8) then
+				table.remove(slot7, slot8)
 			end
 
-			slot7 = slot7 - 1
+			slot8 = slot8 - 1
 		end
 	end
 
 	if slot2 then
-		slot7 = #slot6
+		slot8 = #slot7
 
-		while slot7 > 0 do
-			if not slot6[slot7] or not table.contains(slot2, slot8.config.type) then
-				table.remove(slot6, slot7)
+		while slot8 > 0 do
+			if not slot7[slot8] or not table.contains(slot2, slot9.config.type) then
+				table.remove(slot7, slot8)
 			end
 
-			slot7 = slot7 - 1
+			slot8 = slot8 - 1
 		end
 	end
 
-	return #slot6 > 0
+	if slot4 then
+		slot8 = #slot7
+
+		while slot8 > 0 do
+			if slot7[slot8] then
+				for slot14, slot15 in ipairs(slot4) do
+					if not table.contains(slot9.config.label, slot15) then
+						slot10 = 1 * 0
+					end
+				end
+
+				if slot10 == 0 then
+					table.remove(slot7, slot8)
+				end
+			else
+				table.remove(slot7, slot8)
+			end
+
+			slot8 = slot8 - 1
+		end
+	end
+
+	return #slot7 > 0
 end
 
 function slot0.equipmentEnhance(slot0, slot1)

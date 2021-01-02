@@ -1,55 +1,58 @@
 slot0 = class("MainUIMediator", import("..base.ContextMediator"))
-slot0.OPEN_LEVEL = "MainUIMediator:OPEN_LEVEL"
-slot0.OPEN_CHUANWUSTART = "MainUIMediator:OPEN_CHUANWUSTART"
-slot0.OPEN_EQUIPDEV = "MainUIMediator:OPEN_EQUIPDEV"
-slot0.OPEN_SETTINGS = "MainUIMediator:OPEN_SETTINGS"
-slot0.OPEN_TASK = "MainUIMediator:OPEN_TASK"
-slot0.OPEN_MAIL = "MainUIMediator:OPEN_MAIL"
-slot0.GETBOAT = "MainUIMediator:GETBOAT"
-slot0.OPEN_BIANDUI = "MainUIMediator:OPEN_BIANDUI"
-slot0.OPEN_EQUIPSYNTHESIS = "MainUIMediator:OPEN_EQUIPSYNTHESIS"
-slot0.OPEN_CHATVIEW = "MainUIMediator:OPEN_CHATVIEW"
-slot0.OPEN_EQUIPSCENE = "MainUIMediator:OPEN_EQUIPSCENE"
-slot0.OPEN_ARMORYSCENE = "MainUIMediator:OPEN_ARMORYSCENE"
-slot0.TEST1 = "MainUIMediator:TEST1"
-slot0.OPEN_SCHOOLSCENE = "MainUIMediator:OPEN_SCHOOLSCENE"
-slot0.OPEN_BACKYARD = "MainUIMediator:OPEN_BACKYARD"
-slot0.OPEN_PLAYER_INFO_LAYER = "MainUIMediator:OPEN_PLAYER_INFO_LAYER"
-slot0.ON_SHIP_DETAIL = "MainUIMediator:ON_SHIP_DETAIL"
-slot0.OPEN_COLLECT_SHIP = "MainUIMediator:OPEN_COLLECT_SHIP"
-slot0.OPEN_ACTIVITY_PANEL = "MainUIMediator:OPEN_ACTIVITY_PANEL"
-slot0.OPEN_EVENT = "MainUIMediator:OPEN_EVENT"
-slot0.GO_SCENE = "MainUIMediator:GO_SCENE"
+slot0.OPEN_LEVEL = "MainUIMediator.OPEN_LEVEL"
+slot0.OPEN_CHUANWUSTART = "MainUIMediator.OPEN_CHUANWUSTART"
+slot0.OPEN_EQUIPDEV = "MainUIMediator.OPEN_EQUIPDEV"
+slot0.OPEN_SETTINGS = "MainUIMediator.OPEN_SETTINGS"
+slot0.OPEN_TASK = "MainUIMediator.OPEN_TASK"
+slot0.OPEN_MAIL = "MainUIMediator.OPEN_MAIL"
+slot0.GETBOAT = "MainUIMediator.GETBOAT"
+slot0.OPEN_BIANDUI = "MainUIMediator.OPEN_BIANDUI"
+slot0.OPEN_EQUIPSYNTHESIS = "MainUIMediator.OPEN_EQUIPSYNTHESIS"
+slot0.OPEN_CHATVIEW = "MainUIMediator.OPEN_CHATVIEW"
+slot0.OPEN_EQUIPSCENE = "MainUIMediator.OPEN_EQUIPSCENE"
+slot0.OPEN_ARMORYSCENE = "MainUIMediator.OPEN_ARMORYSCENE"
+slot0.TEST1 = "MainUIMediator.TEST1"
+slot0.OPEN_SCHOOLSCENE = "MainUIMediator.OPEN_SCHOOLSCENE"
+slot0.OPEN_BACKYARD = "MainUIMediator.OPEN_BACKYARD"
+slot0.OPEN_PLAYER_INFO_LAYER = "MainUIMediator.OPEN_PLAYER_INFO_LAYER"
+slot0.ON_SHIP_DETAIL = "MainUIMediator.ON_SHIP_DETAIL"
+slot0.OPEN_COLLECT_SHIP = "MainUIMediator.OPEN_COLLECT_SHIP"
+slot0.OPEN_ACTIVITY_PANEL = "MainUIMediator.OPEN_ACTIVITY_PANEL"
+slot0.OPEN_EVENT = "MainUIMediator.OPEN_EVENT"
+slot0.GO_SCENE = "MainUIMediator.GO_SCENE"
 slot0.OPEN_FRIEND = "MainUIMediator.OPEN_FRIEND"
-slot0.GO_MALL = "MainUIMediator:GO_MALL"
-slot0.OPEN_COMMISSION_INFO = "MainUIMediator:OPEN_COMMISSION_INFO"
-slot0.OPEN_RANK = "MainUIMediator:OPEN_RANK"
-slot0.TMP_DEBUG = "MainUIMediator:TMP_DEBUG"
-slot0.OPEN_GUILD = "MainUIMediator:OPEN_GUILD"
-slot0.OPEN_MONTH_CARD_SET = "MainUIMediator:OPEN_MONTH_CARD_SET"
-slot0.OPEN_SHOP_LAYER = "MainUIMediator:OPEN_SHOP_LAYER"
-slot0.ON_ACTIVITY_MAP = "MainUIMediator:ON_ACTIVITY_MAP"
-slot0.ON_ACTIVITY_PT = "MainUIMediator:ON_ACTIVITY_PT"
-slot0.ON_VOTE = "MainUIMediator:ON_VOTE"
-slot0.ON_TOUCHSHIP = "MainUIMediator:ON_TOUCHSHIP"
-slot0.ON_LOTTERY = "MainUIMediator:ON_LOTTERY"
-slot0.OPEN_SCROLL = "MainUIMediator:OPEN_SCROLL"
-slot0.ON_TASK_OPEN = "MainUIMediator:ON_TASK_OPEN"
-slot0.ON_ANNIVERSARY = "MainUIMediator:ON_ANNIVERSARY"
-slot0.OPEN_SNAPSHOT = "MainUIMediator:OPEN_SNAPSHOT"
-slot0.OPEN_TRANINGCAMP = "MainUIMediator:OPEN_TRANINGCAMP"
-slot0.OPEN_COMMANDER = "MainUIMediator:OPEN_COMMANDER"
-slot0.OPEN_BULLETINBOARD = "MainUIMediator:OPEN_BULLETINBOARD"
+slot0.GO_MALL = "MainUIMediator.GO_MALL"
+slot0.OPEN_COMMISSION_INFO = "MainUIMediator.OPEN_COMMISSION_INFO"
+slot0.OPEN_RANK = "MainUIMediator.OPEN_RANK"
+slot0.TMP_DEBUG = "MainUIMediator.TMP_DEBUG"
+slot0.OPEN_GUILD = "MainUIMediator.OPEN_GUILD"
+slot0.OPEN_MONTH_CARD_SET = "MainUIMediator.OPEN_MONTH_CARD_SET"
+slot0.OPEN_SHOP_LAYER = "MainUIMediator.OPEN_SHOP_LAYER"
+slot0.ON_ACTIVITY_MAP = "MainUIMediator.ON_ACTIVITY_MAP"
+slot0.ON_ACTIVITY_PT = "MainUIMediator.ON_ACTIVITY_PT"
+slot0.ON_VOTE = "MainUIMediator.ON_VOTE"
+slot0.ON_TOUCHSHIP = "MainUIMediator.ON_TOUCHSHIP"
+slot0.ON_LOTTERY = "MainUIMediator.ON_LOTTERY"
+slot0.OPEN_SCROLL = "MainUIMediator.OPEN_SCROLL"
+slot0.ON_TASK_OPEN = "MainUIMediator.ON_TASK_OPEN"
+slot0.ON_ANNIVERSARY = "MainUIMediator.ON_ANNIVERSARY"
+slot0.OPEN_SNAPSHOT = "MainUIMediator.OPEN_SNAPSHOT"
+slot0.OPEN_TRANINGCAMP = "MainUIMediator.OPEN_TRANINGCAMP"
+slot0.OPEN_COMMANDER = "MainUIMediator.OPEN_COMMANDER"
+slot0.OPEN_BULLETINBOARD = "MainUIMediator.OPEN_BULLETINBOARD"
 slot0.OPEN_ESCORT = "event open escort"
 slot0.ON_VOTE_BOOK = "event on vote book"
 slot0.MINIGAME_OPERATION = "MINIGAME_OPERATION"
-slot0.OPEN_INS = "MainUIMediator:OPEN_INS"
-slot0.OPEN_TECHNOLOGY = "MainUIMediator:OPEN_TECHNOLOGY"
-slot0.ON_BOSS_BATTLE = "MainUIMediator:ON_BOSS_BATTLE"
-slot0.ON_MONOPOLY = "MainUIMediator:ON_MONOPOLY"
-slot0.ON_BLACKWHITE = "MainUIMediator:ON_BLACKWHITE"
-slot0.ON_MEMORYBOOK = "MainUIMediator:ON_MEMORYBOOK"
+slot0.ENTER_WORLD = "MainUIMediator.ENTER_WORLD"
+slot0.OPEN_MEMORY = "MainUIMediator OPEN_MEMORY"
+slot0.OPEN_INS = "MainUIMediator.OPEN_INS"
+slot0.OPEN_TECHNOLOGY = "MainUIMediator.OPEN_TECHNOLOGY"
+slot0.ON_BOSS_BATTLE = "MainUIMediator.ON_BOSS_BATTLE"
+slot0.ON_MONOPOLY = "MainUIMediator.ON_MONOPOLY"
+slot0.ON_BLACKWHITE = "MainUIMediator.ON_BLACKWHITE"
+slot0.ON_MEMORYBOOK = "MainUIMediator.ON_MEMORYBOOK"
 slot0.GO_MINI_GAME = "MainUIMediator.GO_MINI_GAME"
+slot0.GO_SINGLE_ACTIVITY = "MainUIMediator:GO_SINGLE_ACTIVITY"
 
 function slot0.register(slot0)
 	slot1 = getProxy(BayProxy)
@@ -61,16 +64,6 @@ function slot0.register(slot0)
 
 	slot0.viewComponent:setFlagShip(slot1:getShipById(slot4.character))
 	slot0.viewComponent:updatePlayerInfo(slot4)
-
-	if ENABLE_TEST_OSS then
-		slot0:bind("TEST_OSS", function (slot0)
-			uv0:addSubLayers(Context.New({
-				viewComponent = TestUpload2ResServerLayer,
-				mediator = TestUpload2ResServerMediator
-			}))
-		end)
-	end
-
 	slot0:updateCourseNotices(false)
 
 	slot6 = getProxy(TaskProxy)
@@ -90,13 +83,11 @@ function slot0.register(slot0)
 		slot0:updateCourseNotices()
 	end
 
-	slot14 = slot7:getBuffList()
+	slot14 = BuffHelper.GetBuffsForMainUI()
 
-	if slot7:getActivityByType(ActivityConst.ACTIVITY_TYPE_MINIGAME) and not slot15:isEnd() then
-		for slot21, slot22 in pairs(getProxy(PlayerProxy):getData().buff_list) do
-			if pg.TimeMgr:GetInstance():GetServerTime() < slot22.timestamp and table.contains(slot15:getConfig("config_client").bufflist, slot22.id) then
-				table.insert(slot14, ActivityBuff.New(slot15.id, slot22.id, slot22.timestamp))
-			end
+	for slot19, slot20 in ipairs(import("GameCfg.activity.MainUIVirtualIconData").CurrentIconList) do
+		if slot15[slot20]:CheckExist() then
+			table.insert(slot14, slot15[slot20])
 		end
 	end
 
@@ -105,10 +96,10 @@ function slot0.register(slot0)
 	slot0:updateBackYardNotices()
 	slot0:updateMailAttachmentNotices()
 	slot0:updateBuildNotices()
+	slot0:updateGuildNotices()
 	slot0:navalAcademyNotices()
 	slot0:updateAttireTip()
 	slot0:updateCollectNotices()
-	slot0:updateChat()
 	slot0:updateFriendNotification()
 	slot0:updateBanner()
 	slot0:updateEvent()
@@ -123,12 +114,24 @@ function slot0.register(slot0)
 		}))
 	end)
 	slot0:bind(uv0.OPEN_COMMANDER, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.COMMANDROOM)
+		uv0:sendNotification(GAME.GO_SCENE, SCENE.COMMANDROOM, {
+			fromMain = true,
+			fleetType = CommandRoomScene.FLEET_TYPE_COMMON
+		})
 	end)
 	slot0.viewComponent:updateTraningCampBtn()
 	slot0.viewComponent:updateRefluxBtn()
+	slot0:bind(uv0.GO_SINGLE_ACTIVITY, function (slot0, slot1)
+		uv0:addSubLayers(Context.New({
+			mediator = ActivitySingleMediator,
+			viewComponent = ActivitySingleScene,
+			data = {
+				id = slot1
+			}
+		}))
+	end)
 	slot0:bind(uv0.GO_MINI_GAME, function (slot0, slot1)
-		pg.m02:sendNotification(GAME.GO_MINI_GAME, slot1)
+		uv0:sendNotification(GAME.GO_MINI_GAME, slot1)
 	end)
 	slot0:bind(uv0.OPEN_TRANINGCAMP, function ()
 		uv0:sendNotification(GAME.GO_SCENE, SCENE.TRAININGCAMP)
@@ -276,6 +279,9 @@ function slot0.register(slot0)
 			id = slot1
 		})
 	end)
+	slot0:bind(uv0.ENTER_WORLD, function (slot0)
+		uv0:sendNotification(GAME.ENTER_WORLD, {})
+	end)
 	slot0:bind(uv0.OPEN_FRIEND, function ()
 		uv0:sendNotification(GAME.GO_SCENE, SCENE.FRIEND)
 	end)
@@ -342,18 +348,16 @@ function slot0.register(slot0)
 		}))
 	end)
 	slot0:bind(uv0.ON_ACTIVITY_MAP, function (slot0, slot1)
-		slot2, slot3 = getProxy(ChapterProxy):getLastMapForActivity()
+		slot3, slot4 = getProxy(ChapterProxy):getLastMapForActivity()
 
-		if not slot2 or not getProxy(ActivityProxy):getActivityById(pg.expedition_data_by_map[slot2].on_activity) or slot4:isEnd() then
+		if not slot3 or not slot2:getMapById(slot3):isUnlock() then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("common_activity_end"))
-
-			return
+		else
+			uv0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
+				chapterId = slot4,
+				mapIdx = slot3
+			})
 		end
-
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
-			chapterId = slot3,
-			mapIdx = slot2
-		})
 	end)
 	slot0:bind(uv0.ON_ACTIVITY_PT, function (slot0, slot1)
 		uv0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
@@ -390,15 +394,6 @@ function slot0.register(slot0)
 	end
 
 	pg.SystemOpenMgr.GetInstance():notification(slot4.level)
-
-	if getProxy(GuildProxy):getData() then
-		if (slot19:getDutyByMemberId(slot4.id) == GuildMember.DUTY_COMMANDER or slot20 == GuildMember.DUTY_DEPUTY_COMMANDER) and not slot18:getRequests() then
-			slot0:sendNotification(GAME.GUILD_GET_REQUEST_LIST, slot19.id)
-		end
-
-		slot0:updateGuildNotices()
-	end
-
 	slot0:bind(uv0.MINIGAME_OPERATION, function (slot0, slot1, slot2, slot3)
 		uv0:sendNotification(GAME.SEND_MINI_GAME_OP, {
 			hubid = slot1,
@@ -438,11 +433,14 @@ function slot0.register(slot0)
 
 		uv0:escortHandler()
 	end)
+	slot0:bind(uv0.OPEN_MEMORY, function (slot0)
+		uv0:sendNotification(GAME.GO_SCENE, SCENE.WORLD_COLLECTION)
+	end)
 
 	if getProxy(MailProxy).total >= 1000 then
 		pg.TipsMgr.GetInstance():ShowTips(i18n("warning_mail_max_2"))
-	elseif slot20.total >= 950 then
-		pg.TipsMgr.GetInstance():ShowTips(i18n("warning_mail_max_1", slot20.total))
+	elseif slot18.total >= 950 then
+		pg.TipsMgr.GetInstance():ShowTips(i18n("warning_mail_max_1", slot18.total))
 	end
 
 	slot0.viewComponent:updateVoteBtn(slot7:GetVoteActivity(), getProxy(VoteProxy):GetOrderBook())
@@ -513,16 +511,14 @@ function slot0.updateCommanderNotices(slot0, slot1)
 end
 
 function slot0.updateGuildNotices(slot0)
-	slot1 = getProxy(GuildProxy)
-
-	slot0.viewComponent:updateGuildNotices(slot1.eventTip or slot1:isNoticesApply())
+	slot0.viewComponent:updateGuildNotices(getProxy(GuildProxy):ShouldShowTip())
 end
 
 function slot0.updateCommissionNotices(slot0)
 	slot3 = getProxy(NavalAcademyProxy)
 	slot5 = getProxy(PlayerProxy):getData()
 
-	slot0.viewComponent:updateCommissionNotices(getProxy(EventProxy):hasFinishState() or slot3:GetOilVO():isCommissionNotify(slot5.oilField) or slot3:GetGoldVO():isCommissionNotify(slot5.goldField))
+	slot0.viewComponent:updateCommissionNotices(getProxy(EventProxy):hasFinishState() or slot3:GetOilVO():isCommissionNotify(slot5.oilField) or slot3:GetGoldVO():isCommissionNotify(slot5.goldField) or NotifyTipHelper.ShouldShowUrTip())
 end
 
 function slot0.updateBackYardNotices(slot0)
@@ -654,7 +650,6 @@ function slot0.listNotificationInterests(slot0)
 		GAME.CLOSE_MSGBOX_DONE,
 		TechnologyConst.UPDATE_REDPOINT_ON_TOP,
 		GAME.HANDLE_OVERDUE_ATTIRE_DONE,
-		GAME.ESCORT_FETCH_DONE,
 		PERMISSION_GRANTED,
 		PERMISSION_REJECT,
 		PERMISSION_NEVER_REMIND,
@@ -664,7 +659,9 @@ function slot0.listNotificationInterests(slot0)
 		GAME.SEND_MINI_GAME_OP_DONE,
 		GAME.ON_OPEN_INS_LAYER,
 		PileGameConst.OPEN_PILEGAME,
-		ShopsProxy.CHARGED_LIST_UPDATED
+		ShopsProxy.CHARGED_LIST_UPDATED,
+		GAME.ZERO_HOUR_OP_DONE,
+		GAME.GET_GUILD_INFO_DONE
 	}
 end
 
@@ -715,9 +712,9 @@ function slot0.handleNotification(slot0, slot1)
 				return
 			end
 
-			if not pg.StoryMgr.GetInstance():IsPlayed("FANGAN1") then
+			if not pg.NewStoryMgr.GetInstance():IsPlayed("FANGAN1") then
 				slot0:sendNotification(GAME.GO_SCENE, SCENE.SELTECHNOLOGY)
-				pg.StoryMgr.GetInstance():Play("FANGAN1", function ()
+				pg.NewStoryMgr.GetInstance():Play("FANGAN1", function ()
 				end, true)
 			else
 				slot0:handleEnterMainUI()
@@ -766,8 +763,9 @@ function slot0.handleNotification(slot0, slot1)
 	elseif slot2 == GAME.CHAPTER_OP_DONE then
 		if slot3.items and #slot3.items > 0 then
 			slot0.viewComponent:emit(BaseUI.ON_AWARD, {
-				items = slot3.items
-			}, slot0.retreateMapType == Map.ESCORT and AwardInfoLayer.TITLE.ESCORT or nil)
+				items = slot3.items,
+				title = slot0.retreateMapType == Map.ESCORT and AwardInfoLayer.TITLE.ESCORT or nil
+			})
 		end
 	elseif slot2 == CommanderProxy.COMMANDER_BOX_FINISHED then
 		slot0:updateCommanderNotices(true)
@@ -785,8 +783,6 @@ function slot0.handleNotification(slot0, slot1)
 		slot0:onBluePrintNotify()
 	elseif slot2 == GAME.HANDLE_OVERDUE_ATTIRE_DONE then
 		slot0.viewComponent:showOverDueAttire(slot3)
-	elseif slot2 == GAME.ESCORT_FETCH_DONE then
-		slot0:escortHandler()
 	elseif PERMISSION_GRANTED == slot2 then
 		if slot3 == ANDROID_CAMERA_PERMISSION then
 			slot0.viewComponent:openSnapShot()
@@ -812,50 +808,46 @@ function slot0.handleNotification(slot0, slot1)
 			})
 		end
 	elseif slot2 == MiniGameProxy.ON_HUB_DATA_UPDATE then
-		slot0.viewComponent:UpdateActivityBtn("activity_newyear")
+		slot0:getViewComponent():HandleMiniGameBtns()
+		slot0:handlingActivityBtn()
 	elseif slot2 == VoteProxy.VOTE_ORDER_BOOK_DELETE or VoteProxy.VOTE_ORDER_BOOK_UPDATE == slot2 then
 		slot0.viewComponent:updateVoteBookBtn(slot3)
 	elseif slot2 == GAME.SEND_MINI_GAME_OP_DONE then
-		slot4 = slot3.argList
+		slot5 = slot3.argList[2]
 
-		if slot4[1] == 3 and slot4[2] == 1 then
-			slot0.viewComponent:UpdateActivityBtn("activity_newyear")
-		end
+		slot0:getViewComponent():HandleMiniGameBtns()
 	elseif slot2 == ShopsProxy.CHARGED_LIST_UPDATED then
 		slot0.viewComponent:updateMallBtnSellTag(slot3)
-	end
-end
+		slot0.viewComponent:UpdateMallBtnMonthcardTag()
+	elseif slot2 == GAME.ZERO_HOUR_OP_DONE then
+		slot0.viewComponent:UpdateActivityBtn("activity_map_btn")
+	elseif slot2 == GAME.GET_GUILD_INFO_DONE then
+		slot0:updateChat()
 
-function slot0.onChapterTimeUp(slot0)
-	if getProxy(ChapterProxy):getActiveChapter() and not slot2:inWartime() then
-		slot0.retreateMapType = slot2:getMapType()
-
-		slot0:sendNotification(GAME.CHAPTER_OP, {
-			type = ChapterConst.OpRetreat
-		})
-		pg.TipsMgr.GetInstance():ShowTips(i18n("levelScene_chapter_timeout"))
-	end
-end
-
-function slot0.tryShowItemIconChnageNotice(slot0, slot1)
-	if PlayerPrefs.GetInt("ItemIconChange_" .. getProxy(PlayerProxy):getRawData().id, 0) == 0 then
-		pg.MsgboxMgr.GetInstance():ShowMsgBox({
-			modal = true,
-			hideNo = true,
-			hideClose = true,
-			type = MSGBOX_TYPE_JUST_FOR_SHOW,
-			title = pg.MsgboxMgr.TITLE_INFORMATION,
-			weight = LayerWeightConst.TOP_LAYER,
-			onClose = function ()
-				uv0()
-				PlayerPrefs.SetInt("ItemIconChange_" .. uv1, 1)
-			end,
-			onYes = function ()
-				PlayerPrefs.SetInt("ItemIconChange_" .. uv0, 1)
-				uv1()
+		if getProxy(GuildProxy):getData() then
+			if (slot5:getDutyByMemberId(getProxy(PlayerProxy):getRawData().id) == GuildMember.DUTY_COMMANDER or slot7 == GuildMember.DUTY_DEPUTY_COMMANDER) and not slot4:getRequests() then
+				slot0:sendNotification(GAME.GUILD_GET_REQUEST_LIST, slot5.id)
 			end
-		})
-	else
+
+			slot0:updateGuildNotices()
+		end
+	end
+end
+
+function slot0.onChapterTimeUp(slot0, slot1)
+	slot4 = getProxy(ChapterProxy):getActiveChapter() and slot2:getMapById(slot3:getConfig("map"))
+
+	if slot3 and (not slot3:inWartime() or not slot4:isRemaster() and not slot3:inActTime()) then
+		slot0.retreateMapType = slot4:getMapType()
+
+		ChapterOpCommand.PrepareChapterRetreat(function ()
+			pg.TipsMgr.GetInstance():ShowTips(i18n("levelScene_chapter_timeout"))
+
+			if uv0 then
+				uv0()
+			end
+		end)
+	elseif slot1 then
 		slot1()
 	end
 end
@@ -894,11 +886,6 @@ function slot0.handleEnterMainUI(slot0)
 				return
 			end
 
-			uv0:tryShowItemIconChnageNotice(function ()
-				onNextTick(uv0)
-			end)
-			coroutine.yield()
-
 			slot4 = getProxy(ServerNoticeProxy):getServerNotices(false)
 
 			filterCharForiOS(slot4)
@@ -907,8 +894,10 @@ function slot0.handleEnterMainUI(slot0)
 			if #slot4 > 0 and slot3:needAutoOpen() then
 				uv0:addSubLayers(Context.New({
 					mediator = BulletinBoardMediator,
-					viewComponent = BulletinBoardLayer
+					viewComponent = BulletinBoardLayer,
+					onRemoved = uv1
 				}))
+				coroutine.yield()
 			elseif uv0.contextData.subContext then
 				uv0:addSubLayers(uv0.contextData.subContext)
 
@@ -917,7 +906,22 @@ function slot0.handleEnterMainUI(slot0)
 				uv0:tryPlayGuide()
 			end
 
-			uv0:onChapterTimeUp()
+			slot5 = false
+
+			uv0:onChapterTimeUp(function ()
+				if not uv0 then
+					uv0 = false
+					uv1 = false
+
+					uv2()
+				end
+			end)
+
+			if true then
+				slot5 = true
+
+				coroutine.yield()
+			end
 
 			if not LOCK_SUBMARINE then
 				uv0:tryRequestMainSub()
@@ -928,17 +932,29 @@ function slot0.handleEnterMainUI(slot0)
 			uv0:onBluePrintNotify()
 			getProxy(TaskProxy):pushAutoSubmitTask()
 			uv0:handlingSpecialActs()
+			uv0:checkTimeLimitEquip()
 			uv0:handlingActivityBtn()
 			uv0:handleOverdueAttire()
 			uv0:updateExSkinOverDue()
+			MonthCardOutDateTipPanel.TryShowMonthCardTipPanel(function ()
+				uv0 = false
+
+				uv1()
+			end)
+
+			if true then
+				coroutine.yield()
+			end
+
+			HXSet.calcLocalizationUse()
 		end))
 	end
 end
 
 function slot0.playStroys(slot0, slot1)
-	slot4 = pg.StoryMgr.GetInstance()
+	slot4 = pg.NewStoryMgr.GetInstance()
 
-	for slot8, slot9 in pairs(getProxy(TaskProxy):getData()) do
+	for slot8, slot9 in pairs(getProxy(TaskProxy):getRawData()) do
 		if slot9:getConfig("story_id") and slot10 ~= "" and not slot4:IsPlayed(slot10) then
 			table.insert({}, function (slot0)
 				uv0:Play(uv1, slot0, true, true)
@@ -946,7 +962,7 @@ function slot0.playStroys(slot0, slot1)
 		end
 	end
 
-	if Application.isEditor and not ENABLE_GUIDE and getProxy(PlayerProxy):getData().level >= 40 and not slot4:IsPlayed("ZHIHUIMIAO1") then
+	if ENABLE_GUIDE and getProxy(PlayerProxy):getRawData().level >= 40 and not slot4:IsPlayed("ZHIHUIMIAO1") then
 		table.insert(slot3, function (slot0)
 			uv0:Play("ZHIHUIMIAO1", slot0, true, true)
 		end)
@@ -958,10 +974,10 @@ function slot0.playStroys(slot0, slot1)
 		slot8 = slot6.npc[2]
 		slot9 = {
 			function (slot0)
-				if uv0 == "" or pg.StoryMgr.GetInstance():IsPlayed(uv0) then
+				if uv0 == "" or pg.NewStoryMgr.GetInstance():IsPlayed(uv0) then
 					slot0()
 				else
-					pg.StoryMgr.GetInstance():Play(uv0, slot0, true, true)
+					pg.NewStoryMgr.GetInstance():Play(uv0, slot0, true, true)
 				end
 			end,
 			function (slot0)
@@ -982,7 +998,7 @@ function slot0.playStroys(slot0, slot1)
 	end
 
 	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_PUZZLA) and not slot6:isEnd() then
-		if type(slot6:getConfig("config_client")) == "table" and slot7[2] and type(slot7[2]) == "string" and not pg.StoryMgr.GetInstance():IsPlayed(slot7[2]) then
+		if type(slot6:getConfig("config_client")) == "table" and slot7[2] and type(slot7[2]) == "string" and not pg.NewStoryMgr.GetInstance():IsPlayed(slot7[2]) then
 			table.insert(slot3, function (slot0)
 				uv0:Play(uv1[2], slot0, true, true)
 			end)
@@ -990,11 +1006,17 @@ function slot0.playStroys(slot0, slot1)
 	end
 
 	if getProxy(ActivityProxy):getActivityById(ActivityConst.MUSIC_CHUIXUE7DAY_ID) and not slot7:isEnd() then
-		if slot7:getConfig("config_client").story[1][1] and not pg.StoryMgr.GetInstance():IsPlayed(slot9) then
+		if slot7:getConfig("config_client").story[1][1] and not pg.NewStoryMgr.GetInstance():IsPlayed(slot9) then
 			table.insert(slot3, function (slot0)
 				uv0:Play(uv1, slot0, true, true)
 			end)
 		end
+	end
+
+	if getProxy(ActivityProxy):getActivityById(ActivityConst.DOA_COLLECTION_FURNITURE) and not slot8:isEnd() and slot8:getConfig("config_client").story ~= nil then
+		table.insert(slot3, function (slot0)
+			uv0:Play(uv1:getConfig("config_client").story, slot0)
+		end)
 	end
 
 	seriesAsync(slot3, slot1)
@@ -1068,25 +1090,26 @@ function slot0.storyStorageFix(slot0)
 end
 
 function slot0.getFixStoryByStoryId(slot0, slot1, slot2, slot3)
-	slot7 = false
+	slot4 = getProxy(PlayerProxy)
+	slot6 = false
 
-	for slot11, slot12 in ipairs(slot1) do
+	for slot10, slot11 in ipairs(slot1) do
 		if slot3 then
-			if not getProxy(PlayerProxy):getRawData():IsPlayed(slot12) then
-				slot7 = true
+			if not pg.NewStoryMgr.GetInstance():IsPlayed(slot11) then
+				slot6 = true
 
-				table.insert({}, slot12)
+				table.insert({}, slot11)
 			end
-		elseif not slot5:IsPlayed(slot12) and not slot7 then
-			table.insert(slot6, slot12)
-		elseif #slot6 > 0 then
-			slot7 = true
+		elseif not pg.NewStoryMgr.GetInstance():IsPlayed(slot11) and not slot6 then
+			table.insert(slot5, slot11)
+		elseif #slot5 > 0 then
+			slot6 = true
 		end
 	end
 
-	if slot7 then
-		for slot11, slot12 in ipairs(slot6) do
-			table.insert(slot2, slot12)
+	if slot6 then
+		for slot10, slot11 in ipairs(slot5) do
+			table.insert(slot2, slot11)
 		end
 	end
 
@@ -1095,21 +1118,20 @@ end
 
 function slot0.getFixStoryList(slot0, slot1, slot2, slot3)
 	slot4 = getProxy(TaskProxy)
-	slot6 = getProxy(PlayerProxy):getRawData()
 	slot3 = slot3 or {}
-	slot7 = 0
+	slot5 = 0
 
-	for slot11 = slot2, slot1, -1 do
-		if slot4:getFinishTaskById(slot11) or slot4:getTaskById(slot11) then
-			slot7 = slot11
+	for slot9 = slot2, slot1, -1 do
+		if slot4:getFinishTaskById(slot9) or slot4:getTaskById(slot9) then
+			slot5 = slot9
 
 			break
 		end
 	end
 
-	for slot11 = slot7, slot1, -1 do
-		if pg.task_data_template[slot11] and slot12.story_id and #slot13 > 0 and not slot6:IsPlayed(slot13) then
-			table.insert(slot3, slot13)
+	for slot9 = slot5, slot1, -1 do
+		if pg.task_data_template[slot9] and slot10.story_id and #slot11 > 0 and not pg.NewStoryMgr.GetInstance():IsPlayed(slot11) then
+			table.insert(slot3, slot11)
 		end
 	end
 
@@ -1130,6 +1152,16 @@ end
 
 function slot0.handlingSpecialActs(slot0)
 	slot0:sendNotification(GAME.SPECIAL_ACT)
+end
+
+function slot0.checkTimeLimitEquip(slot0)
+	if #getProxy(EquipmentProxy):getTimeLimitShipList() > 0 then
+		slot0.viewComponent:emit(BaseUI.ON_DROP_LIST, {
+			item2Row = true,
+			itemList = slot1,
+			content = i18n("time_limit_equip_destroy_on_ship")
+		})
+	end
 end
 
 function slot0.handlingActivityBtn(slot0)
@@ -1154,16 +1186,13 @@ function slot0.handleOverdueAttire(slot0)
 end
 
 function slot0.escortHandler(slot0)
-	if #getProxy(ChapterProxy).escortMaps == 0 or _.any(slot2, function (slot0)
-		return slot0:shouldFetch()
-	end) then
-		slot0:sendNotification(GAME.ESCORT_FETCH)
-	else
-		pg.m02:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
-			chapterId = slot1:getActiveChapter() and slot3.id,
-			mapIdx = slot2[1].id
-		})
-	end
+	slot1 = getProxy(ChapterProxy)
+	slot2 = slot1:getMapsByType(Map.ESCORT)[1]
+
+	pg.m02:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
+		chapterId = slot1:getActiveChapter() and slot3:getConfig("map") == slot2.id and slot3.id or nil,
+		mapIdx = slot2.id
+	})
 end
 
 return slot0

@@ -6,8 +6,6 @@ slot0.SHOP_TYPE_TIMELIMIT = 2
 slot0.PAGE_ALL = -1
 slot0.PAGE_TIME_LIMIT = -2
 slot0.MSGBOXNAME = "SkinShopMsgbox"
-slot0.EXSKINNAME = "ExSkinListUI"
-slot0.OVERDUENAME = "SkinOverDueUI"
 slot3 = {
 	{
 		"huanzhuangshagndian",
@@ -69,6 +67,7 @@ function slot0.init(slot0)
 	slot0.commonConsumeTF = slot0:findTF("consume", slot0.commonPanel)
 	slot0.buyBtn = slot0:findTF("buy_btn", slot0.commonPanel)
 	slot0.activityBtn = slot0:findTF("activty_btn", slot0.commonPanel)
+	slot0.itemBtn = slot0:findTF("item_btn", slot0.commonPanel)
 	slot0.gotBtn = slot0:findTF("got_btn", slot0.commonPanel)
 	slot0.priceTxt = slot0:findTF("consume/Text", slot0.commonPanel):GetComponent(typeof(Text))
 	slot0.originalPriceTxt = slot0:findTF("consume/originalprice/Text", slot0.commonPanel):GetComponent(typeof(Text))
@@ -94,6 +93,7 @@ function slot0.init(slot0)
 	setActive(slot0.hideObjToggleTF, false)
 
 	slot0.hideObjToggle = GetComponent(slot0.hideObjToggleTF, typeof(Toggle))
+	slot0.switchCnt = 0
 end
 
 function slot0.didEnter(slot0)
@@ -186,6 +186,7 @@ function slot0.initSkinPage(slot0)
 
 		uv0:updateShipRect(0)
 		triggerToggle(uv0.skinPageToggles[slot0], true)
+		uv0:SwitchCntPlusPlus()
 	end
 
 	slot4 = {}
@@ -390,7 +391,7 @@ function slot0.updateBuyBtn(slot0, slot1)
 	if slot1:getConfig("genre") == ShopArgs.SkinShopTimeLimit then
 		onButton(slot0, slot0.timelimitBtn, function ()
 			if getProxy(ShipSkinProxy):getSkinById(uv0:getSkinId()) and not slot1:isExpireType() then
-				pg.TipsMgr:GetInstance():ShowTips(i18n("already_have_the_skin"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("already_have_the_skin"))
 
 				return
 			end
@@ -403,28 +404,41 @@ function slot0.updateBuyBtn(slot0, slot1)
 		slot3 = uv0[slot1:getSkinId()]
 		slot6 = slot1.type == Goods.TYPE_ACTIVITY or slot5 == Goods.TYPE_ACTIVITY_EXTRA
 		slot7 = slot1.buyCount == 0
+		slot9 = slot1:isDisCount() and slot1:IsItemDiscountType()
 
-		setActive(slot0.buyBtn, not slot6 and slot7)
+		setActive(slot0.itemBtn, slot9 and slot7)
+		setActive(slot0.buyBtn, not slot6 and slot7 and not slot9)
 		setActive(slot0.gotBtn, not slot6 and not slot7)
-		setActive(slot0.activityBtn, slot6)
+		setActive(slot0.activityBtn, slot6 and not slot9)
+		onButton(slot0, slot0.itemBtn, function ()
+			triggerButton(uv0.buyBtn)
+		end, SFX_PANEL)
 		onButton(slot0, slot0.buyBtn, function ()
 			if uv0.type == Goods.TYPE_SKIN then
 				if uv1.showCardId == slot0.id then
-					if slot0:isDisCount() then
-						slot2 = (100 - slot0:getConfig("discount")) / 100 * slot0:getConfig("resource_num")
+					slot2 = i18n("charge_scene_buy_confirm", slot0:GetPrice(), HXSet.hxLan(uv2.name))
+
+					if uv0:isDisCount() and slot0:IsItemDiscountType() then
+						slot2 = i18n("discount_coupon_tip", slot1, slot0:GetDiscountItem().name, HXSet.hxLan(uv2.name))
 					end
 
-					pg.MsgboxMgr:GetInstance():ShowMsgBox({
-						content = i18n("charge_scene_buy_confirm", slot2, HXSet.hxLan(uv2.name)),
+					pg.MsgboxMgr.GetInstance():ShowMsgBox({
+						content = slot2,
 						onYes = function ()
-							uv0:emit(SkinShopMediator.ON_SHOPPING, uv1.id, 1)
+							if uv0 then
+								uv1:emit(SkinShopMediator.ON_SHOPPING_BY_ACT, uv2.id, 1)
+							else
+								uv1:emit(SkinShopMediator.ON_SHOPPING, uv2.id, 1)
+							end
 						end
 					})
-				else
-					pg.TipsMgr:GetInstance():ShowTips(ERROR_MESSAGE[9999])
 
 					return
 				end
+
+				pg.TipsMgr.GetInstance():ShowTips(ERROR_MESSAGE[9999])
+
+				return
 			end
 		end, SFX_PANEL)
 		onButton(slot0, slot0.activityBtn, function ()
@@ -443,7 +457,7 @@ function slot0.updateBuyBtn(slot0, slot1)
 					end
 				end
 			else
-				pg.TipsMgr:GetInstance():ShowTips(i18n("common_activity_not_start"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("common_activity_not_start"))
 			end
 		end, SFX_PANEL)
 	end
@@ -460,11 +474,11 @@ function slot0.showTimeLimitSkinWindow(slot0, slot1)
 	slot2 = slot1:getConfig("resource_num")
 	slot6, slot7, slot8, slot9 = pg.TimeMgr.GetInstance():parseTimeFrom(slot1:getConfig("time_second") * slot2)
 
-	pg.MsgboxMgr:GetInstance():ShowMsgBox({
+	pg.MsgboxMgr.GetInstance():ShowMsgBox({
 		content = i18n("exchange_limit_skin_tip", slot2, pg.ship_skin_template[slot1:getSkinId()].name, slot6, slot7),
 		onYes = function ()
 			if uv0.skinTicket < uv1 then
-				pg.TipsMgr:GetInstance():ShowTips(i18n("common_no_item_1"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("common_no_item_1"))
 
 				return
 			end
@@ -510,7 +524,7 @@ function slot0.addShopTimer(slot0, slot1)
 		return
 	end
 
-	slot7 = pg.TimeMgr:GetInstance():Table2ServerTime(slot5)
+	slot7 = pg.TimeMgr.GetInstance():Table2ServerTime(slot5)
 	slot0.shopTimer = Timer.New(function ()
 		if uv1 < uv0:GetServerTime() then
 			uv2:removeShopTimer()
@@ -560,13 +574,9 @@ function slot0.updatePrice(slot0, slot1)
 		setActive(slot0.commonConsumeTF, slot6)
 
 		if slot6 then
-			if slot4:isDisCount() then
-				slot0.priceTxt.text = slot4:getConfig("resource_num") * (100 - slot4:getConfig("discount")) / 100
-			else
-				slot0.priceTxt.text = slot8
-			end
-
-			slot0.originalPriceTxt.text = slot8
+			slot7 = (100 - slot4:getConfig("discount")) / 100
+			slot0.priceTxt.text = slot4:GetPrice()
+			slot0.originalPriceTxt.text = slot4:getConfig("resource_num")
 
 			setActive(tf(go(slot0.originalPriceTxt)).parent, slot4:isDisCount())
 		end
@@ -592,14 +602,16 @@ function slot0.setPaintingPrefab(slot0, slot1, slot2, slot3, slot4)
 		slot2 = slot2 .. "_n"
 	end
 
-	PoolMgr.GetInstance():GetPainting(slot2, false, function (slot0)
+	pg.UIMgr.GetInstance():LoadingOn()
+	PoolMgr.GetInstance():GetPainting(slot2, true, function (slot0)
+		pg.UIMgr.GetInstance():LoadingOff()
 		setParent(slot0, uv0, false)
 
 		if not IsNil(findTF(slot0, "Touch")) then
 			setActive(slot1, false)
 		end
 
-		Ship.SetExpression(uv0:GetChild(0), uv1)
+		ShipExpressionHelper.SetExpression(uv0:GetChild(0), uv1)
 	end)
 end
 
@@ -611,9 +623,9 @@ end
 
 function slot0.loadChar(slot0, slot1)
 	slot0:recycleChar()
-	pg.UIMgr:GetInstance():LoadingOn()
+	pg.UIMgr.GetInstance():LoadingOn()
 	PoolMgr.GetInstance():GetSpineChar(slot1, true, function (slot0)
-		pg.UIMgr:GetInstance():LoadingOff()
+		pg.UIMgr.GetInstance():LoadingOff()
 
 		uv0.modelTf = tf(slot0)
 		uv0.modelTf.localScale = Vector3(0.9, 0.9, 1)
@@ -671,6 +683,8 @@ function slot0.initShips(slot0)
 					uv0.index = slot3
 				end
 			end
+
+			uv0:SwitchCntPlusPlus()
 		end, SFX_PANEL)
 	end
 
@@ -695,6 +709,16 @@ function slot0.initShips(slot0)
 		end
 
 		setActive(uv0.mainPanel, slot0)
+	end
+end
+
+function slot0.SwitchCntPlusPlus(slot0)
+	slot0.switchCnt = slot0.switchCnt + 1
+
+	if slot0.switchCnt >= 8 then
+		gcAll()
+
+		slot0.switchCnt = 0
 	end
 end
 
@@ -731,11 +755,9 @@ function slot0.onNext(slot0)
 		end
 
 		if slot2 and function ()
-			slot2 = getBounds(uv0.card._tf)
-
-			return getBounds(uv1._tf):GetMax().x - getBounds(uv0.bottomTF:Find("scroll")):GetMax().x > 2
+			return getBounds(uv0.card._tf).size.x < math.ceil(getBounds(uv1._tf):GetMax().x - getBounds(uv0.bottomTF:Find("scroll")):GetMax().x)
 		end() then
-			slot0.shipRect:ScrollTo(slot0.shipRect.value - (slot0.shipRect:HeadIndexToValue(slot3 - 1) - slot0.shipRect:HeadIndexToValue(slot3)))
+			slot0.shipRect:SetNormalizedPosition(slot0.shipRect.value - (slot0.shipRect:HeadIndexToValue(slot3 - 1) - slot0.shipRect:HeadIndexToValue(slot3)), 0)
 		end
 	end
 end
@@ -773,7 +795,7 @@ function slot0.onPrev(slot0)
 		if slot2 and function ()
 			return getBounds(uv0.bottomTF:Find("scroll/content")):GetMin().x < getBounds(uv0.bottomTF:Find("scroll")):GetMin().x and getBounds(uv0.card._tf):GetMin().x < slot0:GetMin().x
 		end() then
-			slot0.shipRect:ScrollTo(slot0.shipRect:HeadIndexToValue(slot3 - 1))
+			slot0.shipRect:SetNormalizedPosition(slot0.shipRect:HeadIndexToValue(slot3 - 1), 0)
 		end
 	end
 end
@@ -822,41 +844,38 @@ function slot0.addVerticalDrag(slot0, slot1, slot2, slot3)
 	slot6 = nil
 	slot7 = 0
 	slot8 = 0
+	slot9 = 0
 
 	slot4:AddBeginDragFunc(function (slot0, slot1)
 		uv0 = 0
 		uv1 = 0
 		uv2 = slot1.position
-		prev = uv2.y
-
-		if onBegin then
-			onBegin()
-		end
+		uv3 = uv2.y
 	end)
 	slot4:AddDragFunc(function (slot0, slot1)
-		if slot1.position.y < prev and uv0 ~= 0 then
-			uv1 = slot1.position
-			uv0 = 0
-		elseif prev < slot1.position.y and uv2 ~= 0 then
-			uv1 = slot1.position
-			uv2 = 0
+		if slot1.position.y < uv0 and uv1 ~= 0 then
+			uv2 = slot1.position
+			uv1 = 0
+		elseif uv0 < slot1.position.y and uv3 ~= 0 then
+			uv2 = slot1.position
+			uv3 = 0
 		end
 
-		slot3 = math.abs(math.floor((slot1.position.y - uv1.y) / uv3))
+		slot3 = math.abs(math.floor((slot1.position.y - uv2.y) / uv4))
 
-		if uv4 and uv2 < slot3 then
-			uv2 = slot3
+		if uv5 and uv3 < slot3 then
+			uv3 = slot3
 
-			uv4(slot2)
+			uv5(slot2)
 		end
 
-		if uv4 and slot3 < uv0 then
-			uv0 = slot3
+		if uv5 and slot3 < uv1 then
+			uv1 = slot3
 
-			uv4(slot2)
+			uv5(slot2)
 		end
 
-		prev = uv1.y
+		uv0 = uv2.y
 	end)
 	slot4:AddDragEndFunc(function (slot0, slot1)
 		if uv0 then
@@ -880,6 +899,7 @@ function slot0.willExit(slot0)
 
 	slot0.skinTimer = nil
 	slot0.contextData.key = nil
+	slot0.switchCnt = nil
 end
 
 return slot0

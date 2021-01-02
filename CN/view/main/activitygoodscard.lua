@@ -1,11 +1,5 @@
 slot0 = class("ActivityGoodsCard")
-slot0.Color = {
-	[3] = {
-		0.8745098039215686,
-		0.9294117647058824,
-		1
-	}
-}
+slot0.Color = {}
 slot0.DefaultColor = {
 	0.8745098039215686,
 	0.9294117647058824,
@@ -67,15 +61,13 @@ function slot0.update(slot0, slot1, slot2, slot3, slot4)
 
 	if slot1:getConfig("num_limit") == 0 then
 		slot0.limitCountTF.text = i18n("common_no_limit")
-	elseif slot6 == DROP_TYPE_SKIN and not slot5 then
-		slot0.limitCountTF.text = "0/" .. slot1:getConfig("num_limit")
 	else
-		slot0.limitCountTF.text = slot12 - slot1.buyCount .. "/" .. slot12
+		slot0.limitCountTF.text = math.max(slot1:GetPurchasableCnt(), 0) .. "/" .. slot12
 	end
 
-	slot12 = uv0.Color[slot2] or uv0.DefaultColor
-	slot0.limitCountTF.color = slot3 or Color.New(unpack(slot12))
-	slot0.limitCountLabelTF.color = slot3 or Color.New(unpack(slot12))
+	slot13 = uv0.Color[slot2] or uv0.DefaultColor
+	slot0.limitCountTF.color = slot3 or Color.New(unpack(slot13))
+	slot0.limitCountLabelTF.color = slot3 or Color.New(unpack(slot13))
 
 	if GetComponent(slot0.limitCountTF, typeof(Outline)) then
 		setOutlineColor(slot0.limitCountTF, slot4 or Color.New(0, 0, 0, 1))
@@ -140,6 +132,11 @@ function slot0.StaticUpdate(slot0, slot1, slot2, slot3)
 	slot22 = uv0.Color[slot2] or uv0.DefaultColor
 	slot12.color = slot3 or Color.New(slot22[1], slot22[2], slot22[3], 1)
 	slot13.color = slot3 or Color.New(slot22[1], slot22[2], slot22[3], 1)
+
+	if slot1:getConfig("num_limit") >= 99 then
+		slot13.text = i18n("shop_label_unlimt_cnt")
+		slot12.text = ""
+	end
 end
 
 function slot0.dispose(slot0)

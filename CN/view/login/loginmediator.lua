@@ -26,7 +26,7 @@ function slot0.loginProcessHandler(slot0)
 	slot0.process = coroutine.wrap(function ()
 		uv0.viewComponent:switchSubView({})
 
-		if not uv1:getUserAgreement() and PLATFORM_KR ~= PLATFORM_CODE then
+		if uv1:CheckNeedUserAgreement() and not uv1:getUserAgreement() then
 			uv0.viewComponent:showUserAgreement(uv0.process)
 			coroutine.yield()
 			uv1:setUserAgreement()
@@ -43,6 +43,22 @@ function slot0.loginProcessHandler(slot0)
 			uv0.viewComponent:setLastLogin(getProxy(UserProxy):getLastLoginUser())
 		elseif uv2 == LoginType.PLATFORM_AIRIJP or uv2 == LoginType.PLATFORM_AIRIUS then
 			uv0.viewComponent:switchToAiriLogin()
+		end
+
+		if PLATFORM_CODE == PLATFORM_US and CSharpVersion == 39 and pg.SdkMgr.GetInstance():GetChannelUID() == "0" and not PathMgr.FileExists(PathMgr.getAssetBundle("painting/u522")) then
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				hideNo = true,
+				content = i18n("us_error_download_painting"),
+				onYes = function ()
+					VersionMgr.Inst:DeleteCacheFiles()
+					Application.Quit()
+				end,
+				onClose = function ()
+					VersionMgr.Inst:DeleteCacheFiles()
+					Application.Quit()
+				end
+			})
+			coroutine.yield()
 		end
 
 		uv0:CheckMaintain()
@@ -174,9 +190,13 @@ function slot0.handleNotification(slot0, slot1)
 		})
 	elseif slot2 == GAME.SERVER_LOGIN_SUCCESS then
 		if slot3.uid == 0 then
-			slot0:sendNotification(GAME.BEGIN_STAGE, {
-				system = SYSTEM_PROLOGUE
-			})
+			if EPILOGUE_SKIPPABLE then
+				slot0:sendNotification(GAME.GO_SCENE, SCENE.CREATE_PLAYER)
+			else
+				slot0:sendNotification(GAME.BEGIN_STAGE, {
+					system = SYSTEM_PROLOGUE
+				})
+			end
 		else
 			slot0.facade:sendNotification(GAME.LOAD_PLAYER_DATA, {
 				id = slot3.uid

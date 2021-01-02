@@ -39,6 +39,10 @@ function slot0.Ctor(slot0, slot1)
 	slot0.stageShips = {}
 end
 
+function slot0.NeedAlphaCheck(slot0)
+	return slot0.configId ~= 27108
+end
+
 function slot0.hasChild(slot0)
 	return table.getCount(slot0.child) > 0
 end
@@ -51,15 +55,12 @@ end
 
 function slot0.getVoice(slot0)
 	if slot0:existVoice() then
-		return slot0:getConfig("can_trigger")[2]
-	end
-end
+		slot3, slot4 = nil
 
-function slot0.GetVoiceAnim(slot0)
-	if slot0:isSpine() and slot0:existVoice() then
-		slot1 = slot0:getConfig("can_trigger")
-
-		return "normal", slot1[3], slot1[4]
+		return (type(slot0:getConfig("can_trigger")[2]) ~= "table" or slot1[2][math.random(1, #slot1[2])]) and slot1[2], {
+			action = (type(slot1[3]) ~= "table" or slot1[3][1]) and slot1[3],
+			effect = slot1[4]
+		}
 	end
 end
 
@@ -664,6 +665,10 @@ function slot0.hasParent(slot0)
 	return slot0.parent ~= 0
 end
 
+function slot0.is3DObject(slot0)
+	return slot0:getConfig("is_3d_obj") == 1
+end
+
 function slot0.isFloor(slot0)
 	return slot0:getConfig("belong") == uv0.FLOOR
 end
@@ -823,13 +828,13 @@ function slot0.getTouchSpineConfig(slot0)
 		slot2 = slot0:getConfig("spine")[1][3] or {}
 		slot4 = slot2[1]
 
-		if slot2[3] then
+		if Clone(slot2[3]) then
 			table.insert(slot3, slot2[1])
 
 			slot4 = slot3[math.random(1, #slot3)]
 		end
 
-		return slot4, slot2[2], slot2[4], slot2[5], slot2[6]
+		return slot4, slot2[2], slot2[4], slot2[5], slot2[6], slot2[7]
 	end
 end
 
@@ -915,6 +920,32 @@ function slot0.getSurroundGrid(slot0)
 	table.insert(slot2, Vector2(slot1.x + 1, slot1.y))
 
 	return slot2
+end
+
+function slot0.IsFollower(slot0)
+	return slot0:getConfig("type") == Furniture.TYPE_FOLLOWER
+end
+
+function slot0.IsSpineRandomType(slot0)
+	return slot0:IsFollower()
+end
+
+function slot0.GetFollowerInterActionData(slot0)
+	return slot0:getConfig("spine")[3]
+end
+
+function slot0.ExistFollowBoneNode(slot0)
+	return slot0:getConfig("followBone") ~= nil
+end
+
+function slot0.GetFollowBone(slot0)
+	slot1 = slot0:getConfig("followBone")
+
+	return slot1[1], slot1[2] or 1
+end
+
+function slot0.HasFollower(slot0)
+	return slot0:hasAnimator() or slot0:ExistFollowBoneNode()
 end
 
 return slot0

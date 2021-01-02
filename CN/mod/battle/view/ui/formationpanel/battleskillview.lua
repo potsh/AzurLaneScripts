@@ -27,6 +27,12 @@ function slot2.DisableWeapnButton(slot0)
 	end
 end
 
+function slot2.JamSkillButton(slot0, slot1)
+	for slot5, slot6 in ipairs(slot0._skillBtnList) do
+		slot6:SetJam(slot1)
+	end
+end
+
 function slot2.ShiftSubmarineManualButton(slot0, slot1)
 	if slot1 == uv0.Battle.OxyState.STATE_FREE_FLOAT then
 		slot0._diveBtn:SetActive(true)
@@ -139,6 +145,7 @@ function slot2.InitBtns(slot0)
 	table.insert(slot0._skillBtnList, slot0._boostBtn)
 	slot0._boostBtn:ConfigCallback(function ()
 	end, function ()
+		uv0._fleetVO:SubmarinBoost()
 	end, function ()
 	end, slot1)
 	slot0._boostBtn:ConfigSkin(slot0._ui:findTF("Skill_7"))
@@ -193,6 +200,21 @@ function slot2.InitBtns(slot0)
 		table.insert(slot0._activeBtnList, slot0._subStriveBtn)
 	end
 
+	slot44 = uv0.Battle.BattleWeaponButton.New()
+
+	table.insert(slot0._skillBtnList, slot44)
+	slot44:ConfigCallback(slot7, slot8, slot9, slot1)
+
+	slot45 = slot0._ui:findTF("Skill_10")
+
+	slot0:setSkillButtonPreferences(slot45, 2)
+
+	slot45.anchoredPosition = Vector2.zero
+
+	slot44:ConfigSkin(slot45)
+	slot44:SetTextActive(true)
+	slot44:SetProgressInfo(slot11)
+	slot44:SetActive(false)
 	slot0._boostBtn:SetActive(false)
 	slot0._diveBtn:SetActive(false)
 	slot0._floatBtn:SetActive(false)
@@ -259,6 +281,21 @@ function slot2.SubRoutineButton(slot0)
 	slot0:setSkillButtonPreferences(slot0._specialBtn:GetSkin(), 4)
 end
 
+function slot2.AirFightButton(slot0)
+	for slot5, slot6 in ipairs(slot0._skillBtnList) do
+		slot7 = table.indexof({
+			9
+		}, slot5)
+
+		slot6:SetActive(slot7)
+
+		if slot7 then
+			table.insert(slot0._activeBtnList, slot6)
+			slot0:setSkillButtonPreferences(slot6:GetSkin(), slot7)
+		end
+	end
+end
+
 function slot2.HideSkillButton(slot0, slot1)
 	for slot5, slot6 in ipairs(slot0._activeBtnList) do
 		slot6:SetActive(not slot1)
@@ -284,7 +321,7 @@ function slot2.Dispose(slot0)
 
 	slot0._ui = nil
 
-	if _main_cannon_sound then
+	if slot0._main_cannon_sound then
 		slot0._main_cannon_sound:Stop(true)
 
 		slot0._main_cannon_sound = nil

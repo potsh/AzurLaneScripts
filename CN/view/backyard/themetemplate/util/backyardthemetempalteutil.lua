@@ -45,7 +45,7 @@ function slot11(slot0, slot1, slot2)
 		return
 	end
 
-	pg.OSSMgr:GetInstance():GetTexture2D(uv2(slot0), uv1(slot0), false, uv3, uv4, function (slot0, slot1)
+	pg.OSSMgr.GetInstance():GetTexture2D(uv2(slot0), uv1(slot0), false, uv3, uv4, function (slot0, slot1)
 		if slot0 and slot1 then
 			uv0(slot1)
 		else
@@ -61,7 +61,7 @@ function slot12(slot0, slot1, slot2)
 		return
 	end
 
-	pg.OSSMgr:GetInstance():GetTexture2D(uv2(slot0), uv1(slot0), true, uv3, uv4, function (slot0, slot1)
+	pg.OSSMgr.GetInstance():GetTexture2D(uv2(slot0), uv1(slot0), true, uv3, uv4, function (slot0, slot1)
 		if slot0 and slot1 and uv0 == uv1(uv2) then
 			uv3(slot1)
 		else
@@ -79,7 +79,7 @@ function slot13(slot0, slot1)
 
 	slot2 = uv1(slot0)
 
-	pg.OSSMgr:GetInstance():DeleteObject(uv2(slot0), slot1)
+	pg.OSSMgr.GetInstance():DeleteObject(uv2(slot0), slot1)
 end
 
 function slot14(slot0, slot1)
@@ -89,7 +89,7 @@ function slot14(slot0, slot1)
 		return
 	end
 
-	pg.OSSMgr:GetInstance():UpdateLoad(uv2(slot0), uv1(slot0), slot1)
+	pg.OSSMgr.GetInstance():AsynUpdateLoad(uv2(slot0), uv1(slot0), slot1)
 end
 
 function slot15()
@@ -98,7 +98,7 @@ function slot15()
 	table.insert(uv0.HideGos, GameObject.Find("/UICamera/Canvas/UIMain/BackYardUI(Clone)/backyardmainui/back"))
 	table.insert(uv0.HideGos, GameObject.Find("/UICamera/Canvas/UIMain/BackYardUI(Clone)/bg000"))
 
-	slot0 = GameObject.Find("/UICamera/Canvas/UIMain/BackYardUI(Clone)/backyardmainui")
+	slot0 = GameObject.Find("/UICamera/Canvas/UIMain/BackYardUI(Clone)/backyardmainui/scroll_view")
 	slot1 = GameObject.Find("/UICamera/Canvas/UIMain/BackYardUI(Clone)/backyardmainui/bg").transform
 	slot1.localScale = Vector2(uv0.TakeScale, uv0.TakeScale, 1)
 
@@ -134,7 +134,7 @@ function slot16()
 	uv0.ScaleGos = {}
 	uv0.HideGos = {}
 
-	scrollTo(GameObject.Find("/UICamera/Canvas/UIMain/BackYardUI(Clone)/backyardmainui"), uv0.normalizedPosition.x, uv0.normalizedPosition.y)
+	scrollTo(GameObject.Find("/UICamera/Canvas/UIMain/BackYardUI(Clone)/backyardmainui/scroll_view"), uv0.normalizedPosition.x, uv0.normalizedPosition.y)
 
 	uv0.normalizedPosition = nil
 end
@@ -143,37 +143,55 @@ function slot0.FileExists(slot0)
 	return PathMgr.FileExists(uv0(slot0))
 end
 
-function slot17(slot0, slot1)
-	slot2 = UnityEngine.Texture2D.New(452, 324)
-	slot3 = uv0 / 2 - slot2.width / 2
-	slot6 = uv1 / 2 - slot2.height / 2 + slot2.height
-	slot8 = 0
+function slot17(slot0, slot1, slot2)
+	slot3 = UnityEngine.Texture2D.New(452, 324)
+	slot4 = uv0 / 2 - slot3.width / 2
+	slot7 = uv1 / 2 - slot3.height / 2 + slot3.height
+	slot9 = 0
 
-	for slot12 = slot3, slot3 + slot2.width do
-		for slot16 = slot4, slot6 do
-			slot2:SetPixel(0 + 1, 0 + 1, slot1:GetPixel(slot12, slot16))
+	for slot13 = slot4, slot4 + slot3.width do
+		for slot17 = slot5, slot7 do
+			slot3:SetPixel(0 + 1, 0 + 1, slot1:GetPixel(slot13, slot17))
 		end
 	end
 
-	slot2:Apply()
-	ScreenShooter.SaveTextureToLocal(uv2(slot0 .. "_icon"), slot2, false)
+	slot3:Apply()
+
+	slot10 = uv2(slot0 .. "_icon")
+
+	onNextTick(function ()
+		ScreenShooter.SaveTextureToLocal(uv0, uv1, false)
+
+		if uv2 then
+			uv2()
+		end
+	end)
 end
 
 function slot0.TakePhoto(slot0, slot1)
 	uv0()
 
 	slot3 = ScreenShooter.TakePhoto(GameObject.Find("/UICamera"):GetComponent(typeof(Camera)), uv1, uv2)
-	slot4 = uv3(slot0)
 
-	uv4(slot4)
-	uv5(slot0, slot3)
-	ScreenShooter.SaveTextureToLocal(slot4, slot3, false)
-
-	if slot1 then
-		slot1()
-	end
-
-	uv6()
+	uv4(uv3(slot0))
+	uv5()
+	seriesAsync({
+		function (slot0)
+			onNextTick(function ()
+				uv0(uv1, uv2, uv3)
+			end)
+		end,
+		function (slot0)
+			onNextTick(function ()
+				ScreenShooter.SaveTextureToLocal(uv0, uv1, false)
+				uv2()
+			end)
+		end
+	}, function ()
+		if uv0 then
+			uv0()
+		end
+	end)
 end
 
 function slot18(slot0)
@@ -185,6 +203,7 @@ end
 function slot19(slot0, slot1, slot2)
 	table.insert(uv0.loader, {
 		name = slot0,
+		md5 = slot1,
 		callback = slot2
 	})
 
@@ -199,9 +218,7 @@ function slot19(slot0, slot1, slot2)
 			return
 		end
 
-		slot0 = uv0.loader[1]
-
-		if not uv3 or uv3 == "" then
+		if not uv0.loader[1].md5 or slot2 == "" then
 			function (slot0)
 				uv0.callback(slot0)
 				table.remove(uv1.loader, 1)
@@ -216,10 +233,10 @@ function slot19(slot0, slot1, slot2)
 
 				onNextTick(uv3)
 			end(nil)
-		elseif uv0.FileExists(slot0.name) and uv3 == uv4(uv5(uv1)) then
-			uv6(slot0.name, uv3, slot1)
+		elseif uv0.FileExists(slot0.name) and slot2 == uv3(uv4(uv1)) then
+			uv5(slot0.name, slot2, slot1)
 		else
-			uv7(slot0.name, uv3, slot1)
+			uv6(slot0.name, slot2, slot1)
 		end
 	end()
 end
@@ -296,10 +313,16 @@ function slot0.ClearAllCache()
 	gcAll(true)
 end
 
+function slot0.ClearAllCacheAsyn(slot0)
+	uv0.caches = {}
+
+	gcAll(false)
+end
+
 function slot0.Exit(slot0)
 	uv0.loader = {}
 
-	uv0.ClearAllCache()
+	uv0.ClearAllCacheAsyn()
 end
 
 return slot0

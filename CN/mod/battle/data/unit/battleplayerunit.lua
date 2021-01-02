@@ -18,7 +18,7 @@ end
 function slot7.Retreat(slot0)
 	uv0.super.Retreat(slot0)
 	slot0:SetDeathReason(uv1.UnitDeathReason.LEAVE)
-	slot0:DeadAction()
+	slot0:DeacActionClear()
 	slot0._battleProxy:ShutdownPlayerUnit(slot0:GetUniqueID())
 	slot0._battleProxy:KillUnit(slot0:GetUniqueID())
 end
@@ -54,7 +54,7 @@ function slot7.SetShipName(slot0, slot1)
 	slot0._shipName = slot1
 end
 
-function slot7.SetTemplate(slot0, slot1, slot2)
+function slot7.SetTemplate(slot0, slot1, slot2, slot3)
 	uv0.super.SetTemplate(slot0, slot1)
 
 	slot0._tmpData = uv1.Battle.BattleDataFunction.GetPlayerShipTmpDataFromID(slot0._tmpID)
@@ -66,17 +66,17 @@ function slot7.SetTemplate(slot0, slot1, slot2)
 
 	slot2.armorType = slot0._tmpData.armor_type
 
-	slot0:setAttrFromOutBattle(slot2)
+	slot0:setAttrFromOutBattle(slot2, slot3)
 	uv2.InitDOTAttr(slot0._attr, slot0._tmpData)
 
-	slot6 = slot0._tmpData.type
+	slot7 = slot0._tmpData.type
 
-	uv2.SetCurrent(slot0, "srcShipType", slot6)
+	uv2.SetCurrent(slot0, "srcShipType", slot7)
 
 	slot0._personality = uv1.Battle.BattleDataFunction.GetShipPersonality(2)
 
-	for slot6, slot7 in ipairs(slot0._tmpData.tag_list) do
-		slot0:AddLabelTag(slot7)
+	for slot7, slot8 in ipairs(slot0._tmpData.tag_list) do
+		slot0:AddLabelTag(slot8)
 	end
 
 	slot0:setStandardLabelTag()
@@ -183,8 +183,8 @@ function slot7.setWeapon(slot0, slot1)
 			end
 		end
 
-		if #slot8 == 0 then
-			slot8 = slot0._tmpData.depth_charge_list
+		for slot12, slot13 in ipairs(slot0._tmpData.depth_charge_list) do
+			slot8[#slot8 + 1] = slot13
 		end
 
 		for slot14, slot15 in ipairs(slot8) do
@@ -214,7 +214,7 @@ function slot7.AddWeapon(slot0, slot1, slot2, slot3, slot4, slot5)
 		slot0._chargeList[#slot0._chargeList + 1] = slot6
 
 		slot0._weaponQueue:AppendChargeWeapon(slot6)
-	elseif slot7 == uv1.MANUAL_TORPEDO or slot7 == uv1.DISPOSABLE_TORPEDO then
+	elseif slot7 == uv1.MANUAL_TORPEDO or slot7 == uv1.DISPOSABLE_TORPEDO or slot7 == uv1.MANUAL_AAMISSILE then
 		slot0._manualTorpedoList[#slot0._manualTorpedoList + 1] = slot6
 
 		slot0._weaponQueue:AppendManualTorpedo(slot6)
@@ -338,8 +338,8 @@ function slot7.SetFormationIndex(slot0, slot1)
 	slot0._formationIndex = slot1
 end
 
-function slot7.setAttrFromOutBattle(slot0, slot1)
-	uv0.SetPlayerAttrFromOutBattle(slot0, slot1)
+function slot7.setAttrFromOutBattle(slot0, slot1, slot2)
+	uv0.SetPlayerAttrFromOutBattle(slot0, slot1, slot2)
 end
 
 function slot7.SetFleetVO(slot0, slot1)

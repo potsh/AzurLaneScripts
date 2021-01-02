@@ -70,13 +70,17 @@ function slot5.SetBoneList(slot0)
 	end
 end
 
-function slot5.SpawnBullet(slot0, slot1, slot2, slot3)
-	slot0._bulletFactoryList[slot1:GetTemplate().type]:CreateBullet(slot0._tf, slot1, slot0:GetBonePos(slot2), slot3, slot0._unitData:GetDirection())
+function slot5.SpawnBullet(slot0, slot1, slot2, slot3, slot4)
+	slot0._bulletFactoryList[slot1:GetTemplate().type]:CreateBullet(slot0._tf, slot1, slot4 or slot0:GetBonePos(slot2), slot3, slot0._unitData:GetDirection())
 end
 
 function slot5.GetBonePos(slot0, slot1)
 	if slot0._boneList[slot1] == nil or #slot2 == 0 then
-		return Vector3.zero
+		for slot6, slot7 in pairs(slot0._boneList) do
+			slot2 = slot7
+
+			break
+		end
 	end
 
 	slot3 = nil
@@ -166,6 +170,14 @@ function slot5.AddWaveFX(slot0, slot1)
 	slot0._waveFX = slot0:AddFX(slot1)
 end
 
+function slot5.RemoveWaveFX(slot0)
+	if not slot0._waveFX then
+		return
+	end
+
+	slot0:RemoveFX(slot0._waveFX)
+end
+
 function slot5.AddBlink(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	if slot0._unitData:GetDiveInvisible() then
 		return nil
@@ -181,7 +193,7 @@ function slot5.RemoveBlink(slot0, slot1)
 end
 
 function slot5.AddShaderColor(slot0, slot1)
-	slot0._animator:ShiftShader(slot0:GetTf():GetComponent(typeof(Renderer)).material.shader, slot1 or Color.New(0, 0, 0, 0))
+	slot0:GetTf():GetComponent(typeof(Renderer)).material:SetColor("_Color", slot1 or Color.New(0, 0, 0, 0))
 end
 
 function slot5.GetPosition(slot0)
@@ -233,8 +245,11 @@ function slot5.AddUnitEvent(slot0)
 	slot0._unitData:RegisterEventListener(slot0, uv0.BLIND_VISIBLE, slot0.onUpdateBlindInvisible)
 	slot0._unitData:RegisterEventListener(slot0, uv0.BLIND_EXPOSE, slot0.onBlindExposed)
 	slot0._unitData:RegisterEventListener(slot0, uv0.INIT_ANIT_SUB_VIGILANCE, slot0.onInitVigilantState)
+	slot0._unitData:RegisterEventListener(slot0, uv0.UPDATE_CLOAK_CONFIG, slot0.onUpdateCloakConfig)
+	slot0._unitData:RegisterEventListener(slot0, uv0.UPDATE_CLOAK_LOCK, slot0.onUpdateCloakLock)
 	slot0._unitData:RegisterEventListener(slot0, uv1.Battle.BattleBuffEvent.BUFF_EFFECT_CHNAGE_SIZE, slot0.onChangeSize)
 	slot0._unitData:RegisterEventListener(slot0, uv1.Battle.BattleBuffEvent.BUFF_EFFECT_NEW_WEAPON, slot0.onNewWeapon)
+	slot0._unitData:RegisterEventListener(slot0, uv0.HIDE_WAVE_FX, slot0.RemoveWaveFX)
 
 	slot5 = slot0.onUpdateScore
 
@@ -267,6 +282,8 @@ function slot5.RemoveUnitEvent(slot0)
 	slot0._unitData:UnregisterEventListener(slot0, uv0.CHANGE_ANTI_SUB_VIGILANCE)
 	slot0._unitData:UnregisterEventListener(slot0, uv0.INIT_ANIT_SUB_VIGILANCE)
 	slot0._unitData:UnregisterEventListener(slot0, uv0.ANTI_SUB_VIGILANCE_SONAR_CHECK)
+	slot0._unitData:UnregisterEventListener(slot0, uv0.UPDATE_CLOAK_CONFIG)
+	slot0._unitData:UnregisterEventListener(slot0, uv0.UPDATE_CLOAK_LOCK)
 	slot0._unitData:UnregisterEventListener(slot0, uv1.Battle.BattleBuffEvent.BUFF_EFFECT_CHNAGE_SIZE)
 	slot0._unitData:UnregisterEventListener(slot0, uv1.Battle.BattleBuffEvent.BUFF_EFFECT_NEW_WEAPON)
 
@@ -304,7 +321,7 @@ function slot5.UnregisterWeaponListener(slot0, slot1)
 end
 
 function slot5.onCreateBullet(slot0, slot1)
-	slot0:SpawnBullet(slot1.Data.bullet, slot1.Data.spawnBound, slot1.Data.fireFxID)
+	slot0:SpawnBullet(slot1.Data.bullet, slot1.Data.spawnBound, slot1.Data.fireFxID, slot1.Data.position)
 end
 
 function slot5.onCannonFire(slot0, slot1)
@@ -422,18 +439,24 @@ function slot5.onUpdateDiveInvisible(slot0, slot1)
 	slot0:UpdateDiveInvisible()
 end
 
-function slot5.UpdateDiveInvisible(slot0)
-	if slot0._unitData:GetDiveInvisible() then
-		slot0:updateInvisible(slot1, slot0._unitData:GetIFF() == uv0.FOE_CODE and "GRID_TRANSPARENT" or "SEMI_TRANSPARENT", slot0:GetFactory():GetDivingFilterColor())
-	else
-		slot0:updateInvisible(slot1)
+function slot5.UpdateDiveInvisible(slot0, slot1)
+	slot3 = slot0._unitData:GetIFF() == uv0.FOE_CODE
 
-		if not slot2 then
+	if slot0._unitData:GetDiveInvisible() then
+		slot0:updateInvisible(slot2, slot3 and "GRID_TRANSPARENT" or "SEMI_TRANSPARENT", slot0:GetFactory():GetDivingFilterColor())
+
+		if not slot1 and slot3 then
+			slot0:spineSemiTransparentFade(0, 0.7, 0)
+		end
+	else
+		slot0:updateInvisible(slot2)
+
+		if not slot3 then
 			slot0:AddShaderColor()
 		end
 	end
 
-	if slot2 then
+	if slot3 then
 		slot0:updateComponentVisible()
 	end
 end
@@ -463,17 +486,22 @@ function slot5.updateInvisible(slot0, slot1, slot2, slot3)
 end
 
 function slot5.onDetected(slot0, slot1)
-	slot3 = slot1.Data.duration
-
 	if slot0._unitData:GetDiveDetected() and slot0._unitData:GetIFF() == uv0.FOE_CODE then
-		SpineAnim.CharFade(slot0._go, slot3, slot3, 0.7, true)
-
 		slot0._shockFX = slot0:AddFX("shock", true, true)
 	else
-		slot0:RemoveCacheFX(slot0._shockFX)
+		slot0:RemoveCacheFX("shock")
 	end
 
+	slot0:UpdateCharacterDetected()
 	slot0:updateComponentVisible()
+end
+
+function slot5.UpdateCharacterDetected(slot0)
+	if slot0._unitData:GetIFF() == uv0.FRIENDLY_CODE or slot0._unitData:GetDiveDetected() then
+		slot0:spineSemiTransparentFade(0, 0.7, uv0.SUB_FADE_IN_DURATION)
+	else
+		slot0:spineSemiTransparentFade(0.7, 0, uv0.SUB_FADE_OUT_DURATION)
+	end
 end
 
 function slot5.onBlindExposed(slot0, slot1)
@@ -510,6 +538,23 @@ function slot5.updateComponentBlindInvisible(slot0)
 	SetActive(slot0._arrowBarTf, slot1)
 	SetActive(slot0._HPBarTf, slot1)
 	SetActive(slot0._FXAttachPoint, slot1)
+end
+
+function slot5.spineSemiTransparentFade(slot0, slot1, slot2, slot3)
+	LeanTween.cancel(slot0._go)
+	onDelayTick(function ()
+		if not uv0._go then
+			return
+		end
+
+		if not uv1 or uv1 == 0 then
+			uv0._go:GetComponent(typeof(Renderer)).material:SetFloat("_Invisible", uv2)
+		else
+			LeanTween.value(uv0._go, uv3, uv2, uv1):setOnUpdate(System.Action_float(function (slot0)
+				uv0:SetFloat("_Invisible", slot0)
+			end))
+		end
+	end, 0.06)
 end
 
 function slot5.onInitVigilantState(slot0, slot1)
@@ -612,6 +657,10 @@ function slot5.UpdateCastClockPosition(slot0)
 	slot0._castClock:UpdateCastClockPosition(slot0._referenceVector)
 end
 
+function slot5.UpdateBarrierClockPosition(slot0)
+	slot0._barrierClock:UpdateBarrierClockPosition(slot0._referenceVector)
+end
+
 function slot5.SetArrowPoint(slot0)
 	slot0._arrowVector:Set()
 
@@ -674,10 +723,18 @@ function slot5.Dispose(slot0)
 		LeanTween.cancel(slot0._popGO)
 	end
 
+	LeanTween.cancel(slot0._go)
 	Object.Destroy(slot0._popGO)
 
 	if slot0._voicePlaybackInfo then
 		slot0._voicePlaybackInfo:PlaybackStop()
+	end
+
+	if slot0._cloakBar then
+		slot0._cloakBar:Dispose()
+
+		slot0._cloakBar = nil
+		slot0._cloakBarTf = nil
 	end
 
 	slot0._voicePlaybackInfo = nil
@@ -815,6 +872,16 @@ function slot5.AddCastClock(slot0, slot1)
 	slot0:UpdateCastClockPosition()
 end
 
+function slot5.AddBarrierClock(slot0, slot1)
+	slot2 = slot1.transform
+
+	SetActive(slot2, false)
+
+	slot0._barrierClock = uv0.Battle.BattleBarrierBar.New(slot2)
+
+	slot0:UpdateBarrierClockPosition()
+end
+
 function slot5.AddVigilantBar(slot0, slot1)
 	slot0._vigilantBar = uv0.Battle.BattleVigilantBar.New(slot1.transform)
 
@@ -825,6 +892,30 @@ end
 
 function slot5.UpdateVigilantBarPosition(slot0)
 	slot0._vigilantBar:UpdateVigilantBarPosition(slot0._hpBarPos)
+end
+
+function slot5.AddCloakBar(slot0, slot1)
+	slot0._cloakBarTf = slot1.transform
+	slot0._cloakBar = uv0.Battle.BattleCloakBar.New(slot1.transform)
+
+	slot0._cloakBar:ConfigCloak(slot0._unitData:GetCloak())
+	slot0._cloakBar:UpdateCloakProgress()
+end
+
+function slot5.UpdateCloakBarPosition(slot0, slot1)
+	if slot0._inViewArea then
+		slot0._cloakBarTf.anchoredPosition = uv0
+	else
+		slot0._cloakBar:UpdateCloarBarPosition(slot0._arrowVector)
+	end
+end
+
+function slot5.onUpdateCloakConfig(slot0, slot1)
+	slot0._cloakBar:UpdateCloakConfig()
+end
+
+function slot5.onUpdateCloakLock(slot0, slot1)
+	slot0._cloakBar:UpdateCloakLock()
 end
 
 function slot5.OnUpdateHP(slot0, slot1)
@@ -1013,11 +1104,17 @@ function slot5.SonarAcitve(slot0, slot1)
 end
 
 function slot5.SwitchShader(slot0, slot1, slot2)
+	LeanTween.cancel(slot0._go)
+
 	if slot1 then
 		slot0._animator:ShiftShader(slot1, slot2 or Color.New(0, 0, 0, 0))
 	else
 		slot0._animator:ClearOverrideMaterial()
 	end
+end
+
+function slot5.PauseActionAnimation(slot0, slot1)
+	ReflectionHelp.RefSetProperty(typeof("Spine.AnimationState"), "TimeScale", ReflectionHelp.RefGetField(typeof("SpineAnim"), "spineAnimationState", slot0._animator), slot1 and 0 or 1)
 end
 
 function slot5.GetFactory(slot0)

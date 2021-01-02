@@ -7,6 +7,7 @@ slot0.TYPE_HIDDEN = 5
 slot0.TYPE_ACTIVITY = 6
 slot0.TYPE_ACTIVITY_ROUTINE = 36
 slot0.TYPE_ACTIVITY_BRANCH = 26
+slot0.TYPE_GUILD_WEEKLY = 12
 slot1 = {
 	"scenario",
 	"branch",
@@ -32,6 +33,22 @@ function slot0.bindConfigTable(slot0)
 	return pg.task_data_template
 end
 
+function slot0.isGuildTask(slot0)
+	return slot0:getConfig("type") == uv0.TYPE_GUILD_WEEKLY
+end
+
+function slot0.IsRoutineType(slot0)
+	return slot0:getConfig("type") == uv0.TYPE_ROUTINE
+end
+
+function slot0.IsWeeklyType(slot0)
+	return slot0:getConfig("type") == uv0.TYPE_WEEKLY
+end
+
+function slot0.IsGuildAddLivnessType(slot0)
+	return slot0:getConfig("type") == uv0.TYPE_ROUTINE or slot1 == uv0.TYPE_WEEKLY or slot1 == uv0.TYPE_GUILD_WEEKLY
+end
+
 function slot0.isFinish(slot0)
 	return slot0:getConfig("target_num") <= slot0:getProgress()
 end
@@ -50,13 +67,9 @@ function slot0.getProgress(slot0)
 	elseif slot0:getConfig("sub_type") == TASK_SUB_TYPE_BOSS_PT then
 		slot1 = getProxy(PlayerProxy):getData():getResById(tonumber(slot0:getConfig("target_id")))
 	elseif slot0:getConfig("sub_type") == TASK_SUB_STROY then
-		slot2 = getProxy(PlayerProxy):getRawData()
-
-		_.each(_.map(slot0:getConfig("target_id"), function (slot0)
-			return uv0:getStoryByIndexID(slot0)
-		end), function (slot0)
-			if uv0:IsPlayed(slot0) then
-				uv1 = uv1 + 1
+		_.each(slot0:getConfig("target_id"), function (slot0)
+			if pg.NewStoryMgr.GetInstance():GetPlayedFlag(slot0) then
+				uv0 = uv0 + 1
 			end
 		end)
 
@@ -85,8 +98,20 @@ function slot0.getTaskStatus(slot0)
 end
 
 function slot0.onAdded(slot0)
-	if slot0:getConfig("story_id") and slot2 ~= "" then
-		pg.StoryMgr.GetInstance():PlayOnTaskAdded(slot2, function ()
+	if slot0:getConfig("story_id") and slot3 ~= "" and function ()
+		if not table.contains({
+			"LevelScene",
+			"BattleScene",
+			"EventListScene",
+			"MilitaryExerciseScene",
+			"DailyLevelScene"
+		}, getProxy(ContextProxy):getCurrentContext().viewComponent.__cname) then
+			return true
+		end
+
+		return false
+	end() then
+		pg.NewStoryMgr.GetInstance():Play(slot3, function ()
 			if uv0:getConfig("sub_type") == 29 then
 				if _.any(getProxy(SkirmishProxy):getRawData(), function (slot0)
 					return slot0:getConfig("task_id") == uv0.id
@@ -103,7 +128,7 @@ function slot0.onAdded(slot0)
 				if getProxy(ContextProxy):getCurrentContext().mediator.__cname ~= TaskMediator.__cname then
 					function slot0()
 						pg.m02:sendNotification(GAME.GO_SCENE, SCENE.TASK, {
-							page = uv0[uv1:getConfig("type")]
+							page = uv0[uv1:GetRealType()]
 						})
 					end
 				end
@@ -130,99 +155,73 @@ function slot0.isSelectable(slot0)
 	return slot0:getConfig("award_choice") ~= nil and type(slot1) == "table" and #slot1 > 0
 end
 
-function slot0.confirmForSubmit(slot0)
-	slot0.confirmSetting = {}
-	slot1 = getProxy(PlayerProxy):getData()
-	slot2 = {}
+function slot0.judgeOverflow(slot0, slot1, slot2, slot3)
+	if slot0:getTaskStatus() == 1 and slot0:getConfig("visibility") == 1 then
+		slot6 = getProxy(PlayerProxy):getData()
+		slot9 = slot2 or slot6.oil
+		slot10 = slot3 or not LOCK_UR_SHIP and getProxy(BagProxy):GetLimitCntById(pg.gameset.urpt_chapter_max.description[1]) or 0
+		slot12 = pg.gameset.max_oil.key_value
+		slot13 = not LOCK_UR_SHIP and pg.gameset.urpt_chapter_max.description[2] or 0
+		slot14 = false
+		slot15 = false
+		slot16 = false
+		slot17 = false
+		slot18 = {}
 
-	for slot8, slot9 in ipairs(slot0:getConfig("award_display")) do
-		if slot9[1] == DROP_TYPE_ITEM and slot9[2] == ITEM_ID_REACT_CHAPTER_TICKET then
-			slot3 = 0 + slot9[3]
-		end
+		for slot23, slot24 in ipairs(slot0:getConfig("award_display")) do
+			if slot24[1] == DROP_TYPE_RESOURCE then
+				if slot24[2] == PlayerConst.ResGold then
+					if (slot1 or slot6.gold) + slot24[3] - pg.gameset.max_gold.key_value > 0 then
+						slot14 = true
 
-		if slot9[1] == DROP_TYPE_RESOURCE then
-			if slot9[2] == PlayerConst.ResGold then
-				if slot1.gold + slot9[3] - pg.gameset.max_gold.key_value > 0 then
-					table.insert(slot2, {
+						table.insert(slot18, {
+							type = DROP_TYPE_RESOURCE,
+							id = PlayerConst.ResGold,
+							count = setColorStr(slot28, COLOR_RED)
+						})
+					end
+				elseif slot26 == PlayerConst.ResOil and slot9 + slot27 - slot12 > 0 then
+					slot15 = true
+
+					table.insert(slot18, {
 						type = DROP_TYPE_RESOURCE,
-						id = PlayerConst.ResGold,
-						count = slot10
+						id = PlayerConst.ResOil,
+						count = setColorStr(slot28, COLOR_RED)
 					})
 				end
-			elseif slot9[2] == PlayerConst.ResOil and slot1.oil + slot9[3] - pg.gameset.max_oil.key_value > 0 then
-				table.insert(slot2, {
-					type = DROP_TYPE_RESOURCE,
-					id = PlayerConst.ResOil,
-					count = slot10
+			elseif not LOCK_UR_SHIP and slot25 == DROP_TYPE_VITEM and pg.item_data_statistics[slot26].virtual_type == 20 and slot10 + slot27 - slot13 > 0 then
+				slot16 = true
+
+				table.insert(slot18, {
+					type = DROP_TYPE_VITEM,
+					id = slot7,
+					count = setColorStr(slot29, COLOR_RED)
 				})
 			end
 		end
-	end
 
-	if pg.gameset.reactivity_ticket_max.key_value < getProxy(ChapterProxy).remasterTickets + slot3 then
-		slot0.confirmSetting.overFlow = {
-			content = i18n("tack_tickets_max_warning", math.max(slot6 - slot5, 0))
-		}
-	end
-
-	if #slot2 > 0 then
-		slot0.confirmSetting.overFlow = {
-			type = MSGBOX_TYPE_ITEM_BOX,
-			content = i18n("award_max_warning"),
-			items = slot2
-		}
-	end
-
-	if slot0:getConfig("sub_type") == TASK_SUB_TYPE_GIVE_ITEM or slot0:getConfig("sub_type") == TASK_SUB_TYPE_GIVE_VIRTUAL_ITEM or slot0:getConfig("sub_type") == TASK_SUB_TYPE_PLAYER_RES then
-		slot7 = DROP_TYPE_ITEM
-
-		if slot0:getConfig("sub_type") == TASK_SUB_TYPE_PLAYER_RES then
-			slot7 = DROP_TYPE_RESOURCE
-		end
-
-		slot0.confirmSetting.sub = {
-			type = MSGBOX_TYPE_ITEM_BOX,
-			content = i18n("sub_item_warning"),
-			items = {
-				{
-					type = slot7,
-					id = slot0:getConfig("target_id_for_client"),
-					count = slot0:getConfig("target_num")
-				}
-			}
-		}
-	end
-
-	if slot0:isSelectable() then
-		slot8 = {}
-
-		for slot12, slot13 in ipairs(taskVO:getConfig("award_choice")) do
-			slot8[#slot8 + 1] = {
-				type = DROP_TYPE_ITEM,
-				id = slot13[2],
-				count = slot13[3],
-				index = slot12
-			}
-		end
-
-		slot0.confirmSetting.choice = {
-			type = MSGBOX_TYPE_ITEM_BOX,
-			content = i18n("select_award_warning"),
-			items = slot8,
-			itemFunc = function (slot0)
-				print("选中的序号为" .. slot0.index, "选中的id为" .. slot0.id)
-
-				uv0.index = slot0.index
-			end,
-			onNo = function ()
-				uv0.index = nil
-			end
-		}
+		return slot14 or slot15 or slot16, slot18
 	end
 end
 
-function slot0.getConfirmSetting(slot0)
-	return Clone(slot0.confirmSetting)
+function slot0.IsUrTask(slot0)
+	if not LOCK_UR_SHIP then
+		slot2 = pg.gameset.urpt_chapter_max.description[1]
+
+		return _.any(slot0:getConfig("award_display"), function (slot0)
+			return slot0[1] == DROP_TYPE_ITEM and slot0[2] == uv0
+		end)
+	else
+		return false
+	end
+end
+
+function slot0.GetRealType(slot0)
+	if slot0:getConfig("priority_type") == 0 then
+		slot1 = slot0:getConfig("type")
+	end
+
+	return slot1
 end
 
 return slot0

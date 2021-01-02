@@ -200,7 +200,28 @@ function slot6.UpdateBulletCld(slot0, slot1)
 			slot6 = slot0:GetShipTree()
 		end
 
-		slot0:HandleBulletCldWithShip(slot6:GetCldList(slot3, uv1), slot1)
+		slot7 = nil
+
+		if slot1:GetType() == uv0.BulletType.SCALE then
+			slot8, slot9, slot10 = slot1:GetRadian()
+
+			if math.abs(slot9) ~= 1 then
+				if slot1:GetIFF() == -1 then
+					slot8 = slot8 + math.pi
+				end
+
+				slot11 = slot1:GetBoxSize()
+				slot14 = slot1:GetPosition()
+				slot15 = slot11.x
+				slot7 = slot6:GetCldListGradient(slot8, slot11.z * 2, slot11.x * 2, Vector3(slot14.x - slot15 * slot9, 1, slot14.z - slot15 * slot10))
+			else
+				slot7 = slot6:GetCldList(slot3, uv1)
+			end
+		else
+			slot7 = slot6:GetCldList(slot3, uv1)
+		end
+
+		slot0:HandleBulletCldWithShip(slot7, slot1)
 	end
 
 	slot5:Update(slot3)
@@ -214,7 +235,7 @@ function slot6.HandleBulletCldWithShip(slot0, slot1, slot2)
 			slot10 = slot0:GetShip(slot9.UID)
 			slot12 = slot10:IsImmuneCommonBulletCLD()
 
-			if slot10:GetOxyState() and slot11:GetCurrentDiveState() == uv1.DIVE and slot2:GetCldData().Surface ~= uv0.OXY_STATE.DIVE then
+			if slot10:GetCurrentOxyState() == uv1.DIVE and slot2:GetCldData().Surface ~= uv0.OXY_STATE.DIVE then
 				-- Nothing
 			elseif slot12 then
 				-- Nothing
@@ -260,16 +281,35 @@ function slot6.HandleAreaCldWithVehicle(slot0, slot1, slot2)
 		slot10 = slot2[slot9].data
 
 		if slot4 and slot10.IFF ~= slot3.IFF or not slot4 and slot10.IFF == slot3.IFF then
-			slot1:AppendCldObj(slot10)
+			slot12 = true
+
+			if slot1:GetDiveFilter() then
+				for slot18, slot19 in ipairs(slot11) do
+					if slot0:GetShip(slot10.UID):GetCurrentOxyState() == slot19 then
+						slot12 = false
+					end
+				end
+			end
+
+			if slot12 then
+				slot1:AppendCldObj(slot10)
+			end
 		end
 	end
 end
 
 function slot6.UpdateWallCld(slot0, slot1)
 	slot2 = slot1:GetCldBox()
-	slot3 = nil
 
-	slot0:HandleWallCldWithBullet(slot1, (slot1:GetIFF() ~= slot0._friendlyCode or slot0._foeSurafceBulletTree:GetCldList(slot2, uv0)) and slot0._surfaceBulletTree:GetCldList(slot2, uv0))
+	if slot1:GetCldObjType() == slot1.CLD_OBJ_TYPE_BULLET then
+		slot4 = nil
+
+		slot0:HandleWallCldWithBullet(slot1, (slot1:GetIFF() ~= slot0._friendlyCode or slot0._foeSurafceBulletTree:GetCldList(slot2, uv0)) and slot0._surfaceBulletTree:GetCldList(slot2, uv0))
+	elseif slot3 == slot1.CLD_OBJ_TYPE_SHIP then
+		slot4 = nil
+
+		slot0:HandleWllCldWithShip(slot1, (slot1:GetIFF() ~= slot0._friendlyCode or slot0._foeShipTree:GetCldList(slot2, uv0)) and slot0._shipTree:GetCldList(slot2, uv0))
+	end
 end
 
 function slot6.HandleWallCldWithBullet(slot0, slot1, slot2)
@@ -278,6 +318,20 @@ function slot6.HandleWallCldWithBullet(slot0, slot1, slot2)
 			return
 		end
 	end
+end
+
+function slot6.HandleWllCldWithShip(slot0, slot1, slot2)
+	slot4 = {}
+
+	for slot8 = 1, #slot2 do
+		if slot2[slot8].data.type == uv0.CldType.SHIP and slot9.Active == true then
+			if slot0:GetShip(slot9.UID):GetCurrentOxyState() ~= uv1.DIVE then
+				table.insert(slot4, slot10)
+			end
+		end
+	end
+
+	slot0._proxy:HandleWallHitByShip(slot1, slot4)
 end
 
 function slot6.InsertToBulletCldTree(slot0, slot1, slot2)

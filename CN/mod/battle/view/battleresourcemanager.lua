@@ -226,12 +226,25 @@ end
 
 function slot5.InstBullet(slot0, slot1, slot2)
 	if slot0._allPool[slot0.GetBulletPath(slot1)] then
-		slot2(slot0:popPool(slot4, true))
+		slot5 = slot0:popPool(slot4, true)
+
+		if string.find(slot1, "_trail") and slot5:GetComponentInChildren(typeof(UnityEngine.TrailRenderer)) then
+			slot6:Clear()
+		end
+
+		slot2(slot5)
 
 		return true
 	elseif slot0._resCacheList[slot3] ~= nil then
 		slot0:InitPool(slot3, slot0._resCacheList[slot3])
-		slot2(slot0:popPool(slot0._allPool[slot3], true))
+
+		slot5 = slot0:popPool(slot0._allPool[slot3], true)
+
+		if string.find(slot1, "_trail") and slot5:GetComponentInChildren(typeof(UnityEngine.TrailRenderer)) then
+			slot6:Clear()
+		end
+
+		slot2(slot5)
 
 		return true
 	else
@@ -468,7 +481,7 @@ function slot5.StartPreload(slot0, slot1, slot2)
 						return
 					end
 
-					Ship.SetExpression(slot0, uv3)
+					ShipExpressionHelper.SetExpression(slot0, uv3)
 					slot0:SetActive(false)
 
 					if uv1._resCacheList then
@@ -630,6 +643,8 @@ end
 
 function slot5.GetCommonResource()
 	return {
+		uv0.GetMapPath("visionLine"),
+		uv0.GetMapPath("exposeLine"),
 		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.MOVE_WAVE_FX_NAME),
 		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.BOMB_FX_NAME),
 		uv0.GetFXPath(uv1.Battle.BattleBossCharacterFactory.BOMB_FX_NAME),
@@ -644,14 +659,17 @@ function slot5.GetCommonResource()
 		uv0.GetFXPath(uv2.PLAYER_SUB_BUBBLE_FX),
 		uv0.GetUIPath("SkillPainting"),
 		uv0.GetUIPath("CombatHPBar"),
-		uv0.GetUIPath("CombatHPPop")
+		uv0.GetUIPath("CombatHPPop"),
+		uv0.GetBulletPath("zimudan"),
+		uv0.GetBulletPath("hwxgz_1")
 	}
 end
 
 function slot5.GetDisplayCommonResource()
 	return {
 		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.MOVE_WAVE_FX_NAME),
-		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.BOMB_FX_NAME)
+		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.BOMB_FX_NAME),
+		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.DANCHUAN_MOVE_WAVE_FX_NAME)
 	}
 end
 
@@ -700,26 +718,55 @@ end
 
 function slot5.GetEnemyResource(slot0)
 	slot1 = {}
-	slot2 = uv0.GetMonsterTmpDataFromID(slot0)
-	slot1[#slot1 + 1] = uv1.GetCharacterPath(slot2.prefab)
-	slot1[#slot1 + 1] = uv1.GetFXPath(slot2.wave_fx)
+	slot3 = slot0.bossData ~= nil
+	slot4 = slot0.buffList or {}
+	slot5 = slot0.phase or {}
+	slot6 = uv0.GetMonsterTmpDataFromID(slot0.monsterTemplateID)
+	slot1[#slot1 + 1] = uv1.GetCharacterPath(slot6.prefab)
+	slot1[#slot1 + 1] = uv1.GetFXPath(slot6.wave_fx)
 
-	for slot6, slot7 in ipairs(slot2.appear_fx) do
-		slot1[#slot1 + 1] = uv1.GetFXPath(slot7)
+	for slot10, slot11 in ipairs(slot6.appear_fx) do
+		slot1[#slot1 + 1] = uv1.GetFXPath(slot11)
 	end
 
-	for slot6, slot7 in ipairs(slot2.smoke) do
-		for slot12, slot13 in ipairs(slot7[2]) do
-			slot1[#slot1 + 1] = uv1.GetFXPath(slot13[1])
+	for slot10, slot11 in ipairs(slot6.smoke) do
+		for slot16, slot17 in ipairs(slot11[2]) do
+			slot1[#slot1 + 1] = uv1.GetFXPath(slot17[1])
 		end
 	end
 
-	slot1[#slot1 + 1] = uv1.GetFXPath(slot2.bubble_fx)
+	if type(slot6.bubble_fx) == "table" then
+		slot1[#slot1 + 1] = uv1.GetFXPath(slot6.bubble_fx[1])
+	end
 
-	if string.find(slot2.icon, "danchuan") == nil then
-		slot1[#slot1 + 1] = uv1.GetHrzIcon(slot2.icon)
-		slot1[#slot1 + 1] = uv1.GetQIcon(slot2.icon)
-		slot1[#slot1 + 1] = uv1.GetSquareIcon(slot2.icon)
+	for slot11, slot12 in ipairs(slot4) do
+		function (slot0)
+			for slot5, slot6 in pairs(uv0.Battle.BattleDataFunction.GetBuffTemplate(slot0, 1).effect_list) do
+				if slot6.arg_list.skill_id then
+					if uv0.Battle.BattleDataFunction.GetSkillTemplate(slot7).painting == 1 then
+						uv1[#uv1 + 1] = uv2.GetHrzIcon(uv3.icon)
+					elseif type(slot9) == "string" then
+						uv1[#uv1 + 1] = uv2.GetHrzIcon(slot9)
+					end
+				end
+
+				if slot6.arg_list.buff_id then
+					uv4(slot8)
+				end
+			end
+		end(slot12)
+	end
+
+	for slot11, slot12 in ipairs(slot5) do
+		if slot12.addBuff then
+			for slot16, slot17 in ipairs(slot12.addBuff) do
+				slot7(slot17)
+			end
+		end
+	end
+
+	if slot3 then
+		slot1[#slot1 + 1] = uv1.GetSquareIcon(slot6.icon)
 	end
 
 	return slot1
@@ -730,7 +777,7 @@ function slot5.GetWeaponResource(slot0, slot1)
 		return {}
 	end
 
-	if uv0.GetWeaponPropertyDataFromID(slot0).type == uv1.EquipmentType.MAIN_CANNON or slot3.type == uv1.EquipmentType.SUB_CANNON or slot3.type == uv1.EquipmentType.TORPEDO or slot3.type == uv1.EquipmentType.ANTI_AIR or slot3.type == uv1.EquipmentType.ANTI_SEA or slot3.type == uv1.EquipmentType.POINT_HIT_AND_LOCK or slot3.type == uv1.EquipmentType.BOMBER_PRE_CAST_ALERT or slot3.type == uv1.EquipmentType.DEPTH_CHARGE or slot3.type == uv1.EquipmentType.MANUAL_TORPEDO or slot3.type == uv1.EquipmentType.DISPOSABLE_TORPEDO or slot3.type == uv1.EquipmentType.BEAM then
+	if uv0.GetWeaponPropertyDataFromID(slot0).type == uv1.EquipmentType.MAIN_CANNON or slot3.type == uv1.EquipmentType.SUB_CANNON or slot3.type == uv1.EquipmentType.TORPEDO or slot3.type == uv1.EquipmentType.ANTI_AIR or slot3.type == uv1.EquipmentType.ANTI_SEA or slot3.type == uv1.EquipmentType.POINT_HIT_AND_LOCK or slot3.type == uv1.EquipmentType.BOMBER_PRE_CAST_ALERT or slot3.type == uv1.EquipmentType.DEPTH_CHARGE or slot3.type == uv1.EquipmentType.MANUAL_TORPEDO or slot3.type == uv1.EquipmentType.DISPOSABLE_TORPEDO or slot3.type == uv1.EquipmentType.MANUAL_AAMISSILE or slot3.type == uv1.EquipmentType.BEAM or slot3.type == uv1.EquipmentType.SPACE_LASER or slot3.type == uv1.EquipmentType.MISSILE then
 		for slot7, slot8 in ipairs(slot3.bullet_ID) do
 			for slot13, slot14 in ipairs(uv2.GetBulletResource(slot8, slot1)) do
 				slot2[#slot2 + 1] = slot14
@@ -753,35 +800,36 @@ function slot5.GetWeaponResource(slot0, slot1)
 	return slot2
 end
 
-function slot5.GetEquipResource(slot0, slot1)
-	slot2 = {}
+function slot5.GetEquipResource(slot0, slot1, slot2)
+	slot3 = {}
 
 	if slot1 ~= 0 then
 		if uv0.Battle.BattleDataFunction.GetEquipSkinDataFromID(slot1).ship_skin_id ~= 0 then
-			slot2[#slot2 + 1] = uv1.GetCharacterPath(uv0.Battle.BattleDataFunction.GetPlayerShipSkinDataFromID(slot4).prefab)
+			slot3[#slot3 + 1] = uv1.GetCharacterPath(uv0.Battle.BattleDataFunction.GetPlayerShipSkinDataFromID(slot5).prefab)
 		end
 
-		if slot3.attachment_combat_scene ~= "" then
-			slot2[#slot2 + 1] = uv1.GetFXPath(slot5)
+		if slot4.attachment_combat_scene ~= "" then
+			slot3[#slot3 + 1] = uv1.GetFXPath(slot6)
 		end
 	end
 
-	slot3 = uv0.Battle.BattleDataFunction.GetWeaponDataFromID(slot0)
-	slot5 = slot3.skill_id
-
-	for slot9, slot10 in ipairs(slot3.weapon_id) do
+	for slot9, slot10 in ipairs(uv0.Battle.BattleDataFunction.GetWeaponDataFromID(slot0).weapon_id) do
 		for slot15, slot16 in ipairs(uv1.GetWeaponResource(slot10)) do
-			slot2[#slot2 + 1] = slot16
+			slot3[#slot3 + 1] = slot16
 		end
 	end
 
-	for slot9, slot10 in ipairs(slot5) do
-		for slot15, slot16 in ipairs(uv0.Battle.BattleDataFunction.GetResFromBuff(slot10, 1, {})) do
-			slot2[#slot2 + 1] = slot16
+	for slot10, slot11 in ipairs(slot4.skill_id) do
+		if slot2 then
+			slot11 = uv0.Battle.BattleDataFunction.SkillTranform(slot2, slot11) or slot11
+		end
+
+		for slot16, slot17 in ipairs(uv0.Battle.BattleDataFunction.GetResFromBuff(slot11, 1, {})) do
+			slot3[#slot3 + 1] = slot17
 		end
 	end
 
-	return slot2
+	return slot3
 end
 
 function slot5.GetBulletResource(slot0, slot1)
@@ -791,7 +839,7 @@ function slot5.GetBulletResource(slot0, slot1)
 	slot4 = nil
 	slot4 = (slot1 == 0 or uv0.GetEquipSkin(slot1)) and slot3.modle_ID
 
-	if slot3.type == uv1.BulletType.BEAM or slot3.type == uv1.BulletType.ELECTRIC_ARC then
+	if slot3.type == uv1.BulletType.BEAM or slot3.type == uv1.BulletType.SPACE_LASER or slot3.type == uv1.BulletType.MISSILE or slot3.type == uv1.BulletType.ELECTRIC_ARC then
 		slot2[#slot2 + 1] = uv2.GetFXPath(slot3.modle_ID)
 	else
 		slot2[#slot2 + 1] = uv2.GetBulletPath(slot4)
@@ -948,21 +996,21 @@ end
 function slot5.GetEnvironmentRes(slot0, slot1)
 	table.insert(slot0, slot1.prefab and uv0.GetFXPath(slot1.prefab))
 
-	for slot5, slot6 in ipairs(slot1.behaviours) do
-		if slot6.type == uv1.Battle.BattleConst.EnviroumentBehaviour.BUFF then
-			for slot12, slot13 in ipairs(uv1.Battle.BattleDataFunction.GetResFromBuff(slot6.buff_id, 1, {})) do
-				slot0[#slot0 + 1] = slot13
+	for slot7, slot8 in ipairs(uv1.Battle.BattleDataFunction.GetEnvironmentBehaviour(slot1.behaviours).behaviour_list) do
+		if slot8.type == uv1.Battle.BattleConst.EnviroumentBehaviour.BUFF then
+			for slot14, slot15 in ipairs(uv1.Battle.BattleDataFunction.GetResFromBuff(slot8.buff_id, 1, {})) do
+				slot0[#slot0 + 1] = slot15
 			end
-		elseif slot7 == uv1.Battle.BattleConst.EnviroumentBehaviour.SPAWN then
-			slot8 = slot6.content and slot6.content.alert and slot6.content.alert.alert_fx
+		elseif slot9 == uv1.Battle.BattleConst.EnviroumentBehaviour.SPAWN then
+			slot10 = slot8.content and slot8.content.alert and slot8.content.alert.alert_fx
 
-			table.insert(slot0, slot8 and uv0.GetFXPath(slot8))
+			table.insert(slot0, slot10 and uv0.GetFXPath(slot10))
 
-			if slot6.content and slot6.content.child_prefab then
-				uv0.GetEnvironmentRes(slot0, slot9)
+			if slot8.content and slot8.content.child_prefab then
+				uv0.GetEnvironmentRes(slot0, slot11)
 			end
-		elseif slot7 == uv1.Battle.BattleConst.EnviroumentBehaviour.PLAY_FX then
-			slot0[#slot0 + 1] = uv0.GetFXPath(slot6.FX_ID)
+		elseif slot9 == uv1.Battle.BattleConst.EnviroumentBehaviour.PLAY_FX then
+			slot0[#slot0 + 1] = uv0.GetFXPath(slot8.FX_ID)
 		end
 	end
 end
@@ -970,36 +1018,52 @@ end
 function slot5.GetMonsterRes(slot0)
 	slot1 = {}
 
-	for slot6, slot7 in ipairs(uv0.GetEnemyResource(slot0.monsterTemplateID)) do
+	for slot6, slot7 in ipairs(uv0.GetEnemyResource(slot0)) do
 		slot1[#slot1 + 1] = slot7
 	end
 
-	slot3 = Clone(uv1.Battle.BattleDataFunction.GetMonsterTmpDataFromID(slot0.monsterTemplateID).equipment_list)
-	slot4 = Clone(slot0.buffList) or {}
+	slot3 = uv1.Battle.BattleDataFunction.GetMonsterTmpDataFromID(slot0.monsterTemplateID)
+	slot4 = Clone(slot3.equipment_list)
+	slot5 = slot3.buff_list
+	slot6 = Clone(slot0.buffList) or {}
 
 	if slot0.phase then
-		for slot8, slot9 in ipairs(slot0.phase) do
-			if slot9.addWeapon then
-				for slot13, slot14 in ipairs(slot9.addWeapon) do
-					slot3[#slot3 + 1] = slot14
+		for slot10, slot11 in ipairs(slot0.phase) do
+			if slot11.addWeapon then
+				for slot15, slot16 in ipairs(slot11.addWeapon) do
+					slot4[#slot4 + 1] = slot16
 				end
 			end
 
-			if slot9.addBuff then
-				for slot13, slot14 in ipairs(slot9.addBuff) do
-					slot4[#slot4 + 1] = slot14
+			if slot11.addRandomWeapon then
+				for slot15, slot16 in ipairs(slot11.addRandomWeapon) do
+					for slot20, slot21 in ipairs(slot16) do
+						slot4[#slot4 + 1] = slot21
+					end
+				end
+			end
+
+			if slot11.addBuff then
+				for slot15, slot16 in ipairs(slot11.addBuff) do
+					slot6[#slot6 + 1] = slot16
 				end
 			end
 		end
 	end
 
-	for slot8, slot9 in ipairs(slot4) do
-		for slot14, slot15 in ipairs(uv1.Battle.BattleDataFunction.GetResFromBuff(slot9, 1, {})) do
-			slot1[#slot1 + 1] = slot15
+	for slot10, slot11 in ipairs(slot5) do
+		for slot16, slot17 in ipairs(uv1.Battle.BattleDataFunction.GetResFromBuff(slot11.ID, slot11.LV, {})) do
+			slot1[#slot1 + 1] = slot17
+		end
+	end
+
+	for slot10, slot11 in ipairs(slot6) do
+		for slot16, slot17 in ipairs(uv1.Battle.BattleDataFunction.GetResFromBuff(slot11, 1, {})) do
+			slot1[#slot1 + 1] = slot17
 		end
 
-		for slot15, slot16 in pairs(uv1.Battle.BattleDataFunction.GetBuffTemplate(slot9, 1).effect_list) do
-			if slot16.arg_list.skill_id and uv1.Battle.BattleDataFunction.NeedSkillPainting(slot17) then
+		for slot17, slot18 in pairs(uv1.Battle.BattleDataFunction.GetBuffTemplate(slot11, 1).effect_list) do
+			if slot18.arg_list.skill_id and uv1.Battle.BattleDataFunction.NeedSkillPainting(slot19) then
 				slot1[#slot1 + 1] = uv0.GetPaintingPath(uv2.GetMonsterTmpDataFromID(slot0.monsterTemplateID).icon)
 
 				break
@@ -1007,9 +1071,9 @@ function slot5.GetMonsterRes(slot0)
 		end
 	end
 
-	for slot8, slot9 in ipairs(slot3) do
-		for slot14, slot15 in ipairs(uv0.GetWeaponResource(slot9)) do
-			slot1[#slot1 + 1] = slot15
+	for slot10, slot11 in ipairs(slot4) do
+		for slot16, slot17 in ipairs(uv0.GetWeaponResource(slot11)) do
+			slot1[#slot1 + 1] = slot17
 		end
 	end
 
@@ -1037,11 +1101,7 @@ function slot5.GetEquipSkinPreviewRes(slot0)
 
 	slot4, slot5, slot6, slot7 = uv0.GetEquipSkin(slot0)
 
-	if _.any({
-		EquipType.FighterAircraft,
-		EquipType.TorpedoAircraft,
-		EquipType.BomberAircraft
-	}, function (slot0)
+	if _.any(EquipType.AirProtoEquipTypes, function (slot0)
 		return table.contains(uv0.equip_type, slot0)
 	end) then
 		slot1[#slot1 + 1] = uv1.GetCharacterGoPath(slot4)

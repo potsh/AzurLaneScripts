@@ -1,7 +1,7 @@
 pg = pg or {}
 pg.voice_bgm = {
 	ActivityMainScene = {
-		bgm = "main"
+		bgm = "main-newyear"
 	},
 	HoloLiveLinkLinkSelectScene = {
 		bgm = "holo-fff-inst"
@@ -52,7 +52,7 @@ pg.voice_bgm = {
 		bgm = "main"
 	},
 	MainUI = {
-		bgm = "main"
+		bgm = "main-newyear"
 	},
 	HoloLiveLinkGameView = {
 		bgm = "holo-fff-inst"
@@ -75,7 +75,43 @@ pg.voice_bgm = {
 	FriendScene = {
 		bgm = "main"
 	},
+	WorldScene = {
+		bgm = "level02"
+	},
 	ShipBluePrintScene = {
 		bgm = "main"
+	},
+	MusicFestivalScene2 = {
+		bgm = "idol-BlueSpirit-inst"
+	},
+	NewShopsScene = {
+		bgm = "main"
+	},
+	SkinShopScene = {
+		bgm = "main"
+	},
+	BuildShipScene = {
+		bgm = "main"
+	},
+	AirForceOfDragonEmperyUI = {
+		bgm = "story-richang"
+	},
+	VolleyballGameView = {
+		bgm = "doa_minigame"
+	},
+	DOALinkIslandScene = {
+		bgm = "doa_story1"
+	},
+	GuildMainScene = {
+		bgm = "story-richang"
+	},
+	LevelScene = {
+		bgm = "SailAwayJustice"
+	},
+	WorldBossScene = {
+		bgm = "bsm-3"
+	},
+	NewYearFestivalScene2 = {
+		bgm = "newyear2"
 	}
 }

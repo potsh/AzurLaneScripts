@@ -1,6 +1,15 @@
 slot0 = class("ZeroHourCommand", pm.SimpleCommand)
 
 function slot0.execute(slot0, slot1)
+	slot2, slot3 = pcall(slot0.mainHandler, slot0)
+
+	if not slot2 then
+		pg.TipsMgr.GetInstance():ShowTips(i18n("zero_hour_command_error"))
+		error(slot3)
+	end
+end
+
+function slot0.mainHandler(slot0, slot1)
 	slot3 = getProxy(PlayerProxy):getData()
 
 	slot3:resetBuyOilCount()
@@ -47,6 +56,10 @@ function slot0.execute(slot0, slot1)
 		slot4:AddShamShop(slot4.shamShop)
 		slot4.fragmentShop:update(slot12.month, {})
 		slot4:AddFragmentShop(slot4.fragmentShop)
+
+		if not LOCK_UR_SHIP then
+			getProxy(BagProxy):ClearLimitCnt(pg.gameset.urpt_chapter_max.description[1])
+		end
 	end
 
 	for slot17, slot18 in ipairs(getProxy(ActivityProxy):getPanelActivities()) do
@@ -111,47 +124,19 @@ function slot0.execute(slot0, slot1)
 		slot16:updateVoteGroup(slot17)
 	end
 
-	if getProxy(GuildProxy):getData() then
-		slot19:resetGuildContributeFlag()
-		slot18:updateGuild(slot19)
-	end
+	slot18 = getProxy(NavalAcademyProxy)
 
-	slot20 = getProxy(NavalAcademyProxy)
-
-	slot20:setCourse(slot20.course)
+	slot18:setCourse(slot18.course)
 	slot0:sendNotification(GAME.CLASS_FORCE_UPDATE)
 	getProxy(TechnologyProxy):updateRefreshFlag(0)
-	PlayerPrefs.SetInt("stop_remind_operation", 0)
-	PlayerPrefs.Save()
-
-	slot22 = getProxy(TaskProxy)
-	slot23 = getProxy(ActivityProxy)
-
-	_.each(slot23:getActivitiesByType(ActivityConst.ACTIVITY_TYPE_TASK_LIST), function (slot0)
-		if slot0 and not slot0:isEnd() and slot0:getConfig("config_id") == 3 then
-			slot1 = slot0:getConfig("config_data")
-
-			if slot0.data1 < pg.TimeMgr.GetInstance():GetServerTime() then
-				if slot0.data3 == 0 or slot4 < math.clamp(slot2:DiffDay(slot0.data1, slot2:GetServerTime()) + 1, 1, #slot1) and _.all(_.flatten({
-					slot1[slot4]
-				}), function (slot0)
-					return uv0:getFinishTaskById(slot0) ~= nil
-				end) then
-					pg.m02:sendNotification(GAME.ACTIVITY_OPERATION, {
-						cmd = 1,
-						activity_id = slot0.id
-					})
-				end
-			end
-		end
-	end)
+	slot0:sendNotification(GAME.ACCEPT_ACTIVITY_TASK)
 	getProxy(CommanderProxy):resetBoxUseCnt()
 
-	if slot23:getActivityByType(ActivityConst.ACTIVITY_TYPE_MONOPOLY) and not slot25:isEnd() then
-		slot23:updateActivity(slot25)
+	if slot13:getActivityByType(ActivityConst.ACTIVITY_TYPE_MONOPOLY) and not slot20:isEnd() then
+		slot13:updateActivity(slot20)
 	end
 
-	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_CHALLENGE) and not slot26:isEnd() then
+	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_CHALLENGE) and not slot21:isEnd() then
 		slot0:sendNotification(GAME.CHALLENGE2_INFO, {})
 	end
 
@@ -159,19 +144,88 @@ function slot0.execute(slot0, slot1)
 		type = MiniGameRequestCommand.REQUEST_HUB_DATA
 	})
 
-	if slot23:getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2) and not slot27:isEnd() then
-		slot28 = slot27.data1KeyValueList[1]
+	slot22 = nowWorld
 
-		if pg.activity_event_worldboss[slot27:getConfig("config_id")] then
-			for slot33, slot34 in ipairs(slot29.normal_expedition_drop_num or {}) do
-				for slot38, slot39 in ipairs(slot34[1]) do
-					slot28[slot39] = slot34[2] or 0
+	if pg.TimeMgr.GetInstance():GetServerWeek() == 1 then
+		slot22.staminaMgr.staminaExchangeTimes = 0
+	end
+
+	if slot22 then
+		slot22:GetBossProxy():increasePt()
+
+		if slot13:getActivityByType(ActivityConst.ACTIVITY_TYPE_WORLD_WORLDBOSS) and not slot25:isEnd() then
+			slot26 = pg.gameset.joint_boss_ticket.description
+			slot25.data1 = math.floor(slot26[1] * slot25.data1 / slot26[math.min(#slot26, slot25.data2 + 1)])
+			slot25.data2 = 0
+
+			slot13:updateActivity(slot25)
+			nowWorld:GetBossProxy():UpdatedUnlockProgress()
+		end
+	end
+
+	if slot13:getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2) and not slot24:isEnd() then
+		slot25 = slot24.data1KeyValueList[1]
+
+		if pg.activity_event_worldboss[slot24:getConfig("config_id")] then
+			for slot30, slot31 in ipairs(slot26.normal_expedition_drop_num or {}) do
+				for slot35, slot36 in ipairs(slot31[1]) do
+					slot25[slot36] = slot31[2] or 0
 				end
 			end
 		end
 
-		slot23:updateActivity(slot27)
+		slot13:updateActivity(slot24)
 	end
+
+	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_COLLECTION_EVENT) and not slot26:isEnd() then
+		slot27, slot28 = getProxy(EventProxy):GetEventByActivityId(slot26.id)
+
+		if not slot27 or slot27 and not slot27:IsStarting() then
+			if slot27 and slot28 then
+				table.remove(getProxy(EventProxy).eventList, slot28)
+			end
+
+			slot29 = slot26:getConfig("config_data")
+			slot30 = slot26:getDayIndex()
+
+			print("zero time collection--------------", slot30)
+
+			if slot30 > 0 and slot30 <= #slot29 then
+				getProxy(EventProxy):AddActivityEvent(EventInfo.New({
+					finish_time = 0,
+					over_time = 0,
+					id = slot29[slot30],
+					ship_id_list = {},
+					activity_id = slot26.id
+				}))
+			end
+
+			pg.ShipFlagMgr.GetInstance():UpdateFlagShips("inEvent")
+			slot0:sendNotification(GAME.EVENT_LIST_UPDATE)
+		end
+	end
+
+	if getProxy(GuildProxy):getRawData() then
+		slot27.shouldRefreshDonateList = true
+
+		slot28:ResetTechCancelCnt()
+
+		if slot28:getWeeklyTask() and slot29:isExpire() then
+			getProxy(TaskProxy):removeTaskById(slot29:GetPresonTaskId())
+
+			slot28.weeklyTaskFlag = 0
+		end
+
+		slot28.donateCount = 0
+
+		if slot28:GetActiveEvent() then
+			slot30:GetBossMission():ResetDailyCnt()
+		end
+
+		slot27:updateGuild(slot28)
+	end
+
+	slot0:sendNotification(GAME.ZERO_HOUR_OP_DONE)
 end
 
 return slot0

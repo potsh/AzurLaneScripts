@@ -5,7 +5,7 @@ function slot0.execute(slot0, slot1)
 	slot4 = slot2.callback
 	slot6 = getProxy(BayProxy):getRawData()
 	slot8 = getProxy(ChapterProxy):getChapterById(slot2.chapterId)
-	slot9 = slot8:getConfig("map")
+	slot9 = slot8:getConfig("formation")
 	slot11 = slot8:getEliteFleetCommanders()
 	slot12 = {}
 
@@ -13,23 +13,21 @@ function slot0.execute(slot0, slot1)
 		slot18 = {}
 		slot19 = {}
 		slot20 = {}
-		slot21 = {}
-		slot22 = {}
 
-		for slot26, slot27 in ipairs(slot17) do
-			slot19[#slot19 + 1] = slot27
+		for slot24, slot25 in ipairs(slot17) do
+			slot19[#slot19 + 1] = slot25
 		end
 
-		for slot27, slot28 in pairs(slot11[slot16]) do
-			table.insert(slot22, {
-				pos = slot27,
-				id = slot28
+		for slot25, slot26 in pairs(slot11[slot16]) do
+			table.insert(slot20, {
+				pos = slot25,
+				id = slot26
 			})
 		end
 
 		slot18.map_id = slot9
 		slot18.main_id = slot19
-		slot18.commanders = slot22
+		slot18.commanders = slot20
 		slot12[#slot12 + 1] = slot18
 	end
 

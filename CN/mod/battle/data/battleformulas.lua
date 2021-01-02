@@ -181,23 +181,19 @@ slot0.GetFleetTorpedoPower = slot15
 function slot15(slot0, slot1)
 	slot2 = SYSTEM_DUEL
 
-	if slot0 ~= slot2 then
-		slot2 = SYSTEM_SHAM
-
-		if slot0 == slot2 then
-			slot2 = slot1.level
-			slot3 = slot1.durability
-			slot4 = ys
-			slot4 = slot4.Battle
-			slot4 = slot4.BattleDataFunction
-			slot4 = slot4.GetPlayerUnitDurabilityExtraAddition
-			slot5 = slot0
-			slot6 = slot2
-			slot4, slot5 = slot4(slot5, slot6)
-			slot6 = slot3 * slot4
-			slot6 = slot6 + slot5
-			slot1.durability = slot6
-		end
+	if slot0 == slot2 then
+		slot2 = slot1.level
+		slot3 = slot1.durability
+		slot4 = ys
+		slot4 = slot4.Battle
+		slot4 = slot4.BattleDataFunction
+		slot4 = slot4.GetPlayerUnitDurabilityExtraAddition
+		slot5 = slot0
+		slot6 = slot2
+		slot4, slot5 = slot4(slot5, slot6)
+		slot6 = slot3 * slot4
+		slot6 = slot6 + slot5
+		slot1.durability = slot6
 	end
 end
 
@@ -207,20 +203,16 @@ function slot15(slot0, slot1)
 	slot2 = 1
 	slot3 = SYSTEM_DUEL
 
-	if slot0 ~= slot3 then
-		slot3 = SYSTEM_SHAM
-
-		if slot0 == slot3 then
-			slot3 = slot1.level
-			slot4 = ys
-			slot4 = slot4.Battle
-			slot4 = slot4.BattleDataFunction
-			slot4 = slot4.GetPlayerUnitDurabilityExtraAddition
-			slot5 = slot0
-			slot6 = slot3
-			slot4 = slot4(slot5, slot6)
-			slot2 = slot4
-		end
+	if slot0 == slot3 then
+		slot3 = slot1.level
+		slot4 = ys
+		slot4 = slot4.Battle
+		slot4 = slot4.BattleDataFunction
+		slot4 = slot4.GetPlayerUnitDurabilityExtraAddition
+		slot5 = slot0
+		slot6 = slot3
+		slot4 = slot4(slot5, slot6)
+		slot2 = slot4
 	end
 
 	return slot2
@@ -261,483 +253,520 @@ end
 
 slot0.ConvertBulletSpeed = slot15
 
-function slot15(slot0, slot1, slot2)
-	slot3 = uv0
-	slot3 = slot3.NUM1
-	slot4 = uv0
-	slot4 = slot4.NUM0
-	slot5 = uv0
-	slot5 = slot5.NUM10000
-	slot6 = uv0
-	slot6 = slot6.DRATE
-	slot7 = uv0
-	slot7 = slot7.ACCURACY
-	slot9 = slot0
-	slot8 = slot0.GetWeaponHostAttr
-	slot8 = slot8(slot9)
-	slot10 = slot0
-	slot9 = slot0.GetWeapon
-	slot9 = slot9(slot10)
-	slot11 = slot0
-	slot10 = slot0.GetWeaponTempData
-	slot10 = slot10(slot11)
-	slot11 = slot10.type
-	slot12 = slot10.attack_attribute
-	slot14 = slot9
-	slot13 = slot9.GetConvertedAtkAttr
-	slot13 = slot13(slot14)
-	slot15 = slot0
-	slot14 = slot0.GetTemplate
-	slot14 = slot14(slot15)
-	slot15 = slot14.damage_type
-	slot16 = slot1._attr
+function slot15(slot0)
+	slot1 = uv0
+	slot1 = slot0 / slot1
 
-	if not slot2 then
-		slot2 = slot3
-	end
+	return slot1
+end
 
-	slot17 = slot16.armorType
-	slot18 = slot8.formulaLevel
-	slot19 = slot16.formulaLevel
-	slot18 = slot18 - slot19
-	slot19 = slot3
-	slot20 = false
-	slot21 = false
-	slot22 = slot3
-	slot24 = slot0
-	slot23 = slot0.GetCorrectedDMG
-	slot23 = slot23(slot24)
-	slot24 = uv1
-	slot24 = slot24.WeaponDamageAttr
-	slot24 = slot24.CANNON
+slot0.ConvertBulletDataSpeed = slot15
 
-	if slot12 == slot24 then
-		slot24 = slot8.cannonPower
-		slot24 = slot24 * slot13
-		slot24 = slot3 + slot24
-		slot23 = slot24 * slot23
-		slot24 = uv2
-		slot24 = slot24.GetCurrent
-		slot25 = slot1
-		slot26 = "injureRatioByCannon"
-		slot24 = slot24(slot25, slot26)
-		slot24 = slot3 + slot24
-		slot25 = uv2
-		slot25 = slot25.GetCurrent
-		slot26 = slot0
-		slot27 = "damageRatioByCannon"
-		slot25 = slot25(slot26, slot27)
-		slot2 = slot24 + slot25
-	else
-		slot24 = uv1
-		slot24 = slot24.WeaponDamageAttr
-		slot24 = slot24.TORPEDO
+function slot15(slot0)
+	function slot1(slot0, slot1, slot2, slot3)
+		slot4 = uv0
+		slot4 = slot4.NUM1
+		slot5 = uv0
+		slot5 = slot5.NUM0
+		slot6 = uv0
+		slot6 = slot6.NUM10000
+		slot7 = uv0
+		slot7 = slot7.DRATE
+		slot8 = uv0
+		slot8 = slot8.ACCURACY
+		slot10 = slot0
+		slot9 = slot0.GetWeaponHostAttr
+		slot9 = slot9(slot10)
+		slot11 = slot0
+		slot10 = slot0.GetWeapon
+		slot10 = slot10(slot11)
+		slot12 = slot0
+		slot11 = slot0.GetWeaponTempData
+		slot11 = slot11(slot12)
+		slot12 = slot11.type
+		slot13 = slot11.attack_attribute
+		slot15 = slot10
+		slot14 = slot10.GetConvertedAtkAttr
+		slot14 = slot14(slot15)
+		slot16 = slot0
+		slot15 = slot0.GetTemplate
+		slot15 = slot15(slot16)
+		slot16 = slot15.damage_type
+		slot17 = slot15.random_damage_rate
+		slot18 = slot1._attr
 
-		if slot12 == slot24 then
-			slot24 = slot8.torpedoPower
-			slot24 = slot24 * slot13
-			slot24 = slot3 + slot24
-			slot23 = slot24 * slot23
-			slot24 = uv2
-			slot24 = slot24.GetCurrent
-			slot25 = slot1
-			slot26 = "injureRatioByBulletTorpedo"
-			slot24 = slot24(slot25, slot26)
-			slot24 = slot3 + slot24
-			slot25 = uv2
-			slot25 = slot25.GetCurrent
-			slot26 = slot0
-			slot27 = "damageRatioByBulletTorpedo"
-			slot25 = slot25(slot26, slot27)
-			slot2 = slot24 + slot25
+		if not slot3 then
+			slot19 = slot4
+		end
+
+		if not slot2 then
+			slot2 = slot5
+		end
+
+		slot20 = slot18.armorType
+		slot21 = slot9.formulaLevel
+		slot22 = slot18.formulaLevel
+		slot21 = slot21 - slot22
+		slot22 = slot4
+		slot23 = false
+		slot24 = false
+		slot25 = slot4
+		slot27 = slot0
+		slot26 = slot0.GetCorrectedDMG
+		slot26 = slot26(slot27)
+		slot28 = slot0
+		slot27 = slot0.GetWeaponAtkAttr
+		slot27 = slot27(slot28)
+		slot28 = slot27 * slot14
+		slot28 = slot4 + slot28
+		slot26 = slot28 * slot26
+		slot28 = uv1
+		slot28 = slot28.WeaponDamageAttr
+		slot28 = slot28.CANNON
+
+		if slot13 == slot28 then
+			slot28 = uv2
+			slot28 = slot28.GetCurrent
+			slot29 = slot1
+			slot30 = "injureRatioByCannon"
+			slot28 = slot28(slot29, slot30)
+			slot28 = slot4 + slot28
+			slot29 = uv2
+			slot29 = slot29.GetCurrent
+			slot30 = slot0
+			slot31 = "damageRatioByCannon"
+			slot29 = slot29(slot30, slot31)
+			slot19 = slot28 + slot29
 		else
-			slot24 = uv1
-			slot24 = slot24.WeaponDamageAttr
-			slot24 = slot24.ANTI_AIR
+			slot28 = uv1
+			slot28 = slot28.WeaponDamageAttr
+			slot28 = slot28.TORPEDO
 
-			if slot12 == slot24 then
-				slot24 = slot8.antiAirPower
-				slot24 = slot24 * slot13
-				slot24 = slot3 + slot24
-				slot23 = slot24 * slot23
+			if slot13 == slot28 then
+				slot28 = uv2
+				slot28 = slot28.GetCurrent
+				slot29 = slot1
+				slot30 = "injureRatioByBulletTorpedo"
+				slot28 = slot28(slot29, slot30)
+				slot28 = slot4 + slot28
+				slot29 = uv2
+				slot29 = slot29.GetCurrent
+				slot30 = slot0
+				slot31 = "damageRatioByBulletTorpedo"
+				slot29 = slot29(slot30, slot31)
+				slot19 = slot28 + slot29
 			else
-				slot24 = uv1
-				slot24 = slot24.WeaponDamageAttr
-				slot24 = slot24.AIR
+				slot28 = uv1
+				slot28 = slot28.WeaponDamageAttr
+				slot28 = slot28.AIR
 
-				if slot12 == slot24 then
-					slot24 = slot8.airPower
-					slot24 = slot24 * slot13
-					slot24 = slot3 + slot24
-					slot23 = slot24 * slot23
-					slot24 = slot6[7]
-					slot25 = slot16.antiAirPower
-					slot26 = slot6[7]
-					slot25 = slot25 + slot26
-					slot24 = slot24 / slot25
-					slot24 = slot2 * slot24
-					slot25 = uv2
-					slot25 = slot25.GetCurrent
-					slot26 = slot1
-					slot27 = "injureRatioByAir"
-					slot25 = slot25(slot26, slot27)
-					slot25 = slot3 + slot25
-					slot26 = uv2
-					slot26 = slot26.GetCurrent
-					slot27 = slot0
-					slot28 = "damageRatioByAir"
-					slot26 = slot26(slot27, slot28)
-					slot25 = slot25 + slot26
-					slot2 = slot24 * slot25
+				if slot13 == slot28 then
+					slot28 = uv2
+					slot28 = slot28.GetCurrent
+					slot29 = slot0
+					slot30 = "airResistPierceActive"
+					slot28 = slot28(slot29, slot30)
+
+					if slot28 ~= 1 then
+						slot28 = false
+					else
+						slot28 = true
+					end
+
+					if slot28 then
+						slot29 = uv2
+						slot29 = slot29.GetCurrent
+						slot30 = slot0
+						slot31 = "airResistPierce"
+						slot29 = slot29(slot30, slot31)
+
+						if not slot29 then
+							slot29 = 0
+						end
+					end
+
+					slot30 = math
+					slot30 = slot30.min
+					slot31 = slot7[7]
+					slot32 = slot18.antiAirPower
+					slot33 = slot7[7]
+					slot32 = slot32 + slot33
+					slot31 = slot31 / slot32
+					slot31 = slot31 + slot29
+					slot32 = 1
+					slot30 = slot30(slot31, slot32)
+					slot31 = slot19 * slot30
+					slot32 = uv2
+					slot32 = slot32.GetCurrent
+					slot33 = slot1
+					slot34 = "injureRatioByAir"
+					slot32 = slot32(slot33, slot34)
+					slot32 = slot4 + slot32
+					slot33 = uv2
+					slot33 = slot33.GetCurrent
+					slot34 = slot0
+					slot35 = "damageRatioByAir"
+					slot33 = slot33(slot34, slot35)
+					slot32 = slot32 + slot33
+					slot19 = slot31 * slot32
 				else
-					slot24 = uv1
-					slot24 = slot24.WeaponDamageAttr
-					slot24 = slot24.ANIT_SUB
+					slot28 = uv1
+					slot28 = slot28.WeaponDamageAttr
+					slot28 = slot28.ANTI_AIR
 
-					if slot12 == slot24 then
-						slot24 = slot8.antiSubPower
-						slot24 = slot24 * slot13
-						slot24 = slot3 + slot24
-						slot23 = slot24 * slot23
+					if slot13 == slot28 then
+						-- Nothing
+					else
+						slot28 = uv1
+						slot28 = slot28.WeaponDamageAttr
+						slot28 = slot28.ANIT_SUB
+
+						if slot13 == slot28 then
+							-- Nothing
+						end
 					end
 				end
 			end
 		end
-	end
 
-	slot24 = slot8.luck
-	slot25 = slot16.luck
-	slot24 = slot24 - slot25
-	slot25 = uv2
-	slot25 = slot25.GetCurrent
-	slot26 = slot1
-	slot27 = "perfectDodge"
-	slot25 = slot25(slot26, slot27)
+		slot28 = slot9.luck
+		slot29 = slot18.luck
+		slot28 = slot28 - slot29
+		slot29 = uv2
+		slot29 = slot29.GetCurrent
+		slot30 = slot1
+		slot31 = "perfectDodge"
+		slot29 = slot29(slot30, slot31)
 
-	if slot25 == 1 then
-		slot20 = true
-	else
-		slot26 = slot7[1]
-		slot27 = slot8.attackRating
-		slot28 = slot8.attackRating
-		slot29 = slot16.dodgeRate
-		slot28 = slot28 + slot29
-		slot29 = slot7[2]
-		slot28 = slot28 + slot29
-		slot27 = slot27 / slot28
-		slot26 = slot26 + slot27
-		slot27 = slot24 + slot18
-		slot28 = uv0
-		slot28 = slot28.PERCENT1
-		slot27 = slot27 * slot28
-		slot26 = slot26 + slot27
-		slot27 = uv2
-		slot27 = slot27.GetCurrent
-		slot28 = slot0
-		slot29 = uv3
-		slot31 = slot1
-		slot30 = slot1.GetTemplate
-		slot30 = slot30(slot31)
-		slot30 = slot30.type
-		slot29 = slot29[slot30]
-		slot27 = slot27(slot28, slot29)
-		slot28 = uv2
-		slot28 = slot28.GetCurrent
-		slot29 = slot1
-		slot30 = "dodgeRateExtra"
-		slot28 = slot28(slot29, slot30)
-		slot29 = math
-		slot29 = slot29.max
-		slot30 = slot6[5]
-		slot31 = math
-		slot31 = slot31.min
-		slot32 = slot3
-		slot33 = slot26 + slot27
-		slot33 = slot33 - slot28
-		slot29 = slot29(slot30, slot31(slot32, slot33))
-		slot26 = slot29
-		slot29 = uv4
-		slot29 = slot29.IsHappen
-		slot30 = slot26 * slot5
-		slot29 = slot29(slot30)
-		slot20 = not slot29
-	end
-
-	if not slot20 then
-		slot26 = nil
-		slot27 = uv2
-		slot27 = slot27.GetCurrent
-		slot28 = slot0
-		slot29 = "GCT"
-		slot27 = slot27(slot28, slot29)
-
-		if slot27 == 1 then
-			slot26 = 1
+		if slot29 == 1 then
+			slot23 = true
 		else
-			slot27 = uv0
-			slot27 = slot27.DFT_CRIT_RATE
-			slot28 = slot8.attackRating
-			slot29 = slot8.attackRating
-			slot30 = slot16.dodgeRate
-			slot29 = slot29 + slot30
-			slot30 = slot6[4]
-			slot29 = slot29 + slot30
-			slot28 = slot28 / slot29
-			slot27 = slot27 + slot28
-			slot28 = slot24 + slot18
-			slot29 = slot6[3]
-			slot28 = slot28 * slot29
-			slot27 = slot27 + slot28
-			slot28 = uv2
-			slot28 = slot28.GetCurrent
-			slot29 = slot0
-			slot30 = "cri"
-			slot28 = slot28(slot29, slot30)
-			slot26 = slot27 + slot28
-		end
-
-		slot27 = math
-		slot27 = slot27.random
-		slot28 = uv5
-		slot28 = slot28.RANDOM_DAMAGE_MIN
-		slot29 = uv5
-		slot29 = slot29.RANDOM_DAMAGE_MAX
-		slot27 = slot27(slot28, slot29)
-		slot22 = slot27 + slot23
-		slot28 = uv4
-		slot28 = slot28.IsHappen
-		slot29 = slot26 * slot5
-		slot28 = slot28(slot29)
-
-		if slot28 then
-			slot21 = true
-			slot28 = math
-			slot28 = slot28.max
-			slot29 = 1
-			slot30 = uv0
-			slot30 = slot30.DFT_CRIT_EFFECT
-			slot31 = uv2
-			slot31 = slot31.GetCurrent
-			slot32 = slot0
-			slot33 = "criDamage"
-			slot31 = slot31(slot32, slot33)
+			slot30 = slot8[1]
+			slot31 = slot9.attackRating
+			slot32 = slot9.attackRating
+			slot33 = slot18.dodgeRate
+			slot32 = slot32 + slot33
+			slot33 = slot8[2]
+			slot32 = slot32 + slot33
+			slot31 = slot31 / slot32
+			slot30 = slot30 + slot31
+			slot31 = slot28 + slot21
+			slot32 = uv0
+			slot32 = slot32.PERCENT1
+			slot31 = slot31 * slot32
 			slot30 = slot30 + slot31
 			slot31 = uv2
 			slot31 = slot31.GetCurrent
 			slot32 = slot1
-			slot33 = "criDamageResist"
+			slot33 = "accuracyRateExtra"
 			slot31 = slot31(slot32, slot33)
-			slot30 = slot30 - slot31
-			slot28 = slot28(slot29, slot30)
-			slot19 = slot28
+			slot32 = uv2
+			slot32 = slot32.GetCurrent
+			slot33 = slot0
+			slot34 = uv3
+			slot36 = slot1
+			slot35 = slot1.GetTemplate
+			slot35 = slot35(slot36)
+			slot35 = slot35.type
+			slot34 = slot34[slot35]
+			slot32 = slot32(slot33, slot34)
+			slot33 = uv2
+			slot33 = slot33.GetCurrent
+			slot34 = slot1
+			slot35 = "dodgeRateExtra"
+			slot33 = slot33(slot34, slot35)
+			slot34 = math
+			slot34 = slot34.max
+			slot35 = slot7[5]
+			slot36 = math
+			slot36 = slot36.min
+			slot37 = slot4
+			slot38 = slot30 + slot31
+			slot38 = slot38 + slot32
+			slot38 = slot38 - slot33
+			slot34 = slot34(slot35, slot36(slot37, slot38))
+			slot30 = slot34
+			slot34 = uv4
+			slot34 = slot34.IsHappen
+			slot35 = slot30 * slot6
+			slot34 = slot34(slot35)
+			slot23 = not slot34
+		end
+
+		if not slot23 then
+			slot30 = nil
+			slot31 = uv2
+			slot31 = slot31.GetCurrent
+			slot32 = slot0
+			slot33 = "GCT"
+			slot31 = slot31(slot32, slot33)
+
+			if slot31 == 1 then
+				slot30 = 1
+			else
+				slot31 = uv0
+				slot31 = slot31.DFT_CRIT_RATE
+				slot32 = slot9.attackRating
+				slot33 = slot9.attackRating
+				slot34 = slot18.dodgeRate
+				slot33 = slot33 + slot34
+				slot34 = slot7[4]
+				slot33 = slot33 + slot34
+				slot32 = slot32 / slot33
+				slot31 = slot31 + slot32
+				slot32 = slot28 + slot21
+				slot33 = slot7[3]
+				slot32 = slot32 * slot33
+				slot31 = slot31 + slot32
+				slot32 = uv2
+				slot32 = slot32.GetCurrent
+				slot33 = slot0
+				slot34 = "cri"
+				slot32 = slot32(slot33, slot34)
+				slot30 = slot31 + slot32
+			end
+
+			slot31 = math
+			slot31 = slot31.random
+			slot32 = uv5
+			slot32 = slot32.RANDOM_DAMAGE_MIN
+			slot33 = uv5
+			slot33 = slot33.RANDOM_DAMAGE_MAX
+			slot31 = slot31(slot32, slot33)
+			slot25 = slot31 + slot26
+			slot32 = uv4
+			slot32 = slot32.IsHappen
+			slot33 = slot30 * slot6
+			slot32 = slot32(slot33)
+
+			if slot32 then
+				slot24 = true
+				slot32 = math
+				slot32 = slot32.max
+				slot33 = 1
+				slot34 = uv0
+				slot34 = slot34.DFT_CRIT_EFFECT
+				slot35 = uv2
+				slot35 = slot35.GetCurrent
+				slot36 = slot0
+				slot37 = "criDamage"
+				slot35 = slot35(slot36, slot37)
+				slot34 = slot34 + slot35
+				slot35 = uv2
+				slot35 = slot35.GetCurrent
+				slot36 = slot1
+				slot37 = "criDamageResist"
+				slot35 = slot35(slot36, slot37)
+				slot34 = slot34 - slot35
+				slot32 = slot32(slot33, slot34)
+				slot22 = slot32
+			else
+				slot24 = false
+			end
 		else
-			slot21 = false
+			slot25 = slot5
+			slot30 = {
+				isMiss = true,
+				isDamagePrevent = false,
+				isCri = slot24
+			}
+			slot31 = slot25
+			slot32 = slot30
+
+			return slot31, slot32
 		end
-	else
-		slot22 = slot4
-		slot26 = {
-			isMiss = true,
-			isDamagePrevent = false,
-			isCri = slot21
-		}
-		slot27 = slot22
-		slot28 = slot26
 
-		return slot27, slot28
-	end
+		slot30 = uv0
+		slot30 = slot30.NUM1
+		slot31 = uv2
+		slot31 = slot31.GetCurrent
+		slot32 = slot0
+		slot33 = "damageRatioBullet"
+		slot31 = slot31(slot32, slot33)
+		slot32 = uv2
+		slot32 = slot32.GetTagAttr
+		slot33 = slot0
+		slot34 = slot1
+		slot32 = slot32(slot33, slot34)
+		slot33 = uv2
+		slot33 = slot33.GetCurrent
+		slot34 = slot1
+		slot35 = "injureRatio"
+		slot33 = slot33(slot34, slot35)
+		slot35 = slot10
+		slot34 = slot10.GetFixAmmo
+		slot34 = slot34(slot35)
 
-	slot26 = uv0
-	slot26 = slot26.NUM1
-	slot27 = uv2
-	slot27 = slot27.GetCurrent
-	slot28 = slot0
-	slot29 = "damageRatioBullet"
-	slot27 = slot27(slot28, slot29)
-	slot28 = uv2
-	slot28 = slot28.GetCurrent
-	slot29 = slot0
-	slot30 = "damageEnhanceProjectile"
-	slot28 = slot28(slot29, slot30)
-	slot29 = uv2
-	slot29 = slot29.GetTagAttr
-	slot30 = slot0
-	slot31 = slot1
-	slot29 = slot29(slot30, slot31)
-	slot30 = uv2
-	slot30 = slot30.GetCurrent
-	slot31 = slot1
-	slot32 = "injureRatio"
-	slot30 = slot30(slot31, slot32)
-	slot32 = slot9
-	slot31 = slot9.GetFixAmmo
-	slot31 = slot31(slot32)
+		if not slot34 then
+			slot34 = slot16[slot20]
 
-	if not slot31 then
-		slot31 = slot15[slot17]
-
-		if not slot31 then
-			slot31 = slot26
-		end
-	end
-
-	slot32 = uv2
-	slot32 = slot32.GetCurrent
-	slot33 = slot0
-	slot34 = uv6
-	slot35 = slot14.ammo_type
-	slot34 = slot34[slot35]
-	slot32 = slot32(slot33, slot34)
-	slot33 = uv2
-	slot33 = slot33.GetCurrent
-	slot34 = slot1
-	slot35 = uv7
-	slot36 = slot14.ammo_type
-	slot35 = slot35[slot36]
-	slot33 = slot33(slot34, slot35)
-	slot34 = uv2
-	slot34 = slot34.GetCurrent
-	slot35 = slot0
-	slot36 = "comboTag"
-	slot34 = slot34(slot35, slot36)
-	slot35 = uv2
-	slot35 = slot35.GetCurrent
-	slot36 = slot1
-	slot37 = slot34
-	slot35 = slot35(slot36, slot37)
-	slot36 = math
-	slot36 = slot36.max
-	slot37 = slot26
-	slot38 = math
-	slot38 = slot38.floor
-	slot39 = slot22 * slot2
-	slot39 = slot39 * slot31
-	slot39 = slot39 * slot19
-	slot40 = slot26 + slot27
-	slot39 = slot39 * slot40
-	slot39 = slot39 * slot29
-	slot40 = slot26 + slot30
-	slot39 = slot39 * slot40
-	slot40 = slot26 + slot32
-	slot40 = slot40 - slot33
-	slot39 = slot39 * slot40
-	slot40 = slot26 + slot35
-	slot39 = slot39 * slot40
-	slot40 = math
-	slot40 = slot40.min
-	slot41 = slot6[1]
-	slot42 = math
-	slot42 = slot42.max
-	slot43 = slot6[1]
-	slot43 = -slot43
-	slot44 = slot18
-	slot40 = slot40(slot41, slot42(slot43, slot44))
-	slot41 = slot6[2]
-	slot40 = slot40 * slot41
-	slot40 = slot26 + slot40
-	slot39 = slot39 * slot40
-	slot36 = slot36(slot37, slot38(slot39))
-	slot22 = slot36
-	slot37 = slot1
-	slot36 = slot1.GetCurrentOxyState
-	slot36 = slot36(slot37)
-	slot37 = uv1
-	slot37 = slot37.OXY_STATE
-	slot37 = slot37.DIVE
-
-	if slot36 == slot37 then
-		slot36 = math
-		slot36 = slot36.floor
-		slot37 = slot14.antisub_enhancement
-		slot37 = slot22 * slot37
-		slot36 = slot36(slot37)
-		slot22 = slot36
-	end
-
-	slot36 = {
-		isMiss = slot20,
-		isCri = slot21,
-		damageAttr = slot12
-	}
-	slot38 = slot0
-	slot37 = slot0.GetDamageEnhance
-	slot37 = slot37(slot38)
-
-	if slot37 ~= 1 then
-		slot38 = math
-		slot38 = slot38.floor
-		slot39 = slot22 * slot37
-		slot38 = slot38(slot39)
-		slot22 = slot38
-	end
-
-	slot38 = type
-	slot39 = slot14.hit_type
-	slot38 = slot38(slot39)
-
-	if slot38 == "table" then
-		slot38 = slot14.hit_type
-		slot38 = slot38.rate
-
-		if slot38 then
-			slot38 = slot0.GetExplodePostion
-
-			if slot38 then
-				slot38 = slot14.hit_type
-				slot38 = slot38.range
-				slot39 = slot14.hit_type
-				slot39 = slot39.rate
-				slot40 = pg
-				slot40 = slot40.Tool
-				slot40 = slot40.FilterY
-				slot42 = slot0
-				slot41 = slot0.GetExplodePostion
-				slot40 = slot40(slot41(slot42))
-				slot41 = pg
-				slot41 = slot41.Tool
-				slot41 = slot41.FilterY
-				slot43 = slot1
-				slot42 = slot1.GetPosition
-				slot41 = slot41(slot42(slot43))
-				slot42 = Vector3
-				slot42 = slot42.Distance
-				slot43 = slot40
-				slot44 = slot41
-				slot42 = slot42(slot43, slot44)
-				slot43 = math
-				slot43 = slot43.floor
-				slot44 = uv0
-				slot44 = slot44.NUM1
-				slot45 = Mathf
-				slot45 = slot45.Clamp
-				slot46 = slot42 / slot38
-				slot47 = 0
-				slot48 = 1
-				slot45 = slot45(slot46, slot47, slot48)
-				slot45 = slot45 * slot39
-				slot44 = slot44 - slot45
-				slot44 = slot22 * slot44
-				slot43 = slot43(slot44)
-				slot22 = slot43
+			if not slot34 then
+				slot34 = slot30
 			end
 		end
+
+		slot35 = uv2
+		slot35 = slot35.GetCurrent
+		slot36 = slot0
+		slot37 = uv5
+		slot37 = slot37.AGAINST_ARMOR_ENHANCE
+		slot37 = slot37[slot20]
+		slot35 = slot35(slot36, slot37)
+		slot34 = slot34 + slot35
+		slot35 = uv2
+		slot35 = slot35.GetCurrent
+		slot36 = slot0
+		slot37 = uv6
+		slot38 = slot15.ammo_type
+		slot37 = slot37[slot38]
+		slot35 = slot35(slot36, slot37)
+		slot36 = uv2
+		slot36 = slot36.GetCurrent
+		slot37 = slot1
+		slot38 = uv7
+		slot39 = slot15.ammo_type
+		slot38 = slot38[slot39]
+		slot36 = slot36(slot37, slot38)
+		slot37 = uv2
+		slot37 = slot37.GetCurrent
+		slot38 = slot0
+		slot39 = "comboTag"
+		slot37 = slot37(slot38, slot39)
+		slot38 = uv2
+		slot38 = slot38.GetCurrent
+		slot39 = slot1
+		slot40 = slot37
+		slot38 = slot38(slot39, slot40)
+		slot39 = math
+		slot39 = slot39.max
+		slot40 = slot30
+		slot41 = math
+		slot41 = slot41.floor
+		slot42 = slot25 * slot19
+		slot43 = slot30 - slot2
+		slot42 = slot42 * slot43
+		slot42 = slot42 * slot34
+		slot42 = slot42 * slot22
+		slot43 = slot30 + slot31
+		slot42 = slot42 * slot43
+		slot42 = slot42 * slot32
+		slot43 = slot30 + slot33
+		slot42 = slot42 * slot43
+		slot43 = slot30 + slot35
+		slot43 = slot43 - slot36
+		slot42 = slot42 * slot43
+		slot43 = slot30 + slot38
+		slot42 = slot42 * slot43
+		slot43 = math
+		slot43 = slot43.min
+		slot44 = slot7[1]
+		slot45 = math
+		slot45 = slot45.max
+		slot46 = slot7[1]
+		slot46 = -slot46
+		slot47 = slot21
+		slot43 = slot43(slot44, slot45(slot46, slot47))
+		slot44 = slot7[2]
+		slot43 = slot43 * slot44
+		slot43 = slot30 + slot43
+		slot42 = slot42 * slot43
+		slot39 = slot39(slot40, slot41(slot42))
+		slot25 = slot39
+		slot40 = slot1
+		slot39 = slot1.GetCurrentOxyState
+		slot39 = slot39(slot40)
+		slot40 = uv1
+		slot40 = slot40.OXY_STATE
+		slot40 = slot40.DIVE
+
+		if slot39 == slot40 then
+			slot39 = math
+			slot39 = slot39.floor
+			slot40 = slot15.antisub_enhancement
+			slot40 = slot25 * slot40
+			slot39 = slot39(slot40)
+			slot25 = slot39
+		end
+
+		slot39 = {
+			isMiss = slot23,
+			isCri = slot24,
+			damageAttr = slot13
+		}
+		slot41 = slot0
+		slot40 = slot0.GetDamageEnhance
+		slot40 = slot40(slot41)
+
+		if slot40 ~= 1 then
+			slot41 = math
+			slot41 = slot41.floor
+			slot42 = slot25 * slot40
+			slot41 = slot41(slot42)
+			slot25 = slot41
+		end
+
+		slot41 = slot18.repressReduce
+		slot25 = slot25 * slot41
+
+		if slot17 ~= 0 then
+			slot41 = Mathf
+			slot41 = slot41.RandomFloat
+			slot42 = slot17
+			slot41 = slot41(slot42)
+			slot41 = slot41 + 1
+			slot25 = slot25 * slot41
+		end
+
+		slot41 = uv2
+		slot41 = slot41.GetCurrent
+		slot42 = slot0
+		slot43 = "damageEnhanceProjectile"
+		slot41 = slot41(slot42, slot43)
+		slot42 = math
+		slot42 = slot42.max
+		slot43 = 0
+		slot44 = slot25 + slot41
+		slot42 = slot42(slot43, slot44)
+		slot25 = slot42
+		slot42 = uv8
+
+		if slot42 then
+			slot42 = uv0
+			slot42 = slot42.NUM1
+			slot43 = uv2
+			slot43 = slot43.GetCurrent
+			slot44 = slot0
+			slot45 = "worldBuffResistance"
+			slot43 = slot43(slot44, slot45)
+			slot42 = slot42 + slot43
+			slot25 = slot25 * slot42
+		end
+
+		slot42 = math
+		slot42 = slot42.floor
+		slot43 = slot25
+		slot42 = slot42(slot43)
+		slot25 = slot42
+		slot42 = slot15.DMG_font
+		slot42 = slot42[slot20]
+		slot43 = 0
+
+		if slot41 < slot43 then
+			slot43 = uv5
+			slot42 = slot43.BULLET_DECREASE_DMG_FONT
+		end
+
+		slot43 = slot25
+		slot44 = slot39
+		slot45 = slot42
+
+		return slot43, slot44, slot45
 	end
 
-	slot38 = math
-	slot38 = slot38.floor
-	slot39 = slot16.repressReduce
-	slot39 = slot22 * slot39
-	slot38 = slot38(slot39)
-	slot22 = slot38
-	slot22 = slot22 + slot28
-	slot38 = slot22
-	slot39 = slot36
-	slot40 = slot14.DMG_font
-	slot40 = slot40[slot17]
-
-	return slot38, slot39, slot40
+	return slot1
 end
 
-slot0.CalculateDamage = slot15
+slot0.CreateContextCalculateDamage = slot15
 
 function slot15(slot0, slot1, slot2)
 	slot3 = slot0._attr
@@ -1549,7 +1578,204 @@ end
 
 slot0.CaclulateDOTDamageEnhanceRate = slot15
 
-function slot15()
+function slot15(slot0, slot1)
+	slot2 = uv0
+	slot2 = slot2.WORLD_ENEMY_ENHANCEMENT_CONST_C
+	slot3 = uv0
+	slot3 = slot3.WORLD_ENEMY_ENHANCEMENT_CONST_B
+	slot3 = slot3 - slot1
+	slot2 = slot2^slot3
+	slot2 = 1 + slot2
+	slot2 = slot0 / slot2
+	slot2 = 1 + slot2
+
+	return slot2
+end
+
+slot0.WorldEnemyAttrEnhance = slot15
+slot15 = setmetatable
+slot16 = {}
+slot17 = {}
+
+function slot18(slot0, slot1)
+	slot2 = 0
+
+	return slot2
+end
+
+slot17.__index = slot18
+slot15 = slot15(slot16, slot17)
+
+function slot16(slot0, slot1)
+	if not slot0 then
+		slot0 = uv0
+	end
+
+	if not slot1 then
+		slot1 = uv0
+	end
+
+	slot2, slot3, slot4 = nil
+	slot5 = {}
+	slot6 = {}
+	slot7 = uv1
+	slot7 = slot7.attr_world_value_X1
+	slot7 = slot7.key_value
+	slot7 = slot7 / 10000
+	slot6[1] = slot7
+	slot7 = uv1
+	slot7 = slot7.attr_world_value_X2
+	slot7 = slot7.key_value
+	slot7 = slot7 / 10000
+	slot6[2] = slot7
+	slot5[1] = slot6
+	slot6 = {}
+	slot7 = uv1
+	slot7 = slot7.attr_world_value_Y1
+	slot7 = slot7.key_value
+	slot7 = slot7 / 10000
+	slot6[1] = slot7
+	slot7 = uv1
+	slot7 = slot7.attr_world_value_Y2
+	slot7 = slot7.key_value
+	slot7 = slot7 / 10000
+	slot6[2] = slot7
+	slot5[2] = slot6
+	slot6 = {}
+	slot7 = uv1
+	slot7 = slot7.attr_world_value_Z1
+	slot7 = slot7.key_value
+	slot7 = slot7 / 10000
+	slot6[1] = slot7
+	slot7 = uv1
+	slot7 = slot7.attr_world_value_Z2
+	slot7 = slot7.key_value
+	slot7 = slot7 / 10000
+	slot6[2] = slot7
+	slot5[3] = slot6
+	slot6 = uv1
+	slot6 = slot6.attr_world_damage_fix
+	slot6 = slot6.key_value
+	slot6 = slot6 / 10000
+	slot7 = nil
+	slot8 = slot0[1]
+
+	if slot8 == 0 then
+		slot8 = slot5[1]
+		slot7 = slot8[2]
+	else
+		slot8 = slot1[1]
+		slot9 = slot0[1]
+		slot7 = slot8 / slot9
+	end
+
+	slot8 = math
+	slot8 = slot8.clamp
+	slot9 = slot7
+	slot10 = slot5[1]
+	slot10 = slot10[1]
+	slot11 = slot5[1]
+	slot11 = slot11[2]
+	slot8 = slot8(slot9, slot10, slot11)
+	slot2 = 1 - slot8
+	slot8 = slot0[2]
+
+	if slot8 == 0 then
+		slot8 = slot5[2]
+		slot7 = slot8[2]
+	else
+		slot8 = slot1[2]
+		slot9 = slot0[2]
+		slot7 = slot8 / slot9
+	end
+
+	slot8 = math
+	slot8 = slot8.clamp
+	slot9 = slot7
+	slot10 = slot5[2]
+	slot10 = slot10[1]
+	slot11 = slot5[2]
+	slot11 = slot11[2]
+	slot8 = slot8(slot9, slot10, slot11)
+	slot3 = 1 - slot8
+	slot8 = slot0[3]
+
+	if slot8 == 0 then
+		slot8 = slot5[3]
+		slot7 = slot8[2]
+	else
+		slot8 = slot1[3]
+		slot9 = slot0[3]
+		slot7 = slot8 / slot9
+	end
+
+	slot8 = math
+	slot8 = slot8.max
+	slot9 = math
+	slot9 = slot9.clamp
+	slot10 = slot7
+	slot11 = slot5[3]
+	slot11 = slot11[1]
+	slot12 = slot5[3]
+	slot12 = slot12[2]
+	slot9 = slot9(slot10, slot11, slot12)
+	slot9 = 1 - slot9
+	slot10 = -slot6
+	slot8 = slot8(slot9, slot10)
+	slot4 = slot8
+	slot8 = slot2
+	slot9 = slot3
+	slot10 = slot4
+
+	return slot8, slot9, slot10
+end
+
+slot0.WorldMapRewardAttrEnhance = slot16
+
+function slot16(slot0, slot1)
+	slot2 = {}
+	slot3 = uv0
+	slot3 = slot3.attr_world_value_H1
+	slot3 = slot3.key_value
+	slot3 = slot3 / 10000
+	slot2[1] = slot3
+	slot3 = uv0
+	slot3 = slot3.attr_world_value_H2
+	slot3 = slot3.key_value
+	slot3 = slot3 / 10000
+	slot2[2] = slot3
+
+	if not slot0 then
+		slot0 = uv1
+	end
+
+	if not slot1 then
+		slot1 = uv1
+	end
+
+	slot3 = nil
+	slot4 = slot0[3]
+
+	if slot4 == 0 then
+		slot3 = slot2[2]
+	else
+		slot4 = slot1[3]
+		slot5 = slot0[3]
+		slot3 = slot4 / slot5
+	end
+
+	slot4 = math
+	slot4 = slot4.clamp
+	slot5 = slot3
+	slot6 = slot2[1]
+	slot7 = slot2[2]
+
+	return slot4(slot5, slot6, slot7)
+end
+
+slot0.WorldMapRewardHealingRate = slot16
+
+function slot16()
 	slot0 = 0
 	slot1 = {
 		false,
@@ -1560,52 +1786,116 @@ function slot15()
 	return slot0, slot1
 end
 
-slot0.CalcDamageLock = slot15
+slot0.CalcDamageLock = slot16
 
-function slot15()
+function slot16()
 	slot0 = 0
 
 	return slot0
 end
 
-slot0.CalcDamageLockA2M = slot15
+slot0.CalcDamageLockA2M = slot16
 
-function slot15()
+function slot16()
 	slot0 = 0
 
 	return slot0
 end
 
-slot0.CalcDamageLockS2M = slot15
+slot0.CalcDamageLockS2M = slot16
 
-function slot15()
+function slot16()
 	slot0 = 0
 	slot1 = 0
 
 	return slot0, slot1
 end
 
-slot0.CalcDamageLockCrush = slot15
+slot0.CalcDamageLockCrush = slot16
 
-function slot15()
+function slot16()
 	slot0 = 0
 	slot1 = 100000
 
 	return slot0, slot1
 end
 
-slot0.UnilateralCrush = slot15
+slot0.UnilateralCrush = slot16
 
-function slot15(slot0)
+function slot16(slot0, slot1, ...)
+	slot3 = slot1
+	slot2 = slot1.GetIFF
+	slot2 = slot2(slot3)
+	slot3 = ys
+	slot3 = slot3.Battle
+	slot3 = slot3.BattleConfig
+	slot3 = slot3.FRIENDLY_CODE
+
+	if slot2 == slot3 then
+		slot3 = 1
+		slot4 = {
+			isMiss = false,
+			isCri = false,
+			isDamagePrevent = false
+		}
+
+		return slot3, slot4
+	else
+		slot3 = ys
+		slot3 = slot3.Battle
+		slot3 = slot3.BattleConfig
+		slot3 = slot3.FOE_CODE
+
+		if slot2 == slot3 then
+			slot3 = uv0
+			slot3 = slot3.CalculateDamage
+			slot4 = slot0
+			slot5 = slot1
+
+			return slot3(slot4, slot5, ...)
+		end
+	end
+end
+
+slot0.FriendInvincibleDamage = slot16
+
+function slot16(slot0, slot1)
+	slot2 = uv0
+	slot2 = slot2.CalculateCrashDamage
+	slot3 = slot0
+	slot4 = slot1
+	slot2, slot3 = slot2(slot3, slot4)
+	slot4 = 1
+	slot6 = slot1
+	slot5 = slot1.GetIFF
+	slot5 = slot5(slot6)
+	slot6 = ys
+	slot6 = slot6.Battle
+	slot6 = slot6.BattleConfig
+	slot6 = slot6.FRIENDLY_CODE
+
+	if slot5 == slot6 then
+		slot3 = 1
+	end
+
+	slot5 = slot4
+	slot6 = slot3
+
+	return slot5, slot6
+end
+
+slot0.FriendInvincibleCrashDamage = slot16
+
+function slot16(slot0)
 	slot1 = slot0 * 0.01
 	slot1 = 1 - slot1
 
 	return slot1
 end
 
-slot0.ChapterRepressReduce = slot15
+slot0.ChapterRepressReduce = slot16
 
-function slot15(slot0)
+function slot16(slot0)
 	slot1 = 0
 
 	if slot0 <= slot1 then
@@ -1636,9 +1926,9 @@ function slot15(slot0)
 	end
 end
 
-slot0.IsHappen = slot15
+slot0.IsHappen = slot16
 
-function slot15(slot0)
+function slot16(slot0)
 	slot1 = uv0
 	slot1 = slot1.GenerateWeightList
 	slot2 = slot0
@@ -1652,9 +1942,9 @@ function slot15(slot0)
 	return slot3
 end
 
-slot0.WeightRandom = slot15
+slot0.WeightRandom = slot16
 
-function slot15(slot0, slot1)
+function slot16(slot0, slot1)
 	slot2 = math
 	slot2 = slot2.random
 	slot3 = 0
@@ -1674,9 +1964,9 @@ function slot15(slot0, slot1)
 	end
 end
 
-slot0.WeightListRandom = slot15
+slot0.WeightListRandom = slot16
 
-function slot15(slot0)
+function slot16(slot0)
 	slot1 = {}
 	slot2 = -1
 	slot3 = ipairs
@@ -1703,9 +1993,9 @@ function slot15(slot0)
 	return slot3, slot4
 end
 
-slot0.GenerateWeightList = slot15
+slot0.GenerateWeightList = slot16
 
-function slot15(slot0)
+function slot16(slot0)
 	slot1 = ipairs
 	slot2 = slot0
 	slot1, slot2, slot3 = slot1(slot2)
@@ -1730,9 +2020,9 @@ function slot15(slot0)
 	return slot1, slot2
 end
 
-slot0.IsListHappen = slot15
+slot0.IsListHappen = slot16
 
-function slot15(slot0, slot1)
+function slot16(slot0, slot1)
 	slot2 = math
 	slot2 = slot2.rad2Deg
 	slot3 = math
@@ -1749,9 +2039,9 @@ function slot15(slot0, slot1)
 	return slot2
 end
 
-slot0.BulletYAngle = slot15
+slot0.BulletYAngle = slot16
 
-function slot15(slot0, slot1)
+function slot16(slot0, slot1)
 	if not slot1 then
 		slot1 = 10
 	end
@@ -1811,9 +2101,9 @@ function slot15(slot0, slot1)
 	return slot6
 end
 
-slot0.RandomPosNull = slot15
+slot0.RandomPosNull = slot16
 
-function slot15(slot0)
+function slot16(slot0)
 	slot1 = slot0[1]
 
 	if not slot1 then
@@ -1889,9 +2179,9 @@ function slot15(slot0)
 	end
 end
 
-slot0.RandomPos = slot15
+slot0.RandomPos = slot16
 
-function slot15(slot0, slot1, slot2)
+function slot16(slot0, slot1, slot2)
 	slot1 = slot0[slot1]
 	slot2 = slot0[slot2]
 
@@ -1909,9 +2199,9 @@ function slot15(slot0, slot1, slot2)
 	end
 end
 
-slot0.RandomPosXYZ = slot15
+slot0.RandomPosXYZ = slot16
 
-function slot15(slot0)
+function slot16(slot0)
 	slot1 = uv0
 	slot1 = slot1.RandomDelta
 	slot2 = slot0.rangeX
@@ -1932,9 +2222,9 @@ function slot15(slot0)
 	return slot4(slot5, slot6, slot7)
 end
 
-slot0.RandomPosCenterRange = slot15
+slot0.RandomPosCenterRange = slot16
 
-function slot15(slot0)
+function slot16(slot0)
 	if slot0 then
 		slot1 = 0
 
@@ -1954,4 +2244,4 @@ function slot15(slot0)
 	end
 end
 
-slot0.RandomDelta = slot15
+slot0.RandomDelta = slot16

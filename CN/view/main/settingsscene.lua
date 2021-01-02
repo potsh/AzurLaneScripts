@@ -23,6 +23,7 @@ function slot0.init(slot0)
 	setActive(slot0.helpUS, PLATFORM_CODE == PLATFORM_US)
 
 	slot0.repairMask = slot0:findTF("mask_repair")
+	slot0.msgBox = SettingsMsgBosPage.New(slot0._tf, slot0.event)
 
 	slot0:initSoundPanel(slot0:findTF("main/resources"))
 	slot0:initOptionsPanel(slot0:findTF("main/options"))
@@ -266,6 +267,13 @@ slot2 = {
 		title = i18n("words_battle_hide_bg"),
 		name = BATTLE_HIDE_BG,
 		desc = i18n("option_desc10")
+	},
+	{
+		default = 0,
+		alignment = 1,
+		title = i18n("words_battle_expose_line"),
+		name = BATTLE_EXPOSE_LINE,
+		desc = i18n("option_desc11")
 	}
 }
 slot3 = {
@@ -320,11 +328,7 @@ function slot0.initOptionsPanel(slot0, slot1)
 
 		setText(slot0:findTF("Text", slot15), slot14.title)
 		onButton(slot0, slot0:findTF("Text", slot15), function ()
-			pg.MsgboxMgr.GetInstance():ShowMsgBox({
-				hideNo = true,
-				hideYes = true,
-				content = uv0.desc
-			})
+			uv0.msgBox:ExecuteAction("Show", uv1.desc, uv1.alignment)
 		end)
 		onToggle(slot0, slot15:Find("on"), function (slot0)
 			pg.PushNotificationMgr.GetInstance():setSwitch(uv0.id, slot0)
@@ -341,11 +345,7 @@ function slot0.initOptionsPanel(slot0, slot1)
 
 		setText(slot0:findTF("Text", slot15), slot14.title)
 		onButton(slot0, slot0:findTF("Text", slot15), function ()
-			pg.MsgboxMgr.GetInstance():ShowMsgBox({
-				hideNo = true,
-				hideYes = true,
-				content = uv0.desc
-			})
+			uv0.msgBox:ExecuteAction("Show", uv1.desc, uv1.alignment)
 		end)
 
 		if slot13 == 1 then
@@ -375,6 +375,15 @@ function slot0.initOptionsPanel(slot0, slot1)
 	end
 
 	slot0:UpdateBackYardConfig()
+	setActive(slot0:findTF("scroll_view/Viewport/content/world_boss_notifications", slot1), false)
+
+	slot10, slot11 = pg.SystemOpenMgr.GetInstance():isOpenSystem(getProxy(PlayerProxy):getData().level, "WorldMediator")
+
+	setActive(slot1:Find("scroll_view/Viewport/content/world_settings"), slot10)
+
+	if slot10 then
+		slot0:InitWorldPanel(slot1)
+	end
 end
 
 function slot0.UpdateBackYardConfig(slot0)
@@ -389,11 +398,7 @@ function slot0.UpdateBackYardConfig(slot0)
 
 			setText(slot0:findTF("Text", slot7), slot6.title)
 			onButton(slot0, slot0:findTF("Text", slot7), function ()
-				pg.MsgboxMgr.GetInstance():ShowMsgBox({
-					hideNo = true,
-					hideYes = true,
-					content = uv0.desc
-				})
+				uv0.msgBox:ExecuteAction("Show", uv1.desc, uv1.alignment)
 			end)
 			table.insert(slot0.backyardConfigToggles, {
 				value = slot6,
@@ -417,6 +422,53 @@ function slot0.InitOptionByPlayerFlag(slot0, slot1, slot2)
 	end, SFX_UI_TAG, SFX_UI_CANCEL)
 	triggerToggle(slot2:Find("on"), not slot5)
 	triggerToggle(slot2:Find("off"), slot5)
+end
+
+function slot0.InitWorldBossPanel(slot0, slot1)
+	for slot8, slot9 in ipairs({
+		i18n("world_word_world"),
+		i18n("world_word_friend"),
+		i18n("world_word_guild")
+	}) do
+		slot10 = cloneTplTo(slot0:findTF("scroll_view/Viewport/content/world_boss_notifications/options", slot1):Find("notify_tpl"), slot2)
+		slot11 = getProxy(SettingsProxy):GetWorldBossFlag(slot8)
+
+		setText(slot10:Find("Text"), slot9)
+		onToggle(slot0, slot10:Find("on"), function (slot0)
+			if uv0 ~= slot0 then
+				getProxy(SettingsProxy):SetWorldBossFlag(uv1, slot0)
+
+				uv0 = slot0
+			end
+		end, SFX_UI_TAG, SFX_UI_CANCEL)
+		triggerToggle(slot10:Find("on"), slot11)
+		triggerToggle(slot10:Find("off"), not slot11)
+	end
+end
+
+function slot0.InitWorldPanel(slot0, slot1)
+	for slot8, slot9 in pairs({
+		story_tips = i18n("world_setting_quickmode")
+	}) do
+		slot10 = cloneTplTo(slot1:Find("scroll_view/Viewport/content/world_settings/options"):Find("notify_tpl"), slot2)
+		slot11 = getProxy(SettingsProxy):GetWorldFlag(slot8)
+
+		setText(slot10:Find("Text"), slot9)
+		onButton(slot0, slot10:Find("Text"), function ()
+			uv0.msgBox:ExecuteAction("Show", i18n("world_setting_quickmodetip"))
+		end)
+		onToggle(slot0, slot10:Find("on"), function (slot0)
+			if uv0 ~= slot0 then
+				getProxy(SettingsProxy):SetWorldFlag(uv1, slot0)
+
+				uv0 = slot0
+			end
+		end, SFX_UI_TAG, SFX_UI_CANCEL)
+		triggerToggle(slot10:Find("on"), slot11)
+		triggerToggle(slot10:Find("off"), not slot11)
+	end
+
+	setText(slot1:Find("scroll_view/Viewport/content/world_settings/title"), i18n("world_setting_title"))
 end
 
 function slot0.initInterfacePreference(slot0, slot1)
@@ -1137,7 +1189,23 @@ function slot0.initOtherPanel(slot0)
 		end
 	end
 
+	slot0:UpdateAgreementPanel()
 	slot0:updateOtherPanel()
+end
+
+function slot0.UpdateAgreementPanel(slot0)
+	slot2 = PLATFORM_CODE == PLATFORM_CH and CSharpVersion > 40
+
+	setActive(slot0:findTF("agreement", slot0.otherContent), slot2)
+
+	if slot2 then
+		onButton(slot0, slot1:Find("private"), function ()
+			pg.SdkMgr.GetInstance():ShowPrivate()
+		end, SFX_PANEL)
+		onButton(slot0, slot1:Find("licence"), function ()
+			pg.SdkMgr.GetInstance():ShowLicence()
+		end, SFX_PANEL)
+	end
 end
 
 function slot0.updateOtherPanel(slot0)
@@ -1222,262 +1290,6 @@ function slot0.didEnter(slot0)
 		end
 	end)
 	triggerToggle(slot0.soundToggle, true)
-
-	slot0._cvTest = slot0:findTF("cvTest")
-	slot0._hpBtn = slot0:findTF("dungeon_hp")
-
-	if SFX_TEST then
-		setActive(slot0._cvTest, true)
-
-		slot0._cvPanel = slot0:findTF("CVTestPanel")
-		slot0._cvPanelBack = slot0:findTF("back", slot0._cvPanel)
-		slot0._cvPlay = slot0:findTF("characterPlay", slot0._cvPanel)
-		slot0._cvID = slot0:findTF("characterID", slot0._cvPanel)
-		slot0._cvLabel = slot0:findTF("voiceLabel", slot0._cvPanel)
-		slot0._cvPre = slot0:findTF("preVoice", slot0._cvPanel)
-		slot0._cvPost = slot0:findTF("postVoice", slot0._cvPanel)
-		slot0._cvChat = slot0:findTF("chat", slot0._cvPanel)
-		slot0._cvNameList = {
-			{
-				"get",
-				"unlock",
-				1
-			},
-			{
-				"login",
-				"login",
-				1
-			},
-			{
-				"detail",
-				"detail",
-				1
-			},
-			{
-				"main_1",
-				"main",
-				1
-			},
-			{
-				"main_2",
-				"main",
-				2
-			},
-			{
-				"main_3",
-				"main",
-				3
-			},
-			{
-				"touch_1",
-				"touch",
-				1
-			},
-			{
-				"touch_2",
-				"touch2",
-				1
-			},
-			{
-				"task",
-				"mission",
-				1
-			},
-			{
-				"headtouch",
-				"touch_head",
-				1
-			},
-			{
-				"warcry",
-				"battle",
-				1
-			},
-			{
-				"mvp",
-				"win_mvp",
-				1
-			},
-			{
-				"lose",
-				"lose",
-				1
-			},
-			{
-				"skill",
-				"skill",
-				1
-			},
-			{
-				"mail",
-				"mail"
-			},
-			{
-				"home",
-				"home"
-			},
-			{
-				"mission_complete",
-				"mission_complete"
-			},
-			{
-				"profile",
-				"profile"
-			},
-			{
-				"feeling1",
-				"feeling1"
-			},
-			{
-				"feeling2",
-				"feeling2"
-			},
-			{
-				"feeling3",
-				"feeling3"
-			},
-			{
-				"feeling4",
-				"feeling4"
-			},
-			{
-				"feeling5",
-				"feeling5"
-			},
-			{
-				"expedition",
-				"expedition"
-			},
-			{
-				"profile",
-				"profile"
-			},
-			{
-				"propose",
-				"propose"
-			},
-			{
-				"upgrade",
-				"upgrade"
-			}
-		}
-
-		onButton(slot0, slot0._cvTest, function ()
-			setActive(uv0._cvPanel, true)
-
-			uv0._cvList = {}
-			uv0._cvIndex = 1
-		end)
-
-		function slot1()
-			if uv0._currentVoice then
-				uv0._currentVoice:PlaybackStop()
-			end
-
-			slot1 = uv0._cvNameList[uv0._cvIndex]
-			uv0._cvLabel:GetComponent(typeof(Text)).text = slot1[1]
-
-			if slot1[1] == "skill" then
-				slot2, slot3, slot4 = ShipWordHelper.GetWordAndCV(tonumber(uv0._cvID:GetComponent(typeof(InputField)).text), slot1[1])
-				uv0._cvChat:GetComponent(typeof(Text)).text = ""
-
-				pg.CriMgr.GetInstance():PlaySoundEffect_V3(slot3, function (slot0)
-					uv0._currentVoice = slot0
-				end)
-			else
-				slot2, slot3, slot5:GetComponent(typeof(Text)).text = ShipWordHelper.GetWordAndCV(slot0, slot1[2], slot1[3])
-				slot5 = uv0._cvChat
-
-				pg.CriMgr.GetInstance():PlaySoundEffect_V3(slot3, function (slot0)
-					uv0._currentVoice = slot0
-				end)
-			end
-		end
-
-		onButton(slot0, slot0._cvPlay, function ()
-			function slot2()
-				pg.CriMgr:LoadBattleCV(uv1, function ()
-					uv0._cvList[uv1] = true
-
-					uv2()
-				end)
-			end
-
-			if uv0._cvList[ShipWordHelper.RawGetCVKey(tonumber(uv0._cvID:GetComponent(typeof(InputField)).text))] then
-				uv1()
-			else
-				pg.CriMgr:LoadCV(slot1, slot2)
-			end
-		end)
-		onButton(slot0, slot0._cvPanelBack, function ()
-			setActive(uv0._cvPanel, false)
-			uv0:clearCV()
-		end)
-		onButton(slot0, slot0._cvPre, function ()
-			uv0._cvIndex = uv0._cvIndex - 1
-
-			if uv0._cvIndex <= 0 then
-				uv0._cvIndex = #uv0._cvNameList
-			end
-
-			uv1()
-		end)
-		onButton(slot0, slot0._cvPost, function ()
-			uv0._cvIndex = uv0._cvIndex + 1
-
-			if uv0._cvIndex > #uv0._cvNameList then
-				uv0._cvIndex = 1
-			end
-
-			uv1()
-		end)
-		onButton(slot0, slot0:findTF("CVTestPanel/play"), function ()
-			pg.StoryMgr.GetInstance():Play(uv0:findTF("CVTestPanel/playid"):GetComponent(typeof(InputField)).text, nil, true)
-		end)
-		setActive(slot0._hpBtn, true)
-
-		slot0._dungeonHPPanel = slot0:findTF("dungeonHPPanel")
-		slot0._dungeonID = slot0:findTF("dungeonHPPanel/dungeonID")
-		slot0._dungeonLV = slot0:findTF("dungeonHPPanel/dungeonLV")
-		slot0._dungeonHP = slot0:findTF("dungeonHPPanel/DMG")
-
-		onButton(slot0, slot0._hpBtn, function ()
-			setActive(uv0._dungeonHPPanel, true)
-		end)
-		onButton(slot0, slot0:findTF("dungeonHPPanel/calcBtn"), function ()
-			slot1 = tonumber(uv0._dungeonLV:GetComponent(typeof(InputField)).text)
-			slot2 = 0
-			slot3 = {}
-
-			for slot8, slot9 in ipairs(ys.Battle.BattleDataFunction.GetDungeonTmpDataByID(tonumber(uv0._dungeonID:GetComponent(typeof(InputField)).text)).stages) do
-				for slot13, slot14 in ipairs(slot9.waves) do
-					if slot14.triggerType == ys.Battle.BattleConst.WaveTriggerType.NORMAL then
-						for slot18, slot19 in ipairs(slot14.spawn) do
-							slot3[#slot3 + 1] = slot19.monsterTemplateID
-						end
-
-						if slot14.reinforcement then
-							for slot18, slot19 in ipairs(slot14.reinforcement) do
-								slot3[#slot3 + 1] = slot19.monsterTemplateID
-							end
-						end
-					end
-				end
-			end
-
-			for slot8, slot9 in ipairs(slot3) do
-				slot10 = ys.Battle.BattleDataFunction.GetMonsterTmpDataFromID(slot9)
-				slot2 = slot2 + slot10.durability + slot10.durability_growth * (slot1 - 1) / 1000
-			end
-
-			setText(uv0._dungeonHP, slot2)
-		end)
-
-		return
-	end
-
-	setActive(slot0._cvTest, false)
-	setActive(slot0._hpBtn, false)
 end
 
 function slot0.onBackPressed(slot0)
@@ -1543,6 +1355,10 @@ function slot0.willExit(slot0)
 
 	slot0.musicDownloadTimer = nil
 	slot0.userProxy = nil
+
+	slot0.msgBox:Destroy()
+
+	slot0.msgBox = nil
 end
 
 function slot0.initJPAccountPanel(slot0, slot1)

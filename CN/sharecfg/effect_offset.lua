@@ -440,6 +440,17 @@ pg.effect_offset = {
 			0
 		}
 	},
+	shield06 = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
 	appearbig = {
 		mirror = false,
 		y_scale = false,
@@ -1021,6 +1032,160 @@ pg.effect_offset = {
 			6.82,
 			2.5,
 			-2.75
+		}
+	},
+	fengzhijiejie = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			0,
+			2.36,
+			0.68
+		}
+	},
+	fengzhijiejie_ceshizhe = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			0,
+			1.7,
+			0.68
+		}
+	},
+	Hedandaji_warning = {
+		mirror = false,
+		y_scale = true,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	Shield_enemy = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.08,
+			1.24,
+			0
+		}
+	},
+	hudie_heise = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.5,
+			0,
+			0
+		}
+	},
+	hudie_hongse = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.5,
+			0,
+			0
+		}
+	},
+	juguangdeng_xingguang_STG = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			-5,
+			8,
+			0
+		}
+	},
+	juguangdeng_xingguang_BOSS = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			2,
+			7.5,
+			0
+		}
+	},
+	bullet_ta02 = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			-1.5,
+			3.5,
+			0
+		}
+	},
+	plane_shadow = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			0,
+			-4,
+			0
+		}
+	},
+	plane_yinzhang_single = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = false,
+		offset = {
+			-0.2,
+			0,
+			0
+		}
+	},
+	plane_yinzhang_double = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	plane_yinzhang_single_xiaolong = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = false,
+		offset = {
+			-0.32,
+			0.05,
+			0
+		}
+	},
+	plane_miaozhun = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			0.3,
+			0
 		}
 	}
 }

@@ -106,7 +106,7 @@ function slot0.Init(slot0, slot1)
 	print("initializing pool manager...")
 
 	slot2 = 0
-	slot3 = table.nums(slot0.preloads)
+	slot3 = table.getCount(slot0.preloads)
 
 	function slot4()
 		uv0 = uv0 + 1
@@ -236,10 +236,12 @@ function slot0.IsSpineSkelCached(slot0, slot1)
 end
 
 slot6 = {
-	"ResPanel"
+	"ResPanel",
+	"WorldResPanel"
 }
 slot7 = {
 	"ResPanel",
+	"WorldResPanel",
 	"MainUI",
 	"DockyardUI",
 	"AwardInfoUI",
@@ -250,9 +252,12 @@ slot7 = {
 	"ToastUI",
 	"MsgBox",
 	"TipPanel",
-	"Loading"
+	"Loading",
+	"WorldUI"
 }
-slot8 = {}
+slot8 = {
+	"WorldAllocateUI"
+}
 
 function slot0.GetUI(slot0, slot1, slot2, slot3)
 	slot0:FromPlural("ui/" .. slot1, slot1, slot2, table.contains(uv0, slot1) and 3 or 1, function (slot0)
@@ -347,7 +352,7 @@ function slot0.GetPainting(slot0, slot1, slot2, slot3)
 	slot0:FromPlural(slot4, slot1, slot2, 1, function (slot0)
 		slot0:SetActive(true)
 
-		if Ship.DefaultFaceless(uv0) then
+		if ShipExpressionHelper.DefaultFaceless(uv0) then
 			setActive(tf(slot0):Find("face"), true)
 		end
 

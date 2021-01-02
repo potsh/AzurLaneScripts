@@ -155,6 +155,16 @@ function slot3.onTrigger(slot0, slot1, slot2, slot3)
 			slot9:Trigger(slot1, slot2, slot0, slot3)
 			slot9:SetActive()
 		end
+
+		if slot0._isCancel then
+			break
+		end
+	end
+
+	if slot0._isCancel then
+		slot0._isCancel = nil
+
+		slot0:Remove()
 	end
 end
 
@@ -164,7 +174,7 @@ function slot3.SetRemoveTime(slot0)
 end
 
 function slot3.IsTimeToRemove(slot0, slot1)
-	if slot0:IsToCancel() then
+	if slot0._isCancel then
 		return true
 	elseif slot0._cancelTime and slot0._cancelTime <= slot1 then
 		return true
@@ -193,20 +203,22 @@ function slot3.GetLv(slot0)
 	return slot0._level or 1
 end
 
+function slot3.GetDuration(slot0)
+	return slot0._time
+end
+
+function slot3.GetStack(slot0)
+	return slot0._stack or 1
+end
+
 function slot3.SetToCancel(slot0, slot1)
 	if slot1 then
 		if not slot0._cancelTime then
 			slot0._cancelTime = pg.TimeMgr.GetInstance():GetCombatTime() + slot1
 		end
 	else
-		slot0:Remove()
-
 		slot0._isCancel = true
 	end
-end
-
-function slot3.IsToCancel(slot0)
-	return slot0._isCancel
 end
 
 function slot3.Dispose(slot0)

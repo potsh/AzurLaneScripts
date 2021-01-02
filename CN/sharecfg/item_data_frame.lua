@@ -88,6 +88,14 @@ pg.item_data_frame = {
 		desc = "<color=#ffffff>献给所有勇于挑战极限的指挥官们</color>\n通过参与「限界挑战」获取 （20.07.09-20.10.04）",
 		scene = {}
 	},
+	[207] = {
+		name = "限界的挑战者VII",
+		time_second = 0,
+		id = 207,
+		time_limit_type = 0,
+		desc = "<color=#ffffff>献给所有勇于挑战极限的指挥官们</color>\n通过参与「限界挑战」获取 （20.10.12-21.01.17）",
+		scene = {}
+	},
 	[300] = {
 		name = "召集者",
 		time_second = 2592000,
@@ -157,7 +165,7 @@ pg.item_data_frame = {
 		time_second = 0,
 		id = 308,
 		time_limit_type = 0,
-		desc = "<color=#ffffff>愿昔日的颂歌再次响彻天空，Vive la Iris！</color>\n「穹顶下的圣咏曲」活动获取",
+		desc = "<color=#ffffff>「愿昔日的颂歌再次响彻天空，Vive la Iris！」</color>\n「穹顶下的圣咏曲」活动获取",
 		scene = {}
 	},
 	[309] = {
@@ -165,7 +173,23 @@ pg.item_data_frame = {
 		time_second = 0,
 		id = 309,
 		time_limit_type = 0,
-		desc = "<color=#ffffff>等待后续活动获取</color>",
+		desc = "<color=#ffffff>为皇家的荣耀而战，天佑女王</color>\n「永夜幻光」活动获取",
+		scene = {}
+	},
+	[311] = {
+		name = "浮光蝶影",
+		time_second = 0,
+		id = 311,
+		time_limit_type = 0,
+		desc = "<color=#ffffff>「无论现世亦或梦境，皆愿希望之光长存。」</color>\n「蝶海梦花」活动获取",
+		scene = {}
+	},
+	[312] = {
+		name = "铁血之器",
+		time_second = 0,
+		id = 312,
+		time_limit_type = 0,
+		desc = "<color=#ffffff>「以冷彻之器，重铸赤红的铁血意志。」</color>\n「负象限作战」活动获取",
 		scene = {}
 	},
 	[401] = {
@@ -212,6 +236,7 @@ pg.item_data_frame = {
 		204,
 		205,
 		206,
+		207,
 		300,
 		301,
 		302,
@@ -222,6 +247,8 @@ pg.item_data_frame = {
 		307,
 		308,
 		309,
+		311,
+		312,
 		401,
 		402,
 		404,

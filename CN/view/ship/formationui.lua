@@ -130,7 +130,7 @@ function slot0.init(slot0)
 	slot0._vanGSTxt.text = slot0.prevVanGS or 0
 	slot0._mainGSTxt.text = slot0.prevMainGS or 0
 	slot0._subGSTxt.text = slot0.prevSubGS or 0
-	slot0.commanderFormationPanel = CommanderFormationPage.New(pg.UIMgr.GetInstance().OverlayMain, slot0.event, slot0.contextData)
+	slot0.commanderFormationPanel = CommanderFormationPage.New(slot0._tf, slot0.event, slot0.contextData)
 	slot0.index = {
 		[FleetType.Normal] = 1,
 		[FleetType.Submarine] = 1
@@ -221,7 +221,7 @@ function slot0.SetFleetNameLabel(slot0)
 	setText(slot0._fleetNameText, slot0.defaultFleetName(slot0._currentFleetVO))
 end
 
-function slot0.quckExitFunc(slot0)
+function slot0.quickExitFunc(slot0)
 	if slot0._currentDragDelegate then
 		slot0._forceDropCharacter = true
 
@@ -361,6 +361,12 @@ function slot0.didEnter(slot0)
 	slot0:UpdateFleetView(true)
 	triggerToggle(slot0[slot0.contextData.toggle or uv0.TOGGLE_FORMATION], true)
 	slot0:tweenTabArrow(true)
+	onButton(slot0, slot0._vanguardGS:Find("SonarTip"), function ()
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
+			type = MSGBOX_TYPE_HELP,
+			helps = pg.gametip.fleet_antisub_range_tip.tip
+		})
+	end, SFX_PANEL)
 end
 
 function slot0.SetCurrentFleetID(slot0, slot1)
@@ -371,11 +377,8 @@ end
 
 function slot0.updateCommanderFormation(slot0)
 	if slot0.isOpenCommander then
+		slot0.commanderFormationPanel:Load()
 		slot0.commanderFormationPanel:ActionInvoke("Update", slot0._currentFleetVO, slot0.commanderPrefabFleets)
-
-		if not slot0.commanderFormationPanel:GetLoaded() then
-			slot0.commanderFormationPanel:Load()
-		end
 	end
 end
 
@@ -866,7 +869,7 @@ function slot0.sortSiblingIndex(slot0)
 	}, function (slot0)
 		if #uv0._cards[slot0] > 0 then
 			for slot5 = 1, #slot1 do
-				slot1[slot5].tr:SetSiblingIndex(slot5)
+				slot1[slot5].tr:SetSiblingIndex(slot5 - 1)
 			end
 		end
 	end)
@@ -928,6 +931,21 @@ function slot0.displayFleetInfo(slot0)
 		slot0.contextData.vanGS = slot2
 		slot0.mainGSInited = true
 		slot0.VanGSInited = true
+
+		setActive(slot0._vanguardGS:Find("SonarActive"), slot0._currentFleetVO:GetFleetSonarRange() > 0)
+		setActive(slot0._vanguardGS:Find("SonarInactive"), slot7 <= 0)
+
+		if slot7 > 0 then
+			setText(slot0._vanguardGS:Find("SonarActive/Text"), math.floor(slot7))
+			onButton(slot0, slot0._vanguardGS:Find("SonarActive"), function ()
+				pg.MsgboxMgr.GetInstance():ShowMsgBox({
+					type = MSGBOX_TYPE_HELP,
+					helps = pg.gametip.fleet_antisub_range_tip.tip
+				})
+			end, SFX_PANEL)
+		else
+			onButton(slot0, slot0._vanguardGS:Find("SonarInactive"), slot8, SFX_PANEL)
+		end
 	elseif slot6 == FleetType.Submarine then
 		setActive(slot0._arrUpSub, false)
 		setActive(slot0._arrDownSub, false)
@@ -959,31 +977,17 @@ function slot0.DisplayRenamePanel(slot0, slot1)
 	else
 		pg.UIMgr.GetInstance():UnblurPanel(slot0._renamePanel, slot0._tf)
 	end
-
-	if slot1 then
-		slot0.commanderFormationPanel:ActionInvoke("Hide")
-	else
-		slot0.commanderFormationPanel:ActionInvoke("Show")
-	end
 end
 
 function slot0.hideAttrFrame(slot0)
 	SetActive(slot0._attrFrame, false)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._blurLayer, slot0._tf)
-
-	if slot0.isOpenCommander then
-		slot0.commanderFormationPanel:ActionInvoke("Show")
-	end
 end
 
 function slot0.displayAttrFrame(slot0)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._blurLayer, false)
 	SetActive(slot0._attrFrame, true)
 	slot0:initAttrFrame()
-
-	if slot0.isOpenCommander then
-		slot0.commanderFormationPanel:ActionInvoke("Hide")
-	end
 end
 
 function slot0.initAttrFrame(slot0)
@@ -1066,7 +1070,7 @@ function slot0.getCardAttrProps(slot0, slot1)
 		},
 		{
 			i18n("word_synthesize_power"),
-			"<color=#ffff00>" .. math.floor(slot1:getShipCombatPower()) .. "</color>"
+			"<color=#ffff00>" .. slot1:getShipCombatPower() .. "</color>"
 		}
 	}
 end
@@ -1101,29 +1105,7 @@ function slot0.attachOnCardButton(slot0, slot1, slot2)
 		slot5 = slot1.tr.parent:GetComponent("ContentSizeFitter")
 		slot6 = slot1.tr.parent:GetComponent("HorizontalLayoutGroup")
 		slot7 = slot1.tr.rect.width * 0.5
-		slot8 = nil
-		slot9 = 0
-		slot10 = {}
-
-		function slot12()
-			for slot3 = 1, #uv0 do
-				uv0[slot3].tr.anchoredPosition = uv1[slot3]
-			end
-		end
-
-		slot13 = Timer.New(function ()
-			for slot3 = 1, #uv0 do
-				if uv0[slot3] and uv0[slot3] ~= uv1 then
-					uv0[slot3].tr.anchoredPosition = uv0[slot3].tr.anchoredPosition * 0.5 + Vector2(uv2[slot3].x, uv2[slot3].y) * 0.5
-				end
-			end
-
-			if uv3 and uv4 <= Time.realtimeSinceStartup then
-				uv5:OnDrag(uv3)
-
-				uv3 = nil
-			end
-		end, 0.03333333333333333, -1)
+		slot8 = {}
 
 		slot3:AddBeginDragFunc(function ()
 			if uv0.carddrag then
@@ -1145,7 +1127,6 @@ function slot0.attachOnCardButton(slot0, slot1, slot2)
 				uv6[slot3] = uv5[slot3].tr.anchoredPosition
 			end
 
-			uv7:Start()
 			LeanTween.scale(uv2.paintingTr, Vector3(1.1, 1.1, 0), 0.3)
 		end)
 		slot3:AddDragFunc(function (slot0, slot1)
@@ -1156,25 +1137,24 @@ function slot0.attachOnCardButton(slot0, slot1, slot2)
 			slot2 = uv1.tr.localPosition
 			slot2.x = uv0:change2ScrPos(uv1.tr.parent, slot1.position).x
 			uv1.tr.localPosition = slot2
-
-			if Time.realtimeSinceStartup < uv2 then
-				uv3 = slot1
-
-				return
-			end
-
 			slot3 = 1
 
-			for slot7 = 1, #uv4 do
-				if uv4[slot7] ~= uv1 and uv4[slot7].shipVO and uv1.tr.localPosition.x > uv4[slot7].tr.localPosition.x + (slot3 < uv0._shiftIndex and 1.1 or -1.1) * uv5 then
+			for slot7 = 1, #uv2 do
+				if uv2[slot7] ~= uv1 and uv2[slot7].shipVO and uv1.tr.localPosition.x > uv2[slot7].tr.localPosition.x + (slot3 < uv0._shiftIndex and 1.1 or -1.1) * uv3 then
 					slot3 = slot3 + 1
 				end
 			end
 
 			if uv0._shiftIndex ~= slot3 then
-				uv0:shift(uv0._shiftIndex, slot3, uv6)
+				slot7 = slot3
 
-				uv2 = Time.realtimeSinceStartup + 0.15
+				uv0:shift(uv0._shiftIndex, slot7, uv4)
+
+				for slot7 = 1, #uv2 do
+					if uv2[slot7] and uv2[slot7] ~= uv1 then
+						uv2[slot7].tr.anchoredPosition = uv5[slot7]
+					end
+				end
 			end
 		end)
 		slot3:AddDragEndFunc(function (slot0, slot1)
@@ -1183,19 +1163,20 @@ function slot0.attachOnCardButton(slot0, slot1, slot2)
 			end
 
 			function resetCard()
-				uv0()
+				for slot3 = 1, #uv0 do
+					uv0[slot3].tr.anchoredPosition = uv1[slot3]
+				end
 
-				uv1.enabled = true
 				uv2.enabled = true
-				uv3._shiftIndex = nil
+				uv3.enabled = true
+				uv4._shiftIndex = nil
 
-				uv4:Stop()
-				uv3:updateUltimateTitle()
-				uv3:sortSiblingIndex()
-				uv3:emit(FormationMediator.CHANGE_FLEET_SHIPS_ORDER, uv3._currentFleetVO)
+				uv4:updateUltimateTitle()
+				uv4:sortSiblingIndex()
+				uv4:emit(FormationMediator.CHANGE_FLEET_SHIPS_ORDER, uv4._currentFleetVO)
 
 				uv5.enabled = true
-				uv3.carddrag = nil
+				uv4.carddrag = nil
 			end
 
 			uv0._forceDropCharacter = nil
@@ -1207,7 +1188,7 @@ function slot0.attachOnCardButton(slot0, slot1, slot2)
 
 				uv1.paintingTr.localScale = Vector3(1, 1, 0)
 			else
-				LeanTween.value(uv1.go, uv1.tr.anchoredPosition.x, uv7[uv0._shiftIndex].x, math.min(math.abs(uv1.tr.anchoredPosition.x - uv7[uv0._shiftIndex].x) / 200, 1) * 0.3):setEase(LeanTweenType.easeOutCubic):setOnUpdate(System.Action_float(function (slot0)
+				LeanTween.value(uv1.go, uv1.tr.anchoredPosition.x, uv3[uv0._shiftIndex].x, math.min(math.abs(uv1.tr.anchoredPosition.x - uv3[uv0._shiftIndex].x) / 200, 1) * 0.3):setEase(LeanTweenType.easeOutCubic):setOnUpdate(System.Action_float(function (slot0)
 					slot1 = uv0.tr.anchoredPosition
 					slot1.x = slot0
 					uv0.tr.anchoredPosition = slot1
@@ -1317,6 +1298,7 @@ function slot0.willExit(slot0)
 
 	slot0:recycleCharacterList(slot0._currentFleetVO.subShips, slot4)
 	slot0:recyclePainting()
+	slot0:DisplayRenamePanel(false)
 
 	for slot4, slot5 in ipairs(slot0._attachmentList) do
 		Object.Destroy(slot5)

@@ -3,6 +3,12 @@ slot0.MODE_VIEW = 1
 slot0.MODE_SELECT = 2
 slot0.SELECT_MODE_SINGLE = 1
 slot0.SELECT_MODE_MULTI = 2
+slot0.FLEET_TYPE_COMMON = 1
+slot0.FLEET_TYPE_ACTBOSS = 2
+slot0.FLEET_TYPE_HARD_CHAPTER = 3
+slot0.FLEET_TYPE_CHALLENGE = 4
+slot0.FLEET_TYPE_GUILDBOSS = 5
+slot0.FLEET_TYPE_WORLD = 6
 
 function slot0.getUIName(slot0)
 	return "CommandRoomUI"
@@ -127,7 +133,9 @@ function slot0.finishStroy(slot0, slot1)
 end
 
 function slot0.tryPlayStroy(slot0)
-	pg.SystemGuideMgr.GetInstance():PlayCommander()
+	if slot0.contextData.fromMain then
+		pg.SystemGuideMgr.GetInstance():PlayCommander()
+	end
 end
 
 function slot0.updateRes(slot0)
@@ -201,7 +209,7 @@ function slot0.initBoxes(slot0)
 			end()
 		else
 			uv0.reservePanel:Load()
-			uv0.reservePanel:AddLoadedCallback(slot0)
+			uv0.reservePanel:CallbackInvoke(slot0)
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0:findTF("boxes_btn", slot0.boxTF), function ()
@@ -211,7 +219,7 @@ function slot0.initBoxes(slot0)
 			end()
 		else
 			uv0.boxesPanel:Load()
-			uv0.boxesPanel:AddLoadedCallback(slot0)
+			uv0.boxesPanel:CallbackInvoke(slot0)
 		end
 	end, SFX_PANEL)
 end
@@ -315,7 +323,7 @@ function slot0.didEnter(slot0)
 			end()
 		else
 			uv0.indexPanel:Load()
-			uv0.indexPanel:AddLoadedCallback(slot0)
+			uv0.indexPanel:CallbackInvoke(slot0)
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.backBtn, function ()
@@ -459,7 +467,7 @@ function slot0.opeRenamePanel(slot0, slot1)
 		end()
 	else
 		slot0.renamePanel:Load()
-		slot0.renamePanel:AddLoadedCallback(slot3)
+		slot0.renamePanel:CallbackInvoke(slot3)
 	end
 end
 
@@ -812,7 +820,7 @@ function slot0.openMsgBox(slot0, slot1)
 		end()
 	else
 		slot0.msgboxPage:Load()
-		slot0.msgboxPage:AddLoadedCallback(slot2)
+		slot0.msgboxPage:CallbackInvoke(slot2)
 	end
 end
 
@@ -829,7 +837,7 @@ function slot0.openTreePanel(slot0, slot1)
 		end()
 	else
 		slot0.treePage:Load()
-		slot0.treePage:AddLoadedCallback(slot2)
+		slot0.treePage:CallbackInvoke(slot2)
 	end
 end
 

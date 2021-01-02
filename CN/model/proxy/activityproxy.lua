@@ -52,6 +52,8 @@ function slot0.register(slot0)
 		if uv0:getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2) and not slot3:isEnd() then
 			uv0:InitActivityBossData(uv0.data[slot3.id])
 		end
+
+		pg.ShipFlagMgr.GetInstance():UpdateFlagShips("inElite")
 	end)
 	slot0:on(11201, function (slot0)
 		if not uv0.data[Activity.Create(slot0.activity_info).id] then
@@ -109,6 +111,18 @@ function slot0.getActivitiesByTypes(slot0, slot1)
 	end
 
 	return slot2
+end
+
+function slot0.GetEarliestActByType(slot0, slot1)
+	slot3 = _.select(slot0:getActivitiesByType(slot1), function (slot0)
+		return not slot0:isEnd()
+	end)
+
+	table.sort(slot3, function (slot0, slot1)
+		return slot0.id < slot1.id
+	end)
+
+	return slot3[1]
 end
 
 function slot0.getMilitaryExerciseActivity(slot0)
@@ -276,6 +290,10 @@ function slot0.deleteActivityById(slot0, slot1)
 	slot0.facade:sendNotification(uv0.ACTIVITY_DELETED, slot1)
 end
 
+function slot0.IsActivityNotEnd(slot0, slot1)
+	return slot0.data[slot1] and not slot0.data[slot1]:isEnd()
+end
+
 function slot0.readyToAchieveByType(slot0, slot1)
 	slot2 = false
 
@@ -318,32 +336,6 @@ function slot0.getBuildActivityCfgByID(slot0, slot1)
 	end
 
 	return nil
-end
-
-function slot0.getBuffList(slot0)
-	_.each(slot0:getActivitiesByType(ActivityConst.ACTIVITY_TYPE_BUFF), function (slot0)
-		if slot0 and not slot0:isEnd() then
-			table.insert(uv0, ActivityBuff.New(slot0.id, slot0:getConfig("config_id")))
-		end
-	end)
-
-	return _.filter({}, function (slot0)
-		return slot0:isActivate()
-	end)
-end
-
-function slot0.GetBuildingBuff(slot0)
-	_.each(slot0:getActivitiesByType(ActivityConst.ACTIVITY_TYPE_BUILDING_BUFF), function (slot0)
-		if slot0 and not slot0:isEnd() then
-			for slot5, slot6 in pairs(slot0.data1KeyValueList[2]) do
-				if pg.activity_event_building[slot5] then
-					table.insert(uv0, ActivityBuff.New(slot0.id, slot7.buff[slot6]))
-				end
-			end
-		end
-	end)
-
-	return {}
 end
 
 function slot0.getBuffShipList(slot0)
@@ -411,8 +403,9 @@ function slot0.recommendActivityFleet(slot0, slot1, slot2)
 		if not slot6:isFull() then
 			function (slot0, slot1)
 				slot7 = slot1
+				slot8 = uv2
 
-				for slot7, slot8 in ipairs(uv0:getActivityRecommendShips(TeamType.TeamToTypeList(slot0), uv1.ships, slot7)) do
+				for slot7, slot8 in ipairs(uv0:getActivityRecommendShips(TeamType.TeamToTypeList(slot0), uv1.ships, slot7, slot8)) do
 					uv1:insertShip(slot8, nil, slot0)
 				end
 			end(TeamType.Submarine, TeamType.SubmarineMax - #slot6.subShips)

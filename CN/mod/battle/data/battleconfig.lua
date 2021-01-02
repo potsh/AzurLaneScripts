@@ -250,7 +250,8 @@ slot0.SHIP_TYPE_ACCURACY_ENHANCE = {
 	[ShipType.JinBi] = "accuracyToShipType_15",
 	[ShipType.ZiBao] = "accuracyToShipType_16",
 	[ShipType.QianMu] = "accuracyToShipType_17",
-	[ShipType.ChaoXun] = "accuracyToShipType_18"
+	[ShipType.ChaoXun] = "accuracyToShipType_18",
+	[ShipType.Yunshu] = "accuracyToShipType_19"
 }
 slot0.OXY_RAID_BASE_LINE_PVE = -20
 slot0.OXY_RAID_BASE_LINE_PVP = -20
@@ -259,6 +260,28 @@ slot0.SUB_DEFAULT_ENGAGE_AI = 90001
 slot0.SUB_DEFAULT_RETREAT_AI = 90002
 slot0.SONAR_DURATION_K = 0.1
 slot0.SONAR_INTERVAL_K = 0.1
+slot0.VAN_SONAR_PROPERTY = {
+	[ShipType.QuZhu] = {
+		a = 2,
+		maxRange = 100,
+		minRange = 45,
+		b = 32
+	},
+	[ShipType.QingXun] = {
+		a = 2.86,
+		maxRange = 80,
+		minRange = 30,
+		b = 0
+	}
+}
+slot0.MAIN_SONAR_PROPERTY = {
+	a = 24,
+	maxRange = 15,
+	minRange = 0
+}
+slot0.SUB_EXPOSE_LASTING_DURATION = 0.5
+slot0.SUB_FADE_IN_DURATION = 0.5
+slot0.SUB_FADE_OUT_DURATION = 0.5
 slot0.SUB_DIVE_IMMUNE_IGNITE_BUFF = 314
 slot0.SUB_FLOAT_DISIMMUNE_IGNITE_BUFF = 315
 slot0.PLAYER_SUB_BUBBLE_FX = "bubble"
@@ -299,3 +322,19 @@ slot0.CHALLENGE_ENHANCE = {
 	Y1 = 10,
 	Y2 = 5
 }
+slot0.LOADING_TIPS_LIMITED_SYSTEM = {
+	SYSTEM_WORLD
+}
+slot0.WORLD_ENEMY_ENHANCEMENT_CONST_B = 80
+slot0.WORLD_ENEMY_ENHANCEMENT_CONST_C = 1.1
+slot0.BULLET_DECREASE_DMG_FONT = {
+	4,
+	0.9
+}
+slot0.CLOAK_EXPOSE_CONST = 50
+slot0.CLOAK_EXPOSE_MAX = 100
+slot0.CLOAK_BASE_RESTORE_DELTA = -60
+slot0.CLOAK_RECOVERY = 5
+slot0.BASE_ARP = 0.1
+slot0.CLOAK_STRIKE_ADDITIVE = 6
+slot0.CLOAK_STRIKE_ADDITIVE_LIMIT = 60

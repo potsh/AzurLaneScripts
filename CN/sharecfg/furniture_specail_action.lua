@@ -108,5 +108,36 @@ pg.furniture_specail_action = {
 				1.4
 			}
 		}
+	},
+	[176] = {
+		id = 176,
+		actions = {
+			{
+				"sit",
+				10
+			}
+		}
+	},
+	[100018] = {
+		id = 100018,
+		actions = {
+			{
+				"tuozhuai2",
+				7
+			}
+		}
+	},
+	[72125] = {
+		id = 72125,
+		actions = {
+			{
+				"stand2",
+				1.23
+			},
+			{
+				"tuozhuai2",
+				0.83
+			}
+		}
 	}
 }

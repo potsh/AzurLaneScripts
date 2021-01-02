@@ -8,7 +8,7 @@ function slot0.onRegister(slot0)
 	slot0._backyardFoodRemind = PlayerPrefs.GetString("backyardRemind")
 	slot0._userAgreement = PlayerPrefs.GetInt("userAgreement", 0) > 0
 	slot0._showMaxLevelHelp = PlayerPrefs.GetInt("maxLevelHelp", 0) > 0
-	slot0.nextTipAoutBattleTime = PlayerPrefs.GetInt("AutoBattleTip", 0)
+	slot0._nextTipAutoBattleTime = PlayerPrefs.GetInt("AutoBattleTip", 0)
 	slot0._setFlagShip = PlayerPrefs.GetInt("setFlagShip", 0) > 0
 	slot0._screenRatio = PlayerPrefs.GetFloat("SetScreenRatio", ADAPT_TARGET)
 	NotchAdapt.CheckNotchRatio = slot0._screenRatio
@@ -17,6 +17,50 @@ function slot0.onRegister(slot0)
 	slot0:resetEquipSceneIndex()
 
 	slot0._isShowCollectionHelp = PlayerPrefs.GetInt("collection_Help", 0) > 0
+	slot0.lastRequestVersionTime = nil
+	slot0.worldBossFlag = {}
+	slot0.worldFlag = {}
+end
+
+function slot0.SetWorldBossFlag(slot0, slot1, slot2)
+	if slot0.worldBossFlag[slot1] ~= slot2 then
+		slot0.worldBossFlag[slot1] = slot2
+
+		PlayerPrefs.SetInt("worldBossFlag" .. slot1, slot2 and 1 or 0)
+		PlayerPrefs.Save()
+	end
+end
+
+function slot0.GetWorldBossFlag(slot0, slot1)
+	if not slot0.worldBossFlag[slot1] then
+		slot0.worldBossFlag[slot1] = PlayerPrefs.GetInt("worldBossFlag" .. slot1, 1) > 0
+	end
+
+	return slot0.worldBossFlag[slot1]
+end
+
+function slot0.SetWorldFlag(slot0, slot1, slot2)
+	if slot0.worldFlag[slot1] ~= slot2 then
+		slot0.worldFlag[slot1] = slot2
+
+		PlayerPrefs.SetInt("world_flag_" .. slot1, slot2 and 1 or 0)
+		PlayerPrefs.Save()
+	end
+end
+
+function slot0.GetWorldFlag(slot0, slot1, slot2)
+	if not slot0.worldFlag[slot1] then
+		slot0.worldFlag[slot1] = PlayerPrefs.GetInt("world_flag_" .. slot1) > 0
+	end
+
+	return slot0.worldFlag[slot1]
+end
+
+function slot0.Reset(slot0)
+	slot0:resetEquipSceneIndex()
+	slot0:resetActivityLayerIndex()
+
+	slot0.isStopBuildSpeedupReamind = false
 end
 
 function slot0.GetDockYardLockBtnFlag(slot0)
@@ -274,16 +318,16 @@ function slot0.clearAllReadHelp(slot0)
 	PlayerPrefs.DeleteKey("help_commander_ability")
 end
 
-function slot0.setAoutBattleTip(slot0)
+function slot0.setAutoBattleTip(slot0)
 	slot1 = GetZeroTime()
-	slot0.nextTipAoutBattleTime = slot1
+	slot0._nextTipAutoBattleTime = slot1
 
 	PlayerPrefs.SetInt("AutoBattleTip", slot1)
 	PlayerPrefs.Save()
 end
 
 function slot0.isTipAutoBattle(slot0)
-	return slot0.nextTipAoutBattleTime < pg.TimeMgr.GetInstance():GetServerTime()
+	return slot0._nextTipAutoBattleTime < pg.TimeMgr.GetInstance():GetServerTime()
 end
 
 function slot0.setActBossExchangeTicketTip(slot0, slot1)
@@ -318,6 +362,33 @@ end
 function slot0.SetBeatMonseterNianFlag(slot0)
 	PlayerPrefs.SetString("HitMonsterNianLayer2020" .. getProxy(PlayerProxy):getRawData().id, GetZeroTime())
 	PlayerPrefs.Save()
+end
+
+function slot0.CheckNeedUserAgreement(slot0)
+	if PLATFORM_CODE == PLATFORM_KR then
+		return false
+	elseif PLATFORM_CODE == PLATFORM_CH then
+		return false
+	end
+
+	return true
+end
+
+function slot0.ShouldShowEventActHelp(slot0)
+	if not slot0.actEventFlag then
+		slot0.actEventFlag = PlayerPrefs.GetInt("event_act_help1" .. getProxy(PlayerProxy):getRawData().id, 0) > 0
+	end
+
+	return not slot0.actEventFlag
+end
+
+function slot0.MarkEventActHelpFlag(slot0)
+	if not slot0.actEventFlag then
+		slot0.actEventFlag = true
+
+		PlayerPrefs.SetInt("event_act_help1" .. getProxy(PlayerProxy):getRawData().id, 1)
+		PlayerPrefs.Save()
+	end
 end
 
 return slot0

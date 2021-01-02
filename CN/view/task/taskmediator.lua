@@ -10,7 +10,7 @@ function slot0.register(slot0)
 			slot5 = _.flatten(slot3:getConfig("config_data"))
 
 			if slot1.id == slot5[#slot5] then
-				pg.StoryMgr.GetInstance():Play("YIXIAN8", function ()
+				pg.NewStoryMgr.GetInstance():Play("YIXIAN8", function ()
 					uv0:sendNotification(GAME.SUBMIT_TASK, uv1.id)
 				end)
 
@@ -31,110 +31,6 @@ function slot0.register(slot0)
 		uv0:sendNotification(GAME.TASK_GO, {
 			taskVO = slot1
 		})
-	end)
-	slot0:bind(uv0.CLICK_GET_ALL, function (slot0, slot1, slot2)
-		slot3 = {}
-
-		function slot4(slot0, slot1)
-			slot3 = nil
-
-			if uv0[slot0]:isSelectable() then
-				slot4 = slot2:getConfig("award_choice")[slot2.index]
-				slot3 = {
-					type = slot4[1],
-					id = slot4[2],
-					number = slot4[3]
-				}
-			end
-
-			uv1[#uv1 + 1] = {
-				id = slot2.id,
-				award_choice = slot3
-			}
-
-			if slot0 <= #uv0 then
-				slot1()
-			end
-		end
-
-		function slot5(slot0, slot1, slot2)
-			function slot1.overFlow.onYes()
-				uv0(uv1, uv2)
-			end
-
-			function slot1.overFlow.onNo()
-				uv0()
-			end
-
-			pg.MsgboxMgr.GetInstance():ShowMsgBox(slot1.overFlow)
-		end
-
-		function slot6(slot0, slot1, slot2)
-			function slot1.choice.onYes()
-				if not taskVO.index then
-					pg.TipsMgr.GetInstance():ShowTips(i18n("no_item_selected_tip"))
-					uv0()
-
-					return
-				end
-
-				if uv1.overFlow then
-					uv2(uv3, uv1, uv0)
-				else
-					uv4(uv3, uv0)
-				end
-			end
-
-			function slot1.choice.onNo()
-				uv0()
-			end
-
-			pg.MsgboxMgr.GetInstance():ShowMsgBox(slot1.choice)
-		end
-
-		function slot7(slot0, slot1, slot2)
-			function slot1.sub.onYes()
-				if uv0.choice then
-					uv1(uv2, uv0, uv3)
-				elseif uv0.overFlow then
-					uv4(uv2, uv0, uv3)
-				else
-					uv5(uv2, uv3)
-				end
-			end
-
-			function slot1.sub.onNo()
-				uv0()
-			end
-
-			pg.MsgboxMgr.GetInstance():ShowMsgBox(slot1.sub)
-		end
-
-		slot8 = {
-			[slot12] = function ()
-				if uv0.sub then
-					uv1(uv2, uv0, uv3[uv2 + 1])
-				elseif uv0.choice then
-					uv4(uv2, uv0, uv3[uv2 + 1])
-				elseif uv0.overFlow then
-					uv5(uv2, uv0, uv3[uv2 + 1])
-				else
-					uv6(uv2, uv3[uv2 + 1])
-				end
-			end
-		}
-
-		for slot12, slot13 in ipairs(slot1) do
-			-- Nothing
-		end
-
-		slot8[#slot8 + 1] = function ()
-			if #uv0 > 0 then
-				uv1:sendNotification(GAME.SUBMIT_TASK_ONESTEP, uv0)
-			end
-		end
-
-		slot8[1]()
 	end)
 
 	for slot7, slot8 in pairs(getProxy(TaskProxy):getData()) do
@@ -262,14 +158,14 @@ function slot0.PlayStoryForTaskAct(slot0, slot1, slot2)
 				end
 			end
 
-			if (slot9:getConfig("config_client").story or {})[slot11] and slot13[slot11][slot12] and not pg.StoryMgr.GetInstance():IsPlayed(slot14) then
+			if (slot9:getConfig("config_client").story or {})[slot11] and slot13[slot11][slot12] and not pg.NewStoryMgr.GetInstance():IsPlayed(slot14) then
 				slot4 = slot14
 			end
 		end
 	end
 
 	if slot4 then
-		pg.StoryMgr.GetInstance():Play(slot4, slot2)
+		pg.NewStoryMgr.GetInstance():Play(slot4, slot2)
 	else
 		slot2()
 	end

@@ -23,6 +23,8 @@ print("C# Ver. " .. CSharpVersion)
 PLATFORM = LuaHelper.GetPlatformInt()
 SDK_EXIT_CODE = 99
 
+ReflectionHelp.RefSetField(typeof("ResourceMgr"), "_asyncMax", ResourceMgr.Inst, 30)
+
 function luaIdeDebugFunc()
 	breakInfoFun = require("LuaDebugjit")("localhost", 7003)
 	time = Timer.New(breakInfoFun, 0.5, -1, 1)
@@ -33,6 +35,17 @@ end
 
 if (PLATFORM_CODE == PLATFORM_CH or PLATFORM_CODE == PLATFORM_CHT) and PLATFORM == 8 then
 	pg.SdkMgr.GetInstance():InitSDK()
+end
+
+if PLATFORM_CODE == PLATFORM_JP then
+	slot0 = tf(GameObject.Find("LevelCamera/Canvas/UIMain/LevelGrid"))
+
+	RemoveComponent(slot0, typeof(Image))
+
+	slot0.offsetMin = Vector2(-200, -200)
+	slot0.offsetMax = Vector2(200, 200)
+
+	setActive(slot0:Find("DragLayer"), true)
 end
 
 GetComponent(tf(GameObject.Find("OverlayCamera/Overlay/UIDebug/logs")), "Text").supportRichText = false
@@ -75,7 +88,7 @@ function OnApplicationExit()
 
 	slot3 = pg.MsgboxMgr.GetInstance() and slot2:getMsgBoxOb()
 
-	if pg.StoryMgr.GetInstance() and slot4.storyId then
+	if pg.NewStoryMgr.GetInstance() and slot4:IsRunning() then
 		if slot3 and slot3.activeSelf then
 			pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_CANCEL)
 			triggerButton(slot2._closeBtn)
@@ -131,6 +144,12 @@ function OnApplicationExit()
 		return
 	end
 
+	if nowWorld.staminaMgr:IsShowing() then
+		nowWorld.staminaMgr:Hide()
+
+		return
+	end
+
 	slot11:onBackPressed()
 end
 
@@ -176,9 +195,6 @@ seriesAsync({
 				pg.MsgboxMgr.GetInstance():Init(slot0)
 			end,
 			function (slot0)
-				pg.StoryMgr.GetInstance():Init(slot0)
-			end,
-			function (slot0)
 				pg.SystemOpenMgr.GetInstance():Init(slot0)
 			end,
 			function (slot0)
@@ -194,10 +210,16 @@ seriesAsync({
 				pg.ToastMgr.GetInstance():Init(slot0)
 			end,
 			function (slot0)
+				pg.WorldToastMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
 				pg.SecondaryPWDMgr.GetInstance():Init(slot0)
 			end,
 			function (slot0)
 				pg.ShipFlagMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.NewStoryMgr.GetInstance():Init(slot0)
 			end
 		}, slot0)
 	end
