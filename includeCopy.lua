@@ -18,3 +18,6 @@ setmetatable(pg, {
 require("utility")
 require("constAdded")
 require("const.equiptype")
+require("const.shiptype")
+require("const.battleconfig")
+

@@ -2,139 +2,139 @@ pg = pg or {}
 pg.equip_data_by_type = {
 	{
 		distory_resource_gold_ratio = 1,
-		type_name = "èˆ°ç‚®",
+		type_name = "½¢ÅÚ",
 		equip_skin = 1,
 		equip_type = 1,
 		compare_group = 1,
-		type_name2 = "èˆ°ç‚®(é©±é€)"
+		type_name2 = "½¢ÅÚ(ÇıÖğ)"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "èˆ°ç‚®",
+		type_name = "½¢ÅÚ",
 		equip_skin = 1,
 		equip_type = 2,
 		compare_group = 1,
-		type_name2 = "èˆ°ç‚®(è½»å·¡)"
+		type_name2 = "½¢ÅÚ(ÇáÑ²)"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "èˆ°ç‚®",
+		type_name = "½¢ÅÚ",
 		equip_skin = 1,
 		equip_type = 3,
 		compare_group = 1,
-		type_name2 = "èˆ°ç‚®(é‡å·¡)"
+		type_name2 = "½¢ÅÚ(ÖØÑ²)"
 	},
 	{
 		distory_resource_gold_ratio = 3,
-		type_name = "èˆ°ç‚®",
+		type_name = "½¢ÅÚ",
 		equip_skin = 1,
 		equip_type = 4,
 		compare_group = 1,
-		type_name2 = "èˆ°ç‚®(æˆ˜åˆ—)"
+		type_name2 = "½¢ÅÚ(Õ½ÁĞ)"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "é±¼é›·",
+		type_name = "ÓãÀ×",
 		equip_skin = 1,
 		equip_type = 5,
 		compare_group = 2,
-		type_name2 = "é±¼é›·"
+		type_name2 = "ÓãÀ×"
 	},
 	{
 		distory_resource_gold_ratio = 1,
-		type_name = "é˜²ç©ºç‚®",
+		type_name = "·À¿ÕÅÚ",
 		equip_skin = 0,
 		equip_type = 6,
 		compare_group = 3,
-		type_name2 = "é˜²ç©ºç‚®"
+		type_name2 = "·À¿ÕÅÚ"
 	},
 	{
 		distory_resource_gold_ratio = 1,
-		type_name = "æˆ˜æ–—æœº",
+		type_name = "Õ½¶·»ú",
 		equip_skin = 1,
 		equip_type = 7,
 		compare_group = 4,
-		type_name2 = "æˆ˜æ–—æœº"
+		type_name2 = "Õ½¶·»ú"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "é±¼é›·æœº",
+		type_name = "ÓãÀ×»ú",
 		equip_skin = 1,
 		equip_type = 8,
 		compare_group = 4,
-		type_name2 = "é±¼é›·æœº"
+		type_name2 = "ÓãÀ×»ú"
 	},
 	{
 		distory_resource_gold_ratio = 3,
-		type_name = "è½°ç‚¸æœº",
+		type_name = "ºäÕ¨»ú",
 		equip_skin = 1,
 		equip_type = 9,
 		compare_group = 4,
-		type_name2 = "è½°ç‚¸æœº"
+		type_name2 = "ºäÕ¨»ú"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "è®¾å¤‡",
+		type_name = "Éè±¸",
 		equip_skin = 0,
 		equip_type = 10,
 		compare_group = 5,
-		type_name2 = "è®¾å¤‡"
+		type_name2 = "Éè±¸"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "èˆ°ç‚®",
+		type_name = "½¢ÅÚ",
 		equip_skin = 1,
 		equip_type = 11,
 		compare_group = 1,
-		type_name2 = "èˆ°ç‚®(å¤§å£å¾„é‡å·¡)"
+		type_name2 = "½¢ÅÚ(´ó¿Ú¾¶ÖØÑ²)"
 	},
 	{
 		distory_resource_gold_ratio = 1,
-		type_name = "æ°´ä¸Šæœº",
+		type_name = "Ë®ÉÏ»ú",
 		equip_skin = 1,
 		equip_type = 12,
 		compare_group = 5,
-		type_name2 = "æ°´ä¸Šæœº"
+		type_name2 = "Ë®ÉÏ»ú"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "é±¼é›·",
+		type_name = "ÓãÀ×",
 		equip_skin = 1,
 		equip_type = 13,
 		compare_group = 6,
-		type_name2 = "é±¼é›·(æ½œè‰‡)"
+		type_name2 = "ÓãÀ×(Ç±Í§)"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "è®¾å¤‡",
+		type_name = "Éè±¸",
 		equip_skin = 0,
 		equip_type = 14,
 		compare_group = 5,
-		type_name2 = "è®¾å¤‡"
+		type_name2 = "Éè±¸"
 	},
 	{
 		distory_resource_gold_ratio = 2,
-		type_name = "åæ½œæœº",
+		type_name = "·´Ç±»ú",
 		equip_skin = 0,
 		equip_type = 15,
 		compare_group = 5,
-		type_name2 = "åæ½œæœº"
+		type_name2 = "·´Ç±»ú"
 	},
 	[17] = {
 		distory_resource_gold_ratio = 2,
-		type_name = "ç›´å‡æœº",
+		type_name = "Ö±Éı»ú",
 		equip_skin = 0,
 		equip_type = 17,
 		compare_group = 5,
-		type_name2 = "ç›´å‡æœº"
+		type_name2 = "Ö±Éı»ú"
 	},
 	[18] = {
 		distory_resource_gold_ratio = 2,
-		type_name = "è´§ç‰©",
+		type_name = "»õÎï",
 		equip_skin = 0,
 		equip_type = 18,
 		compare_group = 5,
-		type_name2 = "è´§ç‰©"
+		type_name2 = "»õÎï"
 	},
 	all = {
 		1,

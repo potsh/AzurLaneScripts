@@ -4,7 +4,10 @@
 --- DateTime: 2021/1/2 17:07
 ---
 
-CannonsFromScripts = {}
+cannonList = {}
+
+local outputFileName = "½¢ÅÚFromScripts.csv"
+
 EquipTypeEnum = {  -- compare_group in D_EDBT
     ["Cannon"] = 1,
     ["Torpedo"] = 2,
@@ -33,6 +36,7 @@ EquipRarityEnum = {  -- rarity in D_EDS
 }
 
 EquipRarityName = {  -- rarity in D_EDS
+    [1] = "Gray",
     [2] = "Gray",
     [3] = "Blue",
     [4] = "Purple",
@@ -40,6 +44,12 @@ EquipRarityName = {  -- rarity in D_EDS
     [6] = "SSR",
 }
 
+AmmoTypeName = {
+    [1] = "´©¼×µ¯",
+    [2] = "¸ß±¬µ¯",
+    [3] = "Í¨³£µ¯",
+    [7] = "°ë´©¼×µ¯",
+}
 
 EquipTypeName = {  -- type in D_EDS, equip_type in D_EDBT
     [1] = "½¢ÅÚ(ÇýÖð)",
@@ -62,16 +72,6 @@ EquipTypeName = {  -- type in D_EDS, equip_type in D_EDBT
 }
 
 
-local outputFileName = "½¢ÅÚFromScripts.csv"
-
-
---[[
-require("CN.sharecfg.equip_data_template")
-require("CN.sharecfg.equip_data_statistics")
-require("CN.sharecfg.weapon_property")
-require("CN.sharecfg.barrage_template")
-require("CN.sharecfg.bullet_template") --]]
-
 local D_EDT = pg.equip_data_template
 local D_EDS = pg.equip_data_statistics
 local D_WP = pg.weapon_property
@@ -82,14 +82,15 @@ local D_EDBT = pg.equip_data_by_type
 
 local function getEquipMaxLv(key)
     local tmp = key
-    while(D_EDT[tmp + 1]) do
+    while(D_EDT[tmp].next ~= 0) do
         tmp = tmp + 1
     end
     return tmp - key
 end
 
 local function getWeaponProp(equipNo, lv, propName)
-    return D_WP[equipNo][equipNo + lv][propName]
+    --print("#DEBUG#: " .. equipNo .. " " .. lv .. " " .. propName)
+    return D_WP[equipNo + lv][propName]
 end
 
 local function getBarrageProp(barrageNo, propName)
@@ -100,8 +101,26 @@ local function getBulletProp(bulletNo, propName)
     return D_BU_T[bulletNo][propName]
 end
 
-cannonList = {}
-function genCannonList()
+function CalculateReloadTime(reload_max, reload)
+    if reload == nil then
+        reload = BattleConfig.K2
+    end
+    return reload_max / BattleConfig.K1 / math.sqrt((reload + BattleConfig.K2) * BattleConfig.K3)
+end
+
+local function calculateBulletNum(cannon)
+    return (cannon.primal_repeat + 1) * (cannon.senior_repeat + 1)
+end
+
+local function calculateSpread(c)
+    if c.spread < 0 then
+        return -2 * c.spread
+    else
+        return c.spread
+    end
+end
+
+local function genCannonList()
     for key, value in pairs(D_EDT) do
         if value and type(key) == "number" and not value.base then
             compare_group = D_EDBT[value.type].compare_group
@@ -113,20 +132,21 @@ function genCannonList()
     end
 end
 
-function collectCannonData()
+local function collectCannonData()
     for k, v in pairs(cannonList) do
-        v["name"] = D_WP[k].name
+        v["name"] = D_EDS[k].name
+        v["tech"] = D_EDS[k].tech
         v["rarity"] = D_EDS[k].rarity
         v["type"] = D_EDS[k].type
+        v["max_lv"] = getEquipMaxLv(k)
         v["damage"] = D_WP[k].damage
-        v["lvLimit"] = getEquipMaxLv(k)
-        v["up_damage"] = getWeaponProp(k, v.lvLimit, "damage")
+        v["up_damage"] = getWeaponProp(k, v.max_lv, "damage")
         v["primal_repeat"] = getBarrageProp(D_WP[k].barrage_ID[1], "primal_repeat")
         v["senior_repeat"] = getBarrageProp(D_WP[k].barrage_ID[1], "senior_repeat")
         v["senior_delay"] = getBarrageProp(D_WP[k].barrage_ID[1], "senior_delay")
         v["reload_max"] = D_WP[k].reload_max
-        v["up_reload_max"] = getWeaponProp(k, v.lvLimit, "reload_max")
-        v["range"] = D_WP[k].range
+        v["up_reload_max"] = getWeaponProp(k, v.max_lv, "reload_max")
+        v["range"] = getBulletProp(D_WP[k].bullet_ID[1], "range")
         v["spread"] = getBarrageProp(D_WP[k].barrage_ID[1], "angle")
         v["value_2"] = D_EDS[k].value_2  --cannon
         v["attribute_2"] = D_EDS[k].attribute_2
@@ -142,29 +162,51 @@ function collectCannonData()
     end
 end
 
+local cannonHeaderString = "icon,name,rarity,type,max_lv,damage,up_damage,bullet_num,reload_time,up_reload_time,range,spread,cannon,antiair,speciality,angle,ammo_type,corrected,senior_delay,vsÇá,vsÖÐ,vsÖØ"
+local function cannonToString(c)
+    name = c.name .. "T" .. c.tech
+    res = name
+    res = res .. "," .. name
+    res = res .. "," .. EquipRarityName[c.rarity]
+    res = res .. "," .. EquipType.Type2Name2(c.type)
+    res = res .. "," .. c.max_lv
+    res = res .. "," .. c.damage
+    res = res .. "," .. c.up_damage
+    res = res .. "," .. calculateBulletNum(c)
+    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(c.reload_max))
+    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(c.up_reload_max))
+    res = res .. "," .. c.range
+    res = res .. "," .. calculateSpread(c)
+    res = res .. "," .. c.value_2
+    res = res .. "," .. c.value_3
+    res = res .. "," .. c.speciality
+    res = res .. "," .. c.angle
+    res = res .. "," .. AmmoTypeName[c.ammo_type]
+    res = res .. "," .. c.corrected
+    res = res .. "," .. (c.senior_delay * c.senior_repeat)
+    res = res .. "," .. c.damage_type[1]
+    res = res .. "," .. c.damage_type[2]
+    res = res .. "," .. c.damage_type[3]
+
+    return res
+end
+
+local function writeCannonsToFile()
+    local file = io.open (outputFileName, "w")
+
+    file:write(cannonHeaderString.."\n")
+
+    for k, v in pairs(cannonList) do
+        local str = cannonToString(v)
+        file:write(str .."\n")
+    end
+
+    file:close()
+end
 
 function eeTest()
+
     genCannonList()
-    --print(#cannonList)
-    --print(convert_table_to_string(cannonList))
-
     collectCannonData()
-
-    --[[local D_WP = pg.weapon_property
-    count = 0
-    for key, value in pairs(cannonList) do
-        if D_WP[value] and D_WP[value].name then
-            print(value .. ", " .. D_WP[value].name .. ", " .. getEquipMaxLv(value))
-            count = count + 1
-        end
-    end
-    print(count)]]--
-
-    count = 0
-    for key, value in pairs(cannonList) do
-        print(key .. ", " .. value.name .. ", " .. EquipRarityName[value.rarity] .. ", " .. getEquipMaxLv(key))
-        count = count + 1
-    end
-    print(count)
-
+    writeCannonsToFile()
 end

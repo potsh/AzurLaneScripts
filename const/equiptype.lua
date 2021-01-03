@@ -1,4 +1,5 @@
 --from CN.model.const.equiptype
+EquipType = {}
 
 EquipType.CannonQuZhu = 1
 EquipType.CannonQingXun = 2

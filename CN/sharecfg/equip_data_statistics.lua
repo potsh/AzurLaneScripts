@@ -1,12 +1,12 @@
 pg = pg or {}
 pg.equip_data_statistics = {
 	[2] = {
-		name = "åºç« é‡å·¡-è¨ç¦å…‹ï¼ˆç„å‡†å‹ï¼‰",
+		name = "ĞòÕÂÖØÑ²-Èø¸£¿Ë£¨Ãé×¼ĞÍ£©",
 		tech = 1,
-		speciality = "é”å®š",
+		speciality = "Ëø¶¨",
 		type = 3,
 		rarity = 2,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "23000",
 		nationality = 1,
@@ -33,12 +33,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[3] = {
-		name = "åºç« é‡å·¡-è¯ºç¦å…‹ï¼ˆæ•£å°„å‹ã€è‚‰ç›¾ï¼‰",
+		name = "ĞòÕÂÖØÑ²-Åµ¸£¿Ë£¨É¢ÉäĞÍ¡¢Èâ¶Ü£©",
 		tech = 1,
-		speciality = "æ•£å°„",
+		speciality = "É¢Éä",
 		type = 3,
 		rarity = 2,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "22200",
 		nationality = 1,
@@ -67,12 +67,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[4] = {
-		name = "åºç« æˆ˜å·¡-èƒ¡å¾·",
+		name = "ĞòÕÂÕ½Ñ²-ºúµÂ",
 		tech = 1,
-		speciality = "ç‚®å‡»",
+		speciality = "ÅÚ»÷",
 		type = 4,
 		rarity = 5,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "24100",
 		nationality = 1,
@@ -103,12 +103,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[5] = {
-		name = "åºç« æˆ˜åˆ—-å¨å°”å£«äº²ç‹",
+		name = "ĞòÕÂÕ½ÁĞ-Íş¶ûÊ¿Ç×Íõ",
 		tech = 1,
-		speciality = "ç‚®å‡»",
+		speciality = "ÅÚ»÷",
 		type = 4,
 		rarity = 3,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "24000",
 		nationality = 1,
@@ -139,12 +139,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[6] = {
-		name = "åºç« é‡å·¡-è¨ç¦å…‹ä¸‰è”533mmé±¼é›·",
+		name = "ĞòÕÂÖØÑ²-Èø¸£¿ËÈıÁª533mmÓãÀ×",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 5,
 		rarity = 2,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "5000",
 		nationality = 0,
@@ -178,12 +178,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[7] = {
-		name = "åºç« é‡å·¡-è¯ºç¦å…‹å››è”533mmé±¼é›·",
+		name = "ĞòÕÂÖØÑ²-Åµ¸£¿ËËÄÁª533mmÓãÀ×",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 5,
 		rarity = 2,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "5000",
 		nationality = 0,
@@ -217,12 +217,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[8] = {
-		name = "åºç« é‡å·¡-æ¬§æ ¹äº²ç‹ï¼ˆç„å‡†å‹ï¼‰",
+		name = "ĞòÕÂÖØÑ²-Å·¸ùÇ×Íõ£¨Ãé×¼ĞÍ£©",
 		tech = 1,
-		speciality = "é”å®š",
+		speciality = "Ëø¶¨",
 		type = 3,
 		rarity = 2,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "23000",
 		nationality = 1,
@@ -249,12 +249,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[20] = {
-		name = "U556å…³å¡å•å‘é±¼é›·-å¼¹è¯2",
+		name = "U556¹Ø¿¨µ¥·¢ÓãÀ×-µ¯Ò©2",
 		tech = 1,
-		speciality = "é”å®š",
+		speciality = "Ëø¶¨",
 		type = 5,
 		rarity = 1,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "2700",
 		nationality = 4,
@@ -288,12 +288,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[21] = {
-		name = "U556å…³å¡å•å‘é±¼é›·-å¼¹è¯4",
+		name = "U556¹Ø¿¨µ¥·¢ÓãÀ×-µ¯Ò©4",
 		tech = 1,
-		speciality = "é”å®š",
+		speciality = "Ëø¶¨",
 		type = 5,
 		rarity = 1,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "2700",
 		nationality = 4,
@@ -327,12 +327,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[22] = {
-		name = "U556å…³å¡å•å‘é±¼é›·-å¼¹è¯6",
+		name = "U556¹Ø¿¨µ¥·¢ÓãÀ×-µ¯Ò©6",
 		tech = 1,
-		speciality = "é”å®š",
+		speciality = "Ëø¶¨",
 		type = 5,
 		rarity = 1,
-		descrip = "åºç« ç”¨",
+		descrip = "ĞòÕÂÓÃ",
 		value_2 = 0,
 		icon = "2700",
 		nationality = 4,
@@ -366,12 +366,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[23] = {
-		name = "J-10æœºç‚® FC-1æœºç‚® åŒç®¡",
-		speciality = "é€šå¸¸",
+		name = "J-10»úÅÚ FC-1»úÅÚ Ë«¹Ü",
+		speciality = "Í¨³£",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "ä¸­é£å…³å¡æ­¦å™¨",
+		descrip = "ÖĞ·É¹Ø¿¨ÎäÆ÷",
 		value_2 = 0,
 		icon = "1",
 		damage = "1 x 2",
@@ -398,12 +398,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[24] = {
-		name = "J-15æœºç‚® å•ç®¡",
-		speciality = "é€šå¸¸",
+		name = "J-15»úÅÚ µ¥¹Ü",
+		speciality = "Í¨³£",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "ä¸­é£å…³å¡æ­¦å™¨",
+		descrip = "ÖĞ·É¹Ø¿¨ÎäÆ÷",
 		value_2 = 0,
 		icon = "1",
 		damage = "1 x 1",
@@ -430,12 +430,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[25] = {
-		name = "ä¸­é£å¯¼å¼¹1",
-		speciality = "é€šå¸¸",
+		name = "ÖĞ·Éµ¼µ¯1",
+		speciality = "Í¨³£",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "ä¸­é£å…³å¡æ­¦å™¨",
+		descrip = "ÖĞ·É¹Ø¿¨ÎäÆ÷",
 		value_2 = 0,
 		icon = "1",
 		damage = "1 x 1",
@@ -462,12 +462,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[26] = {
-		name = "ä¸­é£å¯¼å¼¹2",
-		speciality = "é€šå¸¸",
+		name = "ÖĞ·Éµ¼µ¯2",
+		speciality = "Í¨³£",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "ä¸­é£å…³å¡æ­¦å™¨",
+		descrip = "ÖĞ·É¹Ø¿¨ÎäÆ÷",
 		value_2 = 0,
 		icon = "1",
 		damage = "1 x 1",
@@ -494,12 +494,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[98] = {
-		name = "å¯æ‰“æ–­æµ‹è¯•æ­¦å™¨",
+		name = "¿É´ò¶Ï²âÊÔÎäÆ÷",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
-		descrip = "æµ‹è¯•è£…å¤‡",
+		descrip = "²âÊÔ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 0,
@@ -532,12 +532,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[99] = {
-		name = "æµ‹è¯•é±¼é›·",
+		name = "²âÊÔÓãÀ×",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 5,
 		rarity = 1,
-		descrip = "æµ‹è¯•è£…å¤‡",
+		descrip = "²âÊÔ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 0,
@@ -569,12 +569,12 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[100] = {
-		name = "é»˜è®¤é©±é€æ­¦å™¨",
-		speciality = "é”å®š",
+		name = "Ä¬ÈÏÇıÖğÎäÆ÷",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 1",
@@ -614,12 +614,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[101] = {
-		name = "é»˜è®¤è½»å·¡æ­¦å™¨",
-		speciality = "æ•£å°„",
+		name = "Ä¬ÈÏÇáÑ²ÎäÆ÷",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "5 x 1",
@@ -652,12 +652,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[102] = {
-		name = "é»˜è®¤é‡å·¡æ­¦å™¨",
-		speciality = "é€šå¸¸",
+		name = "Ä¬ÈÏÖØÑ²ÎäÆ÷",
+		speciality = "Í¨³£",
 		type = 3,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "12 x 2",
@@ -689,12 +689,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[103] = {
-		name = "é»˜è®¤æˆ˜åˆ—æ­¦å™¨",
-		speciality = "è·¨å°„",
+		name = "Ä¬ÈÏÕ½ÁĞÎäÆ÷",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "16 x 2",
@@ -728,15 +728,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[104] = {
-		name = "é»˜è®¤é˜²ç©ºç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ä¬ÈÏ·À¿ÕÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
-		damage = "4/è½®",
+		damage = "4/ÂÖ",
 		nationality = 0,
 		ammo = 5,
 		value_3 = 0,
@@ -784,12 +784,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[105] = {
-		name = "é»˜è®¤åŒè”é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ä¬ÈÏË«ÁªÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "17 x 2",
@@ -827,12 +827,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[106] = {
-		name = "é»˜è®¤ä¸‰è”é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ä¬ÈÏÈıÁªÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "17 x 3",
@@ -870,12 +870,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[107] = {
-		name = "é»˜è®¤å››è”é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ä¬ÈÏËÄÁªÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "17 x 4",
@@ -913,12 +913,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[108] = {
-		name = "é»˜è®¤äº”è”é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ä¬ÈÏÎåÁªÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "17 x 5",
@@ -956,12 +956,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[109] = {
-		name = "é»˜è®¤ç™½é¹°æˆ˜æ–—æœº",
+		name = "Ä¬ÈÏ°×Ó¥Õ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 1,
@@ -994,12 +994,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[110] = {
-		name = "é»˜è®¤ç™½é¹°é±¼é›·æœº",
+		name = "Ä¬ÈÏ°×Ó¥ÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 1,
@@ -1031,12 +1031,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[111] = {
-		name = "é»˜è®¤ç™½é¹°è½°ç‚¸æœº",
+		name = "Ä¬ÈÏ°×Ó¥ºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 1,
@@ -1068,12 +1068,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[113] = {
-		name = "é»˜è®¤çš‡å®¶æˆ˜æ–—æœº",
+		name = "Ä¬ÈÏ»Ê¼ÒÕ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 2,
@@ -1106,12 +1106,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[114] = {
-		name = "é»˜è®¤çš‡å®¶é±¼é›·æœº",
+		name = "Ä¬ÈÏ»Ê¼ÒÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 2,
@@ -1143,12 +1143,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[115] = {
-		name = "é»˜è®¤çš‡å®¶è½°ç‚¸æœº",
+		name = "Ä¬ÈÏ»Ê¼ÒºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 2,
@@ -1180,12 +1180,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[117] = {
-		name = "é»˜è®¤é‡æ¨±æˆ˜æ–—æœº",
+		name = "Ä¬ÈÏÖØÓ£Õ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1218,12 +1218,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[118] = {
-		name = "é»˜è®¤é‡æ¨±é±¼é›·æœº",
+		name = "Ä¬ÈÏÖØÓ£ÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1255,12 +1255,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[119] = {
-		name = "é»˜è®¤é‡æ¨±è½°ç‚¸æœº",
+		name = "Ä¬ÈÏÖØÓ£ºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1292,12 +1292,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[121] = {
-		name = "é»˜è®¤é“è¡€æˆ˜æ–—æœº",
+		name = "Ä¬ÈÏÌúÑªÕ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1330,12 +1330,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[122] = {
-		name = "é»˜è®¤é“è¡€é±¼é›·æœº",
+		name = "Ä¬ÈÏÌúÑªÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1367,12 +1367,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[123] = {
-		name = "é»˜è®¤é“è¡€è½°ç‚¸æœº",
+		name = "Ä¬ÈÏÌúÑªºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1404,12 +1404,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[125] = {
-		name = "é»˜è®¤é¸¢å°¾æˆ˜æ–—æœº",
+		name = "Ä¬ÈÏğ°Î²Õ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1442,12 +1442,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[126] = {
-		name = "é»˜è®¤é¸¢å°¾é±¼é›·æœº",
+		name = "Ä¬ÈÏğ°Î²ÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1479,12 +1479,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[127] = {
-		name = "é»˜è®¤é¸¢å°¾è½°ç‚¸æœº",
+		name = "Ä¬ÈÏğ°Î²ºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -1516,12 +1516,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[140] = {
-		name = "é»˜è®¤æ½œè‰‡é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ä¬ÈÏÇ±Í§ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "17 x 1",
@@ -1554,12 +1554,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[141] = {
-		name = "é»˜è®¤æ·±æ°´ç‚¸å¼¹_é©±é€",
+		name = "Ä¬ÈÏÉîË®Õ¨µ¯_ÇıÖğ",
 		tech = 1,
-		speciality = "åæ½œ",
+		speciality = "·´Ç±",
 		type = 10,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 0,
@@ -1585,15 +1585,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[144] = {
-		name = "é»˜è®¤æ½œæ¯æ°´ä¾¦",
+		name = "Ä¬ÈÏÇ±Ä¸Ë®Õì",
 		tech = 1,
 		type = 12,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		attribute_3 = "air",
 		rarity = 1,
 		value_2 = 5,
 		icon = "39200",
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -1621,12 +1621,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[147] = {
-		name = "é»˜è®¤æ·±æ°´ç‚¸å¼¹_è½»å·¡",
+		name = "Ä¬ÈÏÉîË®Õ¨µ¯_ÇáÑ²",
 		tech = 1,
-		speciality = "åæ½œ",
+		speciality = "·´Ç±",
 		type = 10,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 0,
@@ -1652,12 +1652,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[201] = {
-		name = "ç™½é¹°é›·å‡»è½»å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "°×Ó¥À×»÷ÇáÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "3 x 2",
@@ -1697,7 +1697,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[202] = {
-		name = "ç™½é¹°é›·å‡»è½»å·¡å‰¯ç‚®T2",
+		name = "°×Ó¥À×»÷ÇáÑ²¸±ÅÚT2",
 		damage = "4 x 2",
 		base = 201,
 		id = 202,
@@ -1708,7 +1708,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[203] = {
-		name = "ç™½é¹°é›·å‡»è½»å·¡å‰¯ç‚®T3",
+		name = "°×Ó¥À×»÷ÇáÑ²¸±ÅÚT3",
 		damage = "4 x 2",
 		base = 201,
 		id = 203,
@@ -1722,7 +1722,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[204] = {
-		name = "ç™½é¹°é›·å‡»è½»å·¡å‰¯ç‚®T4",
+		name = "°×Ó¥À×»÷ÇáÑ²¸±ÅÚT4",
 		damage = "5 x 2",
 		base = 201,
 		id = 204,
@@ -1736,12 +1736,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[211] = {
-		name = "çš‡å®¶é›·å‡»è½»å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "»Ê¼ÒÀ×»÷ÇáÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "3 x 2",
@@ -1781,7 +1781,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[212] = {
-		name = "çš‡å®¶é›·å‡»è½»å·¡å‰¯ç‚®T2",
+		name = "»Ê¼ÒÀ×»÷ÇáÑ²¸±ÅÚT2",
 		damage = "4 x 2",
 		base = 211,
 		id = 212,
@@ -1792,7 +1792,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[213] = {
-		name = "çš‡å®¶é›·å‡»è½»å·¡å‰¯ç‚®T3",
+		name = "»Ê¼ÒÀ×»÷ÇáÑ²¸±ÅÚT3",
 		damage = "5 x 2",
 		base = 211,
 		id = 213,
@@ -1803,7 +1803,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[214] = {
-		name = "çš‡å®¶é›·å‡»è½»å·¡å‰¯ç‚®T4",
+		name = "»Ê¼ÒÀ×»÷ÇáÑ²¸±ÅÚT4",
 		damage = "6 x 2",
 		base = 211,
 		id = 214,
@@ -1814,7 +1814,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[215] = {
-		name = "çš‡å®¶é›·å‡»è½»å·¡å‰¯ç‚®T4ï¼ˆå¾·é›·å…‹æ¨¡æ‹Ÿå…³å¡ç”¨ï¼‰",
+		name = "»Ê¼ÒÀ×»÷ÇáÑ²¸±ÅÚT4£¨µÂÀ×¿ËÄ£Äâ¹Ø¿¨ÓÃ£©",
 		damage = "6 x 2",
 		base = 211,
 		id = 215,
@@ -1825,12 +1825,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[221] = {
-		name = "é‡æ¨±é›·å‡»è½»å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "ÖØÓ£À×»÷ÇáÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 2",
@@ -1870,7 +1870,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[222] = {
-		name = "é‡æ¨±é›·å‡»è½»å·¡å‰¯ç‚®T2",
+		name = "ÖØÓ£À×»÷ÇáÑ²¸±ÅÚT2",
 		damage = "3 x 2",
 		base = 221,
 		id = 222,
@@ -1881,7 +1881,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[223] = {
-		name = "é‡æ¨±é›·å‡»è½»å·¡å‰¯ç‚®T3",
+		name = "ÖØÓ£À×»÷ÇáÑ²¸±ÅÚT3",
 		damage = "3 x 2",
 		base = 221,
 		id = 223,
@@ -1895,7 +1895,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[224] = {
-		name = "é‡æ¨±é›·å‡»è½»å·¡å‰¯ç‚®T4",
+		name = "ÖØÓ£À×»÷ÇáÑ²¸±ÅÚT4",
 		damage = "4 x 2",
 		base = 221,
 		id = 224,
@@ -1909,12 +1909,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[231] = {
-		name = "é“è¡€é›·å‡»è½»å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "ÌúÑªÀ×»÷ÇáÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 2",
@@ -1954,7 +1954,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[232] = {
-		name = "é“è¡€é›·å‡»è½»å·¡å‰¯ç‚®T2",
+		name = "ÌúÑªÀ×»÷ÇáÑ²¸±ÅÚT2",
 		damage = "3 x 2",
 		base = 231,
 		id = 232,
@@ -1965,7 +1965,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[233] = {
-		name = "é“è¡€é›·å‡»è½»å·¡å‰¯ç‚®T3",
+		name = "ÌúÑªÀ×»÷ÇáÑ²¸±ÅÚT3",
 		damage = "4 x 2",
 		base = 231,
 		id = 233,
@@ -1976,7 +1976,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[234] = {
-		name = "é“è¡€é›·å‡»è½»å·¡å‰¯ç‚®T4",
+		name = "ÌúÑªÀ×»÷ÇáÑ²¸±ÅÚT4",
 		damage = "5 x 2",
 		base = 231,
 		id = 234,
@@ -1987,12 +1987,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[251] = {
-		name = "æ’’ä¸é›·å‡»è½»å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "Èö¶¡À×»÷ÇáÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 2",
@@ -2032,7 +2032,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[252] = {
-		name = "æ’’ä¸é›·å‡»è½»å·¡å‰¯ç‚®T2",
+		name = "Èö¶¡À×»÷ÇáÑ²¸±ÅÚT2",
 		damage = "3 x 2",
 		base = 251,
 		id = 252,
@@ -2048,7 +2048,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[253] = {
-		name = "æ’’ä¸é›·å‡»è½»å·¡å‰¯ç‚®T3",
+		name = "Èö¶¡À×»÷ÇáÑ²¸±ÅÚT3",
 		damage = "4 x 2",
 		base = 251,
 		id = 253,
@@ -2064,7 +2064,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[254] = {
-		name = "æ’’ä¸é›·å‡»è½»å·¡å‰¯ç‚®T4",
+		name = "Èö¶¡À×»÷ÇáÑ²¸±ÅÚT4",
 		damage = "5 x 2",
 		base = 251,
 		id = 254,
@@ -2080,12 +2080,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[261] = {
-		name = "åŒ—æ–¹è”åˆé›·å‡»è½»å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "±±·½ÁªºÏÀ×»÷ÇáÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "3 x 2",
@@ -2125,7 +2125,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[262] = {
-		name = "åŒ—æ–¹è”åˆé›·å‡»è½»å·¡å‰¯ç‚®T2",
+		name = "±±·½ÁªºÏÀ×»÷ÇáÑ²¸±ÅÚT2",
 		damage = "4 x 2",
 		base = 261,
 		id = 262,
@@ -2136,7 +2136,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[263] = {
-		name = "åŒ—æ–¹è”åˆé›·å‡»è½»å·¡å‰¯ç‚®T3",
+		name = "±±·½ÁªºÏÀ×»÷ÇáÑ²¸±ÅÚT3",
 		damage = "4 x 2",
 		base = 261,
 		id = 263,
@@ -2150,7 +2150,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[264] = {
-		name = "åŒ—æ–¹è”åˆé›·å‡»è½»å·¡å‰¯ç‚®T4",
+		name = "±±·½ÁªºÏÀ×»÷ÇáÑ²¸±ÅÚT4",
 		damage = "5 x 2",
 		base = 261,
 		id = 264,
@@ -2164,12 +2164,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[271] = {
-		name = "é¸¢å°¾é›·å‡»è½»å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "ğ°Î²À×»÷ÇáÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 3",
@@ -2209,7 +2209,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[272] = {
-		name = "é¸¢å°¾é›·å‡»è½»å·¡å‰¯ç‚®T2",
+		name = "ğ°Î²À×»÷ÇáÑ²¸±ÅÚT2",
 		damage = "3 x 3",
 		base = 271,
 		id = 272,
@@ -2220,7 +2220,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[273] = {
-		name = "é¸¢å°¾é›·å‡»è½»å·¡å‰¯ç‚®T3",
+		name = "ğ°Î²À×»÷ÇáÑ²¸±ÅÚT3",
 		damage = "4 x 3",
 		base = 271,
 		id = 273,
@@ -2234,7 +2234,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[274] = {
-		name = "é¸¢å°¾é›·å‡»è½»å·¡å‰¯ç‚®T4",
+		name = "ğ°Î²À×»÷ÇáÑ²¸±ÅÚT4",
 		damage = "5 x 3",
 		base = 271,
 		id = 274,
@@ -2248,12 +2248,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[301] = {
-		name = "ç™½é¹°é›·å‡»é‡å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "°×Ó¥À×»÷ÖØÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "3 x 3",
@@ -2293,7 +2293,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[302] = {
-		name = "ç™½é¹°é›·å‡»é‡å·¡å‰¯ç‚®T2",
+		name = "°×Ó¥À×»÷ÖØÑ²¸±ÅÚT2",
 		damage = "4 x 3",
 		base = 301,
 		id = 302,
@@ -2304,7 +2304,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[303] = {
-		name = "ç™½é¹°é›·å‡»é‡å·¡å‰¯ç‚®T3",
+		name = "°×Ó¥À×»÷ÖØÑ²¸±ÅÚT3",
 		damage = "4 x 3",
 		base = 301,
 		id = 303,
@@ -2318,7 +2318,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[304] = {
-		name = "ç™½é¹°é›·å‡»é‡å·¡å‰¯ç‚®T4",
+		name = "°×Ó¥À×»÷ÖØÑ²¸±ÅÚT4",
 		damage = "5 x 3",
 		base = 301,
 		id = 304,
@@ -2332,12 +2332,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[311] = {
-		name = "çš‡å®¶é›·å‡»é‡å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "»Ê¼ÒÀ×»÷ÖØÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "3 x 3",
@@ -2377,7 +2377,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[312] = {
-		name = "çš‡å®¶é›·å‡»é‡å·¡å‰¯ç‚®T2",
+		name = "»Ê¼ÒÀ×»÷ÖØÑ²¸±ÅÚT2",
 		damage = "4 x 3",
 		base = 311,
 		id = 312,
@@ -2388,7 +2388,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[313] = {
-		name = "çš‡å®¶é›·å‡»é‡å·¡å‰¯ç‚®T3",
+		name = "»Ê¼ÒÀ×»÷ÖØÑ²¸±ÅÚT3",
 		damage = "5 x 3",
 		base = 311,
 		id = 313,
@@ -2399,7 +2399,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[314] = {
-		name = "çš‡å®¶é›·å‡»é‡å·¡å‰¯ç‚®T4",
+		name = "»Ê¼ÒÀ×»÷ÖØÑ²¸±ÅÚT4",
 		damage = "6 x 3",
 		base = 311,
 		id = 314,
@@ -2410,12 +2410,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[321] = {
-		name = "é‡æ¨±é›·å‡»é‡å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "ÖØÓ£À×»÷ÖØÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 3",
@@ -2455,7 +2455,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[322] = {
-		name = "é‡æ¨±é›·å‡»é‡å·¡å‰¯ç‚®T2",
+		name = "ÖØÓ£À×»÷ÖØÑ²¸±ÅÚT2",
 		damage = "3 x 3",
 		base = 321,
 		id = 322,
@@ -2466,7 +2466,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[323] = {
-		name = "é‡æ¨±é›·å‡»é‡å·¡å‰¯ç‚®T3",
+		name = "ÖØÓ£À×»÷ÖØÑ²¸±ÅÚT3",
 		damage = "3 x 3",
 		base = 321,
 		id = 323,
@@ -2480,7 +2480,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[324] = {
-		name = "é‡æ¨±é›·å‡»é‡å·¡å‰¯ç‚®T4",
+		name = "ÖØÓ£À×»÷ÖØÑ²¸±ÅÚT4",
 		damage = "4 x 3",
 		base = 321,
 		id = 324,
@@ -2494,12 +2494,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[331] = {
-		name = "é“è¡€é›·å‡»é‡å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "ÌúÑªÀ×»÷ÖØÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 3",
@@ -2539,7 +2539,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[332] = {
-		name = "é“è¡€é›·å‡»é‡å·¡å‰¯ç‚®T2",
+		name = "ÌúÑªÀ×»÷ÖØÑ²¸±ÅÚT2",
 		damage = "3 x 3",
 		base = 331,
 		id = 332,
@@ -2550,7 +2550,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[333] = {
-		name = "é“è¡€é›·å‡»é‡å·¡å‰¯ç‚®T3",
+		name = "ÌúÑªÀ×»÷ÖØÑ²¸±ÅÚT3",
 		damage = "4 x 3",
 		base = 331,
 		id = 333,
@@ -2561,7 +2561,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[334] = {
-		name = "é“è¡€é›·å‡»é‡å·¡å‰¯ç‚®T4",
+		name = "ÌúÑªÀ×»÷ÖØÑ²¸±ÅÚT4",
 		damage = "5 x 3",
 		base = 331,
 		id = 334,
@@ -2572,12 +2572,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[351] = {
-		name = "æ’’ä¸é›·å‡»é‡å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "Èö¶¡À×»÷ÖØÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 2",
@@ -2617,7 +2617,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[352] = {
-		name = "æ’’ä¸é›·å‡»é‡å·¡å‰¯ç‚®T2",
+		name = "Èö¶¡À×»÷ÖØÑ²¸±ÅÚT2",
 		damage = "3 x 2",
 		base = 351,
 		id = 352,
@@ -2633,7 +2633,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[353] = {
-		name = "æ’’ä¸é›·å‡»é‡å·¡å‰¯ç‚®T3",
+		name = "Èö¶¡À×»÷ÖØÑ²¸±ÅÚT3",
 		damage = "4 x 2",
 		base = 351,
 		id = 353,
@@ -2649,7 +2649,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[354] = {
-		name = "æ’’ä¸é›·å‡»é‡å·¡å‰¯ç‚®T4",
+		name = "Èö¶¡À×»÷ÖØÑ²¸±ÅÚT4",
 		damage = "5 x 2",
 		base = 351,
 		id = 354,
@@ -2665,12 +2665,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[371] = {
-		name = "é¸¢å°¾é›·å‡»é‡å·¡å‰¯ç‚®T1",
-		speciality = "é”å®š",
+		name = "ğ°Î²À×»÷ÖØÑ²¸±ÅÚT1",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "2 x 3",
@@ -2711,7 +2711,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[372] = {
-		name = "é¸¢å°¾é›·å‡»é‡å·¡å‰¯ç‚®T2",
+		name = "ğ°Î²À×»÷ÖØÑ²¸±ÅÚT2",
 		damage = "3 x 3",
 		base = 371,
 		id = 372,
@@ -2722,7 +2722,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[373] = {
-		name = "é¸¢å°¾é›·å‡»é‡å·¡å‰¯ç‚®T3",
+		name = "ğ°Î²À×»÷ÖØÑ²¸±ÅÚT3",
 		damage = "4 x 3",
 		base = 371,
 		id = 373,
@@ -2733,7 +2733,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[374] = {
-		name = "é¸¢å°¾é›·å‡»é‡å·¡å‰¯ç‚®T4",
+		name = "ğ°Î²À×»÷ÖØÑ²¸±ÅÚT4",
 		damage = "5 x 3",
 		base = 371,
 		id = 374,
@@ -2744,12 +2744,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[431] = {
-		name = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®ï¼ˆå¥¥ä¸å‰¯ç‚®ï¼‰",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ£¨°Â¶¡¸±ÅÚ£©",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "21 x 4",
@@ -2790,12 +2790,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[432] = {
-		name = "ä¸‰è”è£…SKC25å¼150mmä¸»ç‚®ï¼ˆå¥¥ä¸å‰¯ç‚®ï¼‰",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°SKC25Ê½150mmÖ÷ÅÚ£¨°Â¶¡¸±ÅÚ£©",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "21 x 6",
@@ -2829,11 +2829,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[433] = {
-		name = "å››è”è£…533mmç£æ€§é±¼é›·ï¼ˆæ¨¡æ‹Ÿå±•ç¤ºç”¨ï¼‰",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mm´ÅĞÔÓãÀ×£¨Ä£ÄâÕ¹Ê¾ÓÃ£©",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "å››è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ËÄÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 45,
 		icon = "1",
 		attribute_2 = "torpedo",
@@ -2878,11 +2878,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[434] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…234mmä¸»ç‚®ï¼ˆæ¨¡æ‹Ÿå±•ç¤ºç”¨ï¼‰",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍÈıÁª×°234mmÖ÷ÅÚ£¨Ä£ÄâÕ¹Ê¾ÓÃ£©",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 65,
 		icon = "1",
 		attribute_2 = "cannon",
@@ -2922,12 +2922,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[435] = {
-		name = "çš‡å®¶é›·å‡»è½»å·¡å‰¯ç‚®T4ï¼ˆæ¨¡æ‹Ÿå±•ç¤ºç”¨ï¼‰",
-		speciality = "é”å®š",
+		name = "»Ê¼ÒÀ×»÷ÇáÑ²¸±ÅÚT4£¨Ä£ÄâÕ¹Ê¾ÓÃ£©",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "10 x 4",
@@ -2967,12 +2967,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[436] = {
-		name = "P1çªç ´åè‡ªå¸¦150mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "P1Í»ÆÆºó×Ô´ø150mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		damage = "21 x 4",
@@ -3004,17 +3004,17 @@ pg.equip_data_statistics = {
 		}
 	},
 	[500] = {
-		name = "å°æµ·ç‹¸ä¸­é˜Ÿé˜Ÿå¾½",
+		name = "Ğ¡º£ÀêÖĞ¶Ó¶Ó»Õ",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 500,
 		value_2 = 25,
 		icon = "500",
 		value_1 = "14",
 		attribute_2 = "durability",
 		rarity = 5,
-		descrip = "ç™½é¹°ç¬¬23é©±é€èˆ°ä¸­é˜Ÿ\n<color=#ffde38>å…¨ä½“å°æµ·ç‹¸ï¼Œä¿æŒ31èŠ‚åŒ€é€Ÿå‰è¿›ï¼â€”â€”æŸ¥å°”æ–¯Â·å¥¥æ–¯æœ¬</color>",
+		descrip = "°×Ó¥µÚ23ÇıÖğ½¢ÖĞ¶Ó\n<color=#ffde38>È«ÌåĞ¡º£Àê£¬±£³Ö31½ÚÔÈËÙÇ°½ø£¡¡ª¡ª²é¶ûË¹¡¤°ÂË¹±¾</color>",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -3145,15 +3145,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[520] = {
-		name = "çç ä¹‹æ³ª",
+		name = "ÕäÖéÖ®Àá",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "520",
 		value_1 = "200",
-		descrip = "ä¸€é¢—å¥‡æ€ªçš„ç å­ï¼Œä¼¼ä¹è®°è½½ç€æŸä¸€æ®µå†å²",
+		descrip = "Ò»¿ÅÆæ¹ÖµÄÖé×Ó£¬ËÆºõ¼ÇÔØ×ÅÄ³Ò»¶ÎÀúÊ·",
 		rarity = 5,
 		nationality = 1,
 		ammo = 10,
@@ -3272,15 +3272,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[540] = {
-		name = "æ²»æ„ˆç³»çŒ«çˆª",
+		name = "ÖÎÓúÏµÃ¨×¦",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "540",
 		value_1 = "120",
-		descrip = "{namecode:89}é…±ç”¨çš„çŒ«çˆªï¼Œä¼¼ä¹æœ‰ç€æŸç§æ²»æ„ˆæ•ˆæœ",
+		descrip = "{namecode:89}½´ÓÃµÄÃ¨×¦£¬ËÆºõÓĞ×ÅÄ³ÖÖÖÎÓúĞ§¹û",
 		rarity = 5,
 		nationality = 3,
 		ammo = 10,
@@ -3399,15 +3399,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[560] = {
-		name = "â€œå®æµ·å·â€æ°´ä¸Šä¾¦å¯Ÿæœº",
+		name = "¡°Äşº£ºÅ¡±Ë®ÉÏÕì²ì»ú",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "hit",
 		value_2 = 0,
 		icon = "560",
 		value_1 = "15",
-		descrip = "å®æµ·ä¸€ç›´å¸¦ç€çš„ä¾¦å¯Ÿæœºï¼Œä¼¼ä¹å¾ˆçè´µï¼Ÿ",
+		descrip = "Äşº£Ò»Ö±´ø×ÅµÄÕì²ì»ú£¬ËÆºõºÜÕä¹ó£¿",
 		rarity = 4,
 		nationality = 5,
 		ammo = 10,
@@ -3521,17 +3521,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[580] = {
-		name = "ä¹ä¸€å¼ç©¿ç”²å¼¹",
+		name = "¾ÅÒ»Ê½´©¼×µ¯",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 580,
 		value_2 = 4,
 		icon = "580",
 		value_1 = "14",
 		attribute_2 = "hit",
 		rarity = 4,
-		descrip = "è¿œè·ç¦»ç‚®å‡»æˆ˜çš„ç§˜å¯†æ­¦å™¨ã€ä¹ä¸€å¼ç©¿ç”²å¼¹ã€ã€‚æé«˜äº†ç‚®å¼¹å…¥æ°´åçš„æ€§èƒ½ï¼Œèƒ½å¤Ÿæœ‰æ•ˆç ´åæ°´çº¿ä»¥ä¸‹éƒ¨åˆ†è£…ç”²å¹¶çªå…¥èˆ°ä½“å†…åçˆ†ç‚¸çš„ç‚®å¼¹",
+		descrip = "Ô¶¾àÀëÅÚ»÷Õ½µÄÃØÃÜÎäÆ÷¡º¾ÅÒ»Ê½´©¼×µ¯¡»¡£Ìá¸ßÁËÅÚµ¯ÈëË®ºóµÄĞÔÄÜ£¬ÄÜ¹»ÓĞĞ§ÆÆ»µË®ÏßÒÔÏÂ²¿·Ö×°¼×²¢Í»Èë½¢ÌåÄÚºó±¬Õ¨µÄÅÚµ¯",
 		nationality = 3,
 		ammo = 10,
 		value_3 = 0,
@@ -3652,17 +3652,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[600] = {
-		name = "ä¸€å¼ç©¿ç”²å¼¹",
+		name = "Ò»Ê½´©¼×µ¯",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 600,
 		value_2 = 6,
 		icon = "600",
 		value_1 = "22",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "ã€ä¹ä¸€å¼ç©¿ç”²å¼¹ã€çš„æ”¹è¿›å‹ã€ä¸€å¼ç©¿ç”²å¼¹ã€ã€‚æ¯”èµ·ä¹ä¸€å¼åœ¨æ€§èƒ½ä¸Šæœ‰æ‰€æå‡",
+		descrip = "¡º¾ÅÒ»Ê½´©¼×µ¯¡»µÄ¸Ä½øĞÍ¡ºÒ»Ê½´©¼×µ¯¡»¡£±ÈÆğ¾ÅÒ»Ê½ÔÚĞÔÄÜÉÏÓĞËùÌáÉı",
 		nationality = 3,
 		ammo = 10,
 		value_3 = 0,
@@ -3800,15 +3800,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[620] = {
-		name = "è¶…é‡å¼¹",
+		name = "³¬ÖØµ¯",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "cannon",
 		value_2 = 0,
 		icon = "620",
 		value_1 = "28",
-		descrip = "å¼¹é‡ç³»æ•°è¿œå¤§äºä¸€èˆ¬å¼¹è¯çš„ç‚®å¼¹ï¼Œç§°ä¸ºã€è¶…é‡å¼¹ã€ï¼Œæœ‰ç€éåŒä¸€èˆ¬çš„é‡é‡",
+		descrip = "µ¯ÖØÏµÊıÔ¶´óÓÚÒ»°ãµ¯Ò©µÄÅÚµ¯£¬³ÆÎª¡º³¬ÖØµ¯¡»£¬ÓĞ×Å·ÇÍ¬Ò»°ãµÄÖØÁ¿",
 		rarity = 5,
 		nationality = 1,
 		ammo = 10,
@@ -3935,10 +3935,10 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[640] = {
-		name = "Zæ——",
+		name = "ZÆì",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_3 = "luck",
 		id = 640,
 		value_2 = 4,
@@ -3947,7 +3947,7 @@ pg.equip_data_statistics = {
 		attribute_2 = "hit",
 		rarity = 6,
 		nationality = 3,
-		descrip = "Zä»£è¡¨ç€å¥½è¿ï¼Œå¿…èƒœå’Œæ­£ä¹‰ï¼ŒæŒ‚ä¸Šè¿™é¢æ——å¸œï¼Œå¼€å§‹æˆ˜æ–—åŠ¨å‘˜å§ï¼",
+		descrip = "Z´ú±í×ÅºÃÔË£¬±ØÊ¤ºÍÕıÒå£¬¹ÒÉÏÕâÃæÆìÖÄ£¬¿ªÊ¼Õ½¶·¶¯Ô±°É£¡",
 		ammo = 10,
 		value_3 = 5,
 		attribute_1 = "dodge",
@@ -4086,15 +4086,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[660] = {
-		name = "100/150å·èˆªç©ºç‡ƒæ²¹",
+		name = "100/150ºÅº½¿ÕÈ¼ÓÍ",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "air",
 		value_2 = 0,
 		icon = "660",
 		value_1 = "28",
-		descrip = "æ€§èƒ½å€¼è¾¾åˆ°150çš„èˆªç©ºç‡ƒæ²¹ï¼Œæ‹¥æœ‰çº¯å¼‚è¾›çƒ·1.5å€çš„æŠ—æš´ç‡ƒèƒ½åŠ›ï¼Œèƒ½å¤Ÿå¤§å¹…æå‡å‘åŠ¨æœºçš„åŠŸç‡",
+		descrip = "ĞÔÄÜÖµ´ïµ½150µÄº½¿ÕÈ¼ÓÍ£¬ÓµÓĞ´¿ÒìĞÁÍé1.5±¶µÄ¿¹±©È¼ÄÜÁ¦£¬ÄÜ¹»´ó·ùÌáÉı·¢¶¯»úµÄ¹¦ÂÊ",
 		rarity = 4,
 		nationality = 1,
 		ammo = 10,
@@ -4205,15 +4205,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[680] = {
-		name = "å½’èˆªä¿¡æ ‡",
+		name = "¹éº½ĞÅ±ê",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "air",
 		value_2 = 0,
 		icon = "680",
 		value_1 = "18",
-		descrip = "72DMå‹è¿”èˆªæŒ‡ç¤ºä¿¡æ ‡ï¼Œå®‰è£…åœ¨èˆªæ¯ä¸»æ¡…ä¸Šæ–¹ï¼Œå¸®åŠ©èˆ°è½½æœºç¡®è®¤æ¯èˆ°çš„å®æ—¶ä½ç½® ",
+		descrip = "72DMĞÍ·µº½Ö¸Ê¾ĞÅ±ê£¬°²×°ÔÚº½Ä¸Ö÷Î¦ÉÏ·½£¬°ïÖú½¢ÔØ»úÈ·ÈÏÄ¸½¢µÄÊµÊ±Î»ÖÃ ",
 		rarity = 4,
 		nationality = 2,
 		ammo = 10,
@@ -4324,15 +4324,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[700] = {
-		name = "ä¹å…«å¼å°„å‡»å»¶è¿Ÿè£…ç½®",
+		name = "¾Å°ËÊ½Éä»÷ÑÓ³Ù×°ÖÃ",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "cannon",
 		value_2 = 0,
 		icon = "700",
 		value_1 = "12",
-		descrip = "ä¹å…«å¼å°„å‡»å»¶è¿Ÿè£…ç½®ï¼Œé€šè¿‡ä½¿å„ç‚®å°„å‡»ä¹‹é—´å½¢æˆå¾®å°çš„æ—¶é—´å·®ï¼Œä»è€Œå‡å°‘ç‚®å¼¹é£è¡Œä¸­çš„äº’ç›¸å¹²æ‰°ï¼Œç¼©å°æ•£å¸ƒç•Œ",
+		descrip = "¾Å°ËÊ½Éä»÷ÑÓ³Ù×°ÖÃ£¬Í¨¹ıÊ¹¸÷ÅÚÉä»÷Ö®¼äĞÎ³ÉÎ¢Ğ¡µÄÊ±¼ä²î£¬´Ó¶ø¼õÉÙÅÚµ¯·ÉĞĞÖĞµÄ»¥Ïà¸ÉÈÅ£¬ËõĞ¡É¢²¼½ç",
 		rarity = 4,
 		nationality = 3,
 		ammo = 10,
@@ -4445,17 +4445,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[720] = {
-		name = "çº¦å®šçš„è¯æ˜",
+		name = "Ô¼¶¨µÄÖ¤Ã÷",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 720,
 		value_2 = 80,
 		icon = "720",
 		value_1 = "12",
 		attribute_2 = "durability",
 		rarity = 5,
-		descrip = "å†™ç€çœŸè¯šèª“è¨€çš„â€œä¿è¯ä¹¦â€â€”â€”ã€Œå°±ç®—ç”¨æ‹–çš„ï¼Œæˆ‘ä¹Ÿä¼šå°†ä¿¾æ–¯éº¦å®‰å…¨å¸¦å›å®¶çš„ï¼ã€",
+		descrip = "Ğ´×ÅÕæ³ÏÊÄÑÔµÄ¡°±£Ö¤Êé¡±¡ª¡ª¡¸¾ÍËãÓÃÍÏµÄ£¬ÎÒÒ²»á½«ÙÂË¹Âó°²È«´ø»Ø¼ÒµÄ£¡¡¹",
 		nationality = 4,
 		ammo = 10,
 		value_3 = 0,
@@ -4596,15 +4596,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[740] = {
-		name = "Fl-282ç›´å‡æœº",
+		name = "Fl-282Ö±Éı»ú",
 		tech = 0,
 		type = 17,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "antisub",
 		value_2 = 0,
 		icon = "740",
 		value_1 = "9",
-		descrip = "é“è¡€å…¬å›½è½»å‹èˆ°è½½ç›´å‡æœºFl-282â€œèœ‚é¸Ÿâ€",
+		descrip = "ÌúÑª¹«¹úÇáĞÍ½¢ÔØÖ±Éı»úFl-282¡°·äÄñ¡±",
 		rarity = 4,
 		nationality = 4,
 		ammo = 10,
@@ -4719,17 +4719,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[760] = {
-		name = "ä¾¦å¯ŸæŠ¥å‘ŠÂ·çº½çº¦è¿‘æµ·",
+		name = "Õì²ì±¨¸æ¡¤Å¦Ô¼½üº£",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 760,
 		value_2 = 50,
 		icon = "760",
 		value_1 = "5",
 		attribute_2 = "durability",
 		rarity = 4,
-		descrip = "é’ˆå¯¹çº½çº¦è¿‘æµ·å¡å£¬æ§åˆ¶åŒºçš„æ­£å¼ä¾¦æŸ¥æŠ¥å‘Šä¹¦ï¼Œè™½å› å¹²æ‰°å¯¼è‡´è¡ŒåŠ¨æå‰ç»“æŸï¼Œä½†ä¾ç„¶æ”¶é›†äº†ä¸°å¯Œæ•°æ®",
+		descrip = "Õë¶ÔÅ¦Ô¼½üº£ÈûÈÉ¿ØÖÆÇøµÄÕıÊ½Õì²é±¨¸æÊé£¬ËäÒò¸ÉÈÅµ¼ÖÂĞĞ¶¯ÌáÇ°½áÊø£¬µ«ÒÀÈ»ÊÕ¼¯ÁË·á¸»Êı¾İ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -4842,17 +4842,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[780] = {
-		name = "æœºå¯†æ–‡ä»¶Â·æåœ°æµ·å³¡",
+		name = "»úÃÜÎÄ¼ş¡¤¼«µØº£Ï¿",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 780,
 		value_2 = 100,
 		icon = "780",
 		value_1 = "10",
 		attribute_2 = "durability",
 		rarity = 4,
-		descrip = "é€šè¿‡è§£æå†°é›ªè¦å¡æˆ˜å½¹ä¸­çš„è·å¾—çš„æƒ…æŠ¥ï¼Œæ•´ç†è€Œæˆçš„æœºå¯†æŠ¥å‘Šä¹¦",
+		descrip = "Í¨¹ı½âÎö±ùÑ©ÒªÈûÕ½ÒÛÖĞµÄ»ñµÃµÄÇé±¨£¬ÕûÀí¶ø³ÉµÄ»úÃÜ±¨¸æÊé",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -4965,10 +4965,10 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[800] = {
-		name = "è‰‡å£³æ”¹è‰¯è®¾è®¡æ¡ˆ",
+		name = "Í§¿Ç¸ÄÁ¼Éè¼Æ°¸",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_3 = "raid_distance",
 		id = 800,
 		value_2 = 40,
@@ -4977,7 +4977,7 @@ pg.equip_data_statistics = {
 		attribute_2 = "durability",
 		rarity = 4,
 		nationality = 4,
-		descrip = "é€šè¿‡å¯¹è‰‡å£³å½¢çŠ¶çš„æ”¹è‰¯ï¼Œå‡å°äº†æ½œè‰‡æ°´ä¸‹èˆªè¡Œçš„é˜»åŠ›ï¼Œæé«˜äº†æˆ˜æ–—ä¸­çš„èˆªé€Ÿä¸èˆªç¨‹",
+		descrip = "Í¨¹ı¶ÔÍ§¿ÇĞÎ×´µÄ¸ÄÁ¼£¬¼õĞ¡ÁËÇ±Í§Ë®ÏÂº½ĞĞµÄ×èÁ¦£¬Ìá¸ßÁËÕ½¶·ÖĞµÄº½ËÙÓëº½³Ì",
 		ammo = 10,
 		value_3 = -8,
 		attribute_1 = "torpedo",
@@ -5086,17 +5086,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[820] = {
-		name = "å¼€æ‹“è€…å¥–ç« ",
+		name = "¿ªÍØÕß½±ÕÂ",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 820,
 		value_2 = 20,
 		icon = "820",
 		value_1 = "40",
 		attribute_2 = "durability",
 		rarity = 5,
-		descrip = "èˆªç©ºå…ˆé©±è€…çš„å‹‹ç« ï¼Œæ ‡å¿—ç€èˆªç©ºæ¯èˆ°æ—¶ä»£çš„åˆ°æ¥ï¼Œå¤§ç‚®å·¨èˆ°æ­£æˆä¸ºè¿‡å»",
+		descrip = "º½¿ÕÏÈÇıÕßµÄÑ«ÕÂ£¬±êÖ¾×Åº½¿ÕÄ¸½¢Ê±´úµÄµ½À´£¬´óÅÚ¾Ş½¢Õı³ÉÎª¹ıÈ¥",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -5233,17 +5233,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[840] = {
-		name = "ç™½é¹°ç²¾è‹±æŸç®¡",
+		name = "°×Ó¥¾«Ó¢Ëğ¹Ü",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 840,
 		value_2 = 8,
 		icon = "840",
 		value_1 = "200",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		descrip = "ç™½é¹°å…ˆè¿›çš„æŸå®³ç®¡åˆ¶ç³»ç»Ÿï¼Œæœ‰ç€ä¼˜ç§€çš„åº”æ€¥å¤„ç½®èƒ½åŠ›ï¼Œåœ¨æˆ˜äº‰ä¸­å‡å°‘äº†å¤§é‡çš„èˆ°èˆ¹æŸå¤±",
+		descrip = "°×Ó¥ÏÈ½øµÄËğº¦¹ÜÖÆÏµÍ³£¬ÓĞ×ÅÓÅĞãµÄÓ¦¼±´¦ÖÃÄÜÁ¦£¬ÔÚÕ½ÕùÖĞ¼õÉÙÁË´óÁ¿µÄ½¢´¬ËğÊ§",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -5375,17 +5375,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[860] = {
-		name = "åç››é¡¿æµ·å†›æ¡çº¦",
+		name = "»ªÊ¢¶Ùº£¾üÌõÔ¼",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 860,
 		value_2 = 12,
 		icon = "860",
 		value_1 = "8",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "......æˆ‘ä»¬å†³å¿ƒï¼Œä¸ºè¾¾æ­¤ç›®çš„ï¼Œç­¾è®¢æ¡çº¦é™åˆ¶å„è‡ªçš„æµ·å†›å†›å¤‡",
+		descrip = "......ÎÒÃÇ¾öĞÄ£¬Îª´ï´ËÄ¿µÄ£¬Ç©¶©ÌõÔ¼ÏŞÖÆ¸÷×ÔµÄº£¾ü¾ü±¸",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -5516,17 +5516,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[880] = {
-		name = "çº³å°”é€Šçš„æ——è¯­",
+		name = "ÄÉ¶ûÑ·µÄÆìÓï",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 880,
 		value_2 = 8,
 		icon = "880",
 		value_1 = "20",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "è‹±æ ¼å…°æœŸæœ›æ¯ä¸ªäººéƒ½æªå°½èŒå®ˆ",
+		descrip = "Ó¢¸ñÀ¼ÆÚÍûÃ¿¸öÈË¶¼ã¡¾¡Ö°ÊØ",
 		nationality = 2,
 		ammo = 10,
 		value_3 = 0,
@@ -5661,15 +5661,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1000] = {
-		name = "èˆ°è‰‡ç»´ä¿®è®¾å¤‡",
+		name = "½¢Í§Î¬ĞŞÉè±¸",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "1000",
 		value_1 = "90",
-		descrip = "ç”¨äºç»´ä¿®è§’è‰²çš„è®¾å¤‡ï¼Œåªæœ‰ä¿®ç†èˆ°å¯ä»¥ä½¿ç”¨",
+		descrip = "ÓÃÓÚÎ¬ĞŞ½ÇÉ«µÄÉè±¸£¬Ö»ÓĞĞŞÀí½¢¿ÉÒÔÊ¹ÓÃ",
 		rarity = 3,
 		nationality = 0,
 		ammo = 10,
@@ -5740,15 +5740,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1020] = {
-		name = "èˆ°è‰‡ç»´ä¿®è®¾å¤‡",
+		name = "½¢Í§Î¬ĞŞÉè±¸",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "1000",
 		value_1 = "140",
-		descrip = "ç”¨äºç»´ä¿®è§’è‰²çš„è®¾å¤‡ï¼Œåªæœ‰ä¿®ç†èˆ°å¯ä»¥ä½¿ç”¨",
+		descrip = "ÓÃÓÚÎ¬ĞŞ½ÇÉ«µÄÉè±¸£¬Ö»ÓĞĞŞÀí½¢¿ÉÒÔÊ¹ÓÃ",
 		rarity = 4,
 		nationality = 0,
 		ammo = 10,
@@ -5847,15 +5847,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1040] = {
-		name = "èˆ°è‰‡ç»´ä¿®è®¾å¤‡",
+		name = "½¢Í§Î¬ĞŞÉè±¸",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "1000",
 		value_1 = "200",
-		descrip = "ç”¨äºç»´ä¿®è§’è‰²çš„è®¾å¤‡ï¼Œåªæœ‰ä¿®ç†èˆ°å¯ä»¥ä½¿ç”¨",
+		descrip = "ÓÃÓÚÎ¬ĞŞ½ÇÉ«µÄÉè±¸£¬Ö»ÓĞĞŞÀí½¢¿ÉÒÔÊ¹ÓÃ",
 		rarity = 5,
 		nationality = 0,
 		ammo = 10,
@@ -5978,15 +5978,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1100] = {
-		name = "å¯¹ç©ºé›·è¾¾",
+		name = "¶Ô¿ÕÀ×´ï",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "antiaircraft",
 		value_2 = 0,
 		icon = "1100",
 		value_1 = "10",
-		descrip = "å¯¹ç©ºæœç´¢é›·è¾¾ï¼Œå¯ä»¥æé«˜é˜²ç©ºèƒ½åŠ›",
+		descrip = "¶Ô¿ÕËÑË÷À×´ï£¬¿ÉÒÔÌá¸ß·À¿ÕÄÜÁ¦",
 		rarity = 2,
 		nationality = 1,
 		ammo = 10,
@@ -6030,15 +6030,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1120] = {
-		name = "å¯¹ç©ºé›·è¾¾",
+		name = "¶Ô¿ÕÀ×´ï",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "antiaircraft",
 		value_2 = 0,
 		icon = "1100",
 		value_1 = "18",
-		descrip = "å¯¹ç©ºæœç´¢é›·è¾¾ï¼Œå¯ä»¥æé«˜é˜²ç©ºèƒ½åŠ›",
+		descrip = "¶Ô¿ÕËÑË÷À×´ï£¬¿ÉÒÔÌá¸ß·À¿ÕÄÜÁ¦",
 		rarity = 3,
 		nationality = 1,
 		ammo = 10,
@@ -6103,15 +6103,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1140] = {
-		name = "å¯¹ç©ºé›·è¾¾",
+		name = "¶Ô¿ÕÀ×´ï",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "antiaircraft",
 		value_2 = 0,
 		icon = "1100",
 		value_1 = "28",
-		descrip = "å¯¹ç©ºæœç´¢é›·è¾¾ï¼Œå¯ä»¥æé«˜é˜²ç©ºèƒ½åŠ›",
+		descrip = "¶Ô¿ÕËÑË÷À×´ï£¬¿ÉÒÔÌá¸ß·À¿ÕÄÜÁ¦",
 		rarity = 4,
 		nationality = 1,
 		ammo = 10,
@@ -6212,15 +6212,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1160] = {
-		name = "é«˜æ€§èƒ½å¯¹ç©ºé›·è¾¾",
+		name = "¸ßĞÔÄÜ¶Ô¿ÕÀ×´ï",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "antiaircraft",
 		value_2 = 0,
 		icon = "1160",
 		value_1 = "40",
-		descrip = "293å¯¹ç©ºæœç´¢é›·è¾¾ï¼Œå¯ä»¥æé«˜é˜²ç©ºèƒ½åŠ›",
+		descrip = "293¶Ô¿ÕËÑË÷À×´ï£¬¿ÉÒÔÌá¸ß·À¿ÕÄÜÁ¦",
 		rarity = 5,
 		nationality = 2,
 		ammo = 10,
@@ -6341,17 +6341,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1200] = {
-		name = "ç«æ§é›·è¾¾",
+		name = "»ğ¿ØÀ×´ï",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1200,
 		value_2 = 3,
 		icon = "1200",
 		value_1 = "3",
 		attribute_2 = "cannon",
 		rarity = 2,
-		descrip = "ç«æ§é›·è¾¾ï¼Œæé«˜ç‚®å‡»å‘½ä¸­å’Œä¼¤å®³",
+		descrip = "»ğ¿ØÀ×´ï£¬Ìá¸ßÅÚ»÷ÃüÖĞºÍÉËº¦",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -6411,17 +6411,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1220] = {
-		name = "ç«æ§é›·è¾¾",
+		name = "»ğ¿ØÀ×´ï",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1220,
 		value_2 = 5,
 		icon = "1200",
 		value_1 = "6",
 		attribute_2 = "cannon",
 		rarity = 3,
-		descrip = "ç«æ§é›·è¾¾ï¼Œæé«˜ç‚®å‡»å‘½ä¸­å’Œä¼¤å®³",
+		descrip = "»ğ¿ØÀ×´ï£¬Ìá¸ßÅÚ»÷ÃüÖĞºÍÉËº¦",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -6507,17 +6507,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1240] = {
-		name = "ç«æ§é›·è¾¾",
+		name = "»ğ¿ØÀ×´ï",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1240,
 		value_2 = 8,
 		icon = "1200",
 		value_1 = "9",
 		attribute_2 = "cannon",
 		rarity = 4,
-		descrip = "ç«æ§é›·è¾¾ï¼Œæé«˜ç‚®å‡»å‘½ä¸­å’Œä¼¤å®³",
+		descrip = "»ğ¿ØÀ×´ï£¬Ìá¸ßÅÚ»÷ÃüÖĞºÍÉËº¦",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -6644,17 +6644,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1260] = {
-		name = "é«˜æ€§èƒ½ç«æ§é›·è¾¾",
+		name = "¸ßĞÔÄÜ»ğ¿ØÀ×´ï",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1260,
 		value_2 = 12,
 		icon = "1260",
 		value_1 = "14",
 		attribute_2 = "cannon",
 		rarity = 5,
-		descrip = "å…ˆè¿›çš„ç«æ§é›·è¾¾ï¼Œæœ‰æ•ˆæé«˜ç‚®å‡»å‘½ä¸­å’Œä¼¤å®³ï¼Œæ¯”æ™®é€šçš„ç«æ§é›·è¾¾æ€§èƒ½æ›´å¥½",
+		descrip = "ÏÈ½øµÄ»ğ¿ØÀ×´ï£¬ÓĞĞ§Ìá¸ßÅÚ»÷ÃüÖĞºÍÉËº¦£¬±ÈÆÕÍ¨µÄ»ğ¿ØÀ×´ïĞÔÄÜ¸üºÃ",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -6795,15 +6795,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1300] = {
-		name = "é˜²é±¼é›·éš”èˆ±",
+		name = "·ÀÓãÀ×¸ô²Õ",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "1300",
 		value_1 = "50",
-		descrip = "é˜²é±¼é›·éš”èˆ±ï¼Œå¯ä»¥å‡å°‘é±¼é›·é€ æˆçš„ä¼¤å®³",
+		descrip = "·ÀÓãÀ×¸ô²Õ£¬¿ÉÒÔ¼õÉÙÓãÀ×Ôì³ÉµÄÉËº¦",
 		rarity = 2,
 		nationality = 0,
 		ammo = 10,
@@ -6875,15 +6875,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1320] = {
-		name = "é˜²é±¼é›·éš”èˆ±",
+		name = "·ÀÓãÀ×¸ô²Õ",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "1300",
 		value_1 = "90",
-		descrip = "é˜²é±¼é›·éš”èˆ±ï¼Œå¯ä»¥å‡å°‘é±¼é›·é€ æˆçš„ä¼¤å®³",
+		descrip = "·ÀÓãÀ×¸ô²Õ£¬¿ÉÒÔ¼õÉÙÓãÀ×Ôì³ÉµÄÉËº¦",
 		rarity = 3,
 		nationality = 0,
 		ammo = 10,
@@ -6976,15 +6976,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1340] = {
-		name = "é˜²é±¼é›·éš”èˆ±",
+		name = "·ÀÓãÀ×¸ô²Õ",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "1300",
 		value_1 = "140",
-		descrip = "é˜²é±¼é›·éš”èˆ±ï¼Œå¯ä»¥å‡å°‘é±¼é›·é€ æˆçš„ä¼¤å®³",
+		descrip = "·ÀÓãÀ×¸ô²Õ£¬¿ÉÒÔ¼õÉÙÓãÀ×Ôì³ÉµÄÉËº¦",
 		rarity = 4,
 		nationality = 0,
 		ammo = 10,
@@ -7113,17 +7113,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1400] = {
-		name = "æ¶²å‹å¼¹å°„è£…ç½®",
+		name = "ÒºÑ¹µ¯Éä×°ÖÃ",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1400,
 		value_2 = 18,
 		icon = "1400",
 		value_1 = "18",
 		attribute_2 = "durability",
 		rarity = 3,
-		descrip = "ç”¨äºé£æœºå¼¹å°„èµ·é£ï¼Œå¯ä»¥æé«˜èˆªç©ºèƒ½åŠ›",
+		descrip = "ÓÃÓÚ·É»úµ¯ÉäÆğ·É£¬¿ÉÒÔÌá¸ßº½¿ÕÄÜÁ¦",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -7201,17 +7201,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1420] = {
-		name = "æ¶²å‹å¼¹å°„è£…ç½®",
+		name = "ÒºÑ¹µ¯Éä×°ÖÃ",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1420,
 		value_2 = 20,
 		icon = "1400",
 		value_1 = "28",
 		attribute_2 = "durability",
 		rarity = 4,
-		descrip = "ç”¨äºé£æœºå¼¹å°„èµ·é£ï¼Œå¯ä»¥æé«˜èˆªç©ºèƒ½åŠ›",
+		descrip = "ÓÃÓÚ·É»úµ¯ÉäÆğ·É£¬¿ÉÒÔÌá¸ßº½¿ÕÄÜÁ¦",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -7321,17 +7321,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1440] = {
-		name = "æ¶²å‹å¼¹å°„è£…ç½®",
+		name = "ÒºÑ¹µ¯Éä×°ÖÃ",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1440,
 		value_2 = 25,
 		icon = "1400",
 		value_1 = "40",
 		attribute_2 = "durability",
 		rarity = 5,
-		descrip = "ç”¨äºé£æœºå¼¹å°„èµ·é£ï¼Œå¯ä»¥æé«˜èˆªç©ºèƒ½åŠ›",
+		descrip = "ÓÃÓÚ·É»úµ¯ÉäÆğ·É£¬¿ÉÒÔÌá¸ßº½¿ÕÄÜÁ¦",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -7468,17 +7468,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1500] = {
-		name = "SGé›·è¾¾",
+		name = "SGÀ×´ï",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1500,
 		value_2 = 2,
 		icon = "1500",
 		value_1 = "6",
 		attribute_2 = "dodge",
 		rarity = 3,
-		descrip = "ç™½é¹°è”é‚¦çš„å…ˆè¿›é›·è¾¾ï¼Œå¯ä»¥æ›´æœ‰æ•ˆçš„å‘ç°æ•Œäººå¹¶é€‰æ‹©ä½œæˆ˜æˆ–é¿å¼€",
+		descrip = "°×Ó¥Áª°îµÄÏÈ½øÀ×´ï£¬¿ÉÒÔ¸üÓĞĞ§µÄ·¢ÏÖµĞÈË²¢Ñ¡Ôñ×÷Õ½»ò±Ü¿ª",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -7582,17 +7582,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1520] = {
-		name = "SGé›·è¾¾",
+		name = "SGÀ×´ï",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1520,
 		value_2 = 4,
 		icon = "1500",
 		value_1 = "9",
 		attribute_2 = "dodge",
 		rarity = 4,
-		descrip = "ç™½é¹°è”é‚¦çš„å…ˆè¿›é›·è¾¾ï¼Œå¯ä»¥æ›´æœ‰æ•ˆçš„å‘ç°æ•Œäººå¹¶é€‰æ‹©ä½œæˆ˜æˆ–é¿å¼€",
+		descrip = "°×Ó¥Áª°îµÄÏÈ½øÀ×´ï£¬¿ÉÒÔ¸üÓĞĞ§µÄ·¢ÏÖµĞÈË²¢Ñ¡Ôñ×÷Õ½»ò±Ü¿ª",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -7727,17 +7727,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1540] = {
-		name = "SGé›·è¾¾",
+		name = "SGÀ×´ï",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1540,
 		value_2 = 6,
 		icon = "1500",
 		value_1 = "14",
 		attribute_2 = "dodge",
 		rarity = 5,
-		descrip = "ç™½é¹°è”é‚¦çš„å…ˆè¿›é›·è¾¾ï¼Œå¯ä»¥æ›´æœ‰æ•ˆçš„å‘ç°æ•Œäººå¹¶é€‰æ‹©ä½œæˆ˜æˆ–é¿å¼€",
+		descrip = "°×Ó¥Áª°îµÄÏÈ½øÀ×´ï£¬¿ÉÒÔ¸üÓĞĞ§µÄ·¢ÏÖµĞÈË²¢Ñ¡Ôñ×÷Õ½»ò±Ü¿ª",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -7899,15 +7899,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1600] = {
-		name = "ç”µåŠ¨æ‰¬å¼¹æœº",
+		name = "µç¶¯Ñïµ¯»ú",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "reload",
 		value_2 = 0,
 		icon = "1600",
 		value_1 = "2",
-		descrip = "ç”µåŠ¨æ‰¬å¼¹æœºï¼Œèƒ½å¤Ÿæé«˜è£…å¡«å’Œç‚®å‡»",
+		descrip = "µç¶¯Ñïµ¯»ú£¬ÄÜ¹»Ìá¸ß×°ÌîºÍÅÚ»÷",
 		rarity = 1,
 		nationality = 0,
 		ammo = 10,
@@ -7984,17 +7984,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1620] = {
-		name = "ç”µåŠ¨æ‰¬å¼¹æœº",
+		name = "µç¶¯Ñïµ¯»ú",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1620,
 		value_2 = 1,
 		icon = "1600",
 		value_1 = "5",
 		attribute_2 = "cannon",
 		rarity = 2,
-		descrip = "ç”µåŠ¨æ‰¬å¼¹æœºï¼Œèƒ½å¤Ÿæé«˜è£…å¡«å’Œç‚®å‡»",
+		descrip = "µç¶¯Ñïµ¯»ú£¬ÄÜ¹»Ìá¸ß×°ÌîºÍÅÚ»÷",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8067,17 +8067,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1640] = {
-		name = "ç”µåŠ¨æ‰¬å¼¹æœº",
+		name = "µç¶¯Ñïµ¯»ú",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1640,
 		value_2 = 3,
 		icon = "1600",
 		value_1 = "9",
 		attribute_2 = "cannon",
 		rarity = 3,
-		descrip = "ç”µåŠ¨æ‰¬å¼¹æœºï¼Œèƒ½å¤Ÿæé«˜è£…å¡«å’Œç‚®å‡»",
+		descrip = "µç¶¯Ñïµ¯»ú£¬ÄÜ¹»Ìá¸ß×°ÌîºÍÅÚ»÷",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8181,17 +8181,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1700] = {
-		name = "æ¶²å‹èˆµæœº",
+		name = "ÒºÑ¹¶æ»ú",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1700,
 		value_2 = 14,
 		icon = "1700",
 		value_1 = "2",
 		attribute_2 = "durability",
 		rarity = 1,
-		descrip = "èˆµåäº†å¯å°±éº»çƒ¦å•¦ï¼Œèƒ½å¤Ÿæé«˜æœºåŠ¨å€¼",
+		descrip = "¶æ»µÁË¿É¾ÍÂé·³À²£¬ÄÜ¹»Ìá¸ß»ú¶¯Öµ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8236,17 +8236,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1720] = {
-		name = "æ¶²å‹èˆµæœº",
+		name = "ÒºÑ¹¶æ»ú",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1720,
 		value_2 = 16,
 		icon = "1700",
 		value_1 = "5",
 		attribute_2 = "durability",
 		rarity = 2,
-		descrip = "èˆµåäº†å¯å°±éº»çƒ¦å•¦ï¼Œèƒ½å¤Ÿæé«˜æœºåŠ¨å€¼",
+		descrip = "¶æ»µÁË¿É¾ÍÂé·³À²£¬ÄÜ¹»Ìá¸ß»ú¶¯Öµ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8291,17 +8291,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1740] = {
-		name = "æ¶²å‹èˆµæœº",
+		name = "ÒºÑ¹¶æ»ú",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1740,
 		value_2 = 20,
 		icon = "1700",
 		value_1 = "9",
 		attribute_2 = "durability",
 		rarity = 3,
-		descrip = "èˆµåäº†å¯å°±éº»çƒ¦å•¦ï¼Œèƒ½å¤Ÿæé«˜æœºåŠ¨å€¼",
+		descrip = "¶æ»µÁË¿É¾ÍÂé·³À²£¬ÄÜ¹»Ìá¸ß»ú¶¯Öµ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8379,17 +8379,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1760] = {
-		name = "é«˜æ€§èƒ½èˆµæœº",
+		name = "¸ßĞÔÄÜ¶æ»ú",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1760,
 		value_2 = 24,
 		icon = "1760",
 		value_1 = "16",
 		attribute_2 = "durability",
 		rarity = 5,
-		descrip = "é«˜æ€§èƒ½çš„èˆµæœºï¼Œèƒ½å¤Ÿæé«˜æœºåŠ¨å€¼",
+		descrip = "¸ßĞÔÄÜµÄ¶æ»ú£¬ÄÜ¹»Ìá¸ß»ú¶¯Öµ",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -8520,17 +8520,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1800] = {
-		name = "æ”¹è‰¯é”…ç‚‰",
+		name = "¸ÄÁ¼¹øÂ¯",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1800,
 		value_2 = 1,
 		icon = "1800",
 		value_1 = "35",
 		attribute_2 = "speed",
 		rarity = 2,
-		descrip = "æ¯”è¾ƒå…ˆè¿›çš„é”…ç‚‰ï¼Œæœ‰æ•ˆçš„æé«˜äº†èˆªé€Ÿå’Œè€ä¹…æ€§èƒ½",
+		descrip = "±È½ÏÏÈ½øµÄ¹øÂ¯£¬ÓĞĞ§µÄÌá¸ßÁËº½ËÙºÍÄÍ¾ÃĞÔÄÜ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8573,17 +8573,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1820] = {
-		name = "æ”¹è‰¯é”…ç‚‰",
+		name = "¸ÄÁ¼¹øÂ¯",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1820,
 		value_2 = 2,
 		icon = "1800",
 		value_1 = "63",
 		attribute_2 = "speed",
 		rarity = 3,
-		descrip = "æ¯”è¾ƒå…ˆè¿›çš„é”…ç‚‰ï¼Œæœ‰æ•ˆçš„æé«˜äº†èˆªé€Ÿå’Œè€ä¹…æ€§èƒ½",
+		descrip = "±È½ÏÏÈ½øµÄ¹øÂ¯£¬ÓĞĞ§µÄÌá¸ßÁËº½ËÙºÍÄÍ¾ÃĞÔÄÜ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8651,17 +8651,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1840] = {
-		name = "æ”¹è‰¯é”…ç‚‰",
+		name = "¸ÄÁ¼¹øÂ¯",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1840,
 		value_2 = 3,
 		icon = "1800",
 		value_1 = "98",
 		attribute_2 = "speed",
 		rarity = 4,
-		descrip = "æ¯”è¾ƒå…ˆè¿›çš„é”…ç‚‰ï¼Œæœ‰æ•ˆçš„æé«˜äº†èˆªé€Ÿå’Œè€ä¹…æ€§èƒ½",
+		descrip = "±È½ÏÏÈ½øµÄ¹øÂ¯£¬ÓĞĞ§µÄÌá¸ßÁËº½ËÙºÍÄÍ¾ÃĞÔÄÜ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8771,17 +8771,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1900] = {
-		name = "æµ·å†›è¿·å½©",
+		name = "º£¾üÃÔ²Ê",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1900,
 		value_2 = 14,
 		icon = "1900",
 		value_1 = "2",
 		attribute_2 = "durability",
 		rarity = 1,
-		descrip = "è™½è¯´æ¶‚è£…å¯ä»¥éšæ„ï¼Œä½†æ˜¯è¿™ä¹ˆè´µçš„ä¸œè¥¿å°±ä¸è¦å¼„ä¸ªä¸€ç‚¹éšè”½æ€§èƒ½éƒ½æ²¡æœ‰çš„ä¸œè¥¿äº†å§",
+		descrip = "ËäËµÍ¿×°¿ÉÒÔËæÒâ£¬µ«ÊÇÕâÃ´¹óµÄ¶«Î÷¾Í²»ÒªÅª¸öÒ»µãÒş±ÎĞÔÄÜ¶¼Ã»ÓĞµÄ¶«Î÷ÁË°É",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8826,17 +8826,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1920] = {
-		name = "æµ·å†›è¿·å½©",
+		name = "º£¾üÃÔ²Ê",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1920,
 		value_2 = 16,
 		icon = "1900",
 		value_1 = "5",
 		attribute_2 = "durability",
 		rarity = 2,
-		descrip = "è™½è¯´æ¶‚è£…å¯ä»¥éšæ„ï¼Œä½†æ˜¯è¿™ä¹ˆè´µçš„ä¸œè¥¿å°±ä¸è¦å¼„ä¸ªä¸€ç‚¹éšè”½æ€§èƒ½éƒ½æ²¡æœ‰çš„ä¸œè¥¿äº†å§",
+		descrip = "ËäËµÍ¿×°¿ÉÒÔËæÒâ£¬µ«ÊÇÕâÃ´¹óµÄ¶«Î÷¾Í²»ÒªÅª¸öÒ»µãÒş±ÎĞÔÄÜ¶¼Ã»ÓĞµÄ¶«Î÷ÁË°É",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8881,17 +8881,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1940] = {
-		name = "æµ·å†›è¿·å½©",
+		name = "º£¾üÃÔ²Ê",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1940,
 		value_2 = 20,
 		icon = "1900",
 		value_1 = "9",
 		attribute_2 = "durability",
 		rarity = 3,
-		descrip = "è™½è¯´æ¶‚è£…å¯ä»¥éšæ„ï¼Œä½†æ˜¯è¿™ä¹ˆè´µçš„ä¸œè¥¿å°±ä¸è¦å¼„ä¸ªä¸€ç‚¹éšè”½æ€§èƒ½éƒ½æ²¡æœ‰çš„ä¸œè¥¿äº†å§",
+		descrip = "ËäËµÍ¿×°¿ÉÒÔËæÒâ£¬µ«ÊÇÕâÃ´¹óµÄ¶«Î÷¾Í²»ÒªÅª¸öÒ»µãÒş±ÎĞÔÄÜ¶¼Ã»ÓĞµÄ¶«Î÷ÁË°É",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -8969,17 +8969,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1960] = {
-		name = "æµ·é­‚è¿·å½©",
+		name = "º£»êÃÔ²Ê",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 1960,
 		value_2 = 35,
 		icon = "1960",
 		value_1 = "8",
 		attribute_2 = "durability",
 		rarity = 4,
-		descrip = "ä¼¼ä¹æ˜¯èƒ½æé«˜æˆ˜æ–—åŠ›çš„æ¶‚è£…",
+		descrip = "ËÆºõÊÇÄÜÌá¸ßÕ½¶·Á¦µÄÍ¿×°",
 		nationality = 7,
 		ammo = 10,
 		value_3 = 0,
@@ -9090,17 +9090,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2000] = {
-		name = "ç‡ƒæ²¹æ»¤æ¸…å™¨",
+		name = "È¼ÓÍÂËÇåÆ÷",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2000,
 		value_2 = 2,
 		icon = "2000",
 		value_1 = "50",
 		attribute_2 = "dodge",
 		rarity = 2,
-		descrip = "å¯ä»¥æé«˜ç‡ƒæ²¹è´¨é‡å“¦",
+		descrip = "¿ÉÒÔÌá¸ßÈ¼ÓÍÖÊÁ¿Å¶",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9143,17 +9143,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2020] = {
-		name = "ç‡ƒæ²¹æ»¤æ¸…å™¨",
+		name = "È¼ÓÍÂËÇåÆ÷",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2020,
 		value_2 = 2,
 		icon = "2000",
 		value_1 = "90",
 		attribute_2 = "dodge",
 		rarity = 3,
-		descrip = "å¯ä»¥æé«˜ç‡ƒæ²¹è´¨é‡å“¦",
+		descrip = "¿ÉÒÔÌá¸ßÈ¼ÓÍÖÊÁ¿Å¶",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9220,17 +9220,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2040] = {
-		name = "ç‡ƒæ²¹æ»¤æ¸…å™¨",
+		name = "È¼ÓÍÂËÇåÆ÷",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2040,
 		value_2 = 2,
 		icon = "2000",
 		value_1 = "140",
 		attribute_2 = "dodge",
 		rarity = 4,
-		descrip = "å¯ä»¥æé«˜ç‡ƒæ²¹è´¨é‡å“¦",
+		descrip = "¿ÉÒÔÌá¸ßÈ¼ÓÍÖÊÁ¿Å¶",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9338,17 +9338,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2100] = {
-		name = "èˆªç©ºå‰¯æ²¹ç®±",
+		name = "º½¿Õ¸±ÓÍÏä",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2100,
 		value_2 = 14,
 		icon = "2100",
 		value_1 = "10",
 		attribute_2 = "durability",
 		rarity = 2,
-		descrip = "æºå¸¦å‰¯æ²¹ç®±å¯ä»¥æœ‰æ•ˆæé«˜èˆ°è½½æœºçš„è€ä¹…æ€§èƒ½",
+		descrip = "Ğ¯´ø¸±ÓÍÏä¿ÉÒÔÓĞĞ§Ìá¸ß½¢ÔØ»úµÄÄÍ¾ÃĞÔÄÜ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9404,17 +9404,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2120] = {
-		name = "èˆªç©ºå‰¯æ²¹ç®±",
+		name = "º½¿Õ¸±ÓÍÏä",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2120,
 		value_2 = 16,
 		icon = "2100",
 		value_1 = "18",
 		attribute_2 = "durability",
 		rarity = 3,
-		descrip = "æºå¸¦å‰¯æ²¹ç®±å¯ä»¥æœ‰æ•ˆæé«˜èˆ°è½½æœºçš„è€ä¹…æ€§èƒ½",
+		descrip = "Ğ¯´ø¸±ÓÍÏä¿ÉÒÔÓĞĞ§Ìá¸ß½¢ÔØ»úµÄÄÍ¾ÃĞÔÄÜ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9494,17 +9494,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2140] = {
-		name = "èˆªç©ºå‰¯æ²¹ç®±",
+		name = "º½¿Õ¸±ÓÍÏä",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2140,
 		value_2 = 20,
 		icon = "2100",
 		value_1 = "28",
 		attribute_2 = "durability",
 		rarity = 4,
-		descrip = "æºå¸¦å‰¯æ²¹ç®±å¯ä»¥æœ‰æ•ˆæé«˜èˆ°è½½æœºçš„è€ä¹…æ€§èƒ½",
+		descrip = "Ğ¯´ø¸±ÓÍÏä¿ÉÒÔÓĞĞ§Ìá¸ß½¢ÔØ»úµÄÄÍ¾ÃĞÔÄÜ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9625,17 +9625,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2200] = {
-		name = "é“¾å¼è£…å¼¹æœº",
+		name = "Á´Ê½×°µ¯»ú",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2200,
 		value_2 = 1,
 		icon = "2200",
 		value_1 = "5",
 		attribute_2 = "cannon",
 		rarity = 2,
-		descrip = "è¾ƒå…ˆè¿›çš„è£…å¼¹æœºï¼Œæ€»æ¯”ä¸€ä¸ªä¸ªæ‰‹åŠ¨å¡«è£…è¦å¥½å¾—å¤š",
+		descrip = "½ÏÏÈ½øµÄ×°µ¯»ú£¬×Ü±ÈÒ»¸ö¸öÊÖ¶¯Ìî×°ÒªºÃµÃ¶à",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9706,17 +9706,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2220] = {
-		name = "é“¾å¼è£…å¼¹æœº",
+		name = "Á´Ê½×°µ¯»ú",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2220,
 		value_2 = 2,
 		icon = "2200",
 		value_1 = "9",
 		attribute_2 = "cannon",
 		rarity = 3,
-		descrip = "è¾ƒå…ˆè¿›çš„è£…å¼¹æœºï¼Œæ€»æ¯”ä¸€ä¸ªä¸ªæ‰‹åŠ¨å¡«è£…è¦å¥½å¾—å¤š",
+		descrip = "½ÏÏÈ½øµÄ×°µ¯»ú£¬×Ü±ÈÒ»¸ö¸öÊÖ¶¯Ìî×°ÒªºÃµÃ¶à",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9812,17 +9812,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2240] = {
-		name = "é“¾å¼è£…å¼¹æœº",
+		name = "Á´Ê½×°µ¯»ú",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2240,
 		value_2 = 3,
 		icon = "2200",
 		value_1 = "14",
 		attribute_2 = "cannon",
 		rarity = 4,
-		descrip = "è¾ƒå…ˆè¿›çš„è£…å¼¹æœºï¼Œæ€»æ¯”ä¸€ä¸ªä¸ªæ‰‹åŠ¨å¡«è£…è¦å¥½å¾—å¤š",
+		descrip = "½ÏÏÈ½øµÄ×°µ¯»ú£¬×Ü±ÈÒ»¸ö¸öÊÖ¶¯Ìî×°ÒªºÃµÃ¶à",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -9959,17 +9959,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2300] = {
-		name = "é™€èºä»ª",
+		name = "ÍÓÂİÒÇ",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2300,
 		value_2 = 1,
 		icon = "2300",
 		value_1 = "5",
 		attribute_2 = "speed",
 		rarity = 2,
-		descrip = "é™€èºä»ªå¯ä»¥ç¨³å®šèˆ°ä½“ï¼Œä»è€Œæé«˜å‘½ä¸­å’Œèˆªé€Ÿ",
+		descrip = "ÍÓÂİÒÇ¿ÉÒÔÎÈ¶¨½¢Ìå£¬´Ó¶øÌá¸ßÃüÖĞºÍº½ËÙ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -10039,17 +10039,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2320] = {
-		name = "é™€èºä»ª",
+		name = "ÍÓÂİÒÇ",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2320,
 		value_2 = 2,
 		icon = "2300",
 		value_1 = "9",
 		attribute_2 = "speed",
 		rarity = 3,
-		descrip = "é™€èºä»ªå¯ä»¥ç¨³å®šèˆ°ä½“ï¼Œä»è€Œæé«˜å‘½ä¸­å’Œèˆªé€Ÿ",
+		descrip = "ÍÓÂİÒÇ¿ÉÒÔÎÈ¶¨½¢Ìå£¬´Ó¶øÌá¸ßÃüÖĞºÍº½ËÙ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -10145,17 +10145,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2340] = {
-		name = "é™€èºä»ª",
+		name = "ÍÓÂİÒÇ",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2340,
 		value_2 = 3,
 		icon = "2300",
 		value_1 = "14",
 		attribute_2 = "speed",
 		rarity = 4,
-		descrip = "é™€èºä»ªå¯ä»¥ç¨³å®šèˆ°ä½“ï¼Œä»è€Œæé«˜å‘½ä¸­å’Œèˆªé€Ÿ",
+		descrip = "ÍÓÂİÒÇ¿ÉÒÔÎÈ¶¨½¢Ìå£¬´Ó¶øÌá¸ßÃüÖĞºÍº½ËÙ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -10293,15 +10293,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2400] = {
-		name = "ç»´ä¿®å·¥å…·",
+		name = "Î¬ĞŞ¹¤¾ß",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "2400",
 		value_1 = "90",
-		descrip = "æºå¸¦ç»´ä¿®å·¥å…·æ‰èƒ½è®©æŸç®¡é˜Ÿæœ‰æ•ˆæŸç®¡ï¼Œä½†æ˜¯åªèƒ½ç»´ä¿®è‡ªèº«",
+		descrip = "Ğ¯´øÎ¬ĞŞ¹¤¾ß²ÅÄÜÈÃËğ¹Ü¶ÓÓĞĞ§Ëğ¹Ü£¬µ«ÊÇÖ»ÄÜÎ¬ĞŞ×ÔÉí",
 		rarity = 2,
 		nationality = 0,
 		ammo = 10,
@@ -10347,15 +10347,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2420] = {
-		name = "ç»´ä¿®å·¥å…·",
+		name = "Î¬ĞŞ¹¤¾ß",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "2400",
 		value_1 = "140",
-		descrip = "æºå¸¦ç»´ä¿®å·¥å…·æ‰èƒ½è®©æŸç®¡é˜Ÿæœ‰æ•ˆæŸç®¡ï¼Œä½†æ˜¯åªèƒ½ç»´ä¿®è‡ªèº«",
+		descrip = "Ğ¯´øÎ¬ĞŞ¹¤¾ß²ÅÄÜÈÃËğ¹Ü¶ÓÓĞĞ§Ëğ¹Ü£¬µ«ÊÇÖ»ÄÜÎ¬ĞŞ×ÔÉí",
 		rarity = 3,
 		nationality = 0,
 		ammo = 10,
@@ -10422,15 +10422,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2440] = {
-		name = "ç»´ä¿®å·¥å…·",
+		name = "Î¬ĞŞ¹¤¾ß",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "2400",
 		value_1 = "200",
-		descrip = "æºå¸¦ç»´ä¿®å·¥å…·æ‰èƒ½è®©æŸç®¡é˜Ÿæœ‰æ•ˆæŸç®¡ï¼Œä½†æ˜¯åªèƒ½ç»´ä¿®è‡ªèº«",
+		descrip = "Ğ¯´øÎ¬ĞŞ¹¤¾ß²ÅÄÜÈÃËğ¹Ü¶ÓÓĞĞ§Ëğ¹Ü£¬µ«ÊÇÖ»ÄÜÎ¬ĞŞ×ÔÉí",
 		rarity = 4,
 		nationality = 0,
 		ammo = 10,
@@ -10533,15 +10533,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2500] = {
-		name = "ç­ç«å™¨",
+		name = "Ãğ»ğÆ÷",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "2500",
 		value_1 = "50",
-		descrip = "é˜²æ­¢ç«ç¾å•¦",
+		descrip = "·ÀÖ¹»ğÔÖÀ²",
 		rarity = 1,
 		nationality = 0,
 		ammo = 10,
@@ -10587,15 +10587,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2520] = {
-		name = "ç­ç«å™¨",
+		name = "Ãğ»ğÆ÷",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "2500",
 		value_1 = "90",
-		descrip = "é˜²æ­¢ç«ç¾å•¦",
+		descrip = "·ÀÖ¹»ğÔÖÀ²",
 		rarity = 2,
 		nationality = 0,
 		ammo = 10,
@@ -10641,15 +10641,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2540] = {
-		name = "ç­ç«å™¨",
+		name = "Ãğ»ğÆ÷",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "2500",
 		value_1 = "140",
-		descrip = "é˜²æ­¢ç«ç¾å•¦",
+		descrip = "·ÀÖ¹»ğÔÖÀ²",
 		rarity = 3,
 		nationality = 0,
 		ammo = 10,
@@ -10723,17 +10723,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2600] = {
-		name = "ä¹ä¸‰å¼çº¯æ°§é±¼é›·",
+		name = "¾ÅÈıÊ½´¿ÑõÓãÀ×",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2600,
 		value_2 = 3,
 		icon = "2600",
 		value_1 = "18",
 		attribute_2 = "reload",
 		rarity = 4,
-		descrip = "ä¹ä¸‰å¼çº¯æ°§é±¼é›·ï¼Œæ€§èƒ½ä¼˜äºå¤§éƒ¨åˆ†é±¼é›·ï¼Œå¯è£…å¤‡åœ¨è®¾å¤‡æ ï¼Œæé«˜è§’è‰²çš„é›·å‡»å±æ€§",
+		descrip = "¾ÅÈıÊ½´¿ÑõÓãÀ×£¬ĞÔÄÜÓÅÓÚ´ó²¿·ÖÓãÀ×£¬¿É×°±¸ÔÚÉè±¸À¸£¬Ìá¸ß½ÇÉ«µÄÀ×»÷ÊôĞÔ",
 		nationality = 3,
 		ammo = 10,
 		value_3 = 0,
@@ -10850,17 +10850,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2620] = {
-		name = "ä¹ä¸‰å¼çº¯æ°§é±¼é›·",
+		name = "¾ÅÈıÊ½´¿ÑõÓãÀ×",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2620,
 		value_2 = 3,
 		icon = "2600",
 		value_1 = "28",
 		attribute_2 = "reload",
 		rarity = 5,
-		descrip = "ä¹ä¸‰å¼çº¯æ°§é±¼é›·ï¼Œæ€§èƒ½ä¼˜äºå¤§éƒ¨åˆ†é±¼é›·ï¼Œå¯è£…å¤‡åœ¨è®¾å¤‡æ ï¼Œæé«˜è§’è‰²çš„é›·å‡»å±æ€§",
+		descrip = "¾ÅÈıÊ½´¿ÑõÓãÀ×£¬ĞÔÄÜÓÅÓÚ´ó²¿·ÖÓãÀ×£¬¿É×°±¸ÔÚÉè±¸À¸£¬Ìá¸ß½ÇÉ«µÄÀ×»÷ÊôĞÔ",
 		nationality = 3,
 		ammo = 10,
 		value_3 = 0,
@@ -10977,17 +10977,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2640] = {
-		name = "ä¹ä¸‰å¼çº¯æ°§é±¼é›·",
+		name = "¾ÅÈıÊ½´¿ÑõÓãÀ×",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2640,
 		value_2 = 3,
 		icon = "2600",
 		value_1 = "40",
 		attribute_2 = "reload",
 		rarity = 6,
-		descrip = "ä¹ä¸‰å¼çº¯æ°§é±¼é›·ï¼Œæ€§èƒ½ä¼˜äºå¤§éƒ¨åˆ†é±¼é›·ï¼Œå¯è£…å¤‡åœ¨è®¾å¤‡æ ï¼Œæé«˜è§’è‰²çš„é›·å‡»å±æ€§",
+		descrip = "¾ÅÈıÊ½´¿ÑõÓãÀ×£¬ĞÔÄÜÓÅÓÚ´ó²¿·ÖÓãÀ×£¬¿É×°±¸ÔÚÉè±¸À¸£¬Ìá¸ß½ÇÉ«µÄÀ×»÷ÊôĞÔ",
 		nationality = 3,
 		ammo = 10,
 		value_3 = 0,
@@ -11131,17 +11131,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2700] = {
-		name = "533mmç£æ€§é±¼é›·ï¼ˆæ°´é¢èˆ°è‰‡ç”¨ï¼‰",
+		name = "533mm´ÅĞÔÓãÀ×£¨Ë®Ãæ½¢Í§ÓÃ£©",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2700,
 		value_2 = 2,
 		icon = "2700",
 		value_1 = "12",
 		attribute_2 = "hit",
 		rarity = 3,
-		descrip = "ä»…é™æ°´é¢èˆ°è‰‡ä½¿ç”¨çš„533mmç£æ€§é±¼é›·ï¼Œä½¿ç”¨äº†ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯",
+		descrip = "½öÏŞË®Ãæ½¢Í§Ê¹ÓÃµÄ533mm´ÅĞÔÓãÀ×£¬Ê¹ÓÃÁË´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ",
 		nationality = 4,
 		ammo = 10,
 		value_3 = 0,
@@ -11223,17 +11223,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2720] = {
-		name = "533mmç£æ€§é±¼é›·ï¼ˆæ°´é¢èˆ°è‰‡ç”¨ï¼‰",
+		name = "533mm´ÅĞÔÓãÀ×£¨Ë®Ãæ½¢Í§ÓÃ£©",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2720,
 		value_2 = 4,
 		icon = "2700",
 		value_1 = "19",
 		attribute_2 = "hit",
 		rarity = 4,
-		descrip = "ä»…é™æ°´é¢èˆ°è‰‡ä½¿ç”¨çš„533mmç£æ€§é±¼é›·ï¼Œä½¿ç”¨äº†ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯",
+		descrip = "½öÏŞË®Ãæ½¢Í§Ê¹ÓÃµÄ533mm´ÅĞÔÓãÀ×£¬Ê¹ÓÃÁË´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ",
 		nationality = 4,
 		ammo = 10,
 		value_3 = 0,
@@ -11346,17 +11346,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2740] = {
-		name = "533mmç£æ€§é±¼é›·ï¼ˆæ°´é¢èˆ°è‰‡ç”¨ï¼‰",
+		name = "533mm´ÅĞÔÓãÀ×£¨Ë®Ãæ½¢Í§ÓÃ£©",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2740,
 		value_2 = 6,
 		icon = "2700",
 		value_1 = "28",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "ä»…é™æ°´é¢èˆ°è‰‡ä½¿ç”¨çš„533mmç£æ€§é±¼é›·ï¼Œä½¿ç”¨äº†ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯",
+		descrip = "½öÏŞË®Ãæ½¢Í§Ê¹ÓÃµÄ533mm´ÅĞÔÓãÀ×£¬Ê¹ÓÃÁË´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ",
 		nationality = 4,
 		ammo = 10,
 		value_3 = 0,
@@ -11498,17 +11498,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2800] = {
-		name = "94å¼é«˜å°„è£…ç½®",
+		name = "94Ê½¸ßÉä×°ÖÃ",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2800,
 		value_2 = 4,
 		icon = "2800",
 		value_1 = "22",
 		attribute_2 = "hit",
 		rarity = 4,
-		descrip = "é«˜è§’ç‚®å¯¹ç©ºå°„å‡»ç”¨çš„é«˜å°„è£…ç½®ï¼Œå®‰è£…äº†æµ‹è·ä»ªï¼Œç”¨ä»¥æ”¯æŒé«˜å°„ç‚®è¿›è¡Œæœ‰æ•ˆçš„å¯¹ç©ºå°„å‡»ã€‚",
+		descrip = "¸ß½ÇÅÚ¶Ô¿ÕÉä»÷ÓÃµÄ¸ßÉä×°ÖÃ£¬°²×°ÁË²â¾àÒÇ£¬ÓÃÒÔÖ§³Ö¸ßÉäÅÚ½øĞĞÓĞĞ§µÄ¶Ô¿ÕÉä»÷¡£",
 		nationality = 3,
 		ammo = 10,
 		value_3 = 0,
@@ -11619,17 +11619,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2900] = {
-		name = "åŸºç¡€å£°å‘",
+		name = "»ù´¡ÉùÄÅ",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2900,
 		value_2 = 1,
 		icon = "2900",
 		value_1 = "1",
 		attribute_2 = "hit",
 		rarity = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -11683,17 +11683,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2920] = {
-		name = "åŸºç¡€å£°å‘",
+		name = "»ù´¡ÉùÄÅ",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2920,
 		value_2 = 2,
 		icon = "2900",
 		value_1 = "3",
 		attribute_2 = "hit",
 		rarity = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -11771,17 +11771,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[2940] = {
-		name = "åŸºç¡€å£°å‘",
+		name = "»ù´¡ÉùÄÅ",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 2940,
 		value_2 = 4,
 		icon = "2900",
 		value_1 = "5",
 		attribute_2 = "hit",
 		rarity = 4,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -11902,17 +11902,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3000] = {
-		name = "æ”¹è‰¯å£°å‘",
+		name = "¸ÄÁ¼ÉùÄÅ",
 		tech = 1,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 3000,
 		value_2 = 3,
 		icon = "3000",
 		value_1 = "4",
 		attribute_2 = "hit",
 		rarity = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -11990,17 +11990,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3020] = {
-		name = "æ”¹è‰¯å£°å‘",
+		name = "¸ÄÁ¼ÉùÄÅ",
 		tech = 2,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 3020,
 		value_2 = 5,
 		icon = "3000",
 		value_1 = "9",
 		attribute_2 = "hit",
 		rarity = 4,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -12110,17 +12110,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3040] = {
-		name = "æ”¹è‰¯å£°å‘",
+		name = "¸ÄÁ¼ÉùÄÅ",
 		tech = 3,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 3040,
 		value_2 = 7,
 		icon = "3000",
 		value_1 = "14",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -12259,15 +12259,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3100] = {
-		name = "é«˜å‹æ°§æ°”ç“¶",
+		name = "¸ßÑ¹ÑõÆøÆ¿",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "oxy_max",
 		value_2 = 0,
 		icon = "3100",
 		value_1 = "18",
-		descrip = "å……è£…æ°”å‹çº¦15å…†å¸•çš„å‹ç¼©ç©ºæ°”,å¯æä¾›é•¿æ—¶é—´å‘¼å¸",
+		descrip = "³ä×°ÆøÑ¹Ô¼15Õ×ÅÁµÄÑ¹Ëõ¿ÕÆø,¿ÉÌá¹©³¤Ê±¼äºôÎü",
 		rarity = 4,
 		nationality = 0,
 		ammo = 10,
@@ -12376,15 +12376,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3120] = {
-		name = "æ”¹è‰¯å‹æ°´ä¸‹è¿›æ°”ç®¡",
+		name = "¸ÄÁ¼ĞÍË®ÏÂ½øÆø¹Ü",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "oxy_max",
 		value_2 = 0,
 		icon = "3120",
 		value_1 = "34",
-		descrip = "é€šæ°”ç®¡ä½¿æ½œè‰‡èƒ½åœ¨æ½œæœ›é•œæ·±åº¦è¿›è¡Œç©ºæ°”äº¤æ¢",
+		descrip = "Í¨Æø¹ÜÊ¹Ç±Í§ÄÜÔÚÇ±Íû¾µÉî¶È½øĞĞ¿ÕÆø½»»»",
 		rarity = 5,
 		nationality = 4,
 		ammo = 10,
@@ -12513,15 +12513,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3140] = {
-		name = "æ”¹è‰¯è“„ç”µæ± é˜µåˆ—",
+		name = "¸ÄÁ¼Ğîµç³ØÕóÁĞ",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "dodge",
 		value_2 = 0,
 		icon = "3140",
 		value_1 = "2",
-		descrip = "ä¼˜åŒ–åçš„ç”µæ± è‡ªèƒ½æä¾›æ›´é•¿çš„æ½œèˆªè·ç¦»",
+		descrip = "ÓÅ»¯ºóµÄµç³Ø×ÔÄÜÌá¹©¸ü³¤µÄÇ±º½¾àÀë",
 		rarity = 5,
 		nationality = 4,
 		ammo = 10,
@@ -12672,15 +12672,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[3200] = {
-		name = "VHè£…ç”²é’¢æ¿",
+		name = "VH×°¼×¸Ö°å",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "3200",
 		value_1 = "350",
-		descrip = "ã€VCè£…ç”²é’¢æ¿ã€çš„æ”¹è¿›å‹ï¼Œç”¨æ–°å·¥è‰ºå–ä»£äº†è¡¨é¢æ¸—ç¢³çš„è¿‡ç¨‹ï¼Œæé«˜äº†è£…ç”²æ¿ç¡¬åº¦",
+		descrip = "¡ºVC×°¼×¸Ö°å¡»µÄ¸Ä½øĞÍ£¬ÓÃĞÂ¹¤ÒÕÈ¡´úÁË±íÃæÉøÌ¼µÄ¹ı³Ì£¬Ìá¸ßÁË×°¼×°åÓ²¶È",
 		rarity = 5,
 		nationality = 3,
 		ammo = 10,
@@ -12811,15 +12811,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3220] = {
-		name = "VCè£…ç”²é’¢æ¿",
+		name = "VC×°¼×¸Ö°å",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "3220",
 		value_1 = "220",
-		descrip = "é‡æ¨±å¸å›½å¼•è¿›çš‡å®¶è¡¨é¢æ¸—ç¢³ç¡¬åŒ–æŠ€æœ¯åˆ¶ä½œçš„è£…ç”²é’¢æ¿ï¼Œå¯¹ç©¿ç”²å¼¹çš„é˜²æŠ¤æ€§èƒ½è¾ƒå¥½",
+		descrip = "ÖØÓ£µÛ¹úÒı½ø»Ê¼Ò±íÃæÉøÌ¼Ó²»¯¼¼ÊõÖÆ×÷µÄ×°¼×¸Ö°å£¬¶Ô´©¼×µ¯µÄ·À»¤ĞÔÄÜ½ÏºÃ",
 		rarity = 4,
 		nationality = 3,
 		ammo = 10,
@@ -12936,15 +12936,15 @@ pg.equip_data_statistics = {
 		equip_parameters = {}
 	},
 	[3300] = {
-		name = "å››ç¥ä¹‹å°",
+		name = "ËÄÉñÖ®Ó¡",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "3300",
 		value_1 = "250",
-		descrip = "é›•åˆ»ç€ä¸œç…Œå¤å›½å››ç¥å…½çš„ç‰å™¨ï¼Œä¼¼ä¹è•´å«ç€æ¥è‡ªä¸œæ–¹çš„ç¥ç§˜åŠ›é‡",
+		descrip = "µñ¿Ì×Å¶«»Í¹Å¹úËÄÉñÊŞµÄÓñÆ÷£¬ËÆºõÔÌº¬×ÅÀ´×Ô¶«·½µÄÉñÃØÁ¦Á¿",
 		rarity = 5,
 		nationality = 5,
 		ammo = 10,
@@ -13067,15 +13067,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3400] = {
-		name = "â€œä¹å››å¼40å˜ç±³ç‚®â€éƒ¨ä»¶",
+		name = "¡°¾ÅËÄÊ½40ÀåÃ×ÅÚ¡±²¿¼ş",
 		tech = 0,
 		type = 18,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "3400",
 		value_1 = "450",
-		descrip = "é‡æ¨±ç ”å‘çš„â€œä¹å››å¼40å˜ç±³ç‚®â€ä¹‹éƒ¨ä»¶",
+		descrip = "ÖØÓ£ÑĞ·¢µÄ¡°¾ÅËÄÊ½40ÀåÃ×ÅÚ¡±Ö®²¿¼ş",
 		rarity = 5,
 		nationality = 3,
 		ammo = 10,
@@ -13198,15 +13198,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3500] = {
-		name = "å…µè£…è¡¥ç»™ï¼ˆèˆªç©ºï¼‰",
+		name = "±ø×°²¹¸ø£¨º½¿Õ£©",
 		tech = 0,
 		type = 18,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "3500",
 		value_1 = "250",
-		descrip = "è¿è¾“èˆ°è£…è½½çš„èˆªç©ºå…µè£…è¡¥ç»™",
+		descrip = "ÔËÊä½¢×°ÔØµÄº½¿Õ±ø×°²¹¸ø",
 		rarity = 4,
 		nationality = 0,
 		ammo = 10,
@@ -13313,15 +13313,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3520] = {
-		name = "å…µè£…è¡¥ç»™ï¼ˆä¸­å°å£å¾„æ­¦å™¨ï¼‰",
+		name = "±ø×°²¹¸ø£¨ÖĞĞ¡¿Ú¾¶ÎäÆ÷£©",
 		tech = 0,
 		type = 18,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "3520",
 		value_1 = "250",
-		descrip = "è¿è¾“èˆ°è£…è½½çš„ç«ç‚®å…µè£…è¡¥ç»™",
+		descrip = "ÔËÊä½¢×°ÔØµÄ»ğÅÚ±ø×°²¹¸ø",
 		rarity = 4,
 		nationality = 0,
 		ammo = 10,
@@ -13428,15 +13428,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3540] = {
-		name = "å…µè£…è¡¥ç»™ï¼ˆé±¼é›·ï¼‰",
+		name = "±ø×°²¹¸ø£¨ÓãÀ×£©",
 		tech = 0,
 		type = 18,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "3540",
 		value_1 = "250",
-		descrip = "è¿è¾“èˆ°è£…è½½çš„é±¼é›·å…µè£…è¡¥ç»™",
+		descrip = "ÔËÊä½¢×°ÔØµÄÓãÀ×±ø×°²¹¸ø",
 		rarity = 4,
 		nationality = 0,
 		ammo = 10,
@@ -13543,12 +13543,12 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[4000] = {
-		name = "åŸºç¡€æ·±å¼¹æŠ•å°„å™¨",
-		speciality = "åæ½œ",
+		name = "»ù´¡Éîµ¯Í¶ÉäÆ÷",
+		speciality = "·´Ç±",
 		type = 14,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "4000",
 		damage = "16 x 3",
@@ -13621,11 +13621,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4020] = {
-		name = "åŸºç¡€æ·±å¼¹æŠ•å°„å™¨",
-		speciality = "åæ½œ",
+		name = "»ù´¡Éîµ¯Í¶ÉäÆ÷",
+		speciality = "·´Ç±",
 		type = 14,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "4000",
 		attribute_2 = "antisub",
@@ -13700,11 +13700,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4040] = {
-		name = "åŸºç¡€æ·±å¼¹æŠ•å°„å™¨",
-		speciality = "åæ½œ",
+		name = "»ù´¡Éîµ¯Í¶ÉäÆ÷",
+		speciality = "·´Ç±",
 		type = 14,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "4000",
 		attribute_2 = "antisub",
@@ -13819,11 +13819,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4100] = {
-		name = "æ”¹è‰¯æ·±å¼¹æŠ•å°„å™¨",
-		speciality = "åæ½œ",
+		name = "¸ÄÁ¼Éîµ¯Í¶ÉäÆ÷",
+		speciality = "·´Ç±",
 		type = 14,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "4100",
 		attribute_2 = "antisub",
@@ -13898,11 +13898,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4120] = {
-		name = "æ”¹è‰¯æ·±å¼¹æŠ•å°„å™¨",
-		speciality = "åæ½œ",
+		name = "¸ÄÁ¼Éîµ¯Í¶ÉäÆ÷",
+		speciality = "·´Ç±",
 		type = 14,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "4100",
 		attribute_2 = "antisub",
@@ -14007,11 +14007,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4140] = {
-		name = "æ”¹è‰¯æ·±å¼¹æŠ•å°„å™¨",
-		speciality = "åæ½œ",
+		name = "¸ÄÁ¼Éîµ¯Í¶ÉäÆ÷",
+		speciality = "·´Ç±",
 		type = 14,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "4100",
 		attribute_2 = "antisub",
@@ -14167,12 +14167,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4200] = {
-		name = "å‰‘é±¼Mark II-ASV(åæ½œ)",
+		name = "½£ÓãMark II-ASV(·´Ç±)",
 		type = 15,
-		speciality = "åæ½œ",
+		speciality = "·´Ç±",
 		rarity = 2,
 		tech = 1,
-		descrip = "é…å¤‡æ°´é¢æœç´¢é›·è¾¾çš„ç‰ˆæœ¬,å¢è®¾äº†ç¿¼ä¸‹æŒ‚ç‚¹",
+		descrip = "Åä±¸Ë®ÃæËÑË÷À×´ïµÄ°æ±¾,ÔöÉèÁËÒíÏÂ¹Òµã",
 		value_2 = 5,
 		icon = "4200",
 		attribute_2 = "antisub",
@@ -14256,12 +14256,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4220] = {
-		name = "å‰‘é±¼Mark II-ASV(åæ½œ)",
+		name = "½£ÓãMark II-ASV(·´Ç±)",
 		type = 15,
-		speciality = "åæ½œ",
+		speciality = "·´Ç±",
 		rarity = 3,
 		tech = 2,
-		descrip = "é…å¤‡æ°´é¢æœç´¢é›·è¾¾çš„ç‰ˆæœ¬,å¢è®¾äº†ç¿¼ä¸‹æŒ‚ç‚¹",
+		descrip = "Åä±¸Ë®ÃæËÑË÷À×´ïµÄ°æ±¾,ÔöÉèÁËÒíÏÂ¹Òµã",
 		value_2 = 12,
 		icon = "4200",
 		attribute_2 = "antisub",
@@ -14390,12 +14390,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4240] = {
-		name = "å‰‘é±¼Mark II-ASV(åæ½œ)",
+		name = "½£ÓãMark II-ASV(·´Ç±)",
 		type = 15,
-		speciality = "åæ½œ",
+		speciality = "·´Ç±",
 		rarity = 4,
 		tech = 3,
-		descrip = "é…å¤‡æ°´é¢æœç´¢é›·è¾¾çš„ç‰ˆæœ¬,å¢è®¾äº†ç¿¼ä¸‹æŒ‚ç‚¹",
+		descrip = "Åä±¸Ë®ÃæËÑË÷À×´ïµÄ°æ±¾,ÔöÉèÁËÒíÏÂ¹Òµã",
 		value_2 = 25,
 		icon = "4200",
 		attribute_2 = "antisub",
@@ -14600,12 +14600,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4300] = {
-		name = "TBM-3å¤ä»‡è€…(åæ½œ)",
+		name = "TBM-3¸´³ğÕß(·´Ç±)",
 		type = 15,
-		speciality = "åæ½œ",
+		speciality = "·´Ç±",
 		rarity = 2,
 		tech = 1,
-		descrip = "é€šç”¨å…¬å¸ç”Ÿäº§å‹TBF,æ¢è£…äº†åŠ¨åŠ›æ›´å¤§çš„å‘åŠ¨æœº",
+		descrip = "Í¨ÓÃ¹«Ë¾Éú²úĞÍTBF,»»×°ÁË¶¯Á¦¸ü´óµÄ·¢¶¯»ú",
 		value_2 = 5,
 		icon = "4300",
 		attribute_2 = "antisub",
@@ -14689,12 +14689,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4320] = {
-		name = "TBM-3å¤ä»‡è€…(åæ½œ)",
+		name = "TBM-3¸´³ğÕß(·´Ç±)",
 		type = 15,
-		speciality = "åæ½œ",
+		speciality = "·´Ç±",
 		rarity = 3,
 		tech = 2,
-		descrip = "é€šç”¨å…¬å¸ç”Ÿäº§å‹TBF,æ¢è£…äº†åŠ¨åŠ›æ›´å¤§çš„å‘åŠ¨æœº",
+		descrip = "Í¨ÓÃ¹«Ë¾Éú²úĞÍTBF,»»×°ÁË¶¯Á¦¸ü´óµÄ·¢¶¯»ú",
 		value_2 = 12,
 		icon = "4300",
 		attribute_2 = "antisub",
@@ -14823,12 +14823,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[4340] = {
-		name = "TBM-3å¤ä»‡è€…(åæ½œ)",
+		name = "TBM-3¸´³ğÕß(·´Ç±)",
 		type = 15,
-		speciality = "åæ½œ",
+		speciality = "·´Ç±",
 		rarity = 4,
 		tech = 3,
-		descrip = "é€šç”¨å…¬å¸ç”Ÿäº§å‹TBF,æ¢è£…äº†åŠ¨åŠ›æ›´å¤§çš„å‘åŠ¨æœº",
+		descrip = "Í¨ÓÃ¹«Ë¾Éú²úĞÍTBF,»»×°ÁË¶¯Á¦¸ü´óµÄ·¢¶¯»ú",
 		value_2 = 25,
 		icon = "4300",
 		attribute_2 = "antisub",
@@ -15033,12 +15033,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5000] = {
-		name = "ä¸‰è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "5000",
 		damage = "46 x 3",
@@ -15124,11 +15124,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5020] = {
-		name = "ä¸‰è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "5000",
 		attribute_2 = "torpedo",
@@ -15216,11 +15216,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5040] = {
-		name = "ä¸‰è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "5000",
 		attribute_2 = "torpedo",
@@ -15348,11 +15348,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5100] = {
-		name = "å››è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "5100",
 		attribute_2 = "torpedo",
@@ -15440,11 +15440,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5120] = {
-		name = "å››è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "5100",
 		attribute_2 = "torpedo",
@@ -15562,11 +15562,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5140] = {
-		name = "å››è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "5100",
 		attribute_2 = "torpedo",
@@ -15735,11 +15735,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5200] = {
-		name = "äº”è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "5200",
 		attribute_2 = "torpedo",
@@ -15857,11 +15857,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5220] = {
-		name = "äº”è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "5200",
 		attribute_2 = "torpedo",
@@ -16019,11 +16019,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5240] = {
-		name = "äº”è”è£…533mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°533mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "5200",
 		attribute_2 = "torpedo",
@@ -16214,12 +16214,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5300] = {
-		name = "åŒè”è£…550mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ë«Áª×°550mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "5300",
 		damage = "42 x 2",
@@ -16305,11 +16305,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5320] = {
-		name = "åŒè”è£…550mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ë«Áª×°550mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "5300",
 		attribute_2 = "torpedo",
@@ -16397,11 +16397,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5340] = {
-		name = "åŒè”è£…550mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ë«Áª×°550mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "5300",
 		attribute_2 = "torpedo",
@@ -16529,11 +16529,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5400] = {
-		name = "ä¸‰è”è£…550mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°550mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "5400",
 		attribute_2 = "torpedo",
@@ -16621,11 +16621,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5420] = {
-		name = "ä¸‰è”è£…550mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°550mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "5400",
 		attribute_2 = "torpedo",
@@ -16743,11 +16743,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5440] = {
-		name = "ä¸‰è”è£…550mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°550mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "5400",
 		attribute_2 = "torpedo",
@@ -16916,11 +16916,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5500] = {
-		name = "æ½œè‰‡ç”¨550mm24Vé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ550mm24VÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "5500",
 		attribute_2 = "torpedo",
@@ -17005,11 +17005,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5520] = {
-		name = "æ½œè‰‡ç”¨550mm24Vé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ550mm24VÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "5500",
 		attribute_2 = "torpedo",
@@ -17124,11 +17124,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[5540] = {
-		name = "æ½œè‰‡ç”¨550mm24Vé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ550mm24VÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "5500",
 		attribute_2 = "torpedo",
@@ -17294,15 +17294,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6000] = {
-		name = "12.7mmé˜²ç©ºæœºæª",
-		speciality = "é˜²ç©º",
+		name = "12.7mm·À¿Õ»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "6000",
-		damage = "6/è½®",
+		damage = "6/ÂÖ",
 		nationality = 0,
 		ammo = 5,
 		value_3 = 0,
@@ -17355,7 +17355,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6001] = {
-		damage = "7/è½®",
+		damage = "7/ÂÖ",
 		base = 6000,
 		id = 6001,
 		torpedo_ammo = 0,
@@ -17365,7 +17365,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6002] = {
-		damage = "8/è½®",
+		damage = "8/ÂÖ",
 		base = 6000,
 		id = 6002,
 		torpedo_ammo = 0,
@@ -17375,7 +17375,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6003] = {
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		base = 6000,
 		id = 6003,
 		torpedo_ammo = 0,
@@ -17385,16 +17385,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6020] = {
-		name = "12.7mmé˜²ç©ºæœºæª",
-		speciality = "é˜²ç©º",
+		name = "12.7mm·À¿Õ»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "6000",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "8/è½®",
+		damage = "8/ÂÖ",
 		nationality = 0,
 		ammo = 5,
 		value_3 = 0,
@@ -17447,7 +17447,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6021] = {
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		base = 6020,
 		id = 6021,
 		torpedo_ammo = 0,
@@ -17457,7 +17457,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6022] = {
-		damage = "10/è½®",
+		damage = "10/ÂÖ",
 		base = 6020,
 		id = 6022,
 		torpedo_ammo = 0,
@@ -17467,7 +17467,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6023] = {
-		damage = "11/è½®",
+		damage = "11/ÂÖ",
 		base = 6020,
 		id = 6023,
 		torpedo_ammo = 0,
@@ -17477,16 +17477,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6040] = {
-		name = "12.7mmé˜²ç©ºæœºæª",
-		speciality = "é˜²ç©º",
+		name = "12.7mm·À¿Õ»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "6000",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "8/è½®",
+		damage = "8/ÂÖ",
 		nationality = 0,
 		ammo = 5,
 		value_3 = 0,
@@ -17539,7 +17539,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6041] = {
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		base = 6040,
 		id = 6041,
 		torpedo_ammo = 0,
@@ -17549,7 +17549,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6042] = {
-		damage = "10/è½®",
+		damage = "10/ÂÖ",
 		base = 6040,
 		id = 6042,
 		torpedo_ammo = 0,
@@ -17559,7 +17559,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6043] = {
-		damage = "11/è½®",
+		damage = "11/ÂÖ",
 		base = 6040,
 		id = 6043,
 		torpedo_ammo = 0,
@@ -17569,7 +17569,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6044] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 6040,
 		id = 6044,
 		torpedo_ammo = 0,
@@ -17579,7 +17579,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6045] = {
-		damage = "13/è½®",
+		damage = "13/ÂÖ",
 		base = 6040,
 		id = 6045,
 		torpedo_ammo = 0,
@@ -17589,7 +17589,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6046] = {
-		damage = "15/è½®",
+		damage = "15/ÂÖ",
 		base = 6040,
 		id = 6046,
 		torpedo_ammo = 0,
@@ -17599,7 +17599,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6047] = {
-		damage = "15/è½®",
+		damage = "15/ÂÖ",
 		base = 6040,
 		id = 6047,
 		torpedo_ammo = 0,
@@ -17609,15 +17609,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6100] = {
-		name = "åŒè”è£…100mmé«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°100mm¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "6100",
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		nationality = 8,
 		ammo = 5,
 		value_3 = 0,
@@ -17670,7 +17670,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6101] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 6100,
 		id = 6101,
 		torpedo_ammo = 0,
@@ -17680,7 +17680,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6102] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 6100,
 		id = 6102,
 		torpedo_ammo = 0,
@@ -17690,7 +17690,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6103] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 6100,
 		id = 6103,
 		torpedo_ammo = 0,
@@ -17700,16 +17700,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6120] = {
-		name = "åŒè”è£…100mmé«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°100mm¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "6100",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		nationality = 8,
 		ammo = 5,
 		value_3 = 0,
@@ -17762,7 +17762,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6121] = {
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		base = 6120,
 		id = 6121,
 		torpedo_ammo = 0,
@@ -17772,7 +17772,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6122] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 6120,
 		id = 6122,
 		torpedo_ammo = 0,
@@ -17782,7 +17782,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6123] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 6120,
 		id = 6123,
 		torpedo_ammo = 0,
@@ -17792,16 +17792,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6140] = {
-		name = "åŒè”è£…100mmé«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°100mm¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "6100",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		nationality = 8,
 		ammo = 5,
 		value_3 = 0,
@@ -17854,7 +17854,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6141] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 6140,
 		id = 6141,
 		torpedo_ammo = 0,
@@ -17864,7 +17864,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6142] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 6140,
 		id = 6142,
 		torpedo_ammo = 0,
@@ -17874,7 +17874,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6143] = {
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 6140,
 		id = 6143,
 		torpedo_ammo = 0,
@@ -17884,7 +17884,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6144] = {
-		damage = "36/è½®",
+		damage = "36/ÂÖ",
 		base = 6140,
 		id = 6144,
 		torpedo_ammo = 0,
@@ -17894,7 +17894,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6145] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 6140,
 		id = 6145,
 		torpedo_ammo = 0,
@@ -17904,7 +17904,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6146] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 6140,
 		id = 6146,
 		torpedo_ammo = 0,
@@ -17914,7 +17914,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[6147] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 6140,
 		id = 6147,
 		torpedo_ammo = 0,
@@ -17924,12 +17924,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7000] = {
-		name = "å•è£…152mmä¸»ç‚®",
-		speciality = "é€šå¸¸",
+		name = "µ¥×°152mmÖ÷ÅÚ",
+		speciality = "Í¨³£",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "7000",
 		damage = "16 x 3",
@@ -18012,11 +18012,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7020] = {
-		name = "å•è£…152mmä¸»ç‚®",
-		speciality = "é€šå¸¸",
+		name = "µ¥×°152mmÖ÷ÅÚ",
+		speciality = "Í¨³£",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "7000",
 		attribute_2 = "cannon",
@@ -18101,11 +18101,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7040] = {
-		name = "å•è£…152mmä¸»ç‚®",
-		speciality = "é€šå¸¸",
+		name = "µ¥×°152mmÖ÷ÅÚ",
+		speciality = "Í¨³£",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "7000",
 		attribute_2 = "cannon",
@@ -18230,12 +18230,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7100] = {
-		name = "å•è£…150mmä¸»ç‚®",
-		speciality = "é€šå¸¸",
+		name = "µ¥×°150mmÖ÷ÅÚ",
+		speciality = "Í¨³£",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "7100",
 		damage = "14 x 3",
@@ -18318,11 +18318,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7120] = {
-		name = "å•è£…150mmä¸»ç‚®",
-		speciality = "é€šå¸¸",
+		name = "µ¥×°150mmÖ÷ÅÚ",
+		speciality = "Í¨³£",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "7100",
 		attribute_2 = "cannon",
@@ -18407,11 +18407,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7140] = {
-		name = "å•è£…150mmä¸»ç‚®",
-		speciality = "é€šå¸¸",
+		name = "µ¥×°150mmÖ÷ÅÚ",
+		speciality = "Í¨³£",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "7100",
 		attribute_2 = "cannon",
@@ -18536,11 +18536,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7200] = {
-		name = "130mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "130mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "7200",
 		attribute_2 = "cannon",
@@ -18632,11 +18632,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7220] = {
-		name = "130mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "130mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "7200",
 		attribute_2 = "cannon",
@@ -18758,11 +18758,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7240] = {
-		name = "130mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "130mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "7200",
 		attribute_2 = "cannon",
@@ -18936,11 +18936,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7300] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…203mmèˆ°ç‚®",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍÈıÁª×°203mm½¢ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "7300",
 		attribute_2 = "cannon",
@@ -19128,11 +19128,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7320] = {
-		name = "å››è”è£…130mmå‰¯ç‚®Mle1932",
-		speciality = "é”å®š",
+		name = "ËÄÁª×°130mm¸±ÅÚMle1932",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "7320",
 		attribute_2 = "cannon",
@@ -19264,11 +19264,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[7340] = {
-		name = "åŒè”è£…203mmä¸»ç‚®Mle1924(æ½œè‰‡ç”¨)",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmÖ÷ÅÚMle1924(Ç±Í§ÓÃ)",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "7340",
 		attribute_2 = "cannon",
@@ -19393,12 +19393,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11000] = {
-		name = "76mmç«ç‚®",
-		speciality = "é”å®š",
+		name = "76mm»ğÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "11000",
 		damage = "3 x 1",
@@ -19487,11 +19487,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11020] = {
-		name = "76mmç«ç‚®",
-		speciality = "é”å®š",
+		name = "76mm»ğÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "11000",
 		attribute_2 = "cannon",
@@ -19582,11 +19582,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11040] = {
-		name = "76mmç«ç‚®",
-		speciality = "é”å®š",
+		name = "76mm»ğÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "11000",
 		attribute_2 = "cannon",
@@ -19717,11 +19717,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11060] = {
-		name = "127mmå•è£…ç‚®æ—©æœŸå‹",
-		speciality = "é”å®š",
+		name = "127mmµ¥×°ÅÚÔçÆÚĞÍ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "11060",
 		attribute_2 = "cannon",
@@ -19852,11 +19852,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11100] = {
-		name = "127mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "127mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "11100",
 		attribute_2 = "cannon",
@@ -19947,11 +19947,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11120] = {
-		name = "127mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "127mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "11100",
 		attribute_2 = "cannon",
@@ -20072,11 +20072,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11140] = {
-		name = "127mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "127mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "11100",
 		attribute_2 = "cannon",
@@ -20249,11 +20249,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11160] = {
-		name = "åŒè”è£…127mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°127mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "11160",
 		attribute_2 = "cannon",
@@ -20426,15 +20426,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11200] = {
-		name = "åŒè”è£…127mmé«˜å¹³ä¸¤ç”¨ç‚®Mk12",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°127mm¸ßÆ½Á½ÓÃÅÚMk12",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 1,
 		value_2 = 5,
 		icon = "11200",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 3,
 		damage = "4 x 4",
 		nationality = 1,
@@ -20552,15 +20552,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11220] = {
-		name = "åŒè”è£…127mmé«˜å¹³ä¸¤ç”¨ç‚®Mk12",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°127mm¸ßÆ½Á½ÓÃÅÚMk12",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 2,
 		value_2 = 11,
 		icon = "11200",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 4,
 		damage = "4 x 4",
 		nationality = 1,
@@ -20719,15 +20719,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[11240] = {
-		name = "åŒè”è£…127mmé«˜å¹³ä¸¤ç”¨ç‚®Mk12",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°127mm¸ßÆ½Á½ÓÃÅÚMk12",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 3,
 		value_2 = 20,
 		icon = "11200",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
 		damage = "4 x 4",
 		nationality = 1,
@@ -20919,12 +20919,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12000] = {
-		name = "åŒè”152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "12000",
 		damage = "7 x 4",
@@ -21007,11 +21007,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12020] = {
-		name = "åŒè”152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "12000",
 		attribute_2 = "cannon",
@@ -21096,11 +21096,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12040] = {
-		name = "åŒè”152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "12000",
 		attribute_2 = "cannon",
@@ -21225,11 +21225,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12060] = {
-		name = "åŒè”152mmä¸»ç‚®Mk15",
-		speciality = "é”å®š",
+		name = "Ë«Áª152mmÖ÷ÅÚMk15",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "12060",
 		attribute_2 = "cannon",
@@ -21354,11 +21354,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12100] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "12100",
 		attribute_2 = "cannon",
@@ -21443,11 +21443,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12120] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "12100",
 		attribute_2 = "cannon",
@@ -21562,11 +21562,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12140] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "12100",
 		attribute_2 = "cannon",
@@ -21733,11 +21733,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12160] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®Mk16",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°152mmÖ÷ÅÚMk16",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "12160",
 		attribute_2 = "cannon",
@@ -21926,15 +21926,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[12200] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…152mmé«˜å¹³ä¸¤ç”¨ç‚®Mk17",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍÈıÁª×°152mm¸ßÆ½Á½ÓÃÅÚMk17",
+		speciality = "Ëø¶¨",
 		type = 2,
 		attribute_3 = "antiaircraft",
 		tech = 0,
 		value_2 = 30,
 		icon = "12200",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
 		damage = "5 x 6",
 		nationality = 1,
@@ -22120,12 +22120,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[13000] = {
-		name = "ä¸‰è”è£…203mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°203mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "13000",
 		damage = "22 x 3",
@@ -22208,11 +22208,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[13020] = {
-		name = "ä¸‰è”è£…203mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°203mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "13000",
 		attribute_2 = "cannon",
@@ -22297,11 +22297,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[13040] = {
-		name = "ä¸‰è”è£…203mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°203mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "13000",
 		attribute_2 = "cannon",
@@ -22426,11 +22426,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[13060] = {
-		name = "ä¸‰è”è£…203mmä¸»ç‚®Mk13",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°203mmÖ÷ÅÚMk13",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "13060",
 		attribute_2 = "cannon",
@@ -22555,11 +22555,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[13100] = {
-		name = "ä¸‰è”è£…203mmä¸»ç‚®æ”¹è¿›å‹",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°203mmÖ÷ÅÚ¸Ä½øĞÍ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "13100",
 		attribute_2 = "cannon",
@@ -22644,11 +22644,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[13120] = {
-		name = "ä¸‰è”è£…203mmä¸»ç‚®æ”¹è¿›å‹",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°203mmÖ÷ÅÚ¸Ä½øĞÍ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "13100",
 		attribute_2 = "cannon",
@@ -22763,11 +22763,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[13140] = {
-		name = "ä¸‰è”è£…203mmä¸»ç‚®æ”¹è¿›å‹",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°203mmÖ÷ÅÚ¸Ä½øĞÍ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "13100",
 		attribute_2 = "cannon",
@@ -22933,11 +22933,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[13160] = {
-		name = "ä¸‰è”è£…203mmä¸»ç‚®Mk15",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°203mmÖ÷ÅÚMk15",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "13160",
 		attribute_2 = "cannon",
@@ -23125,11 +23125,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14000] = {
-		name = "ä¸‰è”è£…305mmä¸»ç‚®Mk8",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°305mmÖ÷ÅÚMk8",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "14000",
 		attribute_2 = "cannon",
@@ -23237,11 +23237,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14020] = {
-		name = "ä¸‰è”è£…305mmä¸»ç‚®Mk8",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°305mmÖ÷ÅÚMk8",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14000",
 		attribute_2 = "cannon",
@@ -23389,11 +23389,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14040] = {
-		name = "ä¸‰è”è£…305mmä¸»ç‚®Mk8",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°305mmÖ÷ÅÚMk8",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "14000",
 		attribute_2 = "cannon",
@@ -23574,12 +23574,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14100] = {
-		name = "ä¸‰è”è£…356mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°356mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "14100",
 		damage = "40 x 3",
@@ -23655,11 +23655,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14120] = {
-		name = "ä¸‰è”è£…356mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°356mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "14100",
 		attribute_2 = "cannon",
@@ -23738,11 +23738,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14140] = {
-		name = "ä¸‰è”è£…356mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°356mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "14100",
 		attribute_2 = "cannon",
@@ -23861,11 +23861,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14160] = {
-		name = "è¯•ä½œå‹å››è”è£…356mmä¸»ç‚®MkB",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍËÄÁª×°356mmÖ÷ÅÚMkB",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14160",
 		attribute_2 = "cannon",
@@ -24025,11 +24025,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14180] = {
-		name = "åŒè”è£…406mmä¸»ç‚®Mk1",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°406mmÖ÷ÅÚMk1",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "14180",
 		attribute_2 = "cannon",
@@ -24148,11 +24148,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14200] = {
-		name = "åŒè”è£…406mmä¸»ç‚®Mk5",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°406mmÖ÷ÅÚMk5",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "14200",
 		attribute_2 = "cannon",
@@ -24230,11 +24230,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14220] = {
-		name = "åŒè”è£…406mmä¸»ç‚®Mk5",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°406mmÖ÷ÅÚMk5",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "14200",
 		attribute_2 = "cannon",
@@ -24343,11 +24343,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14240] = {
-		name = "åŒè”è£…406mmä¸»ç‚®Mk5",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°406mmÖ÷ÅÚMk5",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14200",
 		attribute_2 = "cannon",
@@ -24507,11 +24507,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14260] = {
-		name = "åŒè”è£…406mmä¸»ç‚®Mk8",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°406mmÖ÷ÅÚMk8",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14260",
 		attribute_2 = "cannon",
@@ -24671,11 +24671,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14300] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®Mk6",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚMk6",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "14300",
 		attribute_2 = "cannon",
@@ -24753,11 +24753,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14320] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®Mk6",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚMk6",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "14300",
 		attribute_2 = "cannon",
@@ -24866,11 +24866,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14340] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®Mk6",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚMk6",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14300",
 		attribute_2 = "cannon",
@@ -25030,11 +25030,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14360] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…406mmä¸»ç‚®MkD",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍÈıÁª×°406mmÖ÷ÅÚMkD",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "14360",
 		attribute_2 = "cannon",
@@ -25216,11 +25216,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14380] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®Mk2",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚMk2",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14380",
 		attribute_2 = "cannon",
@@ -25379,11 +25379,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14400] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®Mk7",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚMk7",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "14400",
 		attribute_2 = "cannon",
@@ -25491,11 +25491,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14420] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®Mk7",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚMk7",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14400",
 		attribute_2 = "cannon",
@@ -25644,11 +25644,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14440] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®Mk7",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚMk7",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "14400",
 		attribute_2 = "cannon",
@@ -25830,11 +25830,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[14500] = {
-		name = "è¯•ä½œå‹åŒè”è£…457mmä¸»ç‚®Mk A",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍË«Áª×°457mmÖ÷ÅÚMk A",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 65,
 		icon = "14500",
 		attribute_2 = "cannon",
@@ -26016,11 +26016,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15000] = {
-		name = "æ½œè‰‡ç”¨Mark 14é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 14ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "15000",
 		attribute_2 = "torpedo",
@@ -26105,11 +26105,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15020] = {
-		name = "æ½œè‰‡ç”¨Mark 14é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 14ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "15000",
 		attribute_2 = "torpedo",
@@ -26224,11 +26224,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15040] = {
-		name = "æ½œè‰‡ç”¨Mark 14é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 14ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "15000",
 		attribute_2 = "torpedo",
@@ -26394,11 +26394,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15060] = {
-		name = "æ½œè‰‡ç”¨Mark 18é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 18ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "15060",
 		attribute_2 = "torpedo",
@@ -26564,11 +26564,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15100] = {
-		name = "æ½œè‰‡ç”¨Mark 16é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 16ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "15100",
 		attribute_2 = "torpedo",
@@ -26683,11 +26683,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15120] = {
-		name = "æ½œè‰‡ç”¨Mark 16é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 16ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "15100",
 		attribute_2 = "torpedo",
@@ -26842,11 +26842,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15140] = {
-		name = "æ½œè‰‡ç”¨Mark 16é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 16ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "15100",
 		attribute_2 = "torpedo",
@@ -27034,11 +27034,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15160] = {
-		name = "æ½œè‰‡ç”¨Mark 28é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 28ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "15160",
 		attribute_2 = "torpedo",
@@ -27226,11 +27226,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15200] = {
-		name = "ä¸‰è”è£…533mmé±¼é›·Mk17",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°533mmÓãÀ×Mk17",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "15200",
 		attribute_2 = "torpedo",
@@ -27358,11 +27358,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15220] = {
-		name = "å››è”è£…533mmé±¼é›·Mk17",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mmÓãÀ×Mk17",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "15220",
 		attribute_2 = "torpedo",
@@ -27531,11 +27531,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15240] = {
-		name = "äº”è”è£…533mmé±¼é›·Mk17",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°533mmÓãÀ×Mk17",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "15240",
 		attribute_2 = "torpedo",
@@ -27726,17 +27726,17 @@ pg.equip_data_statistics = {
 		}
 	},
 	[15500] = {
-		name = "PBY-5Aå¡ç‰¹ç³å¨œæ°´ä¸Šæœº",
+		name = "PBY-5A¿¨ÌØÁÕÄÈË®ÉÏ»ú",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 15500,
 		value_2 = 10,
 		icon = "15500",
 		value_1 = "14",
 		attribute_2 = "antisub",
 		rarity = 4,
-		descrip = "åœ¨åæ½œè­¦æˆ’ã€äººå‘˜æ•‘æ´ä¸­æœ‰ç€å‡ºè‰²è¡¨ç°çš„å¤šç”¨é€”é£æœº",
+		descrip = "ÔÚ·´Ç±¾¯½ä¡¢ÈËÔ±¾ÈÔ®ÖĞÓĞ×Å³öÉ«±íÏÖµÄ¶àÓÃÍ¾·É»ú",
 		nationality = 1,
 		ammo = 10,
 		value_3 = 0,
@@ -27878,15 +27878,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16000] = {
-		name = "20mmå„åˆ©å­”é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "20mm¶òÀû¿×¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "16000",
-		damage = "8/è½®",
+		damage = "8/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -27939,7 +27939,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16001] = {
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		base = 16000,
 		id = 16001,
 		torpedo_ammo = 0,
@@ -27949,7 +27949,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16002] = {
-		damage = "10/è½®",
+		damage = "10/ÂÖ",
 		base = 16000,
 		id = 16002,
 		torpedo_ammo = 0,
@@ -27959,7 +27959,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16003] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 16000,
 		id = 16003,
 		torpedo_ammo = 0,
@@ -27969,16 +27969,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16020] = {
-		name = "20mmå„åˆ©å­”é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "20mm¶òÀû¿×¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "16000",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -28031,7 +28031,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16021] = {
-		damage = "10/è½®",
+		damage = "10/ÂÖ",
 		base = 16020,
 		id = 16021,
 		torpedo_ammo = 0,
@@ -28041,7 +28041,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16022] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 16020,
 		id = 16022,
 		torpedo_ammo = 0,
@@ -28051,7 +28051,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16023] = {
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		base = 16020,
 		id = 16023,
 		torpedo_ammo = 0,
@@ -28061,16 +28061,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16040] = {
-		name = "20mmå„åˆ©å­”é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "20mm¶òÀû¿×¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "16000",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "11/è½®",
+		damage = "11/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -28123,7 +28123,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16041] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 16040,
 		id = 16041,
 		torpedo_ammo = 0,
@@ -28133,7 +28133,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16042] = {
-		damage = "13/è½®",
+		damage = "13/ÂÖ",
 		base = 16040,
 		id = 16042,
 		torpedo_ammo = 0,
@@ -28143,7 +28143,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16043] = {
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		base = 16040,
 		id = 16043,
 		torpedo_ammo = 0,
@@ -28153,7 +28153,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16044] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 16040,
 		id = 16044,
 		torpedo_ammo = 0,
@@ -28163,7 +28163,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16045] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 16040,
 		id = 16045,
 		torpedo_ammo = 0,
@@ -28173,7 +28173,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16046] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 16040,
 		id = 16046,
 		torpedo_ammo = 0,
@@ -28183,7 +28183,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16047] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 16040,
 		id = 16047,
 		torpedo_ammo = 0,
@@ -28193,16 +28193,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16060] = {
-		name = "76mmé«˜å°„ç‚®æ”¹è¿›å‹",
-		speciality = "é˜²ç©º",
+		name = "76mm¸ßÉäÅÚ¸Ä½øĞÍ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "16060",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -28255,7 +28255,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16061] = {
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 16060,
 		id = 16061,
 		torpedo_ammo = 0,
@@ -28265,7 +28265,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16062] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 16060,
 		id = 16062,
 		torpedo_ammo = 0,
@@ -28275,7 +28275,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16063] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 16060,
 		id = 16063,
 		torpedo_ammo = 0,
@@ -28285,7 +28285,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16064] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 16060,
 		id = 16064,
 		torpedo_ammo = 0,
@@ -28295,7 +28295,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16065] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 16060,
 		id = 16065,
 		torpedo_ammo = 0,
@@ -28305,7 +28305,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16066] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 16060,
 		id = 16066,
 		torpedo_ammo = 0,
@@ -28315,7 +28315,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16067] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 16060,
 		id = 16067,
 		torpedo_ammo = 0,
@@ -28325,7 +28325,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16068] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 16060,
 		id = 16068,
 		torpedo_ammo = 0,
@@ -28335,7 +28335,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16069] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 16060,
 		id = 16069,
 		torpedo_ammo = 0,
@@ -28345,7 +28345,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16070] = {
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 16060,
 		id = 16070,
 		torpedo_ammo = 0,
@@ -28356,7 +28356,7 @@ pg.equip_data_statistics = {
 	},
 	[16071] = {
 		anti_siren = 100,
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 16060,
 		id = 16071,
 		torpedo_ammo = 0,
@@ -28366,16 +28366,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16080] = {
-		name = "åŒè”è£…76mmRFç«ç‚®Mk27",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°76mmRF»ğÅÚMk27",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "16080",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -28428,7 +28428,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16081] = {
-		damage = "39/è½®",
+		damage = "39/ÂÖ",
 		base = 16080,
 		id = 16081,
 		torpedo_ammo = 0,
@@ -28438,7 +28438,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16082] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 16080,
 		id = 16082,
 		torpedo_ammo = 0,
@@ -28448,7 +28448,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16083] = {
-		damage = "51/è½®",
+		damage = "51/ÂÖ",
 		base = 16080,
 		id = 16083,
 		torpedo_ammo = 0,
@@ -28458,7 +28458,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16084] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 16080,
 		id = 16084,
 		torpedo_ammo = 0,
@@ -28468,7 +28468,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16085] = {
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 16080,
 		id = 16085,
 		torpedo_ammo = 0,
@@ -28478,7 +28478,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16086] = {
-		damage = "69/è½®",
+		damage = "69/ÂÖ",
 		base = 16080,
 		id = 16086,
 		torpedo_ammo = 0,
@@ -28488,7 +28488,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16087] = {
-		damage = "75/è½®",
+		damage = "75/ÂÖ",
 		base = 16080,
 		id = 16087,
 		torpedo_ammo = 0,
@@ -28498,7 +28498,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16088] = {
-		damage = "81/è½®",
+		damage = "81/ÂÖ",
 		base = 16080,
 		id = 16088,
 		torpedo_ammo = 0,
@@ -28508,7 +28508,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16089] = {
-		damage = "87/è½®",
+		damage = "87/ÂÖ",
 		base = 16080,
 		id = 16089,
 		torpedo_ammo = 0,
@@ -28518,7 +28518,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16090] = {
-		damage = "94/è½®",
+		damage = "94/ÂÖ",
 		base = 16080,
 		id = 16090,
 		torpedo_ammo = 0,
@@ -28529,7 +28529,7 @@ pg.equip_data_statistics = {
 	},
 	[16091] = {
 		anti_siren = 100,
-		damage = "94/è½®",
+		damage = "94/ÂÖ",
 		base = 16080,
 		id = 16091,
 		torpedo_ammo = 0,
@@ -28540,7 +28540,7 @@ pg.equip_data_statistics = {
 	},
 	[16092] = {
 		anti_siren = 200,
-		damage = "94/è½®",
+		damage = "94/ÂÖ",
 		base = 16080,
 		id = 16092,
 		torpedo_ammo = 0,
@@ -28551,7 +28551,7 @@ pg.equip_data_statistics = {
 	},
 	[16093] = {
 		anti_siren = 300,
-		damage = "94/è½®",
+		damage = "94/ÂÖ",
 		base = 16080,
 		id = 16093,
 		torpedo_ammo = 0,
@@ -28561,16 +28561,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16100] = {
-		name = "åŒç®¡20mmå„åˆ©å­”é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«¹Ü20mm¶òÀû¿×¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "16100",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -28623,7 +28623,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16101] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 16100,
 		id = 16101,
 		torpedo_ammo = 0,
@@ -28633,7 +28633,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16102] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 16100,
 		id = 16102,
 		torpedo_ammo = 0,
@@ -28643,7 +28643,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16103] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 16100,
 		id = 16103,
 		torpedo_ammo = 0,
@@ -28653,16 +28653,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16120] = {
-		name = "åŒç®¡20mmå„åˆ©å­”é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«¹Ü20mm¶òÀû¿×¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "16100",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "15/è½®",
+		damage = "15/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -28715,7 +28715,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16121] = {
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		base = 16120,
 		id = 16121,
 		torpedo_ammo = 0,
@@ -28725,7 +28725,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16122] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 16120,
 		id = 16122,
 		torpedo_ammo = 0,
@@ -28735,7 +28735,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16123] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 16120,
 		id = 16123,
 		torpedo_ammo = 0,
@@ -28745,7 +28745,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16124] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 16120,
 		id = 16124,
 		torpedo_ammo = 0,
@@ -28755,7 +28755,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16125] = {
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		base = 16120,
 		id = 16125,
 		torpedo_ammo = 0,
@@ -28765,7 +28765,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16126] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 16120,
 		id = 16126,
 		torpedo_ammo = 0,
@@ -28775,16 +28775,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16140] = {
-		name = "åŒç®¡20mmå„åˆ©å­”é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«¹Ü20mm¶òÀû¿×¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "16100",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -28837,7 +28837,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16141] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 16140,
 		id = 16141,
 		torpedo_ammo = 0,
@@ -28847,7 +28847,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16142] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 16140,
 		id = 16142,
 		torpedo_ammo = 0,
@@ -28857,7 +28857,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16143] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 16140,
 		id = 16143,
 		torpedo_ammo = 0,
@@ -28867,7 +28867,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16144] = {
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		base = 16140,
 		id = 16144,
 		torpedo_ammo = 0,
@@ -28877,7 +28877,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16145] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 16140,
 		id = 16145,
 		torpedo_ammo = 0,
@@ -28887,7 +28887,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16146] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 16140,
 		id = 16146,
 		torpedo_ammo = 0,
@@ -28897,7 +28897,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16147] = {
-		damage = "36/è½®",
+		damage = "36/ÂÖ",
 		base = 16140,
 		id = 16147,
 		torpedo_ammo = 0,
@@ -28907,7 +28907,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16148] = {
-		damage = "39/è½®",
+		damage = "39/ÂÖ",
 		base = 16140,
 		id = 16148,
 		torpedo_ammo = 0,
@@ -28917,7 +28917,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16149] = {
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		base = 16140,
 		id = 16149,
 		torpedo_ammo = 0,
@@ -28927,7 +28927,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16150] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 16140,
 		id = 16150,
 		torpedo_ammo = 0,
@@ -28938,7 +28938,7 @@ pg.equip_data_statistics = {
 	},
 	[16151] = {
 		anti_siren = 100,
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 16140,
 		id = 16151,
 		torpedo_ammo = 0,
@@ -28948,16 +28948,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16160] = {
-		name = "å››è”è£…20mmå„åˆ©å­”é«˜å°„ç‚®Mk15",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°20mm¶òÀû¿×¸ßÉäÅÚMk15",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "16160",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -29010,7 +29010,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16161] = {
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		base = 16160,
 		id = 16161,
 		torpedo_ammo = 0,
@@ -29020,7 +29020,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16162] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 16160,
 		id = 16162,
 		torpedo_ammo = 0,
@@ -29030,7 +29030,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16163] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 16160,
 		id = 16163,
 		torpedo_ammo = 0,
@@ -29040,7 +29040,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16164] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 16160,
 		id = 16164,
 		torpedo_ammo = 0,
@@ -29050,7 +29050,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16165] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 16160,
 		id = 16165,
 		torpedo_ammo = 0,
@@ -29060,7 +29060,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16166] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 16160,
 		id = 16166,
 		torpedo_ammo = 0,
@@ -29070,7 +29070,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16167] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 16160,
 		id = 16167,
 		torpedo_ammo = 0,
@@ -29080,7 +29080,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16168] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 16160,
 		id = 16168,
 		torpedo_ammo = 0,
@@ -29090,7 +29090,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16169] = {
-		damage = "49/è½®",
+		damage = "49/ÂÖ",
 		base = 16160,
 		id = 16169,
 		torpedo_ammo = 0,
@@ -29100,7 +29100,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16170] = {
-		damage = "52/è½®",
+		damage = "52/ÂÖ",
 		base = 16160,
 		id = 16170,
 		torpedo_ammo = 0,
@@ -29111,7 +29111,7 @@ pg.equip_data_statistics = {
 	},
 	[16171] = {
 		anti_siren = 100,
-		damage = "52/è½®",
+		damage = "52/ÂÖ",
 		base = 16160,
 		id = 16171,
 		torpedo_ammo = 0,
@@ -29121,16 +29121,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16200] = {
-		name = "å››è”è£…28mmâ€œèŠåŠ å“¥é’¢ç´â€",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°28mm¡°Ö¥¼Ó¸ç¸ÖÇÙ¡±",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "16200",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -29183,7 +29183,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16201] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 16200,
 		id = 16201,
 		torpedo_ammo = 0,
@@ -29193,7 +29193,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16202] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 16200,
 		id = 16202,
 		torpedo_ammo = 0,
@@ -29203,7 +29203,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16203] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 16200,
 		id = 16203,
 		torpedo_ammo = 0,
@@ -29213,16 +29213,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16220] = {
-		name = "å››è”è£…28mmâ€œèŠåŠ å“¥é’¢ç´â€",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°28mm¡°Ö¥¼Ó¸ç¸ÖÇÙ¡±",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "16200",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -29275,7 +29275,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16221] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 16220,
 		id = 16221,
 		torpedo_ammo = 0,
@@ -29285,7 +29285,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16222] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 16220,
 		id = 16222,
 		torpedo_ammo = 0,
@@ -29295,7 +29295,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16223] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 16220,
 		id = 16223,
 		torpedo_ammo = 0,
@@ -29305,7 +29305,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16224] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 16220,
 		id = 16224,
 		torpedo_ammo = 0,
@@ -29315,7 +29315,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16225] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 16220,
 		id = 16225,
 		torpedo_ammo = 0,
@@ -29325,7 +29325,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16226] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 16220,
 		id = 16226,
 		torpedo_ammo = 0,
@@ -29335,16 +29335,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16240] = {
-		name = "å››è”è£…28mmâ€œèŠåŠ å“¥é’¢ç´â€",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°28mm¡°Ö¥¼Ó¸ç¸ÖÇÙ¡±",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "16200",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -29397,7 +29397,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16241] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 16240,
 		id = 16241,
 		torpedo_ammo = 0,
@@ -29407,7 +29407,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16242] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 16240,
 		id = 16242,
 		torpedo_ammo = 0,
@@ -29417,7 +29417,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16243] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 16240,
 		id = 16243,
 		torpedo_ammo = 0,
@@ -29427,7 +29427,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16244] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 16240,
 		id = 16244,
 		torpedo_ammo = 0,
@@ -29437,7 +29437,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16245] = {
-		damage = "49/è½®",
+		damage = "49/ÂÖ",
 		base = 16240,
 		id = 16245,
 		torpedo_ammo = 0,
@@ -29447,7 +29447,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16246] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 16240,
 		id = 16246,
 		torpedo_ammo = 0,
@@ -29457,7 +29457,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16247] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 16240,
 		id = 16247,
 		torpedo_ammo = 0,
@@ -29467,7 +29467,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16248] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 16240,
 		id = 16248,
 		torpedo_ammo = 0,
@@ -29477,7 +29477,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16249] = {
-		damage = "67/è½®",
+		damage = "67/ÂÖ",
 		base = 16240,
 		id = 16249,
 		torpedo_ammo = 0,
@@ -29487,7 +29487,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16250] = {
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 16240,
 		id = 16250,
 		torpedo_ammo = 0,
@@ -29498,7 +29498,7 @@ pg.equip_data_statistics = {
 	},
 	[16251] = {
 		anti_siren = 100,
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 16240,
 		id = 16251,
 		torpedo_ammo = 0,
@@ -29508,16 +29508,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16300] = {
-		name = "åŒè”40mmåšç¦æ–¯å¯¹ç©ºæœºç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª40mm²©¸£Ë¹¶Ô¿Õ»úÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "16300",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -29570,7 +29570,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16301] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 16300,
 		id = 16301,
 		torpedo_ammo = 0,
@@ -29580,7 +29580,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16302] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 16300,
 		id = 16302,
 		torpedo_ammo = 0,
@@ -29590,7 +29590,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16303] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 16300,
 		id = 16303,
 		torpedo_ammo = 0,
@@ -29600,16 +29600,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16320] = {
-		name = "åŒè”40mmåšç¦æ–¯å¯¹ç©ºæœºç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª40mm²©¸£Ë¹¶Ô¿Õ»úÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "16300",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -29662,7 +29662,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16321] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 16320,
 		id = 16321,
 		torpedo_ammo = 0,
@@ -29672,7 +29672,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16322] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 16320,
 		id = 16322,
 		torpedo_ammo = 0,
@@ -29682,7 +29682,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16323] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 16320,
 		id = 16323,
 		torpedo_ammo = 0,
@@ -29692,7 +29692,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16324] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 16320,
 		id = 16324,
 		torpedo_ammo = 0,
@@ -29702,7 +29702,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16325] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 16320,
 		id = 16325,
 		torpedo_ammo = 0,
@@ -29712,7 +29712,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16326] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 16320,
 		id = 16326,
 		torpedo_ammo = 0,
@@ -29722,16 +29722,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16340] = {
-		name = "åŒè”40mmåšç¦æ–¯å¯¹ç©ºæœºç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª40mm²©¸£Ë¹¶Ô¿Õ»úÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "16300",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -29784,7 +29784,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16341] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 16340,
 		id = 16341,
 		torpedo_ammo = 0,
@@ -29794,7 +29794,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16342] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 16340,
 		id = 16342,
 		torpedo_ammo = 0,
@@ -29804,7 +29804,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16343] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 16340,
 		id = 16343,
 		torpedo_ammo = 0,
@@ -29814,7 +29814,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16344] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 16340,
 		id = 16344,
 		torpedo_ammo = 0,
@@ -29824,7 +29824,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16345] = {
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		base = 16340,
 		id = 16345,
 		torpedo_ammo = 0,
@@ -29834,7 +29834,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16346] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 16340,
 		id = 16346,
 		torpedo_ammo = 0,
@@ -29844,7 +29844,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16347] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 16340,
 		id = 16347,
 		torpedo_ammo = 0,
@@ -29854,7 +29854,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16348] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 16340,
 		id = 16348,
 		torpedo_ammo = 0,
@@ -29864,7 +29864,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16349] = {
-		damage = "58/è½®",
+		damage = "58/ÂÖ",
 		base = 16340,
 		id = 16349,
 		torpedo_ammo = 0,
@@ -29874,7 +29874,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16350] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 16340,
 		id = 16350,
 		torpedo_ammo = 0,
@@ -29885,7 +29885,7 @@ pg.equip_data_statistics = {
 	},
 	[16351] = {
 		anti_siren = 100,
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 16340,
 		id = 16351,
 		torpedo_ammo = 0,
@@ -29895,16 +29895,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16400] = {
-		name = "å››è”40mmåšç¦æ–¯å¯¹ç©ºæœºç‚®",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª40mm²©¸£Ë¹¶Ô¿Õ»úÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "16400",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -29957,7 +29957,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16401] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 16400,
 		id = 16401,
 		torpedo_ammo = 0,
@@ -29967,7 +29967,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16402] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 16400,
 		id = 16402,
 		torpedo_ammo = 0,
@@ -29977,7 +29977,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16403] = {
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 16400,
 		id = 16403,
 		torpedo_ammo = 0,
@@ -29987,7 +29987,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16404] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 16400,
 		id = 16404,
 		torpedo_ammo = 0,
@@ -29997,7 +29997,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16405] = {
-		damage = "69/è½®",
+		damage = "69/ÂÖ",
 		base = 16400,
 		id = 16405,
 		torpedo_ammo = 0,
@@ -30007,7 +30007,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16406] = {
-		damage = "76/è½®",
+		damage = "76/ÂÖ",
 		base = 16400,
 		id = 16406,
 		torpedo_ammo = 0,
@@ -30017,16 +30017,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16420] = {
-		name = "å››è”40mmåšç¦æ–¯å¯¹ç©ºæœºç‚®",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª40mm²©¸£Ë¹¶Ô¿Õ»úÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "16400",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -30079,7 +30079,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16421] = {
-		damage = "49/è½®",
+		damage = "49/ÂÖ",
 		base = 16420,
 		id = 16421,
 		torpedo_ammo = 0,
@@ -30089,7 +30089,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16422] = {
-		damage = "55/è½®",
+		damage = "55/ÂÖ",
 		base = 16420,
 		id = 16422,
 		torpedo_ammo = 0,
@@ -30099,7 +30099,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16423] = {
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 16420,
 		id = 16423,
 		torpedo_ammo = 0,
@@ -30109,7 +30109,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16424] = {
-		damage = "67/è½®",
+		damage = "67/ÂÖ",
 		base = 16420,
 		id = 16424,
 		torpedo_ammo = 0,
@@ -30119,7 +30119,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16425] = {
-		damage = "73/è½®",
+		damage = "73/ÂÖ",
 		base = 16420,
 		id = 16425,
 		torpedo_ammo = 0,
@@ -30129,7 +30129,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16426] = {
-		damage = "80/è½®",
+		damage = "80/ÂÖ",
 		base = 16420,
 		id = 16426,
 		torpedo_ammo = 0,
@@ -30139,7 +30139,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16427] = {
-		damage = "87/è½®",
+		damage = "87/ÂÖ",
 		base = 16420,
 		id = 16427,
 		torpedo_ammo = 0,
@@ -30149,7 +30149,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16428] = {
-		damage = "94/è½®",
+		damage = "94/ÂÖ",
 		base = 16420,
 		id = 16428,
 		torpedo_ammo = 0,
@@ -30159,7 +30159,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16429] = {
-		damage = "101/è½®",
+		damage = "101/ÂÖ",
 		base = 16420,
 		id = 16429,
 		torpedo_ammo = 0,
@@ -30169,7 +30169,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16430] = {
-		damage = "108/è½®",
+		damage = "108/ÂÖ",
 		base = 16420,
 		id = 16430,
 		torpedo_ammo = 0,
@@ -30179,16 +30179,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16440] = {
-		name = "å››è”40mmåšç¦æ–¯å¯¹ç©ºæœºç‚®",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª40mm²©¸£Ë¹¶Ô¿Õ»úÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "16400",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "48/è½®",
+		damage = "48/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -30241,7 +30241,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16441] = {
-		damage = "55/è½®",
+		damage = "55/ÂÖ",
 		base = 16440,
 		id = 16441,
 		torpedo_ammo = 0,
@@ -30251,7 +30251,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16442] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 16440,
 		id = 16442,
 		torpedo_ammo = 0,
@@ -30261,7 +30261,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16443] = {
-		damage = "69/è½®",
+		damage = "69/ÂÖ",
 		base = 16440,
 		id = 16443,
 		torpedo_ammo = 0,
@@ -30271,7 +30271,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16444] = {
-		damage = "76/è½®",
+		damage = "76/ÂÖ",
 		base = 16440,
 		id = 16444,
 		torpedo_ammo = 0,
@@ -30281,7 +30281,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16445] = {
-		damage = "83/è½®",
+		damage = "83/ÂÖ",
 		base = 16440,
 		id = 16445,
 		torpedo_ammo = 0,
@@ -30291,7 +30291,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16446] = {
-		damage = "90/è½®",
+		damage = "90/ÂÖ",
 		base = 16440,
 		id = 16446,
 		torpedo_ammo = 0,
@@ -30301,7 +30301,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16447] = {
-		damage = "97/è½®",
+		damage = "97/ÂÖ",
 		base = 16440,
 		id = 16447,
 		torpedo_ammo = 0,
@@ -30311,7 +30311,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16448] = {
-		damage = "104/è½®",
+		damage = "104/ÂÖ",
 		base = 16440,
 		id = 16448,
 		torpedo_ammo = 0,
@@ -30321,7 +30321,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16449] = {
-		damage = "112/è½®",
+		damage = "112/ÂÖ",
 		base = 16440,
 		id = 16449,
 		torpedo_ammo = 0,
@@ -30331,7 +30331,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[16450] = {
-		damage = "120/è½®",
+		damage = "120/ÂÖ",
 		base = 16440,
 		id = 16450,
 		torpedo_ammo = 0,
@@ -30342,7 +30342,7 @@ pg.equip_data_statistics = {
 	},
 	[16451] = {
 		anti_siren = 100,
-		damage = "120/è½®",
+		damage = "120/ÂÖ",
 		base = 16440,
 		id = 16451,
 		torpedo_ammo = 0,
@@ -30353,7 +30353,7 @@ pg.equip_data_statistics = {
 	},
 	[16452] = {
 		anti_siren = 200,
-		damage = "120/è½®",
+		damage = "120/ÂÖ",
 		base = 16440,
 		id = 16452,
 		torpedo_ammo = 0,
@@ -30364,7 +30364,7 @@ pg.equip_data_statistics = {
 	},
 	[16453] = {
 		anti_siren = 300,
-		damage = "120/è½®",
+		damage = "120/ÂÖ",
 		base = 16440,
 		id = 16453,
 		torpedo_ammo = 0,
@@ -30374,12 +30374,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17000] = {
-		name = "F2Aæ°´ç‰›",
+		name = "F2AË®Å£",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "17000",
 		nationality = 1,
@@ -30470,12 +30470,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17020] = {
-		name = "F2Aæ°´ç‰›",
+		name = "F2AË®Å£",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "17000",
 		attribute_2 = "air",
@@ -30567,12 +30567,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17040] = {
-		name = "F2Aæ°´ç‰›",
+		name = "F2AË®Å£",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "17000",
 		attribute_2 = "air",
@@ -30728,12 +30728,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17060] = {
-		name = "F2Aæ°´ç‰›(è¨å¥‡é˜Ÿ)",
+		name = "F2AË®Å£(ÈøÆæ¶Ó)",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 0,
-		descrip = "â€œè¨å¥‡å‰ªâ€æˆ˜æœ¯å‘æ˜è€…çº¦ç¿°Â·å²å¯†æ–¯Â·è¨å¥‡çš„åº§é©¾",
+		descrip = "¡°ÈøÆæ¼ô¡±Õ½Êõ·¢Ã÷ÕßÔ¼º²¡¤Ê·ÃÜË¹¡¤ÈøÆæµÄ×ù¼İ",
 		value_2 = 45,
 		icon = "17060",
 		attribute_2 = "air",
@@ -30990,12 +30990,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17080] = {
-		name = "è¯•ä½œå‹XF2A-4æ°´ç‰›",
+		name = "ÊÔ×÷ĞÍXF2A-4Ë®Å£",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "17080",
 		attribute_2 = "air",
@@ -31264,12 +31264,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17100] = {
-		name = "F4Fé‡çŒ«",
+		name = "F4FÒ°Ã¨",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "17100",
 		attribute_2 = "air",
@@ -31361,12 +31361,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17120] = {
-		name = "F4Fé‡çŒ«",
+		name = "F4FÒ°Ã¨",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "17100",
 		attribute_2 = "air",
@@ -31506,12 +31506,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17140] = {
-		name = "F4Fé‡çŒ«",
+		name = "F4FÒ°Ã¨",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "17100",
 		attribute_2 = "air",
@@ -31732,12 +31732,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17200] = {
-		name = "F4Uæµ·ç›—",
+		name = "F4Uº£µÁ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "17200",
 		attribute_2 = "air",
@@ -31845,12 +31845,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17220] = {
-		name = "F4Uæµ·ç›—",
+		name = "F4Uº£µÁ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "17200",
 		attribute_2 = "air",
@@ -32018,12 +32018,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17240] = {
-		name = "F4Uæµ·ç›—",
+		name = "F4Uº£µÁ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "17200",
 		attribute_2 = "air",
@@ -32292,12 +32292,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17260] = {
-		name = "F4Uï¼ˆVF-17â€œæµ·ç›—â€ä¸­é˜Ÿï¼‰",
+		name = "F4U£¨VF-17¡°º£µÁ¡±ÖĞ¶Ó£©",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 0,
-		descrip = "ä»¥â€œæµ·ç›—æ——â€ä¸ºé˜Ÿå¾½è€Œé—»åçš„æµ·å†›èˆªç©ºä¸­é˜Ÿã€‚",
+		descrip = "ÒÔ¡°º£µÁÆì¡±Îª¶Ó»Õ¶øÎÅÃûµÄº£¾üº½¿ÕÖĞ¶Ó¡£",
 		value_2 = 45,
 		icon = "17260",
 		attribute_2 = "air",
@@ -32610,12 +32610,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17300] = {
-		name = "F6Fåœ°ç‹±çŒ«",
+		name = "F6FµØÓüÃ¨",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "17300",
 		attribute_2 = "air",
@@ -32812,12 +32812,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17320] = {
-		name = "F6Fåœ°ç‹±çŒ«",
+		name = "F6FµØÓüÃ¨",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "17300",
 		attribute_2 = "air",
@@ -33110,12 +33110,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17340] = {
-		name = "F6Fåœ°ç‹±çŒ«",
+		name = "F6FµØÓüÃ¨",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "17300",
 		attribute_2 = "air",
@@ -33483,12 +33483,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17360] = {
-		name = "F7Fè™çŒ«",
+		name = "F7F»¢Ã¨",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "17360",
 		attribute_2 = "air",
@@ -33799,12 +33799,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17380] = {
-		name = "F8Fç†ŠçŒ«",
+		name = "F8FĞÜÃ¨",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "17380",
 		attribute_2 = "air",
@@ -34115,12 +34115,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[17400] = {
-		name = "XF5Få¤©ç®­",
+		name = "XF5FÌì¼ı",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 0,
-		descrip = "æ ¼é²æ›¼XF5F-1å‹å·è¯•éªŒæœºï¼Œçˆ¬å‡é€Ÿåº¦æå¿«ï¼Œç ”å‘æœŸé—´é‡åˆ°äº†è¯¸å¤šé—®é¢˜ï¼Œæœ€ç»ˆç”±äºé…ä»¶å’Œå…¶ä»–ä¸€äº›ç‰¹æ®ŠåŸå› ï¼Œå¹¶æœªå¤§é‡æŠ•äº§ã€‚",
+		descrip = "¸ñÂ³ÂüXF5F-1ĞÍºÅÊÔÑé»ú£¬ÅÀÉıËÙ¶È¼«¿ì£¬ÑĞ·¢ÆÚ¼äÓöµ½ÁËÖî¶àÎÊÌâ£¬×îÖÕÓÉÓÚÅä¼şºÍÆäËûÒ»Ğ©ÌØÊâÔ­Òò£¬²¢Î´´óÁ¿Í¶²ú¡£",
 		value_2 = 25,
 		icon = "17400",
 		attribute_2 = "air",
@@ -34389,12 +34389,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18000] = {
-		name = "TBDè¹‚èºè€…",
+		name = "TBDõåõïÕß",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "18000",
 		nationality = 1,
@@ -34497,12 +34497,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18020] = {
-		name = "TBDè¹‚èºè€…",
+		name = "TBDõåõïÕß",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "18000",
 		attribute_2 = "air",
@@ -34606,12 +34606,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18040] = {
-		name = "TBDè¹‚èºè€…",
+		name = "TBDõåõïÕß",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "18000",
 		attribute_2 = "air",
@@ -34791,12 +34791,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18060] = {
-		name = "TBDè¹‚èºè€…(VT-8ä¸­é˜Ÿ)",
+		name = "TBDõåõïÕß(VT-8ÖĞ¶Ó)",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 0,
-		descrip = "ä¸­é€”å²›æµ·æˆ˜ä¸­ï¼Œå¤§é»„èœ‚å·æ‰€å±VT-8ä¸­é˜Ÿï¼Œçº¦ç¿°Â·æ²ƒå°”å¾·ä¼¦å°‘æ ¡æ‰€ç‡é¢†çš„TBDè¹‚èºè€…é±¼é›·æœºæœºé˜Ÿ",
+		descrip = "ÖĞÍ¾µºº£Õ½ÖĞ£¬´ó»Æ·äºÅËùÊôVT-8ÖĞ¶Ó£¬Ô¼º²¡¤ÎÖ¶ûµÂÂ×ÉÙĞ£ËùÂÊÁìµÄTBDõåõïÕßÓãÀ×»ú»ú¶Ó",
 		value_2 = 45,
 		icon = "18060",
 		attribute_2 = "air",
@@ -35134,12 +35134,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18100] = {
-		name = "TBFå¤ä»‡è€…",
+		name = "TBF¸´³ğÕß",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "18100",
 		attribute_2 = "air",
@@ -35243,12 +35243,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18120] = {
-		name = "TBFå¤ä»‡è€…",
+		name = "TBF¸´³ğÕß",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "18100",
 		attribute_2 = "air",
@@ -35409,12 +35409,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18140] = {
-		name = "TBFå¤ä»‡è€…",
+		name = "TBF¸´³ğÕß",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "18100",
 		attribute_2 = "air",
@@ -35671,12 +35671,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18180] = {
-		name = "TBMå¤ä»‡è€…(VT-18ä¸­é˜Ÿ)",
+		name = "TBM¸´³ğÕß(VT-18ÖĞ¶Ó)",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 0,
-		descrip = "æ›¾ç»æœå½¹äºæ— ç•å·èˆªç©ºæ¯èˆ°çš„é±¼é›·æœºä¸­é˜Ÿ",
+		descrip = "Ôø¾­·şÒÛÓÚÎŞÎ·ºÅº½¿ÕÄ¸½¢µÄÓãÀ×»úÖĞ¶Ó",
 		value_2 = 45,
 		icon = "18180",
 		attribute_2 = "air",
@@ -36014,12 +36014,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[18220] = {
-		name = "XTB2D-1å¤©ç©ºæµ·ç›—",
+		name = "XTB2D-1Ìì¿Õº£µÁ",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "18220",
 		attribute_2 = "air",
@@ -36316,12 +36316,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19000] = {
-		name = "SBDæ— ç•",
+		name = "SBDÎŞÎ·",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "19000",
 		nationality = 1,
@@ -36440,12 +36440,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19020] = {
-		name = "SBDæ— ç•",
+		name = "SBDÎŞÎ·",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "19000",
 		attribute_2 = "air",
@@ -36565,12 +36565,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19040] = {
-		name = "SBDæ— ç•",
+		name = "SBDÎŞÎ·",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "19000",
 		attribute_2 = "air",
@@ -36782,12 +36782,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19060] = {
-		name = "SBDæ— ç•(éº¦å…‹æ‹‰æ–¯åŸºé˜Ÿ)",
+		name = "SBDÎŞÎ·(Âó¿ËÀ­Ë¹»ù¶Ó)",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 5,
 		tech = 0,
-		descrip = "ä¸­é€”å²›è‹±é›„ï¼Œä¼ä¸šå·çš„éº¦å…‹æ‹‰æ–¯åŸºå°‘æ ¡æ‰€ç‡é¢†çš„SBDæ— ç•å¼ä¿¯å†²è½°ç‚¸æœºæœºé˜Ÿ",
+		descrip = "ÖĞÍ¾µºÓ¢ĞÛ£¬ÆóÒµºÅµÄÂó¿ËÀ­Ë¹»ùÉÙĞ£ËùÂÊÁìµÄSBDÎŞÎ·Ê½¸©³åºäÕ¨»ú»ú¶Ó",
 		value_2 = 45,
 		icon = "19060",
 		attribute_2 = "air",
@@ -37086,12 +37086,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19100] = {
-		name = "SB2Cåœ°ç‹±ä¿¯å†²è€…",
+		name = "SB2CµØÓü¸©³åÕß",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "19100",
 		attribute_2 = "air",
@@ -37211,12 +37211,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19120] = {
-		name = "SB2Cåœ°ç‹±ä¿¯å†²è€…",
+		name = "SB2CµØÓü¸©³åÕß",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "19100",
 		attribute_2 = "air",
@@ -37405,12 +37405,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19140] = {
-		name = "SB2Cåœ°ç‹±ä¿¯å†²è€…",
+		name = "SB2CµØÓü¸©³åÕß",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "19100",
 		attribute_2 = "air",
@@ -37715,12 +37715,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19160] = {
-		name = "å®éªŒå‹XSB3C-1",
+		name = "ÊµÑéĞÍXSB3C-1",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "19160",
 		attribute_2 = "air",
@@ -38073,12 +38073,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19200] = {
-		name = "BTD-1æ¯ç­è€…",
+		name = "BTD-1»ÙÃğÕß",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "19200",
 		attribute_2 = "air",
@@ -38239,12 +38239,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19220] = {
-		name = "BTD-1æ¯ç­è€…",
+		name = "BTD-1»ÙÃğÕß",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "19200",
 		attribute_2 = "air",
@@ -38481,12 +38481,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[19240] = {
-		name = "BTD-1æ¯ç­è€…",
+		name = "BTD-1»ÙÃğÕß",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "19200",
 		attribute_2 = "air",
@@ -38783,12 +38783,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21000] = {
-		name = "å•è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "21000",
 		damage = "3 x 1",
@@ -38877,11 +38877,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21020] = {
-		name = "å•è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "21000",
 		attribute_2 = "cannon",
@@ -38972,11 +38972,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21040] = {
-		name = "å•è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "21000",
 		attribute_2 = "cannon",
@@ -39107,12 +39107,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21100] = {
-		name = "åŒè”è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "21100",
 		damage = "3 x 2",
@@ -39201,11 +39201,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21120] = {
-		name = "åŒè”è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "21100",
 		attribute_2 = "cannon",
@@ -39296,11 +39296,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21140] = {
-		name = "åŒè”è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "21100",
 		attribute_2 = "cannon",
@@ -39431,11 +39431,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21160] = {
-		name = "åŒè”è£…102mmå‰¯ç‚®Mark XVI",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°102mm¸±ÅÚMark XVI",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "21160",
 		attribute_2 = "cannon",
@@ -39605,11 +39605,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21200] = {
-		name = "ä¸‰è”è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "21200",
 		attribute_2 = "cannon",
@@ -39700,11 +39700,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21220] = {
-		name = "ä¸‰è”è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "21200",
 		attribute_2 = "cannon",
@@ -39825,11 +39825,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21240] = {
-		name = "ä¸‰è”è£…102mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°102mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "21200",
 		attribute_2 = "cannon",
@@ -40001,12 +40001,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21300] = {
-		name = "120mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "120mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "21300",
 		damage = "4 x 1",
@@ -40095,11 +40095,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21320] = {
-		name = "120mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "120mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "21300",
 		attribute_2 = "cannon",
@@ -40190,11 +40190,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21340] = {
-		name = "120mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "120mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "21300",
 		attribute_2 = "cannon",
@@ -40325,11 +40325,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21400] = {
-		name = "åŒè”è£…120mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°120mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "21400",
 		attribute_2 = "cannon",
@@ -40420,11 +40420,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21420] = {
-		name = "åŒè”è£…120mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°120mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "21400",
 		attribute_2 = "cannon",
@@ -40545,11 +40545,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21440] = {
-		name = "åŒè”è£…120mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°120mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "21400",
 		attribute_2 = "cannon",
@@ -40721,15 +40721,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21460] = {
-		name = "åŒè”è£…120mmé«˜å¹³ä¸¤ç”¨ç‚®Mark XI",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°120mm¸ßÆ½Á½ÓÃÅÚMark XI",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 0,
 		value_2 = 20,
 		icon = "21460",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
 		damage = "6 x 4",
 		nationality = 2,
@@ -40919,15 +40919,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21500] = {
-		name = "åŒè”è£…134mmé«˜ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°134mm¸ßÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 1,
 		value_2 = 2,
 		icon = "21500",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 2,
 		damage = "4 x 2",
 		nationality = 2,
@@ -41015,15 +41015,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21520] = {
-		name = "åŒè”è£…134mmé«˜ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°134mm¸ßÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 2,
 		value_2 = 5,
 		icon = "21500",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 3,
 		damage = "4 x 2",
 		nationality = 2,
@@ -41142,15 +41142,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21540] = {
-		name = "åŒè”è£…134mmé«˜ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°134mm¸ßÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 3,
 		value_2 = 10,
 		icon = "21500",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 4,
 		damage = "4 x 2",
 		nationality = 2,
@@ -41320,15 +41320,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[21600] = {
-		name = "åŒè”è£…114mmé«˜å¹³ä¸¤ç”¨ç‚®Mark IV",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°114mm¸ßÆ½Á½ÓÃÅÚMark IV",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 0,
 		value_2 = 25,
 		icon = "21600",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
 		damage = "4 x 4",
 		nationality = 2,
@@ -41521,12 +41521,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22000] = {
-		name = "å•è£…152mmå‰¯ç‚®",
-		speciality = "æ•£å°„",
+		name = "µ¥×°152mm¸±ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "22000",
 		damage = "8 x 3",
@@ -41610,11 +41610,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22020] = {
-		name = "å•è£…152mmå‰¯ç‚®",
-		speciality = "æ•£å°„",
+		name = "µ¥×°152mm¸±ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "22000",
 		attribute_2 = "cannon",
@@ -41700,11 +41700,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22040] = {
-		name = "å•è£…152mmå‰¯ç‚®",
-		speciality = "æ•£å°„",
+		name = "µ¥×°152mm¸±ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "22000",
 		attribute_2 = "cannon",
@@ -41830,11 +41830,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22060] = {
-		name = "åŒè”è£…152mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°152mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "22060",
 		attribute_2 = "cannon",
@@ -41960,11 +41960,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22100] = {
-		name = "åŒè”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "22100",
 		attribute_2 = "cannon",
@@ -42050,11 +42050,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22120] = {
-		name = "åŒè”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "22100",
 		attribute_2 = "cannon",
@@ -42170,11 +42170,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22140] = {
-		name = "åŒè”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "22100",
 		attribute_2 = "cannon",
@@ -42341,11 +42341,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22200] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "22200",
 		attribute_2 = "cannon",
@@ -42431,11 +42431,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22220] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "22200",
 		attribute_2 = "cannon",
@@ -42551,11 +42551,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22240] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "22200",
 		attribute_2 = "cannon",
@@ -42722,11 +42722,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[22260] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…152mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍÈıÁª×°152mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "22260",
 		attribute_2 = "cannon",
@@ -42915,11 +42915,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[23000] = {
-		name = "åŒè”è£…203mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "23000",
 		attribute_2 = "cannon",
@@ -43004,11 +43004,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[23020] = {
-		name = "åŒè”è£…203mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "23000",
 		attribute_2 = "cannon",
@@ -43123,11 +43123,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[23040] = {
-		name = "åŒè”è£…203mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "23000",
 		attribute_2 = "cannon",
@@ -43293,11 +43293,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[23100] = {
-		name = "è¯•ä½œå‹åŒè”è£…234mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍË«Áª×°234mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "23100",
 		attribute_2 = "cannon",
@@ -43485,11 +43485,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[23120] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…234mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍÈıÁª×°234mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 65,
 		icon = "23120",
 		attribute_2 = "cannon",
@@ -43677,11 +43677,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[23200] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…203mmä¸»ç‚®Mark IX",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍÈıÁª×°203mmÖ÷ÅÚMark IX",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "23200",
 		attribute_2 = "cannon",
@@ -43869,11 +43869,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24000] = {
-		name = "å››è”è£…356mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°356mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "24000",
 		attribute_2 = "cannon",
@@ -43981,11 +43981,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24020] = {
-		name = "å››è”è£…356mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°356mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "24000",
 		attribute_2 = "cannon",
@@ -44134,11 +44134,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24040] = {
-		name = "å››è”è£…356mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°356mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "24000",
 		attribute_2 = "cannon",
@@ -44320,11 +44320,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24060] = {
-		name = "åŒè”è£…356mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°356mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "24060",
 		attribute_2 = "cannon",
@@ -44484,11 +44484,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24100] = {
-		name = "åŒè”è£…381mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°381mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "24100",
 		attribute_2 = "cannon",
@@ -44566,11 +44566,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24120] = {
-		name = "åŒè”è£…381mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°381mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "24100",
 		attribute_2 = "cannon",
@@ -44679,11 +44679,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24140] = {
-		name = "åŒè”è£…381mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°381mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "24100",
 		attribute_2 = "cannon",
@@ -44843,11 +44843,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24160] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…381mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍÈıÁª×°381mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "24160",
 		attribute_2 = "cannon",
@@ -45029,11 +45029,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24200] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "24200",
 		attribute_2 = "cannon",
@@ -45141,11 +45141,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24220] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "24200",
 		attribute_2 = "cannon",
@@ -45293,11 +45293,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24240] = {
-		name = "ä¸‰è”è£…406mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°406mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "24200",
 		attribute_2 = "cannon",
@@ -45478,11 +45478,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24300] = {
-		name = "åŒè”è£…381mmä¸»ç‚®æ”¹",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°381mmÖ÷ÅÚ¸Ä",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "åŒè”è£…381mmä¸»ç‚®çš„æ”¹è¿›å‹",
+		descrip = "Ë«Áª×°381mmÖ÷ÅÚµÄ¸Ä½øĞÍ",
 		value_2 = 12,
 		icon = "24300",
 		attribute_2 = "cannon",
@@ -45590,11 +45590,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24320] = {
-		name = "åŒè”è£…381mmä¸»ç‚®æ”¹",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°381mmÖ÷ÅÚ¸Ä",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "åŒè”è£…381mmä¸»ç‚®çš„æ”¹è¿›å‹",
+		descrip = "Ë«Áª×°381mmÖ÷ÅÚµÄ¸Ä½øĞÍ",
 		value_2 = 25,
 		icon = "24300",
 		attribute_2 = "cannon",
@@ -45743,11 +45743,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[24340] = {
-		name = "åŒè”è£…381mmä¸»ç‚®æ”¹",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª×°381mmÖ÷ÅÚ¸Ä",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "åŒè”è£…381mmä¸»ç‚®çš„æ”¹è¿›å‹",
+		descrip = "Ë«Áª×°381mmÖ÷ÅÚµÄ¸Ä½øĞÍ",
 		value_2 = 45,
 		icon = "24300",
 		attribute_2 = "cannon",
@@ -45929,11 +45929,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25000] = {
-		name = "ä¸‰è”è£…533mmé±¼é›·Mark IX",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°533mmÓãÀ×Mark IX",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "25000",
 		attribute_2 = "torpedo",
@@ -46061,11 +46061,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25020] = {
-		name = "å››è”è£…533mmé±¼é›·Mark IX",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mmÓãÀ×Mark IX",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "25020",
 		attribute_2 = "torpedo",
@@ -46234,11 +46234,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25040] = {
-		name = "äº”è”è£…533mmé±¼é›·Mark IX",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°533mmÓãÀ×Mark IX",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "25040",
 		attribute_2 = "torpedo",
@@ -46429,11 +46429,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25100] = {
-		name = "æ½œè‰‡ç”¨Mark VIIIé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark VIIIÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "25100",
 		attribute_2 = "torpedo",
@@ -46518,11 +46518,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25120] = {
-		name = "æ½œè‰‡ç”¨Mark VIIIé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark VIIIÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "25100",
 		attribute_2 = "torpedo",
@@ -46637,11 +46637,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25140] = {
-		name = "æ½œè‰‡ç”¨Mark VIIIé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark VIIIÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "25100",
 		attribute_2 = "torpedo",
@@ -46807,11 +46807,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25200] = {
-		name = "æ½œè‰‡ç”¨Mark 12é±¼é›·-è²é‡Œ",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 12ÓãÀ×-·ÆÀï",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "25200",
 		attribute_2 = "torpedo",
@@ -46999,11 +46999,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25300] = {
-		name = "æ½œè‰‡ç”¨Mark 20 Sé±¼é›·-å½¼å¾—",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃMark 20 SÓãÀ×-±ËµÃ",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "25300",
 		attribute_2 = "torpedo",
@@ -47191,11 +47191,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[25800] = {
-		name = "åˆºçŒ¬å¼¹",
-		speciality = "åæ½œ",
+		name = "´Ìâ¬µ¯",
+		speciality = "·´Ç±",
 		type = 14,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "25800",
 		attribute_2 = "antisub",
@@ -47373,15 +47373,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26000] = {
-		name = "åŒè”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "26000",
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -47434,7 +47434,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26001] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 26000,
 		id = 26001,
 		torpedo_ammo = 0,
@@ -47444,7 +47444,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26002] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 26000,
 		id = 26002,
 		torpedo_ammo = 0,
@@ -47454,7 +47454,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26003] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 26000,
 		id = 26003,
 		torpedo_ammo = 0,
@@ -47464,16 +47464,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26020] = {
-		name = "åŒè”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "26000",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -47526,7 +47526,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26021] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 26020,
 		id = 26021,
 		torpedo_ammo = 0,
@@ -47536,7 +47536,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26022] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 26020,
 		id = 26022,
 		torpedo_ammo = 0,
@@ -47546,7 +47546,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26023] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 26020,
 		id = 26023,
 		torpedo_ammo = 0,
@@ -47556,16 +47556,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26040] = {
-		name = "åŒè”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "26000",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -47618,7 +47618,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26041] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 26040,
 		id = 26041,
 		torpedo_ammo = 0,
@@ -47628,7 +47628,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26042] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 26040,
 		id = 26042,
 		torpedo_ammo = 0,
@@ -47638,7 +47638,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26043] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 26040,
 		id = 26043,
 		torpedo_ammo = 0,
@@ -47648,7 +47648,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26044] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 26040,
 		id = 26044,
 		torpedo_ammo = 0,
@@ -47658,7 +47658,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26045] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 26040,
 		id = 26045,
 		torpedo_ammo = 0,
@@ -47668,7 +47668,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26046] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 26040,
 		id = 26046,
 		torpedo_ammo = 0,
@@ -47678,7 +47678,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26047] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 26040,
 		id = 26047,
 		torpedo_ammo = 0,
@@ -47688,16 +47688,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26060] = {
-		name = "åŒè”è£…40mmåšç¦æ–¯å¯¹ç©ºæœºç‚®Mark I",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°40mm²©¸£Ë¹¶Ô¿Õ»úÅÚMark I",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "26060",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -47750,7 +47750,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26061] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 26060,
 		id = 26061,
 		torpedo_ammo = 0,
@@ -47760,7 +47760,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26062] = {
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 26060,
 		id = 26062,
 		torpedo_ammo = 0,
@@ -47770,7 +47770,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26063] = {
-		damage = "36/è½®",
+		damage = "36/ÂÖ",
 		base = 26060,
 		id = 26063,
 		torpedo_ammo = 0,
@@ -47780,7 +47780,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26064] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 26060,
 		id = 26064,
 		torpedo_ammo = 0,
@@ -47790,7 +47790,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26065] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 26060,
 		id = 26065,
 		torpedo_ammo = 0,
@@ -47800,7 +47800,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26066] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 26060,
 		id = 26066,
 		torpedo_ammo = 0,
@@ -47810,7 +47810,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26067] = {
-		damage = "48/è½®",
+		damage = "48/ÂÖ",
 		base = 26060,
 		id = 26067,
 		torpedo_ammo = 0,
@@ -47820,7 +47820,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26068] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 26060,
 		id = 26068,
 		torpedo_ammo = 0,
@@ -47830,7 +47830,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26069] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 26060,
 		id = 26069,
 		torpedo_ammo = 0,
@@ -47840,7 +47840,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26070] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 26060,
 		id = 26070,
 		torpedo_ammo = 0,
@@ -47851,7 +47851,7 @@ pg.equip_data_statistics = {
 	},
 	[26071] = {
 		anti_siren = 100,
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 26060,
 		id = 26071,
 		torpedo_ammo = 0,
@@ -47861,16 +47861,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26100] = {
-		name = "å››è”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "26100",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -47923,7 +47923,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26101] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 26100,
 		id = 26101,
 		torpedo_ammo = 0,
@@ -47933,7 +47933,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26102] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 26100,
 		id = 26102,
 		torpedo_ammo = 0,
@@ -47943,7 +47943,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26103] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 26100,
 		id = 26103,
 		torpedo_ammo = 0,
@@ -47953,16 +47953,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26120] = {
-		name = "å››è”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "26100",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -48015,7 +48015,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26121] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 26120,
 		id = 26121,
 		torpedo_ammo = 0,
@@ -48025,7 +48025,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26122] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 26120,
 		id = 26122,
 		torpedo_ammo = 0,
@@ -48035,7 +48035,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26123] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 26120,
 		id = 26123,
 		torpedo_ammo = 0,
@@ -48045,7 +48045,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26124] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 26120,
 		id = 26124,
 		torpedo_ammo = 0,
@@ -48055,7 +48055,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26125] = {
-		damage = "55/è½®",
+		damage = "55/ÂÖ",
 		base = 26120,
 		id = 26125,
 		torpedo_ammo = 0,
@@ -48065,7 +48065,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26126] = {
-		damage = "60/è½®",
+		damage = "60/ÂÖ",
 		base = 26120,
 		id = 26126,
 		torpedo_ammo = 0,
@@ -48075,16 +48075,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26140] = {
-		name = "å››è”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "26100",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -48137,7 +48137,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26141] = {
-		damage = "39/è½®",
+		damage = "39/ÂÖ",
 		base = 26140,
 		id = 26141,
 		torpedo_ammo = 0,
@@ -48147,7 +48147,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26142] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 26140,
 		id = 26142,
 		torpedo_ammo = 0,
@@ -48157,7 +48157,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26143] = {
-		damage = "49/è½®",
+		damage = "49/ÂÖ",
 		base = 26140,
 		id = 26143,
 		torpedo_ammo = 0,
@@ -48167,7 +48167,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26144] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 26140,
 		id = 26144,
 		torpedo_ammo = 0,
@@ -48177,7 +48177,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26145] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 26140,
 		id = 26145,
 		torpedo_ammo = 0,
@@ -48187,7 +48187,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26146] = {
-		damage = "64/è½®",
+		damage = "64/ÂÖ",
 		base = 26140,
 		id = 26146,
 		torpedo_ammo = 0,
@@ -48197,7 +48197,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26147] = {
-		damage = "69/è½®",
+		damage = "69/ÂÖ",
 		base = 26140,
 		id = 26147,
 		torpedo_ammo = 0,
@@ -48207,7 +48207,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26148] = {
-		damage = "74/è½®",
+		damage = "74/ÂÖ",
 		base = 26140,
 		id = 26148,
 		torpedo_ammo = 0,
@@ -48217,7 +48217,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26149] = {
-		damage = "79/è½®",
+		damage = "79/ÂÖ",
 		base = 26140,
 		id = 26149,
 		torpedo_ammo = 0,
@@ -48227,7 +48227,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26150] = {
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 26140,
 		id = 26150,
 		torpedo_ammo = 0,
@@ -48238,7 +48238,7 @@ pg.equip_data_statistics = {
 	},
 	[26151] = {
 		anti_siren = 100,
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 26140,
 		id = 26151,
 		torpedo_ammo = 0,
@@ -48248,16 +48248,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26200] = {
-		name = "å…«è”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "°ËÁª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "26200",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -48310,7 +48310,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26201] = {
-		damage = "48/è½®",
+		damage = "48/ÂÖ",
 		base = 26200,
 		id = 26201,
 		torpedo_ammo = 0,
@@ -48320,7 +48320,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26202] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 26200,
 		id = 26202,
 		torpedo_ammo = 0,
@@ -48330,7 +48330,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26203] = {
-		damage = "60/è½®",
+		damage = "60/ÂÖ",
 		base = 26200,
 		id = 26203,
 		torpedo_ammo = 0,
@@ -48340,7 +48340,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26204] = {
-		damage = "66/è½®",
+		damage = "66/ÂÖ",
 		base = 26200,
 		id = 26204,
 		torpedo_ammo = 0,
@@ -48350,7 +48350,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26205] = {
-		damage = "73/è½®",
+		damage = "73/ÂÖ",
 		base = 26200,
 		id = 26205,
 		torpedo_ammo = 0,
@@ -48360,7 +48360,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26206] = {
-		damage = "80/è½®",
+		damage = "80/ÂÖ",
 		base = 26200,
 		id = 26206,
 		torpedo_ammo = 0,
@@ -48370,16 +48370,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26220] = {
-		name = "å…«è”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "°ËÁª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "26200",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -48432,7 +48432,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26221] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 26220,
 		id = 26221,
 		torpedo_ammo = 0,
@@ -48442,7 +48442,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26222] = {
-		damage = "60/è½®",
+		damage = "60/ÂÖ",
 		base = 26220,
 		id = 26222,
 		torpedo_ammo = 0,
@@ -48452,7 +48452,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26223] = {
-		damage = "67/è½®",
+		damage = "67/ÂÖ",
 		base = 26220,
 		id = 26223,
 		torpedo_ammo = 0,
@@ -48462,7 +48462,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26224] = {
-		damage = "74/è½®",
+		damage = "74/ÂÖ",
 		base = 26220,
 		id = 26224,
 		torpedo_ammo = 0,
@@ -48472,7 +48472,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26225] = {
-		damage = "81/è½®",
+		damage = "81/ÂÖ",
 		base = 26220,
 		id = 26225,
 		torpedo_ammo = 0,
@@ -48482,7 +48482,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26226] = {
-		damage = "88/è½®",
+		damage = "88/ÂÖ",
 		base = 26220,
 		id = 26226,
 		torpedo_ammo = 0,
@@ -48492,7 +48492,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26227] = {
-		damage = "95/è½®",
+		damage = "95/ÂÖ",
 		base = 26220,
 		id = 26227,
 		torpedo_ammo = 0,
@@ -48502,7 +48502,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26228] = {
-		damage = "102/è½®",
+		damage = "102/ÂÖ",
 		base = 26220,
 		id = 26228,
 		torpedo_ammo = 0,
@@ -48512,7 +48512,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26229] = {
-		damage = "109/è½®",
+		damage = "109/ÂÖ",
 		base = 26220,
 		id = 26229,
 		torpedo_ammo = 0,
@@ -48522,7 +48522,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26230] = {
-		damage = "117/è½®",
+		damage = "117/ÂÖ",
 		base = 26220,
 		id = 26230,
 		torpedo_ammo = 0,
@@ -48532,16 +48532,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26240] = {
-		name = "å…«è”è£…40mmâ€œç °ç °â€ç‚®",
-		speciality = "é˜²ç©º",
+		name = "°ËÁª×°40mm¡°ÅéÅé¡±ÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "26200",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -48594,7 +48594,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26241] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 26240,
 		id = 26241,
 		torpedo_ammo = 0,
@@ -48604,7 +48604,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26242] = {
-		damage = "64/è½®",
+		damage = "64/ÂÖ",
 		base = 26240,
 		id = 26242,
 		torpedo_ammo = 0,
@@ -48614,7 +48614,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26243] = {
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 26240,
 		id = 26243,
 		torpedo_ammo = 0,
@@ -48624,7 +48624,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26244] = {
-		damage = "80/è½®",
+		damage = "80/ÂÖ",
 		base = 26240,
 		id = 26244,
 		torpedo_ammo = 0,
@@ -48634,7 +48634,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26245] = {
-		damage = "88/è½®",
+		damage = "88/ÂÖ",
 		base = 26240,
 		id = 26245,
 		torpedo_ammo = 0,
@@ -48644,7 +48644,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26246] = {
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26240,
 		id = 26246,
 		torpedo_ammo = 0,
@@ -48654,7 +48654,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26247] = {
-		damage = "104/è½®",
+		damage = "104/ÂÖ",
 		base = 26240,
 		id = 26247,
 		torpedo_ammo = 0,
@@ -48664,7 +48664,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26248] = {
-		damage = "112/è½®",
+		damage = "112/ÂÖ",
 		base = 26240,
 		id = 26248,
 		torpedo_ammo = 0,
@@ -48674,7 +48674,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26249] = {
-		damage = "120/è½®",
+		damage = "120/ÂÖ",
 		base = 26240,
 		id = 26249,
 		torpedo_ammo = 0,
@@ -48684,7 +48684,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26250] = {
-		damage = "128/è½®",
+		damage = "128/ÂÖ",
 		base = 26240,
 		id = 26250,
 		torpedo_ammo = 0,
@@ -48695,7 +48695,7 @@ pg.equip_data_statistics = {
 	},
 	[26251] = {
 		anti_siren = 100,
-		damage = "128/è½®",
+		damage = "128/ÂÖ",
 		base = 26240,
 		id = 26251,
 		torpedo_ammo = 0,
@@ -48706,7 +48706,7 @@ pg.equip_data_statistics = {
 	},
 	[26252] = {
 		anti_siren = 200,
-		damage = "128/è½®",
+		damage = "128/ÂÖ",
 		base = 26240,
 		id = 26252,
 		torpedo_ammo = 0,
@@ -48717,7 +48717,7 @@ pg.equip_data_statistics = {
 	},
 	[26253] = {
 		anti_siren = 300,
-		damage = "128/è½®",
+		damage = "128/ÂÖ",
 		base = 26240,
 		id = 26253,
 		torpedo_ammo = 0,
@@ -48727,16 +48727,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26300] = {
-		name = "76mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "76mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "26300",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -48789,7 +48789,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26301] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 26300,
 		id = 26301,
 		torpedo_ammo = 0,
@@ -48799,7 +48799,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26302] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 26300,
 		id = 26302,
 		torpedo_ammo = 0,
@@ -48809,7 +48809,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26303] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 26300,
 		id = 26303,
 		torpedo_ammo = 0,
@@ -48819,16 +48819,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26320] = {
-		name = "76mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "76mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "26300",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -48881,7 +48881,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26321] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 26320,
 		id = 26321,
 		torpedo_ammo = 0,
@@ -48891,7 +48891,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26322] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 26320,
 		id = 26322,
 		torpedo_ammo = 0,
@@ -48901,7 +48901,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26323] = {
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		base = 26320,
 		id = 26323,
 		torpedo_ammo = 0,
@@ -48911,7 +48911,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26324] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 26320,
 		id = 26324,
 		torpedo_ammo = 0,
@@ -48921,7 +48921,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26325] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 26320,
 		id = 26325,
 		torpedo_ammo = 0,
@@ -48931,7 +48931,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26326] = {
-		damage = "36/è½®",
+		damage = "36/ÂÖ",
 		base = 26320,
 		id = 26326,
 		torpedo_ammo = 0,
@@ -48941,16 +48941,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26340] = {
-		name = "76mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "76mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "26300",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		nationality = 1,
 		ammo = 5,
 		value_3 = 0,
@@ -49003,7 +49003,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26341] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 26340,
 		id = 26341,
 		torpedo_ammo = 0,
@@ -49013,7 +49013,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26342] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 26340,
 		id = 26342,
 		torpedo_ammo = 0,
@@ -49023,7 +49023,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26343] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 26340,
 		id = 26343,
 		torpedo_ammo = 0,
@@ -49033,7 +49033,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26344] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 26340,
 		id = 26344,
 		torpedo_ammo = 0,
@@ -49043,7 +49043,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26345] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 26340,
 		id = 26345,
 		torpedo_ammo = 0,
@@ -49053,7 +49053,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26346] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 26340,
 		id = 26346,
 		torpedo_ammo = 0,
@@ -49063,7 +49063,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26347] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 26340,
 		id = 26347,
 		torpedo_ammo = 0,
@@ -49073,7 +49073,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26348] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 26340,
 		id = 26348,
 		torpedo_ammo = 0,
@@ -49083,7 +49083,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26349] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 26340,
 		id = 26349,
 		torpedo_ammo = 0,
@@ -49093,7 +49093,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26350] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 26340,
 		id = 26350,
 		torpedo_ammo = 0,
@@ -49104,7 +49104,7 @@ pg.equip_data_statistics = {
 	},
 	[26351] = {
 		anti_siren = 100,
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 26340,
 		id = 26351,
 		torpedo_ammo = 0,
@@ -49114,16 +49114,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26360] = {
-		name = "20mmå„åˆ©å­”é«˜å°„ç‚®MkII",
-		speciality = "é˜²ç©º",
+		name = "20mm¶òÀû¿×¸ßÉäÅÚMkII",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "26360",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -49176,7 +49176,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26361] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 26360,
 		id = 26361,
 		torpedo_ammo = 0,
@@ -49186,7 +49186,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26362] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 26360,
 		id = 26362,
 		torpedo_ammo = 0,
@@ -49196,7 +49196,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26363] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 26360,
 		id = 26363,
 		torpedo_ammo = 0,
@@ -49206,7 +49206,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26364] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 26360,
 		id = 26364,
 		torpedo_ammo = 0,
@@ -49216,7 +49216,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26365] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 26360,
 		id = 26365,
 		torpedo_ammo = 0,
@@ -49226,7 +49226,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26366] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 26360,
 		id = 26366,
 		torpedo_ammo = 0,
@@ -49236,7 +49236,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26367] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 26360,
 		id = 26367,
 		torpedo_ammo = 0,
@@ -49246,7 +49246,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26368] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 26360,
 		id = 26368,
 		torpedo_ammo = 0,
@@ -49256,7 +49256,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26369] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 26360,
 		id = 26369,
 		torpedo_ammo = 0,
@@ -49266,7 +49266,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26370] = {
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 26360,
 		id = 26370,
 		torpedo_ammo = 0,
@@ -49277,7 +49277,7 @@ pg.equip_data_statistics = {
 	},
 	[26371] = {
 		anti_siren = 100,
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 26360,
 		id = 26371,
 		torpedo_ammo = 0,
@@ -49287,16 +49287,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26400] = {
-		name = "102mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "102mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "26400",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -49349,7 +49349,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26401] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 26400,
 		id = 26401,
 		torpedo_ammo = 0,
@@ -49359,7 +49359,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26402] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 26400,
 		id = 26402,
 		torpedo_ammo = 0,
@@ -49369,7 +49369,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26403] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 26400,
 		id = 26403,
 		torpedo_ammo = 0,
@@ -49379,16 +49379,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26420] = {
-		name = "102mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "102mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "26400",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -49441,7 +49441,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26421] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 26420,
 		id = 26421,
 		torpedo_ammo = 0,
@@ -49451,7 +49451,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26422] = {
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		base = 26420,
 		id = 26422,
 		torpedo_ammo = 0,
@@ -49461,7 +49461,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26423] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 26420,
 		id = 26423,
 		torpedo_ammo = 0,
@@ -49471,7 +49471,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26424] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 26420,
 		id = 26424,
 		torpedo_ammo = 0,
@@ -49481,7 +49481,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26425] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 26420,
 		id = 26425,
 		torpedo_ammo = 0,
@@ -49491,7 +49491,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26426] = {
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		base = 26420,
 		id = 26426,
 		torpedo_ammo = 0,
@@ -49501,16 +49501,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26440] = {
-		name = "102mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "102mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "26400",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -49563,7 +49563,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26441] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 26440,
 		id = 26441,
 		torpedo_ammo = 0,
@@ -49573,7 +49573,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26442] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 26440,
 		id = 26442,
 		torpedo_ammo = 0,
@@ -49583,7 +49583,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26443] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 26440,
 		id = 26443,
 		torpedo_ammo = 0,
@@ -49593,7 +49593,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26444] = {
-		damage = "39/è½®",
+		damage = "39/ÂÖ",
 		base = 26440,
 		id = 26444,
 		torpedo_ammo = 0,
@@ -49603,7 +49603,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26445] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 26440,
 		id = 26445,
 		torpedo_ammo = 0,
@@ -49613,7 +49613,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26446] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 26440,
 		id = 26446,
 		torpedo_ammo = 0,
@@ -49623,7 +49623,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26447] = {
-		damage = "51/è½®",
+		damage = "51/ÂÖ",
 		base = 26440,
 		id = 26447,
 		torpedo_ammo = 0,
@@ -49633,7 +49633,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26448] = {
-		damage = "55/è½®",
+		damage = "55/ÂÖ",
 		base = 26440,
 		id = 26448,
 		torpedo_ammo = 0,
@@ -49643,7 +49643,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26449] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 26440,
 		id = 26449,
 		torpedo_ammo = 0,
@@ -49653,7 +49653,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26450] = {
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 26440,
 		id = 26450,
 		torpedo_ammo = 0,
@@ -49664,7 +49664,7 @@ pg.equip_data_statistics = {
 	},
 	[26451] = {
 		anti_siren = 100,
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 26440,
 		id = 26451,
 		torpedo_ammo = 0,
@@ -49674,16 +49674,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26460] = {
-		name = "120mmé«˜å°„ç‚®Mark VIII",
-		speciality = "é˜²ç©º",
+		name = "120mm¸ßÉäÅÚMark VIII",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "26460",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -49736,7 +49736,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26461] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 26460,
 		id = 26461,
 		torpedo_ammo = 0,
@@ -49746,7 +49746,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26462] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 26460,
 		id = 26462,
 		torpedo_ammo = 0,
@@ -49756,7 +49756,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26463] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 26460,
 		id = 26463,
 		torpedo_ammo = 0,
@@ -49766,7 +49766,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26464] = {
-		damage = "66/è½®",
+		damage = "66/ÂÖ",
 		base = 26460,
 		id = 26464,
 		torpedo_ammo = 0,
@@ -49776,7 +49776,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26465] = {
-		damage = "73/è½®",
+		damage = "73/ÂÖ",
 		base = 26460,
 		id = 26465,
 		torpedo_ammo = 0,
@@ -49786,7 +49786,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26466] = {
-		damage = "80/è½®",
+		damage = "80/ÂÖ",
 		base = 26460,
 		id = 26466,
 		torpedo_ammo = 0,
@@ -49796,7 +49796,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26467] = {
-		damage = "87/è½®",
+		damage = "87/ÂÖ",
 		base = 26460,
 		id = 26467,
 		torpedo_ammo = 0,
@@ -49806,7 +49806,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26468] = {
-		damage = "94/è½®",
+		damage = "94/ÂÖ",
 		base = 26460,
 		id = 26468,
 		torpedo_ammo = 0,
@@ -49816,7 +49816,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26469] = {
-		damage = "101/è½®",
+		damage = "101/ÂÖ",
 		base = 26460,
 		id = 26469,
 		torpedo_ammo = 0,
@@ -49826,7 +49826,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26470] = {
-		damage = "108/è½®",
+		damage = "108/ÂÖ",
 		base = 26460,
 		id = 26470,
 		torpedo_ammo = 0,
@@ -49837,7 +49837,7 @@ pg.equip_data_statistics = {
 	},
 	[26471] = {
 		anti_siren = 100,
-		damage = "108/è½®",
+		damage = "108/ÂÖ",
 		base = 26460,
 		id = 26471,
 		torpedo_ammo = 0,
@@ -49847,16 +49847,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26500] = {
-		name = "åŒè”è£…113mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°113mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "26500",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -49909,7 +49909,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26501] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 26500,
 		id = 26501,
 		torpedo_ammo = 0,
@@ -49919,7 +49919,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26502] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 26500,
 		id = 26502,
 		torpedo_ammo = 0,
@@ -49929,7 +49929,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26503] = {
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 26500,
 		id = 26503,
 		torpedo_ammo = 0,
@@ -49939,7 +49939,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26504] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 26500,
 		id = 26504,
 		torpedo_ammo = 0,
@@ -49949,7 +49949,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26505] = {
-		damage = "68/è½®",
+		damage = "68/ÂÖ",
 		base = 26500,
 		id = 26505,
 		torpedo_ammo = 0,
@@ -49959,7 +49959,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26506] = {
-		damage = "75/è½®",
+		damage = "75/ÂÖ",
 		base = 26500,
 		id = 26506,
 		torpedo_ammo = 0,
@@ -49969,16 +49969,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26520] = {
-		name = "åŒè”è£…113mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°113mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "26500",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -50031,7 +50031,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26521] = {
-		damage = "51/è½®",
+		damage = "51/ÂÖ",
 		base = 26520,
 		id = 26521,
 		torpedo_ammo = 0,
@@ -50041,7 +50041,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26522] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 26520,
 		id = 26522,
 		torpedo_ammo = 0,
@@ -50051,7 +50051,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26523] = {
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 26520,
 		id = 26523,
 		torpedo_ammo = 0,
@@ -50061,7 +50061,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26524] = {
-		damage = "70/è½®",
+		damage = "70/ÂÖ",
 		base = 26520,
 		id = 26524,
 		torpedo_ammo = 0,
@@ -50071,7 +50071,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26525] = {
-		damage = "77/è½®",
+		damage = "77/ÂÖ",
 		base = 26520,
 		id = 26525,
 		torpedo_ammo = 0,
@@ -50081,7 +50081,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26526] = {
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 26520,
 		id = 26526,
 		torpedo_ammo = 0,
@@ -50091,7 +50091,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26527] = {
-		damage = "91/è½®",
+		damage = "91/ÂÖ",
 		base = 26520,
 		id = 26527,
 		torpedo_ammo = 0,
@@ -50101,7 +50101,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26528] = {
-		damage = "98/è½®",
+		damage = "98/ÂÖ",
 		base = 26520,
 		id = 26528,
 		torpedo_ammo = 0,
@@ -50111,7 +50111,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26529] = {
-		damage = "105/è½®",
+		damage = "105/ÂÖ",
 		base = 26520,
 		id = 26529,
 		torpedo_ammo = 0,
@@ -50121,7 +50121,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26530] = {
-		damage = "112/è½®",
+		damage = "112/ÂÖ",
 		base = 26520,
 		id = 26530,
 		torpedo_ammo = 0,
@@ -50131,16 +50131,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26540] = {
-		name = "åŒè”è£…113mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°113mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "26500",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "52/è½®",
+		damage = "52/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -50193,7 +50193,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26541] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 26540,
 		id = 26541,
 		torpedo_ammo = 0,
@@ -50203,7 +50203,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26542] = {
-		damage = "66/è½®",
+		damage = "66/ÂÖ",
 		base = 26540,
 		id = 26542,
 		torpedo_ammo = 0,
@@ -50213,7 +50213,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26543] = {
-		damage = "74/è½®",
+		damage = "74/ÂÖ",
 		base = 26540,
 		id = 26543,
 		torpedo_ammo = 0,
@@ -50223,7 +50223,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26544] = {
-		damage = "82/è½®",
+		damage = "82/ÂÖ",
 		base = 26540,
 		id = 26544,
 		torpedo_ammo = 0,
@@ -50233,7 +50233,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26545] = {
-		damage = "90/è½®",
+		damage = "90/ÂÖ",
 		base = 26540,
 		id = 26545,
 		torpedo_ammo = 0,
@@ -50243,7 +50243,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26546] = {
-		damage = "98/è½®",
+		damage = "98/ÂÖ",
 		base = 26540,
 		id = 26546,
 		torpedo_ammo = 0,
@@ -50253,7 +50253,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26547] = {
-		damage = "106/è½®",
+		damage = "106/ÂÖ",
 		base = 26540,
 		id = 26547,
 		torpedo_ammo = 0,
@@ -50263,7 +50263,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26548] = {
-		damage = "114/è½®",
+		damage = "114/ÂÖ",
 		base = 26540,
 		id = 26548,
 		torpedo_ammo = 0,
@@ -50273,7 +50273,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26549] = {
-		damage = "122/è½®",
+		damage = "122/ÂÖ",
 		base = 26540,
 		id = 26549,
 		torpedo_ammo = 0,
@@ -50283,7 +50283,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26550] = {
-		damage = "130/è½®",
+		damage = "130/ÂÖ",
 		base = 26540,
 		id = 26550,
 		torpedo_ammo = 0,
@@ -50294,7 +50294,7 @@ pg.equip_data_statistics = {
 	},
 	[26551] = {
 		anti_siren = 100,
-		damage = "130/è½®",
+		damage = "130/ÂÖ",
 		base = 26540,
 		id = 26551,
 		torpedo_ammo = 0,
@@ -50305,7 +50305,7 @@ pg.equip_data_statistics = {
 	},
 	[26552] = {
 		anti_siren = 200,
-		damage = "130/è½®",
+		damage = "130/ÂÖ",
 		base = 26540,
 		id = 26552,
 		torpedo_ammo = 0,
@@ -50316,7 +50316,7 @@ pg.equip_data_statistics = {
 	},
 	[26553] = {
 		anti_siren = 300,
-		damage = "130/è½®",
+		damage = "130/ÂÖ",
 		base = 26540,
 		id = 26553,
 		torpedo_ammo = 0,
@@ -50326,17 +50326,17 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26600] = {
-		name = "åŒè”è£…40mmåšç¦æ–¯STAAG",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°40mm²©¸£Ë¹STAAG",
+		speciality = "·À¿Õ",
 		type = 6,
 		attribute_3 = "hit",
 		tech = 0,
 		value_2 = 45,
 		icon = "26600",
 		attribute_2 = "antiaircraft",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 10,
@@ -50389,7 +50389,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26601] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 26600,
 		id = 26601,
 		torpedo_ammo = 0,
@@ -50399,7 +50399,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26602] = {
-		damage = "48/è½®",
+		damage = "48/ÂÖ",
 		base = 26600,
 		id = 26602,
 		torpedo_ammo = 0,
@@ -50409,7 +50409,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26603] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 26600,
 		id = 26603,
 		torpedo_ammo = 0,
@@ -50419,7 +50419,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26604] = {
-		damage = "60/è½®",
+		damage = "60/ÂÖ",
 		base = 26600,
 		id = 26604,
 		torpedo_ammo = 0,
@@ -50429,7 +50429,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26605] = {
-		damage = "66/è½®",
+		damage = "66/ÂÖ",
 		base = 26600,
 		id = 26605,
 		torpedo_ammo = 0,
@@ -50439,7 +50439,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26606] = {
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 26600,
 		id = 26606,
 		torpedo_ammo = 0,
@@ -50449,7 +50449,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26607] = {
-		damage = "78/è½®",
+		damage = "78/ÂÖ",
 		base = 26600,
 		id = 26607,
 		torpedo_ammo = 0,
@@ -50459,7 +50459,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26608] = {
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 26600,
 		id = 26608,
 		torpedo_ammo = 0,
@@ -50469,7 +50469,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26609] = {
-		damage = "90/è½®",
+		damage = "90/ÂÖ",
 		base = 26600,
 		id = 26609,
 		torpedo_ammo = 0,
@@ -50479,7 +50479,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26610] = {
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26600,
 		id = 26610,
 		torpedo_ammo = 0,
@@ -50490,7 +50490,7 @@ pg.equip_data_statistics = {
 	},
 	[26611] = {
 		anti_siren = 100,
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26600,
 		id = 26611,
 		torpedo_ammo = 0,
@@ -50501,7 +50501,7 @@ pg.equip_data_statistics = {
 	},
 	[26612] = {
 		anti_siren = 200,
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26600,
 		id = 26612,
 		torpedo_ammo = 0,
@@ -50512,7 +50512,7 @@ pg.equip_data_statistics = {
 	},
 	[26613] = {
 		anti_siren = 300,
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26600,
 		id = 26613,
 		torpedo_ammo = 0,
@@ -50522,17 +50522,17 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26620] = {
-		name = "åŒè”è£…40mmåšç¦æ–¯æµ·å…¹æ¢…è€¶",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°40mm²©¸£Ë¹º£×ÈÃ·Ò®",
+		speciality = "·À¿Õ",
 		type = 6,
 		attribute_3 = "hit",
 		tech = 0,
 		value_2 = 45,
 		icon = "26620",
 		attribute_2 = "antiaircraft",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 5,
@@ -50585,7 +50585,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26621] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 26620,
 		id = 26621,
 		torpedo_ammo = 0,
@@ -50595,7 +50595,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26622] = {
-		damage = "48/è½®",
+		damage = "48/ÂÖ",
 		base = 26620,
 		id = 26622,
 		torpedo_ammo = 0,
@@ -50605,7 +50605,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26623] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 26620,
 		id = 26623,
 		torpedo_ammo = 0,
@@ -50615,7 +50615,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26624] = {
-		damage = "60/è½®",
+		damage = "60/ÂÖ",
 		base = 26620,
 		id = 26624,
 		torpedo_ammo = 0,
@@ -50625,7 +50625,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26625] = {
-		damage = "66/è½®",
+		damage = "66/ÂÖ",
 		base = 26620,
 		id = 26625,
 		torpedo_ammo = 0,
@@ -50635,7 +50635,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26626] = {
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 26620,
 		id = 26626,
 		torpedo_ammo = 0,
@@ -50645,7 +50645,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26627] = {
-		damage = "78/è½®",
+		damage = "78/ÂÖ",
 		base = 26620,
 		id = 26627,
 		torpedo_ammo = 0,
@@ -50655,7 +50655,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26628] = {
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 26620,
 		id = 26628,
 		torpedo_ammo = 0,
@@ -50665,7 +50665,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26629] = {
-		damage = "90/è½®",
+		damage = "90/ÂÖ",
 		base = 26620,
 		id = 26629,
 		torpedo_ammo = 0,
@@ -50675,7 +50675,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26630] = {
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26620,
 		id = 26630,
 		torpedo_ammo = 0,
@@ -50686,7 +50686,7 @@ pg.equip_data_statistics = {
 	},
 	[26631] = {
 		anti_siren = 100,
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26620,
 		id = 26631,
 		torpedo_ammo = 0,
@@ -50697,7 +50697,7 @@ pg.equip_data_statistics = {
 	},
 	[26632] = {
 		anti_siren = 200,
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26620,
 		id = 26632,
 		torpedo_ammo = 0,
@@ -50708,7 +50708,7 @@ pg.equip_data_statistics = {
 	},
 	[26633] = {
 		anti_siren = 300,
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 26620,
 		id = 26633,
 		torpedo_ammo = 0,
@@ -50718,17 +50718,17 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26640] = {
-		name = "åŒè”è£…134mmé«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°134mm¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		attribute_3 = "cannon",
 		tech = 0,
 		value_2 = 30,
 		icon = "21500",
 		attribute_2 = "antiaircraft",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 15,
@@ -50781,7 +50781,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26641] = {
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 26640,
 		id = 26641,
 		torpedo_ammo = 0,
@@ -50791,7 +50791,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26642] = {
-		damage = "68/è½®",
+		damage = "68/ÂÖ",
 		base = 26640,
 		id = 26642,
 		torpedo_ammo = 0,
@@ -50801,7 +50801,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26643] = {
-		damage = "76/è½®",
+		damage = "76/ÂÖ",
 		base = 26640,
 		id = 26643,
 		torpedo_ammo = 0,
@@ -50811,7 +50811,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26644] = {
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 26640,
 		id = 26644,
 		torpedo_ammo = 0,
@@ -50821,7 +50821,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26645] = {
-		damage = "92/è½®",
+		damage = "92/ÂÖ",
 		base = 26640,
 		id = 26645,
 		torpedo_ammo = 0,
@@ -50831,7 +50831,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26646] = {
-		damage = "100/è½®",
+		damage = "100/ÂÖ",
 		base = 26640,
 		id = 26646,
 		torpedo_ammo = 0,
@@ -50841,7 +50841,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26647] = {
-		damage = "108/è½®",
+		damage = "108/ÂÖ",
 		base = 26640,
 		id = 26647,
 		torpedo_ammo = 0,
@@ -50851,7 +50851,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26648] = {
-		damage = "116/è½®",
+		damage = "116/ÂÖ",
 		base = 26640,
 		id = 26648,
 		torpedo_ammo = 0,
@@ -50861,7 +50861,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26649] = {
-		damage = "124/è½®",
+		damage = "124/ÂÖ",
 		base = 26640,
 		id = 26649,
 		torpedo_ammo = 0,
@@ -50871,7 +50871,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26650] = {
-		damage = "132/è½®",
+		damage = "132/ÂÖ",
 		base = 26640,
 		id = 26650,
 		torpedo_ammo = 0,
@@ -50882,7 +50882,7 @@ pg.equip_data_statistics = {
 	},
 	[26651] = {
 		anti_siren = 100,
-		damage = "132/è½®",
+		damage = "132/ÂÖ",
 		base = 26640,
 		id = 26651,
 		torpedo_ammo = 0,
@@ -50893,7 +50893,7 @@ pg.equip_data_statistics = {
 	},
 	[26652] = {
 		anti_siren = 200,
-		damage = "132/è½®",
+		damage = "132/ÂÖ",
 		base = 26640,
 		id = 26652,
 		torpedo_ammo = 0,
@@ -50904,7 +50904,7 @@ pg.equip_data_statistics = {
 	},
 	[26653] = {
 		anti_siren = 300,
-		damage = "132/è½®",
+		damage = "132/ÂÖ",
 		base = 26640,
 		id = 26653,
 		torpedo_ammo = 0,
@@ -50914,16 +50914,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26660] = {
-		name = "å…­è”è£…40mmåšç¦æ–¯å¯¹ç©ºæœºç‚®",
-		speciality = "é˜²ç©º",
+		name = "ÁùÁª×°40mm²©¸£Ë¹¶Ô¿Õ»úÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "26660",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		nationality = 2,
 		ammo = 5,
 		value_3 = 0,
@@ -50976,7 +50976,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26661] = {
-		damage = "52/è½®",
+		damage = "52/ÂÖ",
 		base = 26660,
 		id = 26661,
 		torpedo_ammo = 0,
@@ -50986,7 +50986,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26662] = {
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 26660,
 		id = 26662,
 		torpedo_ammo = 0,
@@ -50996,7 +50996,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26663] = {
-		damage = "73/è½®",
+		damage = "73/ÂÖ",
 		base = 26660,
 		id = 26663,
 		torpedo_ammo = 0,
@@ -51006,7 +51006,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26664] = {
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 26660,
 		id = 26664,
 		torpedo_ammo = 0,
@@ -51016,7 +51016,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26665] = {
-		damage = "94/è½®",
+		damage = "94/ÂÖ",
 		base = 26660,
 		id = 26665,
 		torpedo_ammo = 0,
@@ -51026,7 +51026,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26666] = {
-		damage = "105/è½®",
+		damage = "105/ÂÖ",
 		base = 26660,
 		id = 26666,
 		torpedo_ammo = 0,
@@ -51036,7 +51036,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26667] = {
-		damage = "115/è½®",
+		damage = "115/ÂÖ",
 		base = 26660,
 		id = 26667,
 		torpedo_ammo = 0,
@@ -51046,7 +51046,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26668] = {
-		damage = "126/è½®",
+		damage = "126/ÂÖ",
 		base = 26660,
 		id = 26668,
 		torpedo_ammo = 0,
@@ -51056,7 +51056,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26669] = {
-		damage = "138/è½®",
+		damage = "138/ÂÖ",
 		base = 26660,
 		id = 26669,
 		torpedo_ammo = 0,
@@ -51066,7 +51066,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[26670] = {
-		damage = "150/è½®",
+		damage = "150/ÂÖ",
 		base = 26660,
 		id = 26670,
 		torpedo_ammo = 0,
@@ -51077,7 +51077,7 @@ pg.equip_data_statistics = {
 	},
 	[26671] = {
 		anti_siren = 100,
-		damage = "150/è½®",
+		damage = "150/ÂÖ",
 		base = 26660,
 		id = 26671,
 		torpedo_ammo = 0,
@@ -51088,7 +51088,7 @@ pg.equip_data_statistics = {
 	},
 	[26672] = {
 		anti_siren = 200,
-		damage = "150/è½®",
+		damage = "150/ÂÖ",
 		base = 26660,
 		id = 26672,
 		torpedo_ammo = 0,
@@ -51099,7 +51099,7 @@ pg.equip_data_statistics = {
 	},
 	[26673] = {
 		anti_siren = 300,
-		damage = "150/è½®",
+		damage = "150/ÂÖ",
 		base = 26660,
 		id = 26673,
 		torpedo_ammo = 0,
@@ -51109,12 +51109,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27000] = {
-		name = "æµ·å–·ç«",
+		name = "º£Åç»ğ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "27000",
 		attribute_2 = "air",
@@ -51238,12 +51238,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27020] = {
-		name = "æµ·å–·ç«",
+		name = "º£Åç»ğ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "27000",
 		attribute_2 = "air",
@@ -51439,12 +51439,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27040] = {
-		name = "æµ·å–·ç«",
+		name = "º£Åç»ğ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "27000",
 		attribute_2 = "air",
@@ -51761,12 +51761,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27060] = {
-		name = "æµ·å–·ç«FR.47",
+		name = "º£Åç»ğFR.47",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "27060",
 		attribute_2 = "air",
@@ -52133,12 +52133,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27100] = {
-		name = "æµ·æ¯’ç‰™",
+		name = "º£¶¾ÑÀ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "27100",
 		attribute_2 = "air",
@@ -52306,12 +52306,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27120] = {
-		name = "æµ·æ¯’ç‰™",
+		name = "º£¶¾ÑÀ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "27100",
 		attribute_2 = "air",
@@ -52559,12 +52559,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27140] = {
-		name = "æµ·æ¯’ç‰™",
+		name = "º£¶¾ÑÀ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "27100",
 		attribute_2 = "air",
@@ -52875,12 +52875,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27200] = {
-		name = "æµ·æ–—å£«",
+		name = "º£¶·Ê¿",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "27200",
 		nationality = 2,
@@ -52971,12 +52971,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27220] = {
-		name = "æµ·æ–—å£«",
+		name = "º£¶·Ê¿",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "27200",
 		attribute_2 = "air",
@@ -53068,12 +53068,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27240] = {
-		name = "æµ·æ–—å£«",
+		name = "º£¶·Ê¿",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "27200",
 		attribute_2 = "air",
@@ -53229,12 +53229,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27260] = {
-		name = "æµ·é£“é£",
+		name = "º£ì«·ç",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "27260",
 		attribute_2 = "air",
@@ -53390,12 +53390,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27300] = {
-		name = "æµ·æ€’",
+		name = "º£Å­",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 0,
-		descrip = "çš‡å®¶æµ·å†›æœ€åæœå½¹çš„èºæ—‹æ¡¨é£æœºï¼Œå› æˆ˜æ–—è¡¨ç°è‰¯å¥½å¹¿å—å¥½è¯„",
+		descrip = "»Ê¼Òº£¾ü×îºó·şÒÛµÄÂİĞı½°·É»ú£¬ÒòÕ½¶·±íÏÖÁ¼ºÃ¹ãÊÜºÃÆÀ",
 		value_2 = 45,
 		icon = "27300",
 		attribute_2 = "air",
@@ -53706,12 +53706,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[27320] = {
-		name = "æµ·å¤§é»„èœ‚",
+		name = "º£´ó»Æ·ä",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 0,
-		descrip = "çš‡å®¶åŒæ´»å¡å‘åŠ¨æœºå¼æˆ˜æ–—æœºã€Œå¾·å“ˆç»´å…°å¤§é»„èœ‚ã€çš„èˆ°è½½æœºå‹ï¼Œé£è¡Œé€Ÿåº¦å¾ˆå¿«ï¼Œæ€§èƒ½ä¼˜ç§€",
+		descrip = "»Ê¼ÒË«»îÈû·¢¶¯»úÊ½Õ½¶·»ú¡¸µÂ¹şÎ¬À¼´ó»Æ·ä¡¹µÄ½¢ÔØ»úĞÍ£¬·ÉĞĞËÙ¶ÈºÜ¿ì£¬ĞÔÄÜÓÅĞã",
 		value_2 = 45,
 		icon = "27320",
 		attribute_2 = "air",
@@ -54022,12 +54022,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28000] = {
-		name = "å‰‘é±¼",
+		name = "½£Óã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "28000",
 		attribute_2 = "air",
@@ -54131,12 +54131,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28020] = {
-		name = "å‰‘é±¼",
+		name = "½£Óã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "28000",
 		attribute_2 = "air",
@@ -54297,12 +54297,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28040] = {
-		name = "å‰‘é±¼",
+		name = "½£Óã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "28000",
 		attribute_2 = "air",
@@ -54559,12 +54559,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28060] = {
-		name = "å‰‘é±¼(818ä¸­é˜Ÿ)",
+		name = "½£Óã(818ÖĞ¶Ó)",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 0,
-		descrip = "ç”±æœå½¹äºçš‡å®¶æ–¹èˆŸå·çš„818ä¸­é˜Ÿæ‰€é©¾é©¶çš„å‰‘é±¼å¼é±¼é›·è½°ç‚¸æœºï¼Œæ›¾ç»åœ¨å›´æ•ä¿¾æ–¯éº¦çš„æˆ˜æ–—ä¸­å®Œæˆäº†å¯¹ä¿¾æ–¯éº¦çš„å…³é”®é›·å‡»",
+		descrip = "ÓÉ·şÒÛÓÚ»Ê¼Ò·½ÖÛºÅµÄ818ÖĞ¶ÓËù¼İÊ»µÄ½£ÓãÊ½ÓãÀ×ºäÕ¨»ú£¬Ôø¾­ÔÚÎ§²¶ÙÂË¹ÂóµÄÕ½¶·ÖĞÍê³ÉÁË¶ÔÙÂË¹ÂóµÄ¹Ø¼üÀ×»÷",
 		value_2 = 45,
 		icon = "28060",
 		attribute_2 = "air",
@@ -54902,12 +54902,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28100] = {
-		name = "æ¢­é±¼",
+		name = "ËóÓã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "28100",
 		attribute_2 = "air",
@@ -55068,12 +55068,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28120] = {
-		name = "æ¢­é±¼",
+		name = "ËóÓã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "28100",
 		attribute_2 = "air",
@@ -55310,12 +55310,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28140] = {
-		name = "æ¢­é±¼",
+		name = "ËóÓã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "28100",
 		attribute_2 = "air",
@@ -55612,12 +55612,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28200] = {
-		name = "ç«æŠŠ",
+		name = "»ğ°Ñ",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 0,
-		descrip = "åŸè®¡åˆ’ä½œä¸ºæˆ˜æ–—æœºæœå½¹çš„æœºå‹ï¼Œå› éœ€æ±‚å˜æ›´å¢åŠ äº†æŒ‚è½½é±¼é›·çš„èƒ½åŠ›",
+		descrip = "Ô­¼Æ»®×÷ÎªÕ½¶·»ú·şÒÛµÄ»úĞÍ£¬ÒòĞèÇó±ä¸üÔö¼ÓÁË¹ÒÔØÓãÀ×µÄÄÜÁ¦",
 		value_2 = 45,
 		icon = "28200",
 		attribute_2 = "air",
@@ -55914,12 +55914,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28220] = {
-		name = "ç«å† ",
+		name = "»ğ¹Ú",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 0,
-		descrip = "å å‘",
+		descrip = "Õ¼¿Ó",
 		value_2 = 45,
 		icon = "28220",
 		attribute_2 = "air",
@@ -56216,12 +56216,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28300] = {
-		name = "é’èŠ±é±¼",
+		name = "Çà»¨Óã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 2,
 		tech = 1,
-		descrip = "å‰‘é±¼å¼é±¼é›·è½°ç‚¸æœºçš„åç»§æœºå‹ï¼Œä½†æœ€åä»ä¸å‰‘é±¼å¹¶ç”¨ç›´åˆ°åŒè¢«æ¢­é±¼å¼é±¼é›·è½°ç‚¸æœºå–ä»£",
+		descrip = "½£ÓãÊ½ÓãÀ×ºäÕ¨»úµÄºó¼Ì»úĞÍ£¬µ«×îºóÈÔÓë½£Óã²¢ÓÃÖ±µ½Í¬±»ËóÓãÊ½ÓãÀ×ºäÕ¨»úÈ¡´ú",
 		value_2 = 5,
 		icon = "28300",
 		attribute_2 = "air",
@@ -56326,12 +56326,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28320] = {
-		name = "é’èŠ±é±¼",
+		name = "Çà»¨Óã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 2,
-		descrip = "å‰‘é±¼å¼é±¼é›·è½°ç‚¸æœºçš„åç»§æœºå‹ï¼Œä½†æœ€åä»ä¸å‰‘é±¼å¹¶ç”¨ç›´åˆ°åŒè¢«æ¢­é±¼å¼é±¼é›·è½°ç‚¸æœºå–ä»£",
+		descrip = "½£ÓãÊ½ÓãÀ×ºäÕ¨»úµÄºó¼Ì»úĞÍ£¬µ«×îºóÈÔÓë½£Óã²¢ÓÃÖ±µ½Í¬±»ËóÓãÊ½ÓãÀ×ºäÕ¨»úÈ¡´ú",
 		value_2 = 12,
 		icon = "28300",
 		attribute_2 = "air",
@@ -56493,12 +56493,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28340] = {
-		name = "é’èŠ±é±¼",
+		name = "Çà»¨Óã",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 4,
 		tech = 3,
-		descrip = "å‰‘é±¼å¼é±¼é›·è½°ç‚¸æœºçš„åç»§æœºå‹ï¼Œä½†æœ€åä»ä¸å‰‘é±¼å¹¶ç”¨ç›´åˆ°åŒè¢«æ¢­é±¼å¼é±¼é›·è½°ç‚¸æœºå–ä»£",
+		descrip = "½£ÓãÊ½ÓãÀ×ºäÕ¨»úµÄºó¼Ì»úĞÍ£¬µ«×îºóÈÔÓë½£Óã²¢ÓÃÖ±µ½Í¬±»ËóÓãÊ½ÓãÀ×ºäÕ¨»úÈ¡´ú",
 		value_2 = 25,
 		icon = "28300",
 		attribute_2 = "air",
@@ -56756,12 +56756,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[28400] = {
-		name = "é£é¾™",
+		name = "·ÉÁú",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 65,
 		icon = "28400",
 		attribute_2 = "air",
@@ -57072,12 +57072,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[29000] = {
-		name = "è´¼é¸¥",
+		name = "ÔôÅ¸",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "29000",
 		nationality = 2,
@@ -57180,12 +57180,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[29020] = {
-		name = "è´¼é¸¥",
+		name = "ÔôÅ¸",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "29000",
 		attribute_2 = "air",
@@ -57289,12 +57289,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[29040] = {
-		name = "è´¼é¸¥",
+		name = "ÔôÅ¸",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "29000",
 		attribute_2 = "air",
@@ -57474,12 +57474,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[29100] = {
-		name = "æµ·ç‡•",
+		name = "º£Ñà",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "29100",
 		attribute_2 = "air",
@@ -57583,12 +57583,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[29120] = {
-		name = "æµ·ç‡•",
+		name = "º£Ñà",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "29100",
 		attribute_2 = "air",
@@ -57749,12 +57749,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[29140] = {
-		name = "æµ·ç‡•",
+		name = "º£Ñà",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "29100",
 		attribute_2 = "air",
@@ -58011,12 +58011,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[29200] = {
-		name = "è¤ç«è™«",
+		name = "Ó©»ğ³æ",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 5,
 		tech = 0,
-		descrip = "ç”±æµ·ç‡•å¼èˆ°è½½æœºå‘å±•è€Œæ¥çš„å¤šåŠŸèƒ½èˆ°è½½æœºï¼Œå¯æ­è½½4é—¨20mmæœºç‚®åŠ2æš1000ç£…ç‚¸å¼¹",
+		descrip = "ÓÉº£ÑàÊ½½¢ÔØ»ú·¢Õ¹¶øÀ´µÄ¶à¹¦ÄÜ½¢ÔØ»ú£¬¿É´îÔØ4ÃÅ20mm»úÅÚ¼°2Ã¶1000°õÕ¨µ¯",
 		value_2 = 45,
 		icon = "29200",
 		attribute_2 = "air",
@@ -58313,12 +58313,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[29300] = {
-		name = "æ¢­é±¼(831ä¸­é˜Ÿ)",
+		name = "ËóÓã(831ÖĞ¶Ó)",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 5,
 		tech = 0,
-		descrip = "é’¨ä½œæˆ˜ä¸­è½°ç‚¸æå°”æ¯”èŒ¨çš„æ¢­é±¼831ä¸­é˜Ÿï¼Œæ­è½½730kgç©¿ç”²èˆªå¼¹",
+		descrip = "ÎÙ×÷Õ½ÖĞºäÕ¨Ìá¶û±È´ÄµÄËóÓã831ÖĞ¶Ó£¬´îÔØ730kg´©¼×º½µ¯",
 		value_2 = 45,
 		icon = "29300",
 		attribute_2 = "air",
@@ -58656,11 +58656,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[30000] = {
-		name = "305mmè¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "305mmÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "30000",
 		attribute_2 = "cannon",
@@ -58778,15 +58778,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31000] = {
-		name = "åŒè”100mm98å¼é«˜å°„ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª100mm98Ê½¸ßÉäÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 1,
 		value_2 = 4,
 		icon = "31000",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 3,
 		damage = "4 x 4",
 		nationality = 3,
@@ -58904,15 +58904,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31020] = {
-		name = "åŒè”100mm98å¼é«˜å°„ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª100mm98Ê½¸ßÉäÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 2,
 		value_2 = 9,
 		icon = "31000",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 4,
 		damage = "4 x 4",
 		nationality = 3,
@@ -59070,15 +59070,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31040] = {
-		name = "åŒè”100mm98å¼é«˜å°„ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª100mm98Ê½¸ßÉäÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 3,
 		value_2 = 15,
 		icon = "31000",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
 		damage = "4 x 4",
 		nationality = 3,
@@ -59269,11 +59269,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31060] = {
-		name = "100mm88å¼ç«ç‚®",
-		speciality = "é”å®š",
+		name = "100mm88Ê½»ğÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 10,
 		icon = "31060",
 		attribute_2 = "cannon",
@@ -59445,12 +59445,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31100] = {
-		name = "120mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "120mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "31100",
 		damage = "3 x 1",
@@ -59539,11 +59539,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31120] = {
-		name = "120mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "120mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "31100",
 		attribute_2 = "cannon",
@@ -59634,11 +59634,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31140] = {
-		name = "120mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "120mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "31100",
 		attribute_2 = "cannon",
@@ -59769,11 +59769,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31160] = {
-		name = "åä¸€å¹´å¼120mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "Ê®Ò»ÄêÊ½120mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "31160",
 		attribute_2 = "cannon",
@@ -59904,15 +59904,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31180] = {
-		name = "120mmå•è£…é«˜è§’ç‚®",
-		speciality = "é”å®š",
+		name = "120mmµ¥×°¸ß½ÇÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 0,
 		value_2 = 10,
 		icon = "31180",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 4,
 		damage = "4 x 3",
 		nationality = 3,
@@ -60081,11 +60081,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31200] = {
-		name = "127mmè¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "127mmÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "31200",
 		attribute_2 = "cannon",
@@ -60176,11 +60176,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31220] = {
-		name = "127mmè¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "127mmÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "31200",
 		attribute_2 = "cannon",
@@ -60301,11 +60301,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31240] = {
-		name = "127mmè¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "127mmÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "31200",
 		attribute_2 = "cannon",
@@ -60478,15 +60478,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31260] = {
-		name = "127mmå•è£…ä¸¤ç”¨ç‚®",
-		speciality = "é”å®š",
+		name = "127mmµ¥×°Á½ÓÃÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 0,
 		value_2 = 5,
 		icon = "31260",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 3,
 		damage = "3 x 2",
 		nationality = 3,
@@ -60614,11 +60614,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[31280] = {
-		name = "127mmè¿è£…ç‚®æ”¹",
-		speciality = "é”å®š",
+		name = "127mmÁ¬×°ÅÚ¸Ä",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "31280",
 		attribute_2 = "cannon",
@@ -60792,12 +60792,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32000] = {
-		name = "140mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "140mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "32000",
 		damage = "5 x 3",
@@ -60880,11 +60880,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32020] = {
-		name = "140mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "140mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "32000",
 		attribute_2 = "cannon",
@@ -60969,11 +60969,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32040] = {
-		name = "140mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "140mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "32000",
 		attribute_2 = "cannon",
@@ -61098,11 +61098,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32060] = {
-		name = "152mmå•è£…ç‚®",
-		speciality = "é”å®š",
+		name = "152mmµ¥×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "32060",
 		attribute_2 = "cannon",
@@ -61228,11 +61228,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32100] = {
-		name = "140mmè¿è£…ç‚®",
-		speciality = "æ•£å°„",
+		name = "140mmÁ¬×°ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "32100",
 		attribute_2 = "cannon",
@@ -61317,11 +61317,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32120] = {
-		name = "140mmè¿è£…ç‚®",
-		speciality = "æ•£å°„",
+		name = "140mmÁ¬×°ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "32100",
 		attribute_2 = "cannon",
@@ -61436,11 +61436,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32140] = {
-		name = "140mmè¿è£…ç‚®",
-		speciality = "æ•£å°„",
+		name = "140mmÁ¬×°ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "32100",
 		attribute_2 = "cannon",
@@ -61607,11 +61607,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32200] = {
-		name = "155mmä¸‰è¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "155mmÈıÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "32200",
 		attribute_2 = "cannon",
@@ -61726,11 +61726,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32220] = {
-		name = "155mmä¸‰è¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "155mmÈıÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "32200",
 		attribute_2 = "cannon",
@@ -61886,11 +61886,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32240] = {
-		name = "155mmä¸‰è¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "155mmÈıÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "32200",
 		attribute_2 = "cannon",
@@ -62079,11 +62079,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32300] = {
-		name = "152mmè¿è£…ç‚®",
-		speciality = "æ•£å°„",
+		name = "152mmÁ¬×°ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "32300",
 		attribute_2 = "cannon",
@@ -62168,11 +62168,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32320] = {
-		name = "152mmè¿è£…ç‚®",
-		speciality = "æ•£å°„",
+		name = "152mmÁ¬×°ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "32300",
 		attribute_2 = "cannon",
@@ -62288,11 +62288,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[32340] = {
-		name = "152mmè¿è£…ç‚®",
-		speciality = "æ•£å°„",
+		name = "152mmÁ¬×°ÅÚ",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "32300",
 		attribute_2 = "cannon",
@@ -62459,11 +62459,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[33000] = {
-		name = "203mmè¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "203mmÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "33000",
 		attribute_2 = "cannon",
@@ -62548,11 +62548,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[33020] = {
-		name = "203mmè¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "203mmÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "33000",
 		attribute_2 = "cannon",
@@ -62667,11 +62667,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[33040] = {
-		name = "203mmè¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "203mmÁ¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "33000",
 		attribute_2 = "cannon",
@@ -62837,11 +62837,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[33060] = {
-		name = "è¯•ä½œå‹203mm(3å·)è¿è£…ç‚®",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍ203mm(3ºÅ)Á¬×°ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "å¸¦æœ‰è¯•éªŒæ€§è´¨çš„203mmè¿è£…ç‚®å¼ºåŒ–ç‰ˆï¼Œç”±å†›éœ€å¤„å°‘é‡å‘æ”¾",
+		descrip = "´øÓĞÊÔÑéĞÔÖÊµÄ203mmÁ¬×°ÅÚÇ¿»¯°æ£¬ÓÉ¾üĞè´¦ÉÙÁ¿·¢·Å",
 		value_2 = 45,
 		icon = "33060",
 		attribute_2 = "cannon",
@@ -63029,11 +63029,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[33080] = {
-		name = "203mmè¿è£…ç‚®æ”¹",
-		speciality = "é”å®š",
+		name = "203mmÁ¬×°ÅÚ¸Ä",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "33080",
 		attribute_2 = "cannon",
@@ -63199,11 +63199,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[33100] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…310mmä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍÈıÁª×°310mmÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 11,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "33100",
 		attribute_2 = "cannon",
@@ -63382,12 +63382,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34000] = {
-		name = "356mmè¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "356mmÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "34000",
 		damage = "38 x 2",
@@ -63463,11 +63463,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34020] = {
-		name = "356mmè¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "356mmÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "34000",
 		attribute_2 = "cannon",
@@ -63546,11 +63546,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34040] = {
-		name = "356mmè¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "356mmÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "34000",
 		attribute_2 = "cannon",
@@ -63669,11 +63669,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34060] = {
-		name = "356mmæ¯˜å¼è¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "356mmš³Ê½Á¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "34060",
 		attribute_2 = "cannon",
@@ -63792,11 +63792,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34100] = {
-		name = "410mmè¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "410mmÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "34100",
 		attribute_2 = "cannon",
@@ -63874,11 +63874,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34120] = {
-		name = "410mmè¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "410mmÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "34100",
 		attribute_2 = "cannon",
@@ -63987,11 +63987,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34140] = {
-		name = "410mmè¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "410mmÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "34100",
 		attribute_2 = "cannon",
@@ -64151,15 +64151,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34160] = {
-		name = "410mmè¿è£…ç‚®(ä¸‰å¼å¼¹)",
-		speciality = "æ•£å°„",
+		name = "410mmÁ¬×°ÅÚ(ÈıÊ½µ¯)",
+		speciality = "É¢Éä",
 		type = 4,
 		attribute_3 = "antiaircraft",
 		tech = 0,
 		value_2 = 25,
 		icon = "34100",
 		attribute_2 = "cannon",
-		descrip = "è£…å¡«ä¸‰å¼å¼¹çš„410mmè¿è£…ç‚®ï¼Œå¯å¯¹ç©ºï¼Œå¹¶ä¸”æ•£å°„é£è½çš„ç‚®å¼¹èƒ½å¤Ÿæœ‰æ•ˆçš„ç‚¹ç‡ƒç›®æ ‡ï¼Œé€ æˆç«ç¾",
+		descrip = "×°ÌîÈıÊ½µ¯µÄ410mmÁ¬×°ÅÚ£¬¿É¶Ô¿Õ£¬²¢ÇÒÉ¢Éä·ÉÂäµÄÅÚµ¯ÄÜ¹»ÓĞĞ§µÄµãÈ¼Ä¿±ê£¬Ôì³É»ğÔÖ",
 		rarity = 5,
 		damage = "12 x 10 x 2",
 		nationality = 3,
@@ -64338,11 +64338,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34180] = {
-		name = "è¯•ä½œå‹410mmä¸‰è¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍ410mmÈıÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "34180",
 		attribute_2 = "cannon",
@@ -64524,11 +64524,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34200] = {
-		name = "460mmä¸‰è¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "460mmÈıÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "34200",
 		attribute_2 = "cannon",
@@ -64676,11 +64676,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34220] = {
-		name = "460mmä¸‰è¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "460mmÈıÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "34200",
 		attribute_2 = "cannon",
@@ -64828,11 +64828,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34240] = {
-		name = "460mmä¸‰è¿è£…ç‚®",
-		speciality = "è·¨å°„",
+		name = "460mmÈıÁ¬×°ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 70,
 		icon = "34200",
 		attribute_2 = "cannon",
@@ -65014,11 +65014,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[34300] = {
-		name = "410mmè¿è£…ç‚®æ”¹",
-		speciality = "è·¨å°„",
+		name = "410mmÁ¬×°ÅÚ¸Ä",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "34300",
 		attribute_2 = "cannon",
@@ -65178,12 +65178,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35000] = {
-		name = "åŒè”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ë«Áª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "35000",
 		damage = "52 x 2",
@@ -65269,11 +65269,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35020] = {
-		name = "åŒè”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ë«Áª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "35000",
 		attribute_2 = "torpedo",
@@ -65361,11 +65361,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35040] = {
-		name = "åŒè”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ë«Áª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "35000",
 		attribute_2 = "torpedo",
@@ -65493,11 +65493,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35100] = {
-		name = "ä¸‰è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "35100",
 		attribute_2 = "torpedo",
@@ -65585,11 +65585,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35120] = {
-		name = "ä¸‰è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "35100",
 		attribute_2 = "torpedo",
@@ -65707,11 +65707,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35140] = {
-		name = "ä¸‰è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "35100",
 		attribute_2 = "torpedo",
@@ -65880,11 +65880,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35160] = {
-		name = "ä¸‰è”è£…610mmé±¼é›·æ”¹",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°610mmÓãÀ×¸Ä",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "35160",
 		attribute_2 = "torpedo",
@@ -66053,11 +66053,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35200] = {
-		name = "å››è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "35200",
 		attribute_2 = "torpedo",
@@ -66175,11 +66175,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35220] = {
-		name = "å››è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "35200",
 		attribute_2 = "torpedo",
@@ -66337,11 +66337,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35240] = {
-		name = "å››è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "35200",
 		attribute_2 = "torpedo",
@@ -66532,11 +66532,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35260] = {
-		name = "å››è”è£…610mmé±¼é›·æ”¹",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°610mmÓãÀ×¸Ä",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "35260",
 		attribute_2 = "torpedo",
@@ -66727,11 +66727,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35300] = {
-		name = "äº”è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "35300",
 		attribute_2 = "torpedo",
@@ -66889,11 +66889,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35320] = {
-		name = "äº”è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "35300",
 		attribute_2 = "torpedo",
@@ -67051,11 +67051,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35340] = {
-		name = "äº”è”è£…610mmé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°610mmÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 70,
 		icon = "35300",
 		attribute_2 = "torpedo",
@@ -67246,11 +67246,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35400] = {
-		name = "æ½œè‰‡ç”¨92å¼æ½œå°„é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ92Ê½Ç±ÉäÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "35400",
 		attribute_2 = "torpedo",
@@ -67335,11 +67335,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35420] = {
-		name = "æ½œè‰‡ç”¨92å¼æ½œå°„é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ92Ê½Ç±ÉäÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "35400",
 		attribute_2 = "torpedo",
@@ -67454,11 +67454,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35440] = {
-		name = "æ½œè‰‡ç”¨92å¼æ½œå°„é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ92Ê½Ç±ÉäÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "35400",
 		attribute_2 = "torpedo",
@@ -67624,11 +67624,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35460] = {
-		name = "æ½œè‰‡ç”¨92å¼æ½œå°„é±¼é›·æ”¹",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ92Ê½Ç±ÉäÓãÀ×¸Ä",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "35460",
 		attribute_2 = "torpedo",
@@ -67794,11 +67794,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35500] = {
-		name = "æ½œè‰‡ç”¨95å¼çº¯æ°§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ95Ê½´¿ÑõÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "35500",
 		attribute_2 = "torpedo",
@@ -67913,11 +67913,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35520] = {
-		name = "æ½œè‰‡ç”¨95å¼çº¯æ°§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ95Ê½´¿ÑõÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "35500",
 		attribute_2 = "torpedo",
@@ -68072,11 +68072,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35540] = {
-		name = "æ½œè‰‡ç”¨95å¼çº¯æ°§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ95Ê½´¿ÑõÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "35500",
 		attribute_2 = "torpedo",
@@ -68264,11 +68264,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[35560] = {
-		name = "æ½œè‰‡ç”¨96å¼çº¯æ°§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃ96Ê½´¿ÑõÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "35560",
 		attribute_2 = "torpedo",
@@ -68456,15 +68456,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36100] = {
-		name = "25mmé«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mm¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "36100",
-		damage = "8/è½®",
+		damage = "8/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -68517,7 +68517,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36101] = {
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		base = 36100,
 		id = 36101,
 		torpedo_ammo = 0,
@@ -68527,7 +68527,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36102] = {
-		damage = "10/è½®",
+		damage = "10/ÂÖ",
 		base = 36100,
 		id = 36102,
 		torpedo_ammo = 0,
@@ -68537,7 +68537,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36103] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 36100,
 		id = 36103,
 		torpedo_ammo = 0,
@@ -68547,16 +68547,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36120] = {
-		name = "25mmé«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mm¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "36100",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -68609,7 +68609,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36121] = {
-		damage = "10/è½®",
+		damage = "10/ÂÖ",
 		base = 36120,
 		id = 36121,
 		torpedo_ammo = 0,
@@ -68619,7 +68619,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36122] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 36120,
 		id = 36122,
 		torpedo_ammo = 0,
@@ -68629,7 +68629,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36123] = {
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		base = 36120,
 		id = 36123,
 		torpedo_ammo = 0,
@@ -68639,16 +68639,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36140] = {
-		name = "25mmé«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mm¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "36100",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "11/è½®",
+		damage = "11/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -68701,7 +68701,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36141] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 36140,
 		id = 36141,
 		torpedo_ammo = 0,
@@ -68711,7 +68711,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36142] = {
-		damage = "13/è½®",
+		damage = "13/ÂÖ",
 		base = 36140,
 		id = 36142,
 		torpedo_ammo = 0,
@@ -68721,7 +68721,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36143] = {
-		damage = "15/è½®",
+		damage = "15/ÂÖ",
 		base = 36140,
 		id = 36143,
 		torpedo_ammo = 0,
@@ -68731,7 +68731,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36144] = {
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		base = 36140,
 		id = 36144,
 		torpedo_ammo = 0,
@@ -68741,7 +68741,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36145] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 36140,
 		id = 36145,
 		torpedo_ammo = 0,
@@ -68751,7 +68751,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36146] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 36140,
 		id = 36146,
 		torpedo_ammo = 0,
@@ -68761,7 +68761,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36147] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 36140,
 		id = 36147,
 		torpedo_ammo = 0,
@@ -68771,16 +68771,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36200] = {
-		name = "25mmè¿è£…é«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mmÁ¬×°¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "36200",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "13/è½®",
+		damage = "13/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -68833,7 +68833,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36201] = {
-		damage = "15/è½®",
+		damage = "15/ÂÖ",
 		base = 36200,
 		id = 36201,
 		torpedo_ammo = 0,
@@ -68843,7 +68843,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36202] = {
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		base = 36200,
 		id = 36202,
 		torpedo_ammo = 0,
@@ -68853,7 +68853,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36203] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 36200,
 		id = 36203,
 		torpedo_ammo = 0,
@@ -68863,16 +68863,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36220] = {
-		name = "25mmè¿è£…é«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mmÁ¬×°¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "36200",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -68925,7 +68925,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36221] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 36220,
 		id = 36221,
 		torpedo_ammo = 0,
@@ -68935,7 +68935,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36222] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 36220,
 		id = 36222,
 		torpedo_ammo = 0,
@@ -68945,7 +68945,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36223] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 36220,
 		id = 36223,
 		torpedo_ammo = 0,
@@ -68955,7 +68955,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36224] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 36220,
 		id = 36224,
 		torpedo_ammo = 0,
@@ -68965,7 +68965,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36225] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 36220,
 		id = 36225,
 		torpedo_ammo = 0,
@@ -68975,7 +68975,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36226] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 36220,
 		id = 36226,
 		torpedo_ammo = 0,
@@ -68985,16 +68985,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36240] = {
-		name = "25mmè¿è£…é«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mmÁ¬×°¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "36200",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -69047,7 +69047,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36241] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 36240,
 		id = 36241,
 		torpedo_ammo = 0,
@@ -69057,7 +69057,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36242] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 36240,
 		id = 36242,
 		torpedo_ammo = 0,
@@ -69067,7 +69067,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36243] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 36240,
 		id = 36243,
 		torpedo_ammo = 0,
@@ -69077,7 +69077,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36244] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 36240,
 		id = 36244,
 		torpedo_ammo = 0,
@@ -69087,7 +69087,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36245] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 36240,
 		id = 36245,
 		torpedo_ammo = 0,
@@ -69097,7 +69097,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36246] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 36240,
 		id = 36246,
 		torpedo_ammo = 0,
@@ -69107,7 +69107,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36247] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 36240,
 		id = 36247,
 		torpedo_ammo = 0,
@@ -69117,7 +69117,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36248] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 36240,
 		id = 36248,
 		torpedo_ammo = 0,
@@ -69127,7 +69127,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36249] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 36240,
 		id = 36249,
 		torpedo_ammo = 0,
@@ -69137,7 +69137,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36250] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 36240,
 		id = 36250,
 		torpedo_ammo = 0,
@@ -69148,7 +69148,7 @@ pg.equip_data_statistics = {
 	},
 	[36251] = {
 		anti_siren = 100,
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 36240,
 		id = 36251,
 		torpedo_ammo = 0,
@@ -69158,16 +69158,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36300] = {
-		name = "25mmä¸‰è¿è£…é«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mmÈıÁ¬×°¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "36300",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -69220,7 +69220,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36301] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 36300,
 		id = 36301,
 		torpedo_ammo = 0,
@@ -69230,7 +69230,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36302] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 36300,
 		id = 36302,
 		torpedo_ammo = 0,
@@ -69240,7 +69240,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36303] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 36300,
 		id = 36303,
 		torpedo_ammo = 0,
@@ -69250,16 +69250,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36320] = {
-		name = "25mmä¸‰è¿è£…é«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mmÈıÁ¬×°¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "36300",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -69312,7 +69312,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36321] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 36320,
 		id = 36321,
 		torpedo_ammo = 0,
@@ -69322,7 +69322,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36322] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 36320,
 		id = 36322,
 		torpedo_ammo = 0,
@@ -69332,7 +69332,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36323] = {
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		base = 36320,
 		id = 36323,
 		torpedo_ammo = 0,
@@ -69342,7 +69342,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36324] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 36320,
 		id = 36324,
 		torpedo_ammo = 0,
@@ -69352,7 +69352,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36325] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 36320,
 		id = 36325,
 		torpedo_ammo = 0,
@@ -69362,7 +69362,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36326] = {
-		damage = "36/è½®",
+		damage = "36/ÂÖ",
 		base = 36320,
 		id = 36326,
 		torpedo_ammo = 0,
@@ -69372,16 +69372,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36340] = {
-		name = "25mmä¸‰è¿è£…é«˜å°„æœºæª",
-		speciality = "é˜²ç©º",
+		name = "25mmÈıÁ¬×°¸ßÉä»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "36300",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -69434,7 +69434,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36341] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 36340,
 		id = 36341,
 		torpedo_ammo = 0,
@@ -69444,7 +69444,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36342] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 36340,
 		id = 36342,
 		torpedo_ammo = 0,
@@ -69454,7 +69454,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36343] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 36340,
 		id = 36343,
 		torpedo_ammo = 0,
@@ -69464,7 +69464,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36344] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 36340,
 		id = 36344,
 		torpedo_ammo = 0,
@@ -69474,7 +69474,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36345] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 36340,
 		id = 36345,
 		torpedo_ammo = 0,
@@ -69484,7 +69484,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36346] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 36340,
 		id = 36346,
 		torpedo_ammo = 0,
@@ -69494,7 +69494,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36347] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 36340,
 		id = 36347,
 		torpedo_ammo = 0,
@@ -69504,7 +69504,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36348] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 36340,
 		id = 36348,
 		torpedo_ammo = 0,
@@ -69514,7 +69514,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36349] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 36340,
 		id = 36349,
 		torpedo_ammo = 0,
@@ -69524,7 +69524,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36350] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 36340,
 		id = 36350,
 		torpedo_ammo = 0,
@@ -69535,7 +69535,7 @@ pg.equip_data_statistics = {
 	},
 	[36351] = {
 		anti_siren = 100,
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 36340,
 		id = 36351,
 		torpedo_ammo = 0,
@@ -69545,16 +69545,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36360] = {
-		name = "ä¹å…­å¼25mmä¸‰è¿è£…æš´é£é¿ç›¾æœºç‚®",
-		speciality = "é˜²ç©º",
+		name = "¾ÅÁùÊ½25mmÈıÁ¬×°±©·ç±Ü¶Ü»úÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "36360",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -69607,7 +69607,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36361] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 36360,
 		id = 36361,
 		torpedo_ammo = 0,
@@ -69617,7 +69617,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36362] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 36360,
 		id = 36362,
 		torpedo_ammo = 0,
@@ -69627,7 +69627,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36363] = {
-		damage = "49/è½®",
+		damage = "49/ÂÖ",
 		base = 36360,
 		id = 36363,
 		torpedo_ammo = 0,
@@ -69637,7 +69637,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36364] = {
-		damage = "52/è½®",
+		damage = "52/ÂÖ",
 		base = 36360,
 		id = 36364,
 		torpedo_ammo = 0,
@@ -69647,7 +69647,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36365] = {
-		damage = "55/è½®",
+		damage = "55/ÂÖ",
 		base = 36360,
 		id = 36365,
 		torpedo_ammo = 0,
@@ -69657,7 +69657,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36366] = {
-		damage = "58/è½®",
+		damage = "58/ÂÖ",
 		base = 36360,
 		id = 36366,
 		torpedo_ammo = 0,
@@ -69667,7 +69667,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36367] = {
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 36360,
 		id = 36367,
 		torpedo_ammo = 0,
@@ -69677,7 +69677,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36368] = {
-		damage = "64/è½®",
+		damage = "64/ÂÖ",
 		base = 36360,
 		id = 36368,
 		torpedo_ammo = 0,
@@ -69687,7 +69687,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36369] = {
-		damage = "68/è½®",
+		damage = "68/ÂÖ",
 		base = 36360,
 		id = 36369,
 		torpedo_ammo = 0,
@@ -69697,7 +69697,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36370] = {
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 36360,
 		id = 36370,
 		torpedo_ammo = 0,
@@ -69708,7 +69708,7 @@ pg.equip_data_statistics = {
 	},
 	[36371] = {
 		anti_siren = 100,
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 36360,
 		id = 36371,
 		torpedo_ammo = 0,
@@ -69719,7 +69719,7 @@ pg.equip_data_statistics = {
 	},
 	[36372] = {
 		anti_siren = 200,
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 36360,
 		id = 36372,
 		torpedo_ammo = 0,
@@ -69730,7 +69730,7 @@ pg.equip_data_statistics = {
 	},
 	[36373] = {
 		anti_siren = 300,
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 36360,
 		id = 36373,
 		torpedo_ammo = 0,
@@ -69740,16 +69740,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36400] = {
-		name = "æ¯˜å¼40mmè¿è£…æœºæª",
-		speciality = "é˜²ç©º",
+		name = "š³Ê½40mmÁ¬×°»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "36400",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -69802,7 +69802,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36401] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 36400,
 		id = 36401,
 		torpedo_ammo = 0,
@@ -69812,7 +69812,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36402] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 36400,
 		id = 36402,
 		torpedo_ammo = 0,
@@ -69822,7 +69822,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36403] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 36400,
 		id = 36403,
 		torpedo_ammo = 0,
@@ -69832,16 +69832,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36420] = {
-		name = "æ¯˜å¼40mmè¿è£…æœºæª",
-		speciality = "é˜²ç©º",
+		name = "š³Ê½40mmÁ¬×°»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "36400",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -69894,7 +69894,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36421] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 36420,
 		id = 36421,
 		torpedo_ammo = 0,
@@ -69904,7 +69904,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36422] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 36420,
 		id = 36422,
 		torpedo_ammo = 0,
@@ -69914,7 +69914,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36423] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 36420,
 		id = 36423,
 		torpedo_ammo = 0,
@@ -69924,7 +69924,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36424] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 36420,
 		id = 36424,
 		torpedo_ammo = 0,
@@ -69934,7 +69934,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36425] = {
-		damage = "39/è½®",
+		damage = "39/ÂÖ",
 		base = 36420,
 		id = 36425,
 		torpedo_ammo = 0,
@@ -69944,7 +69944,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36426] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 36420,
 		id = 36426,
 		torpedo_ammo = 0,
@@ -69954,16 +69954,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36440] = {
-		name = "æ¯˜å¼40mmè¿è£…æœºæª",
-		speciality = "é˜²ç©º",
+		name = "š³Ê½40mmÁ¬×°»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "36400",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -70016,7 +70016,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36441] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 36440,
 		id = 36441,
 		torpedo_ammo = 0,
@@ -70026,7 +70026,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36442] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 36440,
 		id = 36442,
 		torpedo_ammo = 0,
@@ -70036,7 +70036,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36443] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 36440,
 		id = 36443,
 		torpedo_ammo = 0,
@@ -70046,7 +70046,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36444] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 36440,
 		id = 36444,
 		torpedo_ammo = 0,
@@ -70056,7 +70056,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36445] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 36440,
 		id = 36445,
 		torpedo_ammo = 0,
@@ -70066,7 +70066,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36446] = {
-		damage = "49/è½®",
+		damage = "49/ÂÖ",
 		base = 36440,
 		id = 36446,
 		torpedo_ammo = 0,
@@ -70076,7 +70076,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36447] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 36440,
 		id = 36447,
 		torpedo_ammo = 0,
@@ -70086,7 +70086,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36448] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 36440,
 		id = 36448,
 		torpedo_ammo = 0,
@@ -70096,7 +70096,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36449] = {
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 36440,
 		id = 36449,
 		torpedo_ammo = 0,
@@ -70106,7 +70106,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36450] = {
-		damage = "65/è½®",
+		damage = "65/ÂÖ",
 		base = 36440,
 		id = 36450,
 		torpedo_ammo = 0,
@@ -70117,7 +70117,7 @@ pg.equip_data_statistics = {
 	},
 	[36451] = {
 		anti_siren = 100,
-		damage = "65/è½®",
+		damage = "65/ÂÖ",
 		base = 36440,
 		id = 36451,
 		torpedo_ammo = 0,
@@ -70127,16 +70127,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36500] = {
-		name = "76mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "76mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "36500",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -70189,7 +70189,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36501] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 36500,
 		id = 36501,
 		torpedo_ammo = 0,
@@ -70199,7 +70199,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36502] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 36500,
 		id = 36502,
 		torpedo_ammo = 0,
@@ -70209,7 +70209,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36503] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 36500,
 		id = 36503,
 		torpedo_ammo = 0,
@@ -70219,16 +70219,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36520] = {
-		name = "76mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "76mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "36500",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -70281,7 +70281,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36521] = {
-		damage = "21/è½®",
+		damage = "21/ÂÖ",
 		base = 36520,
 		id = 36521,
 		torpedo_ammo = 0,
@@ -70291,7 +70291,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36522] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 36520,
 		id = 36522,
 		torpedo_ammo = 0,
@@ -70301,7 +70301,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36523] = {
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		base = 36520,
 		id = 36523,
 		torpedo_ammo = 0,
@@ -70311,7 +70311,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36524] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 36520,
 		id = 36524,
 		torpedo_ammo = 0,
@@ -70321,7 +70321,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36525] = {
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		base = 36520,
 		id = 36525,
 		torpedo_ammo = 0,
@@ -70331,7 +70331,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36526] = {
-		damage = "36/è½®",
+		damage = "36/ÂÖ",
 		base = 36520,
 		id = 36526,
 		torpedo_ammo = 0,
@@ -70341,16 +70341,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36540] = {
-		name = "76mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "76mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "36500",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -70403,7 +70403,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36541] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 36540,
 		id = 36541,
 		torpedo_ammo = 0,
@@ -70413,7 +70413,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36542] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 36540,
 		id = 36542,
 		torpedo_ammo = 0,
@@ -70423,7 +70423,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36543] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 36540,
 		id = 36543,
 		torpedo_ammo = 0,
@@ -70433,7 +70433,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36544] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 36540,
 		id = 36544,
 		torpedo_ammo = 0,
@@ -70443,7 +70443,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36545] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 36540,
 		id = 36545,
 		torpedo_ammo = 0,
@@ -70453,7 +70453,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36546] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 36540,
 		id = 36546,
 		torpedo_ammo = 0,
@@ -70463,7 +70463,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36547] = {
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		base = 36540,
 		id = 36547,
 		torpedo_ammo = 0,
@@ -70473,7 +70473,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36548] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 36540,
 		id = 36548,
 		torpedo_ammo = 0,
@@ -70483,7 +70483,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36549] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 36540,
 		id = 36549,
 		torpedo_ammo = 0,
@@ -70493,7 +70493,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36550] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 36540,
 		id = 36550,
 		torpedo_ammo = 0,
@@ -70504,7 +70504,7 @@ pg.equip_data_statistics = {
 	},
 	[36551] = {
 		anti_siren = 100,
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 36540,
 		id = 36551,
 		torpedo_ammo = 0,
@@ -70514,16 +70514,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36560] = {
-		name = "100mmè¿è£…é«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "100mmÁ¬×°¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "36560",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -70576,7 +70576,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36561] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 36560,
 		id = 36561,
 		torpedo_ammo = 0,
@@ -70586,7 +70586,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36562] = {
-		damage = "64/è½®",
+		damage = "64/ÂÖ",
 		base = 36560,
 		id = 36562,
 		torpedo_ammo = 0,
@@ -70596,7 +70596,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36563] = {
-		damage = "71/è½®",
+		damage = "71/ÂÖ",
 		base = 36560,
 		id = 36563,
 		torpedo_ammo = 0,
@@ -70606,7 +70606,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36564] = {
-		damage = "78/è½®",
+		damage = "78/ÂÖ",
 		base = 36560,
 		id = 36564,
 		torpedo_ammo = 0,
@@ -70616,7 +70616,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36565] = {
-		damage = "86/è½®",
+		damage = "86/ÂÖ",
 		base = 36560,
 		id = 36565,
 		torpedo_ammo = 0,
@@ -70626,7 +70626,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36566] = {
-		damage = "94/è½®",
+		damage = "94/ÂÖ",
 		base = 36560,
 		id = 36566,
 		torpedo_ammo = 0,
@@ -70636,7 +70636,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36567] = {
-		damage = "102/è½®",
+		damage = "102/ÂÖ",
 		base = 36560,
 		id = 36567,
 		torpedo_ammo = 0,
@@ -70646,7 +70646,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36568] = {
-		damage = "110/è½®",
+		damage = "110/ÂÖ",
 		base = 36560,
 		id = 36568,
 		torpedo_ammo = 0,
@@ -70656,7 +70656,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36569] = {
-		damage = "118/è½®",
+		damage = "118/ÂÖ",
 		base = 36560,
 		id = 36569,
 		torpedo_ammo = 0,
@@ -70666,7 +70666,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36570] = {
-		damage = "126/è½®",
+		damage = "126/ÂÖ",
 		base = 36560,
 		id = 36570,
 		torpedo_ammo = 0,
@@ -70677,7 +70677,7 @@ pg.equip_data_statistics = {
 	},
 	[36571] = {
 		anti_siren = 100,
-		damage = "126/è½®",
+		damage = "126/ÂÖ",
 		base = 36560,
 		id = 36571,
 		torpedo_ammo = 0,
@@ -70688,7 +70688,7 @@ pg.equip_data_statistics = {
 	},
 	[36572] = {
 		anti_siren = 200,
-		damage = "126/è½®",
+		damage = "126/ÂÖ",
 		base = 36560,
 		id = 36572,
 		torpedo_ammo = 0,
@@ -70699,7 +70699,7 @@ pg.equip_data_statistics = {
 	},
 	[36573] = {
 		anti_siren = 300,
-		damage = "126/è½®",
+		damage = "126/ÂÖ",
 		base = 36560,
 		id = 36573,
 		torpedo_ammo = 0,
@@ -70709,16 +70709,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36580] = {
-		name = "80mmé«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "80mm¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "36580",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -70771,7 +70771,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36581] = {
-		damage = "48/è½®",
+		damage = "48/ÂÖ",
 		base = 36580,
 		id = 36581,
 		torpedo_ammo = 0,
@@ -70781,7 +70781,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36582] = {
-		damage = "52/è½®",
+		damage = "52/ÂÖ",
 		base = 36580,
 		id = 36582,
 		torpedo_ammo = 0,
@@ -70791,7 +70791,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36583] = {
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 36580,
 		id = 36583,
 		torpedo_ammo = 0,
@@ -70801,7 +70801,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36584] = {
-		damage = "60/è½®",
+		damage = "60/ÂÖ",
 		base = 36580,
 		id = 36584,
 		torpedo_ammo = 0,
@@ -70811,7 +70811,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36585] = {
-		damage = "64/è½®",
+		damage = "64/ÂÖ",
 		base = 36580,
 		id = 36585,
 		torpedo_ammo = 0,
@@ -70821,7 +70821,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36586] = {
-		damage = "68/è½®",
+		damage = "68/ÂÖ",
 		base = 36580,
 		id = 36586,
 		torpedo_ammo = 0,
@@ -70831,7 +70831,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36587] = {
-		damage = "72/è½®",
+		damage = "72/ÂÖ",
 		base = 36580,
 		id = 36587,
 		torpedo_ammo = 0,
@@ -70841,7 +70841,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36588] = {
-		damage = "76/è½®",
+		damage = "76/ÂÖ",
 		base = 36580,
 		id = 36588,
 		torpedo_ammo = 0,
@@ -70851,7 +70851,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36589] = {
-		damage = "80/è½®",
+		damage = "80/ÂÖ",
 		base = 36580,
 		id = 36589,
 		torpedo_ammo = 0,
@@ -70861,7 +70861,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36590] = {
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 36580,
 		id = 36590,
 		torpedo_ammo = 0,
@@ -70872,7 +70872,7 @@ pg.equip_data_statistics = {
 	},
 	[36591] = {
 		anti_siren = 100,
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 36580,
 		id = 36591,
 		torpedo_ammo = 0,
@@ -70882,16 +70882,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36600] = {
-		name = "127mmè¿è£…é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "127mmÁ¬×°¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "36600",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -70944,7 +70944,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36601] = {
-		damage = "37/è½®",
+		damage = "37/ÂÖ",
 		base = 36600,
 		id = 36601,
 		torpedo_ammo = 0,
@@ -70954,7 +70954,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36602] = {
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		base = 36600,
 		id = 36602,
 		torpedo_ammo = 0,
@@ -70964,7 +70964,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36603] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 36600,
 		id = 36603,
 		torpedo_ammo = 0,
@@ -70974,16 +70974,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36620] = {
-		name = "127mmè¿è£…é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "127mmÁ¬×°¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "36600",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "39/è½®",
+		damage = "39/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -71036,7 +71036,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36621] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 36620,
 		id = 36621,
 		torpedo_ammo = 0,
@@ -71046,7 +71046,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36622] = {
-		damage = "51/è½®",
+		damage = "51/ÂÖ",
 		base = 36620,
 		id = 36622,
 		torpedo_ammo = 0,
@@ -71056,7 +71056,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36623] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 36620,
 		id = 36623,
 		torpedo_ammo = 0,
@@ -71066,7 +71066,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36624] = {
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 36620,
 		id = 36624,
 		torpedo_ammo = 0,
@@ -71076,7 +71076,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36625] = {
-		damage = "70/è½®",
+		damage = "70/ÂÖ",
 		base = 36620,
 		id = 36625,
 		torpedo_ammo = 0,
@@ -71086,7 +71086,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36626] = {
-		damage = "77/è½®",
+		damage = "77/ÂÖ",
 		base = 36620,
 		id = 36626,
 		torpedo_ammo = 0,
@@ -71096,16 +71096,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36640] = {
-		name = "127mmè¿è£…é«˜å°„ç‚®",
-		speciality = "é˜²ç©º",
+		name = "127mmÁ¬×°¸ßÉäÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "36600",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -71158,7 +71158,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36641] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 36640,
 		id = 36641,
 		torpedo_ammo = 0,
@@ -71168,7 +71168,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36642] = {
-		damage = "60/è½®",
+		damage = "60/ÂÖ",
 		base = 36640,
 		id = 36642,
 		torpedo_ammo = 0,
@@ -71178,7 +71178,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36643] = {
-		damage = "67/è½®",
+		damage = "67/ÂÖ",
 		base = 36640,
 		id = 36643,
 		torpedo_ammo = 0,
@@ -71188,7 +71188,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36644] = {
-		damage = "74/è½®",
+		damage = "74/ÂÖ",
 		base = 36640,
 		id = 36644,
 		torpedo_ammo = 0,
@@ -71198,7 +71198,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36645] = {
-		damage = "81/è½®",
+		damage = "81/ÂÖ",
 		base = 36640,
 		id = 36645,
 		torpedo_ammo = 0,
@@ -71208,7 +71208,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36646] = {
-		damage = "88/è½®",
+		damage = "88/ÂÖ",
 		base = 36640,
 		id = 36646,
 		torpedo_ammo = 0,
@@ -71218,7 +71218,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36647] = {
-		damage = "95/è½®",
+		damage = "95/ÂÖ",
 		base = 36640,
 		id = 36647,
 		torpedo_ammo = 0,
@@ -71228,7 +71228,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36648] = {
-		damage = "102/è½®",
+		damage = "102/ÂÖ",
 		base = 36640,
 		id = 36648,
 		torpedo_ammo = 0,
@@ -71238,7 +71238,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36649] = {
-		damage = "109/è½®",
+		damage = "109/ÂÖ",
 		base = 36640,
 		id = 36649,
 		torpedo_ammo = 0,
@@ -71248,7 +71248,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36650] = {
-		damage = "116/è½®",
+		damage = "116/ÂÖ",
 		base = 36640,
 		id = 36650,
 		torpedo_ammo = 0,
@@ -71259,7 +71259,7 @@ pg.equip_data_statistics = {
 	},
 	[36651] = {
 		anti_siren = 100,
-		damage = "116/è½®",
+		damage = "116/ÂÖ",
 		base = 36640,
 		id = 36651,
 		torpedo_ammo = 0,
@@ -71269,16 +71269,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36660] = {
-		name = "127mmè¿è£…é«˜è§’ç‚®æ”¹",
-		speciality = "é˜²ç©º",
+		name = "127mmÁ¬×°¸ß½ÇÅÚ¸Ä",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "36660",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -71331,7 +71331,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36661] = {
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 36660,
 		id = 36661,
 		torpedo_ammo = 0,
@@ -71341,7 +71341,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36662] = {
-		damage = "68/è½®",
+		damage = "68/ÂÖ",
 		base = 36660,
 		id = 36662,
 		torpedo_ammo = 0,
@@ -71351,7 +71351,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36663] = {
-		damage = "75/è½®",
+		damage = "75/ÂÖ",
 		base = 36660,
 		id = 36663,
 		torpedo_ammo = 0,
@@ -71361,7 +71361,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36664] = {
-		damage = "82/è½®",
+		damage = "82/ÂÖ",
 		base = 36660,
 		id = 36664,
 		torpedo_ammo = 0,
@@ -71371,7 +71371,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36665] = {
-		damage = "89/è½®",
+		damage = "89/ÂÖ",
 		base = 36660,
 		id = 36665,
 		torpedo_ammo = 0,
@@ -71381,7 +71381,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36666] = {
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 36660,
 		id = 36666,
 		torpedo_ammo = 0,
@@ -71391,7 +71391,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36667] = {
-		damage = "103/è½®",
+		damage = "103/ÂÖ",
 		base = 36660,
 		id = 36667,
 		torpedo_ammo = 0,
@@ -71401,7 +71401,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36668] = {
-		damage = "110/è½®",
+		damage = "110/ÂÖ",
 		base = 36660,
 		id = 36668,
 		torpedo_ammo = 0,
@@ -71411,7 +71411,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36669] = {
-		damage = "117/è½®",
+		damage = "117/ÂÖ",
 		base = 36660,
 		id = 36669,
 		torpedo_ammo = 0,
@@ -71421,7 +71421,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36670] = {
-		damage = "124/è½®",
+		damage = "124/ÂÖ",
 		base = 36660,
 		id = 36670,
 		torpedo_ammo = 0,
@@ -71432,7 +71432,7 @@ pg.equip_data_statistics = {
 	},
 	[36671] = {
 		anti_siren = 100,
-		damage = "124/è½®",
+		damage = "124/ÂÖ",
 		base = 36660,
 		id = 36671,
 		torpedo_ammo = 0,
@@ -71443,7 +71443,7 @@ pg.equip_data_statistics = {
 	},
 	[36672] = {
 		anti_siren = 200,
-		damage = "124/è½®",
+		damage = "124/ÂÖ",
 		base = 36660,
 		id = 36672,
 		torpedo_ammo = 0,
@@ -71454,7 +71454,7 @@ pg.equip_data_statistics = {
 	},
 	[36673] = {
 		anti_siren = 300,
-		damage = "124/è½®",
+		damage = "124/ÂÖ",
 		base = 36660,
 		id = 36673,
 		torpedo_ammo = 0,
@@ -71464,16 +71464,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36700] = {
-		name = "è¯•ä½œå‹äº”å¼40mmé«˜å°„æœºå…³ç‚®",
-		speciality = "é˜²ç©º",
+		name = "ÊÔ×÷ĞÍÎåÊ½40mm¸ßÉä»ú¹ØÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "36700",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -71526,7 +71526,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36701] = {
-		damage = "51/è½®",
+		damage = "51/ÂÖ",
 		base = 36700,
 		id = 36701,
 		torpedo_ammo = 0,
@@ -71536,7 +71536,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36702] = {
-		damage = "55/è½®",
+		damage = "55/ÂÖ",
 		base = 36700,
 		id = 36702,
 		torpedo_ammo = 0,
@@ -71546,7 +71546,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36703] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 36700,
 		id = 36703,
 		torpedo_ammo = 0,
@@ -71556,7 +71556,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36704] = {
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 36700,
 		id = 36704,
 		torpedo_ammo = 0,
@@ -71566,7 +71566,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36705] = {
-		damage = "67/è½®",
+		damage = "67/ÂÖ",
 		base = 36700,
 		id = 36705,
 		torpedo_ammo = 0,
@@ -71576,7 +71576,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36706] = {
-		damage = "71/è½®",
+		damage = "71/ÂÖ",
 		base = 36700,
 		id = 36706,
 		torpedo_ammo = 0,
@@ -71586,7 +71586,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36707] = {
-		damage = "75/è½®",
+		damage = "75/ÂÖ",
 		base = 36700,
 		id = 36707,
 		torpedo_ammo = 0,
@@ -71596,7 +71596,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36708] = {
-		damage = "79/è½®",
+		damage = "79/ÂÖ",
 		base = 36700,
 		id = 36708,
 		torpedo_ammo = 0,
@@ -71606,7 +71606,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36709] = {
-		damage = "83/è½®",
+		damage = "83/ÂÖ",
 		base = 36700,
 		id = 36709,
 		torpedo_ammo = 0,
@@ -71616,7 +71616,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[36710] = {
-		damage = "87/è½®",
+		damage = "87/ÂÖ",
 		base = 36700,
 		id = 36710,
 		torpedo_ammo = 0,
@@ -71627,7 +71627,7 @@ pg.equip_data_statistics = {
 	},
 	[36711] = {
 		anti_siren = 100,
-		damage = "87/è½®",
+		damage = "87/ÂÖ",
 		base = 36700,
 		id = 36711,
 		torpedo_ammo = 0,
@@ -71638,7 +71638,7 @@ pg.equip_data_statistics = {
 	},
 	[36712] = {
 		anti_siren = 200,
-		damage = "87/è½®",
+		damage = "87/ÂÖ",
 		base = 36700,
 		id = 36712,
 		torpedo_ammo = 0,
@@ -71649,7 +71649,7 @@ pg.equip_data_statistics = {
 	},
 	[36713] = {
 		anti_siren = 300,
-		damage = "87/è½®",
+		damage = "87/ÂÖ",
 		base = 36700,
 		id = 36713,
 		torpedo_ammo = 0,
@@ -71659,12 +71659,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37000] = {
-		name = "ä¹å…­å¼èˆ°æˆ˜",
+		name = "¾ÅÁùÊ½½¢Õ½",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "37000",
 		nationality = 3,
@@ -71755,12 +71755,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37020] = {
-		name = "ä¹å…­å¼èˆ°æˆ˜",
+		name = "¾ÅÁùÊ½½¢Õ½",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "37000",
 		attribute_2 = "air",
@@ -71852,12 +71852,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37040] = {
-		name = "ä¹å…­å¼èˆ°æˆ˜",
+		name = "¾ÅÁùÊ½½¢Õ½",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "37000",
 		attribute_2 = "air",
@@ -72013,12 +72013,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37100] = {
-		name = "é›¶æˆ˜äºŒä¸€å‹",
+		name = "ÁãÕ½¶şÒ»ĞÍ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "37100",
 		attribute_2 = "air",
@@ -72142,12 +72142,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37120] = {
-		name = "é›¶æˆ˜äºŒä¸€å‹",
+		name = "ÁãÕ½¶şÒ»ĞÍ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "37100",
 		attribute_2 = "air",
@@ -72343,12 +72343,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37140] = {
-		name = "é›¶æˆ˜äºŒä¸€å‹",
+		name = "ÁãÕ½¶şÒ»ĞÍ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "37100",
 		attribute_2 = "air",
@@ -72665,12 +72665,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37160] = {
-		name = "é›¶æˆ˜ä¸‰äºŒå‹",
+		name = "ÁãÕ½Èı¶şĞÍ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "37160",
 		attribute_2 = "air",
@@ -72987,12 +72987,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37200] = {
-		name = "é›¶æˆ˜äº”äºŒå‹",
+		name = "ÁãÕ½Îå¶şĞÍ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "37200",
 		attribute_2 = "air",
@@ -73188,12 +73188,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37220] = {
-		name = "é›¶æˆ˜äº”äºŒå‹",
+		name = "ÁãÕ½Îå¶şĞÍ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "37200",
 		attribute_2 = "air",
@@ -73485,12 +73485,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37240] = {
-		name = "é›¶æˆ˜äº”äºŒå‹",
+		name = "ÁãÕ½Îå¶şĞÍ",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "37200",
 		attribute_2 = "air",
@@ -73857,12 +73857,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37300] = {
-		name = "çƒˆé£",
+		name = "ÁÒ·ç",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 1,
-		descrip = "Mitsubishi A7M ReppÅ« çƒˆé£å¼èˆ°è½½æˆ˜æ–—æœºï¼Œæ­è½½æœ‰4é—¨20æ¯«ç±³ä¹ä¹å¼äºŒå·å››å‹æœºå…³ç‚®å’Œ2æšçº¦500ç£…ç‚¸å¼¹",
+		descrip = "Mitsubishi A7M Repp¨± ÁÒ·çÊ½½¢ÔØÕ½¶·»ú£¬´îÔØÓĞ4ÃÅ20ºÁÃ×¾Å¾ÅÊ½¶şºÅËÄĞÍ»ú¹ØÅÚºÍ2Ã¶Ô¼500°õÕ¨µ¯",
 		value_2 = 12,
 		icon = "37300",
 		attribute_2 = "air",
@@ -74030,12 +74030,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37320] = {
-		name = "çƒˆé£",
+		name = "ÁÒ·ç",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 2,
-		descrip = "Mitsubishi A7M ReppÅ« çƒˆé£å¼èˆ°è½½æˆ˜æ–—æœºï¼Œæ­è½½æœ‰4é—¨20æ¯«ç±³ä¹ä¹å¼äºŒå·å››å‹æœºå…³ç‚®å’Œ2æšçº¦500ç£…ç‚¸å¼¹",
+		descrip = "Mitsubishi A7M Repp¨± ÁÒ·çÊ½½¢ÔØÕ½¶·»ú£¬´îÔØÓĞ4ÃÅ20ºÁÃ×¾Å¾ÅÊ½¶şºÅËÄĞÍ»ú¹ØÅÚºÍ2Ã¶Ô¼500°õÕ¨µ¯",
 		value_2 = 25,
 		icon = "37300",
 		attribute_2 = "air",
@@ -74283,12 +74283,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37340] = {
-		name = "çƒˆé£",
+		name = "ÁÒ·ç",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 3,
-		descrip = "Mitsubishi A7M ReppÅ« çƒˆé£å¼èˆ°è½½æˆ˜æ–—æœºï¼Œæ­è½½æœ‰4é—¨20æ¯«ç±³ä¹ä¹å¼äºŒå·å››å‹æœºå…³ç‚®å’Œ2æšçº¦500ç£…ç‚¸å¼¹",
+		descrip = "Mitsubishi A7M Repp¨± ÁÒ·çÊ½½¢ÔØÕ½¶·»ú£¬´îÔØÓĞ4ÃÅ20ºÁÃ×¾Å¾ÅÊ½¶şºÅËÄĞÍ»ú¹ØÅÚºÍ2Ã¶Ô¼500°õÕ¨µ¯",
 		value_2 = 45,
 		icon = "37300",
 		attribute_2 = "air",
@@ -74599,12 +74599,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37400] = {
-		name = "ç´«ç”µæ”¹äºŒ",
+		name = "×Ïµç¸Ä¶ş",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 0,
-		descrip = "Kawanishi N1K3-A Shiden ç´«é›»æ”¹äºŒèˆ°è½½æˆ˜æ–—æœºã€‚",
+		descrip = "Kawanishi N1K3-A Shiden ×ÏëŠ¸Ä¶ş½¢ÔØÕ½¶·»ú¡£",
 		value_2 = 45,
 		icon = "37400",
 		attribute_2 = "air",
@@ -74971,12 +74971,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37420] = {
-		name = "äºŒå¼æ°´ä¸Šæˆ˜æ–—æœº",
+		name = "¶şÊ½Ë®ÉÏÕ½¶·»ú",
 		type = 12,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "37420",
 		attribute_2 = "air",
@@ -75293,12 +75293,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[37440] = {
-		name = "å¼ºé£",
+		name = "Ç¿·ç",
 		type = 12,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "37440",
 		attribute_2 = "air",
@@ -75615,12 +75615,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38000] = {
-		name = "ä¹ä¸ƒå¼èˆ°æ”»",
+		name = "¾ÅÆßÊ½½¢¹¥",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "38000",
 		nationality = 3,
@@ -75723,12 +75723,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38020] = {
-		name = "ä¹ä¸ƒå¼èˆ°æ”»",
+		name = "¾ÅÆßÊ½½¢¹¥",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "38000",
 		attribute_2 = "air",
@@ -75832,12 +75832,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38040] = {
-		name = "ä¹ä¸ƒå¼èˆ°æ”»",
+		name = "¾ÅÆßÊ½½¢¹¥",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "38000",
 		attribute_2 = "air",
@@ -76017,12 +76017,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38060] = {
-		name = "ä¹ä¸ƒå¼èˆ°æ”»æ”¹",
+		name = "¾ÅÆßÊ½½¢¹¥¸Ä",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "38060",
 		attribute_2 = "air",
@@ -76202,12 +76202,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38100] = {
-		name = "å¤©å±±",
+		name = "ÌìÉ½",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "38100",
 		attribute_2 = "air",
@@ -76311,12 +76311,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38120] = {
-		name = "å¤©å±±",
+		name = "ÌìÉ½",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "38100",
 		attribute_2 = "air",
@@ -76477,12 +76477,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38140] = {
-		name = "å¤©å±±",
+		name = "ÌìÉ½",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "38100",
 		attribute_2 = "air",
@@ -76739,12 +76739,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38160] = {
-		name = "å¤©å±±æ”¹",
+		name = "ÌìÉ½¸Ä",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "38160",
 		attribute_2 = "air",
@@ -77049,12 +77049,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38200] = {
-		name = "æµæ˜Ÿ",
+		name = "Á÷ĞÇ",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 1,
-		descrip = "Aichi B7A Ryusei æµæ˜Ÿå¼èˆ°è½½æ”»å‡»æœºï¼Œæ­è½½æœ‰2é—¨20æ¯«ç±³æœºç‚®ã€1é—¨13mmæœºæªå’Œ800kgé±¼é›·",
+		descrip = "Aichi B7A Ryusei Á÷ĞÇÊ½½¢ÔØ¹¥»÷»ú£¬´îÔØÓĞ2ÃÅ20ºÁÃ×»úÅÚ¡¢1ÃÅ13mm»úÇ¹ºÍ800kgÓãÀ×",
 		value_2 = 12,
 		icon = "38200",
 		attribute_2 = "air",
@@ -77243,12 +77243,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38220] = {
-		name = "æµæ˜Ÿ",
+		name = "Á÷ĞÇ",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 4,
 		tech = 2,
-		descrip = "Aichi B7A Ryusei æµæ˜Ÿå¼èˆ°è½½æ”»å‡»æœºï¼Œæ­è½½æœ‰2é—¨20æ¯«ç±³æœºç‚®ã€1é—¨13mmæœºæªå’Œ800kgé±¼é›·",
+		descrip = "Aichi B7A Ryusei Á÷ĞÇÊ½½¢ÔØ¹¥»÷»ú£¬´îÔØÓĞ2ÃÅ20ºÁÃ×»úÅÚ¡¢1ÃÅ13mm»úÇ¹ºÍ800kgÓãÀ×",
 		value_2 = 25,
 		icon = "38200",
 		attribute_2 = "air",
@@ -77529,12 +77529,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[38240] = {
-		name = "æµæ˜Ÿ",
+		name = "Á÷ĞÇ",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 3,
-		descrip = "Aichi B7A Ryusei æµæ˜Ÿå¼èˆ°è½½æ”»å‡»æœºï¼Œæ­è½½æœ‰2é—¨20æ¯«ç±³æœºç‚®ã€1é—¨13mmæœºæªå’Œ800kgé±¼é›·",
+		descrip = "Aichi B7A Ryusei Á÷ĞÇÊ½½¢ÔØ¹¥»÷»ú£¬´îÔØÓĞ2ÃÅ20ºÁÃ×»úÅÚ¡¢1ÃÅ13mm»úÇ¹ºÍ800kgÓãÀ×",
 		value_2 = 45,
 		icon = "38200",
 		attribute_2 = "air",
@@ -77887,12 +77887,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39000] = {
-		name = "ä¹ä¹å¼èˆ°çˆ†",
+		name = "¾Å¾ÅÊ½½¢±¬",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "39000",
 		attribute_2 = "air",
@@ -78012,12 +78012,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39020] = {
-		name = "ä¹ä¹å¼èˆ°çˆ†",
+		name = "¾Å¾ÅÊ½½¢±¬",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "39000",
 		attribute_2 = "air",
@@ -78206,12 +78206,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39040] = {
-		name = "ä¹ä¹å¼èˆ°çˆ†",
+		name = "¾Å¾ÅÊ½½¢±¬",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "39000",
 		attribute_2 = "air",
@@ -78516,12 +78516,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39060] = {
-		name = "ä¹ä¹å¼èˆ°çˆ†æ”¹",
+		name = "¾Å¾ÅÊ½½¢±¬¸Ä",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "39060",
 		attribute_2 = "air",
@@ -78826,12 +78826,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39100] = {
-		name = "å½—æ˜Ÿ",
+		name = "åçĞÇ",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "39100",
 		attribute_2 = "air",
@@ -79020,12 +79020,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39120] = {
-		name = "å½—æ˜Ÿ",
+		name = "åçĞÇ",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "39100",
 		attribute_2 = "air",
@@ -79306,12 +79306,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39140] = {
-		name = "å½—æ˜Ÿ",
+		name = "åçĞÇ",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 5,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "39100",
 		attribute_2 = "air",
@@ -79664,12 +79664,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39160] = {
-		name = "å½—æ˜Ÿä¸€äºŒå‹ç”²",
+		name = "åçĞÇÒ»¶şĞÍ¼×",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "39160",
 		attribute_2 = "air",
@@ -80022,15 +80022,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39200] = {
-		name = "ç‘äº‘",
+		name = "ÈğÔÆ",
 		tech = 1,
 		type = 12,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		attribute_3 = "air",
 		rarity = 2,
 		value_2 = 5,
 		icon = "39200",
-		descrip = "Aichi E16A Zuiun ç‘äº‘å¼æ°´ä¸Šä¾¦å¯Ÿæœºï¼Œæ­è½½æœ‰2é—¨20æ¯«ç±³æœºç‚®ã€1é—¨13mmæœºæªå’Œ1æš500ç£…ç‚¸å¼¹",
+		descrip = "Aichi E16A Zuiun ÈğÔÆÊ½Ë®ÉÏÕì²ì»ú£¬´îÔØÓĞ2ÃÅ20ºÁÃ×»úÅÚ¡¢1ÃÅ13mm»úÇ¹ºÍ1Ã¶500°õÕ¨µ¯",
 		nationality = 3,
 		ammo = 5,
 		value_3 = 0,
@@ -80147,12 +80147,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39220] = {
-		name = "ç‘äº‘",
+		name = "ÈğÔÆ",
 		type = 12,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 2,
-		descrip = "Aichi E16A Zuiun ç‘äº‘å¼æ°´ä¸Šä¾¦å¯Ÿæœºï¼Œæ­è½½æœ‰2é—¨20æ¯«ç±³æœºç‚®ã€1é—¨13mmæœºæªå’Œ1æš500ç£…ç‚¸å¼¹",
+		descrip = "Aichi E16A Zuiun ÈğÔÆÊ½Ë®ÉÏÕì²ì»ú£¬´îÔØÓĞ2ÃÅ20ºÁÃ×»úÅÚ¡¢1ÃÅ13mm»úÇ¹ºÍ1Ã¶500°õÕ¨µ¯",
 		value_2 = 12,
 		icon = "39200",
 		attribute_2 = "air",
@@ -80341,12 +80341,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39240] = {
-		name = "ç‘äº‘",
+		name = "ÈğÔÆ",
 		type = 12,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 3,
-		descrip = "Aichi E16A Zuiun ç‘äº‘å¼æ°´ä¸Šä¾¦å¯Ÿæœºï¼Œæ­è½½æœ‰2é—¨20æ¯«ç±³æœºç‚®ã€1é—¨13mmæœºæªå’Œ1æš500ç£…ç‚¸å¼¹",
+		descrip = "Aichi E16A Zuiun ÈğÔÆÊ½Ë®ÉÏÕì²ì»ú£¬´îÔØÓĞ2ÃÅ20ºÁÃ×»úÅÚ¡¢1ÃÅ13mm»úÇ¹ºÍ1Ã¶500°õÕ¨µ¯",
 		value_2 = 25,
 		icon = "39200",
 		attribute_2 = "air",
@@ -80651,12 +80651,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39300] = {
-		name = "æ™´å²š",
+		name = "Ççá°",
 		type = 12,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 0,
-		descrip = "Aichi M6A1 Seiran æ™´å²šå¼ç‰¹æ®Šæ”»å‡»æœºï¼Œæ­è½½1é—¨13mmæœºæªå’Œ1æšçº¦1600ç£…ç‚¸å¼¹",
+		descrip = "Aichi M6A1 Seiran Ççá°Ê½ÌØÊâ¹¥»÷»ú£¬´îÔØ1ÃÅ13mm»úÇ¹ºÍ1Ã¶Ô¼1600°õÕ¨µ¯",
 		value_2 = 25,
 		icon = "39300",
 		attribute_2 = "air",
@@ -80915,12 +80915,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[39320] = {
-		name = "å½—æ˜ŸäºŒä¸€å‹",
+		name = "åçĞÇ¶şÒ»ĞÍ",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "39320",
 		attribute_2 = "air",
@@ -81271,12 +81271,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[41000] = {
-		name = "å•è£…127mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°127mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "å•è£…127mmä¸»ç‚®ï¼Œå¤§éƒ¨åˆ†é©±é€éƒ½å¯ä»¥ä½¿ç”¨",
+		descrip = "µ¥×°127mmÖ÷ÅÚ£¬´ó²¿·ÖÇıÖğ¶¼¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 0,
 		icon = "41000",
 		damage = "4 x 1",
@@ -81366,11 +81366,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[41020] = {
-		name = "å•è£…127mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°127mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "å•è£…127mmä¸»ç‚®ï¼Œå¤§éƒ¨åˆ†é©±é€éƒ½å¯ä»¥ä½¿ç”¨",
+		descrip = "µ¥×°127mmÖ÷ÅÚ£¬´ó²¿·ÖÇıÖğ¶¼¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 5,
 		icon = "41000",
 		attribute_2 = "cannon",
@@ -81462,11 +81462,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[41040] = {
-		name = "å•è£…127mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°127mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "å•è£…127mmä¸»ç‚®ï¼Œå¤§éƒ¨åˆ†é©±é€éƒ½å¯ä»¥ä½¿ç”¨",
+		descrip = "µ¥×°127mmÖ÷ÅÚ£¬´ó²¿·ÖÇıÖğ¶¼¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "41000",
 		attribute_2 = "cannon",
@@ -81598,11 +81598,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[41060] = {
-		name = "åŒè”è£…127mmKM40ä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°127mmKM40Ö÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®ï¼Œä¼¯é²å…‹ç§‘æŠ€æ–°ç ”å‘çš„é©±é€èˆ°ä¸»ç‚®ï¼ŒåŠ å¼ºäº†å¯¹ç©ºç«åŠ›",
+		descrip = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ£¬²®Â³¿Ë¿Æ¼¼ĞÂÑĞ·¢µÄÇıÖğ½¢Ö÷ÅÚ£¬¼ÓÇ¿ÁË¶Ô¿Õ»ğÁ¦",
 		value_2 = 25,
 		icon = "41060",
 		attribute_2 = "cannon",
@@ -81776,15 +81776,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[41100] = {
-		name = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 1,
 		value_2 = 3,
 		icon = "41100",
 		attribute_2 = "cannon",
-		descrip = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®ï¼Œä¼¯é²å…‹ç§‘æŠ€æ–°ç ”å‘çš„é©±é€èˆ°ä¸»ç‚®ï¼ŒåŠ å¼ºäº†å¯¹ç©ºç«åŠ›",
+		descrip = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ£¬²®Â³¿Ë¿Æ¼¼ĞÂÑĞ·¢µÄÇıÖğ½¢Ö÷ÅÚ£¬¼ÓÇ¿ÁË¶Ô¿Õ»ğÁ¦",
 		rarity = 2,
 		damage = "4 x 4",
 		nationality = 4,
@@ -81874,15 +81874,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[41120] = {
-		name = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 2,
 		value_2 = 7,
 		icon = "41100",
 		attribute_2 = "cannon",
-		descrip = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®ï¼Œä¼¯é²å…‹ç§‘æŠ€æ–°ç ”å‘çš„é©±é€èˆ°ä¸»ç‚®ï¼ŒåŠ å¼ºäº†å¯¹ç©ºç«åŠ›",
+		descrip = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ£¬²®Â³¿Ë¿Æ¼¼ĞÂÑĞ·¢µÄÇıÖğ½¢Ö÷ÅÚ£¬¼ÓÇ¿ÁË¶Ô¿Õ»ğÁ¦",
 		rarity = 3,
 		damage = "4 x 4",
 		nationality = 4,
@@ -82002,15 +82002,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[41140] = {
-		name = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 3,
 		value_2 = 15,
 		icon = "41100",
 		attribute_2 = "cannon",
-		descrip = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®ï¼Œä¼¯é²å…‹ç§‘æŠ€æ–°ç ”å‘çš„é©±é€èˆ°ä¸»ç‚®ï¼ŒåŠ å¼ºäº†å¯¹ç©ºç«åŠ›",
+		descrip = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ£¬²®Â³¿Ë¿Æ¼¼ĞÂÑĞ·¢µÄÇıÖğ½¢Ö÷ÅÚ£¬¼ÓÇ¿ÁË¶Ô¿Õ»ğÁ¦",
 		rarity = 4,
 		damage = "5 x 4",
 		nationality = 4,
@@ -82181,15 +82181,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[41160] = {
-		name = "åŒè”è£…128mmSKC41é«˜å¹³ä¸¤ç”¨ç‚®æ”¹",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°128mmSKC41¸ßÆ½Á½ÓÃÅÚ¸Ä",
+		speciality = "Ëø¶¨",
 		type = 1,
 		attribute_3 = "antiaircraft",
 		tech = 0,
 		value_2 = 30,
 		icon = "41160",
 		attribute_2 = "cannon",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		rarity = 5,
 		damage = "6 x 4",
 		nationality = 4,
@@ -82382,11 +82382,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42000] = {
-		name = "å•è£…SKC28å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°SKC28Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "å•è£…SKC28å¼150mmä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "µ¥×°SKC28Ê½150mmÖ÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 5,
 		icon = "42000",
 		attribute_2 = "cannon",
@@ -82472,11 +82472,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42020] = {
-		name = "å•è£…SKC28å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°SKC28Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "å•è£…SKC28å¼150mmä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "µ¥×°SKC28Ê½150mmÖ÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "42000",
 		attribute_2 = "cannon",
@@ -82592,11 +82592,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42040] = {
-		name = "å•è£…SKC28å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°SKC28Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "å•è£…SKC28å¼150mmä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "µ¥×°SKC28Ê½150mmÖ÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "42000",
 		attribute_2 = "cannon",
@@ -82763,11 +82763,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42060] = {
-		name = "åŒè”è£…SKC28å¼150mmå‰¯ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°SKC28Ê½150mm¸±ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 0,
-		descrip = "å•è£…SKC28å¼150mmä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "µ¥×°SKC28Ê½150mmÖ÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "42060",
 		attribute_2 = "cannon",
@@ -82934,11 +82934,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42100] = {
-		name = "ä¸‰è”è£…SKC25å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°SKC25Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "ä¸‰è”è£…SKC25å¼150mmä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª×°SKC25Ê½150mmÖ÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 5,
 		icon = "42100",
 		attribute_2 = "cannon",
@@ -83024,11 +83024,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42120] = {
-		name = "ä¸‰è”è£…SKC25å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°SKC25Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "ä¸‰è”è£…SKC25å¼150mmä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª×°SKC25Ê½150mmÖ÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "42100",
 		attribute_2 = "cannon",
@@ -83144,11 +83144,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42140] = {
-		name = "ä¸‰è”è£…SKC25å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÈıÁª×°SKC25Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "ä¸‰è”è£…SKC25å¼150mmä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª×°SKC25Ê½150mmÖ÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "42100",
 		attribute_2 = "cannon",
@@ -83315,11 +83315,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42200] = {
-		name = "åŒè”è£…TbtsKC36å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°TbtsKC36Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "åŒè”è£…TbtsKC36å¼150mmä¸»ç‚®ï¼Œ1936Aå‹é©±é€èˆ°ä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª×°TbtsKC36Ê½150mmÖ÷ÅÚ£¬1936AĞÍÇıÖğ½¢Ö÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 5,
 		icon = "42200",
 		attribute_2 = "cannon",
@@ -83405,11 +83405,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42220] = {
-		name = "åŒè”è£…TbtsKC36å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°TbtsKC36Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "åŒè”è£…TbtsKC36å¼150mmä¸»ç‚®ï¼Œ1936Aå‹é©±é€èˆ°ä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª×°TbtsKC36Ê½150mmÖ÷ÅÚ£¬1936AĞÍÇıÖğ½¢Ö÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "42200",
 		attribute_2 = "cannon",
@@ -83525,11 +83525,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42240] = {
-		name = "åŒè”è£…TbtsKC36å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°TbtsKC36Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "åŒè”è£…TbtsKC36å¼150mmä¸»ç‚®ï¼Œ1936Aå‹é©±é€èˆ°ä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª×°TbtsKC36Ê½150mmÖ÷ÅÚ£¬1936AĞÍÇıÖğ½¢Ö÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "42200",
 		attribute_2 = "cannon",
@@ -83696,11 +83696,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42300] = {
-		name = "å•è£…TbtsKC36å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°TbtsKC36Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "å•è£…TbtsKC36å¼150mmä¸»ç‚®ï¼Œ1936Aå‹é©±é€èˆ°ä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "µ¥×°TbtsKC36Ê½150mmÖ÷ÅÚ£¬1936AĞÍÇıÖğ½¢Ö÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 5,
 		icon = "42300",
 		attribute_2 = "cannon",
@@ -83786,11 +83786,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[42340] = {
-		name = "å•è£…TbtsKC36å¼150mmä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "µ¥×°TbtsKC36Ê½150mmÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "åŒè”è£…TbtsKC36å¼150mmä¸»ç‚®ï¼Œ1936Aå‹é©±é€èˆ°ä¸»ç‚®ï¼Œè½»å·¡å’Œéƒ¨åˆ†é©±é€å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª×°TbtsKC36Ê½150mmÖ÷ÅÚ£¬1936AĞÍÇıÖğ½¢Ö÷ÅÚ£¬ÇáÑ²ºÍ²¿·ÖÇıÖğ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "42300",
 		attribute_2 = "cannon",
@@ -83956,11 +83956,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[43000] = {
-		name = "åŒè”è£…203mmSKCä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmSKCÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 1,
-		descrip = "åŒè”è£…203mmSKCä¸»ç‚®ï¼Œå¸Œä½©å°”æµ·å†›ä¸Šå°†çº§é‡å·¡ä¸»ç‚®ï¼Œé‡å·¡å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª×°203mmSKCÖ÷ÅÚ£¬Ï£Åå¶ûº£¾üÉÏ½«¼¶ÖØÑ²Ö÷ÅÚ£¬ÖØÑ²¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "43000",
 		attribute_2 = "cannon",
@@ -84075,11 +84075,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[43020] = {
-		name = "åŒè”è£…203mmSKCä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmSKCÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 2,
-		descrip = "åŒè”è£…203mmSKCä¸»ç‚®ï¼Œå¸Œä½©å°”æµ·å†›ä¸Šå°†çº§é‡å·¡ä¸»ç‚®ï¼Œé‡å·¡å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª×°203mmSKCÖ÷ÅÚ£¬Ï£Åå¶ûº£¾üÉÏ½«¼¶ÖØÑ²Ö÷ÅÚ£¬ÖØÑ²¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "43000",
 		attribute_2 = "cannon",
@@ -84234,11 +84234,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[43040] = {
-		name = "åŒè”è£…203mmSKCä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmSKCÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "åŒè”è£…203mmSKCä¸»ç‚®ï¼Œå¸Œä½©å°”æµ·å†›ä¸Šå°†çº§é‡å·¡ä¸»ç‚®ï¼Œé‡å·¡å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª×°203mmSKCÖ÷ÅÚ£¬Ï£Åå¶ûº£¾üÉÏ½«¼¶ÖØÑ²Ö÷ÅÚ£¬ÖØÑ²¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 45,
 		icon = "43000",
 		attribute_2 = "cannon",
@@ -84426,11 +84426,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[43060] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…203mmSKCä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÊÔ×÷ĞÍÈıÁª×°203mmSKCÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 0,
-		descrip = "åŒè”è£…203mmSKCä¸»ç‚®ï¼Œå¸Œä½©å°”æµ·å†›ä¸Šå°†çº§é‡å·¡ä¸»ç‚®ï¼Œé‡å·¡å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª×°203mmSKCÖ÷ÅÚ£¬Ï£Åå¶ûº£¾üÉÏ½«¼¶ÖØÑ²Ö÷ÅÚ£¬ÖØÑ²¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 45,
 		icon = "43060",
 		attribute_2 = "cannon",
@@ -84618,11 +84618,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[43100] = {
-		name = "ä¸‰è”283mmSKC28ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª283mmSKC28Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 11,
 		tech = 1,
-		descrip = "ä¸‰è”283mmSKC28ä¸»ç‚®ï¼Œå¾·æ„å¿—çº§è£…ç”²èˆ°ä¸»ç‚®ï¼Œä»…å¾·æ„å¿—çº§å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª283mmSKC28Ö÷ÅÚ£¬µÂÒâÖ¾¼¶×°¼×½¢Ö÷ÅÚ£¬½öµÂÒâÖ¾¼¶¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 5,
 		icon = "43100",
 		attribute_2 = "cannon",
@@ -84698,11 +84698,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[43120] = {
-		name = "ä¸‰è”283mmSKC28ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª283mmSKC28Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 11,
 		tech = 2,
-		descrip = "ä¸‰è”283mmSKC28ä¸»ç‚®ï¼Œå¾·æ„å¿—çº§è£…ç”²èˆ°ä¸»ç‚®ï¼Œä»…å¾·æ„å¿—çº§å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª283mmSKC28Ö÷ÅÚ£¬µÂÒâÖ¾¼¶×°¼×½¢Ö÷ÅÚ£¬½öµÂÒâÖ¾¼¶¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "43100",
 		attribute_2 = "cannon",
@@ -84808,11 +84808,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[43140] = {
-		name = "ä¸‰è”283mmSKC28ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª283mmSKC28Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 11,
 		tech = 3,
-		descrip = "ä¸‰è”283mmSKC28ä¸»ç‚®ï¼Œå¾·æ„å¿—çº§è£…ç”²èˆ°ä¸»ç‚®ï¼Œä»…å¾·æ„å¿—çº§å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª283mmSKC28Ö÷ÅÚ£¬µÂÒâÖ¾¼¶×°¼×½¢Ö÷ÅÚ£¬½öµÂÒâÖ¾¼¶¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "43100",
 		attribute_2 = "cannon",
@@ -84969,11 +84969,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[44000] = {
-		name = "ä¸‰è”283mmSKC34ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª283mmSKC34Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "ä¸‰è”283mmSKC34ä¸»ç‚®ï¼Œæ²™æ©éœæ–¯ç‰¹çº§æˆ˜åˆ—å·¡æ´‹èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª283mmSKC34Ö÷ÅÚ£¬É³¶÷»ôË¹ÌØ¼¶Õ½ÁĞÑ²Ñó½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 5,
 		icon = "44000",
 		attribute_2 = "cannon",
@@ -85051,11 +85051,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[44020] = {
-		name = "ä¸‰è”283mmSKC34ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª283mmSKC34Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "ä¸‰è”283mmSKC34ä¸»ç‚®ï¼Œæ²™æ©éœæ–¯ç‰¹çº§æˆ˜åˆ—å·¡æ´‹èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª283mmSKC34Ö÷ÅÚ£¬É³¶÷»ôË¹ÌØ¼¶Õ½ÁĞÑ²Ñó½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "44000",
 		attribute_2 = "cannon",
@@ -85163,11 +85163,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[44040] = {
-		name = "ä¸‰è”283mmSKC34ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª283mmSKC34Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "ä¸‰è”283mmSKC34ä¸»ç‚®ï¼Œæ²™æ©éœæ–¯ç‰¹çº§æˆ˜åˆ—å·¡æ´‹èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª283mmSKC34Ö÷ÅÚ£¬É³¶÷»ôË¹ÌØ¼¶Õ½ÁĞÑ²Ñó½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "44000",
 		attribute_2 = "cannon",
@@ -85326,11 +85326,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[44100] = {
-		name = "åŒè”380mmSKCä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª380mmSKCÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "åŒè”380mmSKCä¸»ç‚®ï¼Œä¿¾æ–¯éº¦çº§æˆ˜åˆ—èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª380mmSKCÖ÷ÅÚ£¬ÙÂË¹Âó¼¶Õ½ÁĞ½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "44100",
 		attribute_2 = "cannon",
@@ -85438,11 +85438,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[44120] = {
-		name = "åŒè”380mmSKCä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª380mmSKCÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "åŒè”380mmSKCä¸»ç‚®ï¼Œä¿¾æ–¯éº¦çº§æˆ˜åˆ—èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª380mmSKCÖ÷ÅÚ£¬ÙÂË¹Âó¼¶Õ½ÁĞ½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "44100",
 		attribute_2 = "cannon",
@@ -85591,11 +85591,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[44140] = {
-		name = "åŒè”380mmSKCä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "Ë«Áª380mmSKCÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "åŒè”380mmSKCä¸»ç‚®ï¼Œä¿¾æ–¯éº¦çº§æˆ˜åˆ—èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "Ë«Áª380mmSKCÖ÷ÅÚ£¬ÙÂË¹Âó¼¶Õ½ÁĞ½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 45,
 		icon = "44100",
 		attribute_2 = "cannon",
@@ -85777,11 +85777,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[44200] = {
-		name = "è¯•ä½œå‹åŒè”è£…406mmSKCä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍË«Áª×°406mmSKCÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "44200",
 		attribute_2 = "cannon",
@@ -85963,11 +85963,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[44300] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…305mmSKC39ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍÈıÁª×°305mmSKC39Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "44300",
 		attribute_2 = "cannon",
@@ -86149,11 +86149,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45000] = {
-		name = "ä¸‰è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "ä¸‰è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ÈıÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 5,
 		icon = "45000",
 		attribute_2 = "torpedo",
@@ -86241,11 +86241,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45020] = {
-		name = "ä¸‰è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "ä¸‰è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ÈıÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 12,
 		icon = "45000",
 		attribute_2 = "torpedo",
@@ -86363,11 +86363,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45040] = {
-		name = "ä¸‰è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÈıÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "ä¸‰è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ÈıÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 25,
 		icon = "45000",
 		attribute_2 = "torpedo",
@@ -86536,11 +86536,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45100] = {
-		name = "å››è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "å››è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ËÄÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 12,
 		icon = "45100",
 		attribute_2 = "torpedo",
@@ -86658,11 +86658,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45120] = {
-		name = "å››è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "å››è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ËÄÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 25,
 		icon = "45100",
 		attribute_2 = "torpedo",
@@ -86820,11 +86820,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45140] = {
-		name = "å››è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ËÄÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "å››è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ËÄÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 45,
 		icon = "45100",
 		attribute_2 = "torpedo",
@@ -87015,11 +87015,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45200] = {
-		name = "äº”è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
-		descrip = "äº”è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ÎåÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 25,
 		icon = "45200",
 		attribute_2 = "torpedo",
@@ -87177,11 +87177,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45220] = {
-		name = "äº”è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 2,
-		descrip = "äº”è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ÎåÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 45,
 		icon = "45200",
 		attribute_2 = "torpedo",
@@ -87339,11 +87339,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45240] = {
-		name = "äº”è”è£…533mmç£æ€§é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "ÎåÁª×°533mm´ÅĞÔÓãÀ×",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 3,
-		descrip = "äº”è”è£…533mmç£æ€§é±¼é›·ï¼Œä¼¯é²å…‹ç§‘æŠ€ç ”å‘çš„ç‰¹æ®Šé±¼é›·ï¼Œè¿ç”¨ç£æ€§å¼•ä¿¡å’Œå£°å¯¼æŠ€æœ¯ï¼Œèƒ½æå¤§çš„æé«˜é±¼é›·çš„å‘½ä¸­ç‡",
+		descrip = "ÎåÁª×°533mm´ÅĞÔÓãÀ×£¬²®Â³¿Ë¿Æ¼¼ÑĞ·¢µÄÌØÊâÓãÀ×£¬ÔËÓÃ´ÅĞÔÒıĞÅºÍÉùµ¼¼¼Êõ£¬ÄÜ¼«´óµÄÌá¸ßÓãÀ×µÄÃüÖĞÂÊ",
 		value_2 = 70,
 		icon = "45200",
 		attribute_2 = "torpedo",
@@ -87534,11 +87534,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45300] = {
-		name = "æ½œè‰‡ç”¨G7aé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃG7aÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "45300",
 		attribute_2 = "torpedo",
@@ -87623,11 +87623,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45320] = {
-		name = "æ½œè‰‡ç”¨G7aé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃG7aÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "45300",
 		attribute_2 = "torpedo",
@@ -87742,11 +87742,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45340] = {
-		name = "æ½œè‰‡ç”¨G7aé±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃG7aÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "45300",
 		attribute_2 = "torpedo",
@@ -87912,11 +87912,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45400] = {
-		name = "æ½œè‰‡ç”¨G7eå£°å¯¼é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃG7eÉùµ¼ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "45400",
 		attribute_2 = "torpedo",
@@ -88031,11 +88031,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45420] = {
-		name = "æ½œè‰‡ç”¨G7eå£°å¯¼é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃG7eÉùµ¼ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "45400",
 		attribute_2 = "torpedo",
@@ -88190,11 +88190,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[45440] = {
-		name = "æ½œè‰‡ç”¨G7eå£°å¯¼é±¼é›·",
-		speciality = "é›·å‡»",
+		name = "Ç±Í§ÓÃG7eÉùµ¼ÓãÀ×",
+		speciality = "À×»÷",
 		type = 13,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "45400",
 		attribute_2 = "torpedo",
@@ -88382,15 +88382,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46000] = {
-		name = "å››è”è£…20mm MGæœºæª",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°20mm MG»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
 		rarity = 1,
-		descrip = "å››è”è£…20mm MGæœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "ËÄÁª×°20mm MG»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 0,
 		icon = "46000",
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -88443,7 +88443,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46001] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 46000,
 		id = 46001,
 		torpedo_ammo = 0,
@@ -88453,7 +88453,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46002] = {
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		base = 46000,
 		id = 46002,
 		torpedo_ammo = 0,
@@ -88463,7 +88463,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46003] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 46000,
 		id = 46003,
 		torpedo_ammo = 0,
@@ -88473,16 +88473,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46020] = {
-		name = "å››è”è£…20mm MGæœºæª",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°20mm MG»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "å››è”è£…20mm MGæœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "ËÄÁª×°20mm MG»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 5,
 		icon = "46000",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -88535,7 +88535,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46021] = {
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		base = 46020,
 		id = 46021,
 		torpedo_ammo = 0,
@@ -88545,7 +88545,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46022] = {
-		damage = "27/è½®",
+		damage = "27/ÂÖ",
 		base = 46020,
 		id = 46022,
 		torpedo_ammo = 0,
@@ -88555,7 +88555,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46023] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 46020,
 		id = 46023,
 		torpedo_ammo = 0,
@@ -88565,16 +88565,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46040] = {
-		name = "å››è”è£…20mm MGæœºæª",
-		speciality = "é˜²ç©º",
+		name = "ËÄÁª×°20mm MG»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "å››è”è£…20mm MGæœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "ËÄÁª×°20mm MG»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 12,
 		icon = "46000",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -88627,7 +88627,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46041] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 46040,
 		id = 46041,
 		torpedo_ammo = 0,
@@ -88637,7 +88637,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46042] = {
-		damage = "30/è½®",
+		damage = "30/ÂÖ",
 		base = 46040,
 		id = 46042,
 		torpedo_ammo = 0,
@@ -88647,7 +88647,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46043] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 46040,
 		id = 46043,
 		torpedo_ammo = 0,
@@ -88657,7 +88657,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46044] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 46040,
 		id = 46044,
 		torpedo_ammo = 0,
@@ -88667,7 +88667,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46045] = {
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		base = 46040,
 		id = 46045,
 		torpedo_ammo = 0,
@@ -88677,7 +88677,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46046] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 46040,
 		id = 46046,
 		torpedo_ammo = 0,
@@ -88687,7 +88687,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46047] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 46040,
 		id = 46047,
 		torpedo_ammo = 0,
@@ -88697,16 +88697,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46060] = {
-		name = "åŒè”è£…88mmSKC32é«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª×°88mmSKC32¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "46060",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -88759,7 +88759,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46061] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 46060,
 		id = 46061,
 		torpedo_ammo = 0,
@@ -88769,7 +88769,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46062] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 46060,
 		id = 46062,
 		torpedo_ammo = 0,
@@ -88779,7 +88779,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46063] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 46060,
 		id = 46063,
 		torpedo_ammo = 0,
@@ -88789,7 +88789,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46064] = {
-		damage = "52/è½®",
+		damage = "52/ÂÖ",
 		base = 46060,
 		id = 46064,
 		torpedo_ammo = 0,
@@ -88799,7 +88799,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46065] = {
-		damage = "58/è½®",
+		damage = "58/ÂÖ",
 		base = 46060,
 		id = 46065,
 		torpedo_ammo = 0,
@@ -88809,7 +88809,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46066] = {
-		damage = "64/è½®",
+		damage = "64/ÂÖ",
 		base = 46060,
 		id = 46066,
 		torpedo_ammo = 0,
@@ -88819,7 +88819,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46067] = {
-		damage = "70/è½®",
+		damage = "70/ÂÖ",
 		base = 46060,
 		id = 46067,
 		torpedo_ammo = 0,
@@ -88829,7 +88829,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46068] = {
-		damage = "76/è½®",
+		damage = "76/ÂÖ",
 		base = 46060,
 		id = 46068,
 		torpedo_ammo = 0,
@@ -88839,7 +88839,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46069] = {
-		damage = "82/è½®",
+		damage = "82/ÂÖ",
 		base = 46060,
 		id = 46069,
 		torpedo_ammo = 0,
@@ -88849,7 +88849,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46070] = {
-		damage = "89/è½®",
+		damage = "89/ÂÖ",
 		base = 46060,
 		id = 46070,
 		torpedo_ammo = 0,
@@ -88860,7 +88860,7 @@ pg.equip_data_statistics = {
 	},
 	[46071] = {
 		anti_siren = 100,
-		damage = "89/è½®",
+		damage = "89/ÂÖ",
 		base = 46060,
 		id = 46071,
 		torpedo_ammo = 0,
@@ -88870,15 +88870,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46100] = {
-		name = "37mmæœºæª",
-		speciality = "é˜²ç©º",
+		name = "37mm»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
 		rarity = 1,
-		descrip = "37mmæœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "37mm»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 0,
 		icon = "46100",
-		damage = "8/è½®",
+		damage = "8/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -88931,7 +88931,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46101] = {
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		base = 46100,
 		id = 46101,
 		torpedo_ammo = 0,
@@ -88941,7 +88941,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46102] = {
-		damage = "10/è½®",
+		damage = "10/ÂÖ",
 		base = 46100,
 		id = 46102,
 		torpedo_ammo = 0,
@@ -88951,7 +88951,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46103] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 46100,
 		id = 46103,
 		torpedo_ammo = 0,
@@ -88961,16 +88961,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46120] = {
-		name = "37mmæœºæª",
-		speciality = "é˜²ç©º",
+		name = "37mm»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "37mmæœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "37mm»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 5,
 		icon = "46100",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "11/è½®",
+		damage = "11/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -89023,7 +89023,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46121] = {
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		base = 46120,
 		id = 46121,
 		torpedo_ammo = 0,
@@ -89033,7 +89033,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46122] = {
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		base = 46120,
 		id = 46122,
 		torpedo_ammo = 0,
@@ -89043,7 +89043,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46123] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 46120,
 		id = 46123,
 		torpedo_ammo = 0,
@@ -89053,16 +89053,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46140] = {
-		name = "37mmæœºæª",
-		speciality = "é˜²ç©º",
+		name = "37mm»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "37mmæœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "37mm»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 12,
 		icon = "46100",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "12/è½®",
+		damage = "12/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -89115,7 +89115,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46141] = {
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		base = 46140,
 		id = 46141,
 		torpedo_ammo = 0,
@@ -89125,7 +89125,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46142] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 46140,
 		id = 46142,
 		torpedo_ammo = 0,
@@ -89135,7 +89135,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46143] = {
-		damage = "18/è½®",
+		damage = "18/ÂÖ",
 		base = 46140,
 		id = 46143,
 		torpedo_ammo = 0,
@@ -89145,7 +89145,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46144] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 46140,
 		id = 46144,
 		torpedo_ammo = 0,
@@ -89155,7 +89155,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46145] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 46140,
 		id = 46145,
 		torpedo_ammo = 0,
@@ -89165,7 +89165,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46146] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 46140,
 		id = 46146,
 		torpedo_ammo = 0,
@@ -89175,7 +89175,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46147] = {
-		damage = "24/è½®",
+		damage = "24/ÂÖ",
 		base = 46140,
 		id = 46147,
 		torpedo_ammo = 0,
@@ -89185,16 +89185,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46200] = {
-		name = "åŒè”37mmæ‰‹æ‹‰æœºæª",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª37mmÊÖÀ­»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "åŒè”37mmæ‰‹æ‹‰æœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª37mmÊÖÀ­»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 5,
 		icon = "46200",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "15/è½®",
+		damage = "15/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -89247,7 +89247,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46201] = {
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		base = 46200,
 		id = 46201,
 		torpedo_ammo = 0,
@@ -89257,7 +89257,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46202] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 46200,
 		id = 46202,
 		torpedo_ammo = 0,
@@ -89267,7 +89267,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46203] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 46200,
 		id = 46203,
 		torpedo_ammo = 0,
@@ -89277,16 +89277,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46220] = {
-		name = "åŒè”37mmæ‰‹æ‹‰æœºæª",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª37mmÊÖÀ­»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "åŒè”37mmæ‰‹æ‹‰æœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª37mmÊÖÀ­»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 12,
 		icon = "46200",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -89339,7 +89339,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46221] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 46220,
 		id = 46221,
 		torpedo_ammo = 0,
@@ -89349,7 +89349,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46222] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 46220,
 		id = 46222,
 		torpedo_ammo = 0,
@@ -89359,7 +89359,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46223] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 46220,
 		id = 46223,
 		torpedo_ammo = 0,
@@ -89369,7 +89369,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46224] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 46220,
 		id = 46224,
 		torpedo_ammo = 0,
@@ -89379,7 +89379,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46225] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 46220,
 		id = 46225,
 		torpedo_ammo = 0,
@@ -89389,7 +89389,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46226] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 46220,
 		id = 46226,
 		torpedo_ammo = 0,
@@ -89399,16 +89399,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46240] = {
-		name = "åŒè”37mmæ‰‹æ‹‰æœºæª",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª37mmÊÖÀ­»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "åŒè”37mmæ‰‹æ‹‰æœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª37mmÊÖÀ­»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 25,
 		icon = "46200",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -89461,7 +89461,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46241] = {
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		base = 46240,
 		id = 46241,
 		torpedo_ammo = 0,
@@ -89471,7 +89471,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46242] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 46240,
 		id = 46242,
 		torpedo_ammo = 0,
@@ -89481,7 +89481,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46243] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 46240,
 		id = 46243,
 		torpedo_ammo = 0,
@@ -89491,7 +89491,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46244] = {
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 46240,
 		id = 46244,
 		torpedo_ammo = 0,
@@ -89501,7 +89501,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46245] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 46240,
 		id = 46245,
 		torpedo_ammo = 0,
@@ -89511,7 +89511,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46246] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 46240,
 		id = 46246,
 		torpedo_ammo = 0,
@@ -89521,7 +89521,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46247] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 46240,
 		id = 46247,
 		torpedo_ammo = 0,
@@ -89531,7 +89531,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46248] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 46240,
 		id = 46248,
 		torpedo_ammo = 0,
@@ -89541,7 +89541,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46249] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 46240,
 		id = 46249,
 		torpedo_ammo = 0,
@@ -89551,7 +89551,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46250] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 46240,
 		id = 46250,
 		torpedo_ammo = 0,
@@ -89562,7 +89562,7 @@ pg.equip_data_statistics = {
 	},
 	[46251] = {
 		anti_siren = 100,
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 46240,
 		id = 46251,
 		torpedo_ammo = 0,
@@ -89572,16 +89572,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46260] = {
-		name = "åŒè”37mm Flak M43æœºæª",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª37mm Flak M43»úÇ¹",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "46260",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -89634,7 +89634,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46261] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 46260,
 		id = 46261,
 		torpedo_ammo = 0,
@@ -89644,7 +89644,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46262] = {
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 46260,
 		id = 46262,
 		torpedo_ammo = 0,
@@ -89654,7 +89654,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46263] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 46260,
 		id = 46263,
 		torpedo_ammo = 0,
@@ -89664,7 +89664,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46264] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 46260,
 		id = 46264,
 		torpedo_ammo = 0,
@@ -89674,7 +89674,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46265] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 46260,
 		id = 46265,
 		torpedo_ammo = 0,
@@ -89684,7 +89684,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46266] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 46260,
 		id = 46266,
 		torpedo_ammo = 0,
@@ -89694,7 +89694,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46267] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 46260,
 		id = 46267,
 		torpedo_ammo = 0,
@@ -89704,7 +89704,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46268] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 46260,
 		id = 46268,
 		torpedo_ammo = 0,
@@ -89714,7 +89714,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46269] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 46260,
 		id = 46269,
 		torpedo_ammo = 0,
@@ -89724,7 +89724,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46270] = {
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 46260,
 		id = 46270,
 		torpedo_ammo = 0,
@@ -89735,7 +89735,7 @@ pg.equip_data_statistics = {
 	},
 	[46271] = {
 		anti_siren = 100,
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 46260,
 		id = 46271,
 		torpedo_ammo = 0,
@@ -89745,16 +89745,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46300] = {
-		name = "åŒè”105mmSKCé«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª105mmSKC¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "åŒè”105mmSKCé«˜ç‚®ï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª105mmSKC¸ßÅÚ£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 12,
 		icon = "46300",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -89807,7 +89807,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46301] = {
-		damage = "39/è½®",
+		damage = "39/ÂÖ",
 		base = 46300,
 		id = 46301,
 		torpedo_ammo = 0,
@@ -89817,7 +89817,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46302] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 46300,
 		id = 46302,
 		torpedo_ammo = 0,
@@ -89827,7 +89827,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46303] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 46300,
 		id = 46303,
 		torpedo_ammo = 0,
@@ -89837,7 +89837,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46304] = {
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 46300,
 		id = 46304,
 		torpedo_ammo = 0,
@@ -89847,7 +89847,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46305] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 46300,
 		id = 46305,
 		torpedo_ammo = 0,
@@ -89857,7 +89857,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46306] = {
-		damage = "68/è½®",
+		damage = "68/ÂÖ",
 		base = 46300,
 		id = 46306,
 		torpedo_ammo = 0,
@@ -89867,16 +89867,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46320] = {
-		name = "åŒè”105mmSKCé«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª105mmSKC¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "åŒè”105mmSKCé«˜ç‚®ï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª105mmSKC¸ßÅÚ£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 25,
 		icon = "46300",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -89929,7 +89929,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46321] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 46320,
 		id = 46321,
 		torpedo_ammo = 0,
@@ -89939,7 +89939,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46322] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 46320,
 		id = 46322,
 		torpedo_ammo = 0,
@@ -89949,7 +89949,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46323] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 46320,
 		id = 46323,
 		torpedo_ammo = 0,
@@ -89959,7 +89959,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46324] = {
-		damage = "65/è½®",
+		damage = "65/ÂÖ",
 		base = 46320,
 		id = 46324,
 		torpedo_ammo = 0,
@@ -89969,7 +89969,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46325] = {
-		damage = "71/è½®",
+		damage = "71/ÂÖ",
 		base = 46320,
 		id = 46325,
 		torpedo_ammo = 0,
@@ -89979,7 +89979,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46326] = {
-		damage = "77/è½®",
+		damage = "77/ÂÖ",
 		base = 46320,
 		id = 46326,
 		torpedo_ammo = 0,
@@ -89989,7 +89989,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46327] = {
-		damage = "83/è½®",
+		damage = "83/ÂÖ",
 		base = 46320,
 		id = 46327,
 		torpedo_ammo = 0,
@@ -89999,7 +89999,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46328] = {
-		damage = "89/è½®",
+		damage = "89/ÂÖ",
 		base = 46320,
 		id = 46328,
 		torpedo_ammo = 0,
@@ -90009,7 +90009,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46329] = {
-		damage = "95/è½®",
+		damage = "95/ÂÖ",
 		base = 46320,
 		id = 46329,
 		torpedo_ammo = 0,
@@ -90019,7 +90019,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46330] = {
-		damage = "102/è½®",
+		damage = "102/ÂÖ",
 		base = 46320,
 		id = 46330,
 		torpedo_ammo = 0,
@@ -90029,16 +90029,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46340] = {
-		name = "åŒè”105mmSKCé«˜ç‚®",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª105mmSKC¸ßÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "åŒè”105mmSKCé«˜ç‚®ï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª105mmSKC¸ßÅÚ£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 45,
 		icon = "46300",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "49/è½®",
+		damage = "49/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -90091,7 +90091,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46341] = {
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 46340,
 		id = 46341,
 		torpedo_ammo = 0,
@@ -90101,7 +90101,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46342] = {
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 46340,
 		id = 46342,
 		torpedo_ammo = 0,
@@ -90111,7 +90111,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46343] = {
-		damage = "70/è½®",
+		damage = "70/ÂÖ",
 		base = 46340,
 		id = 46343,
 		torpedo_ammo = 0,
@@ -90121,7 +90121,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46344] = {
-		damage = "77/è½®",
+		damage = "77/ÂÖ",
 		base = 46340,
 		id = 46344,
 		torpedo_ammo = 0,
@@ -90131,7 +90131,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46345] = {
-		damage = "84/è½®",
+		damage = "84/ÂÖ",
 		base = 46340,
 		id = 46345,
 		torpedo_ammo = 0,
@@ -90141,7 +90141,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46346] = {
-		damage = "91/è½®",
+		damage = "91/ÂÖ",
 		base = 46340,
 		id = 46346,
 		torpedo_ammo = 0,
@@ -90151,7 +90151,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46347] = {
-		damage = "98/è½®",
+		damage = "98/ÂÖ",
 		base = 46340,
 		id = 46347,
 		torpedo_ammo = 0,
@@ -90161,7 +90161,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46348] = {
-		damage = "106/è½®",
+		damage = "106/ÂÖ",
 		base = 46340,
 		id = 46348,
 		torpedo_ammo = 0,
@@ -90171,7 +90171,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46349] = {
-		damage = "114/è½®",
+		damage = "114/ÂÖ",
 		base = 46340,
 		id = 46349,
 		torpedo_ammo = 0,
@@ -90181,7 +90181,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46350] = {
-		damage = "122/è½®",
+		damage = "122/ÂÖ",
 		base = 46340,
 		id = 46350,
 		torpedo_ammo = 0,
@@ -90192,7 +90192,7 @@ pg.equip_data_statistics = {
 	},
 	[46351] = {
 		anti_siren = 100,
-		damage = "122/è½®",
+		damage = "122/ÂÖ",
 		base = 46340,
 		id = 46351,
 		torpedo_ammo = 0,
@@ -90203,7 +90203,7 @@ pg.equip_data_statistics = {
 	},
 	[46352] = {
 		anti_siren = 200,
-		damage = "122/è½®",
+		damage = "122/ÂÖ",
 		base = 46340,
 		id = 46352,
 		torpedo_ammo = 0,
@@ -90214,7 +90214,7 @@ pg.equip_data_statistics = {
 	},
 	[46353] = {
 		anti_siren = 300,
-		damage = "122/è½®",
+		damage = "122/ÂÖ",
 		base = 46340,
 		id = 46353,
 		torpedo_ammo = 0,
@@ -90224,16 +90224,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46360] = {
-		name = "åŒè”105mmSKCé«˜ç‚®æ”¹è¿›å‹",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª105mmSKC¸ßÅÚ¸Ä½øĞÍ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "46360",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "55/è½®",
+		damage = "55/ÂÖ",
 		nationality = 4,
 		ammo = 5,
 		value_3 = 0,
@@ -90286,7 +90286,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46361] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 46360,
 		id = 46361,
 		torpedo_ammo = 0,
@@ -90296,7 +90296,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46362] = {
-		damage = "69/è½®",
+		damage = "69/ÂÖ",
 		base = 46360,
 		id = 46362,
 		torpedo_ammo = 0,
@@ -90306,7 +90306,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46363] = {
-		damage = "76/è½®",
+		damage = "76/ÂÖ",
 		base = 46360,
 		id = 46363,
 		torpedo_ammo = 0,
@@ -90316,7 +90316,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46364] = {
-		damage = "83/è½®",
+		damage = "83/ÂÖ",
 		base = 46360,
 		id = 46364,
 		torpedo_ammo = 0,
@@ -90326,7 +90326,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46365] = {
-		damage = "90/è½®",
+		damage = "90/ÂÖ",
 		base = 46360,
 		id = 46365,
 		torpedo_ammo = 0,
@@ -90336,7 +90336,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46366] = {
-		damage = "97/è½®",
+		damage = "97/ÂÖ",
 		base = 46360,
 		id = 46366,
 		torpedo_ammo = 0,
@@ -90346,7 +90346,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46367] = {
-		damage = "104/è½®",
+		damage = "104/ÂÖ",
 		base = 46360,
 		id = 46367,
 		torpedo_ammo = 0,
@@ -90356,7 +90356,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46368] = {
-		damage = "112/è½®",
+		damage = "112/ÂÖ",
 		base = 46360,
 		id = 46368,
 		torpedo_ammo = 0,
@@ -90366,7 +90366,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46369] = {
-		damage = "120/è½®",
+		damage = "120/ÂÖ",
 		base = 46360,
 		id = 46369,
 		torpedo_ammo = 0,
@@ -90376,7 +90376,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[46370] = {
-		damage = "128/è½®",
+		damage = "128/ÂÖ",
 		base = 46360,
 		id = 46370,
 		torpedo_ammo = 0,
@@ -90387,7 +90387,7 @@ pg.equip_data_statistics = {
 	},
 	[46371] = {
 		anti_siren = 100,
-		damage = "128/è½®",
+		damage = "128/ÂÖ",
 		base = 46360,
 		id = 46371,
 		torpedo_ammo = 0,
@@ -90398,7 +90398,7 @@ pg.equip_data_statistics = {
 	},
 	[46372] = {
 		anti_siren = 200,
-		damage = "128/è½®",
+		damage = "128/ÂÖ",
 		base = 46360,
 		id = 46372,
 		torpedo_ammo = 0,
@@ -90409,7 +90409,7 @@ pg.equip_data_statistics = {
 	},
 	[46373] = {
 		anti_siren = 300,
-		damage = "128/è½®",
+		damage = "128/ÂÖ",
 		base = 46360,
 		id = 46373,
 		torpedo_ammo = 0,
@@ -90419,12 +90419,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[47000] = {
-		name = "BF-109Tèˆ°è½½æˆ˜æ–—æœº",
+		name = "BF-109T½¢ÔØÕ½¶·»ú",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 2,
 		tech = 1,
-		descrip = "BF-109çš„èˆ°è½½ç”¨ç‰ˆæœ¬ï¼Œé“è¡€å…¬å›½çš„è€ç‰Œæˆ˜æ–—æœº",
+		descrip = "BF-109µÄ½¢ÔØÓÃ°æ±¾£¬ÌúÑª¹«¹úµÄÀÏÅÆÕ½¶·»ú",
 		value_2 = 5,
 		icon = "47000",
 		attribute_2 = "air",
@@ -90532,12 +90532,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[47020] = {
-		name = "BF-109Tèˆ°è½½æˆ˜æ–—æœº",
+		name = "BF-109T½¢ÔØÕ½¶·»ú",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 2,
-		descrip = "BF-109çš„èˆ°è½½ç”¨ç‰ˆæœ¬ï¼Œé“è¡€å…¬å›½çš„è€ç‰Œæˆ˜æ–—æœº",
+		descrip = "BF-109µÄ½¢ÔØÓÃ°æ±¾£¬ÌúÑª¹«¹úµÄÀÏÅÆÕ½¶·»ú",
 		value_2 = 12,
 		icon = "47000",
 		attribute_2 = "air",
@@ -90705,12 +90705,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[47040] = {
-		name = "BF-109Tèˆ°è½½æˆ˜æ–—æœº",
+		name = "BF-109T½¢ÔØÕ½¶·»ú",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 3,
-		descrip = "BF-109çš„èˆ°è½½ç”¨ç‰ˆæœ¬ï¼Œé“è¡€å…¬å›½çš„è€ç‰Œæˆ˜æ–—æœº",
+		descrip = "BF-109µÄ½¢ÔØÓÃ°æ±¾£¬ÌúÑª¹«¹úµÄÀÏÅÆÕ½¶·»ú",
 		value_2 = 25,
 		icon = "47000",
 		attribute_2 = "air",
@@ -90979,12 +90979,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[47060] = {
-		name = "Ar-197èˆ°è½½æˆ˜æ–—æœº",
+		name = "Ar-197½¢ÔØÕ½¶·»ú",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "47060",
 		attribute_2 = "air",
@@ -91204,12 +91204,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[47080] = {
-		name = "è¯•ä½œå‹èˆ°è½½FW-190 A-5",
+		name = "ÊÔ×÷ĞÍ½¢ÔØFW-190 A-5",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "47080",
 		attribute_2 = "air",
@@ -91526,12 +91526,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[47100] = {
-		name = "Me-155Aèˆ°è½½æˆ˜æ–—æœº",
+		name = "Me-155A½¢ÔØÕ½¶·»ú",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 1,
-		descrip = "ä¸“é—¨è®¾è®¡ç»™é½æŸæ—ä¼¯çˆµçš„æˆ˜æ–—æœºï¼Œæ˜¯é“è¡€å…¬å›½çš„æ–°é”æœºå‹",
+		descrip = "×¨ÃÅÉè¼Æ¸øÆë°ØÁÖ²®¾ôµÄÕ½¶·»ú£¬ÊÇÌúÑª¹«¹úµÄĞÂÈñ»úĞÍ",
 		value_2 = 12,
 		icon = "47100",
 		attribute_2 = "air",
@@ -91699,12 +91699,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[47120] = {
-		name = "Me-155Aèˆ°è½½æˆ˜æ–—æœº",
+		name = "Me-155A½¢ÔØÕ½¶·»ú",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 4,
 		tech = 2,
-		descrip = "ä¸“é—¨è®¾è®¡ç»™é½æŸæ—ä¼¯çˆµçš„æˆ˜æ–—æœºï¼Œæ˜¯é“è¡€å…¬å›½çš„æ–°é”æœºå‹",
+		descrip = "×¨ÃÅÉè¼Æ¸øÆë°ØÁÖ²®¾ôµÄÕ½¶·»ú£¬ÊÇÌúÑª¹«¹úµÄĞÂÈñ»úĞÍ",
 		value_2 = 25,
 		icon = "47100",
 		attribute_2 = "air",
@@ -91952,12 +91952,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[47140] = {
-		name = "Me-155Aèˆ°è½½æˆ˜æ–—æœº",
+		name = "Me-155A½¢ÔØÕ½¶·»ú",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 5,
 		tech = 3,
-		descrip = "ä¸“é—¨è®¾è®¡ç»™é½æŸæ—ä¼¯çˆµçš„æˆ˜æ–—æœºï¼Œæ˜¯é“è¡€å…¬å›½çš„æ–°é”æœºå‹",
+		descrip = "×¨ÃÅÉè¼Æ¸øÆë°ØÁÖ²®¾ôµÄÕ½¶·»ú£¬ÊÇÌúÑª¹«¹úµÄĞÂÈñ»úĞÍ",
 		value_2 = 45,
 		icon = "47100",
 		attribute_2 = "air",
@@ -92268,12 +92268,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[48000] = {
-		name = "Ar-195èˆ°è½½é±¼é›·æœº",
+		name = "Ar-195½¢ÔØÓãÀ×»ú",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "48000",
 		attribute_2 = "air",
@@ -92453,12 +92453,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[48020] = {
-		name = "Fi-167èˆ°è½½é±¼é›·æœº",
+		name = "Fi-167½¢ÔØÓãÀ×»ú",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "48020",
 		attribute_2 = "air",
@@ -92717,10 +92717,10 @@ pg.equip_data_statistics = {
 	[48040] = {
 		name = "Ju-87 D-4",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 5,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "48040",
 		attribute_2 = "air",
@@ -93017,12 +93017,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[49000] = {
-		name = "Ju-87Cä¿¯å†²è½°ç‚¸æœº",
+		name = "Ju-87C¸©³åºäÕ¨»ú",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 2,
 		tech = 1,
-		descrip = "Ju-87çš„èˆ°è½½ç”¨ç‰ˆæœ¬ï¼Œæ˜¯é“è¡€å…¬å›½æœ€æ³›ç”¨çš„è½°ç‚¸æœºå‹å·ï¼Œé€šç§°â€æ–¯å›¾å¡â€",
+		descrip = "Ju-87µÄ½¢ÔØÓÃ°æ±¾£¬ÊÇÌúÑª¹«¹ú×î·ºÓÃµÄºäÕ¨»úĞÍºÅ£¬Í¨³Æ¡±Ë¹Í¼¿¨¡±",
 		value_2 = 5,
 		icon = "49000",
 		attribute_2 = "air",
@@ -93142,12 +93142,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[49020] = {
-		name = "Ju-87Cä¿¯å†²è½°ç‚¸æœº",
+		name = "Ju-87C¸©³åºäÕ¨»ú",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 2,
-		descrip = "Ju-87çš„èˆ°è½½ç”¨ç‰ˆæœ¬ï¼Œæ˜¯é“è¡€å…¬å›½æœ€æ³›ç”¨çš„è½°ç‚¸æœºå‹å·ï¼Œé€šç§°â€æ–¯å›¾å¡â€",
+		descrip = "Ju-87µÄ½¢ÔØÓÃ°æ±¾£¬ÊÇÌúÑª¹«¹ú×î·ºÓÃµÄºäÕ¨»úĞÍºÅ£¬Í¨³Æ¡±Ë¹Í¼¿¨¡±",
 		value_2 = 12,
 		icon = "49000",
 		attribute_2 = "air",
@@ -93336,12 +93336,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[49040] = {
-		name = "Ju-87Cä¿¯å†²è½°ç‚¸æœº",
+		name = "Ju-87C¸©³åºäÕ¨»ú",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 4,
 		tech = 3,
-		descrip = "Ju-87çš„èˆ°è½½ç”¨ç‰ˆæœ¬ï¼Œæ˜¯é“è¡€å…¬å›½æœ€æ³›ç”¨çš„è½°ç‚¸æœºå‹å·ï¼Œé€šç§°â€æ–¯å›¾å¡â€",
+		descrip = "Ju-87µÄ½¢ÔØÓÃ°æ±¾£¬ÊÇÌúÑª¹«¹ú×î·ºÓÃµÄºäÕ¨»úĞÍºÅ£¬Í¨³Æ¡±Ë¹Í¼¿¨¡±",
 		value_2 = 25,
 		icon = "49000",
 		attribute_2 = "air",
@@ -93646,12 +93646,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[49060] = {
-		name = "He-50bèˆ°è½½è½°ç‚¸æœº",
+		name = "He-50b½¢ÔØºäÕ¨»ú",
 		type = 9,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		rarity = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "49060",
 		attribute_2 = "air",
@@ -93831,15 +93831,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[54010] = {
-		name = "è½»èˆªä¸“ç”¨ç©ºä¸­æ”¯æ´æŠ€èƒ½-è½°ç‚¸Lv1",
+		name = "Çáº½×¨ÓÃ¿ÕÖĞÖ§Ô®¼¼ÄÜ-ºäÕ¨Lv1",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -93859,7 +93859,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[54011] = {
-		name = "è½»èˆªä¸“ç”¨ç©ºä¸­æ”¯æ´æŠ€èƒ½-è½°ç‚¸Lv2",
+		name = "Çáº½×¨ÓÃ¿ÕÖĞÖ§Ô®¼¼ÄÜ-ºäÕ¨Lv2",
 		base = 54010,
 		id = 54011,
 		torpedo_ammo = 0,
@@ -93869,7 +93869,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[54012] = {
-		name = "è½»èˆªä¸“ç”¨ç©ºä¸­æ”¯æ´æŠ€èƒ½-è½°ç‚¸Lv3",
+		name = "Çáº½×¨ÓÃ¿ÕÖĞÖ§Ô®¼¼ÄÜ-ºäÕ¨Lv3",
 		base = 54010,
 		id = 54012,
 		torpedo_ammo = 0,
@@ -93879,7 +93879,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[54013] = {
-		name = "æ­£èˆªä¸“ç”¨ç©ºä¸­æ”¯æ´æŠ€èƒ½-è½°ç‚¸Lv1",
+		name = "Õıº½×¨ÓÃ¿ÕÖĞÖ§Ô®¼¼ÄÜ-ºäÕ¨Lv1",
 		base = 54010,
 		id = 54013,
 		torpedo_ammo = 0,
@@ -93889,7 +93889,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[54014] = {
-		name = "æ­£èˆªä¸“ç”¨ç©ºä¸­æ”¯æ´æŠ€èƒ½-è½°ç‚¸Lv2",
+		name = "Õıº½×¨ÓÃ¿ÕÖĞÖ§Ô®¼¼ÄÜ-ºäÕ¨Lv2",
 		base = 54010,
 		id = 54014,
 		torpedo_ammo = 0,
@@ -93899,7 +93899,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[54015] = {
-		name = "æ­£èˆªä¸“ç”¨ç©ºä¸­æ”¯æ´æŠ€èƒ½-è½°ç‚¸Lv3",
+		name = "Õıº½×¨ÓÃ¿ÕÖĞÖ§Ô®¼¼ÄÜ-ºäÕ¨Lv3",
 		base = 54010,
 		id = 54015,
 		torpedo_ammo = 0,
@@ -93909,15 +93909,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60001] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é•¿å²›I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-³¤µºI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -93937,7 +93937,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60002] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é•¿å²›II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-³¤µºII",
 		base = 60001,
 		id = 60002,
 		torpedo_ammo = 0,
@@ -93947,7 +93947,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60003] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é•¿å²›III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-³¤µºIII",
 		base = 60001,
 		id = 60003,
 		torpedo_ammo = 0,
@@ -93957,15 +93957,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60011] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åšæ ¼I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-²©¸ñI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -93985,7 +93985,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60012] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åšæ ¼II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-²©¸ñII",
 		base = 60011,
 		id = 60012,
 		torpedo_ammo = 0,
@@ -93995,7 +93995,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60013] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åšæ ¼III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-²©¸ñIII",
 		base = 60011,
 		id = 60013,
 		torpedo_ammo = 0,
@@ -94005,15 +94005,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60021] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…°åˆ©I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-À¼ÀûI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94033,7 +94033,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60022] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…°åˆ©II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-À¼ÀûII",
 		base = 60021,
 		id = 60022,
 		torpedo_ammo = 0,
@@ -94043,7 +94043,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60023] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…°åˆ©III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-À¼ÀûIII",
 		base = 60021,
 		id = 60023,
 		torpedo_ammo = 0,
@@ -94053,15 +94053,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60031] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åˆ—å…‹æ˜Ÿæ•¦I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÁĞ¿ËĞÇ¶ØI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94081,7 +94081,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60032] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åˆ—å…‹æ˜Ÿæ•¦II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÁĞ¿ËĞÇ¶ØII",
 		base = 60031,
 		id = 60032,
 		torpedo_ammo = 0,
@@ -94091,7 +94091,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60033] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åˆ—å…‹æ˜Ÿæ•¦III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÁĞ¿ËĞÇ¶ØIII",
 		base = 60031,
 		id = 60033,
 		torpedo_ammo = 0,
@@ -94101,15 +94101,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60041] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¨æ‹‰æ‰˜åŠ I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÈøÀ­ÍĞ¼ÓI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94129,7 +94129,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60042] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¨æ‹‰æ‰˜åŠ II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÈøÀ­ÍĞ¼ÓII",
 		base = 60041,
 		id = 60042,
 		torpedo_ammo = 0,
@@ -94139,7 +94139,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60043] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¨æ‹‰æ‰˜åŠ III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÈøÀ­ÍĞ¼ÓIII",
 		base = 60041,
 		id = 60043,
 		torpedo_ammo = 0,
@@ -94149,15 +94149,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60051] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çªå‡»è€…I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Í»»÷ÕßI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94177,7 +94177,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60052] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çªå‡»è€…II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Í»»÷ÕßII",
 		base = 60051,
 		id = 60052,
 		torpedo_ammo = 0,
@@ -94187,7 +94187,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60053] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çªå‡»è€…III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Í»»÷ÕßIII",
 		base = 60051,
 		id = 60053,
 		torpedo_ammo = 0,
@@ -94197,15 +94197,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60061] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çº¦å…‹åŸI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ô¼¿Ë³ÇI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94225,7 +94225,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60062] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çº¦å…‹åŸII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ô¼¿Ë³ÇII",
 		base = 60061,
 		id = 60062,
 		torpedo_ammo = 0,
@@ -94235,7 +94235,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60063] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çº¦å…‹åŸIII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ô¼¿Ë³ÇIII",
 		base = 60061,
 		id = 60063,
 		torpedo_ammo = 0,
@@ -94245,15 +94245,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60071] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¼ä¸šI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÆóÒµI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94273,7 +94273,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60072] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¼ä¸šII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÆóÒµII",
 		base = 60071,
 		id = 60072,
 		torpedo_ammo = 0,
@@ -94283,7 +94283,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60073] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¼ä¸šIII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÆóÒµIII",
 		base = 60071,
 		id = 60073,
 		torpedo_ammo = 0,
@@ -94293,15 +94293,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60081] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§é»„èœ‚I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´ó»Æ·äI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94321,7 +94321,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60082] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§é»„èœ‚II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´ó»Æ·äII",
 		base = 60081,
 		id = 60082,
 		torpedo_ammo = 0,
@@ -94331,7 +94331,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60083] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§é»„èœ‚III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´ó»Æ·äIII",
 		base = 60081,
 		id = 60083,
 		torpedo_ammo = 0,
@@ -94341,15 +94341,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60091] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç«æŠ€ç¥I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¾º¼¼ÉñI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94369,7 +94369,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60092] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç«æŠ€ç¥II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¾º¼¼ÉñII",
 		base = 60091,
 		id = 60092,
 		torpedo_ammo = 0,
@@ -94379,15 +94379,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60101] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çš‡å®¶æ–¹èˆŸI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-»Ê¼Ò·½ÖÛI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94407,7 +94407,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60102] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çš‡å®¶æ–¹èˆŸII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-»Ê¼Ò·½ÖÛII",
 		base = 60101,
 		id = 60102,
 		torpedo_ammo = 0,
@@ -94417,7 +94417,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60103] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çš‡å®¶æ–¹èˆŸIII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-»Ê¼Ò·½ÖÛIII",
 		base = 60101,
 		id = 60103,
 		torpedo_ammo = 0,
@@ -94427,15 +94427,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60111] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…‰è¾‰I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¹â»ÔI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94455,7 +94455,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60112] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…‰è¾‰II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¹â»ÔII",
 		base = 60111,
 		id = 60112,
 		torpedo_ammo = 0,
@@ -94465,7 +94465,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60113] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…‰è¾‰III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¹â»ÔIII",
 		base = 60111,
 		id = 60113,
 		torpedo_ammo = 0,
@@ -94475,15 +94475,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60121] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¥¥å‡¤I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ïé·ïI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94503,7 +94503,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60122] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¥¥å‡¤II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ïé·ïII",
 		base = 60121,
 		id = 60122,
 		torpedo_ammo = 0,
@@ -94513,7 +94513,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60123] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¥¥å‡¤III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ïé·ïIII",
 		base = 60121,
 		id = 60123,
 		torpedo_ammo = 0,
@@ -94523,15 +94523,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60131] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èµ¤åŸI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-³à³ÇI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94551,7 +94551,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60132] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èµ¤åŸII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-³à³ÇII",
 		base = 60131,
 		id = 60132,
 		torpedo_ammo = 0,
@@ -94561,7 +94561,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60133] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èµ¤åŸII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-³à³ÇII",
 		base = 60131,
 		id = 60133,
 		torpedo_ammo = 0,
@@ -94571,15 +94571,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60141] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŠ è´ºI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¼ÓºØI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94599,7 +94599,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60142] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŠ è´ºII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¼ÓºØII",
 		base = 60141,
 		id = 60142,
 		torpedo_ammo = 0,
@@ -94609,7 +94609,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60143] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŠ è´ºII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¼ÓºØII",
 		base = 60141,
 		id = 60143,
 		torpedo_ammo = 0,
@@ -94619,15 +94619,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60151] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è‹é¾™I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-²ÔÁúI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94647,7 +94647,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60152] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è‹é¾™II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-²ÔÁúII",
 		base = 60151,
 		id = 60152,
 		torpedo_ammo = 0,
@@ -94657,7 +94657,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60153] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è‹é¾™II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-²ÔÁúII",
 		base = 60151,
 		id = 60153,
 		torpedo_ammo = 0,
@@ -94667,15 +94667,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60161] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é£é¾™I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ÉÁúI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94695,7 +94695,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60162] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é£é¾™II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ÉÁúII",
 		base = 60161,
 		id = 60162,
 		torpedo_ammo = 0,
@@ -94705,7 +94705,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60163] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é£é¾™II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ÉÁúII",
 		base = 60161,
 		id = 60163,
 		torpedo_ammo = 0,
@@ -94715,15 +94715,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60171] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‹¬è§’å…½I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¶À½ÇÊŞI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94743,7 +94743,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60172] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‹¬è§’å…½II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¶À½ÇÊŞII",
 		base = 60171,
 		id = 60172,
 		torpedo_ammo = 0,
@@ -94753,7 +94753,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60173] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‹¬è§’å…½III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¶À½ÇÊŞIII",
 		base = 60171,
 		id = 60173,
 		torpedo_ammo = 0,
@@ -94763,15 +94763,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60181] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å‡¤ç¿”I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ïÏèI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94791,7 +94791,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60182] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å‡¤ç¿”II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ïÏèII",
 		base = 60181,
 		id = 60182,
 		torpedo_ammo = 0,
@@ -94801,7 +94801,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60183] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å‡¤ç¿”III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ïÏèIII",
 		base = 60181,
 		id = 60183,
 		torpedo_ammo = 0,
@@ -94811,15 +94811,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60191] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é½æŸæ—ä¼¯çˆµI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Æë°ØÁÖ²®¾ôI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94839,7 +94839,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60192] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é½æŸæ—ä¼¯çˆµII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Æë°ØÁÖ²®¾ôII",
 		base = 60191,
 		id = 60192,
 		torpedo_ammo = 0,
@@ -94849,7 +94849,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60193] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é½æŸæ—ä¼¯çˆµII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Æë°ØÁÖ²®¾ôII",
 		base = 60191,
 		id = 60193,
 		torpedo_ammo = 0,
@@ -94859,15 +94859,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60201] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¿”é¹¤I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ïèº×I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94887,7 +94887,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60202] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¿”é¹¤II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ïèº×II",
 		base = 60201,
 		id = 60202,
 		torpedo_ammo = 0,
@@ -94897,7 +94897,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60203] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¿”é¹¤III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ïèº×III",
 		base = 60201,
 		id = 60203,
 		torpedo_ammo = 0,
@@ -94907,15 +94907,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60211] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‘é¹¤I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Èğº×I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94935,7 +94935,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60212] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‘é¹¤II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Èğº×II",
 		base = 60211,
 		id = 60212,
 		torpedo_ammo = 0,
@@ -94945,7 +94945,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60213] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‘é¹¤III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Èğº×III",
 		base = 60211,
 		id = 60213,
 		torpedo_ammo = 0,
@@ -94955,15 +94955,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60221] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…‰è£I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¹âÈÙI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -94983,7 +94983,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60222] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…‰è£II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¹âÈÙII",
 		base = 60221,
 		id = 60222,
 		torpedo_ammo = 0,
@@ -94993,7 +94993,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60223] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å…‰è£III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¹âÈÙIII",
 		base = 60221,
 		id = 60223,
 		torpedo_ammo = 0,
@@ -95003,15 +95003,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60231] = {
-		name = "çƒˆç„°å´©è¢­",
+		name = "ÁÒÑæ±ÀÏ®",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95042,15 +95042,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60232] = {
-		name = "è•¾ä¸ç‹‚èˆ",
+		name = "ÀÙË¿¿ñÎè",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95081,15 +95081,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60233] = {
-		name = "ä¼—ç¥ä¹‹æ€’Â·é›ªå´©é›·éœ‡",
+		name = "ÖÚÉñÖ®Å­¡¤Ñ©±ÀÀ×Õğ",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95120,15 +95120,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60234] = {
-		name = "é›ªé£å¼¹å¹•å±•ç¤ºI",
+		name = "Ñ©·çµ¯Ä»Õ¹Ê¾I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95148,7 +95148,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60235] = {
-		name = "é›ªé£å¼¹å¹•å±•ç¤ºII",
+		name = "Ñ©·çµ¯Ä»Õ¹Ê¾II",
 		base = 60234,
 		id = 60235,
 		torpedo_ammo = 0,
@@ -95158,15 +95158,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60236] = {
-		name = "å¤•ç«‹å¼¹å¹•å±•ç¤ºI",
+		name = "Ï¦Á¢µ¯Ä»Õ¹Ê¾I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95186,7 +95186,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60237] = {
-		name = "å¤•ç«‹å¼¹å¹•å±•ç¤ºII",
+		name = "Ï¦Á¢µ¯Ä»Õ¹Ê¾II",
 		base = 60236,
 		id = 60237,
 		torpedo_ammo = 0,
@@ -95196,15 +95196,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60238] = {
-		name = "æ±Ÿé£å¼¹å¹•å±•ç¤ºI",
+		name = "½­·çµ¯Ä»Õ¹Ê¾I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95224,7 +95224,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60239] = {
-		name = "æ±Ÿé£å¼¹å¹•å±•ç¤ºII",
+		name = "½­·çµ¯Ä»Õ¹Ê¾II",
 		base = 60238,
 		id = 60239,
 		torpedo_ammo = 0,
@@ -95234,15 +95234,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60241] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è´éœ²I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±´Â¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95262,7 +95262,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60242] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è´éœ²II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±´Â¶II",
 		base = 60241,
 		id = 60242,
 		torpedo_ammo = 0,
@@ -95272,7 +95272,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60243] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è´éœ²III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±´Â¶III",
 		base = 60241,
 		id = 60243,
 		torpedo_ammo = 0,
@@ -95282,15 +95282,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60251] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¿¡ç»¿ä¹‹å¿ƒI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ôäÂÌÖ®ĞÄI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95310,7 +95310,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60252] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¿¡ç»¿ä¹‹å¿ƒII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ôäÂÌÖ®ĞÄII",
 		base = 60251,
 		id = 60252,
 		torpedo_ammo = 0,
@@ -95320,7 +95320,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60253] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç¿¡ç»¿ä¹‹å¿ƒIII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ôäÂÌÖ®ĞÄIII",
 		base = 60251,
 		id = 60253,
 		torpedo_ammo = 0,
@@ -95330,15 +95330,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60261] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èƒ¡èœ‚I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ºú·äI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95358,7 +95358,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60262] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èƒ¡èœ‚II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ºú·äII",
 		base = 60261,
 		id = 60262,
 		torpedo_ammo = 0,
@@ -95368,7 +95368,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60263] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èƒ¡èœ‚III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ºú·äIII",
 		base = 60261,
 		id = 60263,
 		torpedo_ammo = 0,
@@ -95378,15 +95378,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60271] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èƒœåˆ©I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ê¤ÀûI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95406,7 +95406,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60272] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èƒœåˆ©II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ê¤ÀûII",
 		base = 60271,
 		id = 60272,
 		torpedo_ammo = 0,
@@ -95416,7 +95416,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60273] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èƒœåˆ©III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ê¤ÀûIII",
 		base = 60271,
 		id = 60273,
 		torpedo_ammo = 0,
@@ -95426,15 +95426,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60281] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é£é¹°I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ÉÓ¥I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95454,7 +95454,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60282] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é£é¹°II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ÉÓ¥II",
 		base = 60281,
 		id = 60282,
 		torpedo_ammo = 0,
@@ -95464,7 +95464,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60283] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é£é¹°III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-·ÉÓ¥III",
 		base = 60281,
 		id = 60283,
 		torpedo_ammo = 0,
@@ -95474,15 +95474,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60291] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-éš¼é¹°I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-öÀÓ¥I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95502,7 +95502,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60292] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-éš¼é¹°II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-öÀÓ¥II",
 		base = 60291,
 		id = 60292,
 		torpedo_ammo = 0,
@@ -95512,7 +95512,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60293] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-éš¼é¹°III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-öÀÓ¥III",
 		base = 60291,
 		id = 60293,
 		torpedo_ammo = 0,
@@ -95522,15 +95522,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60301] = {
-		name = "Z46å¼¹å¹•å±•ç¤ºI",
+		name = "Z46µ¯Ä»Õ¹Ê¾I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95550,7 +95550,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60302] = {
-		name = "Z46å¼¹å¹•å±•ç¤ºII",
+		name = "Z46µ¯Ä»Õ¹Ê¾II",
 		base = 60301,
 		id = 60302,
 		torpedo_ammo = 0,
@@ -95560,15 +95560,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60311] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŠäººé©¬I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°ëÈËÂíI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95588,7 +95588,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60312] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŠäººé©¬II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°ëÈËÂíII",
 		base = 60311,
 		id = 60312,
 		torpedo_ammo = 0,
@@ -95598,7 +95598,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60313] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŠäººé©¬III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°ëÈËÂíIII",
 		base = 60311,
 		id = 60313,
 		torpedo_ammo = 0,
@@ -95608,15 +95608,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60321] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŸƒå¡å…‹æ–¯I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°£Èû¿ËË¹I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95636,7 +95636,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60322] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŸƒå¡å…‹æ–¯II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°£Èû¿ËË¹II",
 		base = 60321,
 		id = 60322,
 		torpedo_ammo = 0,
@@ -95646,7 +95646,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60323] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åŸƒå¡å…‹æ–¯II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°£Èû¿ËË¹II",
 		base = 60321,
 		id = 60323,
 		torpedo_ammo = 0,
@@ -95656,15 +95656,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60331] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§å‡¤I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´ó·ïI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95684,7 +95684,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60332] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§å‡¤II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´ó·ïII",
 		base = 60331,
 		id = 60332,
 		torpedo_ammo = 0,
@@ -95694,7 +95694,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60333] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§å‡¤III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´ó·ïIII",
 		base = 60331,
 		id = 60333,
 		torpedo_ammo = 0,
@@ -95704,15 +95704,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60341] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èŠ™ç±³éœ²éœ²I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ü½Ã×Â¶Â¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95732,7 +95732,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60342] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èŠ™ç±³éœ²éœ²II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ü½Ã×Â¶Â¶II",
 		base = 60341,
 		id = 60342,
 		torpedo_ammo = 0,
@@ -95742,7 +95742,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60343] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-èŠ™ç±³éœ²éœ²III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ü½Ã×Â¶Â¶III",
 		base = 60341,
 		id = 60343,
 		torpedo_ammo = 0,
@@ -95752,15 +95752,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60351] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¹Œç’éœ²I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÎÚè´Â¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95780,7 +95780,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60352] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¹Œç’éœ²II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÎÚè´Â¶II",
 		base = 60351,
 		id = 60352,
 		torpedo_ammo = 0,
@@ -95790,7 +95790,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60353] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¹Œç’éœ²III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÎÚè´Â¶III",
 		base = 60351,
 		id = 60353,
 		torpedo_ammo = 0,
@@ -95800,15 +95800,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60361] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¨æ‹‰å¨œI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÈøÀ­ÄÈI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95828,7 +95828,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60362] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¨æ‹‰å¨œII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÈøÀ­ÄÈII",
 		base = 60361,
 		id = 60362,
 		torpedo_ammo = 0,
@@ -95838,7 +95838,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60363] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¨æ‹‰å¨œIII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÈøÀ­ÄÈIII",
 		base = 60361,
 		id = 60363,
 		torpedo_ammo = 0,
@@ -95848,15 +95848,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60371] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¾™éª§I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÁúæøI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95876,7 +95876,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60372] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¾™éª§II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÁúæøII",
 		base = 60371,
 		id = 60372,
 		torpedo_ammo = 0,
@@ -95886,7 +95886,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60373] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¾™éª§III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÁúæøIII",
 		base = 60371,
 		id = 60373,
 		torpedo_ammo = 0,
@@ -95896,15 +95896,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60381] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¿½èµ¶è€…I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-×·¸ÏÕßI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95924,7 +95924,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60382] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¿½èµ¶è€…II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-×·¸ÏÕßII",
 		base = 60381,
 		id = 60382,
 		torpedo_ammo = 0,
@@ -95934,7 +95934,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60383] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è¿½èµ¶è€…III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-×·¸ÏÕßIII",
 		base = 60381,
 		id = 60383,
 		torpedo_ammo = 0,
@@ -95944,15 +95944,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60391] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‹¬ç«‹I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¶ÀÁ¢I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -95972,7 +95972,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60392] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‹¬ç«‹II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¶ÀÁ¢II",
 		base = 60391,
 		id = 60392,
 		torpedo_ammo = 0,
@@ -95982,7 +95982,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60393] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç‹¬ç«‹III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¶ÀÁ¢III",
 		base = 60391,
 		id = 60393,
 		torpedo_ammo = 0,
@@ -95992,15 +95992,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60401] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çˆ±é…±I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°®½´I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96020,7 +96020,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60402] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çˆ±é…±II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°®½´II",
 		base = 60401,
 		id = 60402,
 		torpedo_ammo = 0,
@@ -96030,7 +96030,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60403] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-çˆ±é…±III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°®½´III",
 		base = 60401,
 		id = 60403,
 		torpedo_ammo = 0,
@@ -96040,15 +96040,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60411] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å°é½æŸæ—I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ğ¡Æë°ØÁÖI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96068,7 +96068,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60412] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å°é½æŸæ—II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ğ¡Æë°ØÁÖII",
 		base = 60411,
 		id = 60412,
 		torpedo_ammo = 0,
@@ -96078,7 +96078,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60413] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å°é½æŸæ—III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ğ¡Æë°ØÁÖIII",
 		base = 60411,
 		id = 60413,
 		torpedo_ammo = 0,
@@ -96088,15 +96088,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60421] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¯ç•I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¿ÉÎ·I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96116,7 +96116,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60422] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¯ç•II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¿ÉÎ·II",
 		base = 60421,
 		id = 60422,
 		torpedo_ammo = 0,
@@ -96126,7 +96126,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60423] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¯ç•III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¿ÉÎ·III",
 		base = 60421,
 		id = 60423,
 		torpedo_ammo = 0,
@@ -96136,15 +96136,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60431] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-æ—¶ä¹ƒç©ºI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ê±ÄË¿ÕI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96164,7 +96164,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60432] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-æ—¶ä¹ƒç©ºII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ê±ÄË¿ÕII",
 		base = 60431,
 		id = 60432,
 		torpedo_ammo = 0,
@@ -96174,7 +96174,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60433] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-æ—¶ä¹ƒç©ºIII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ê±ÄË¿ÕIII",
 		base = 60431,
 		id = 60433,
 		torpedo_ammo = 0,
@@ -96184,15 +96184,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60441] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç´«å’²è¯—éŸ³I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-×Ï†DÊ«ÒôI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96212,7 +96212,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60442] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç´«å’²è¯—éŸ³II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-×Ï†DÊ«ÒôII",
 		base = 60441,
 		id = 60442,
 		torpedo_ammo = 0,
@@ -96222,7 +96222,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60443] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç´«å’²è¯—éŸ³III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-×Ï†DÊ«ÒôIII",
 		base = 60441,
 		id = 60443,
 		torpedo_ammo = 0,
@@ -96232,15 +96232,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60451] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§ç¥æ¾ªI",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´óÉñÎI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96260,7 +96260,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60452] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§ç¥æ¾ªII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´óÉñÎII",
 		base = 60451,
 		id = 60452,
 		torpedo_ammo = 0,
@@ -96270,7 +96270,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60453] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¤§ç¥æ¾ªIII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-´óÉñÎIII",
 		base = 60451,
 		id = 60453,
 		torpedo_ammo = 0,
@@ -96280,15 +96280,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60461] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ç™½ä¸Šå¹é›ªIII",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-°×ÉÏ´µÑ©III",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96308,15 +96308,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60471] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¾™å‡¤I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Áú·ïI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96336,7 +96336,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60472] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¾™å‡¤II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Áú·ïII",
 		base = 60471,
 		id = 60472,
 		torpedo_ammo = 0,
@@ -96346,7 +96346,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60473] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¾™å‡¤III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Áú·ïIII",
 		base = 60471,
 		id = 60473,
 		torpedo_ammo = 0,
@@ -96356,15 +96356,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60491] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¡è¨å¸ƒå…°å¡I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¿¨Èø²¼À¼¿¨I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96384,7 +96384,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60492] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¡è¨å¸ƒå…°å¡II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¿¨Èø²¼À¼¿¨II",
 		base = 60491,
 		id = 60492,
 		torpedo_ammo = 0,
@@ -96394,7 +96394,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60493] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¡è¨å¸ƒå…°å¡III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-¿¨Èø²¼À¼¿¨III",
 		base = 60491,
 		id = 60493,
 		torpedo_ammo = 0,
@@ -96404,15 +96404,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60511] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è´äºšæ©I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±´ÑÇ¶÷I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96432,7 +96432,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60512] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è´äºšæ©II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±´ÑÇ¶÷II",
 		base = 60511,
 		id = 60512,
 		torpedo_ammo = 0,
@@ -96442,7 +96442,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60513] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è´äºšæ©III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±´ÑÇ¶÷III",
 		base = 60511,
 		id = 60513,
 		torpedo_ammo = 0,
@@ -96452,15 +96452,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60521] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è‹±ä»™åº§I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ó¢ÏÉ×ùI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96480,7 +96480,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60522] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è‹±ä»™åº§II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ó¢ÏÉ×ùII",
 		base = 60521,
 		id = 60522,
 		torpedo_ammo = 0,
@@ -96490,7 +96490,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60523] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-è‹±ä»™åº§III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ó¢ÏÉ×ùIII",
 		base = 60521,
 		id = 60523,
 		torpedo_ammo = 0,
@@ -96500,15 +96500,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60531] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¹°I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ó¥I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96528,7 +96528,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60532] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¹°II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ó¥II",
 		base = 60531,
 		id = 60532,
 		torpedo_ammo = 0,
@@ -96538,7 +96538,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60533] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-é¹°III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ó¥III",
 		base = 60531,
 		id = 60533,
 		torpedo_ammo = 0,
@@ -96548,15 +96548,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60541] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åƒå²I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ç§ËêI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96576,7 +96576,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60542] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åƒå²II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ç§ËêII",
 		base = 60541,
 		id = 60542,
 		torpedo_ammo = 0,
@@ -96586,7 +96586,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60543] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åƒå²III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ç§ËêIII",
 		base = 60541,
 		id = 60543,
 		torpedo_ammo = 0,
@@ -96596,15 +96596,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60551] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åƒä»£ç”°I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ç§´úÌïI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96624,7 +96624,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60552] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åƒä»£ç”°II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ç§´úÌïII",
 		base = 60551,
 		id = 60552,
 		torpedo_ammo = 0,
@@ -96634,7 +96634,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60553] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-åƒä»£ç”°III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-Ç§´úÌïIII",
 		base = 60551,
 		id = 60553,
 		torpedo_ammo = 0,
@@ -96644,15 +96644,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60561] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¿¡æµ“I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ĞÅÅ¨I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96672,7 +96672,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60562] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¿¡æµ“II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ĞÅÅ¨II",
 		base = 60561,
 		id = 60562,
 		torpedo_ammo = 0,
@@ -96682,7 +96682,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60563] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-ä¿¡æµ“III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ĞÅÅ¨III",
 		base = 60561,
 		id = 60563,
 		torpedo_ammo = 0,
@@ -96692,15 +96692,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60591] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¨æ‚‰II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÍşÏ¤II",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96720,7 +96720,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60592] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¨æ‚‰III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÍşÏ¤III",
 		base = 60591,
 		id = 60592,
 		torpedo_ammo = 0,
@@ -96730,7 +96730,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60593] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å¨æ‚‰III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-ÍşÏ¤III",
 		base = 60591,
 		id = 60593,
 		torpedo_ammo = 0,
@@ -96740,15 +96740,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60601] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å½¼å¾—å²ç‰¹æ‹‰å¡I",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±ËµÃÊ·ÌØÀ­ÈûI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "èˆªæ¯ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "º½Ä¸¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96768,7 +96768,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[60602] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å½¼å¾—å²ç‰¹æ‹‰å¡II",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±ËµÃÊ·ÌØÀ­ÈûII",
 		base = 60601,
 		id = 60602,
 		torpedo_ammo = 0,
@@ -96778,7 +96778,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[60603] = {
-		name = "èˆªç©ºæ”»å‡»å±•ç¤º-å½¼å¾—å²ç‰¹æ‹‰å¡III",
+		name = "º½¿Õ¹¥»÷Õ¹Ê¾-±ËµÃÊ·ÌØÀ­ÈûIII",
 		base = 60601,
 		id = 60603,
 		torpedo_ammo = 0,
@@ -96788,15 +96788,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[61007] = {
-		name = "çº¦å…‹åŸæŠ€èƒ½éšæœºæ‰«å°„æµ·é¢LV1",
+		name = "Ô¼¿Ë³Ç¼¼ÄÜËæ»úÉ¨Éäº£ÃæLV1",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96827,7 +96827,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61008] = {
-		name = "çº¦å…‹åŸæŠ€èƒ½éšæœºæ‰«å°„æµ·é¢LV2",
+		name = "Ô¼¿Ë³Ç¼¼ÄÜËæ»úÉ¨Éäº£ÃæLV2",
 		base = 61007,
 		id = 61008,
 		torpedo_ammo = 0,
@@ -96837,7 +96837,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[61009] = {
-		name = "çº¦å…‹åŸæŠ€èƒ½éšæœºæ‰«å°„æµ·é¢LV3",
+		name = "Ô¼¿Ë³Ç¼¼ÄÜËæ»úÉ¨Éäº£ÃæLV3",
 		base = 61007,
 		id = 61009,
 		torpedo_ammo = 0,
@@ -96847,15 +96847,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[61010] = {
-		name = "çš‡å®¶æ–¹èˆŸæŠ€èƒ½LV1",
+		name = "»Ê¼Ò·½ÖÛ¼¼ÄÜLV1",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96886,7 +96886,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61011] = {
-		name = "çš‡å®¶æ–¹èˆŸæŠ€èƒ½LV2",
+		name = "»Ê¼Ò·½ÖÛ¼¼ÄÜLV2",
 		base = 61010,
 		id = 61011,
 		torpedo_ammo = 0,
@@ -96896,7 +96896,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[61012] = {
-		name = "çš‡å®¶æ–¹èˆŸæŠ€èƒ½LV3",
+		name = "»Ê¼Ò·½ÖÛ¼¼ÄÜLV3",
 		base = 61010,
 		id = 61012,
 		torpedo_ammo = 0,
@@ -96906,15 +96906,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[61031] = {
-		name = "åå§Šå¦¹å±•ç¤º",
+		name = "Ê®æ¢ÃÃÕ¹Ê¾",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96945,15 +96945,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61041] = {
-		name = "å¤•æ˜Ÿå±•ç¤º",
+		name = "Ï¦ĞÇÕ¹Ê¾",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -96984,15 +96984,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61051] = {
-		name = "ç™¾åˆæ ¹1æ®µå±•ç¤º",
+		name = "°ÙºÏ¸ù1¶ÎÕ¹Ê¾",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 5,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97022,15 +97022,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61052] = {
-		name = "ç™¾åˆæ ¹2æ®µå±•ç¤º",
+		name = "°ÙºÏ¸ù2¶ÎÕ¹Ê¾",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 5,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97060,15 +97060,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61053] = {
-		name = "ç™¾åˆæ ¹3æ®µå±•ç¤º",
+		name = "°ÙºÏ¸ù3¶ÎÕ¹Ê¾",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 5,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97098,15 +97098,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61054] = {
-		name = "ç™¾åˆæ ¹4æ®µå±•ç¤º",
+		name = "°ÙºÏ¸ù4¶ÎÕ¹Ê¾",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 2,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•å±•ç¤ºç”¨",
+		descrip = "¼¼ÄÜµ¯Ä»Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97130,15 +97130,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61501] = {
-		name = "è½°ç‚¸æœºå¤–è§‚é¢„è§ˆé£æœº",
+		name = "ºäÕ¨»úÍâ¹ÛÔ¤ÀÀ·É»ú",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "å¤–è§‚ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "Íâ¹Û¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97158,15 +97158,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61503] = {
-		name = "é±¼é›·æœºå¤–è§‚é¢„è§ˆé£æœº",
+		name = "ÓãÀ×»úÍâ¹ÛÔ¤ÀÀ·É»ú",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "å¤–è§‚ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "Íâ¹Û¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97186,15 +97186,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61504] = {
-		name = "é±¼é›·æœºå¤–è§‚é¢„è§ˆé±¼é›·",
+		name = "ÓãÀ×»úÍâ¹ÛÔ¤ÀÀÓãÀ×",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "å¤–è§‚ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "Íâ¹Û¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97214,15 +97214,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[61505] = {
-		name = "æˆ˜æ–—æœºå¤–è§‚é¢„è§ˆé£æœº",
+		name = "Õ½¶·»úÍâ¹ÛÔ¤ÀÀ·É»ú",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 99,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "å¤–è§‚ç©ºè¢­å±•ç¤ºç”¨",
+		descrip = "Íâ¹Û¿ÕÏ®Õ¹Ê¾ÓÃ",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97242,15 +97242,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[66200] = {
-		name = "æå°”æ¯”èŒ¨ç£æ€§é±¼é›·",
+		name = "Ìá¶û±È´Ä´ÅĞÔÓãÀ×",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97281,15 +97281,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[66220] = {
-		name = "æ²™æ©éœæ–¯ç‰¹çº§é±¼é›·",
+		name = "É³¶÷»ôË¹ÌØ¼¶ÓãÀ×",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97320,15 +97320,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70011] = {
-		name = "å…¨å¼¹å‘å°„-æ³•æ‹‰æ ¼ç‰¹çº§I",
+		name = "È«µ¯·¢Éä-·¨À­¸ñÌØ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97359,7 +97359,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70012] = {
-		name = "å…¨å¼¹å‘å°„-æ³•æ‹‰æ ¼ç‰¹çº§II",
+		name = "È«µ¯·¢Éä-·¨À­¸ñÌØ¼¶II",
 		base = 70011,
 		id = 70012,
 		torpedo_ammo = 0,
@@ -97369,15 +97369,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70021] = {
-		name = "å…¨å¼¹å‘å°„-é©¬æ±‰çº§I",
+		name = "È«µ¯·¢Éä-Âíºº¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97408,7 +97408,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70022] = {
-		name = "å…¨å¼¹å‘å°„-é©¬æ±‰çº§II",
+		name = "È«µ¯·¢Éä-Âíºº¼¶II",
 		base = 70021,
 		id = 70022,
 		torpedo_ammo = 0,
@@ -97418,15 +97418,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70031] = {
-		name = "å…¨å¼¹å‘å°„-æ ¼é‡Œå¾·åˆ©çº§I",
+		name = "È«µ¯·¢Éä-¸ñÀïµÂÀû¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97457,7 +97457,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70032] = {
-		name = "å…¨å¼¹å‘å°„-æ ¼é‡Œå¾·åˆ©çº§II",
+		name = "È«µ¯·¢Éä-¸ñÀïµÂÀû¼¶II",
 		base = 70031,
 		id = 70032,
 		torpedo_ammo = 0,
@@ -97467,15 +97467,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70041] = {
-		name = "å…¨å¼¹å‘å°„-å¼—è±å½»çº§I",
+		name = "È«µ¯·¢Éä-¸¥À³³¹¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97506,7 +97506,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70042] = {
-		name = "å…¨å¼¹å‘å°„-å¼—è±å½»çº§II",
+		name = "È«µ¯·¢Éä-¸¥À³³¹¼¶II",
 		base = 70041,
 		id = 70042,
 		torpedo_ammo = 0,
@@ -97516,15 +97516,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70051] = {
-		name = "å…¨å¼¹å‘å°„-è¥¿å§†æ–¯çº§I",
+		name = "È«µ¯·¢Éä-Î÷Ä·Ë¹¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97555,7 +97555,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70052] = {
-		name = "å…¨å¼¹å‘å°„-è¥¿å§†æ–¯çº§II",
+		name = "È«µ¯·¢Éä-Î÷Ä·Ë¹¼¶II",
 		base = 70051,
 		id = 70052,
 		torpedo_ammo = 0,
@@ -97565,15 +97565,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70061] = {
-		name = "å…¨å¼¹å‘å°„-æœ¬æ£®çº§I",
+		name = "È«µ¯·¢Éä-±¾É­¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97604,7 +97604,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70062] = {
-		name = "å…¨å¼¹å‘å°„-æœ¬æ£®çº§II",
+		name = "È«µ¯·¢Éä-±¾É­¼¶II",
 		base = 70061,
 		id = 70062,
 		torpedo_ammo = 0,
@@ -97614,15 +97614,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70071] = {
-		name = "å…¨å¼¹å‘å°„-åŸºæ—çº§I",
+		name = "È«µ¯·¢Éä-»ùÁÖ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97653,7 +97653,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70072] = {
-		name = "å…¨å¼¹å‘å°„-åŸºæ—çº§II",
+		name = "È«µ¯·¢Éä-»ùÁÖ¼¶II",
 		base = 70071,
 		id = 70072,
 		torpedo_ammo = 0,
@@ -97663,15 +97663,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70081] = {
-		name = "å…¨å¼¹å‘å°„-è‰¾ä¼¦Â·è¨å§†é‚£çº§I",
+		name = "È«µ¯·¢Éä-°¬Â×¡¤ÈøÄ·ÄÇ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97702,7 +97702,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70082] = {
-		name = "å…¨å¼¹å‘å°„-è‰¾ä¼¦Â·è¨å§†é‚£çº§II",
+		name = "È«µ¯·¢Éä-°¬Â×¡¤ÈøÄ·ÄÇ¼¶II",
 		base = 70081,
 		id = 70082,
 		torpedo_ammo = 0,
@@ -97712,15 +97712,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70111] = {
-		name = "å…¨å¼¹å‘å°„-å¥¥é©¬å“ˆçº§I",
+		name = "È«µ¯·¢Éä-°ÂÂí¹ş¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97751,7 +97751,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70112] = {
-		name = "å…¨å¼¹å‘å°„-å¥¥é©¬å“ˆçº§II",
+		name = "È«µ¯·¢Éä-°ÂÂí¹ş¼¶II",
 		base = 70111,
 		id = 70112,
 		torpedo_ammo = 0,
@@ -97761,15 +97761,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70121] = {
-		name = "å…¨å¼¹å‘å°„-å¸ƒé²å…‹æ—çº§I",
+		name = "È«µ¯·¢Éä-²¼Â³¿ËÁÖ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97800,7 +97800,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70122] = {
-		name = "å…¨å¼¹å‘å°„-å¸ƒé²å…‹æ—çº§II",
+		name = "È«µ¯·¢Éä-²¼Â³¿ËÁÖ¼¶II",
 		base = 70121,
 		id = 70122,
 		torpedo_ammo = 0,
@@ -97810,15 +97810,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70131] = {
-		name = "å…¨å¼¹å‘å°„-äºšç‰¹å…°å¤§çº§I",
+		name = "È«µ¯·¢Éä-ÑÇÌØÀ¼´ó¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97849,7 +97849,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70132] = {
-		name = "å…¨å¼¹å‘å°„-äºšç‰¹å…°å¤§çº§II",
+		name = "È«µ¯·¢Éä-ÑÇÌØÀ¼´ó¼¶II",
 		base = 70131,
 		id = 70132,
 		torpedo_ammo = 0,
@@ -97859,15 +97859,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70141] = {
-		name = "å…¨å¼¹å‘å°„-å…‹åˆ©å¤«å…°çº§I",
+		name = "È«µ¯·¢Éä-¿ËÀû·òÀ¼¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97898,7 +97898,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70142] = {
-		name = "å…¨å¼¹å‘å°„-å…‹åˆ©å¤«å…°çº§II",
+		name = "È«µ¯·¢Éä-¿ËÀû·òÀ¼¼¶II",
 		base = 70141,
 		id = 70142,
 		torpedo_ammo = 0,
@@ -97908,15 +97908,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70211] = {
-		name = "å…¨å¼¹å‘å°„-å½­è¨ç§‘æ‹‰çº§I",
+		name = "È«µ¯·¢Éä-ÅíÈø¿ÆÀ­¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97947,7 +97947,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70212] = {
-		name = "å…¨å¼¹å‘å°„-å½­è¨ç§‘æ‹‰çº§II",
+		name = "È«µ¯·¢Éä-ÅíÈø¿ÆÀ­¼¶II",
 		base = 70211,
 		id = 70212,
 		torpedo_ammo = 0,
@@ -97957,15 +97957,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70221] = {
-		name = "å…¨å¼¹å‘å°„-åŒ—å®‰æ™®é¡¿çº§I",
+		name = "È«µ¯·¢Éä-±±°²ÆÕ¶Ù¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -97996,7 +97996,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70222] = {
-		name = "å…¨å¼¹å‘å°„-åŒ—å®‰æ™®é¡¿çº§II",
+		name = "È«µ¯·¢Éä-±±°²ÆÕ¶Ù¼¶II",
 		base = 70221,
 		id = 70222,
 		torpedo_ammo = 0,
@@ -98006,15 +98006,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70231] = {
-		name = "å…¨å¼¹å‘å°„-æ³¢ç‰¹å…°çº§I",
+		name = "È«µ¯·¢Éä-²¨ÌØÀ¼¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98045,7 +98045,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70232] = {
-		name = "å…¨å¼¹å‘å°„-æ³¢ç‰¹å…°çº§II",
+		name = "È«µ¯·¢Éä-²¨ÌØÀ¼¼¶II",
 		base = 70231,
 		id = 70232,
 		torpedo_ammo = 0,
@@ -98055,15 +98055,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70241] = {
-		name = "å…¨å¼¹å‘å°„-æ–°å¥¥å°”è‰¯çº§I",
+		name = "È«µ¯·¢Éä-ĞÂ°Â¶ûÁ¼¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98094,7 +98094,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70242] = {
-		name = "å…¨å¼¹å‘å°„-æ–°å¥¥å°”è‰¯çº§II",
+		name = "È«µ¯·¢Éä-ĞÂ°Â¶ûÁ¼¼¶II",
 		base = 70241,
 		id = 70242,
 		torpedo_ammo = 0,
@@ -98104,15 +98104,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70251] = {
-		name = "å…¨å¼¹å‘å°„-å¨å¥‡å¡”I",
+		name = "È«µ¯·¢Éä-ÍşÆæËşI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98143,7 +98143,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70252] = {
-		name = "å…¨å¼¹å‘å°„-å¨å¥‡å¡”II",
+		name = "È«µ¯·¢Éä-ÍşÆæËşII",
 		base = 70251,
 		id = 70252,
 		torpedo_ammo = 0,
@@ -98153,15 +98153,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70261] = {
-		name = "å…¨å¼¹å‘å°„-å·´å°”çš„æ‘©çº§I",
+		name = "È«µ¯·¢Éä-°Í¶ûµÄÄ¦¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98192,7 +98192,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70262] = {
-		name = "å…¨å¼¹å‘å°„-å·´å°”çš„æ‘©çº§II",
+		name = "È«µ¯·¢Éä-°Í¶ûµÄÄ¦¼¶II",
 		base = 70261,
 		id = 70262,
 		torpedo_ammo = 0,
@@ -98202,15 +98202,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70271] = {
-		name = "å…¨å¼¹å‘å°„-å¾—æ¢…å› çº§I",
+		name = "È«µ¯·¢Éä-µÃÃ·Òò¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98241,7 +98241,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70272] = {
-		name = "å…¨å¼¹å‘å°„-å¾—æ¢…å› çº§II",
+		name = "È«µ¯·¢Éä-µÃÃ·Òò¼¶II",
 		base = 70271,
 		id = 70272,
 		torpedo_ammo = 0,
@@ -98251,15 +98251,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[70311] = {
-		name = "å…¨å¼¹å‘å°„-çŒ«é²¨çº§I",
+		name = "È«µ¯·¢Éä-Ã¨öè¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98290,7 +98290,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[70312] = {
-		name = "å…¨å¼¹å‘å°„-çŒ«é²¨çº§II",
+		name = "È«µ¯·¢Éä-Ã¨öè¼¶II",
 		base = 70311,
 		id = 70312,
 		torpedo_ammo = 0,
@@ -98300,15 +98300,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71011] = {
-		name = "å…¨å¼¹å‘å°„-Açº§I",
+		name = "È«µ¯·¢Éä-A¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98339,7 +98339,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71012] = {
-		name = "å…¨å¼¹å‘å°„-Açº§II",
+		name = "È«µ¯·¢Éä-A¼¶II",
 		base = 71011,
 		id = 71012,
 		torpedo_ammo = 0,
@@ -98349,15 +98349,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71021] = {
-		name = "å…¨å¼¹å‘å°„-Bçº§I",
+		name = "È«µ¯·¢Éä-B¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98388,7 +98388,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71022] = {
-		name = "å…¨å¼¹å‘å°„-Bçº§II",
+		name = "È«µ¯·¢Éä-B¼¶II",
 		base = 71021,
 		id = 71022,
 		torpedo_ammo = 0,
@@ -98398,15 +98398,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71031] = {
-		name = "å…¨å¼¹å‘å°„-Cçº§I",
+		name = "È«µ¯·¢Éä-C¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98437,7 +98437,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71032] = {
-		name = "å…¨å¼¹å‘å°„-Cçº§II",
+		name = "È«µ¯·¢Éä-C¼¶II",
 		base = 71031,
 		id = 71032,
 		torpedo_ammo = 0,
@@ -98447,15 +98447,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71041] = {
-		name = "å…¨å¼¹å‘å°„-Fçº§I",
+		name = "È«µ¯·¢Éä-F¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98486,7 +98486,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71042] = {
-		name = "å…¨å¼¹å‘å°„-Fçº§II",
+		name = "È«µ¯·¢Éä-F¼¶II",
 		base = 71041,
 		id = 71042,
 		torpedo_ammo = 0,
@@ -98496,15 +98496,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71051] = {
-		name = "å…¨å¼¹å‘å°„-Gçº§I",
+		name = "È«µ¯·¢Éä-G¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98535,7 +98535,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71052] = {
-		name = "å…¨å¼¹å‘å°„-Gçº§II",
+		name = "È«µ¯·¢Éä-G¼¶II",
 		base = 71051,
 		id = 71052,
 		torpedo_ammo = 0,
@@ -98545,15 +98545,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71061] = {
-		name = "å…¨å¼¹å‘å°„-Hçº§I",
+		name = "È«µ¯·¢Éä-H¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98584,7 +98584,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71062] = {
-		name = "å…¨å¼¹å‘å°„-Hçº§II",
+		name = "È«µ¯·¢Éä-H¼¶II",
 		base = 71061,
 		id = 71062,
 		torpedo_ammo = 0,
@@ -98594,15 +98594,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71026] = {
-		name = "å…¨å¼¹å‘å°„-Içº§I",
+		name = "È«µ¯·¢Éä-I¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98633,7 +98633,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71027] = {
-		name = "å…¨å¼¹å‘å°„-Içº§II",
+		name = "È«µ¯·¢Éä-I¼¶II",
 		base = 71026,
 		id = 71027,
 		torpedo_ammo = 0,
@@ -98643,15 +98643,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71071] = {
-		name = "å…¨å¼¹å‘å°„-Jçº§I",
+		name = "È«µ¯·¢Éä-J¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98682,7 +98682,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71072] = {
-		name = "å…¨å¼¹å‘å°„-Jçº§II",
+		name = "È«µ¯·¢Éä-J¼¶II",
 		base = 71071,
 		id = 71072,
 		torpedo_ammo = 0,
@@ -98692,15 +98692,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71081] = {
-		name = "å…¨å¼¹å‘å°„-Mçº§I",
+		name = "È«µ¯·¢Éä-M¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98731,7 +98731,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71082] = {
-		name = "å…¨å¼¹å‘å°„-Mçº§II",
+		name = "È«µ¯·¢Éä-M¼¶II",
 		base = 71081,
 		id = 71082,
 		torpedo_ammo = 0,
@@ -98741,15 +98741,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71091] = {
-		name = "å…¨å¼¹å‘å°„-Eçº§I",
+		name = "È«µ¯·¢Éä-E¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98780,7 +98780,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71092] = {
-		name = "å…¨å¼¹å‘å°„-Eçº§II",
+		name = "È«µ¯·¢Éä-E¼¶II",
 		base = 71091,
 		id = 71092,
 		torpedo_ammo = 0,
@@ -98790,15 +98790,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71016] = {
-		name = "å…¨å¼¹å‘å°„-éƒ¨æ—çº§I",
+		name = "È«µ¯·¢Éä-²¿×å¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98829,7 +98829,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71017] = {
-		name = "å…¨å¼¹å‘å°„-éƒ¨æ—çº§II",
+		name = "È«µ¯·¢Éä-²¿×å¼¶II",
 		base = 71016,
 		id = 71017,
 		torpedo_ammo = 0,
@@ -98839,15 +98839,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71111] = {
-		name = "å…¨å¼¹å‘å°„-åˆ©å®‰å¾—çº§I",
+		name = "È«µ¯·¢Éä-Àû°²µÃ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98878,7 +98878,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71112] = {
-		name = "å…¨å¼¹å‘å°„-åˆ©å®‰å¾—çº§II",
+		name = "È«µ¯·¢Éä-Àû°²µÃ¼¶II",
 		base = 71111,
 		id = 71112,
 		torpedo_ammo = 0,
@@ -98888,15 +98888,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71121] = {
-		name = "å…¨å¼¹å‘å°„-é»›æœµçº§I",
+		name = "È«µ¯·¢Éä-÷ì¶ä¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98927,7 +98927,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71122] = {
-		name = "å…¨å¼¹å‘å°„-é»›æœµçº§II",
+		name = "È«µ¯·¢Éä-÷ì¶ä¼¶II",
 		base = 71121,
 		id = 71122,
 		torpedo_ammo = 0,
@@ -98937,15 +98937,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71131] = {
-		name = "å…¨å¼¹å‘å°„-é˜¿ç‘æ‰˜èçº§I",
+		name = "È«µ¯·¢Éä-°¢ÈğÍĞÉ¯¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -98976,7 +98976,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71132] = {
-		name = "å…¨å¼¹å‘å°„-é˜¿ç‘æ‰˜èçº§II",
+		name = "È«µ¯·¢Éä-°¢ÈğÍĞÉ¯¼¶II",
 		base = 71131,
 		id = 71132,
 		torpedo_ammo = 0,
@@ -98986,15 +98986,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71141] = {
-		name = "å…¨å¼¹å‘å°„-çˆ±ä¸å ¡çº§I",
+		name = "È«µ¯·¢Éä-°®¶¡±¤¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99025,7 +99025,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71142] = {
-		name = "å…¨å¼¹å‘å°„-çˆ±ä¸å ¡çº§II",
+		name = "È«µ¯·¢Éä-°®¶¡±¤¼¶II",
 		base = 71141,
 		id = 71142,
 		torpedo_ammo = 0,
@@ -99035,15 +99035,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71151] = {
-		name = "å…¨å¼¹å‘å°„-å—å®‰æ™®é¡¿çº§I",
+		name = "È«µ¯·¢Éä-ÄÏ°²ÆÕ¶Ù¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99074,7 +99074,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71152] = {
-		name = "å…¨å¼¹å‘å°„-å—å®‰æ™®é¡¿çº§II",
+		name = "È«µ¯·¢Éä-ÄÏ°²ÆÕ¶Ù¼¶II",
 		base = 71151,
 		id = 71152,
 		torpedo_ammo = 0,
@@ -99084,15 +99084,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71161] = {
-		name = "å…¨å¼¹å‘å°„-æ–æµçº§I",
+		name = "È«µ¯·¢Éä-ì³¼Ã¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99123,7 +99123,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71162] = {
-		name = "å…¨å¼¹å‘å°„-æ–æµçº§II",
+		name = "È«µ¯·¢Éä-ì³¼Ã¼¶II",
 		base = 71161,
 		id = 71162,
 		torpedo_ammo = 0,
@@ -99133,15 +99133,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71171] = {
-		name = "å…¨å¼¹å‘å°„-è°·ç‰©å¥³ç¥çº§I",
+		name = "È«µ¯·¢Éä-¹ÈÎïÅ®Éñ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99172,7 +99172,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71172] = {
-		name = "å…¨å¼¹å‘å°„-è°·ç‰©å¥³ç¥çº§II",
+		name = "È«µ¯·¢Éä-¹ÈÎïÅ®Éñ¼¶II",
 		base = 71171,
 		id = 71172,
 		torpedo_ammo = 0,
@@ -99182,15 +99182,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71181] = {
-		name = "å…¨å¼¹å‘å°„-æ ¼ç½—æ–¯ç‰¹çº§I",
+		name = "È«µ¯·¢Éä-¸ñÂŞË¹ÌØ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99221,7 +99221,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71182] = {
-		name = "å…¨å¼¹å‘å°„-æ ¼ç½—æ–¯ç‰¹çº§II",
+		name = "È«µ¯·¢Éä-¸ñÂŞË¹ÌØ¼¶II",
 		base = 71181,
 		id = 71182,
 		torpedo_ammo = 0,
@@ -99231,15 +99231,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71211] = {
-		name = "å…¨å¼¹å‘å°„-ä¼¦æ•¦çº§I",
+		name = "È«µ¯·¢Éä-Â×¶Ø¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99270,7 +99270,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71212] = {
-		name = "å…¨å¼¹å‘å°„-ä¼¦æ•¦çº§II",
+		name = "È«µ¯·¢Éä-Â×¶Ø¼¶II",
 		base = 71211,
 		id = 71212,
 		torpedo_ammo = 0,
@@ -99280,15 +99280,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71221] = {
-		name = "å…¨å¼¹å‘å°„-è‚¯ç‰¹çº§I",
+		name = "È«µ¯·¢Éä-¿ÏÌØ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99319,7 +99319,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71222] = {
-		name = "å…¨å¼¹å‘å°„-è‚¯ç‰¹çº§II",
+		name = "È«µ¯·¢Éä-¿ÏÌØ¼¶II",
 		base = 71221,
 		id = 71222,
 		torpedo_ammo = 0,
@@ -99329,15 +99329,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71231] = {
-		name = "å…¨å¼¹å‘å°„-è¯ºç¦å…‹çº§I",
+		name = "È«µ¯·¢Éä-Åµ¸£¿Ë¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99368,7 +99368,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71232] = {
-		name = "å…¨å¼¹å‘å°„-è¯ºç¦å…‹çº§II",
+		name = "È«µ¯·¢Éä-Åµ¸£¿Ë¼¶II",
 		base = 71231,
 		id = 71232,
 		torpedo_ammo = 0,
@@ -99378,15 +99378,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[71241] = {
-		name = "å…¨å¼¹å‘å°„-çº¦å…‹çº§I",
+		name = "È«µ¯·¢Éä-Ô¼¿Ë¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99417,7 +99417,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[71242] = {
-		name = "å…¨å¼¹å‘å°„-çº¦å…‹çº§II",
+		name = "È«µ¯·¢Éä-Ô¼¿Ë¼¶II",
 		base = 71241,
 		id = 71242,
 		torpedo_ammo = 0,
@@ -99427,15 +99427,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72011] = {
-		name = "å…¨å¼¹å‘å°„-ç¦æœˆçº§I",
+		name = "È«µ¯·¢Éä-ÄÀÔÂ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99466,7 +99466,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72012] = {
-		name = "å…¨å¼¹å‘å°„-ç¦æœˆçº§II",
+		name = "È«µ¯·¢Éä-ÄÀÔÂ¼¶II",
 		base = 72011,
 		id = 72012,
 		torpedo_ammo = 0,
@@ -99476,15 +99476,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72021] = {
-		name = "å…¨å¼¹å‘å°„-å¹é›ªçº§I",
+		name = "È«µ¯·¢Éä-´µÑ©¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99515,7 +99515,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72022] = {
-		name = "å…¨å¼¹å‘å°„-å¹é›ªçº§II",
+		name = "È«µ¯·¢Éä-´µÑ©¼¶II",
 		base = 72021,
 		id = 72022,
 		torpedo_ammo = 0,
@@ -99525,15 +99525,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72031] = {
-		name = "å…¨å¼¹å‘å°„-ç™½éœ²çº§I",
+		name = "È«µ¯·¢Éä-°×Â¶¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99564,7 +99564,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72032] = {
-		name = "å…¨å¼¹å‘å°„-ç™½éœ²çº§II",
+		name = "È«µ¯·¢Éä-°×Â¶¼¶II",
 		base = 72031,
 		id = 72032,
 		torpedo_ammo = 0,
@@ -99574,15 +99574,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72041] = {
-		name = "å…¨å¼¹å‘å°„-åˆæ˜¥çº§I",
+		name = "È«µ¯·¢Éä-³õ´º¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99613,7 +99613,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72042] = {
-		name = "å…¨å¼¹å‘å°„-åˆæ˜¥çº§II",
+		name = "È«µ¯·¢Éä-³õ´º¼¶II",
 		base = 72041,
 		id = 72042,
 		torpedo_ammo = 0,
@@ -99623,15 +99623,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72051] = {
-		name = "å…¨å¼¹å‘å°„-é˜³ç‚çº§I",
+		name = "È«µ¯·¢Éä-ÑôÑ×¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99662,7 +99662,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72052] = {
-		name = "å…¨å¼¹å‘å°„-é˜³ç‚çº§II",
+		name = "È«µ¯·¢Éä-ÑôÑ×¼¶II",
 		base = 72051,
 		id = 72052,
 		torpedo_ammo = 0,
@@ -99672,15 +99672,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72056] = {
-		name = "å…¨å¼¹å‘å°„-å¤•äº‘çº§I",
+		name = "È«µ¯·¢Éä-Ï¦ÔÆ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99711,7 +99711,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72057] = {
-		name = "å…¨å¼¹å‘å°„-å¤•äº‘çº§II",
+		name = "È«µ¯·¢Éä-Ï¦ÔÆ¼¶II",
 		base = 72056,
 		id = 72057,
 		torpedo_ammo = 0,
@@ -99721,15 +99721,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72061] = {
-		name = "å…¨å¼¹å‘å°„-ç§‹æœˆçº§I",
+		name = "È«µ¯·¢Éä-ÇïÔÂ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99760,7 +99760,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72062] = {
-		name = "å…¨å¼¹å‘å°„-ç§‹æœˆçº§II",
+		name = "È«µ¯·¢Éä-ÇïÔÂ¼¶II",
 		base = 72061,
 		id = 72062,
 		torpedo_ammo = 0,
@@ -99770,15 +99770,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72071] = {
-		name = "å…¨å¼¹å‘å°„-æ™“çº§I",
+		name = "È«µ¯·¢Éä-Ïş¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99809,7 +99809,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72072] = {
-		name = "å…¨å¼¹å‘å°„-æ™“çº§II",
+		name = "È«µ¯·¢Éä-Ïş¼¶II",
 		base = 72071,
 		id = 72072,
 		torpedo_ammo = 0,
@@ -99819,15 +99819,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72081] = {
-		name = "å…¨å¼¹å‘å°„-ç¥é£çº§I",
+		name = "È«µ¯·¢Éä-Éñ·ç¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99858,7 +99858,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72082] = {
-		name = "å…¨å¼¹å‘å°„-ç¥é£çº§II",
+		name = "È«µ¯·¢Éä-Éñ·ç¼¶II",
 		base = 72081,
 		id = 72082,
 		torpedo_ammo = 0,
@@ -99868,15 +99868,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72091] = {
-		name = "å…¨å¼¹å‘å°„-æœæ½®çº§I",
+		name = "È«µ¯·¢Éä-³¯³±¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99907,7 +99907,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72092] = {
-		name = "å…¨å¼¹å‘å°„-æœæ½®çº§II",
+		name = "È«µ¯·¢Éä-³¯³±¼¶II",
 		base = 72091,
 		id = 72092,
 		torpedo_ammo = 0,
@@ -99917,15 +99917,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72111] = {
-		name = "å…¨å¼¹å‘å°„-å¤©é¾™çº§I",
+		name = "È«µ¯·¢Éä-ÌìÁú¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -99956,7 +99956,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72112] = {
-		name = "å…¨å¼¹å‘å°„-å¤©é¾™çº§II",
+		name = "È«µ¯·¢Éä-ÌìÁú¼¶II",
 		base = 72111,
 		id = 72112,
 		torpedo_ammo = 0,
@@ -99966,15 +99966,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72121] = {
-		name = "å…¨å¼¹å‘å°„-çƒç£¨çº§I",
+		name = "È«µ¯·¢Éä-ÇòÄ¥¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100005,7 +100005,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72122] = {
-		name = "å…¨å¼¹å‘å°„-çƒç£¨çº§II",
+		name = "È«µ¯·¢Éä-ÇòÄ¥¼¶II",
 		base = 72121,
 		id = 72122,
 		torpedo_ammo = 0,
@@ -100015,15 +100015,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72131] = {
-		name = "å…¨å¼¹å‘å°„-å·å†…çº§I",
+		name = "È«µ¯·¢Éä-´¨ÄÚ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100054,7 +100054,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72132] = {
-		name = "å…¨å¼¹å‘å°„-å·å†…çº§II",
+		name = "È«µ¯·¢Éä-´¨ÄÚ¼¶II",
 		base = 72131,
 		id = 72132,
 		torpedo_ammo = 0,
@@ -100064,15 +100064,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72141] = {
-		name = "å…¨å¼¹å‘å°„-é•¿è‰¯çº§I",
+		name = "È«µ¯·¢Éä-³¤Á¼¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100103,7 +100103,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72142] = {
-		name = "å…¨å¼¹å‘å°„-é•¿è‰¯çº§II",
+		name = "È«µ¯·¢Éä-³¤Á¼¼¶II",
 		base = 72141,
 		id = 72142,
 		torpedo_ammo = 0,
@@ -100113,15 +100113,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72151] = {
-		name = "å…¨å¼¹å‘å°„-é˜¿è´ºé‡çº§I",
+		name = "È«µ¯·¢Éä-°¢ºØÒ°¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100152,7 +100152,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72152] = {
-		name = "å…¨å¼¹å‘å°„-é˜¿è´ºé‡çº§II",
+		name = "È«µ¯·¢Éä-°¢ºØÒ°¼¶II",
 		base = 72151,
 		id = 72152,
 		torpedo_ammo = 0,
@@ -100162,15 +100162,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72161] = {
-		name = "å…¨å¼¹å‘å°„-å¤•å¼ I",
+		name = "È«µ¯·¢Éä-Ï¦ÕÅI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100201,7 +100201,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72162] = {
-		name = "å…¨å¼¹å‘å°„-å¤•å¼ II",
+		name = "È«µ¯·¢Éä-Ï¦ÕÅII",
 		base = 72161,
 		id = 72162,
 		torpedo_ammo = 0,
@@ -100211,15 +100211,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72211] = {
-		name = "å…¨å¼¹å‘å°„-å¤é¹°çº§I",
+		name = "È«µ¯·¢Éä-¹ÅÓ¥¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100250,7 +100250,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72212] = {
-		name = "å…¨å¼¹å‘å°„-å¤é¹°çº§II",
+		name = "È«µ¯·¢Éä-¹ÅÓ¥¼¶II",
 		base = 72211,
 		id = 72212,
 		torpedo_ammo = 0,
@@ -100260,15 +100260,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72221] = {
-		name = "å…¨å¼¹å‘å°„-é’å¶çº§I",
+		name = "È«µ¯·¢Éä-ÇàÒ¶¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100299,7 +100299,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72222] = {
-		name = "å…¨å¼¹å‘å°„-é’å¶çº§II",
+		name = "È«µ¯·¢Éä-ÇàÒ¶¼¶II",
 		base = 72221,
 		id = 72222,
 		torpedo_ammo = 0,
@@ -100309,15 +100309,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72231] = {
-		name = "å…¨å¼¹å‘å°„-å¦™é«˜çº§I",
+		name = "È«µ¯·¢Éä-Ãî¸ß¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100348,7 +100348,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72232] = {
-		name = "å…¨å¼¹å‘å°„-å¦™é«˜çº§II",
+		name = "È«µ¯·¢Éä-Ãî¸ß¼¶II",
 		base = 72231,
 		id = 72232,
 		torpedo_ammo = 0,
@@ -100358,15 +100358,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72241] = {
-		name = "å…¨å¼¹å‘å°„-åˆ©æ ¹çº§I",
+		name = "È«µ¯·¢Éä-Àû¸ù¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100397,7 +100397,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72242] = {
-		name = "å…¨å¼¹å‘å°„-åˆ©æ ¹çº§II",
+		name = "È«µ¯·¢Éä-Àû¸ù¼¶II",
 		base = 72241,
 		id = 72242,
 		torpedo_ammo = 0,
@@ -100407,15 +100407,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72251] = {
-		name = "å…¨å¼¹å‘å°„-æœ€ä¸Šçº§I",
+		name = "È«µ¯·¢Éä-×îÉÏ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100446,7 +100446,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72252] = {
-		name = "å…¨å¼¹å‘å°„-æœ€ä¸Šçº§II",
+		name = "È«µ¯·¢Éä-×îÉÏ¼¶II",
 		base = 72251,
 		id = 72252,
 		torpedo_ammo = 0,
@@ -100457,11 +100457,11 @@ pg.equip_data_statistics = {
 	},
 	[72254] = {
 		nationality = 0,
-		name = "å…¨å¼¹å‘å°„-æœ€ä¸Šçº§é“ƒè°·å‹I",
+		name = "È«µ¯·¢Éä-×îÉÏ¼¶Áå¹ÈĞÍI",
 		type = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		tech = 1,
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
@@ -100483,7 +100483,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72255] = {
-		name = "å…¨å¼¹å‘å°„-æœ€ä¸Šçº§é“ƒè°·å‹II",
+		name = "È«µ¯·¢Éä-×îÉÏ¼¶Áå¹ÈĞÍII",
 		base = 72251,
 		id = 72255,
 		torpedo_ammo = 0,
@@ -100494,11 +100494,11 @@ pg.equip_data_statistics = {
 	},
 	[72256] = {
 		nationality = 0,
-		name = "å…¨å¼¹å‘å°„-æœ€ä¸Šçº§é“ƒè°·å‹Iå¢å¼º",
+		name = "È«µ¯·¢Éä-×îÉÏ¼¶Áå¹ÈĞÍIÔöÇ¿",
 		type = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		tech = 1,
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
@@ -100520,7 +100520,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72257] = {
-		name = "å…¨å¼¹å‘å°„-æœ€ä¸Šçº§é“ƒè°·å‹IIå¢å¼º",
+		name = "È«µ¯·¢Éä-×îÉÏ¼¶Áå¹ÈĞÍIIÔöÇ¿",
 		base = 72251,
 		id = 72257,
 		torpedo_ammo = 0,
@@ -100530,15 +100530,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72261] = {
-		name = "å…¨å¼¹å‘å°„-é«˜é›„çº§I",
+		name = "È«µ¯·¢Éä-¸ßĞÛ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100569,7 +100569,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72262] = {
-		name = "å…¨å¼¹å‘å°„-é«˜é›„çº§II",
+		name = "È«µ¯·¢Éä-¸ßĞÛ¼¶II",
 		base = 72261,
 		id = 72262,
 		torpedo_ammo = 0,
@@ -100579,15 +100579,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72311] = {
-		name = "å…¨å¼¹å‘å°„-ä¼Šä¹™çº§I",
+		name = "È«µ¯·¢Éä-ÒÁÒÒ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100618,7 +100618,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72312] = {
-		name = "å…¨å¼¹å‘å°„-ä¼Šä¹™çº§II",
+		name = "È«µ¯·¢Éä-ÒÁÒÒ¼¶II",
 		base = 72311,
 		id = 72312,
 		torpedo_ammo = 0,
@@ -100628,15 +100628,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[72411] = {
-		name = "å…¨å¼¹å‘å°„-æ¨«é‡I",
+		name = "È«µ¯·¢Éä-˜ÙÒ°I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100667,7 +100667,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[72412] = {
-		name = "å…¨å¼¹å‘å°„-æ¨«é‡II",
+		name = "È«µ¯·¢Éä-˜ÙÒ°II",
 		base = 72411,
 		id = 72412,
 		torpedo_ammo = 0,
@@ -100677,15 +100677,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73011] = {
-		name = "å…¨å¼¹å‘å°„-1934å‹I",
+		name = "È«µ¯·¢Éä-1934ĞÍI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100716,7 +100716,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73012] = {
-		name = "å…¨å¼¹å‘å°„-1934å‹II",
+		name = "È«µ¯·¢Éä-1934ĞÍII",
 		base = 73011,
 		id = 73012,
 		torpedo_ammo = 0,
@@ -100726,15 +100726,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73031] = {
-		name = "å…¨å¼¹å‘å°„-1936å‹I",
+		name = "È«µ¯·¢Éä-1936ĞÍI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100765,7 +100765,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73032] = {
-		name = "å…¨å¼¹å‘å°„-1936å‹II",
+		name = "È«µ¯·¢Éä-1936ĞÍII",
 		base = 73031,
 		id = 73032,
 		torpedo_ammo = 0,
@@ -100775,15 +100775,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73041] = {
-		name = "å…¨å¼¹å‘å°„-1936Aå‹I",
+		name = "È«µ¯·¢Éä-1936AĞÍI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100814,7 +100814,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73042] = {
-		name = "å…¨å¼¹å‘å°„-1936Aå‹II",
+		name = "È«µ¯·¢Éä-1936AĞÍII",
 		base = 73041,
 		id = 73042,
 		torpedo_ammo = 0,
@@ -100824,15 +100824,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73051] = {
-		name = "å…¨å¼¹å‘å°„-1936Bå‹I",
+		name = "È«µ¯·¢Éä-1936BĞÍI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100863,7 +100863,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73052] = {
-		name = "å…¨å¼¹å‘å°„-1936Bå‹II",
+		name = "È«µ¯·¢Éä-1936BĞÍII",
 		base = 73051,
 		id = 73052,
 		torpedo_ammo = 0,
@@ -100873,15 +100873,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73111] = {
-		name = "å…¨å¼¹å‘å°„-æŸ¯å°¼æ–¯å ¡çº§I",
+		name = "È«µ¯·¢Éä-¿ÂÄáË¹±¤¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100912,7 +100912,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73112] = {
-		name = "å…¨å¼¹å‘å°„-æŸ¯å°¼æ–¯å ¡çº§II",
+		name = "È«µ¯·¢Éä-¿ÂÄáË¹±¤¼¶II",
 		base = 73111,
 		id = 73112,
 		torpedo_ammo = 0,
@@ -100922,15 +100922,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73121] = {
-		name = "å…¨å¼¹å‘å°„-è±æ¯”é”¡çº§I",
+		name = "È«µ¯·¢Éä-À³±ÈÎı¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -100961,7 +100961,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73122] = {
-		name = "å…¨å¼¹å‘å°„-è±æ¯”é”¡çº§II",
+		name = "È«µ¯·¢Éä-À³±ÈÎı¼¶II",
 		base = 73121,
 		id = 73122,
 		torpedo_ammo = 0,
@@ -100971,15 +100971,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73211] = {
-		name = "å…¨å¼¹å‘å°„-å¸Œä½©å°”æµ·å†›ä¸Šå°†çº§I",
+		name = "È«µ¯·¢Éä-Ï£Åå¶ûº£¾üÉÏ½«¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101010,7 +101010,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73212] = {
-		name = "å…¨å¼¹å‘å°„-å¸Œä½©å°”æµ·å†›ä¸Šå°†çº§II",
+		name = "È«µ¯·¢Éä-Ï£Åå¶ûº£¾üÉÏ½«¼¶II",
 		base = 73211,
 		id = 73212,
 		torpedo_ammo = 0,
@@ -101020,15 +101020,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73221] = {
-		name = "å…¨å¼¹å‘å°„-å¾·æ„å¿—çº§I",
+		name = "È«µ¯·¢Éä-µÂÒâÖ¾¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101059,7 +101059,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73222] = {
-		name = "å…¨å¼¹å‘å°„-å¾·æ„å¿—çº§II",
+		name = "È«µ¯·¢Éä-µÂÒâÖ¾¼¶II",
 		base = 73221,
 		id = 73222,
 		torpedo_ammo = 0,
@@ -101069,15 +101069,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73231] = {
-		name = "å…¨å¼¹å‘å°„-Pçº§I",
+		name = "È«µ¯·¢Éä-P¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101108,7 +101108,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73232] = {
-		name = "å…¨å¼¹å‘å°„-Pçº§II",
+		name = "È«µ¯·¢Éä-P¼¶II",
 		base = 73231,
 		id = 73232,
 		torpedo_ammo = 0,
@@ -101118,15 +101118,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73311] = {
-		name = "å…¨å¼¹å‘å°„-Type VIICå‹I",
+		name = "È«µ¯·¢Éä-Type VIICĞÍI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101157,7 +101157,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73312] = {
-		name = "å…¨å¼¹å‘å°„-Type VIICå‹II",
+		name = "È«µ¯·¢Éä-Type VIICĞÍII",
 		base = 73311,
 		id = 73312,
 		torpedo_ammo = 0,
@@ -101167,15 +101167,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73321] = {
-		name = "å…¨å¼¹å‘å°„-Type IXBå‹I",
+		name = "È«µ¯·¢Éä-Type IXBĞÍI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101206,7 +101206,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73322] = {
-		name = "å…¨å¼¹å‘å°„-Type IXBå‹II",
+		name = "È«µ¯·¢Éä-Type IXBĞÍII",
 		base = 73321,
 		id = 73322,
 		torpedo_ammo = 0,
@@ -101216,15 +101216,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73411] = {
-		name = "å…¨å¼¹å‘å°„-Type VIIBå‹I",
+		name = "È«µ¯·¢Éä-Type VIIBĞÍI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101255,7 +101255,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73412] = {
-		name = "å…¨å¼¹å‘å°„-Type VIIBå‹II",
+		name = "È«µ¯·¢Éä-Type VIIBĞÍII",
 		base = 73411,
 		id = 73412,
 		torpedo_ammo = 0,
@@ -101265,15 +101265,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[73511] = {
-		name = "å…¨å¼¹å‘å°„-Type IXCå‹I",
+		name = "È«µ¯·¢Éä-Type IXCĞÍI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101304,7 +101304,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[73512] = {
-		name = "å…¨å¼¹å‘å°„-Type IXCå‹II",
+		name = "È«µ¯·¢Éä-Type IXCĞÍII",
 		base = 73511,
 		id = 73512,
 		torpedo_ammo = 0,
@@ -101314,15 +101314,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[74011] = {
-		name = "å…¨å¼¹å‘å°„-éå±±çº§I",
+		name = "È«µ¯·¢Éä-°°É½¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101353,7 +101353,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[74012] = {
-		name = "å…¨å¼¹å‘å°„-éå±±çº§II",
+		name = "È«µ¯·¢Éä-°°É½¼¶II",
 		base = 74011,
 		id = 74012,
 		torpedo_ammo = 0,
@@ -101363,15 +101363,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[74111] = {
-		name = "å…¨å¼¹å‘å°„-å®æµ·çº§I",
+		name = "È«µ¯·¢Éä-Äşº£¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101402,7 +101402,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[74112] = {
-		name = "å…¨å¼¹å‘å°„-å®æµ·çº§II",
+		name = "È«µ¯·¢Éä-Äşº£¼¶II",
 		base = 74111,
 		id = 74112,
 		torpedo_ammo = 0,
@@ -101412,15 +101412,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[74121] = {
-		name = "å…¨å¼¹å‘å°„-é€¸ä»™I",
+		name = "È«µ¯·¢Éä-ÒİÏÉI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101451,7 +101451,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[74122] = {
-		name = "å…¨å¼¹å‘å°„-é€¸ä»™II",
+		name = "È«µ¯·¢Éä-ÒİÏÉII",
 		base = 74121,
 		id = 74122,
 		torpedo_ammo = 0,
@@ -101461,15 +101461,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[75011] = {
-		name = "å…¨å¼¹å‘å°„-ç´¢å°”è¾¾è’‚çº§I",
+		name = "È«µ¯·¢Éä-Ë÷¶û´ïµÙ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101500,7 +101500,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[75012] = {
-		name = "å…¨å¼¹å‘å°„-ç´¢å°”è¾¾è’‚çº§II",
+		name = "È«µ¯·¢Éä-Ë÷¶û´ïµÙ¼¶II",
 		base = 75011,
 		id = 75012,
 		torpedo_ammo = 0,
@@ -101510,15 +101510,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[75211] = {
-		name = "å…¨å¼¹å‘å°„-ç‰¹ä¼¦æ‰˜çº§I",
+		name = "È«µ¯·¢Éä-ÌØÂ×ÍĞ¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101549,7 +101549,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[75212] = {
-		name = "å…¨å¼¹å‘å°„-ç‰¹ä¼¦æ‰˜çº§II",
+		name = "È«µ¯·¢Éä-ÌØÂ×ÍĞ¼¶II",
 		base = 75211,
 		id = 75212,
 		torpedo_ammo = 0,
@@ -101559,15 +101559,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[75221] = {
-		name = "å…¨å¼¹å‘å°„-æ‰æ‹‰çº§I",
+		name = "È«µ¯·¢Éä-ÔúÀ­¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101598,7 +101598,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[75222] = {
-		name = "å…¨å¼¹å‘å°„-æ‰æ‹‰çº§II",
+		name = "È«µ¯·¢Éä-ÔúÀ­¼¶II",
 		base = 75221,
 		id = 75222,
 		torpedo_ammo = 0,
@@ -101608,15 +101608,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[76011] = {
-		name = "å…¨å¼¹å‘å°„-æ„¤æ€’çº§I",
+		name = "È«µ¯·¢Éä-·ßÅ­¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101647,7 +101647,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[76012] = {
-		name = "å…¨å¼¹å‘å°„-æ„¤æ€’çº§II",
+		name = "È«µ¯·¢Éä-·ßÅ­¼¶II",
 		base = 76011,
 		id = 76012,
 		torpedo_ammo = 0,
@@ -101657,15 +101657,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[76021] = {
-		name = "å…¨å¼¹å‘å°„-æ˜æ–¯å…‹çº§I",
+		name = "È«µ¯·¢Éä-Ã÷Ë¹¿Ë¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101696,7 +101696,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[76022] = {
-		name = "å…¨å¼¹å‘å°„-æ˜æ–¯å…‹çº§II",
+		name = "È«µ¯·¢Éä-Ã÷Ë¹¿Ë¼¶II",
 		base = 76021,
 		id = 76022,
 		torpedo_ammo = 0,
@@ -101706,15 +101706,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[76111] = {
-		name = "å…¨å¼¹å‘å°„-åšåŠ ç‰¹é‡Œçº§I",
+		name = "È«µ¯·¢Éä-²©¼ÓÌØÀï¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101745,7 +101745,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[76112] = {
-		name = "å…¨å¼¹å‘å°„-åšåŠ ç‰¹é‡Œçº§II",
+		name = "È«µ¯·¢Éä-²©¼ÓÌØÀï¼¶II",
 		base = 76111,
 		id = 76112,
 		torpedo_ammo = 0,
@@ -101755,15 +101755,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[78011] = {
-		name = "å…¨å¼¹å‘å°„-æœºæ•çº§I",
+		name = "È«µ¯·¢Éä-»úÃô¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101794,7 +101794,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[78012] = {
-		name = "å…¨å¼¹å‘å°„-æœºæ•çº§II",
+		name = "È«µ¯·¢Éä-»úÃô¼¶II",
 		base = 78011,
 		id = 78012,
 		torpedo_ammo = 0,
@@ -101804,15 +101804,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[78021] = {
-		name = "å…¨å¼¹å‘å°„-å¤§èƒ†çº§I",
+		name = "È«µ¯·¢Éä-´óµ¨¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101843,7 +101843,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[78022] = {
-		name = "å…¨å¼¹å‘å°„-å¤§èƒ†çº§II",
+		name = "È«µ¯·¢Éä-´óµ¨¼¶II",
 		base = 78021,
 		id = 78022,
 		torpedo_ammo = 0,
@@ -101853,15 +101853,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[78031] = {
-		name = "å…¨å¼¹å‘å°„-æ²ƒå…‹å…°çº§I",
+		name = "È«µ¯·¢Éä-ÎÖ¿ËÀ¼¼¶I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101892,7 +101892,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[78032] = {
-		name = "å…¨å¼¹å‘å°„-æ²ƒå…‹å…°çº§II",
+		name = "È«µ¯·¢Éä-ÎÖ¿ËÀ¼¼¶II",
 		base = 78031,
 		id = 78032,
 		torpedo_ammo = 0,
@@ -101902,15 +101902,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[78111] = {
-		name = "å…¨å¼¹å‘å°„-åŸƒç±³å°”Â·è´å°”æ±€I",
+		name = "È«µ¯·¢Éä-°£Ã×¶û¡¤±´¶ûÍ¡I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101941,7 +101941,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[78112] = {
-		name = "å…¨å¼¹å‘å°„-åŸƒç±³å°”Â·è´å°”æ±€II",
+		name = "È«µ¯·¢Éä-°£Ã×¶û¡¤±´¶ûÍ¡II",
 		base = 78111,
 		id = 78112,
 		torpedo_ammo = 0,
@@ -101951,15 +101951,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[78121] = {
-		name = "å…¨å¼¹å‘å°„-æ‹‰Â·åŠ åˆ©ç´¢å°¼åŸƒI",
+		name = "È«µ¯·¢Éä-À­¡¤¼ÓÀûË÷Äá°£I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -101990,7 +101990,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[78122] = {
-		name = "å…¨å¼¹å‘å°„-æ‹‰Â·åŠ åˆ©ç´¢å°¼åŸƒII",
+		name = "È«µ¯·¢Éä-À­¡¤¼ÓÀûË÷Äá°£II",
 		base = 78121,
 		id = 78122,
 		torpedo_ammo = 0,
@@ -102000,15 +102000,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[78211] = {
-		name = "å…¨å¼¹å‘å°„-é˜¿å°”åŠåˆ©äºšI",
+		name = "È«µ¯·¢Éä-°¢¶û¼°ÀûÑÇI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102039,7 +102039,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[78212] = {
-		name = "å…¨å¼¹å‘å°„-é˜¿å°”åŠåˆ©äºšII",
+		name = "È«µ¯·¢Éä-°¢¶û¼°ÀûÑÇII",
 		base = 78211,
 		id = 78212,
 		torpedo_ammo = 0,
@@ -102049,15 +102049,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79011] = {
-		name = "ä¸“å±å¼¹å¹•-è‹±æ ¼å…°I",
+		name = "×¨Êôµ¯Ä»-Ó¢¸ñÀ¼I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102088,7 +102088,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79012] = {
-		name = "ä¸“å±å¼¹å¹•-è‹±æ ¼å…°II",
+		name = "×¨Êôµ¯Ä»-Ó¢¸ñÀ¼II",
 		base = 79011,
 		id = 79012,
 		torpedo_ammo = 0,
@@ -102098,15 +102098,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79021] = {
-		name = "ä¸“å±å¼¹å¹•-åŸƒå°”å¾·é‡Œå¥‡I",
+		name = "×¨Êôµ¯Ä»-°£¶ûµÂÀïÆæI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102137,7 +102137,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79022] = {
-		name = "ä¸“å±å¼¹å¹•-åŸƒå°”å¾·é‡Œå¥‡II",
+		name = "×¨Êôµ¯Ä»-°£¶ûµÂÀïÆæII",
 		base = 79021,
 		id = 79022,
 		torpedo_ammo = 0,
@@ -102147,15 +102147,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79031] = {
-		name = "ä¸“å±å¼¹å¹•-å¨å»‰Â·DÂ·æ³¢ç‰¹I",
+		name = "×¨Êôµ¯Ä»-ÍşÁ®¡¤D¡¤²¨ÌØI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102186,7 +102186,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79032] = {
-		name = "ä¸“å±å¼¹å¹•-å¨å»‰Â·DÂ·æ³¢ç‰¹II",
+		name = "×¨Êôµ¯Ä»-ÍşÁ®¡¤D¡¤²¨ÌØII",
 		base = 79031,
 		id = 79032,
 		torpedo_ammo = 0,
@@ -102196,15 +102196,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79041] = {
-		name = "ä¸“å±å¼¹å¹•-çº¦ç¿°æ–¯é¡¿I",
+		name = "×¨Êôµ¯Ä»-Ô¼º²Ë¹¶ÙI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102235,7 +102235,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79042] = {
-		name = "ä¸“å±å¼¹å¹•-çº¦ç¿°æ–¯é¡¿II",
+		name = "×¨Êôµ¯Ä»-Ô¼º²Ë¹¶ÙII",
 		base = 79041,
 		id = 79042,
 		torpedo_ammo = 0,
@@ -102245,15 +102245,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79051] = {
-		name = "ä¸“å±å¼¹å¹•-æ‹‰è²I",
+		name = "×¨Êôµ¯Ä»-À­·ÆI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102284,7 +102284,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79052] = {
-		name = "ä¸“å±å¼¹å¹•-æ‹‰è²II",
+		name = "×¨Êôµ¯Ä»-À­·ÆII",
 		base = 79051,
 		id = 79052,
 		torpedo_ammo = 0,
@@ -102294,15 +102294,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79061] = {
-		name = "ä¸“å±å¼¹å¹•-è¤ç«è™«I",
+		name = "×¨Êôµ¯Ä»-Ó©»ğ³æI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102333,7 +102333,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79062] = {
-		name = "ä¸“å±å¼¹å¹•-è¤ç«è™«II",
+		name = "×¨Êôµ¯Ä»-Ó©»ğ³æII",
 		base = 79061,
 		id = 79062,
 		torpedo_ammo = 0,
@@ -102343,15 +102343,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79071] = {
-		name = "ä¸“å±å¼¹å¹•-å‹‡æ•¢I",
+		name = "×¨Êôµ¯Ä»-ÓÂ¸ÒI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102382,7 +102382,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79072] = {
-		name = "ä¸“å±å¼¹å¹•-å‹‡æ•¢II",
+		name = "×¨Êôµ¯Ä»-ÓÂ¸ÒII",
 		base = 79071,
 		id = 79072,
 		torpedo_ammo = 0,
@@ -102392,15 +102392,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79081] = {
-		name = "ä¸“å±å¼¹å¹•-æ ‡æªI",
+		name = "×¨Êôµ¯Ä»-±êÇ¹I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102431,7 +102431,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79082] = {
-		name = "ä¸“å±å¼¹å¹•-æ ‡æªII",
+		name = "×¨Êôµ¯Ä»-±êÇ¹II",
 		base = 79081,
 		id = 79082,
 		torpedo_ammo = 0,
@@ -102441,15 +102441,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79091] = {
-		name = "ä¸“å±å¼¹å¹•-å¸è¡€é¬¼I",
+		name = "×¨Êôµ¯Ä»-ÎüÑª¹íI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102480,7 +102480,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79092] = {
-		name = "ä¸“å±å¼¹å¹•-å¸è¡€é¬¼II",
+		name = "×¨Êôµ¯Ä»-ÎüÑª¹íII",
 		base = 79091,
 		id = 79092,
 		torpedo_ammo = 0,
@@ -102490,15 +102490,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79101] = {
-		name = "ä¸“å±å¼¹å¹•-è´å°”æ³•æ–¯ç‰¹I",
+		name = "×¨Êôµ¯Ä»-±´¶û·¨Ë¹ÌØI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102529,7 +102529,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79102] = {
-		name = "ä¸“å±å¼¹å¹•-è´å°”æ³•æ–¯ç‰¹II",
+		name = "×¨Êôµ¯Ä»-±´¶û·¨Ë¹ÌØII",
 		base = 79101,
 		id = 79102,
 		torpedo_ammo = 0,
@@ -102539,15 +102539,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79111] = {
-		name = "ä¸“å±å¼¹å¹•-ç»«æ³¢I",
+		name = "×¨Êôµ¯Ä»-ç±²¨I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102578,7 +102578,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79112] = {
-		name = "ä¸“å±å¼¹å¹•-ç»«æ³¢II",
+		name = "×¨Êôµ¯Ä»-ç±²¨II",
 		base = 79111,
 		id = 79112,
 		torpedo_ammo = 0,
@@ -102588,15 +102588,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79121] = {
-		name = "ä¸“å±å¼¹å¹•-å¤•ç«‹I",
+		name = "×¨Êôµ¯Ä»-Ï¦Á¢I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102627,7 +102627,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79122] = {
-		name = "ä¸“å±å¼¹å¹•-å¤•ç«‹II",
+		name = "×¨Êôµ¯Ä»-Ï¦Á¢II",
 		base = 79121,
 		id = 79122,
 		torpedo_ammo = 0,
@@ -102637,15 +102637,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79131] = {
-		name = "ä¸“å±å¼¹å¹•-é›ªé£I",
+		name = "×¨Êôµ¯Ä»-Ñ©·çI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102676,7 +102676,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79132] = {
-		name = "ä¸“å±å¼¹å¹•-é›ªé£II",
+		name = "×¨Êôµ¯Ä»-Ñ©·çII",
 		base = 79131,
 		id = 79132,
 		torpedo_ammo = 0,
@@ -102686,15 +102686,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79141] = {
-		name = "ä¸“å±å¼¹å¹•-å²›é£I",
+		name = "×¨Êôµ¯Ä»-µº·çI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102725,7 +102725,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79142] = {
-		name = "ä¸“å±å¼¹å¹•-å²›é£II",
+		name = "×¨Êôµ¯Ä»-µº·çII",
 		base = 79141,
 		id = 79142,
 		torpedo_ammo = 0,
@@ -102735,15 +102735,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79151] = {
-		name = "ä¸“å±å¼¹å¹•-åŒ—ä¸ŠI",
+		name = "×¨Êôµ¯Ä»-±±ÉÏI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102774,7 +102774,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79152] = {
-		name = "ä¸“å±å¼¹å¹•-åŒ—ä¸ŠII",
+		name = "×¨Êôµ¯Ä»-±±ÉÏII",
 		base = 79151,
 		id = 79152,
 		torpedo_ammo = 0,
@@ -102784,15 +102784,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79161] = {
-		name = "ä¸“å±å¼¹å¹•-å¤§äº•I",
+		name = "×¨Êôµ¯Ä»-´ó¾®I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102823,7 +102823,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79162] = {
-		name = "ä¸“å±å¼¹å¹•-å¤§äº•II",
+		name = "×¨Êôµ¯Ä»-´ó¾®II",
 		base = 79161,
 		id = 79162,
 		torpedo_ammo = 0,
@@ -102833,15 +102833,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79171] = {
-		name = "ä¸“å±å¼¹å¹•-Z1I",
+		name = "×¨Êôµ¯Ä»-Z1I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102872,7 +102872,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79172] = {
-		name = "ä¸“å±å¼¹å¹•-Z1II",
+		name = "×¨Êôµ¯Ä»-Z1II",
 		base = 79171,
 		id = 79172,
 		torpedo_ammo = 0,
@@ -102882,15 +102882,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79181] = {
-		name = "ä¸“å±å¼¹å¹•-éå±±I",
+		name = "×¨Êôµ¯Ä»-°°É½I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102921,7 +102921,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79182] = {
-		name = "ä¸“å±å¼¹å¹•-éå±±II",
+		name = "×¨Êôµ¯Ä»-°°É½II",
 		base = 79181,
 		id = 79182,
 		torpedo_ammo = 0,
@@ -102931,15 +102931,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79191] = {
-		name = "ä¸“å±å¼¹å¹•-é˜¿èŠ™ä¹å°”I",
+		name = "×¨Êôµ¯Ä»-°¢Ü½ÀÖ¶ûI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -102970,7 +102970,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79192] = {
-		name = "ä¸“å±å¼¹å¹•-é˜¿èŠ™ä¹å°”II",
+		name = "×¨Êôµ¯Ä»-°¢Ü½ÀÖ¶ûII",
 		base = 79191,
 		id = 79192,
 		torpedo_ammo = 0,
@@ -102980,15 +102980,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79201] = {
-		name = "ä¸“å±å¼¹å¹•-Z23I",
+		name = "×¨Êôµ¯Ä»-Z23I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103019,7 +103019,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79202] = {
-		name = "ä¸“å±å¼¹å¹•-Z23II",
+		name = "×¨Êôµ¯Ä»-Z23II",
 		base = 79201,
 		id = 79202,
 		torpedo_ammo = 0,
@@ -103029,15 +103029,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79211] = {
-		name = "ä¸“å±å¼¹å¹•-Z46I",
+		name = "×¨Êôµ¯Ä»-Z46I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103068,7 +103068,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79212] = {
-		name = "ä¸“å±å¼¹å¹•-Z46II",
+		name = "×¨Êôµ¯Ä»-Z46II",
 		base = 79211,
 		id = 79212,
 		torpedo_ammo = 0,
@@ -103078,15 +103078,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79221] = {
-		name = "ä¸“å±å¼¹å¹•-ä¼Šå¹I",
+		name = "×¨Êôµ¯Ä»-ÒÁ´µI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103117,7 +103117,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79222] = {
-		name = "ä¸“å±å¼¹å¹•-ä¼Šå¹II",
+		name = "×¨Êôµ¯Ä»-ÒÁ´µII",
 		base = 79221,
 		id = 79222,
 		torpedo_ammo = 0,
@@ -103127,15 +103127,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79231] = {
-		name = "ä¸“å±å¼¹å¹•-æµ·ç‹æ˜ŸI",
+		name = "×¨Êôµ¯Ä»-º£ÍõĞÇI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103166,7 +103166,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79232] = {
-		name = "ä¸“å±å¼¹å¹•-æµ·ç‹æ˜ŸII",
+		name = "×¨Êôµ¯Ä»-º£ÍõĞÇII",
 		base = 79231,
 		id = 79232,
 		torpedo_ammo = 0,
@@ -103176,15 +103176,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79241] = {
-		name = "ä¸“å±å¼¹å¹•-ç½—æ©I",
+		name = "×¨Êôµ¯Ä»-ÂŞ¶÷I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103215,7 +103215,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79242] = {
-		name = "ä¸“å±å¼¹å¹•-ç½—æ©II",
+		name = "×¨Êôµ¯Ä»-ÂŞ¶÷II",
 		base = 79241,
 		id = 79242,
 		torpedo_ammo = 0,
@@ -103225,15 +103225,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79251] = {
-		name = "ä¸“å±å¼¹å¹•-è·¯æ˜“ä¹ä¸–I",
+		name = "×¨Êôµ¯Ä»-Â·Ò×¾ÅÊÀI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103264,7 +103264,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79252] = {
-		name = "ä¸“å±å¼¹å¹•-è·¯æ˜“ä¹ä¸–II",
+		name = "×¨Êôµ¯Ä»-Â·Ò×¾ÅÊÀII",
 		base = 79251,
 		id = 79252,
 		torpedo_ammo = 0,
@@ -103274,15 +103274,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79261] = {
-		name = "ä¸“å±å¼¹å¹•-I19I",
+		name = "×¨Êôµ¯Ä»-I19I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103313,7 +103313,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79262] = {
-		name = "ä¸“å±å¼¹å¹•-I19II",
+		name = "×¨Êôµ¯Ä»-I19II",
 		base = 79261,
 		id = 79262,
 		torpedo_ammo = 0,
@@ -103323,15 +103323,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79271] = {
-		name = "ä¸“å±å¼¹å¹•-U81I",
+		name = "×¨Êôµ¯Ä»-U81I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103362,7 +103362,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79272] = {
-		name = "ä¸“å±å¼¹å¹•-U81II",
+		name = "×¨Êôµ¯Ä»-U81II",
 		base = 79271,
 		id = 79272,
 		torpedo_ammo = 0,
@@ -103372,15 +103372,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79291] = {
-		name = "ä¸“å±å¼¹å¹•-22I",
+		name = "×¨Êôµ¯Ä»-22I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103411,7 +103411,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79292] = {
-		name = "ä¸“å±å¼¹å¹•-22II",
+		name = "×¨Êôµ¯Ä»-22II",
 		base = 79291,
 		id = 79292,
 		torpedo_ammo = 0,
@@ -103421,15 +103421,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79301] = {
-		name = "ä¸“å±å¼¹å¹•-33I",
+		name = "×¨Êôµ¯Ä»-33I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103460,7 +103460,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79302] = {
-		name = "ä¸“å±å¼¹å¹•-33II",
+		name = "×¨Êôµ¯Ä»-33II",
 		base = 79301,
 		id = 79302,
 		torpedo_ammo = 0,
@@ -103470,15 +103470,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79311] = {
-		name = "ä¸“å±å¼¹å¹•-U47I",
+		name = "×¨Êôµ¯Ä»-U47I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103509,7 +103509,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79312] = {
-		name = "ä¸“å±å¼¹å¹•-U47II",
+		name = "×¨Êôµ¯Ä»-U47II",
 		base = 79311,
 		id = 79312,
 		torpedo_ammo = 0,
@@ -103519,15 +103519,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79321] = {
-		name = "ä¸“å±å¼¹å¹•-çµ®åº“å¤«I",
+		name = "×¨Êôµ¯Ä»-Ğõ¿â·òI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103558,7 +103558,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79322] = {
-		name = "ä¸“å±å¼¹å¹•-çµ®åº“å¤«II",
+		name = "×¨Êôµ¯Ä»-Ğõ¿â·òII",
 		base = 79321,
 		id = 79322,
 		torpedo_ammo = 0,
@@ -103568,15 +103568,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79331] = {
-		name = "ä¸“å±å¼¹å¹•-å‡¯æ—‹I",
+		name = "×¨Êôµ¯Ä»-¿­ĞıI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103607,7 +103607,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79332] = {
-		name = "ä¸“å±å¼¹å¹•-å‡¯æ—‹II",
+		name = "×¨Êôµ¯Ä»-¿­ĞıII",
 		base = 79321,
 		id = 79332,
 		torpedo_ammo = 0,
@@ -103617,15 +103617,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79341] = {
-		name = "ä¸“å±å¼¹å¹•-å¤§é’èŠ±é±¼I",
+		name = "×¨Êôµ¯Ä»-´óÇà»¨ÓãI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103656,7 +103656,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79342] = {
-		name = "ä¸“å±å¼¹å¹•-å¤§é’èŠ±é±¼II",
+		name = "×¨Êôµ¯Ä»-´óÇà»¨ÓãII",
 		base = 79341,
 		id = 79342,
 		torpedo_ammo = 0,
@@ -103666,15 +103666,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79361] = {
-		name = "ä¸“å±å¼¹å¹•-å¤©ç‹¼æ˜ŸI",
+		name = "×¨Êôµ¯Ä»-ÌìÀÇĞÇI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103705,7 +103705,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79362] = {
-		name = "ä¸“å±å¼¹å¹•-å¤©ç‹¼æ˜ŸII",
+		name = "×¨Êôµ¯Ä»-ÌìÀÇĞÇII",
 		base = 79361,
 		id = 79362,
 		torpedo_ammo = 0,
@@ -103715,15 +103715,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79371] = {
-		name = "ä¸“å±å¼¹å¹•-I13I",
+		name = "×¨Êôµ¯Ä»-I13I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103754,7 +103754,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79372] = {
-		name = "ä¸“å±å¼¹å¹•-I13II",
+		name = "×¨Êôµ¯Ä»-I13II",
 		base = 79371,
 		id = 79372,
 		torpedo_ammo = 0,
@@ -103764,15 +103764,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79381] = {
-		name = "ä¸“å±å¼¹å¹•-åŒ—é£I",
+		name = "×¨Êôµ¯Ä»-±±·çI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103803,7 +103803,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79382] = {
-		name = "ä¸“å±å¼¹å¹•-åŒ—é£II",
+		name = "×¨Êôµ¯Ä»-±±·çII",
 		base = 79381,
 		id = 79382,
 		torpedo_ammo = 0,
@@ -103813,15 +103813,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79383] = {
-		name = "ä¸“å±å¼¹å¹•é±¼é›·-åŒ—é£I",
+		name = "×¨Êôµ¯Ä»ÓãÀ×-±±·çI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103852,7 +103852,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79384] = {
-		name = "ä¸“å±å¼¹å¹•é±¼é›·-åŒ—é£II",
+		name = "×¨Êôµ¯Ä»ÓãÀ×-±±·çII",
 		base = 79383,
 		id = 79384,
 		torpedo_ammo = 0,
@@ -103862,15 +103862,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79391] = {
-		name = "ä¸“å±å¼¹å¹•-è¥¿é›…å›¾I",
+		name = "×¨Êôµ¯Ä»-Î÷ÑÅÍ¼I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103901,7 +103901,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79392] = {
-		name = "ä¸“å±å¼¹å¹•-è¥¿é›…å›¾II",
+		name = "×¨Êôµ¯Ä»-Î÷ÑÅÍ¼II",
 		base = 79391,
 		id = 79392,
 		torpedo_ammo = 0,
@@ -103911,15 +103911,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79401] = {
-		name = "ä¸“å±å¼¹å¹•-ç¡®æ·I",
+		name = "×¨Êôµ¯Ä»-È·½İI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103950,7 +103950,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79402] = {
-		name = "ä¸“å±å¼¹å¹•-ç¡®æ·II",
+		name = "×¨Êôµ¯Ä»-È·½İII",
 		base = 79401,
 		id = 79402,
 		torpedo_ammo = 0,
@@ -103960,15 +103960,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79411] = {
-		name = "ä¸“å±å¼¹å¹•-æ¶æ¯’I",
+		name = "×¨Êôµ¯Ä»-¶ñ¶¾I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -103999,7 +103999,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79412] = {
-		name = "ä¸“å±å¼¹å¹•-æ¶æ¯’II",
+		name = "×¨Êôµ¯Ä»-¶ñ¶¾II",
 		base = 79411,
 		id = 79412,
 		torpedo_ammo = 0,
@@ -104009,15 +104009,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79421] = {
-		name = "ä¸“å±å¼¹å¹•-I168I",
+		name = "×¨Êôµ¯Ä»-I168I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104048,7 +104048,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79422] = {
-		name = "ä¸“å±å¼¹å¹•-I168II",
+		name = "×¨Êôµ¯Ä»-I168II",
 		base = 79421,
 		id = 79422,
 		torpedo_ammo = 0,
@@ -104058,15 +104058,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79431] = {
-		name = "ä¸“å±å¼¹å¹•-U101I",
+		name = "×¨Êôµ¯Ä»-U101I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104097,7 +104097,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79432] = {
-		name = "ä¸“å±å¼¹å¹•-U101II",
+		name = "×¨Êôµ¯Ä»-U101II",
 		base = 79431,
 		id = 79432,
 		torpedo_ammo = 0,
@@ -104107,15 +104107,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79441] = {
-		name = "ä¸“å±å¼¹å¹•-æ£˜é³I",
+		name = "×¨Êôµ¯Ä»-¼¬÷¢I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104146,7 +104146,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79442] = {
-		name = "ä¸“å±å¼¹å¹•-æ£˜é³II",
+		name = "×¨Êôµ¯Ä»-¼¬÷¢II",
 		base = 79441,
 		id = 79442,
 		torpedo_ammo = 0,
@@ -104156,15 +104156,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79451] = {
-		name = "å…¨å¼¹å‘å°„-å…‹åˆ©å¤«å…°Î¼I",
+		name = "È«µ¯·¢Éä-¿ËÀû·òÀ¼¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104195,7 +104195,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79452] = {
-		name = "å…¨å¼¹å‘å°„-å…‹åˆ©å¤«å…°Î¼II",
+		name = "È«µ¯·¢Éä-¿ËÀû·òÀ¼¦ÌII",
 		base = 79451,
 		id = 79452,
 		torpedo_ammo = 0,
@@ -104205,15 +104205,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79461] = {
-		name = "å…¨å¼¹å‘å°„-å—å®‰æ™®é¡¿Î¼I",
+		name = "È«µ¯·¢Éä-ÄÏ°²ÆÕ¶Ù¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104244,7 +104244,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79462] = {
-		name = "å…¨å¼¹å‘å°„-å—å®‰æ™®é¡¿Î¼II",
+		name = "È«µ¯·¢Éä-ÄÏ°²ÆÕ¶Ù¦ÌII",
 		base = 79461,
 		id = 79462,
 		torpedo_ammo = 0,
@@ -104254,15 +104254,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79471] = {
-		name = "å…¨å¼¹å‘å°„-å¸Œä½©å°”æµ·å†›ä¸Šå°†Î¼I",
+		name = "È«µ¯·¢Éä-Ï£Åå¶ûº£¾üÉÏ½«¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104293,7 +104293,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79472] = {
-		name = "å…¨å¼¹å‘å°„-å¸Œä½©å°”æµ·å†›ä¸Šå°†Î¼II",
+		name = "È«µ¯·¢Éä-Ï£Åå¶ûº£¾üÉÏ½«¦ÌII",
 		base = 79471,
 		id = 79472,
 		torpedo_ammo = 0,
@@ -104303,15 +104303,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79481] = {
-		name = "ä¸“å±å¼¹å¹•-èƒ½ä»£I",
+		name = "×¨Êôµ¯Ä»-ÄÜ´úI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104342,7 +104342,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79482] = {
-		name = "ä¸“å±å¼¹å¹•-èƒ½ä»£II",
+		name = "×¨Êôµ¯Ä»-ÄÜ´úII",
 		base = 79481,
 		id = 79482,
 		torpedo_ammo = 0,
@@ -104352,15 +104352,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79491] = {
-		name = "ä¸“å±å¼¹å¹•-é»›æœµI",
+		name = "×¨Êôµ¯Ä»-÷ì¶äI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104391,7 +104391,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79492] = {
-		name = "ä¸“å±å¼¹å¹•-é»›æœµII",
+		name = "×¨Êôµ¯Ä»-÷ì¶äII",
 		base = 79491,
 		id = 79492,
 		torpedo_ammo = 0,
@@ -104401,15 +104401,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79501] = {
-		name = "ä¸“å±å¼¹å¹•-å¡”ä»€å¹²I",
+		name = "×¨Êôµ¯Ä»-ËşÊ²¸ÉI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104440,7 +104440,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79502] = {
-		name = "ä¸“å±å¼¹å¹•-å¡”ä»€å¹²II",
+		name = "×¨Êôµ¯Ä»-ËşÊ²¸ÉII",
 		base = 79501,
 		id = 79502,
 		torpedo_ammo = 0,
@@ -104450,15 +104450,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79511] = {
-		name = "ä¸“å±å¼¹å¹•-æ°å·´è€¶å¤«I",
+		name = "×¨Êôµ¯Ä»-Ç¡°ÍÒ®·òI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104489,7 +104489,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79512] = {
-		name = "ä¸“å±å¼¹å¹•-æ°å·´è€¶å¤«II",
+		name = "×¨Êôµ¯Ä»-Ç¡°ÍÒ®·òII",
 		base = 79511,
 		id = 79512,
 		torpedo_ammo = 0,
@@ -104499,15 +104499,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79521] = {
-		name = "ä¸“å±å¼¹å¹•-é‡Œè¯ºI",
+		name = "×¨Êôµ¯Ä»-ÀïÅµI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104538,7 +104538,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79522] = {
-		name = "ä¸“å±å¼¹å¹•-é‡Œè¯ºII",
+		name = "×¨Êôµ¯Ä»-ÀïÅµII",
 		base = 79521,
 		id = 79522,
 		torpedo_ammo = 0,
@@ -104548,15 +104548,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79541] = {
-		name = "ä¸“å±å¼¹å¹•-åœ£å¥³è´å¾·I",
+		name = "×¨Êôµ¯Ä»-Ê¥Å®ÕêµÂI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104587,7 +104587,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79542] = {
-		name = "ä¸“å±å¼¹å¹•-åœ£å¥³è´å¾·II",
+		name = "×¨Êôµ¯Ä»-Ê¥Å®ÕêµÂII",
 		base = 79541,
 		id = 79542,
 		torpedo_ammo = 0,
@@ -104597,12 +104597,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79551] = {
-		name = "ä¸“å±å¼¹å¹•-æŸ´éƒ¡I",
+		name = "×¨Êôµ¯Ä»-²ñ¿¤I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		value_2 = 0,
 		icon = "1",
 		nationality = 0,
@@ -104635,7 +104635,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79552] = {
-		name = "ä¸“å±å¼¹å¹•-æŸ´éƒ¡II",
+		name = "×¨Êôµ¯Ä»-²ñ¿¤II",
 		base = 79551,
 		id = 79552,
 		torpedo_ammo = 0,
@@ -104645,12 +104645,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79561] = {
-		name = "ä¸“å±å¼¹å¹•-å¾·é›·å…‹I",
+		name = "×¨Êôµ¯Ä»-µÂÀ×¿ËI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		value_2 = 0,
 		icon = "1",
 		nationality = 0,
@@ -104683,7 +104683,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79562] = {
-		name = "ä¸“å±å¼¹å¹•-å¾·é›·å…‹II",
+		name = "×¨Êôµ¯Ä»-µÂÀ×¿ËII",
 		base = 79561,
 		id = 79562,
 		torpedo_ammo = 0,
@@ -104693,12 +104693,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79571] = {
-		name = "ä¸“å±å¼¹å¹•-ç¾å› èŒ¨I",
+		name = "×¨Êôµ¯Ä»-ÃÀÒò´ÄI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		value_2 = 0,
 		icon = "1",
 		nationality = 0,
@@ -104731,7 +104731,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79572] = {
-		name = "ä¸“å±å¼¹å¹•-ç¾å› èŒ¨II",
+		name = "×¨Êôµ¯Ä»-ÃÀÒò´ÄII",
 		base = 79571,
 		id = 79572,
 		torpedo_ammo = 0,
@@ -104741,15 +104741,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79581] = {
-		name = "ä¸“å±å¼¹å¹•-èµ«æ•I",
+		name = "×¨Êôµ¯Ä»-ºÕÃôI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104780,7 +104780,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79582] = {
-		name = "ä¸“å±å¼¹å¹•-èµ«æ•II",
+		name = "×¨Êôµ¯Ä»-ºÕÃôII",
 		base = 79581,
 		id = 79582,
 		torpedo_ammo = 0,
@@ -104790,15 +104790,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79591] = {
-		name = "ä¸“å±å¼¹å¹•-U96I",
+		name = "×¨Êôµ¯Ä»-U96I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104828,7 +104828,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79592] = {
-		name = "ä¸“å±å¼¹å¹•-U96II",
+		name = "×¨Êôµ¯Ä»-U96II",
 		base = 79591,
 		id = 79592,
 		torpedo_ammo = 0,
@@ -104838,15 +104838,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79601] = {
-		name = "ä¸“å±å¼¹å¹•-å‡‰æœˆI",
+		name = "×¨Êôµ¯Ä»-Á¹ÔÂI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104877,7 +104877,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79602] = {
-		name = "ä¸“å±å¼¹å¹•-å‡‰æœˆII",
+		name = "×¨Êôµ¯Ä»-Á¹ÔÂII",
 		base = 79601,
 		id = 79602,
 		torpedo_ammo = 0,
@@ -104887,15 +104887,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79611] = {
-		name = "ä¸“å±å¼¹å¹•-ç½—æ©Î¼I",
+		name = "×¨Êôµ¯Ä»-ÂŞ¶÷¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104926,7 +104926,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79612] = {
-		name = "ä¸“å±å¼¹å¹•-ç½—æ©Î¼II",
+		name = "×¨Êôµ¯Ä»-ÂŞ¶÷¦ÌII",
 		base = 79611,
 		id = 79612,
 		torpedo_ammo = 0,
@@ -104936,15 +104936,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79621] = {
-		name = "ä¸“å±å¼¹å¹•-æ¶æ¯’Î¼I",
+		name = "×¨Êôµ¯Ä»-¶ñ¶¾¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -104975,7 +104975,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79622] = {
-		name = "ä¸“å±å¼¹å¹•-æ¶æ¯’Î¼II",
+		name = "×¨Êôµ¯Ä»-¶ñ¶¾¦ÌII",
 		base = 79621,
 		id = 79622,
 		torpedo_ammo = 0,
@@ -104985,15 +104985,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79631] = {
-		name = "ä¸“å±å¼¹å¹•-é»›æœµÎ¼I",
+		name = "×¨Êôµ¯Ä»-÷ì¶ä¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -105024,7 +105024,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79632] = {
-		name = "ä¸“å±å¼¹å¹•-é»›æœµÎ¼II",
+		name = "×¨Êôµ¯Ä»-÷ì¶ä¦ÌII",
 		base = 79631,
 		id = 79632,
 		torpedo_ammo = 0,
@@ -105034,15 +105034,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79641] = {
-		name = "ä¸“å±å¼¹å¹•-å¡”ä»€å¹²Î¼I",
+		name = "×¨Êôµ¯Ä»-ËşÊ²¸É¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -105073,7 +105073,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79642] = {
-		name = "ä¸“å±å¼¹å¹•-å¡”ä»€å¹²Î¼II",
+		name = "×¨Êôµ¯Ä»-ËşÊ²¸É¦ÌII",
 		base = 79641,
 		id = 79642,
 		torpedo_ammo = 0,
@@ -105083,15 +105083,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79651] = {
-		name = "ä¸“å±å¼¹å¹•-å¤§é’èŠ±é±¼Î¼I",
+		name = "×¨Êôµ¯Ä»-´óÇà»¨Óã¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -105122,7 +105122,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79652] = {
-		name = "ä¸“å±å¼¹å¹•-å¤§é’èŠ±é±¼Î¼II",
+		name = "×¨Êôµ¯Ä»-´óÇà»¨Óã¦ÌII",
 		base = 79651,
 		id = 79652,
 		torpedo_ammo = 0,
@@ -105132,15 +105132,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79661] = {
-		name = "ä¸“å±å¼¹å¹•-å·´å°”çš„æ‘©Î¼I",
+		name = "×¨Êôµ¯Ä»-°Í¶ûµÄÄ¦¦ÌI",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -105171,7 +105171,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79662] = {
-		name = "ä¸“å±å¼¹å¹•-å·´å°”çš„æ‘©Î¼II",
+		name = "×¨Êôµ¯Ä»-°Í¶ûµÄÄ¦¦ÌII",
 		base = 79661,
 		id = 79662,
 		torpedo_ammo = 0,
@@ -105181,15 +105181,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[79671] = {
-		name = "ä¸“å±å¼¹å¹•-U37I",
+		name = "×¨Êôµ¯Ä»-U37I",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 1,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æŠ€èƒ½å¼¹å¹•",
+		descrip = "¼¼ÄÜµ¯Ä»",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -105219,7 +105219,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[79672] = {
-		name = "ä¸“å±å¼¹å¹•-U37II",
+		name = "×¨Êôµ¯Ä»-U37II",
 		base = 79671,
 		id = 79672,
 		torpedo_ammo = 0,
@@ -105229,11 +105229,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85000] = {
-		name = "B-13 åŒè”è£…130mmä¸»ç‚®B-2LM",
-		speciality = "é”å®š",
+		name = "B-13 Ë«Áª×°130mmÖ÷ÅÚB-2LM",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "åŒ—æ–¹è”åˆå¼€å‘çš„åŒè”è£…130mmèˆ°ç‚®ï¼Œæ‹¥æœ‰å‡ºè‰²çš„å¯¹æµ·æ€§èƒ½",
+		descrip = "±±·½ÁªºÏ¿ª·¢µÄË«Áª×°130mm½¢ÅÚ£¬ÓµÓĞ³öÉ«µÄ¶Ôº£ĞÔÄÜ",
 		value_2 = 12,
 		icon = "85000",
 		attribute_2 = "cannon",
@@ -105355,11 +105355,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85040] = {
-		name = "B-13 åŒè”è£…130mmä¸»ç‚®B-2LM",
-		speciality = "é”å®š",
+		name = "B-13 Ë«Áª×°130mmÖ÷ÅÚB-2LM",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "åŒ—æ–¹è”åˆå¼€å‘çš„åŒè”è£…130mmèˆ°ç‚®ï¼Œæ‹¥æœ‰å‡ºè‰²çš„å¯¹æµ·æ€§èƒ½",
+		descrip = "±±·½ÁªºÏ¿ª·¢µÄË«Áª×°130mm½¢ÅÚ£¬ÓµÓĞ³öÉ«µÄ¶Ôº£ĞÔÄÜ",
 		value_2 = 35,
 		icon = "85000",
 		attribute_2 = "cannon",
@@ -105554,16 +105554,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85060] = {
-		name = "100mmåŒè”è£…é˜²ç©ºç‚®SM-5-1s",
-		speciality = "é˜²ç©º",
+		name = "100mmË«Áª×°·À¿ÕÅÚSM-5-1s",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "85060",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -105616,7 +105616,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85061] = {
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		base = 85060,
 		id = 85061,
 		torpedo_ammo = 0,
@@ -105626,7 +105626,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85062] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 85060,
 		id = 85062,
 		torpedo_ammo = 0,
@@ -105636,7 +105636,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85063] = {
-		damage = "51/è½®",
+		damage = "51/ÂÖ",
 		base = 85060,
 		id = 85063,
 		torpedo_ammo = 0,
@@ -105646,7 +105646,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85064] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 85060,
 		id = 85064,
 		torpedo_ammo = 0,
@@ -105656,7 +105656,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85065] = {
-		damage = "63/è½®",
+		damage = "63/ÂÖ",
 		base = 85060,
 		id = 85065,
 		torpedo_ammo = 0,
@@ -105666,7 +105666,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85066] = {
-		damage = "70/è½®",
+		damage = "70/ÂÖ",
 		base = 85060,
 		id = 85066,
 		torpedo_ammo = 0,
@@ -105676,11 +105676,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85120] = {
-		name = "B-38 ä¸‰è”è£…152mmä¸»ç‚®Mk5",
-		speciality = "é”å®š",
+		name = "B-38 ÈıÁª×°152mmÖ÷ÅÚMk5",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "85120",
 		attribute_2 = "cannon",
@@ -105795,11 +105795,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85140] = {
-		name = "B-38 ä¸‰è”è£…152mmä¸»ç‚®Mk5",
-		speciality = "é”å®š",
+		name = "B-38 ÈıÁª×°152mmÖ÷ÅÚMk5",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "85120",
 		attribute_2 = "cannon",
@@ -105955,11 +105955,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85160] = {
-		name = "B-38 ä¸‰è”è£…152mmä¸»ç‚®Mk5",
-		speciality = "é”å®š",
+		name = "B-38 ÈıÁª×°152mmÖ÷ÅÚMk5",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "85120",
 		attribute_2 = "cannon",
@@ -106148,16 +106148,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85180] = {
-		name = "37mmé˜²ç©ºç‚®70-K",
-		speciality = "é˜²ç©º",
+		name = "37mm·À¿ÕÅÚ70-K",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "85180",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "9/è½®",
+		damage = "9/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -106210,7 +106210,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85181] = {
-		damage = "11/è½®",
+		damage = "11/ÂÖ",
 		base = 85180,
 		id = 85181,
 		torpedo_ammo = 0,
@@ -106220,7 +106220,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85182] = {
-		damage = "13/è½®",
+		damage = "13/ÂÖ",
 		base = 85180,
 		id = 85182,
 		torpedo_ammo = 0,
@@ -106230,7 +106230,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85183] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 85180,
 		id = 85183,
 		torpedo_ammo = 0,
@@ -106240,16 +106240,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85200] = {
-		name = "37mmé˜²ç©ºç‚®70-K",
-		speciality = "é˜²ç©º",
+		name = "37mm·À¿ÕÅÚ70-K",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "85180",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "11/è½®",
+		damage = "11/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -106302,7 +106302,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85201] = {
-		damage = "13/è½®",
+		damage = "13/ÂÖ",
 		base = 85200,
 		id = 85201,
 		torpedo_ammo = 0,
@@ -106312,7 +106312,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85202] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 85200,
 		id = 85202,
 		torpedo_ammo = 0,
@@ -106322,7 +106322,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85203] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 85200,
 		id = 85203,
 		torpedo_ammo = 0,
@@ -106332,7 +106332,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85204] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 85200,
 		id = 85204,
 		torpedo_ammo = 0,
@@ -106342,7 +106342,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85205] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 85200,
 		id = 85205,
 		torpedo_ammo = 0,
@@ -106352,7 +106352,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85206] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 85200,
 		id = 85206,
 		torpedo_ammo = 0,
@@ -106362,16 +106362,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85220] = {
-		name = "37mmé˜²ç©ºç‚®70-K",
-		speciality = "é˜²ç©º",
+		name = "37mm·À¿ÕÅÚ70-K",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "85180",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -106424,7 +106424,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85221] = {
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		base = 85220,
 		id = 85221,
 		torpedo_ammo = 0,
@@ -106434,7 +106434,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85222] = {
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		base = 85220,
 		id = 85222,
 		torpedo_ammo = 0,
@@ -106444,7 +106444,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85223] = {
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		base = 85220,
 		id = 85223,
 		torpedo_ammo = 0,
@@ -106454,7 +106454,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85224] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 85220,
 		id = 85224,
 		torpedo_ammo = 0,
@@ -106464,7 +106464,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85225] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 85220,
 		id = 85225,
 		torpedo_ammo = 0,
@@ -106474,7 +106474,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85226] = {
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 85220,
 		id = 85226,
 		torpedo_ammo = 0,
@@ -106484,7 +106484,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85227] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 85220,
 		id = 85227,
 		torpedo_ammo = 0,
@@ -106494,7 +106494,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85228] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 85220,
 		id = 85228,
 		torpedo_ammo = 0,
@@ -106504,7 +106504,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85229] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 85220,
 		id = 85229,
 		torpedo_ammo = 0,
@@ -106514,7 +106514,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85230] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 85220,
 		id = 85230,
 		torpedo_ammo = 0,
@@ -106525,7 +106525,7 @@ pg.equip_data_statistics = {
 	},
 	[85231] = {
 		anti_siren = 100,
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 85220,
 		id = 85231,
 		torpedo_ammo = 0,
@@ -106535,16 +106535,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85260] = {
-		name = "B-54 100mmåŒè”è£…é˜²ç©ºç‚®",
-		speciality = "é˜²ç©º",
+		name = "B-54 100mmË«Áª×°·À¿ÕÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "85240",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "36/è½®",
+		damage = "36/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -106597,7 +106597,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85261] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 85260,
 		id = 85261,
 		torpedo_ammo = 0,
@@ -106607,7 +106607,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85262] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 85260,
 		id = 85262,
 		torpedo_ammo = 0,
@@ -106617,7 +106617,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85263] = {
-		damage = "52/è½®",
+		damage = "52/ÂÖ",
 		base = 85260,
 		id = 85263,
 		torpedo_ammo = 0,
@@ -106627,7 +106627,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85264] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 85260,
 		id = 85264,
 		torpedo_ammo = 0,
@@ -106637,7 +106637,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85265] = {
-		damage = "66/è½®",
+		damage = "66/ÂÖ",
 		base = 85260,
 		id = 85265,
 		torpedo_ammo = 0,
@@ -106647,7 +106647,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85266] = {
-		damage = "73/è½®",
+		damage = "73/ÂÖ",
 		base = 85260,
 		id = 85266,
 		torpedo_ammo = 0,
@@ -106657,16 +106657,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85280] = {
-		name = "B-54 100mmåŒè”è£…é˜²ç©ºç‚®",
-		speciality = "é˜²ç©º",
+		name = "B-54 100mmË«Áª×°·À¿ÕÅÚ",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "85240",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "43/è½®",
+		damage = "43/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -106719,7 +106719,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85281] = {
-		damage = "48/è½®",
+		damage = "48/ÂÖ",
 		base = 85280,
 		id = 85281,
 		torpedo_ammo = 0,
@@ -106729,7 +106729,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85282] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 85280,
 		id = 85282,
 		torpedo_ammo = 0,
@@ -106739,7 +106739,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85283] = {
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 85280,
 		id = 85283,
 		torpedo_ammo = 0,
@@ -106749,7 +106749,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85284] = {
-		damage = "68/è½®",
+		damage = "68/ÂÖ",
 		base = 85280,
 		id = 85284,
 		torpedo_ammo = 0,
@@ -106759,7 +106759,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85285] = {
-		damage = "75/è½®",
+		damage = "75/ÂÖ",
 		base = 85280,
 		id = 85285,
 		torpedo_ammo = 0,
@@ -106769,7 +106769,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85286] = {
-		damage = "82/è½®",
+		damage = "82/ÂÖ",
 		base = 85280,
 		id = 85286,
 		torpedo_ammo = 0,
@@ -106779,7 +106779,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85287] = {
-		damage = "89/è½®",
+		damage = "89/ÂÖ",
 		base = 85280,
 		id = 85287,
 		torpedo_ammo = 0,
@@ -106789,7 +106789,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85288] = {
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 85280,
 		id = 85288,
 		torpedo_ammo = 0,
@@ -106799,7 +106799,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85289] = {
-		damage = "103/è½®",
+		damage = "103/ÂÖ",
 		base = 85280,
 		id = 85289,
 		torpedo_ammo = 0,
@@ -106809,7 +106809,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85290] = {
-		damage = "110/è½®",
+		damage = "110/ÂÖ",
 		base = 85280,
 		id = 85290,
 		torpedo_ammo = 0,
@@ -106820,7 +106820,7 @@ pg.equip_data_statistics = {
 	},
 	[85291] = {
 		anti_siren = 100,
-		damage = "110/è½®",
+		damage = "110/ÂÖ",
 		base = 85280,
 		id = 85291,
 		torpedo_ammo = 0,
@@ -106830,11 +106830,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85300] = {
-		name = "B-37 ä¸‰è”è£…406mmä¸»ç‚®Mk-1",
-		speciality = "è·¨å°„",
+		name = "B-37 ÈıÁª×°406mmÖ÷ÅÚMk-1",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "85300",
 		attribute_2 = "cannon",
@@ -106942,11 +106942,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85320] = {
-		name = "B-37 ä¸‰è”è£…406mmä¸»ç‚®Mk-1",
-		speciality = "è·¨å°„",
+		name = "B-37 ÈıÁª×°406mmÖ÷ÅÚMk-1",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "85300",
 		attribute_2 = "cannon",
@@ -107095,16 +107095,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85360] = {
-		name = "B-34 100mmåŒè”è£…é˜²ç©ºç‚®MZ-14",
-		speciality = "é˜²ç©º",
+		name = "B-34 100mmË«Áª×°·À¿ÕÅÚMZ-14",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "85360",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "14/è½®",
+		damage = "14/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -107157,7 +107157,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85361] = {
-		damage = "16/è½®",
+		damage = "16/ÂÖ",
 		base = 85360,
 		id = 85361,
 		torpedo_ammo = 0,
@@ -107167,7 +107167,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85362] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 85360,
 		id = 85362,
 		torpedo_ammo = 0,
@@ -107177,7 +107177,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85363] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 85360,
 		id = 85363,
 		torpedo_ammo = 0,
@@ -107187,16 +107187,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85380] = {
-		name = "B-34 100mmåŒè”è£…é˜²ç©ºç‚®MZ-14",
-		speciality = "é˜²ç©º",
+		name = "B-34 100mmË«Áª×°·À¿ÕÅÚMZ-14",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "85360",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "33/è½®",
+		damage = "33/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -107249,7 +107249,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85381] = {
-		damage = "36/è½®",
+		damage = "36/ÂÖ",
 		base = 85380,
 		id = 85381,
 		torpedo_ammo = 0,
@@ -107259,7 +107259,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85382] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 85380,
 		id = 85382,
 		torpedo_ammo = 0,
@@ -107269,7 +107269,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85383] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 85380,
 		id = 85383,
 		torpedo_ammo = 0,
@@ -107279,7 +107279,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85384] = {
-		damage = "51/è½®",
+		damage = "51/ÂÖ",
 		base = 85380,
 		id = 85384,
 		torpedo_ammo = 0,
@@ -107289,7 +107289,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85385] = {
-		damage = "57/è½®",
+		damage = "57/ÂÖ",
 		base = 85380,
 		id = 85385,
 		torpedo_ammo = 0,
@@ -107299,7 +107299,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85386] = {
-		damage = "64/è½®",
+		damage = "64/ÂÖ",
 		base = 85380,
 		id = 85386,
 		torpedo_ammo = 0,
@@ -107309,16 +107309,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85400] = {
-		name = "B-34 100mmåŒè”è£…é˜²ç©ºç‚®MZ-14",
-		speciality = "é˜²ç©º",
+		name = "B-34 100mmË«Áª×°·À¿ÕÅÚMZ-14",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "85360",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		nationality = 7,
 		ammo = 5,
 		value_3 = 0,
@@ -107371,7 +107371,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85401] = {
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		base = 85400,
 		id = 85401,
 		torpedo_ammo = 0,
@@ -107381,7 +107381,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85402] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 85400,
 		id = 85402,
 		torpedo_ammo = 0,
@@ -107391,7 +107391,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85403] = {
-		damage = "53/è½®",
+		damage = "53/ÂÖ",
 		base = 85400,
 		id = 85403,
 		torpedo_ammo = 0,
@@ -107401,7 +107401,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85404] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 85400,
 		id = 85404,
 		torpedo_ammo = 0,
@@ -107411,7 +107411,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85405] = {
-		damage = "65/è½®",
+		damage = "65/ÂÖ",
 		base = 85400,
 		id = 85405,
 		torpedo_ammo = 0,
@@ -107421,7 +107421,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85406] = {
-		damage = "71/è½®",
+		damage = "71/ÂÖ",
 		base = 85400,
 		id = 85406,
 		torpedo_ammo = 0,
@@ -107431,7 +107431,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85407] = {
-		damage = "77/è½®",
+		damage = "77/ÂÖ",
 		base = 85400,
 		id = 85407,
 		torpedo_ammo = 0,
@@ -107441,7 +107441,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85408] = {
-		damage = "83/è½®",
+		damage = "83/ÂÖ",
 		base = 85400,
 		id = 85408,
 		torpedo_ammo = 0,
@@ -107451,7 +107451,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85409] = {
-		damage = "89/è½®",
+		damage = "89/ÂÖ",
 		base = 85400,
 		id = 85409,
 		torpedo_ammo = 0,
@@ -107461,7 +107461,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85410] = {
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 85400,
 		id = 85410,
 		torpedo_ammo = 0,
@@ -107472,7 +107472,7 @@ pg.equip_data_statistics = {
 	},
 	[85411] = {
 		anti_siren = 100,
-		damage = "96/è½®",
+		damage = "96/ÂÖ",
 		base = 85400,
 		id = 85411,
 		torpedo_ammo = 0,
@@ -107482,11 +107482,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85420] = {
-		name = "ä¸‰è”è£…305mmä¸»ç‚®Model1907",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°305mmÖ÷ÅÚModel1907",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "85420",
 		attribute_2 = "cannon",
@@ -107605,11 +107605,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[85440] = {
-		name = "åŒè”è£…152mmä¸»ç‚®Model1892",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°152mmÖ÷ÅÚModel1892",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "85440",
 		attribute_2 = "cannon",
@@ -107734,17 +107734,17 @@ pg.equip_data_statistics = {
 		}
 	},
 	[89000] = {
-		name = "éšæœºå•è¯ç”Ÿæˆå™¨",
+		name = "Ëæ»úµ¥´ÊÉú³ÉÆ÷",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89000,
 		value_2 = 6,
 		icon = "89000",
 		value_1 = "16",
 		attribute_2 = "dodge",
 		rarity = 5,
-		descrip = "åœ¨æ„æ€ä¼åˆ’æ—¶éå¸¸å¥½ç”¨çš„é“å…·ã€‚æ®è¯´åœ¨åœ¨å¾ˆç¨€æœ‰çš„æƒ…å†µä¸‹ä¼šå¼€å£è¯´è¯â€¦ï¼Ÿ",
+		descrip = "ÔÚ¹¹Ë¼Æó»®Ê±·Ç³£ºÃÓÃµÄµÀ¾ß¡£¾İËµÔÚÔÚºÜÏ¡ÓĞµÄÇé¿öÏÂ»á¿ª¿ÚËµ»°¡­£¿",
 		nationality = 104,
 		ammo = 10,
 		value_3 = 0,
@@ -107873,17 +107873,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89020] = {
-		name = "æ™ƒæ‚ æ‚ ",
+		name = "»ÎÓÆÓÆ",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89020,
 		value_2 = 1,
 		icon = "89020",
 		value_1 = "200",
 		attribute_2 = "luck",
 		rarity = 5,
-		descrip = "ç»Šçˆ±çš„å‘ç®ã€‚æœ‰ä¸€ç§è¯´æ³•æ˜¯æ™ƒæ‚ æ‚ æ‰æ˜¯æœ¬ä½“ã€‚æ‹¿æ‰æ™ƒæ‚ æ‚ çš„è¯ä¼šæ€ä¹ˆæ ·å‘¢â€¦è¯è¯´çœŸçš„æ‹¿å¾—æ‰ä¹ˆï¼Ÿ",
+		descrip = "°í°®µÄ·¢¹¿¡£ÓĞÒ»ÖÖËµ·¨ÊÇ»ÎÓÆÓÆ²ÅÊÇ±¾Ìå¡£ÄÃµô»ÎÓÆÓÆµÄ»°»áÔõÃ´ÑùÄØ¡­»°ËµÕæµÄÄÃµÃµôÃ´£¿",
 		nationality = 104,
 		ammo = 10,
 		value_3 = 0,
@@ -108014,17 +108014,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89040] = {
-		name = "æ™ºæ…§æ¨¡å—",
+		name = "ÖÇ»ÛÄ£¿é",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89040,
 		value_2 = 3,
 		icon = "89040",
 		value_1 = "98",
 		attribute_2 = "speed",
 		rarity = 5,
-		descrip = "ç»Šçˆ±åœ¨å¯¼å…¥æ’ä»¶æ—¶ä½¿ç”¨çš„èŠ¯ç‰‡â€¦ï¼Ÿâ€”â€”ä¸ä¼šå†è®©äººè¯´åºŸæŸ´äº†ï¼<color=#ff5c5c>ï¼ˆè¯¥è£…å¤‡ç»Šçˆ±è”åŠ¨æ´»åŠ¨ç»“æŸåè£…å¤‡æŠ€èƒ½å¤±æ•ˆï¼‰</color>",
+		descrip = "°í°®ÔÚµ¼Èë²å¼şÊ±Ê¹ÓÃµÄĞ¾Æ¬¡­£¿¡ª¡ª²»»áÔÙÈÃÈËËµ·Ï²ñÁË£¡<color=#ff5c5c>£¨¸Ã×°±¸°í°®Áª¶¯»î¶¯½áÊøºó×°±¸¼¼ÄÜÊ§Ğ§£©</color>",
 		nationality = 104,
 		ammo = 10,
 		value_3 = 0,
@@ -108154,17 +108154,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89060] = {
-		name = "ç»„å¾½",
+		name = "×é»Õ",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89060,
 		value_2 = 16,
 		icon = "89060",
 		value_1 = "6",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "æœ¬æ¥åº”è¯¥ä½œä¸ºç»„å¾½è®¾è®¡çš„æ‰å¯¹ï¼Œå˜...å˜èº«ï¼Ÿ",
+		descrip = "±¾À´Ó¦¸Ã×÷Îª×é»ÕÉè¼ÆµÄ²Å¶Ô£¬±ä...±äÉí£¿",
 		nationality = 105,
 		ammo = 10,
 		value_3 = 0,
@@ -108294,15 +108294,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89080] = {
-		name = "Gamersçš„è¯æ˜",
+		name = "GamersµÄÖ¤Ã÷",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "89080",
 		value_1 = "245",
-		descrip = "hololivegamersæˆå‘˜çš„è¯æ˜å¾½ç« ï¼ ",
+		descrip = "hololivegamers³ÉÔ±µÄÖ¤Ã÷»ÕÕÂ£¡ ",
 		rarity = 5,
 		nationality = 105,
 		ammo = 10,
@@ -108421,17 +108421,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89100] = {
-		name = "ç‰ç±³ç¯ç¬¼",
+		name = "ÓñÃ×µÆÁı",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89100,
 		value_2 = 50,
 		icon = "89100",
 		value_1 = "9",
 		attribute_2 = "durability",
 		rarity = 5,
-		descrip = "å°ç€ç‰ç±³å›¾æ¡ˆçš„ç¯ç¬¼.......å¤è‰²å¹é›ªï¼Ÿï¼ ",
+		descrip = "Ó¡×ÅÓñÃ×Í¼°¸µÄµÆÁı.......ÏÄÉ«´µÑ©£¿£¡ ",
 		nationality = 105,
 		ammo = 10,
 		value_3 = 0,
@@ -108562,17 +108562,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89120] = {
-		name = "é®Ÿé±‡è‚",
+		name = "õc÷K¸Î",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89120,
 		value_2 = 3,
 		icon = "89120",
 		value_1 = "98",
 		attribute_2 = "speed",
 		rarity = 5,
-		descrip = "hololiveç¤¾å†…è‡ªç”±è¡ŒåŠ¨çš„å‰ç¥¥ç‰©...ä¸åŠ¨çš„æ—¶å€™ä¼šåŸ‹åœ¨åœ°é‡Œï¼ï¼Ÿ",
+		descrip = "hololiveÉçÄÚ×ÔÓÉĞĞ¶¯µÄ¼ªÏéÎï...²»¶¯µÄÊ±ºò»áÂñÔÚµØÀï£¡£¿",
 		nationality = 105,
 		ammo = 10,
 		value_3 = 0,
@@ -108702,17 +108702,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89140] = {
-		name = "ç‚½çƒˆä¹‹æ­Œ",
+		name = "³ãÁÒÖ®¸è",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89140,
 		value_2 = 15,
 		icon = "89140",
 		value_1 = "14",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "å¶åƒç»„åˆã€ŒVerheerenderã€æ‰€ä½¿ç”¨çš„éº¦å…‹é£",
+		descrip = "Å¼Ïñ×éºÏ¡¸Verheerender¡¹ËùÊ¹ÓÃµÄÂó¿Ë·ç",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -108843,17 +108843,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89160] = {
-		name = "æ´»åŠ›ä¹‹æ­Œ",
+		name = "»îÁ¦Ö®¸è",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89160,
 		value_2 = 15,
 		icon = "89160",
 		value_1 = "14",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "å¶åƒç»„åˆã€ŒLumiÃ¨reã€æ‰€ä½¿ç”¨çš„éº¦å…‹é£",
+		descrip = "Å¼Ïñ×éºÏ¡¸Lumi¨¨re¡¹ËùÊ¹ÓÃµÄÂó¿Ë·ç",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -108984,17 +108984,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89180] = {
-		name = "é—ªè€€ä¹‹æ­Œ",
+		name = "ÉÁÒ«Ö®¸è",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89180,
 		value_2 = 15,
 		icon = "89180",
 		value_1 = "14",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "å¶åƒç»„åˆã€ŒAstrumã€æ‰€ä½¿ç”¨çš„éº¦å…‹é£",
+		descrip = "Å¼Ïñ×éºÏ¡¸Astrum¡¹ËùÊ¹ÓÃµÄÂó¿Ë·ç",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -109125,17 +109125,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89200] = {
-		name = "å¼•åŠ›èˆé‹",
+		name = "ÒıÁ¦ÎèĞ¬",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89200,
 		value_2 = 1,
 		icon = "89200",
 		value_1 = "13",
 		attribute_2 = "speed",
 		rarity = 5,
-		descrip = "å¼•äººç©ç›®çš„èˆé‹ï¼Œç©¿ä¸Šä»¥åä¼¼ä¹èƒ½å¤Ÿæˆä¸ºâ€¦â€¦å¶åƒï¼Ÿ",
+		descrip = "ÒıÈËÖõÄ¿µÄÎèĞ¬£¬´©ÉÏÒÔºóËÆºõÄÜ¹»³ÉÎª¡­¡­Å¼Ïñ£¿",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -109264,15 +109264,15 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89220] = {
-		name = "æ˜Ÿäº‘èˆè£™",
+		name = "ĞÇÔÆÎèÈ¹",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		attribute_1 = "durability",
 		value_2 = 0,
 		icon = "89220",
 		value_1 = "250",
-		descrip = "æ˜Ÿäº‘èˆ¬åä¸½çš„èˆè£™ï¼Œç©¿ä¸Šä»¥åä¼¼ä¹èƒ½å¤Ÿæˆä¸ºâ€¦å¶åƒï¼Ÿ",
+		descrip = "ĞÇÔÆ°ã»ªÀöµÄÎèÈ¹£¬´©ÉÏÒÔºóËÆºõÄÜ¹»³ÉÎª¡­Å¼Ïñ£¿",
 		rarity = 5,
 		nationality = 0,
 		ammo = 10,
@@ -109391,17 +109391,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89240] = {
-		name = "è§‰é†’å®ç ",
+		name = "¾õĞÑ±¦Öé",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89240,
 		value_2 = 16,
 		icon = "89240",
 		value_1 = "6",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "è¯´æ˜å å‘",
+		descrip = "ËµÃ÷Õ¼¿Ó",
 		nationality = 106,
 		ammo = 10,
 		value_3 = 0,
@@ -109531,17 +109531,17 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89260] = {
-		name = "å¿ƒä¹‹é’¥åŒ™",
+		name = "ĞÄÖ®Ô¿³×",
 		tech = 0,
 		type = 10,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		id = 89260,
 		value_2 = 15,
 		icon = "89260",
 		value_1 = "14",
 		attribute_2 = "hit",
 		rarity = 5,
-		descrip = "è¯´æ˜å å‘",
+		descrip = "ËµÃ÷Õ¼¿Ó",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -109672,12 +109672,12 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90000] = {
-		name = "130mmå•è£…ç‚®Mle1924",
-		speciality = "é”å®š",
+		name = "130mmµ¥×°ÅÚMle1924",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "50000",
 		damage = "3 x 5",
@@ -109767,11 +109767,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90020] = {
-		name = "130mmå•è£…ç‚®Mle1924",
-		speciality = "é”å®š",
+		name = "130mmµ¥×°ÅÚMle1924",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "50000",
 		attribute_2 = "cannon",
@@ -109863,11 +109863,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90040] = {
-		name = "130mmå•è£…ç‚®Mle1924",
-		speciality = "é”å®š",
+		name = "130mmµ¥×°ÅÚMle1924",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50000",
 		attribute_2 = "cannon",
@@ -109999,11 +109999,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90100] = {
-		name = "138.6mmå•è£…ç‚®Mle1929",
-		speciality = "é”å®š",
+		name = "138.6mmµ¥×°ÅÚMle1929",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50100",
 		attribute_2 = "cannon",
@@ -110125,11 +110125,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90120] = {
-		name = "138.6mmå•è£…ç‚®Mle1929",
-		speciality = "é”å®š",
+		name = "138.6mmµ¥×°ÅÚMle1929",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "50100",
 		attribute_2 = "cannon",
@@ -110292,11 +110292,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90140] = {
-		name = "138.6mmå•è£…ç‚®Mle1929",
-		speciality = "é”å®š",
+		name = "138.6mmµ¥×°ÅÚMle1929",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 35,
 		icon = "50100",
 		attribute_2 = "cannon",
@@ -110492,12 +110492,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90200] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®Mle1930",
-		speciality = "æ•£å°„",
+		name = "ÈıÁª×°152mmÖ÷ÅÚMle1930",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "50200",
 		damage = "7 x 6",
@@ -110580,11 +110580,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90220] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®Mle1930",
-		speciality = "æ•£å°„",
+		name = "ÈıÁª×°152mmÖ÷ÅÚMle1930",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "50200",
 		attribute_2 = "cannon",
@@ -110669,11 +110669,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90240] = {
-		name = "ä¸‰è”è£…152mmä¸»ç‚®Mle1930",
-		speciality = "æ•£å°„",
+		name = "ÈıÁª×°152mmÖ÷ÅÚMle1930",
+		speciality = "É¢Éä",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50200",
 		attribute_2 = "cannon",
@@ -110799,11 +110799,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90300] = {
-		name = "å››è”è£…330mmä¸»ç‚®Mle1931",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°330mmÖ÷ÅÚMle1931",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "50300",
 		attribute_2 = "cannon",
@@ -110881,11 +110881,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90320] = {
-		name = "å››è”è£…330mmä¸»ç‚®Mle1931",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°330mmÖ÷ÅÚMle1931",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50300",
 		attribute_2 = "cannon",
@@ -110993,11 +110993,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90340] = {
-		name = "å››è”è£…330mmä¸»ç‚®Mle1931",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°330mmÖ÷ÅÚMle1931",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "50300",
 		attribute_2 = "cannon",
@@ -111157,11 +111157,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90400] = {
-		name = "å››è”è£…380mmä¸»ç‚®Mle1935",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°380mmÖ÷ÅÚMle1935",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "é»å¡ç•™çº§æˆ˜åˆ—èˆ°ä¸Šæ­è½½çš„å››è”è£…380mmä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÀèÈûÁô¼¶Õ½ÁĞ½¢ÉÏ´îÔØµÄËÄÁª×°380mmÖ÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "50400",
 		attribute_2 = "cannon",
@@ -111270,11 +111270,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90420] = {
-		name = "å››è”è£…380mmä¸»ç‚®Mle1935",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°380mmÖ÷ÅÚMle1935",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "é»å¡ç•™çº§æˆ˜åˆ—èˆ°ä¸Šæ­è½½çš„å››è”è£…380mmä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÀèÈûÁô¼¶Õ½ÁĞ½¢ÉÏ´îÔØµÄËÄÁª×°380mmÖ÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "50400",
 		attribute_2 = "cannon",
@@ -111423,11 +111423,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90440] = {
-		name = "å››è”è£…380mmä¸»ç‚®Mle1935",
-		speciality = "è·¨å°„",
+		name = "ËÄÁª×°380mmÖ÷ÅÚMle1935",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "é»å¡ç•™çº§æˆ˜åˆ—èˆ°ä¸Šæ­è½½çš„å››è”è£…380mmä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÀèÈûÁô¼¶Õ½ÁĞ½¢ÉÏ´îÔØµÄËÄÁª×°380mmÖ÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 45,
 		icon = "50400",
 		attribute_2 = "cannon",
@@ -111609,11 +111609,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90500] = {
-		name = "åŒè”è£…130mmä¸»ç‚®Mle1935",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°130mmÖ÷ÅÚMle1935",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "50500",
 		attribute_2 = "cannon",
@@ -111704,16 +111704,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90600] = {
-		name = "åŒè”37mmé«˜å°„ç‚®Mle1936",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª37mm¸ßÉäÅÚMle1936",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "50600",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		nationality = 8,
 		ammo = 5,
 		value_3 = 0,
@@ -111766,7 +111766,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90601] = {
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		base = 90600,
 		id = 90601,
 		torpedo_ammo = 0,
@@ -111776,7 +111776,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90602] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 90600,
 		id = 90602,
 		torpedo_ammo = 0,
@@ -111786,7 +111786,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90603] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 90600,
 		id = 90603,
 		torpedo_ammo = 0,
@@ -111796,7 +111796,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90604] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 90600,
 		id = 90604,
 		torpedo_ammo = 0,
@@ -111806,7 +111806,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90605] = {
-		damage = "58/è½®",
+		damage = "58/ÂÖ",
 		base = 90600,
 		id = 90605,
 		torpedo_ammo = 0,
@@ -111816,7 +111816,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90606] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 90600,
 		id = 90606,
 		torpedo_ammo = 0,
@@ -111826,7 +111826,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90607] = {
-		damage = "66/è½®",
+		damage = "66/ÂÖ",
 		base = 90600,
 		id = 90607,
 		torpedo_ammo = 0,
@@ -111836,7 +111836,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90608] = {
-		damage = "70/è½®",
+		damage = "70/ÂÖ",
 		base = 90600,
 		id = 90608,
 		torpedo_ammo = 0,
@@ -111846,7 +111846,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90609] = {
-		damage = "74/è½®",
+		damage = "74/ÂÖ",
 		base = 90600,
 		id = 90609,
 		torpedo_ammo = 0,
@@ -111856,7 +111856,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90610] = {
-		damage = "78/è½®",
+		damage = "78/ÂÖ",
 		base = 90600,
 		id = 90610,
 		torpedo_ammo = 0,
@@ -111867,7 +111867,7 @@ pg.equip_data_statistics = {
 	},
 	[90611] = {
 		anti_siren = 100,
-		damage = "78/è½®",
+		damage = "78/ÂÖ",
 		base = 90600,
 		id = 90611,
 		torpedo_ammo = 0,
@@ -111878,7 +111878,7 @@ pg.equip_data_statistics = {
 	},
 	[90612] = {
 		anti_siren = 200,
-		damage = "78/è½®",
+		damage = "78/ÂÖ",
 		base = 90600,
 		id = 90612,
 		torpedo_ammo = 0,
@@ -111889,7 +111889,7 @@ pg.equip_data_statistics = {
 	},
 	[90613] = {
 		anti_siren = 300,
-		damage = "78/è½®",
+		damage = "78/ÂÖ",
 		base = 90600,
 		id = 90613,
 		torpedo_ammo = 0,
@@ -111899,11 +111899,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90700] = {
-		name = "138.6mmå•è£…ç‚®Mle1927",
-		speciality = "é”å®š",
+		name = "138.6mmµ¥×°ÅÚMle1927",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "50700",
 		attribute_2 = "cannon",
@@ -111995,11 +111995,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90720] = {
-		name = "138.6mmå•è£…ç‚®Mle1927",
-		speciality = "é”å®š",
+		name = "138.6mmµ¥×°ÅÚMle1927",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50700",
 		attribute_2 = "cannon",
@@ -112121,11 +112121,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90740] = {
-		name = "138.6mmå•è£…ç‚®Mle1927",
-		speciality = "é”å®š",
+		name = "138.6mmµ¥×°ÅÚMle1927",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "50700",
 		attribute_2 = "cannon",
@@ -112298,11 +112298,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90780] = {
-		name = "åŒè”è£…155mmä¸»ç‚®Mle1920",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°155mmÖ÷ÅÚMle1920",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50780",
 		attribute_2 = "cannon",
@@ -112428,11 +112428,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90800] = {
-		name = "å•è£…155mmå‰¯ç‚®Mle1920",
-		speciality = "é”å®š",
+		name = "µ¥×°155mm¸±ÅÚMle1920",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50800",
 		attribute_2 = "cannon",
@@ -112558,12 +112558,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90820] = {
-		name = "GL.2èˆ°è½½æˆ˜æ–—æœº",
+		name = "GL.2½¢ÔØÕ½¶·»ú",
 		type = 7,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		rarity = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50820",
 		attribute_2 = "air",
@@ -112719,12 +112719,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90840] = {
-		name = "PL.7èˆ°è½½é±¼é›·æœº",
+		name = "PL.7½¢ÔØÓãÀ×»ú",
 		type = 8,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		rarity = 3,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50840",
 		attribute_2 = "air",
@@ -112904,11 +112904,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90860] = {
-		name = "åŒè”è£…203mmä¸»ç‚®Mle1924",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmÖ÷ÅÚMle1924",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50860",
 		attribute_2 = "cannon",
@@ -113023,11 +113023,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90880] = {
-		name = "åŒè”è£…203mmä¸»ç‚®Mle1924",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmÖ÷ÅÚMle1924",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "50860",
 		attribute_2 = "cannon",
@@ -113182,11 +113182,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[90900] = {
-		name = "åŒè”è£…203mmä¸»ç‚®Mle1924",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°203mmÖ÷ÅÚMle1924",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "50860",
 		attribute_2 = "cannon",
@@ -113374,11 +113374,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[91000] = {
-		name = "è¯•ä½œå‹ä¸‰è”è£…406mm/50ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÊÔ×÷ĞÍÈıÁª×°406mm/50Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "51000",
 		attribute_2 = "cannon",
@@ -113560,11 +113560,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95000] = {
-		name = "ä¸‰è”è£…381mmä¸»ç‚®Model1934",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°381mmÖ÷ÅÚModel1934",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 1,
-		descrip = "ä¸‰è”è£…381mmä¸»ç‚®ï¼Œç»´æ‰˜é‡Œå¥¥Â·ç»´å†…æ‰˜çº§æˆ˜åˆ—èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª×°381mmÖ÷ÅÚ£¬Î¬ÍĞÀï°Â¡¤Î¬ÄÚÍĞ¼¶Õ½ÁĞ½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 12,
 		icon = "55000",
 		attribute_2 = "cannon",
@@ -113672,11 +113672,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95020] = {
-		name = "ä¸‰è”è£…381mmä¸»ç‚®Model1934",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°381mmÖ÷ÅÚModel1934",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 2,
-		descrip = "ä¸‰è”è£…381mmä¸»ç‚®ï¼Œç»´æ‰˜é‡Œå¥¥Â·ç»´å†…æ‰˜çº§æˆ˜åˆ—èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª×°381mmÖ÷ÅÚ£¬Î¬ÍĞÀï°Â¡¤Î¬ÄÚÍĞ¼¶Õ½ÁĞ½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 25,
 		icon = "55000",
 		attribute_2 = "cannon",
@@ -113825,11 +113825,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95040] = {
-		name = "ä¸‰è”è£…381mmä¸»ç‚®Model1934",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°381mmÖ÷ÅÚModel1934",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "ä¸‰è”è£…381mmä¸»ç‚®ï¼Œç»´æ‰˜é‡Œå¥¥Â·ç»´å†…æ‰˜çº§æˆ˜åˆ—èˆ°ä¸»ç‚®ï¼Œæˆ˜å·¡å’Œæˆ˜åˆ—å¯ä»¥ä½¿ç”¨",
+		descrip = "ÈıÁª×°381mmÖ÷ÅÚ£¬Î¬ÍĞÀï°Â¡¤Î¬ÄÚÍĞ¼¶Õ½ÁĞ½¢Ö÷ÅÚ£¬Õ½Ñ²ºÍÕ½ÁĞ¿ÉÒÔÊ¹ÓÃ",
 		value_2 = 45,
 		icon = "55000",
 		attribute_2 = "cannon",
@@ -114013,16 +114013,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95100] = {
-		name = "90mmå•è£…é«˜è§’ç‚®Model1939",
-		speciality = "é˜²ç©º",
+		name = "90mmµ¥×°¸ß½ÇÅÚModel1939",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "55100",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		nationality = 6,
 		ammo = 5,
 		value_3 = 0,
@@ -114075,7 +114075,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95101] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 95100,
 		id = 95101,
 		torpedo_ammo = 0,
@@ -114085,7 +114085,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95102] = {
-		damage = "42/è½®",
+		damage = "42/ÂÖ",
 		base = 95100,
 		id = 95102,
 		torpedo_ammo = 0,
@@ -114095,7 +114095,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95103] = {
-		damage = "46/è½®",
+		damage = "46/ÂÖ",
 		base = 95100,
 		id = 95103,
 		torpedo_ammo = 0,
@@ -114105,7 +114105,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95104] = {
-		damage = "51/è½®",
+		damage = "51/ÂÖ",
 		base = 95100,
 		id = 95104,
 		torpedo_ammo = 0,
@@ -114115,7 +114115,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95105] = {
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 95100,
 		id = 95105,
 		torpedo_ammo = 0,
@@ -114125,7 +114125,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95106] = {
-		damage = "61/è½®",
+		damage = "61/ÂÖ",
 		base = 95100,
 		id = 95106,
 		torpedo_ammo = 0,
@@ -114135,16 +114135,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95120] = {
-		name = "90mmå•è£…é«˜è§’ç‚®Model1939",
-		speciality = "é˜²ç©º",
+		name = "90mmµ¥×°¸ß½ÇÅÚModel1939",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "55100",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		nationality = 6,
 		ammo = 5,
 		value_3 = 0,
@@ -114197,7 +114197,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95121] = {
-		damage = "39/è½®",
+		damage = "39/ÂÖ",
 		base = 95120,
 		id = 95121,
 		torpedo_ammo = 0,
@@ -114207,7 +114207,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95122] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 95120,
 		id = 95122,
 		torpedo_ammo = 0,
@@ -114217,7 +114217,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95123] = {
-		damage = "49/è½®",
+		damage = "49/ÂÖ",
 		base = 95120,
 		id = 95123,
 		torpedo_ammo = 0,
@@ -114227,7 +114227,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95124] = {
-		damage = "54/è½®",
+		damage = "54/ÂÖ",
 		base = 95120,
 		id = 95124,
 		torpedo_ammo = 0,
@@ -114237,7 +114237,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95125] = {
-		damage = "59/è½®",
+		damage = "59/ÂÖ",
 		base = 95120,
 		id = 95125,
 		torpedo_ammo = 0,
@@ -114247,7 +114247,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95126] = {
-		damage = "65/è½®",
+		damage = "65/ÂÖ",
 		base = 95120,
 		id = 95126,
 		torpedo_ammo = 0,
@@ -114257,7 +114257,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95127] = {
-		damage = "71/è½®",
+		damage = "71/ÂÖ",
 		base = 95120,
 		id = 95127,
 		torpedo_ammo = 0,
@@ -114267,7 +114267,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95128] = {
-		damage = "77/è½®",
+		damage = "77/ÂÖ",
 		base = 95120,
 		id = 95128,
 		torpedo_ammo = 0,
@@ -114277,7 +114277,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95129] = {
-		damage = "83/è½®",
+		damage = "83/ÂÖ",
 		base = 95120,
 		id = 95129,
 		torpedo_ammo = 0,
@@ -114287,7 +114287,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95130] = {
-		damage = "90/è½®",
+		damage = "90/ÂÖ",
 		base = 95120,
 		id = 95130,
 		torpedo_ammo = 0,
@@ -114297,16 +114297,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95140] = {
-		name = "90mmå•è£…é«˜è§’ç‚®Model1939",
-		speciality = "é˜²ç©º",
+		name = "90mmµ¥×°¸ß½ÇÅÚModel1939",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "55100",
 		attribute_2 = "antiaircraft",
 		rarity = 5,
-		damage = "40/è½®",
+		damage = "40/ÂÖ",
 		nationality = 6,
 		ammo = 5,
 		value_3 = 0,
@@ -114359,7 +114359,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95141] = {
-		damage = "45/è½®",
+		damage = "45/ÂÖ",
 		base = 95140,
 		id = 95141,
 		torpedo_ammo = 0,
@@ -114369,7 +114369,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95142] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 95140,
 		id = 95142,
 		torpedo_ammo = 0,
@@ -114379,7 +114379,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95143] = {
-		damage = "56/è½®",
+		damage = "56/ÂÖ",
 		base = 95140,
 		id = 95143,
 		torpedo_ammo = 0,
@@ -114389,7 +114389,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95144] = {
-		damage = "62/è½®",
+		damage = "62/ÂÖ",
 		base = 95140,
 		id = 95144,
 		torpedo_ammo = 0,
@@ -114399,7 +114399,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95145] = {
-		damage = "68/è½®",
+		damage = "68/ÂÖ",
 		base = 95140,
 		id = 95145,
 		torpedo_ammo = 0,
@@ -114409,7 +114409,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95146] = {
-		damage = "74/è½®",
+		damage = "74/ÂÖ",
 		base = 95140,
 		id = 95146,
 		torpedo_ammo = 0,
@@ -114419,7 +114419,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95147] = {
-		damage = "80/è½®",
+		damage = "80/ÂÖ",
 		base = 95140,
 		id = 95147,
 		torpedo_ammo = 0,
@@ -114429,7 +114429,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95148] = {
-		damage = "86/è½®",
+		damage = "86/ÂÖ",
 		base = 95140,
 		id = 95148,
 		torpedo_ammo = 0,
@@ -114439,7 +114439,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95149] = {
-		damage = "92/è½®",
+		damage = "92/ÂÖ",
 		base = 95140,
 		id = 95149,
 		torpedo_ammo = 0,
@@ -114449,7 +114449,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95150] = {
-		damage = "98/è½®",
+		damage = "98/ÂÖ",
 		base = 95140,
 		id = 95150,
 		torpedo_ammo = 0,
@@ -114460,7 +114460,7 @@ pg.equip_data_statistics = {
 	},
 	[95151] = {
 		anti_siren = 100,
-		damage = "98/è½®",
+		damage = "98/ÂÖ",
 		base = 95140,
 		id = 95151,
 		torpedo_ammo = 0,
@@ -114471,7 +114471,7 @@ pg.equip_data_statistics = {
 	},
 	[95152] = {
 		anti_siren = 200,
-		damage = "98/è½®",
+		damage = "98/ÂÖ",
 		base = 95140,
 		id = 95152,
 		torpedo_ammo = 0,
@@ -114482,7 +114482,7 @@ pg.equip_data_statistics = {
 	},
 	[95153] = {
 		anti_siren = 300,
-		damage = "98/è½®",
+		damage = "98/ÂÖ",
 		base = 95140,
 		id = 95153,
 		torpedo_ammo = 0,
@@ -114492,11 +114492,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95200] = {
-		name = "åŒè”203mmä¸»ç‚®Model1927",
-		speciality = "é”å®š",
+		name = "Ë«Áª203mmÖ÷ÅÚModel1927",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "55200",
 		attribute_2 = "cannon",
@@ -114611,11 +114611,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95220] = {
-		name = "åŒè”203mmä¸»ç‚®Model1927",
-		speciality = "é”å®š",
+		name = "Ë«Áª203mmÖ÷ÅÚModel1927",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "55200",
 		attribute_2 = "cannon",
@@ -114770,11 +114770,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95240] = {
-		name = "åŒè”203mmä¸»ç‚®Model1927",
-		speciality = "é”å®š",
+		name = "Ë«Áª203mmÖ÷ÅÚModel1927",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "55200",
 		attribute_2 = "cannon",
@@ -114962,11 +114962,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95300] = {
-		name = "åŒè”203mmä¸»ç‚®Model1924",
-		speciality = "é”å®š",
+		name = "Ë«Áª203mmÖ÷ÅÚModel1924",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "55300",
 		attribute_2 = "cannon",
@@ -115051,11 +115051,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95320] = {
-		name = "åŒè”203mmä¸»ç‚®Model1924",
-		speciality = "é”å®š",
+		name = "Ë«Áª203mmÖ÷ÅÚModel1924",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "55300",
 		attribute_2 = "cannon",
@@ -115170,11 +115170,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95340] = {
-		name = "åŒè”203mmä¸»ç‚®Model1924",
-		speciality = "é”å®š",
+		name = "Ë«Áª203mmÖ÷ÅÚModel1924",
+		speciality = "Ëø¶¨",
 		type = 3,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "55300",
 		attribute_2 = "cannon",
@@ -115340,11 +115340,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95400] = {
-		name = "åŒè”è£…120mmç‚®Model1936",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°120mmÅÚModel1936",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "55400",
 		attribute_2 = "cannon",
@@ -115436,11 +115436,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95420] = {
-		name = "åŒè”è£…120mmç‚®Model1936",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°120mmÅÚModel1936",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 2,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "55400",
 		attribute_2 = "cannon",
@@ -115562,11 +115562,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95440] = {
-		name = "åŒè”è£…120mmç‚®Model1936",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°120mmÅÚModel1936",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "55400",
 		attribute_2 = "cannon",
@@ -115740,11 +115740,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95460] = {
-		name = "åŒè”è£…120mmç‚®Model1933",
-		speciality = "é”å®š",
+		name = "Ë«Áª×°120mmÅÚModel1933",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "55460",
 		attribute_2 = "cannon",
@@ -115875,11 +115875,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95480] = {
-		name = "ä¸‰è”è£…320mmä¸»ç‚®Model1934",
-		speciality = "è·¨å°„",
+		name = "ÈıÁª×°320mmÖ÷ÅÚModel1934",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "55480",
 		attribute_2 = "cannon",
@@ -115998,16 +115998,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95500] = {
-		name = "åŒè”37mmæœºæªModel1932",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª37mm»úÇ¹Model1932",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 1,
-		descrip = "åŒè”37mmæ‰‹æ‹‰æœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª37mmÊÖÀ­»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 5,
 		icon = "55500",
 		attribute_2 = "antiaircraft",
 		rarity = 2,
-		damage = "15/è½®",
+		damage = "15/ÂÖ",
 		nationality = 6,
 		ammo = 5,
 		value_3 = 0,
@@ -116060,7 +116060,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95501] = {
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		base = 95500,
 		id = 95501,
 		torpedo_ammo = 0,
@@ -116070,7 +116070,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95502] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 95500,
 		id = 95502,
 		torpedo_ammo = 0,
@@ -116080,7 +116080,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95503] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 95500,
 		id = 95503,
 		torpedo_ammo = 0,
@@ -116090,16 +116090,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95520] = {
-		name = "åŒè”37mmæœºæªModel1932",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª37mm»úÇ¹Model1932",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 2,
-		descrip = "åŒè”37mmæ‰‹æ‹‰æœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª37mmÊÖÀ­»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 12,
 		icon = "55500",
 		attribute_2 = "antiaircraft",
 		rarity = 3,
-		damage = "17/è½®",
+		damage = "17/ÂÖ",
 		nationality = 6,
 		ammo = 5,
 		value_3 = 0,
@@ -116152,7 +116152,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95521] = {
-		damage = "19/è½®",
+		damage = "19/ÂÖ",
 		base = 95520,
 		id = 95521,
 		torpedo_ammo = 0,
@@ -116162,7 +116162,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95522] = {
-		damage = "22/è½®",
+		damage = "22/ÂÖ",
 		base = 95520,
 		id = 95522,
 		torpedo_ammo = 0,
@@ -116172,7 +116172,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95523] = {
-		damage = "25/è½®",
+		damage = "25/ÂÖ",
 		base = 95520,
 		id = 95523,
 		torpedo_ammo = 0,
@@ -116182,7 +116182,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95524] = {
-		damage = "28/è½®",
+		damage = "28/ÂÖ",
 		base = 95520,
 		id = 95524,
 		torpedo_ammo = 0,
@@ -116192,7 +116192,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95525] = {
-		damage = "31/è½®",
+		damage = "31/ÂÖ",
 		base = 95520,
 		id = 95525,
 		torpedo_ammo = 0,
@@ -116202,7 +116202,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95526] = {
-		damage = "34/è½®",
+		damage = "34/ÂÖ",
 		base = 95520,
 		id = 95526,
 		torpedo_ammo = 0,
@@ -116212,16 +116212,16 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95540] = {
-		name = "åŒè”37mmæœºæªModel1932",
-		speciality = "é˜²ç©º",
+		name = "Ë«Áª37mm»úÇ¹Model1932",
+		speciality = "·À¿Õ",
 		type = 6,
 		tech = 3,
-		descrip = "åŒè”37mmæ‰‹æ‹‰æœºæªï¼Œå¯ä»¥ç”¨äºé˜²ç©º",
+		descrip = "Ë«Áª37mmÊÖÀ­»úÇ¹£¬¿ÉÒÔÓÃÓÚ·À¿Õ",
 		value_2 = 25,
 		icon = "55500",
 		attribute_2 = "antiaircraft",
 		rarity = 4,
-		damage = "20/è½®",
+		damage = "20/ÂÖ",
 		nationality = 6,
 		ammo = 5,
 		value_3 = 0,
@@ -116274,7 +116274,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95541] = {
-		damage = "23/è½®",
+		damage = "23/ÂÖ",
 		base = 95540,
 		id = 95541,
 		torpedo_ammo = 0,
@@ -116284,7 +116284,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95542] = {
-		damage = "26/è½®",
+		damage = "26/ÂÖ",
 		base = 95540,
 		id = 95542,
 		torpedo_ammo = 0,
@@ -116294,7 +116294,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95543] = {
-		damage = "29/è½®",
+		damage = "29/ÂÖ",
 		base = 95540,
 		id = 95543,
 		torpedo_ammo = 0,
@@ -116304,7 +116304,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95544] = {
-		damage = "32/è½®",
+		damage = "32/ÂÖ",
 		base = 95540,
 		id = 95544,
 		torpedo_ammo = 0,
@@ -116314,7 +116314,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95545] = {
-		damage = "35/è½®",
+		damage = "35/ÂÖ",
 		base = 95540,
 		id = 95545,
 		torpedo_ammo = 0,
@@ -116324,7 +116324,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95546] = {
-		damage = "38/è½®",
+		damage = "38/ÂÖ",
 		base = 95540,
 		id = 95546,
 		torpedo_ammo = 0,
@@ -116334,7 +116334,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95547] = {
-		damage = "41/è½®",
+		damage = "41/ÂÖ",
 		base = 95540,
 		id = 95547,
 		torpedo_ammo = 0,
@@ -116344,7 +116344,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95548] = {
-		damage = "44/è½®",
+		damage = "44/ÂÖ",
 		base = 95540,
 		id = 95548,
 		torpedo_ammo = 0,
@@ -116354,7 +116354,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95549] = {
-		damage = "47/è½®",
+		damage = "47/ÂÖ",
 		base = 95540,
 		id = 95549,
 		torpedo_ammo = 0,
@@ -116364,7 +116364,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[95550] = {
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 95540,
 		id = 95550,
 		torpedo_ammo = 0,
@@ -116375,7 +116375,7 @@ pg.equip_data_statistics = {
 	},
 	[95551] = {
 		anti_siren = 100,
-		damage = "50/è½®",
+		damage = "50/ÂÖ",
 		base = 95540,
 		id = 95551,
 		torpedo_ammo = 0,
@@ -116385,15 +116385,15 @@ pg.equip_data_statistics = {
 		}
 	},
 	[100000] = {
-		name = "è£…å¤‡æ¨¡æ¿",
+		name = "×°±¸Ä£°å",
 		tech = 1,
-		speciality = "æ— ",
+		speciality = "ÎŞ",
 		type = 0,
 		rarity = 1,
 		value_2 = 0,
 		icon = "1",
 		value_1 = "0",
-		descrip = "æ•Œäººç”¨æ­¦å™¨",
+		descrip = "µĞÈËÓÃÎäÆ÷",
 		nationality = 0,
 		ammo = 10,
 		value_3 = 0,
@@ -116415,11 +116415,11 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[594017] = {
-		name = "ç¾ç³»å‰§æƒ…æµ·ä¼¦å¨œä¸»ç‚®",
-		speciality = "é”å®š",
+		name = "ÃÀÏµ¾çÇéº£Â×ÄÈÖ÷ÅÚ",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "12100",
 		attribute_2 = "cannon",
@@ -116454,11 +116454,11 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[594018] = {
-		name = "ç¾ç³»å‰§æƒ…åŒ—å¡ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÃÀÏµ¾çÇé±±¿¨Ö÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14300",
 		attribute_2 = "cannon",
@@ -116494,11 +116494,11 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[594019] = {
-		name = "ç¾ç³»å‰§æƒ…åç››é¡¿ä¸»ç‚®",
-		speciality = "è·¨å°„",
+		name = "ÃÀÏµ¾çÇé»ªÊ¢¶ÙÖ÷ÅÚ",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 25,
 		icon = "14300",
 		attribute_2 = "cannon",
@@ -116534,15 +116534,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[630011] = {
-		name = "ã€æ„šäººèŠ‚æ´»åŠ¨ã€‘ç´«å¸ƒé‡Œæ­¦å™¨",
+		name = "¡¾ÓŞÈË½Ú»î¶¯¡¿×Ï²¼ÀïÎäÆ÷",
 		tech = 3,
-		speciality = "é”å®š",
+		speciality = "Ëø¶¨",
 		type = 2,
 		rarity = 4,
 		value_2 = 0,
 		icon = "12100",
 		value_1 = "0",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		nationality = 1,
 		ammo = 2,
 		value_3 = 0,
@@ -116572,15 +116572,15 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[630012] = {
-		name = "ã€æ„šäººèŠ‚æ´»åŠ¨ã€‘ç´«å¸ƒé‡Œæ­¦å™¨",
+		name = "¡¾ÓŞÈË½Ú»î¶¯¡¿×Ï²¼ÀïÎäÆ÷",
 		tech = 3,
-		speciality = "é”å®š",
+		speciality = "Ëø¶¨",
 		type = 2,
 		rarity = 4,
 		value_2 = 0,
 		icon = "12100",
 		value_1 = "0",
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		nationality = 1,
 		ammo = 2,
 		value_3 = 0,
@@ -116610,11 +116610,11 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[650601] = {
-		name = "ã€2020æ³•ç³»æ´»åŠ¨å‰§æƒ…ç”¨ã€‘åŒè”è£…155mmä¸»ç‚®Mle1920",
-		speciality = "é”å®š",
+		name = "¡¾2020·¨Ïµ»î¶¯¾çÇéÓÃ¡¿Ë«Áª×°155mmÖ÷ÅÚMle1920",
+		speciality = "Ëø¶¨",
 		type = 2,
 		tech = 0,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 12,
 		icon = "50780",
 		attribute_2 = "cannon",
@@ -116654,11 +116654,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[650602] = {
-		name = "ã€2020æ³•ç³»æ´»åŠ¨å‰§æƒ…ç”¨ã€‘åŒè”è£…130mmä¸»ç‚®Mle1935",
-		speciality = "é”å®š",
+		name = "¡¾2020·¨Ïµ»î¶¯¾çÇéÓÃ¡¿Ë«Áª×°130mmÖ÷ÅÚMle1935",
+		speciality = "Ëø¶¨",
 		type = 1,
 		tech = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 5,
 		icon = "50500",
 		attribute_2 = "cannon",
@@ -116704,12 +116704,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[650603] = {
-		name = "ã€2020æ³•ç³»æ´»åŠ¨å‰§æƒ…ç”¨ã€‘åŒè”550mmé±¼é›·T1",
-		speciality = "é›·å‡»",
+		name = "¡¾2020·¨Ïµ»î¶¯¾çÇéÓÃ¡¿Ë«Áª550mmÓãÀ×T1",
+		speciality = "À×»÷",
 		type = 5,
 		tech = 1,
 		rarity = 1,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 0,
 		icon = "5300",
 		damage = "42 x 2",
@@ -116750,11 +116750,11 @@ pg.equip_data_statistics = {
 		}
 	},
 	[650604] = {
-		name = "ã€2020æ³•ç³»æ´»åŠ¨å‰§æƒ…ç”¨ã€‘å››è”è£…380mmä¸»ç‚®Mle1935",
-		speciality = "è·¨å°„",
+		name = "¡¾2020·¨Ïµ»î¶¯¾çÇéÓÃ¡¿ËÄÁª×°380mmÖ÷ÅÚMle1935",
+		speciality = "¿çÉä",
 		type = 4,
 		tech = 3,
-		descrip = "è¯´æ˜æœªå¡«å†™",
+		descrip = "ËµÃ÷Î´ÌîĞ´",
 		value_2 = 45,
 		icon = "50400",
 		attribute_2 = "cannon",
@@ -116796,9 +116796,9 @@ pg.equip_data_statistics = {
 	},
 	[800000] = {
 		type = 1,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘é©±é€æ­¦å™¨",
+		name = "¡¾ÈıóÒ¾çÇé¡¿ÇıÖğÎäÆ÷",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800000,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116809,9 +116809,9 @@ pg.equip_data_statistics = {
 	},
 	[800001] = {
 		type = 3,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘é‡å·¡æ­¦å™¨",
+		name = "¡¾ÈıóÒ¾çÇé¡¿ÖØÑ²ÎäÆ÷",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800001,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116822,9 +116822,9 @@ pg.equip_data_statistics = {
 	},
 	[800002] = {
 		type = 6,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘é˜²ç©ºç‚®",
+		name = "¡¾ÈıóÒ¾çÇé¡¿·À¿ÕÅÚ",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800002,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116835,9 +116835,9 @@ pg.equip_data_statistics = {
 	},
 	[800003] = {
 		type = 5,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘ä¸‰è”é±¼é›·",
+		name = "¡¾ÈıóÒ¾çÇé¡¿ÈıÁªÓãÀ×",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800003,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116848,9 +116848,9 @@ pg.equip_data_statistics = {
 	},
 	[800004] = {
 		type = 5,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘å››è”é±¼é›·",
+		name = "¡¾ÈıóÒ¾çÇé¡¿ËÄÁªÓãÀ×",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800004,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116861,9 +116861,9 @@ pg.equip_data_statistics = {
 	},
 	[800005] = {
 		type = 7,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘é‡æ¨±æˆ˜æ–—æœº",
+		name = "¡¾ÈıóÒ¾çÇé¡¿ÖØÓ£Õ½¶·»ú",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800005,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116874,9 +116874,9 @@ pg.equip_data_statistics = {
 	},
 	[800006] = {
 		type = 8,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘é‡æ¨±é±¼é›·æœº",
+		name = "¡¾ÈıóÒ¾çÇé¡¿ÖØÓ£ÓãÀ×»ú",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800006,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116887,9 +116887,9 @@ pg.equip_data_statistics = {
 	},
 	[800007] = {
 		type = 9,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘é‡æ¨±è½°ç‚¸æœº",
+		name = "¡¾ÈıóÒ¾çÇé¡¿ÖØÓ£ºäÕ¨»ú",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800007,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116900,9 +116900,9 @@ pg.equip_data_statistics = {
 	},
 	[800008] = {
 		type = 4,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘ä¸‰ç¬ ä¸»ç‚®",
+		name = "¡¾ÈıóÒ¾çÇé¡¿ÈıóÒÖ÷ÅÚ",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800008,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116913,9 +116913,9 @@ pg.equip_data_statistics = {
 	},
 	[800009] = {
 		type = 4,
-		name = "ã€ä¸‰ç¬ å‰§æƒ…ã€‘æ¯”å¡ä¸»ç‚®",
+		name = "¡¾ÈıóÒ¾çÇé¡¿±È…±Ö÷ÅÚ",
 		base = 100000,
-		descrip = "ä¸‰ç¬ å‰§æƒ…",
+		descrip = "ÈıóÒ¾çÇé",
 		id = 800009,
 		torpedo_ammo = 0,
 		property_rate = {},
@@ -116925,7 +116925,7 @@ pg.equip_data_statistics = {
 		label = {}
 	},
 	[960001] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é©±é€ä¸»ç‚®",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÇıÖğÖ÷ÅÚ",
 		damage = "15 x 5",
 		base = 90140,
 		id = 960001,
@@ -116936,7 +116936,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960002] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é©±é€ä¸‰è”é±¼é›·",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÇıÖğÈıÁªÓãÀ×",
 		damage = "206 x 3",
 		base = 35140,
 		id = 960002,
@@ -116947,7 +116947,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960003] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é©±é€å››è”ç£é›·",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÇıÖğËÄÁª´ÅÀ×",
 		damage = "156 x 4",
 		base = 5140,
 		id = 960003,
@@ -116958,7 +116958,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960004] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é©±é€äº”è”é±¼é›·",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÇıÖğÎåÁªÓãÀ×",
 		damage = "156 x 5",
 		base = 5240,
 		id = 960004,
@@ -116969,7 +116969,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960005] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘æˆ˜åˆ—åŒè”ä¸»ç‚®",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿Õ½ÁĞË«ÁªÖ÷ÅÚ",
 		damage = "132 x 2",
 		base = 44140,
 		id = 960005,
@@ -116980,7 +116980,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960006] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘æˆ˜åˆ—ä¸‰è”ä¸»ç‚®",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿Õ½ÁĞÈıÁªÖ÷ÅÚ",
 		damage = "156 x 3",
 		base = 14340,
 		id = 960006,
@@ -116991,7 +116991,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960007] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘æˆ˜åˆ—å››è”ä¸»ç‚®ï¼ˆæ³•ï¼‰",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿Õ½ÁĞËÄÁªÖ÷ÅÚ£¨·¨£©",
 		damage = "120 x 4",
 		base = 90440,
 		id = 960007,
@@ -117002,7 +117002,7 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960008] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘æˆ˜åˆ—å››è”ä¸»ç‚®ï¼ˆè‹±ï¼‰",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿Õ½ÁĞËÄÁªÖ÷ÅÚ£¨Ó¢£©",
 		damage = "108 x 4",
 		base = 24040,
 		id = 960008,
@@ -117013,12 +117013,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960009] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é“è¡€æˆ˜æ–—æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÌúÑªÕ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -117055,12 +117055,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960010] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é“è¡€è½°ç‚¸æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÌúÑªºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -117096,12 +117096,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960011] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é‡æ¨±æˆ˜æ–—æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÖØÓ£Õ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -117138,12 +117138,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960012] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é‡æ¨±é±¼é›·æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÖØÓ£ÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -117179,12 +117179,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960013] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é‡æ¨±è½°ç‚¸æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ÖØÓ£ºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -117220,12 +117220,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960014] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘ç™½é¹°æˆ˜æ–—æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿°×Ó¥Õ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 1,
@@ -117262,12 +117262,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960015] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘ç™½é¹°é±¼é›·æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿°×Ó¥ÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 1,
@@ -117303,12 +117303,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960016] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘ç™½é¹°è½°ç‚¸æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿°×Ó¥ºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 1,
@@ -117344,12 +117344,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960017] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘çš‡å®¶æˆ˜æ–—æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿»Ê¼ÒÕ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 2,
@@ -117386,12 +117386,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960018] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘çš‡å®¶é±¼é›·æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿»Ê¼ÒÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 2,
@@ -117427,12 +117427,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960019] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘çš‡å®¶è½°ç‚¸æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿»Ê¼ÒºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 2,
@@ -117468,12 +117468,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960020] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é¸¢å°¾æˆ˜æ–—æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ğ°Î²Õ½¶·»ú",
 		tech = 1,
-		speciality = "ç©ºæˆ˜",
+		speciality = "¿ÕÕ½",
 		type = 7,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -117510,12 +117510,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960021] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é¸¢å°¾é±¼é›·æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ğ°Î²ÓãÀ×»ú",
 		tech = 1,
-		speciality = "é›·å‡»",
+		speciality = "À×»÷",
 		type = 8,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
@@ -117551,12 +117551,12 @@ pg.equip_data_statistics = {
 		}
 	},
 	[960022] = {
-		name = "ã€ç¿»æ ¼å­æ´»åŠ¨ã€‘é¸¢å°¾è½°ç‚¸æœº",
+		name = "¡¾·­¸ñ×Ó»î¶¯¡¿ğ°Î²ºäÕ¨»ú",
 		tech = 1,
-		speciality = "è½°ç‚¸",
+		speciality = "ºäÕ¨",
 		type = 9,
 		rarity = 1,
-		descrip = "é»˜è®¤è£…å¤‡",
+		descrip = "Ä¬ÈÏ×°±¸",
 		value_2 = 0,
 		icon = "1",
 		nationality = 3,
