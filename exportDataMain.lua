@@ -20,7 +20,7 @@ print("Start!")
 
 
 require("equipExport")
-eeTest()
+equipExport()
 
 
 local endTime = os.clock()
