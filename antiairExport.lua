@@ -55,33 +55,24 @@ local function collectAntiairData()
         v["name"] = D_EDS[k].name
         v["tech"] = D_EDS[k].tech
         v["rarity"] = D_EDS[k].rarity
-        v["type"] = D_EDS[k].type
         v["max_lv"] = getEquipMaxLv(k)
         v["damage"] = D_WP[k].damage
         v["up_damage"] = getWeaponProp(k, v.max_lv, "damage")
-        v["primal_repeat"] = getBarrageProp(D_WP[k].barrage_ID[1], "primal_repeat")
-        v["senior_repeat"] = getBarrageProp(D_WP[k].barrage_ID[1], "senior_repeat")
-        v["senior_delay"] = getBarrageProp(D_WP[k].barrage_ID[1], "senior_delay")
         v["reload_max"] = D_WP[k].reload_max
         v["up_reload_max"] = getWeaponProp(k, v.max_lv, "reload_max")
         v["range"] = getBulletProp(D_WP[k].bullet_ID[1], "range")
-        v["spread"] = getBarrageProp(D_WP[k].barrage_ID[1], "angle")
-        v["value_2"] = D_EDS[k].value_2  --antiair
-        v["attribute_2"] = D_EDS[k].attribute_2
-        v["value_3"] = D_EDS[k].value_3  --antiAircraft
-        v["attribute_3"] = D_EDS[k].attribute_3
-        v["aim_type"] = D_WP[k].aim_type
-        v["angle"] = D_WP[k].angle
-        v["ammo_type"] = getBulletProp(D_WP[k].bullet_ID[1], "ammo_type")
-        v["damage_type"] = getBulletProp(D_WP[k].bullet_ID[1], "damage_type") --护甲补正，三元table
-        v["corrected"] = D_WP[k].corrected
-        v["up_corrected"] = getWeaponProp(k, v.max_lv, "corrected")
+        v["value_2"] = D_EDS[k].value_2  --antiaircraft
+        if D_EDS[k].attribute_2 then
+            v[D_EDS[k].attribute_2] = D_EDS[k].value_2
+        end
+        if D_EDS[k].attribute_3 then --hit or cannon
+            v[D_EDS[k].attribute_3] = D_EDS[k].value_2
+        end
         v["nationality"] = D_EDS[k].nationality
-        v["speciality"] = D_EDS[k].speciality
     end
 end
 
-local antiairHeaderString = "icon,name,rarity,type,max_lv,damage,up_damage,bullet_num,reload_time,up_reload_time,range,spread,antiair,antiair,speciality,angle,ammo_type,corrected,up_corrected,senior_delay,vs轻,vs中,vs重"
+local antiairHeaderString = "icon,name,rarity,max_lv,damage,up_damage,reload_time,up_reload_time,range,antiair,accuracy,cannon"
 local function antiairToString(c)
     name = c.name .. "T" .. c.tech
     res = c.icon
@@ -91,22 +82,12 @@ local function antiairToString(c)
     res = res .. "," .. c.max_lv
     res = res .. "," .. c.damage
     res = res .. "," .. c.up_damage
-    res = res .. "," .. calculateBulletNum(c)
     res = res .. "," .. string.format("%0.2f", CalculateReloadTime(c.reload_max))
     res = res .. "," .. string.format("%0.2f", CalculateReloadTime(c.up_reload_max))
     res = res .. "," .. c.range
-    res = res .. "," .. calculateSpread(c)
-    res = res .. "," .. c.value_2
-    res = res .. "," .. c.value_3
-    res = res .. "," .. c.speciality
-    res = res .. "," .. c.angle
-    res = res .. "," .. AmmoTypeName[c.ammo_type]
-    res = res .. "," .. c.corrected
-    res = res .. "," .. c.up_corrected
-    res = res .. "," .. (c.senior_delay * c.senior_repeat)
-    res = res .. "," .. c.damage_type[1]
-    res = res .. "," .. c.damage_type[2]
-    res = res .. "," .. c.damage_type[3]
+    res = res .. "," .. c["antiaircraft"]
+    res = res .. "," .. c["hit"]
+    res = res .. "," .. c["cannon"]
 
     return res
 end
