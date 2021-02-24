@@ -20,4 +20,5 @@ require("constAdded")
 require("const.equiptype")
 require("const.shiptype")
 require("const.battleconfig")
+require("const.battleconst")
 

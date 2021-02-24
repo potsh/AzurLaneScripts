@@ -20,25 +20,8 @@ AmmoTypeName = {
 local D_EDT = pg.equip_data_template
 local D_EDS = pg.equip_data_statistics
 local D_WP = pg.weapon_property
-local D_BA_T = pg.barrage_template
-local D_BU_T = pg.bullet_template
 local D_EDBT = pg.equip_data_by_type
 
-
-local function getBarrageProp(barrageNo, propName)
-    return D_BA_T[barrageNo][propName]
-end
-
-local function getBulletProp(bulletNo, propName)
-    return D_BU_T[bulletNo][propName]
-end
-
-function CalculateReloadTime(reload_max, reload)
-    if reload == nil then
-        reload = BattleConfig.K2
-    end
-    return reload_max / BattleConfig.K1 / math.sqrt((reload + BattleConfig.K2) * BattleConfig.K3)
-end
 
 local function calculateBulletNum(cannon)
     return (cannon.primal_repeat + 1) * (cannon.senior_repeat + 1)
@@ -73,7 +56,6 @@ local function collectCannonData()
         v["type"] = D_EDS[k].type
         v["max_lv"] = getEquipMaxLv(k)
         v["damage"] = D_WP[k].damage
-        --v["half_up_damage"] = getWeaponProp(k, getEquipHalfLv(k), "damage")
         v["up_damage"] = getWeaponProp(k, v.max_lv, "damage")
         v["primal_repeat"] = getBarrageProp(D_WP[k].barrage_ID[1], "primal_repeat")
         v["senior_repeat"] = getBarrageProp(D_WP[k].barrage_ID[1], "senior_repeat")
@@ -92,38 +74,49 @@ local function collectCannonData()
         v["damage_type"] = getBulletProp(D_WP[k].bullet_ID[1], "damage_type") --护甲补正，三元table
         v["corrected"] = D_WP[k].corrected
         v["up_corrected"] = getWeaponProp(k, v.max_lv, "corrected")
+        if v.max_lv > 10 then
+            v["corrected_10"] = getWeaponProp(k, 10, "corrected")
+        end
         v["nationality"] = D_EDS[k].nationality
         v["speciality"] = D_EDS[k].speciality
     end
 end
 
-local cannonHeaderString = "icon,name,rarity,type,max_lv,damage,up_damage,bullet_num,reload_time,up_reload_time,range,spread,cannon,antiair,speciality,angle,ammo_type,corrected,up_corrected,senior_delay,vs轻,vs中,vs重"
-local function cannonToString(c)
-    name = c.name .. "T" .. c.tech
-    res = c.icon
+local cannonHeaderString = "icon,name,rarity,type,max_lv,damage,up_damage,bullet_num,reload_time,up_reload_time,range,spread,cannon,antiair,speciality,angle,ammo_type,corrected,up_corrected,senior_delay,vs轻,vs中,vs重,nationality"
+local function cannonToString(e, is_half_up)
+    name = e.name .. "T" .. e.tech
+    res = e.icon
     res = res .. "," .. name
-    res = res .. "," .. EquipRarityName[c.rarity]
-    res = res .. "," .. EquipType.Type2Name2(c.type)
-    res = res .. "," .. c.max_lv
-    res = res .. "," .. c.damage
-    --res = res .. "," .. c.half_up_damage
-    res = res .. "," .. c.up_damage
-    res = res .. "," .. calculateBulletNum(c)
-    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(c.reload_max))
-    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(c.up_reload_max))
-    res = res .. "," .. c.range
-    res = res .. "," .. calculateSpread(c)
-    res = res .. "," .. c.value_2
-    res = res .. "," .. c.value_3
-    res = res .. "," .. c.speciality
-    res = res .. "," .. c.angle
-    res = res .. "," .. AmmoTypeName[c.ammo_type]
-    res = res .. "," .. c.corrected
-    res = res .. "," .. c.up_corrected
-    res = res .. "," .. (c.senior_delay * c.senior_repeat)
-    res = res .. "," .. c.damage_type[1]
-    res = res .. "," .. c.damage_type[2]
-    res = res .. "," .. c.damage_type[3]
+    if is_half_up then
+        res = res .. "_up10"
+    end
+    res = res .. "," .. EquipRarityName[e.rarity]
+    res = res .. "," .. EquipType.Type2Name2(e.type)
+    res = res .. "," .. e.max_lv
+    -- res = res .. "," .. tostring(is_half_up)
+    res = res .. "," .. e.damage
+    res = res .. "," .. e.up_damage
+    res = res .. "," .. calculateBulletNum(e)
+    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(e.reload_max))
+    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(e.up_reload_max))
+    res = res .. "," .. e.range
+    res = res .. "," .. calculateSpread(e)
+    res = res .. "," .. e.value_2
+    res = res .. "," .. e.value_3
+    res = res .. "," .. e.speciality
+    res = res .. "," .. e.angle
+    res = res .. "," .. AmmoTypeName[e.ammo_type]
+    res = res .. "," .. e.corrected
+    if is_half_up then
+        res = res .. "," .. e.corrected_10
+    else
+        res = res .. "," .. e.up_corrected
+    end
+    res = res .. "," .. (e.senior_delay * e.senior_repeat)
+    res = res .. "," .. e.damage_type[1]
+    res = res .. "," .. e.damage_type[2]
+    res = res .. "," .. e.damage_type[3]
+    res = res .. "," .. ((e.nationality and NationalityName[e.nationality]) or "")
 
     return res
 end
@@ -134,8 +127,14 @@ local function writeCannonsToFile()
     file:write(cannonHeaderString.."\n")
 
     for k, v in pairs(cannonList) do
-        local str = cannonToString(v)
-        file:write(str .."\n")
+        if EquipRarityName[D_EDS[k].rarity] ~= "Gray" then
+            local str = cannonToString(v, false)
+            file:write(str .."\n")
+            if v.max_lv > 10 then
+                str = cannonToString(v, true)
+                file:write(str .."\n")
+            end
+        end
     end
 
     file:close()

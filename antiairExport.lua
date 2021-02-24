@@ -9,33 +9,13 @@ antiairList = {}
 local outputFileName = "·À¿ÕÅÚFromScripts.csv"
 
 
-
 local D_EDT = pg.equip_data_template
 local D_EDS = pg.equip_data_statistics
 local D_WP = pg.weapon_property
-local D_BA_T = pg.barrage_template
-local D_BU_T = pg.bullet_template
+--local D_BA_T = pg.barrage_template
+--local D_BU_T = pg.bullet_template
 local D_EDBT = pg.equip_data_by_type
 
-
-local function getBarrageProp(barrageNo, propName)
-    return D_BA_T[barrageNo][propName]
-end
-
-local function getBulletProp(bulletNo, propName)
-    return D_BU_T[bulletNo][propName]
-end
-
-function CalculateReloadTime(reload_max, reload)
-    if reload == nil then
-        reload = BattleConfig.K2
-    end
-    return reload_max / BattleConfig.K1 / math.sqrt((reload + BattleConfig.K2) * BattleConfig.K3)
-end
-
-local function calculateBulletNum(antiair)
-    return (antiair.primal_repeat + 1) * (antiair.senior_repeat + 1)
-end
 
 local function genAntiairList()
     for key, value in pairs(D_EDT) do
@@ -51,43 +31,60 @@ end
 
 local function collectAntiairData()
     for k, v in pairs(antiairList) do
-        v["icon"] = D_EDS[k].icon
-        v["name"] = D_EDS[k].name
-        v["tech"] = D_EDS[k].tech
-        v["rarity"] = D_EDS[k].rarity
-        v["max_lv"] = getEquipMaxLv(k)
-        v["damage"] = D_WP[k].damage
-        v["up_damage"] = getWeaponProp(k, v.max_lv, "damage")
-        v["reload_max"] = D_WP[k].reload_max
-        v["up_reload_max"] = getWeaponProp(k, v.max_lv, "reload_max")
-        v["range"] = getBulletProp(D_WP[k].bullet_ID[1], "range")
-        v["value_2"] = D_EDS[k].value_2  --antiaircraft
-        if D_EDS[k].attribute_2 then
-            v[D_EDS[k].attribute_2] = D_EDS[k].value_2
+        if EquipRarityName[D_EDS[k].rarity] ~= "Gray" then
+            v["icon"] = D_EDS[k].icon
+            v["name"] = D_EDS[k].name
+            v["tech"] = D_EDS[k].tech
+            v["rarity"] = D_EDS[k].rarity
+            v["max_lv"] = getEquipMaxLv(k)
+            v["damage"] = D_WP[k].damage
+            v["up_damage"] = getWeaponProp(k, v.max_lv, "damage")
+            v["reload_max"] = D_WP[k].reload_max
+            v["up_reload_max"] = getWeaponProp(k, v.max_lv, "reload_max")
+            v["range"] = D_WP[k].range
+            v["value_2"] = D_EDS[k].value_2  --antiaircraft
+            if D_EDS[k].attribute_2 then
+                v[D_EDS[k].attribute_2] = D_EDS[k].value_2
+            end
+            if D_EDS[k].attribute_3 then --hit or cannon
+                v[D_EDS[k].attribute_3] = D_EDS[k].value_3
+            end
+            v["corrected"] = D_WP[k].corrected
+            v["up_corrected"] = getWeaponProp(k, v.max_lv, "corrected")
+            if v.max_lv > 10 then
+                v["corrected_10"] = getWeaponProp(k, 10, "corrected")
+            end
+            v["nationality"] = D_EDS[k].nationality
         end
-        if D_EDS[k].attribute_3 then --hit or cannon
-            v[D_EDS[k].attribute_3] = D_EDS[k].value_2
-        end
-        v["nationality"] = D_EDS[k].nationality
     end
 end
 
-local antiairHeaderString = "icon,name,rarity,max_lv,damage,up_damage,reload_time,up_reload_time,range,antiair,accuracy,cannon"
-local function antiairToString(c)
-    name = c.name .. "T" .. c.tech
-    res = c.icon
+local antiairHeaderString = "icon,name,rarity,max_lv,damage,up_damage,reload_time,up_reload_time,range,antiair,accuracy,cannon,corrected,up_corrected,nationality"
+local function antiairToString(e, is_half_up)
+    name = e.name .. "T" .. e.tech
+    res = e.icon
     res = res .. "," .. name
-    res = res .. "," .. EquipRarityName[c.rarity]
-    res = res .. "," .. EquipType.Type2Name2(c.type)
-    res = res .. "," .. c.max_lv
-    res = res .. "," .. c.damage
-    res = res .. "," .. c.up_damage
-    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(c.reload_max))
-    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(c.up_reload_max))
-    res = res .. "," .. c.range
-    res = res .. "," .. c["antiaircraft"]
-    res = res .. "," .. c["hit"]
-    res = res .. "," .. c["cannon"]
+    if is_half_up then
+        res = res .. "_up10"
+    end
+    res = res .. "," .. EquipRarityName[e.rarity]
+    res = res .. "," .. e.max_lv
+    res = res .. "," .. e.damage
+    res = res .. "," .. e.up_damage
+    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(e.reload_max))
+    res = res .. "," .. string.format("%0.2f", CalculateReloadTime(e.up_reload_max))
+    res = res .. "," .. e.range
+
+    res = res .. "," .. ((e["antiaircraft"] and tostring(e["antiaircraft"])) or "0")
+    res = res .. "," .. ((e["hit"] and tostring(e["hit"])) or "0")
+    res = res .. "," .. ((e["cannon"] and tostring(e["cannon"])) or "0")
+    res = res .. "," .. e.corrected
+    if is_half_up then
+        res = res .. "," .. e.corrected_10
+    else
+        res = res .. "," .. e.up_corrected
+    end
+    res = res .. "," .. ((e.nationality and NationalityName[e.nationality]) or "")
 
     return res
 end
@@ -98,8 +95,14 @@ local function writeAntiairsToFile()
     file:write(antiairHeaderString.."\n")
 
     for k, v in pairs(antiairList) do
-        local str = antiairToString(v)
-        file:write(str .."\n")
+        if EquipRarityName[D_EDS[k].rarity] ~= "Gray" then
+            local str = antiairToString(v, false)
+            file:write(str .."\n")
+            if v.max_lv > 10 then
+                str = antiairToString(v, true)
+                file:write(str .."\n")
+            end
+        end
     end
 
     file:close()

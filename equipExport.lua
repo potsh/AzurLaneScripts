@@ -40,7 +40,6 @@ EquipRarityName = {  -- rarity in D_EDS
     [6] = "SSR",
 }
 
-
 EquipTypeName = {  -- type in D_EDS, equip_type in D_EDBT
     [1] = "舰炮(驱逐)",
     [2] = "舰炮(轻巡)",
@@ -61,8 +60,24 @@ EquipTypeName = {  -- type in D_EDS, equip_type in D_EDBT
     [18] = "货物",
 }
 
+
+NationalityName = {  -- nationality in D_WP
+    [1] = "白鹰",
+    [2] = "皇家",
+    [3] = "重樱",
+    [4] = "铁血",
+    [5] = "Unknown",
+    [6] = "撒丁帝国",
+    [7] = "北方联合",
+    [8] = "自由鸢尾",
+}
+
+
+
 local D_EDT = pg.equip_data_template
 local D_WP = pg.weapon_property
+local D_BA_T = pg.barrage_template
+local D_BU_T = pg.bullet_template
 
 function getEquipMaxLv(key)
     local tmp = key
@@ -86,9 +101,27 @@ function getWeaponProp(equipNo, lv, propName)
     end
 end
 
+function getBarrageProp(barrageNo, propName)
+    return D_BA_T[barrageNo][propName]
+end
+
+function getBulletProp(bulletNo, propName)
+    return D_BU_T[bulletNo][propName]
+end
+
+function CalculateReloadTime(reload_max, reload)
+    if reload == nil then
+        reload = BattleConfig.K2
+    end
+    return reload_max / BattleConfig.K1 / math.sqrt((reload + BattleConfig.K2) * BattleConfig.K3)
+end
 
 require("cannonExport")
+require("antiairExport")
+require("aircraftExport")
 
 function equipExport()
-    exportCannons()
+    -- exportCannons()
+    -- exportAntiairs()
+    exportAircrafts()
 end
