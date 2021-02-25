@@ -118,10 +118,13 @@ end
 
 require("cannonExport")
 require("antiairExport")
+require("torpedoExport")
 require("aircraftExport")
+
 
 function equipExport()
     -- exportCannons()
+    exportTorpedos()
     -- exportAntiairs()
-    exportAircrafts()
+    -- exportAircrafts()
 end
