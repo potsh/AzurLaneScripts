@@ -124,7 +124,7 @@ require("aircraftExport")
 
 function equipExport()
     -- exportCannons()
-    exportTorpedos()
+    -- exportTorpedos()
     -- exportAntiairs()
     -- exportAircrafts()
 end
